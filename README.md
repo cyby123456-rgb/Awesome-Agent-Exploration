@@ -3,13 +3,13 @@
 <p align="center">
   <a href="#"><img src="https://img.shields.io/badge/Status-Building-brightgreen" alt="Building"></a>
   <a href="https://github.com/sindresorhus/awesome"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome"></a>
-  <a href="#"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" alt="PRs Welcome"></a>
+  <a href="https://github.com/cyby123456-rgb/Awesome-Exploration/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" alt="PRs Welcome"></a>
 </p>
 
 <p align="center">
-  A curated reading list on <b>hidden state analysis, interpretability, and layer-wise exploration for large language models</b>.
+  A curated reading list on <b>exploration mechanisms in LLM RL training</b>.
   <br>
-  From probing and causal intervention to representation engineering and noise-based exploration —— understanding what happens inside the hidden layers.
+  From token-level diversity to policy distribution reshaping — understanding how models discover better, more diverse, and more creative solutions beyond their current probability distribution.
 </p>
 
 ---
@@ -17,269 +17,263 @@
 <p align="center">
   <a href="#what-is-exploration">What is Exploration?</a> ·
   <a href="#why-exploration-matters">Why Exploration Matters?</a> ·
-  <a href="#repository-map">Repository Map</a> ·
   <a href="#table-of-contents">Table of Contents</a>
 </p>
 
-Papers with publicly released code include an inline `[[Code](...)]` link. Entries without verified repositories omit that link.
-
-> Contributions are welcome. If you find missing papers, inaccurate classifications, or newly released work, feel free to update this list.
+> Contributions are welcome. If you find missing papers, inaccurate classifications, or newly released work, feel free to open an issue or PR.
 
 ---
 
 ## What is Exploration?
 
-In the context of LLM interpretability and analysis, **exploration** refers to the systematic investigation of a model's internal representations and computations at the hidden state level. Instead of treating the model as a black box, exploration methods probe, intervene, and perturb hidden states to reveal what information is encoded, where computation happens, and how outputs are formed.
+In the context of LLM RL training, **exploration** refers to the strategies or behaviors a model adopts to discover and generate outputs that are **lower in its current probability distribution but more optimal, correct, or creative** — enabling the model to break through the capability boundary of the base model.
 
-Exploration techniques decompose into several families:
+<div align="center">
+<b>更大的探索空间 · 更多的尝试 · 更高的多样性 · 更好的输出</b>
+</div>
 
-| Family | Core idea | Representative methods |
+### Core Tension: Exploration vs Exploitation
+
+RLVR (Reinforcement Learning with Verifiable Rewards) effectively improves answer accuracy but simultaneously suppresses diversity. The model tends to converge to high-reward patterns prematurely, leading to **entropy collapse** — the central problem that exploration research aims to solve.
+
+### The Three Research Dimensions
+
+Following the systematic framework in *From Trial-and-Error to Improvement*:
+
+| Dimension | Focus | Key Question |
 |---|---|---|
-| **Probing** | Train classifiers on hidden states to decode encoded information | Linear probing, probing classifiers |
-| **Causal Intervention** | Edit or patch activations to identify causally necessary layers | Activation patching, causal tracing |
-| **Noise-based Exploration** | Inject noise into hidden states and measure downstream effects | Gaussian noise, corruption, perturbation |
-| **Representation Engineering** | Read and steer model internals along meaningful directions | Logit Lens, Tuned Lens, representation reading |
-| **Layer-wise Analysis** | Study functional differences across model depth | Layer specialization, hierarchical decomposition |
+| **Constructing Exploration Space** | How to define and expand the space for exploration | Token-level, response-level, or policy-level? |
+| **Entropy-Performance Interaction** | How to balance exploration and exploitation | Can both be improved simultaneously? |
+| **Performance Improvement** | How exploration translates to capability gains | Does pass@k truly represent model capability boundaries? |
 
-<p align="center">
-  <i>Figure 1. (Coming soon)</i>
-</p>
+### Ultimate Goal of Exploration
 
-## Why Exploration Matters
-
-> "Understanding is the first step toward control."
-
-As large models grow deeper and more capable, understanding their internal workings becomes critical for:
-
-| Exploration helps answer | Why it matters |
-|---|---|
-| **Where is knowledge stored?** | Locate factual associations, identify key-value memories in FFN layers |
-| **Which layers perform reasoning?** | Distinguish representation learning from inference and output generation |
-| **How robust is the model?** | Measure sensitivity to perturbations, locate fragile regions |
-| **Can we steer model behavior?** | Find controllable directions in representation space |
-| **How do different components cooperate?** | Understand layer-wise collaboration, redundancy, and specialization |
+```
+生成层面的语义多样性
+    ↓
+任务层面能够解决更多问题
+    ↓
+模型内化这种能力 → 真正学会强大的推理
+```
 
 ---
 
-## Growing Research Momentum
+## Why Exploration Matters
 
-<p align="center">
-  <img src="./utils/tending.jpg" alt="Research trend in LLM exploration" width="1080">
-</p>
+### Background / Motivation
 
-<p align="center"><i>Figure 2. (Coming soon)</i></p>
+| Problem | Description |
+|---|---|
+| **Sparse Reward in RLVR** | Typically binary rewards, only verifiable — no intermediate signal |
+| **Entropy Collapse** | Model converges too early to one high-reward behavioral pattern |
+| **Local Optimum** | Gets stuck in sub-optimal modes (e.g., bimodal distribution) |
+| **Base Model Capability Boundary** | Cannot solve problems beyond base model's reach |
 
-## Repository Map
+### Exploration Enables Higher-Level Learning Paradigms
 
-```text
-.
-├── README.md                 # Welcome page (you are here)
-├── CONTRIBUTING.md           # Guide for contributors
-├── LICENSE                   # CC-BY-4.0
-├── utils/                    # Diagrams and figures
-│   ├── main.jpg              # Overview figure
-│   └── tending.jpg           # Trend figure
-└── papers/                   # Optional: per-category paper lists
-```
+| Paradigm | Role of Exploration |
+|---|---|
+| **Test-Time Scaling (TTS)** | Self-consistency and other TTS techniques require diverse reasoning paths generated by exploration |
+| **Self-Improvement Loop** (Generate → Evaluate → Update) | Generation phase must include exploration, otherwise the model only repeats known content and the loop stagnates |
+| **RLVR Beyond Base Model** | Can RLVR truly escape the "invisible leash" of base model capabilities? Ongoing debate. |
+
+### The Debate: Can RL Escape Its Origin?
+
+| View | Supporting Work |
+|---|---|
+| ❌ **Cannot escape** — RLVR does not truly expand beyond base model capabilities | *The Invisible Leash: Why RLVR May or May Not Escape Its Origin* |
+| ✅ **Can escape**, but current methods underutilize RL's potential | *ProRL: Prolonged Reinforcement Learning Expands Reasoning Boundaries in Large Language Models* |
+
+### Open Questions
+
+- Is there really a tension between exploration and exploitation? Can both be improved?
+- Does pass@k truly represent model capability boundaries? Are there better metrics?
+- What exactly does exploration enhance — reasoning ability, problem-solving ability, or semantic diversity?
 
 ---
 
 ## Table of Contents
 
-- [1. Survey & Overview Papers](#1-survey--overview-papers)
-- [2. Probing Methods](#2-probing-methods)
-- [3. Causal Intervention & Knowledge Editing](#3-causal-intervention--knowledge-editing)
-- [4. Noise-based Exploration](#4-noise-based-exploration)
-- [5. Layer-wise Analysis & Function Specialization](#5-layer-wise-analysis--function-specialization)
-- [6. Representation Reading (Logit/Tuned Lens)](#6-representation-reading-logitlens--tuned-lens)
-- [7. Representation Engineering & Steering](#7-representation-engineering--steering)
-- [8. Robustness & Perturbation Sensitivity](#8-robustness--perturbation-sensitivity)
-- [9. Domain-specific Analysis (Math, Code, Reasoning)](#9-domain-specific-analysis-math-code-reasoning)
-- [Contributing](#contributing)
+- [1. Survey & Frameworks](#1-survey--frameworks)
+- [2. Token-Level Exploration](#2-token-level-exploration)
+- [3. Sequence / Response-Level Exploration](#3-sequence--response-level-exploration)
+- [4. Policy Distribution-Level Exploration](#4-policy-distribution-level-exploration)
+- [5. Semantic-Ignorant Exploration (Entropy / Temperature / Noise)](#5-semantic-ignorant-exploration-entropy--temperature--noise)
+- [6. Exploration in Specific Scenarios](#6-exploration-in-specific-scenarios)
+  - [6.1 RLVR (Math / Code)](#61-rlvr-math--code)
+  - [6.2 Unsupervised / Minimal Label Scenarios](#62-unsupervised--minimal-label-scenarios)
+  - [6.3 Creative Generation & Open-Ended Tasks](#63-creative-generation--open-ended-tasks)
+- [7. The Escape Debate: Can RL Surpass Base Model?](#7-the-escape-debate-can-rl-surpass-base-model)
+- [8. Related Topics](#8-related-topics)
+  - [8.1 Hidden State Noise & Layer-wise Analysis](#81-hidden-state-noise--layer-wise-analysis)
+  - [8.2 Rubric-based Training & Evaluation](#82-rubric-based-training--evaluation)
 
 ---
 
-## 1. Survey & Overview Papers
+## 1. Survey & Frameworks
 
-### 1.1 General Interpretability
-
-- **"Opportunities and Risks of LLM Factuality"** — *Anonymous* (2025)
-  [[Paper](https://arxiv.org/abs/...)]
-
-- **"The Second Half"** — *Shunyu Yao* (2025)
-  [[Blog](https://ysymyth.github.io/The-Second-Half/)]
-
-### 1.2 Mechanistic Interpretability
-
-- **"A Mathematical Framework for Transformer Circuits"** — *Elhage et al.* (2021)
-  [[Paper](https://transformer-circuits.pub/2021/framework/index.html)]
-
-- **"Toy Models of Superposition"** — *Elhage et al.* (2022)
-  [[Paper](https://transformer-circuits.pub/2022/toy_model/index.html)]
+- **"From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR"** — *(Work in progress)*
+  - *Systematic study of exploration capabilities in LLM RLVR training. Organizes the field around three dimensions: constructing exploration space, entropy-performance interaction, and performance improvement.*
 
 ---
 
-## 2. Probing Methods
+## 2. Token-Level Exploration
 
-- **"Understanding Intermediate Layers Using Linear Classifier Probes"** — *Alain & Bengio* (ICLR 2017)
-  [[Paper](https://arxiv.org/abs/1610.01644)]
+> Local, token-level diversity does not necessarily lead to answer-level diversity.
 
-- **"Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)"** — *Kim et al.* (ICML 2018)
-  [[Paper](https://arxiv.org/abs/1711.11279)]
+### 2.1 High-Entropy Token Targeting
 
-- **"Emergent World Representations: Exploring a Sequence Trained on a Synthetic Task"** — *Li et al.* (ICLR 2023)
-  [[Paper](https://arxiv.org/abs/2210.13382)]
+- **"Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning"**
+  - *Restricts policy updates to high-entropy tokens (top 20%). Avoids reward hacking by focusing updates on tokens where the model is genuinely uncertain.*
 
----
+### 2.2 Low-Probability Token Regularization
 
-## 3. Causal Intervention & Knowledge Editing
+- **"Low-probability Tokens Sustain Exploration in Reinforcement Learning with Verifiable Reward"** (lp-reg)
+  - *Focuses on logical connectors and other high-entropy tokens that may enable reasoning path branching. Uses low-probability regularization to amplify other low-probability tokens while eliminating noise amplification from the next token. Maintains exploration ability without explicitly encouraging exploration — reduces punishment instead.*
 
-- **"Locating and Editing Factual Associations in GPT"** — *Meng et al.* (NeurIPS 2022)
-  [[Paper](https://arxiv.org/abs/2202.05262)] [[Code](https://github.com/kmeng01/rome)]
+### 2.3 Policy Gradient Reshaping
 
-- **"Mass-Editing Memory in a Transformer"** — *Meng et al.* (ICML 2023)
-  [[Paper](https://arxiv.org/abs/2210.07229)] [[Code](https://github.com/kmeng01/memit)]
+- **"SIMKO: SIMPLE PASS@K POLICY OPTIMIZATION"**
+  - *Analyzes the root cause of insufficient exploration: the candidate token distribution is extremely sharp, with probability mass concentrated on the top-1 candidate. Redistributes probability mass from high-probability tokens via policy gradient modification, achieving exploration-exploitation balance.*
+  - *Difference from lp-reg: SIMKO redistributes probability mass from high-probability tokens; lp-reg allocates noise probability proportionally to high-probability tokens.*
 
-- **"Editing Factual Knowledge in Language Models"** — *De Cao et al.* (EMNLP 2021)
-  [[Paper](https://arxiv.org/abs/2104.08164)]
+### 2.4 Summary of Token-Level Methods
 
-- **"Transformer Feed-Forward Layers Are Key-Value Memories"** — *Geva et al.* (EMNLP 2021)
-  [[Paper](https://arxiv.org/abs/2012.14913)]
+| Method | Approach | Key Mechanism |
+|---|---|---|
+| Beyond 80/20 | Selective update | Update only high-entropy tokens |
+| lp-reg | Under-weighting regularization | Reduce penalty on low-probability tokens |
+| SIMKO | Gradient redistribution | Reshape token probability distribution |
 
-- **"Causal Analysis of Syntactic Agreement Mechanisms in Neural Language Models"** — *Finlayson et al.* (NAACL 2021)
-  [[Paper](https://aclanthology.org/2021.naacl-main.213/)]
-
----
-
-## 4. Noise-based Exploration
-
-> **Why this matters**: Injecting noise into hidden states is a clean causal intervention method — it directly measures how perturbations at different model depths affect downstream behavior, without changing model weights.
-
-### 4.1 Representation Perturbation
-
-- **"Causal Analysis of Syntactic Agreement Mechanisms in Neural Language Models"** — *Finlayson et al.* (NAACL 2021)
-  [[Paper](https://aclanthology.org/2021.naacl-main.213/)]
-  - *Methodology closest to hidden-state noise experiments: perturbing activations to locate functional processing units.*
-
-- **"Interpreting Neural Networks with Activation Patching"** — *Vig et al.* (2020)
-  [[Paper](https://arxiv.org/abs/2010.01610)]
-
-### 4.2 Adversarial / Robustness Noise
-
-- **"Explaining and Harnessing Adversarial Examples"** — *Goodfellow et al.* (ICLR 2015)
-  [[Paper](https://arxiv.org/abs/1412.6572)]
-
-- **"Intriguing Properties of Neural Networks"** — *Szegedy et al.* (ICLR 2014)
-  [[Paper](https://arxiv.org/abs/1312.6199)]
-
-### 4.3 Training with Hidden State Noise
-
-- **"Understanding the Difficulty of Training Deep Feedforward Neural Networks"** — *Glorot & Bengio* (AISTATS 2010)
-  [[Paper](https://proceedings.mlr.press/v9/glorot10a.html)]
-
-- **"Hidden State Noise Improves Exploration in Language Model Training"** — *(Your work)*
+> **Core insight**: The key to exploration-exploitation balance lies in **how to reshape the token distribution**. High-value candidate tokens should be elevated but without creating a "one-token-dominates-all" situation. Noise tokens are interference and should have their probability mass reduced without affecting other candidates. This perspective aligns with hidden state noise research — **adding noise is fundamentally perturbing the token distribution**.
 
 ---
 
-## 5. Layer-wise Analysis & Function Specialization
+## 3. Sequence / Response-Level Exploration
 
-### 5.1 Functional Segmentation
+- **"Parallel-R1: Towards Parallel Thinking via Reinforcement Learning"**
+  - *Extends multiple reasoning paths from one key token, then synthesizes all paths to derive the final answer.*
 
-- **"The Pile: Layer-wise Cooperation in Language Models"** — *Lepori et al.* (2023)
-  - *Finds adjacent layers have functional redundancy; cross-region (front/middle/back) differences are significant.*
+- **"DARLING: Diversity-Aware Reinforcement Learning"**
+  - *Trains a semantic classifier to cluster responses with the same semantics, introducing a semantic diversity reward signal.*
+  - ⚠️ *Potential issue: Clustering trap — coarse clustering may miss fine-grained diversity.*
 
-- **"Rethinking the Role of Scale for In-Context Learning"** — *Hao et al.* (2022)
-  [[Paper](https://arxiv.org/abs/2204.05032)]
-
-### 5.2 Hierarchical Feature Learning
-
-- **"Are Sixteen Heads Really Better Than One?"** — *Michel et al.* (NeurIPS 2019)
-  [[Paper](https://arxiv.org/abs/1905.10650)]
-
-- **"What Does BERT Look At? An Analysis of BERT's Attention"** — *Clark et al.* (BlackBoxNLP 2019)
-  [[Paper](https://aclanthology.org/W19-4828/)]
-
-### 5.3 Knowledge Specialization by Layer
-
-- **"Transformer Feed-Forward Layers Are Key-Value Memories"** — *Geva et al.* (EMNLP 2021) *
-  [[Paper](https://arxiv.org/abs/2012.14913)]
-
-- **"Locating and Editing Factual Associations in GPT"** — *Meng et al.* (NeurIPS 2022) *
-  [[Paper](https://arxiv.org/abs/2202.05262)]
-
-  *\* Cross-listed with Section 3.*
+- **"Enhancing Diversity in Large Language Models via Determinantal Point Processes"** (DQO)
+  - *Uses the volume spanned by embedding vectors in representation space to measure semantic diversity across a set of rollouts. DPP-based diversity reward.*
 
 ---
 
-## 6. Representation Reading (Logit Lens & Tuned Lens)
+## 4. Policy Distribution-Level Exploration
 
-- **"Interpreting GPT: the Logit Lens"** — *nostalgebraist* (2020, blog)
-  [[Blog](https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens)]
+- **"Risk-Sensitive RL for Alleviating Exploration Dilemmas in Large Language Models"**
+  - *Addresses bimodal distribution problems by shifting from sub-optimal peaks to optimal peaks. A risk-sensitive parameter controls the model's tendency to prioritize hard problems.*
+  - ⚠️ *Open question: What if hard problems are truly unsolvable, no matter how many attempts?*
 
-- **"Eliciting Latent Predictions from Transformers with the Tuned Lens"** — *Belrose et al.* (2023)
-  [[Paper](https://arxiv.org/abs/2303.08112)] [[Code](https://github.com/AlignmentResearch/tuned-lens)]
-
-- **"Transformer Visualization via Dictionary Learning: Contextual Embedding Alignment with the Next Token Distribution"** — *Dar et al.* (2023)
-
----
-
-## 7. Representation Engineering & Steering
-
-- **"Representation Engineering: A Top-Down Approach to AI Transparency"** — *Zou et al.* (2023)
-  [[Paper](https://arxiv.org/abs/2310.01405)]
-
-- **"Finding Neurons in Haystack: Automatic Steering of Language Models"** — *Li et al.* (2024)
-
-- **"StreamingLLM: Efficient Streaming Language Models with Attention Sinks"** — *Xiao et al.* (2024)
-  [[Paper](https://arxiv.org/abs/2309.17453)]
-
-- **"In-Context Vectors: Making In Context Learning More Effective and Controllable"** — *Liu et al.* (2024)
+- **"FlowRL: Matching Reward Distributions for LLM Reasoning"**
+  - *Uses a partition function to align the policy distribution with the true reward distribution, enabling more principled exploration.*
 
 ---
 
-## 8. Robustness & Perturbation Sensitivity
+## 5. Semantic-Ignorant Exploration (Entropy / Temperature / Noise)
 
-- **"Characterizing Large Language Model Robustness via Hidden State Perturbation"** — *(Recent work)*
+> Methods that increase generation randomness without considering semantic information — solving generation-level diversity issues.
 
-- **"Adversarial Attacks on Neural Networks: A Survey"** — *Chakraborty et al.* (2018)
+### 5.1 Entropy-Based Methods
 
-- **"LoRA: Low-Rank Adaptation of Large Language Models"** — *Hu et al.* (ICLR 2022)
-  [[Paper](https://arxiv.org/abs/2106.09685)]
+- **"Embarrassingly Simple Self-Distillation Improves Code Generation"**
+  - *Fine-grained temperature tuning to balance exploration and exploitation.*
 
-- **"Towards Understanding Robustness Against Hidden State Perturbations in Transformers"** — *(Work in progress)*
+### 5.2 Noise-Based Perturbation
 
----
+- **Hidden State Noise Injection (Training Phase)** — *(Your work)*
+  - *Adding Gaussian noise to specific layers (layer 5, 16, 25, or all layers) during GRPO training. Layer 5 noise achieves +18.8pp pass@1 improvement while maintaining healthy entropy; all-layer noise boosts performance (+18.4pp) but causes entropy collapse (0.055).*
 
-## 9. Domain-specific Analysis (Math, Code, Reasoning)
+- **Hidden State Noise Injection (Inference Phase)** — *(Your work)*
+  - *Perturbing hidden states during inference to study layer-wise function specialization. 97% top-1 token flip rate but only ~4% answer-level change, suggesting strong self-correction ability.*
 
-- **"Chain-of-Thought Prompting Elicits Reasoning in Large Language Models"** — *Wei et al.* (NeurIPS 2022)
-  [[Paper](https://arxiv.org/abs/2201.11903)]
+### 5.3 Core Insight
 
-- **"Google's Gemma 2: Improving Open Language Models at Scale"** — *Gemma Team* (2024)
-
-- **"Training Verifiers to Solve Math Word Problems"** — *Cobbe et al.* (2021)
-  [[Paper](https://arxiv.org/abs/2110.14168)]
-
-- **"Let's Verify Step by Step"** — *Lightman et al.* (OpenAI 2023)
-  [[Paper](https://arxiv.org/abs/2305.20050)]
+> Exploration and exploitation ultimately come down to **how to reshape the token distribution**:
+> - High-value candidate tokens → elevate probability, but avoid monopolization
+> - Noise tokens → reduce probability mass without interfering with other candidates
+> - Hidden state noise → fundamentally a controlled perturbation of the token distribution
 
 ---
 
-## Contributing
+## 6. Exploration in Specific Scenarios
 
-Contributions are welcome! To add a paper:
+### 6.1 RLVR (Math / Code)
 
-1. Find the appropriate category in the Table of Contents.
-2. Add an entry in the following format:
+> Sparse reward scenarios where exploration helps find better answers and solve harder problems.
 
-```markdown
-- **"Paper Title"** — *Author et al.* (Conference Year)
-  [[Paper](https://...)] [[Code](https://github.com/...)]
-```
+- **Training-phase noise: Layer 5 only** achieves best balance (+18.8pp pass@1, healthy entropy)
+- **Training-phase noise: All-layer** achieves best pass@1 (+18.4pp) but causes entropy collapse (0.055)
+- **Inference-phase noise: Layer 16** shows slightly positive effect (helped > hurt, 4.7% vs 4.0%)
 
-3. Open a pull request.
+### 6.2 Unsupervised / Minimal Label Scenarios
 
-If you are unsure about the category, open an issue for discussion.
+- **"Evolving Language Models without Labels: Majority Drives Selection, Novelty Promotes Variation"**
+  - *Inspiration: Genetic variation. Mechanism: Majority voting + modified reward to encourage exploration + asymmetric clipping for larger strategy variation + entropy regularization for output diversity.*
+
+- **"The Path of Self-Evolving Large Language Models: Achieving Data-Efficient Learning via Intrinsic Feedback"**
+  - *Combines curriculum learning with self-awareness, introducing partial external data. Lets the model learn problems that match its current capability level. External data source: Qwen2.5-Coder-32B.*
+
+### 6.3 Creative Generation & Open-Ended Tasks
+
+- **"Jointly Reinforcing Diversity and Quality in Language Model Generations"**
+  - *Uses Nexusflow/Atheme-RM-8B for raw reward, with diversity reward from clustering in creative generation scenarios.*
+
+- **"Breaking the Exploration Bottleneck: Rubric-Scaffolded Reinforcement Learning for General LLM Reasoning"**
+  - *Adds an external rubric-based scaffold in open-ended tasks. Different scaffolds across groups ensure sufficient diversity; inter-step scaffold decay allows the model to gradually reduce scaffold dependence and truly internalize exploration. Redefines reward based on external criteria.*
+
+---
+
+## 7. The Escape Debate: Can RL Surpass Base Model?
+
+| Position | Argument | Key Work |
+|---|---|---|
+| ❌ **Cannot escape** | RLVR merely selects and aggregates base model capabilities; does not create new ones | *The Invisible Leash* |
+| ✅ **Can escape** | Current methods under-exploit RL; prolonged training with high-entropy methods (DAPO-like) keeps improving pass@k | *ProRL* |
+| 🤷 **Conditional** | Depends on exploration quality; better exploration mechanisms may unlock new capabilities | *(Active research)* |
+
+### Open Questions
+
+- Why does pass@k keep improving with prolonged training in DAPO-style methods?
+- What would it take for general task reasoning (not just math/code) to benefit from exploration?
+- Can models learn completely new styles (e.g., telling a joke in a new style) without supervised examples?
+
+---
+
+## 8. Related Topics
+
+### 8.1 Hidden State Noise & Layer-wise Analysis
+
+> Hidden state noise as a mechanism for training-phase exploration and inference-phase interpretability.
+
+| Work | Key Finding |
+|---|---|
+| **ROME** (Meng et al., 2022) | Middle layers (~1/3-2/3) are core for factual association; front layers handle subject identification, back layers handle output |
+| **Finlayson et al.** (NAACL 2021) | Perturbing hidden states to locate syntactic agreement processing — closest methodology to noise-based exploration |
+| **Training Noise Experiments** (Your work) | Layer 5 noise achieves best trade-off; all-layer noise causes entropy collapse |
+| **Inference Noise Experiments** (Your work) | 97% token flip, ~4% answer change — supports gradual functional differentiation |
+
+### 8.2 Rubric-based Training & Evaluation
+
+> For exploration in open-ended tasks without ground-truth answers.
+
+- **"Awesome-Rubrics"** — *FreedomIntelligence*
+  [[GitHub](https://github.com/FreedomIntelligence/Awesome-Rubrics)]
+  - *Curated reading list on rubric-based evaluation, reward modeling, and post-training.*
+
+---
+
+## Open Questions & Future Directions
+
+- **Is there a principled upper bound** on what exploration can achieve given a fixed base model?
+- **How do token-level and sequence-level exploration interact** — does better token diversity always translate to better answer diversity?
+- **Can we design noise schedules** for hidden state perturbation during training that avoid entropy collapse while maintaining exploration benefits?
+- **Does the "optimal exploration layer" vary by task type** (math vs code vs creative)?
+- **Can exploration mechanisms discovered in RLVR transfer** to unsupervised or weakly supervised settings?
 
 ---
 
