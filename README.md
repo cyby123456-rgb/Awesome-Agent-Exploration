@@ -115,29 +115,43 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 - **"From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR"** — *(Work in progress)*
   - *Systematic study of exploration capabilities in LLM RLVR training. Organizes the field around three dimensions: constructing exploration space, entropy-performance interaction, and performance improvement.*
 
+- **"Understanding R1-Zero-Like Training: A Critical Perspective"**
+  - *Argues that RL training effects are largely dependent on base model capability — RL alone may not bring genuine capability improvement to the model.*
+
 ---
 
 ## 2. Token-Level Exploration
 
 > Local, token-level diversity does not necessarily lead to answer-level diversity.
 
-### 2.1 High-Entropy Token Targeting
+### 2.1 Entropy-Aware Mechanisms
+
+- **"Reasoning with Exploration: An Entropy Perspective on Reinforcement Learning for LLMs"**
+  - *Explores LLM reasoning from an entropy perspective, analyzing how entropy dynamics during RL training affect exploration efficiency.*
+
+- **"The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models"**
+  - *Investigates the fundamental entropy mechanisms underlying RL for reasoning LMs, offering insights into how entropy drives exploration.*
+
+- **"DAPO: An Open-Source LLM Reinforcement Learning System at Scale"**
+  - *Proposes key techniques including clip-higher, dynamic sampling, and token-level policy gradient loss to maintain high entropy during RL training.*
+
+### 2.2 High-Entropy Token Targeting
 
 - **"Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning"**
   - *Restricts policy updates to high-entropy tokens (top 20%). Avoids reward hacking by focusing updates on tokens where the model is genuinely uncertain.*
 
-### 2.2 Low-Probability Token Regularization
+### 2.3 Low-Probability Token Regularization
 
 - **"Low-probability Tokens Sustain Exploration in Reinforcement Learning with Verifiable Reward"** (lp-reg)
   - *Focuses on logical connectors and other high-entropy tokens that may enable reasoning path branching. Uses low-probability regularization to amplify other low-probability tokens while eliminating noise amplification from the next token. Maintains exploration ability without explicitly encouraging exploration — reduces punishment instead.*
 
-### 2.3 Policy Gradient Reshaping
+### 2.4 Policy Gradient Reshaping
 
 - **"SIMKO: SIMPLE PASS@K POLICY OPTIMIZATION"**
   - *Analyzes the root cause of insufficient exploration: the candidate token distribution is extremely sharp, with probability mass concentrated on the top-1 candidate. Redistributes probability mass from high-probability tokens via policy gradient modification, achieving exploration-exploitation balance.*
   - *Difference from lp-reg: SIMKO redistributes probability mass from high-probability tokens; lp-reg allocates noise probability proportionally to high-probability tokens.*
 
-### 2.4 Summary of Token-Level Methods
+### 2.5 Summary of Token-Level Methods
 
 | Method | Approach | Key Mechanism |
 |---|---|---|
@@ -150,6 +164,9 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 ---
 
 ## 3. Sequence / Response-Level Exploration
+
+- **"Outcome-based Exploration for LLM Reasoning"**
+  - *Explores outcome-level mechanisms for promoting exploration in LLM reasoning tasks.*
 
 - **"Parallel-R1: Towards Parallel Thinking via Reinforcement Learning"**
   - *Extends multiple reasoning paths from one key token, then synthesizes all paths to derive the final answer.*
@@ -164,6 +181,9 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 ---
 
 ## 4. Policy Distribution-Level Exploration
+
+- **"Beyond Markovian: Reflective Exploration via Bayes-Adaptive RL for LLM Reasoning"**
+  - *Extends beyond the Markovian assumption by incorporating reflective exploration through a Bayes-adaptive framework, enabling the model to learn from past exploration attempts.*
 
 - **"Risk-Sensitive RL for Alleviating Exploration Dilemmas in Large Language Models"**
   - *Addresses bimodal distribution problems by shifting from sub-optimal peaks to optimal peaks. A risk-sensitive parameter controls the model's tendency to prioritize hard problems.*
@@ -183,7 +203,26 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 - **"Embarrassingly Simple Self-Distillation Improves Code Generation"**
   - *Fine-grained temperature tuning to balance exploration and exploitation.*
 
-### 5.2 Noise-Based Perturbation
+- **"Detecting Hallucinations in Large Language Models Using Semantic Entropy"**
+  - *Uses entropy over semantically equivalent generations to detect hallucinations — connects semantic diversity to model confidence and reliability.*
+
+### 5.2 Entropy- & Probability-Based Methods
+
+- **"The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models"**
+  - *Investigates how entropy-based training dynamics influence reasoning capabilities in LLMs.*
+
+- **"Reasoning with Exploration: An Entropy Perspective on Reinforcement Learning for LLMs"**
+  - *Analyzes the role of token/sequence entropy in shaping exploration behavior during RLVR training.*
+
+### 5.3 Curiosity & Intrinsic Motivation
+
+- **"CDE: Curiosity-Driven Exploration for Efficient Reinforcement Learning in Large Language Models"**
+  - *Introduces curiosity signals (PPL of generated tokens, variance across critic heads) as exploration rewards in PPO. Novel mechanism but limited empirical gains over PPO baselines.*
+
+- **"Navigate the Unknown: Enhancing LLM Reasoning with Intrinsic Motivation Guided Exploration"**
+  - *Uses intrinsic motivation as a guiding signal to encourage exploration in unfamiliar reasoning spaces.*
+
+### 5.4 Noise-Based Perturbation
 
 - **Hidden State Noise Injection (Training Phase)** — *(Your work)*
   - *Adding Gaussian noise to specific layers (layer 5, 16, 25, or all layers) during GRPO training. Layer 5 noise achieves +18.8pp pass@1 improvement while maintaining healthy entropy; all-layer noise boosts performance (+18.4pp) but causes entropy collapse (0.055).*
@@ -206,11 +245,23 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 
 > Sparse reward scenarios where exploration helps find better answers and solve harder problems.
 
+- **"RL-Plus: Countering Capability Boundary Collapse of LLMs in Reinforcement Learning with Hybrid-policy Optimization"**
+  - *Addresses the problem of capability boundary collapse during RL training through hybrid-policy optimization that maintains exploration diversity.*
+
+- **"DeepSearch: Overcome the Bottleneck of Reinforcement Learning with Verifiable Rewards via Monte Carlo Tree Search"**
+  - *Integrates MCTS with RLVR to systematically explore reasoning paths beyond those discovered by standard sampling.*
+
+- **"The Role of Exploration Modules in Small Language Models for Knowledge Graph Question Answering"**
+  - *Studies how explicit exploration modules benefit SLMs in specialized KGQA tasks, providing evidence that exploration mechanisms transfer to smaller models.*
+
 - **Training-phase noise: Layer 5 only** achieves best balance (+18.8pp pass@1, healthy entropy)
 - **Training-phase noise: All-layer** achieves best pass@1 (+18.4pp) but causes entropy collapse (0.055)
 - **Inference-phase noise: Layer 16** shows slightly positive effect (helped > hurt, 4.7% vs 4.0%)
 
 ### 6.2 Unsupervised / Minimal Label Scenarios
+
+- **"Post-training Large Language Models for Diverse High-Quality Responses"**
+  - *Explores post-training strategies that encourage the model to generate diverse, high-quality outputs with minimal dependence on labeled data.*
 
 - **"Evolving Language Models without Labels: Majority Drives Selection, Novelty Promotes Variation"**
   - *Inspiration: Genetic variation. Mechanism: Majority voting + modified reward to encourage exploration + asymmetric clipping for larger strategy variation + entropy regularization for output diversity.*
@@ -232,7 +283,7 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 
 | Position | Argument | Key Work |
 |---|---|---|
-| ❌ **Cannot escape** | RLVR merely selects and aggregates base model capabilities; does not create new ones | *The Invisible Leash* |
+| ❌ **Cannot escape** | RLVR merely selects and aggregates base model capabilities; does not create new ones | *The Invisible Leash*, *Understanding R1-Zero-Like Training* |
 | ✅ **Can escape** | Current methods under-exploit RL; prolonged training with high-entropy methods (DAPO-like) keeps improving pass@k | *ProRL* |
 | 🤷 **Conditional** | Depends on exploration quality; better exploration mechanisms may unlock new capabilities | *(Active research)* |
 
@@ -246,7 +297,12 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 
 ## 8. Related Topics
 
-### 8.1 Hidden State Noise & Layer-wise Analysis
+### 8.1 Model Ensembling
+
+- **"Weight Ensembling Improves Reasoning in Language Models"**
+  - *Shows that combining weights from multiple training runs can improve reasoning performance — a lightweight exploration-free alternative to explicit exploration strategies.*
+
+### 8.2 Hidden State Noise & Layer-wise Analysis
 
 > Hidden state noise as a mechanism for training-phase exploration and inference-phase interpretability.
 
@@ -257,7 +313,7 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 | **Training Noise Experiments** (Your work) | Layer 5 noise achieves best trade-off; all-layer noise causes entropy collapse |
 | **Inference Noise Experiments** (Your work) | 97% token flip, ~4% answer change — supports gradual functional differentiation |
 
-### 8.2 Rubric-based Training & Evaluation
+### 8.3 Rubric-based Training & Evaluation
 
 > For exploration in open-ended tasks without ground-truth answers.
 
