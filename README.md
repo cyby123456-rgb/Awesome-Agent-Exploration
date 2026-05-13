@@ -112,10 +112,12 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 
 ## 1. Survey & Frameworks
 
-- **"From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR"** — *(Work in progress)*
+- **"From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR"** — *(Work in progress)* [`random-exploration`]
+  [[Paper](TBD)]
   - *Systematic study of exploration capabilities in LLM RLVR training. Organizes the field around three dimensions: constructing exploration space, entropy-performance interaction, and performance improvement.*
 
-- **"Understanding R1-Zero-Like Training: A Critical Perspective"**
+- **"Understanding R1-Zero-Like Training: A Critical Perspective"** [`rl-limitations`]
+  [[Paper](TBD)]
   - *Argues that RL training effects are largely dependent on base model capability — RL alone may not bring genuine capability improvement to the model.*
 
 ---
@@ -127,35 +129,45 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 ### 2.1 Entropy-Aware Mechanisms
 
 - **"Reasoning with Exploration: An Entropy Perspective on Reinforcement Learning for LLMs"**
+  [[Paper](TBD)]
   - *Explores LLM reasoning from an entropy perspective, analyzing how entropy dynamics during RL training affect exploration efficiency.*
 
-- **"The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models"**
+- **"The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models"** [`exploration-llm`]
+  [[Paper](TBD)]
   - *Investigates the fundamental entropy mechanisms underlying RL for reasoning LMs, offering insights into how entropy drives exploration.*
 
 - **"DAPO: An Open-Source LLM Reinforcement Learning System at Scale"**
+  [[Paper](https://arxiv.org/abs/2503.14442)]
   - *Proposes key techniques including clip-higher, dynamic sampling, and token-level policy gradient loss to maintain high entropy during RL training.*
 
 ### 2.2 High-Entropy Token Targeting
 
-- **"Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning"**
+- **"Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning"** [`exploration-path`]
+  [[Paper](TBD)]
   - *Restricts policy updates to high-entropy tokens (top 20%). Avoids reward hacking by focusing updates on tokens where the model is genuinely uncertain.*
 
 ### 2.3 Low-Probability Token Regularization
 
-- **"Low-probability Tokens Sustain Exploration in Reinforcement Learning with Verifiable Reward"** (lp-reg)
+- **"Low-probability Tokens Sustain Exploration in Reinforcement Learning with Verifiable Reward"** (lp-reg) [`exploration-llm`]
+  [[Paper](TBD)]
   - *Focuses on logical connectors and other high-entropy tokens that may enable reasoning path branching. Uses low-probability regularization to amplify other low-probability tokens while eliminating noise amplification from the next token. Maintains exploration ability without explicitly encouraging exploration — reduces punishment instead.*
 
 ### 2.4 Policy Gradient Reshaping
 
-- **"SIMKO: SIMPLE PASS@K POLICY OPTIMIZATION"**
+- **"SIMKO: SIMPLE PASS@K POLICY OPTIMIZATION"** [`exploration-llm`]
+  [[Paper](TBD)]
   - *Analyzes the root cause of insufficient exploration: the candidate token distribution is extremely sharp, with probability mass concentrated on the top-1 candidate. Redistributes probability mass from high-probability tokens via policy gradient modification, achieving exploration-exploitation balance.*
   - *Difference from lp-reg: SIMKO redistributes probability mass from high-probability tokens; lp-reg allocates noise probability proportionally to high-probability tokens.*
 
 ### 2.5 Summary of Token-Level Methods
-- **"LEARNING DYNAMICS OF LLM FINETUNING"**
-- **"Pass@k Training for Adaptively Balancing Exploration and Exploitation of Large Reasoning Models"**
-- **"Pass@K Policy Optimization: Solving Harder Reinforcement Learning Problems"**
-- **"TRE: Encouraging Exploration in the Trust Region"**
+- **"LEARNING DYNAMICS OF LLM FINETUNING"** [`exploration-llm`]
+  [[Paper](TBD)]
+- **"Pass@k Training for Adaptively Balancing Exploration and Exploitation of Large Reasoning Models"** [`exploration-llm`]
+  [[Paper](TBD)]
+- **"Pass@K Policy Optimization: Solving Harder Reinforcement Learning Problems"** [`exploration-llm`]
+  [[Paper](TBD)]
+- **"TRE: Encouraging Exploration in the Trust Region"** [`exploration-llm`]
+  [[Paper](TBD)]
 
 
 | Method | Approach | Key Mechanism |
@@ -170,34 +182,43 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 
 ## 3. Sequence / Response-Level Exploration
 
-- **"Outcome-based Exploration for LLM Reasoning"**
+- **"Outcome-based Exploration for LLM Reasoning"** [`exploration-path`]
+  [[Paper](TBD)]
   - *Explores outcome-level mechanisms for promoting exploration in LLM reasoning tasks.*
 
 - **"Parallel-R1: Towards Parallel Thinking via Reinforcement Learning"**
+  [[Paper](TBD)]
   - *Extends multiple reasoning paths from one key token, then synthesizes all paths to derive the final answer.*
 
 - **"DARLING: Diversity-Aware Reinforcement Learning"**
+  [[Paper](TBD)]
   - *Trains a semantic classifier to cluster responses with the same semantics, introducing a semantic diversity reward signal.*
   - ⚠️ *Potential issue: Clustering trap — coarse clustering may miss fine-grained diversity.*
 
 - **"Enhancing Diversity in Large Language Models via Determinantal Point Processes"** (DQO)
+  [[Paper](TBD)]
   - *Uses the volume spanned by embedding vectors in representation space to measure semantic diversity across a set of rollouts. DPP-based diversity reward.*
 
 ---
 
 ## 4. Policy Distribution-Level Exploration
-- **"Spectral Bellman Method: Unifying Representation and Exploration in RL"**
-- **"Distribution-Centric Policy Optimization Dominates Exploration-Exploitation Trade-off"**
+- **"Spectral Bellman Method: Unifying Representation and Exploration in RL"** [`exploration-llm`]
+  [[Paper](TBD)]
+- **"Distribution-Centric Policy Optimization Dominates Exploration-Exploitation Trade-off"** [`exploration-llm`]
+  [[Paper](TBD)]
 
 
-- **"Beyond Markovian: Reflective Exploration via Bayes-Adaptive RL for LLM Reasoning"**
+- **"Beyond Markovian: Reflective Exploration via Bayes-Adaptive RL for LLM Reasoning"** [`random-exploration`]
+  [[Paper](TBD)]
   - *Extends beyond the Markovian assumption by incorporating reflective exploration through a Bayes-adaptive framework, enabling the model to learn from past exploration attempts.*
 
-- **"Risk-Sensitive RL for Alleviating Exploration Dilemmas in Large Language Models"**
+- **"Risk-Sensitive RL for Alleviating Exploration Dilemmas in Large Language Models"** [`risk-sensitive`] [`exploration-path`]
+  [[Paper](TBD)]
   - *Addresses bimodal distribution problems by shifting from sub-optimal peaks to optimal peaks. A risk-sensitive parameter controls the model's tendency to prioritize hard problems.*
   - ⚠️ *Open question: What if hard problems are truly unsolvable, no matter how many attempts?*
 
 - **"FlowRL: Matching Reward Distributions for LLM Reasoning"**
+  [[Paper](TBD)]
   - *Uses a partition function to align the policy distribution with the true reward distribution, enabling more principled exploration.*
 
 ---
@@ -209,41 +230,58 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 ### 5.1 Entropy-Based Methods
 
 - **"Embarrassingly Simple Self-Distillation Improves Code Generation"**
+  [[Paper](TBD)]
   - *Fine-grained temperature tuning to balance exploration and exploitation.*
 
-- **"Detecting Hallucinations in Large Language Models Using Semantic Entropy"**
+- **"Detecting Hallucinations in Large Language Models Using Semantic Entropy"** [`semantic-diversity`]
+  [[Paper](TBD)]
   - *Uses entropy over semantically equivalent generations to detect hallucinations — connects semantic diversity to model confidence and reliability.*
 
 ### 5.2 Entropy- & Probability-Based Methods
-- **"The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models"**
-- **"Revisiting Entropy in Reinforcement Learning for Large Reasoning Models"**
-- **"Decomposing the Entropy-Performance Exchange: The Missing Keys to Unlocking Effective Reinforcement Learning"**
-- **"SEED-GRPO: Semantic Entropy Enhanced GRPO for Uncertainty-Aware Policy Optimization"**
-- **"ENTROPY-PRESERVING REINFORCEMENT LEARNING"**
+- **"The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models"** [`exploration-llm`]
+  [[Paper](TBD)]
+- **"Revisiting Entropy in Reinforcement Learning for Large Reasoning Models"** [`exploration-llm`]
+  [[Paper](TBD)]
+- **"Decomposing the Entropy-Performance Exchange: The Missing Keys to Unlocking Effective Reinforcement Learning"** [`exploration-llm`]
+  [[Paper](TBD)]
+- **"SEED-GRPO: Semantic Entropy Enhanced GRPO for Uncertainty-Aware Policy Optimization"** [`exploration-path`]
+  [[Paper](TBD)]
+- **"ENTROPY-PRESERVING REINFORCEMENT LEARNING"** [`exploration-llm`]
+  [[Paper](TBD)]
 
 
-- **"The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models"**
+- **"The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models"** [`exploration-llm`]
+  [[Paper](TBD)]
   - *Investigates how entropy-based training dynamics influence reasoning capabilities in LLMs.*
 
 - **"Reasoning with Exploration: An Entropy Perspective on Reinforcement Learning for LLMs"**
+  [[Paper](TBD)]
   - *Analyzes the role of token/sequence entropy in shaping exploration behavior during RLVR training.*
 
 ### 5.3 Curiosity & Intrinsic Motivation
 
-- **"CDE: Curiosity-Driven Exploration for Efficient Reinforcement Learning in Large Language Models"**
+- **"CDE: Curiosity-Driven Exploration for Efficient Reinforcement Learning in Large Language Models"** [`random-exploration`]
+  [[Paper](TBD)]
   - *Introduces curiosity signals (PPL of generated tokens, variance across critic heads) as exploration rewards in PPO. Novel mechanism but limited empirical gains over PPO baselines.*
 
-- **"Navigate the Unknown: Enhancing LLM Reasoning with Intrinsic Motivation Guided Exploration"**
+- **"Navigate the Unknown: Enhancing LLM Reasoning with Intrinsic Motivation Guided Exploration"** [`exploration-path`]
+  [[Paper](TBD)]
   - *Uses intrinsic motivation as a guiding signal to encourage exploration in unfamiliar reasoning spaces.*
 
 ### 5.4 Noise-Based Perturbation
-- **"Exploration via Feature Perturbation in Contextual Bandits"**
+- **"Exploration via Feature Perturbation in Contextual Bandits"** [`feature-perturbation`]
+  [[Paper](TBD)]
   - *加噪声也算是一种特征扰动。从实验结果来看在所有层和10%加噪声可以超越grpo性能*
-- **"NOISY NETWORKS FOR EXPLORATION"**
-- **"Parameter Space Noise for Exploration"**
-- **"NoisyGRPO: Incentivizing Multimodal CoTReasoning via Noise Injection and Bayesian Estimation"**
-- **"Learning to Explore with Parameter-Space Noise: A Deep Dive into Parameter-Space Noise for Reinforcement Learning with Verifiable Rewards"**
-- **"Evolution Strategies as a Scalable Alternative to Reinforcement Learning"**
+- **"NOISY NETWORKS FOR EXPLORATION"** [`noisy-net`]
+  [[Paper](TBD)]
+- **"Parameter Space Noise for Exploration"** [`noisy-net`]
+  [[Paper](TBD)]
+- **"NoisyGRPO: Incentivizing Multimodal CoTReasoning via Noise Injection and Bayesian Estimation"** [`noisy-net`]
+  [[Paper](TBD)]
+- **"Learning to Explore with Parameter-Space Noise: A Deep Dive into Parameter-Space Noise for Reinforcement Learning with Verifiable Rewards"** [`noisy-net`]
+  [[Paper](TBD)]
+- **"Evolution Strategies as a Scalable Alternative to Reinforcement Learning"** [`noisy-net`]
+  [[Paper](TBD)]
 
 
 - **Hidden State Noise Injection (Training Phase)** — *(Your work)*
@@ -264,36 +302,52 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 ## 6. Exploration in Specific Scenarios
 
 ### 6.1 RLVR (Math / Code)
-- **"HINT: Helping Ineffective rollouts Navigate Towards effectiveness"**
+- **"HINT: Helping Ineffective rollouts Navigate Towards effectiveness"** [`exploration-path`]
+  [[Paper](TBD)]
   - *给提示还是直接给答案能够帮助探索？*
-- **"The Path of Self-Evolving Large Language Models: Achieving Data-Eﬃcient Learning via Intrinsic Feedback"**
-- **"The Art of Scaling Reinforcement Learning Compute for LLMs"**
+- **"The Path of Self-Evolving Large Language Models: Achieving Data-Eﬃcient Learning via Intrinsic Feedback"** [`exploration-llm`]
+  [[Paper](TBD)]
+- **"The Art of Scaling Reinforcement Learning Compute for LLMs"** [`rl-limitations`]
+  [[Paper](TBD)]
   - *或许可以思考如何评估模型的效果*
-- **"Scaf-GRPO: Scaffolded Group Relative Policy Optimization for Enhancing LLM Reasoning"**
-- **"Representation-Based Exploration for Language Models: From Test-Time to Post-Training"**
-- **"Do Not Step Into the Same River Twice: Learning to Reason from Trial and Error"**
-- **"SCHEDULING YOUR LLM REINFORCEMENT LEARNING WITH REASONING TREES"**
-- **"Goal-Conditioned Reinforcement Learning: Problems and Solutions"**
-- **"MINER: Mining Intrinsic Mastery for Data-Efficient RL in Large Reasoning Models"**
-- **"Adaptive Ability Decomposing for Unlocking Large Reasoning Model Effective Reinforcement Learning"**
-- **"POPE: Learning to Reason on Hard Problems via Privileged On-Policy Exploration"**
+- **"Scaf-GRPO: Scaffolded Group Relative Policy Optimization for Enhancing LLM Reasoning"** [`exploration-path`]
+  [[Paper](TBD)]
+- **"Representation-Based Exploration for Language Models: From Test-Time to Post-Training"** [`exploration-path`]
+  [[Paper](TBD)]
+- **"Do Not Step Into the Same River Twice: Learning to Reason from Trial and Error"** [`exploration-path`]
+  [[Paper](TBD)]
+- **"SCHEDULING YOUR LLM REINFORCEMENT LEARNING WITH REASONING TREES"** [`exploration-path`]
+  [[Paper](TBD)]
+- **"Goal-Conditioned Reinforcement Learning: Problems and Solutions"** [`exploration-path`]
+  [[Paper](TBD)]
+- **"MINER: Mining Intrinsic Mastery for Data-Efficient RL in Large Reasoning Models"** [`exploration-path`]
+  [[Paper](TBD)]
+- **"Adaptive Ability Decomposing for Unlocking Large Reasoning Model Effective Reinforcement Learning"** [`exploration-llm`]
+  [[Paper](TBD)]
+- **"POPE: Learning to Reason on Hard Problems via Privileged On-Policy Exploration"** [`exploration-llm`]
+  [[Paper](TBD)]
 
 
 > Sparse reward scenarios where exploration helps find better answers and solve harder problems.
 
 - **"RL-Plus: Countering Capability Boundary Collapse of LLMs in Reinforcement Learning with Hybrid-policy Optimization"**
+  [[Paper](TBD)]
   - *Addresses the problem of capability boundary collapse during RL training through hybrid-policy optimization that maintains exploration diversity.*
 
 - **"DeepSearch: Overcome the Bottleneck of Reinforcement Learning with Verifiable Rewards via Monte Carlo Tree Search"**
+  [[Paper](TBD)]
   - *Integrates MCTS with RLVR to systematically explore reasoning paths beyond those discovered by standard sampling.*
 
-- **"The Role of Exploration Modules in Small Language Models for Knowledge Graph Question Answering"**
+- **"The Role of Exploration Modules in Small Language Models for Knowledge Graph Question Answering"** [`exploration-path`]
+  [[Paper](TBD)]
   - *Studies how explicit exploration modules benefit SLMs in specialized KGQA tasks, providing evidence that exploration mechanisms transfer to smaller models.*
 
 - **"RLVE: Scaling Up Reinforcement Learning for Language Models with Adaptive Verifiable Environments"**
+  [[Paper](TBD)]
   - *Exploration through adaptive difficulty scaling in verifiable environments during RL training.*
 
 - **"Differential Smoothing Mitigates Sharpening and Improves LLM Reasoning"**
+  [[Paper](TBD)]
   - *Addresses the sharpening problem in RL training; differential smoothing helps maintain exploration diversity and improves reasoning performance.*
 
 - **Training-phase noise: Layer 5 only** achieves best balance (+18.8pp pass@1, healthy entropy)
@@ -301,46 +355,68 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 - **Inference-phase noise: Layer 16** shows slightly positive effect (helped > hurt, 4.7% vs 4.0%)
 
 ### 6.2 Unsupervised / Minimal Label Scenarios
-- **"Learn the Ropes, Then Trust the Wins: Self-imitation with Progressive Exploration for Agentic Reinforcement Learning"**
+- **"Learn the Ropes, Then Trust the Wins: Self-imitation with Progressive Exploration for Agentic Reinforcement Learning"** [`exploration-llm`]
+  [[Paper](TBD)]
 
 
-- **"Post-training Large Language Models for Diverse High-Quality Responses"**
+- **"Post-training Large Language Models for Diverse High-Quality Responses"** [`random-exploration`]
+  [[Paper](TBD)]
   - *Explores post-training strategies that encourage the model to generate diverse, high-quality outputs with minimal dependence on labeled data.*
 
-- **"Evolving Language Models without Labels: Majority Drives Selection, Novelty Promotes Variation"**
+- **"Evolving Language Models without Labels: Majority Drives Selection, Novelty Promotes Variation"** [`exploration-path`]
+  [[Paper](TBD)]
   - *Inspiration: Genetic variation. Mechanism: Majority voting + modified reward to encourage exploration + asymmetric clipping for larger strategy variation + entropy regularization for output diversity.*
 
-- **"The Path of Self-Evolving Large Language Models: Achieving Data-Efficient Learning via Intrinsic Feedback"**
+- **"The Path of Self-Evolving Large Language Models: Achieving Data-Efficient Learning via Intrinsic Feedback"** [`exploration-path`]
+  [[Paper](TBD)]
   - *Combines curriculum learning with self-awareness, introducing partial external data. Lets the model learn problems that match its current capability level. External data source: Qwen2.5-Coder-32B.*
 
 ### 6.3 Creative Generation & Open-Ended Tasks
-- **"DIVERSITY-INCENTIVIZED EXPLORATION FOR VERSATILE REASONING"**
-- **"Reasoning Path Divergence: A New Metric and Curation Strategy to Unlock LLM Diverse Thinking"**
-- **"Diversity-Aware Policy Optimization for Large Language Model Reasoning"**
-- **"SEMANTIC UNCERTAINTY: LINGUISTIC INVARIANCES FOR UNCERTAINTY ESTIMATION IN NATURAL LANGUAGE GENERATION"**
-- **"Diverse Preference Learning for Capabilities and Alignment"**
-- **"Diversity is All You Need: Learning Skills without a Reward Function"**
-- **"Diversity-Driven Exploration Strategy for Deep Reinforcement Learning"**
-- **"EDGE-GRPO: Entropy-Driven GRPO with Guided Error Correction for Advantage Diversity"**
-- **"Intent Factored Generation: Unleashing the Diversity in Your Language Model"**
-- **"Evaluating the Diversity and Quality of LLM Generated Content"**
-- **"QUDsim: Quantifying Discourse Similarities in LLM-Generated Text"**
-- **"DRA-GRPO: Exploring Diversity-Aware Reward Adjustment for R1-Zero-Like Training of Large Language Models"**
-- **"Policy Information Capacity: Information-Theoretic Measure for Task Complexity in Deep Reinforcement Learning"**
+- **"DIVERSITY-INCENTIVIZED EXPLORATION FOR VERSATILE REASONING"** [`semantic-diversity`]
+  [[Paper](TBD)]
+- **"Reasoning Path Divergence: A New Metric and Curation Strategy to Unlock LLM Diverse Thinking"** [`semantic-diversity`]
+  [[Paper](TBD)]
+- **"Diversity-Aware Policy Optimization for Large Language Model Reasoning"** [`semantic-diversity`]
+  [[Paper](TBD)]
+- **"SEMANTIC UNCERTAINTY: LINGUISTIC INVARIANCES FOR UNCERTAINTY ESTIMATION IN NATURAL LANGUAGE GENERATION"** [`semantic-diversity`]
+  [[Paper](TBD)]
+- **"Diverse Preference Learning for Capabilities and Alignment"** [`semantic-diversity`]
+  [[Paper](TBD)]
+- **"Diversity is All You Need: Learning Skills without a Reward Function"** [`semantic-diversity`]
+  [[Paper](TBD)]
+- **"Diversity-Driven Exploration Strategy for Deep Reinforcement Learning"** [`semantic-diversity`]
+  [[Paper](TBD)]
+- **"EDGE-GRPO: Entropy-Driven GRPO with Guided Error Correction for Advantage Diversity"** [`exploration-llm`]
+  [[Paper](TBD)]
+- **"Intent Factored Generation: Unleashing the Diversity in Your Language Model"** [`semantic-diversity`]
+  [[Paper](TBD)]
+- **"Evaluating the Diversity and Quality of LLM Generated Content"** [`semantic-diversity`]
+  [[Paper](TBD)]
+- **"QUDsim: Quantifying Discourse Similarities in LLM-Generated Text"** [`semantic-diversity`]
+  [[Paper](TBD)]
+- **"DRA-GRPO: Exploring Diversity-Aware Reward Adjustment for R1-Zero-Like Training of Large Language Models"** [`semantic-diversity`]
+  [[Paper](TBD)]
+- **"Policy Information Capacity: Information-Theoretic Measure for Task Complexity in Deep Reinforcement Learning"** [`semantic-diversity`]
+  [[Paper](TBD)]
 
 
-- **"Jointly Reinforcing Diversity and Quality in Language Model Generations"**
+- **"Jointly Reinforcing Diversity and Quality in Language Model Generations"** [`exploration-path`]
+  [[Paper](TBD)]
   - *Uses Nexusflow/Atheme-RM-8B for raw reward, with diversity reward from clustering in creative generation scenarios.*
 
-- **"Breaking the Exploration Bottleneck: Rubric-Scaffolded Reinforcement Learning for General LLM Reasoning"**
+- **"Breaking the Exploration Bottleneck: Rubric-Scaffolded Reinforcement Learning for General LLM Reasoning"** [`exploration-path`]
+  [[Paper](TBD)]
   - *Adds an external rubric-based scaffold in open-ended tasks. Different scaffolds across groups ensure sufficient diversity; inter-step scaffold decay allows the model to gradually reduce scaffold dependence and truly internalize exploration. Redefines reward based on external criteria.*
 
 ---
 
 ## 7. The Escape Debate: Can RL Surpass Base Model?
-- **"Can GRPO Help LLMs Transcend Their Pretraining Origin?"**
-- **"Reasoning with Sampling: Your Base Model is Smarter Than You Think"**
-- **"JustRL: Scaling a 1.5B LLM with a Simple RL Recipe"**
+- **"Can GRPO Help LLMs Transcend Their Pretraining Origin?"** [`rl-limitations`]
+  [[Paper](TBD)]
+- **"Reasoning with Sampling: Your Base Model is Smarter Than You Think"** [`rl-limitations`]
+  [[Paper](TBD)]
+- **"JustRL: Scaling a 1.5B LLM with a Simple RL Recipe"** [`rl-limitations`]
+  [[Paper](TBD)]
   - *在较为简单的baseline中加入一些RLHF规则约束时发现可能反而会限制模型的探索，影响模型的性能。因此有时候性能的提升可能不是加法做得不够，而是需要多做减法，大道至简*
 
 
@@ -361,12 +437,16 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 ## 8. Related Topics
 
 ### 8.1 Model Ensembling
-- **"Demystifying Reinforcement Learning in Agentic Reasoning"**
-- **"Why My Reward Model Fails in RL Training? Rethinking Reward Design for Effective LLM Reasoning"**
-- **"Diﬀerential Smoothing Mitigates Sharpening and Improves LLM Reasoning"**
+- **"Demystifying Reinforcement Learning in Agentic Reasoning"** [`exploration-llm`]
+  [[Paper](TBD)]
+- **"Why My Reward Model Fails in RL Training? Rethinking Reward Design for Effective LLM Reasoning"** [`exploration-llm`]
+  [[Paper](TBD)]
+- **"Diﬀerential Smoothing Mitigates Sharpening and Improves LLM Reasoning"** [`exploration-path`]
+  [[Paper](TBD)]
 
 
 - **"Weight Ensembling Improves Reasoning in Language Models"**
+  [[Paper](TBD)]
   - *Shows that combining weights from multiple training runs can improve reasoning performance — a lightweight exploration-free alternative to explicit exploration strategies.*
 
 ### 8.2 Hidden State Noise & Layer-wise Analysis
@@ -385,6 +465,7 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 > For exploration in open-ended tasks without ground-truth answers.
 
 - **"Awesome-Rubrics"** — *FreedomIntelligence*
+  [[Paper](TBD)]
   [[GitHub](https://github.com/FreedomIntelligence/Awesome-Rubrics)]
   - *Curated reading list on rubric-based evaluation, reward modeling, and post-training.*
 
