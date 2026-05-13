@@ -112,11 +112,11 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 
 ## 1. Survey & Frameworks
 
-- **"From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR"** — *(Work in progress)* [`random-exploration`]
+- **"From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR"** — *(Work in progress)* ![](https://img.shields.io/badge/random--exploration-orange)
   [[Paper](TBD)]
   - *Systematic study of exploration capabilities in LLM RLVR training. Organizes the field around three dimensions: constructing exploration space, entropy-performance interaction, and performance improvement.*
 
-- **"Understanding R1-Zero-Like Training: A Critical Perspective"** [`rl-limitations`]
+- **"Understanding R1-Zero-Like Training: A Critical Perspective"** ![](https://img.shields.io/badge/rl--limitations-red)
   [[Paper](TBD)]
   - *Argues that RL training effects are largely dependent on base model capability — RL alone may not bring genuine capability improvement to the model.*
 
@@ -132,7 +132,7 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
   [[Paper](TBD)]
   - *Explores LLM reasoning from an entropy perspective, analyzing how entropy dynamics during RL training affect exploration efficiency.*
 
-- **"The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models"** [`exploration-llm`]
+- **"The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](TBD)]
   - *Investigates the fundamental entropy mechanisms underlying RL for reasoning LMs, offering insights into how entropy drives exploration.*
 
@@ -142,31 +142,31 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 
 ### 2.2 High-Entropy Token Targeting
 
-- **"Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning"** [`exploration-path`]
+- **"Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](TBD)]
   - *Restricts policy updates to high-entropy tokens (top 20%). Avoids reward hacking by focusing updates on tokens where the model is genuinely uncertain.*
 
 ### 2.3 Low-Probability Token Regularization
 
-- **"Low-probability Tokens Sustain Exploration in Reinforcement Learning with Verifiable Reward"** (lp-reg) [`exploration-llm`]
+- **"Low-probability Tokens Sustain Exploration in Reinforcement Learning with Verifiable Reward"** (lp-reg) ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](TBD)]
   - *Focuses on logical connectors and other high-entropy tokens that may enable reasoning path branching. Uses low-probability regularization to amplify other low-probability tokens while eliminating noise amplification from the next token. Maintains exploration ability without explicitly encouraging exploration — reduces punishment instead.*
 
 ### 2.4 Policy Gradient Reshaping
 
-- **"SIMKO: SIMPLE PASS@K POLICY OPTIMIZATION"** [`exploration-llm`]
+- **"SIMKO: SIMPLE PASS@K POLICY OPTIMIZATION"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](TBD)]
   - *Analyzes the root cause of insufficient exploration: the candidate token distribution is extremely sharp, with probability mass concentrated on the top-1 candidate. Redistributes probability mass from high-probability tokens via policy gradient modification, achieving exploration-exploitation balance.*
   - *Difference from lp-reg: SIMKO redistributes probability mass from high-probability tokens; lp-reg allocates noise probability proportionally to high-probability tokens.*
 
 ### 2.5 Summary of Token-Level Methods
-- **"LEARNING DYNAMICS OF LLM FINETUNING"** [`exploration-llm`]
+- **"LEARNING DYNAMICS OF LLM FINETUNING"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](TBD)]
-- **"Pass@k Training for Adaptively Balancing Exploration and Exploitation of Large Reasoning Models"** [`exploration-llm`]
+- **"Pass@k Training for Adaptively Balancing Exploration and Exploitation of Large Reasoning Models"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](TBD)]
-- **"Pass@K Policy Optimization: Solving Harder Reinforcement Learning Problems"** [`exploration-llm`]
+- **"Pass@K Policy Optimization: Solving Harder Reinforcement Learning Problems"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](TBD)]
-- **"TRE: Encouraging Exploration in the Trust Region"** [`exploration-llm`]
+- **"TRE: Encouraging Exploration in the Trust Region"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](TBD)]
 
 
@@ -182,7 +182,7 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 
 ## 3. Sequence / Response-Level Exploration
 
-- **"Outcome-based Exploration for LLM Reasoning"** [`exploration-path`]
+- **"Outcome-based Exploration for LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](TBD)]
   - *Explores outcome-level mechanisms for promoting exploration in LLM reasoning tasks.*
 
@@ -202,17 +202,17 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 ---
 
 ## 4. Policy Distribution-Level Exploration
-- **"Spectral Bellman Method: Unifying Representation and Exploration in RL"** [`exploration-llm`]
+- **"Spectral Bellman Method: Unifying Representation and Exploration in RL"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](TBD)]
-- **"Distribution-Centric Policy Optimization Dominates Exploration-Exploitation Trade-off"** [`exploration-llm`]
+- **"Distribution-Centric Policy Optimization Dominates Exploration-Exploitation Trade-off"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](TBD)]
 
 
-- **"Beyond Markovian: Reflective Exploration via Bayes-Adaptive RL for LLM Reasoning"** [`random-exploration`]
+- **"Beyond Markovian: Reflective Exploration via Bayes-Adaptive RL for LLM Reasoning"** ![](https://img.shields.io/badge/random--exploration-orange)
   [[Paper](TBD)]
   - *Extends beyond the Markovian assumption by incorporating reflective exploration through a Bayes-adaptive framework, enabling the model to learn from past exploration attempts.*
 
-- **"Risk-Sensitive RL for Alleviating Exploration Dilemmas in Large Language Models"** [`risk-sensitive`] [`exploration-path`]
+- **"Risk-Sensitive RL for Alleviating Exploration Dilemmas in Large Language Models"** ![](https://img.shields.io/badge/risk--sensitive-EC4899) ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](TBD)]
   - *Addresses bimodal distribution problems by shifting from sub-optimal peaks to optimal peaks. A risk-sensitive parameter controls the model's tendency to prioritize hard problems.*
   - ⚠️ *Open question: What if hard problems are truly unsolvable, no matter how many attempts?*
@@ -233,24 +233,24 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
   [[Paper](TBD)]
   - *Fine-grained temperature tuning to balance exploration and exploitation.*
 
-- **"Detecting Hallucinations in Large Language Models Using Semantic Entropy"** [`semantic-diversity`]
+- **"Detecting Hallucinations in Large Language Models Using Semantic Entropy"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[Paper](TBD)]
   - *Uses entropy over semantically equivalent generations to detect hallucinations — connects semantic diversity to model confidence and reliability.*
 
 ### 5.2 Entropy- & Probability-Based Methods
-- **"The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models"** [`exploration-llm`]
+- **"The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](TBD)]
-- **"Revisiting Entropy in Reinforcement Learning for Large Reasoning Models"** [`exploration-llm`]
+- **"Revisiting Entropy in Reinforcement Learning for Large Reasoning Models"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](TBD)]
-- **"Decomposing the Entropy-Performance Exchange: The Missing Keys to Unlocking Effective Reinforcement Learning"** [`exploration-llm`]
+- **"Decomposing the Entropy-Performance Exchange: The Missing Keys to Unlocking Effective Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](TBD)]
-- **"SEED-GRPO: Semantic Entropy Enhanced GRPO for Uncertainty-Aware Policy Optimization"** [`exploration-path`]
+- **"SEED-GRPO: Semantic Entropy Enhanced GRPO for Uncertainty-Aware Policy Optimization"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](TBD)]
-- **"ENTROPY-PRESERVING REINFORCEMENT LEARNING"** [`exploration-llm`]
+- **"ENTROPY-PRESERVING REINFORCEMENT LEARNING"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](TBD)]
 
 
-- **"The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models"** [`exploration-llm`]
+- **"The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](TBD)]
   - *Investigates how entropy-based training dynamics influence reasoning capabilities in LLMs.*
 
@@ -260,27 +260,27 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 
 ### 5.3 Curiosity & Intrinsic Motivation
 
-- **"CDE: Curiosity-Driven Exploration for Efficient Reinforcement Learning in Large Language Models"** [`random-exploration`]
+- **"CDE: Curiosity-Driven Exploration for Efficient Reinforcement Learning in Large Language Models"** ![](https://img.shields.io/badge/random--exploration-orange)
   [[Paper](TBD)]
   - *Introduces curiosity signals (PPL of generated tokens, variance across critic heads) as exploration rewards in PPO. Novel mechanism but limited empirical gains over PPO baselines.*
 
-- **"Navigate the Unknown: Enhancing LLM Reasoning with Intrinsic Motivation Guided Exploration"** [`exploration-path`]
+- **"Navigate the Unknown: Enhancing LLM Reasoning with Intrinsic Motivation Guided Exploration"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](TBD)]
   - *Uses intrinsic motivation as a guiding signal to encourage exploration in unfamiliar reasoning spaces.*
 
 ### 5.4 Noise-Based Perturbation
-- **"Exploration via Feature Perturbation in Contextual Bandits"** [`feature-perturbation`]
+- **"Exploration via Feature Perturbation in Contextual Bandits"** ![](https://img.shields.io/badge/feature--perturbation-F59E0B)
   [[Paper](TBD)]
   - *加噪声也算是一种特征扰动。从实验结果来看在所有层和10%加噪声可以超越grpo性能*
-- **"NOISY NETWORKS FOR EXPLORATION"** [`noisy-net`]
+- **"NOISY NETWORKS FOR EXPLORATION"** ![](https://img.shields.io/badge/noisy--net-06B6D4)
   [[Paper](TBD)]
-- **"Parameter Space Noise for Exploration"** [`noisy-net`]
+- **"Parameter Space Noise for Exploration"** ![](https://img.shields.io/badge/noisy--net-06B6D4)
   [[Paper](TBD)]
-- **"NoisyGRPO: Incentivizing Multimodal CoTReasoning via Noise Injection and Bayesian Estimation"** [`noisy-net`]
+- **"NoisyGRPO: Incentivizing Multimodal CoTReasoning via Noise Injection and Bayesian Estimation"** ![](https://img.shields.io/badge/noisy--net-06B6D4)
   [[Paper](TBD)]
-- **"Learning to Explore with Parameter-Space Noise: A Deep Dive into Parameter-Space Noise for Reinforcement Learning with Verifiable Rewards"** [`noisy-net`]
+- **"Learning to Explore with Parameter-Space Noise: A Deep Dive into Parameter-Space Noise for Reinforcement Learning with Verifiable Rewards"** ![](https://img.shields.io/badge/noisy--net-06B6D4)
   [[Paper](TBD)]
-- **"Evolution Strategies as a Scalable Alternative to Reinforcement Learning"** [`noisy-net`]
+- **"Evolution Strategies as a Scalable Alternative to Reinforcement Learning"** ![](https://img.shields.io/badge/noisy--net-06B6D4)
   [[Paper](TBD)]
 
 
@@ -302,29 +302,29 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 ## 6. Exploration in Specific Scenarios
 
 ### 6.1 RLVR (Math / Code)
-- **"HINT: Helping Ineffective rollouts Navigate Towards effectiveness"** [`exploration-path`]
+- **"HINT: Helping Ineffective rollouts Navigate Towards effectiveness"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](TBD)]
   - *给提示还是直接给答案能够帮助探索？*
-- **"The Path of Self-Evolving Large Language Models: Achieving Data-Eﬃcient Learning via Intrinsic Feedback"** [`exploration-llm`]
+- **"The Path of Self-Evolving Large Language Models: Achieving Data-Eﬃcient Learning via Intrinsic Feedback"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](TBD)]
-- **"The Art of Scaling Reinforcement Learning Compute for LLMs"** [`rl-limitations`]
+- **"The Art of Scaling Reinforcement Learning Compute for LLMs"** ![](https://img.shields.io/badge/rl--limitations-red)
   [[Paper](TBD)]
   - *或许可以思考如何评估模型的效果*
-- **"Scaf-GRPO: Scaffolded Group Relative Policy Optimization for Enhancing LLM Reasoning"** [`exploration-path`]
+- **"Scaf-GRPO: Scaffolded Group Relative Policy Optimization for Enhancing LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](TBD)]
-- **"Representation-Based Exploration for Language Models: From Test-Time to Post-Training"** [`exploration-path`]
+- **"Representation-Based Exploration for Language Models: From Test-Time to Post-Training"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](TBD)]
-- **"Do Not Step Into the Same River Twice: Learning to Reason from Trial and Error"** [`exploration-path`]
+- **"Do Not Step Into the Same River Twice: Learning to Reason from Trial and Error"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](TBD)]
-- **"SCHEDULING YOUR LLM REINFORCEMENT LEARNING WITH REASONING TREES"** [`exploration-path`]
+- **"SCHEDULING YOUR LLM REINFORCEMENT LEARNING WITH REASONING TREES"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](TBD)]
-- **"Goal-Conditioned Reinforcement Learning: Problems and Solutions"** [`exploration-path`]
+- **"Goal-Conditioned Reinforcement Learning: Problems and Solutions"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](TBD)]
-- **"MINER: Mining Intrinsic Mastery for Data-Efficient RL in Large Reasoning Models"** [`exploration-path`]
+- **"MINER: Mining Intrinsic Mastery for Data-Efficient RL in Large Reasoning Models"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](TBD)]
-- **"Adaptive Ability Decomposing for Unlocking Large Reasoning Model Effective Reinforcement Learning"** [`exploration-llm`]
+- **"Adaptive Ability Decomposing for Unlocking Large Reasoning Model Effective Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](TBD)]
-- **"POPE: Learning to Reason on Hard Problems via Privileged On-Policy Exploration"** [`exploration-llm`]
+- **"POPE: Learning to Reason on Hard Problems via Privileged On-Policy Exploration"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](TBD)]
 
 
@@ -338,7 +338,7 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
   [[Paper](TBD)]
   - *Integrates MCTS with RLVR to systematically explore reasoning paths beyond those discovered by standard sampling.*
 
-- **"The Role of Exploration Modules in Small Language Models for Knowledge Graph Question Answering"** [`exploration-path`]
+- **"The Role of Exploration Modules in Small Language Models for Knowledge Graph Question Answering"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](TBD)]
   - *Studies how explicit exploration modules benefit SLMs in specialized KGQA tasks, providing evidence that exploration mechanisms transfer to smaller models.*
 
@@ -355,67 +355,67 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 - **Inference-phase noise: Layer 16** shows slightly positive effect (helped > hurt, 4.7% vs 4.0%)
 
 ### 6.2 Unsupervised / Minimal Label Scenarios
-- **"Learn the Ropes, Then Trust the Wins: Self-imitation with Progressive Exploration for Agentic Reinforcement Learning"** [`exploration-llm`]
+- **"Learn the Ropes, Then Trust the Wins: Self-imitation with Progressive Exploration for Agentic Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](TBD)]
 
 
-- **"Post-training Large Language Models for Diverse High-Quality Responses"** [`random-exploration`]
+- **"Post-training Large Language Models for Diverse High-Quality Responses"** ![](https://img.shields.io/badge/random--exploration-orange)
   [[Paper](TBD)]
   - *Explores post-training strategies that encourage the model to generate diverse, high-quality outputs with minimal dependence on labeled data.*
 
-- **"Evolving Language Models without Labels: Majority Drives Selection, Novelty Promotes Variation"** [`exploration-path`]
+- **"Evolving Language Models without Labels: Majority Drives Selection, Novelty Promotes Variation"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](TBD)]
   - *Inspiration: Genetic variation. Mechanism: Majority voting + modified reward to encourage exploration + asymmetric clipping for larger strategy variation + entropy regularization for output diversity.*
 
-- **"The Path of Self-Evolving Large Language Models: Achieving Data-Efficient Learning via Intrinsic Feedback"** [`exploration-path`]
+- **"The Path of Self-Evolving Large Language Models: Achieving Data-Efficient Learning via Intrinsic Feedback"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](TBD)]
   - *Combines curriculum learning with self-awareness, introducing partial external data. Lets the model learn problems that match its current capability level. External data source: Qwen2.5-Coder-32B.*
 
 ### 6.3 Creative Generation & Open-Ended Tasks
-- **"DIVERSITY-INCENTIVIZED EXPLORATION FOR VERSATILE REASONING"** [`semantic-diversity`]
+- **"DIVERSITY-INCENTIVIZED EXPLORATION FOR VERSATILE REASONING"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[Paper](TBD)]
-- **"Reasoning Path Divergence: A New Metric and Curation Strategy to Unlock LLM Diverse Thinking"** [`semantic-diversity`]
+- **"Reasoning Path Divergence: A New Metric and Curation Strategy to Unlock LLM Diverse Thinking"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[Paper](TBD)]
-- **"Diversity-Aware Policy Optimization for Large Language Model Reasoning"** [`semantic-diversity`]
+- **"Diversity-Aware Policy Optimization for Large Language Model Reasoning"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[Paper](TBD)]
-- **"SEMANTIC UNCERTAINTY: LINGUISTIC INVARIANCES FOR UNCERTAINTY ESTIMATION IN NATURAL LANGUAGE GENERATION"** [`semantic-diversity`]
+- **"SEMANTIC UNCERTAINTY: LINGUISTIC INVARIANCES FOR UNCERTAINTY ESTIMATION IN NATURAL LANGUAGE GENERATION"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[Paper](TBD)]
-- **"Diverse Preference Learning for Capabilities and Alignment"** [`semantic-diversity`]
+- **"Diverse Preference Learning for Capabilities and Alignment"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[Paper](TBD)]
-- **"Diversity is All You Need: Learning Skills without a Reward Function"** [`semantic-diversity`]
+- **"Diversity is All You Need: Learning Skills without a Reward Function"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[Paper](TBD)]
-- **"Diversity-Driven Exploration Strategy for Deep Reinforcement Learning"** [`semantic-diversity`]
+- **"Diversity-Driven Exploration Strategy for Deep Reinforcement Learning"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[Paper](TBD)]
-- **"EDGE-GRPO: Entropy-Driven GRPO with Guided Error Correction for Advantage Diversity"** [`exploration-llm`]
+- **"EDGE-GRPO: Entropy-Driven GRPO with Guided Error Correction for Advantage Diversity"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](TBD)]
-- **"Intent Factored Generation: Unleashing the Diversity in Your Language Model"** [`semantic-diversity`]
+- **"Intent Factored Generation: Unleashing the Diversity in Your Language Model"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[Paper](TBD)]
-- **"Evaluating the Diversity and Quality of LLM Generated Content"** [`semantic-diversity`]
+- **"Evaluating the Diversity and Quality of LLM Generated Content"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[Paper](TBD)]
-- **"QUDsim: Quantifying Discourse Similarities in LLM-Generated Text"** [`semantic-diversity`]
+- **"QUDsim: Quantifying Discourse Similarities in LLM-Generated Text"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[Paper](TBD)]
-- **"DRA-GRPO: Exploring Diversity-Aware Reward Adjustment for R1-Zero-Like Training of Large Language Models"** [`semantic-diversity`]
+- **"DRA-GRPO: Exploring Diversity-Aware Reward Adjustment for R1-Zero-Like Training of Large Language Models"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[Paper](TBD)]
-- **"Policy Information Capacity: Information-Theoretic Measure for Task Complexity in Deep Reinforcement Learning"** [`semantic-diversity`]
+- **"Policy Information Capacity: Information-Theoretic Measure for Task Complexity in Deep Reinforcement Learning"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[Paper](TBD)]
 
 
-- **"Jointly Reinforcing Diversity and Quality in Language Model Generations"** [`exploration-path`]
+- **"Jointly Reinforcing Diversity and Quality in Language Model Generations"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](TBD)]
   - *Uses Nexusflow/Atheme-RM-8B for raw reward, with diversity reward from clustering in creative generation scenarios.*
 
-- **"Breaking the Exploration Bottleneck: Rubric-Scaffolded Reinforcement Learning for General LLM Reasoning"** [`exploration-path`]
+- **"Breaking the Exploration Bottleneck: Rubric-Scaffolded Reinforcement Learning for General LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](TBD)]
   - *Adds an external rubric-based scaffold in open-ended tasks. Different scaffolds across groups ensure sufficient diversity; inter-step scaffold decay allows the model to gradually reduce scaffold dependence and truly internalize exploration. Redefines reward based on external criteria.*
 
 ---
 
 ## 7. The Escape Debate: Can RL Surpass Base Model?
-- **"Can GRPO Help LLMs Transcend Their Pretraining Origin?"** [`rl-limitations`]
+- **"Can GRPO Help LLMs Transcend Their Pretraining Origin?"** ![](https://img.shields.io/badge/rl--limitations-red)
   [[Paper](TBD)]
-- **"Reasoning with Sampling: Your Base Model is Smarter Than You Think"** [`rl-limitations`]
+- **"Reasoning with Sampling: Your Base Model is Smarter Than You Think"** ![](https://img.shields.io/badge/rl--limitations-red)
   [[Paper](TBD)]
-- **"JustRL: Scaling a 1.5B LLM with a Simple RL Recipe"** [`rl-limitations`]
+- **"JustRL: Scaling a 1.5B LLM with a Simple RL Recipe"** ![](https://img.shields.io/badge/rl--limitations-red)
   [[Paper](TBD)]
   - *在较为简单的baseline中加入一些RLHF规则约束时发现可能反而会限制模型的探索，影响模型的性能。因此有时候性能的提升可能不是加法做得不够，而是需要多做减法，大道至简*
 
@@ -437,11 +437,11 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 ## 8. Related Topics
 
 ### 8.1 Model Ensembling
-- **"Demystifying Reinforcement Learning in Agentic Reasoning"** [`exploration-llm`]
+- **"Demystifying Reinforcement Learning in Agentic Reasoning"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](TBD)]
-- **"Why My Reward Model Fails in RL Training? Rethinking Reward Design for Effective LLM Reasoning"** [`exploration-llm`]
+- **"Why My Reward Model Fails in RL Training? Rethinking Reward Design for Effective LLM Reasoning"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](TBD)]
-- **"Diﬀerential Smoothing Mitigates Sharpening and Improves LLM Reasoning"** [`exploration-path`]
+- **"Diﬀerential Smoothing Mitigates Sharpening and Improves LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](TBD)]
 
 
