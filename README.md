@@ -112,7 +112,7 @@ Internalize this capability → truly learn powerful reasoning
 
 ## 1. Survey & Frameworks
 
-- **"From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR"** ![](https://img.shields.io/badge/exploration--llm-blue-blue) — *(Work in progress)* ![](https://img.shields.io/badge/random--exploration-orange)
+- **"From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR"** ![](https://img.shields.io/badge/exploration--llm-blue) — *(Work in progress)* ![](https://img.shields.io/badge/random--exploration-orange)
   [[Paper](https://arxiv.org/abs/2508.07534)]
   - *Systematic study of exploration capabilities in LLM RLVR training. Organizes the field around three dimensions: constructing exploration space, entropy-performance interaction, and performance improvement.*
 
@@ -120,7 +120,7 @@ Internalize this capability → truly learn powerful reasoning
   [[Paper](https://arxiv.org/abs/2503.20783)]
 
 
-- **"DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--llm-blue-blue)
+- **"DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](https://arxiv.org/abs/2501.12948)]
   - *Foundational work demonstrating how RL (GRPO) incentivizes reasoning capabilities in LLMs through exploration of long chain-of-thought.*
   - *Argues that RL training effects are largely dependent on base model capability — RL alone may not bring genuine capability improvement to the model.*
@@ -130,7 +130,7 @@ Internalize this capability → truly learn powerful reasoning
 ## 2. Token-Level Exploration
 
 
-- **"Adaptive Divergence Regularized Policy Optimization for Fine-tuning Generative Models"** ![](https://img.shields.io/badge/exploration--llm-blue-blue)
+- **"Adaptive Divergence Regularized Policy Optimization for Fine-tuning Generative Models"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](https://arxiv.org/abs/2510.18053)]
   - *Uses adaptive divergence regularization to maintain exploration during policy optimization.*
 
@@ -138,27 +138,27 @@ Internalize this capability → truly learn powerful reasoning
 
 ### 2.1 Entropy-Aware Mechanisms
 
-- **"Reasoning with Exploration: An Entropy Perspective on Reinforcement Learning for LLMs"** ![](https://img.shields.io/badge/exploration--llm-blue-blue)
+- **"Reasoning with Exploration: An Entropy Perspective on Reinforcement Learning for LLMs"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](https://arxiv.org/abs/2503.20783)]
   - *Explores LLM reasoning from an entropy perspective, analyzing how entropy dynamics during RL training affect exploration efficiency.*
 
-- **"The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models"** ![](https://img.shields.io/badge/exploration--llm-blue-blue) ![](https://img.shields.io/badge/exploration--llm-blue)
+- **"The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models"** ![](https://img.shields.io/badge/exploration--llm-blue) ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](https://arxiv.org/abs/2503.20783)]
   - *Investigates the fundamental entropy mechanisms underlying RL for reasoning LMs, offering insights into how entropy drives exploration.*
 
-- **"DAPO: An Open-Source LLM Reinforcement Learning System at Scale"** ![](https://img.shields.io/badge/exploration--llm-blue-blue)
+- **"DAPO: An Open-Source LLM Reinforcement Learning System at Scale"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](https://arxiv.org/abs/2503.14442)]
 
-- **"CURE: Critical-Token-Guided Re-Concatenation for Entropy-Collapse Prevention"** ![](https://img.shields.io/badge/exploration--llm-blue-blue)
+- **"CURE: Critical-Token-Guided Re-Concatenation for Entropy-Collapse Prevention"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](https://arxiv.org/abs/2508.11016)]
   - *Reviews how critical tokens affect entropy collapse; proposes token re-concatenation strategy to maintain exploration.*
-- **"Token Hidden Reward: Steering Exploration-Exploitation in Group Relative Deep Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"Token Hidden Reward: Steering Exploration-Exploitation in Group Relative Deep Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2510.03669)]
   - *Introduces token-level hidden rewards to guide exploration-exploitation in GRPO-based training.*
-- **"Targeted Exploration via Unified Entropy Control for Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"Targeted Exploration via Unified Entropy Control for Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2604.14646)]
   - *Unified entropy control framework for targeted exploration in LLM RL training.*
-- **"Addressing Performance Saturation for LLM RL via Precise Entropy Curve Control"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"Addressing Performance Saturation for LLM RL via Precise Entropy Curve Control"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2604.26326)]
   - *Analyzes entropy curves during RL training and proposes precise control to combat performance saturation.*
   - *Proposes key techniques including clip-higher, dynamic sampling, and token-level policy gradient loss to maintain high entropy during RL training.*
@@ -174,7 +174,7 @@ Internalize this capability → truly learn powerful reasoning
 - **"Low-probability Tokens Sustain Exploration in Reinforcement Learning with Verifiable Reward"** (lp-reg) ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](https://arxiv.org/abs/2503.14442)]
 
-- **"Compress the Easy, Explore the Hard: Difficulty-Aware Entropy Regularization for Efficient LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"Compress the Easy, Explore the Hard: Difficulty-Aware Entropy Regularization for Efficient LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2602.22642)]
   - *Difficulty-aware entropy regularization that compresses easy tokens while encouraging exploration on hard ones.*
   - *Focuses on logical connectors and other high-entropy tokens that may enable reasoning path branching. Uses low-probability regularization to amplify other low-probability tokens while eliminating noise amplification from the next token. Maintains exploration ability without explicitly encouraging exploration — reduces punishment instead.*
@@ -184,10 +184,10 @@ Internalize this capability → truly learn powerful reasoning
 - **"SIMKO: SIMPLE PASS@K POLICY OPTIMIZATION"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](https://arxiv.org/abs/2510.03222)]
 
-- **"DiPO: Disentangled Perplexity Policy Optimization for Fine-grained Exploration-Exploitation Trade-Off"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"DiPO: Disentangled Perplexity Policy Optimization for Fine-grained Exploration-Exploitation Trade-Off"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2604.13902)]
   - *Disentangles perplexity from policy optimization, enabling fine-grained control over exploration-exploitation balance.*
-- **"Transformation-Augmented GRPO for Enhancing Exploration in Reasoning of Large Language Models"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"Transformation-Augmented GRPO for Enhancing Exploration in Reasoning of Large Language Models"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2601.22478)]
   - *Augments GRPO with transformation operations to diversify reasoning paths and enhance exploration.*
   - *Analyzes the root cause of insufficient exploration: the candidate token distribution is extremely sharp, with probability mass concentrated on the top-1 candidate. Redistributes probability mass from high-probability tokens via policy gradient modification, achieving exploration-exploitation balance.*
@@ -216,68 +216,68 @@ Internalize this capability → truly learn powerful reasoning
 
 ## 3. Sequence / Response-Level Exploration
 
-- **"Outcome-based Exploration for LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen) ![](https://img.shields.io/badge/exploration--path-brightgreen)
+- **"Outcome-based Exploration for LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen) ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2602.03635)]
   - *Explores outcome-level mechanisms for promoting exploration in LLM reasoning tasks.*
 
-- **"Parallel-R1: Towards Parallel Thinking via Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"Parallel-R1: Towards Parallel Thinking via Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2509.07980)]
   - *Extends multiple reasoning paths from one key token, then synthesizes all paths to derive the final answer.*
 
-- **"DARLING: Diversity-Aware Reinforcement Learning"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6-8B5CF6)
+- **"DARLING: Diversity-Aware Reinforcement Learning"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[Paper](https://arxiv.org/abs/2509.07980)]
   - *Trains a semantic classifier to cluster responses with the same semantics, introducing a semantic diversity reward signal.*
   - ⚠️ *Potential issue: Clustering trap — coarse clustering may miss fine-grained diversity.*
 
-- **"Enhancing Diversity in Large Language Models via Determinantal Point Processes"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6-8B5CF6) (DQO)
+- **"Enhancing Diversity in Large Language Models via Determinantal Point Processes"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6) (DQO)
   [[Paper](https://arxiv.org/abs/2509.06941)]
 
 
-- **"Reinforced Efficient Reasoning via Semantically Diverse Exploration"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6-8B5CF6)
+- **"Reinforced Efficient Reasoning via Semantically Diverse Exploration"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[Paper](https://arxiv.org/abs/2601.05053)]
   - *Combines semantic diversity rewards with RL to encourage exploration across reasoning paths.*
 
-- **"Breaking Winner-Takes-All: Cooperative Policy Optimization Improves Diverse LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"Breaking Winner-Takes-All: Cooperative Policy Optimization Improves Diverse LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2605.11461)]
   - *Proposes cooperative policy optimization where multiple reasoning paths collaborate, breaking the winner-takes-all dynamic.*
 
-- **"Beyond Mode Elicitation: Diversity-Preserving Reinforcement Learning via Latent Diffusion Reasoner"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"Beyond Mode Elicitation: Diversity-Preserving Reinforcement Learning via Latent Diffusion Reasoner"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2602.01705)]
   - *Uses latent diffusion to preserve reasoning diversity during RL training, preventing mode collapse.*
 
-- **"DSDR: Dual-Scale Diversity Regularization for Exploration in LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"DSDR: Dual-Scale Diversity Regularization for Exploration in LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2602.19895)]
   - *Dual-scale diversity regularization operating at both token and response levels.*
 
-- **"The Road Less Traveled: Enhancing Exploration in LLMs via Sequential Sampling"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"The Road Less Traveled: Enhancing Exploration in LLMs via Sequential Sampling"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2510.15502)]
   - *Sequential sampling strategy that prioritizes less-explored reasoning paths during LLM training.*
 
-- **"More Than One Teacher: Adaptive Multi-Guidance Policy Optimization for Diverse Exploration"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"More Than One Teacher: Adaptive Multi-Guidance Policy Optimization for Diverse Exploration"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2510.02227)]
   - *Uses multiple guidance signals to promote diverse exploration across different reasoning strategies.*
 
-- **"Unlocking Exploration in RLVR: Uncertainty-aware Advantage Shaping for Deeper Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"Unlocking Exploration in RLVR: Uncertainty-aware Advantage Shaping for Deeper Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2510.10649)]
   - *Shapes advantage estimates based on prediction uncertainty to encourage deeper exploration in RLVR.*
 
-- **"EFRame: Deeper Reasoning via Exploration-Filter-Replay Reinforcement Learning Framework"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"EFRame: Deeper Reasoning via Exploration-Filter-Replay Reinforcement Learning Framework"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2506.22200)]
   - *Exploration-Filter-Replay framework that systematically discovers and reuses diverse reasoning strategies.*
 
-- **"Selective Expert Guidance for Effective and Diverse Exploration in Reinforcement Learning of LLMs"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"Selective Expert Guidance for Effective and Diverse Exploration in Reinforcement Learning of LLMs"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2510.04140)]
   - *Uses expert guidance to selectively steer exploration toward promising but under-explored regions.*
 
-- **"Diversity or Precision? A Deep Dive into Next Token Prediction"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6-8B5CF6)
+- **"Diversity or Precision? A Deep Dive into Next Token Prediction"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[Paper](https://arxiv.org/abs/2512.22955)]
   - *Analyzes the tension between diversity and precision in next-token prediction during RL training.*
 
-- **"Rewarding the Rare: Uniqueness-Aware RL for Creative Problem Solving in LLMs"** ![](https://img.shields.io/badge/random--exploration-orange-orange)
+- **"Rewarding the Rare: Uniqueness-Aware RL for Creative Problem Solving in LLMs"** ![](https://img.shields.io/badge/random--exploration-orange)
   [[Paper](https://arxiv.org/abs/2601.08763)]
   - *Rewards unique/uncommon solutions to encourage creative exploration beyond standard reasoning paths.*
 
-- **"UpSkill: Mutual Information Skill Learning for Structured Response Diversity in LLMs"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6-8B5CF6)
+- **"UpSkill: Mutual Information Skill Learning for Structured Response Diversity in LLMs"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[Paper](https://arxiv.org/abs/2602.22296)]
   - *Mutual information-based skill learning to promote structured diversity in LLM responses.*
   - *Uses the volume spanned by embedding vectors in representation space to measure semantic diversity across a set of rollouts. DPP-based diversity reward.*
@@ -300,31 +300,31 @@ Internalize this capability → truly learn powerful reasoning
   - *Addresses bimodal distribution problems by shifting from sub-optimal peaks to optimal peaks. A risk-sensitive parameter controls the model's tendency to prioritize hard problems.*
   - ⚠️ *Open question: What if hard problems are truly unsolvable, no matter how many attempts?*
 
-- **"FlowRL: Matching Reward Distributions for LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"FlowRL: Matching Reward Distributions for LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2509.15207)]
 
 
-- **"Explore Data Left Behind in Reinforcement Learning for Reasoning Language Models"** ![](https://img.shields.io/badge/exploration--llm-blue-blue)
+- **"Explore Data Left Behind in Reinforcement Learning for Reasoning Language Models"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](https://arxiv.org/abs/2511.04800)]
   - *Analyzes data distribution skew in RL training and proposes methods to explore underutilized data regions.*
 
-- **"MCPO: Mastery-Consolidated Policy Optimization for Large Reasoning Models"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"MCPO: Mastery-Consolidated Policy Optimization for Large Reasoning Models"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2604.16972)]
   - *Consolidates mastered skills while exploring new reasoning capabilities through adaptive policy optimization.*
 
-- **"RiskPO: Risk-based Policy Optimization via Verifiable Reward for LLM Post-Training"** ![](https://img.shields.io/badge/risk--sensitive-EC4899-EC4899)
+- **"RiskPO: Risk-based Policy Optimization via Verifiable Reward for LLM Post-Training"** ![](https://img.shields.io/badge/risk--sensitive-EC4899)
   [[Paper](https://arxiv.org/abs/2510.00911)]
   - *Risk-sensitive policy optimization that balances exploration of high-risk-high-reward strategies.*
 
-- **"IIB-LPO: Latent Policy Optimization via Iterative Information Bottleneck"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"IIB-LPO: Latent Policy Optimization via Iterative Information Bottleneck"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2601.05870)]
   - *Information bottleneck approach to control exploration-exploitation trade-off in latent policy space.*
 
-- **"LEPO: Latent Reasoning Policy Optimization for Large Language Models"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"LEPO: Latent Reasoning Policy Optimization for Large Language Models"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2604.17892)]
   - *Optimizes reasoning policies in latent space, enabling more flexible exploration of reasoning strategies.*
 
-- **"Dual Consensus: Escaping from Spurious Majority in Unsupervised RLVR via Two-Stage Vote Mechanism"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"Dual Consensus: Escaping from Spurious Majority in Unsupervised RLVR via Two-Stage Vote Mechanism"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2603.16223)]
   - *Two-stage voting mechanism to escape spurious majority modes during unsupervised RLVR training.*
   - *Uses a partition function to align the policy distribution with the true reward distribution, enabling more principled exploration.*
@@ -334,7 +334,7 @@ Internalize this capability → truly learn powerful reasoning
 ## 5. Semantic-Ignorant Exploration (Entropy / Temperature / Noise)
 
 
-- **"Let it Calm: Exploratory Annealed Decoding for Verifiable Reinforcement Learning"** ![](https://img.shields.io/badge/random--exploration-orange-orange)
+- **"Let it Calm: Exploratory Annealed Decoding for Verifiable Reinforcement Learning"** ![](https://img.shields.io/badge/random--exploration-orange)
   [[Paper](https://arxiv.org/abs/2510.05251)]
   - *Annealed decoding strategy that starts with high exploration and gradually reduces to focus on exploitation.*
 
@@ -342,7 +342,7 @@ Internalize this capability → truly learn powerful reasoning
 
 ### 5.1 Entropy-Based Methods
 
-- **"Embarrassingly Simple Self-Distillation Improves Code Generation"** ![](https://img.shields.io/badge/exploration--llm-blue-blue)
+- **"Embarrassingly Simple Self-Distillation Improves Code Generation"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](https://arxiv.org/abs/2604.01193)]
   - *Fine-grained temperature tuning to balance exploration and exploitation.*
 
@@ -370,16 +370,16 @@ Internalize this capability → truly learn powerful reasoning
 - **"Reasoning with Exploration: An Entropy Perspective on Reinforcement Learning for LLMs"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](https://arxiv.org/abs/2505.12346)]
 
-- **"Entropy Polarity in Reinforcement Fine-Tuning: Direction, Asymmetry, and Control"** ![](https://img.shields.io/badge/exploration--llm-blue-blue)
+- **"Entropy Polarity in Reinforcement Fine-Tuning: Direction, Asymmetry, and Control"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](https://arxiv.org/abs/2605.11775)]
   - *Analyzes entropy polarity dynamics during RL fine-tuning and proposes directional entropy control.*
-- **"ETTRL: Balancing Exploration and Exploitation in LLM Test-Time RL Via Entropy Mechanism"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"ETTRL: Balancing Exploration and Exploitation in LLM Test-Time RL Via Entropy Mechanism"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2508.11356)]
   - *Entropy-based balancing mechanism specifically designed for test-time reinforcement learning in LLMs.*
-- **"Prototype Entropy Alignment: Reinforcing Structured Uncertainty in LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"Prototype Entropy Alignment: Reinforcing Structured Uncertainty in LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2601.17275)]
   - *Aligns prototype entropy to maintain structured uncertainty during RL reasoning training.*
-- **"CE-GPPO: Coordinating Entropy via Gradient-Preserving Clipping Policy Optimization in RL"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"CE-GPPO: Coordinating Entropy via Gradient-Preserving Clipping Policy Optimization in RL"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2509.20712)]
   - *Gradient-preserving clipping to coordinate entropy across policy updates.*
   - *Analyzes the role of token/sequence entropy in shaping exploration behavior during RLVR training.*
@@ -456,11 +456,11 @@ Internalize this capability → truly learn powerful reasoning
 
 > Sparse reward scenarios where exploration helps find better answers and solve harder problems.
 
-- **"RL-Plus: Countering Capability Boundary Collapse of LLMs in Reinforcement Learning with Hybrid-policy Optimization"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"RL-Plus: Countering Capability Boundary Collapse of LLMs in Reinforcement Learning with Hybrid-policy Optimization"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://doi.org/10.1111/j.1939-7445.2005.tb00147.x)]
   - *Addresses the problem of capability boundary collapse during RL training through hybrid-policy optimization that maintains exploration diversity.*
 
-- **"DeepSearch: Overcome the Bottleneck of Reinforcement Learning with Verifiable Rewards via Monte Carlo Tree Search"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"DeepSearch: Overcome the Bottleneck of Reinforcement Learning with Verifiable Rewards via Monte Carlo Tree Search"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://doi.org/10.1021/acs.jpclett.3c00242.s001)]
   - *Integrates MCTS with RLVR to systematically explore reasoning paths beyond those discovered by standard sampling.*
 
@@ -468,26 +468,26 @@ Internalize this capability → truly learn powerful reasoning
   [[Paper](https://doi.org/10.33015/dominican.edu/2022.cp.01)]
   - *Studies how explicit exploration modules benefit SLMs in specialized KGQA tasks, providing evidence that exploration mechanisms transfer to smaller models.*
 
-- **"RLVE: Scaling Up Reinforcement Learning for Language Models with Adaptive Verifiable Environments"** ![](https://img.shields.io/badge/exploration--llm-blue-blue)
+- **"RLVE: Scaling Up Reinforcement Learning for Language Models with Adaptive Verifiable Environments"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](https://doi.org/10.2139/ssrn.5280464)]
   - *Exploration through adaptive difficulty scaling in verifiable environments during RL training.*
 
-- **"Differential Smoothing Mitigates Sharpening and Improves LLM Reasoning"** ![](https://img.shields.io/badge/feature--perturbation-F59E0B-F59E0B)
+- **"Differential Smoothing Mitigates Sharpening and Improves LLM Reasoning"** ![](https://img.shields.io/badge/feature--perturbation-F59E0B)
   [[Paper](https://doi.org/10.70675/9ec0ac47z466az43f9z8715z765efa057193)]
 
-- **"Bootstrapping Exploration with Group-Level Natural Language Feedback in Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"Bootstrapping Exploration with Group-Level Natural Language Feedback in Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2603.04597)]
   - *Uses natural language feedback to bootstrap exploration in sparse-reward RLVR scenarios.*
-- **"Too Correct to Learn: Reinforcement Learning on Saturated Reasoning Data"** ![](https://img.shields.io/badge/rl--limitations-red-red)
+- **"Too Correct to Learn: Reinforcement Learning on Saturated Reasoning Data"** ![](https://img.shields.io/badge/rl--limitations-red)
   [[Paper](https://arxiv.org/abs/2604.18493)]
   - *Identifies the 'too correct' problem in RL training data — when data is already high-quality, there's little room for exploration to discover new strategies.*
-- **"Know When to Explore: Difficulty-Aware Certainty as a Guide for LLM Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"Know When to Explore: Difficulty-Aware Certainty as a Guide for LLM Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2509.00125)]
   - *Uses model certainty to dynamically adjust exploration intensity based on problem difficulty.*
-- **"Exploration-Driven Optimization for Test-Time Large Language Model Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"Exploration-Driven Optimization for Test-Time Large Language Model Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2605.09853)]
   - *Bridges test-time exploration with training-time RL to improve LLM reasoning.*
-- **"Cog-DRIFT: Exploration on Adaptively Reformulated Instances Enables Learning from Hard Reasoning Problems"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"Cog-DRIFT: Exploration on Adaptively Reformulated Instances Enables Learning from Hard Reasoning Problems"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2604.04767)]
   - *Reformulates hard problems adaptively to create stepping stones for exploration during RL training.*
   - *Addresses the sharpening problem in RL training; differential smoothing helps maintain exploration diversity and improves reasoning performance.*
@@ -561,11 +561,11 @@ Internalize this capability → truly learn powerful reasoning
   [[Paper](https://doi.org/10.70675/e40c3140z2868z4db2z997az453e4804bae1)]
 
 
-- **"The Debate on RLVR Reasoning Capability Boundary: Shrinkage, Expansion, or Both? A Two-Stage Dynamic View"** ![](https://img.shields.io/badge/rl--limitations-red-red)
+- **"The Debate on RLVR Reasoning Capability Boundary: Shrinkage, Expansion, or Both? A Two-Stage Dynamic View"** ![](https://img.shields.io/badge/rl--limitations-red)
   [[Paper](https://arxiv.org/abs/2510.04028)]
   - *Two-stage dynamic model showing RLVR can both shrink and expand capability boundaries depending on training phase.*
 
-- **"Exploration vs Exploitation: Rethinking RLVR through Clipping, Entropy, and Spurious Reward"** ![](https://img.shields.io/badge/rl--limitations-red-red)
+- **"Exploration vs Exploitation: Rethinking RLVR through Clipping, Entropy, and Spurious Reward"** ![](https://img.shields.io/badge/rl--limitations-red)
   [[Paper](https://arxiv.org/abs/2512.16912)]
   - *Systematic analysis of exploration-exploitation trade-off in RLVR from the perspective of clipping, entropy, and reward dynamics.*
   - *When adding RLHF-style constraints to a simple baseline, it was found that doing so can actually limit exploration and hurt performance. Sometimes improvement isn't about doing more — it's about doing less. Simplicity is key.*
@@ -588,27 +588,27 @@ Internalize this capability → truly learn powerful reasoning
 ## 8. Related Topics
 
 
-- **"AMFT: Aligning LLM Reasoners by Meta-Learning the Optimal Imitation-Exploration Balance"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"AMFT: Aligning LLM Reasoners by Meta-Learning the Optimal Imitation-Exploration Balance"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2508.06944)]
   - *Meta-learns the optimal balance between imitation (exploitation) and exploration during LLM training.*
 
-- **"AMR-SD: Asymmetric Meta-Reflective Self-Distillation for Token-Level Credit Assignment"** ![](https://img.shields.io/badge/feature--perturbation-F59E0B-F59E0B)
+- **"AMR-SD: Asymmetric Meta-Reflective Self-Distillation for Token-Level Credit Assignment"** ![](https://img.shields.io/badge/feature--perturbation-F59E0B)
   [[Paper](https://arxiv.org/abs/2605.18529)]
   - *Token-level credit assignment for RLVR — closely related to exploration by providing finer-grained reward signals.*
 
-- **"Socratic RL: A Novel Framework for Efficient Knowledge Acquisition through Iterative Reflection and Viewpoint Distillation"** ![](https://img.shields.io/badge/random--exploration-orange-orange)
+- **"Socratic RL: A Novel Framework for Efficient Knowledge Acquisition through Iterative Reflection and Viewpoint Distillation"** ![](https://img.shields.io/badge/random--exploration-orange)
   [[Paper](https://arxiv.org/abs/2506.13358)]
   - *Iterative reflection and viewpoint distillation framework — relevant to exploration through multi-perspective learning.*
 
-- **"SPEC-RL: Accelerating On-Policy Reinforcement Learning with Speculative Rollouts"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"SPEC-RL: Accelerating On-Policy Reinforcement Learning with Speculative Rollouts"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2509.23232)]
   - *Speculative rollouts to generate diverse experiences more efficiently during on-policy RL training.*
 
-- **"LAD: Learning Advantage Distribution for Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"LAD: Learning Advantage Distribution for Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2602.20132)]
   - *Learns advantage distributions rather than point estimates, enabling more nuanced exploration decisions.*
 
-- **"AT2PO: Agentic Turn-based Policy Optimization via Tree Search"** ![](https://img.shields.io/badge/exploration--path-brightgreen-brightgreen)
+- **"AT2PO: Agentic Turn-based Policy Optimization via Tree Search"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2601.04767)]
   - *Combines tree search with policy optimization for structured exploration of reasoning paths.*
 
@@ -621,7 +621,7 @@ Internalize this capability → truly learn powerful reasoning
   [[Paper](https://doi.org/10.2139/ssrn.6169669)]
 
 
-- **"Weight Ensembling Improves Reasoning in Language Models"** ![](https://img.shields.io/badge/exploration--llm-blue-blue)
+- **"Weight Ensembling Improves Reasoning in Language Models"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](https://doi.org/10.20944/preprints202603.0287.v1)]
   - *Shows that combining weights from multiple training runs can improve reasoning performance — a lightweight exploration-free alternative to explicit exploration strategies.*
 
@@ -640,7 +640,7 @@ Internalize this capability → truly learn powerful reasoning
 
 > For exploration in open-ended tasks without ground-truth answers.
 
-- **"Awesome-Rubrics"** ![](https://img.shields.io/badge/exploration--llm-blue-blue) — *FreedomIntelligence*
+- **"Awesome-Rubrics"** ![](https://img.shields.io/badge/exploration--llm-blue) — *FreedomIntelligence*
   [[Paper](https://doi.org/10.24963/ijcai.2022/770)]
   [[GitHub](https://github.com/FreedomIntelligence/Awesome-Rubrics)]
   - *Curated reading list on rubric-based evaluation, reward modeling, and post-training.*
