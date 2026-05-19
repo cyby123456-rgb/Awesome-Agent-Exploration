@@ -29,7 +29,7 @@
 In the context of LLM RL training, **exploration** refers to the strategies or behaviors a model adopts to discover and generate outputs that are **lower in its current probability distribution but more optimal, correct, or creative** — enabling the model to break through the capability boundary of the base model.
 
 <div align="center">
-<b>更大的探索空间 · 更多的尝试 · 更高的多样性 · 更好的输出</b>
+<b>More exploration space · More attempts · Higher diversity · Better outputs</b>
 </div>
 
 ### Core Tension: Exploration vs Exploitation
@@ -49,11 +49,11 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 ### Ultimate Goal of Exploration
 
 ```
-生成层面的语义多样性
+Semantic diversity at the generation level
     ↓
-任务层面能够解决更多问题
+Ability to solve more tasks at the task level
     ↓
-模型内化这种能力 → 真正学会强大的推理
+Internalize this capability → truly learn powerful reasoning
 ```
 
 ---
@@ -271,7 +271,7 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 ### 5.4 Noise-Based Perturbation
 - **"Exploration via Feature Perturbation in Contextual Bandits"** ![](https://img.shields.io/badge/feature--perturbation-F59E0B)
   [[Paper](https://arxiv.org/abs/2508.02260v1)]
-  - *加噪声也算是一种特征扰动。从实验结果来看在所有层和10%加噪声可以超越grpo性能*
+  - *Adding noise is essentially a form of feature perturbation. Experimental results show that adding noise to all layers at 10% can surpass GRPO performance.*
 - **"NOISY NETWORKS FOR EXPLORATION"** ![](https://img.shields.io/badge/noisy--net-06B6D4)
   [[Paper](https://doi.org/10.1038/s41586-024-07421-0)]
 - **"Parameter Space Noise for Exploration"** ![](https://img.shields.io/badge/noisy--net-06B6D4)
@@ -304,12 +304,12 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
 ### 6.1 RLVR (Math / Code)
 - **"HINT: Helping Ineffective rollouts Navigate Towards effectiveness"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://arxiv.org/abs/2510.09388)]
-  - *给提示还是直接给答案能够帮助探索？*
+  - *Does hinting or directly providing the answer better facilitate exploration?*
 - **"The Path of Self-Evolving Large Language Models: Achieving Data-Eﬃcient Learning via Intrinsic Feedback"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Paper](https://arxiv.org/abs/2510.09388v1)]
 - **"The Art of Scaling Reinforcement Learning Compute for LLMs"** ![](https://img.shields.io/badge/rl--limitations-red)
   [[Paper](https://arxiv.org/abs/2510.09388)]
-  - *或许可以思考如何评估模型的效果*
+  - *May be worth considering how to evaluate model effectiveness.*
 - **"Scaf-GRPO: Scaffolded Group Relative Policy Optimization for Enhancing LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Paper](https://doi.org/10.2139/ssrn.4656090)]
 - **"Representation-Based Exploration for Language Models: From Test-Time to Post-Training"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
@@ -417,7 +417,7 @@ Following the systematic framework in *From Trial-and-Error to Improvement*:
   [[Paper](https://arxiv.org/abs/2510.09388v1)]
 - **"JustRL: Scaling a 1.5B LLM with a Simple RL Recipe"** ![](https://img.shields.io/badge/rl--limitations-red)
   [[Paper](https://doi.org/10.70675/e40c3140z2868z4db2z997az453e4804bae1)]
-  - *在较为简单的baseline中加入一些RLHF规则约束时发现可能反而会限制模型的探索，影响模型的性能。因此有时候性能的提升可能不是加法做得不够，而是需要多做减法，大道至简*
+  - *When adding RLHF-style constraints to a simple baseline, it was found that doing so can actually limit exploration and hurt performance. Sometimes improvement isn't about doing more — it's about doing less. Simplicity is key.*
 
 
 | Position | Argument | Key Work |
