@@ -167,6 +167,9 @@ Internalize this capability → truly learn powerful reasoning
 
 - **"Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2506](https://arxiv.org/abs/2506.01939)]
+- **"Entropy-Gated Selective Policy Optimization: Token-Level Gradient Allocation for Enhanced LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2602](https://arxiv.org/abs/2602.03309)]
+  - *Gates gradient updates based on token-level entropy, selectively allocating learning signal to high-uncertainty tokens to maintain exploration.*
   - *Restricts policy updates to high-entropy tokens (top 20%). Avoids reward hacking by focusing updates on tokens where the model is genuinely uncertain.*
 
 ### 2.3 Low-Probability Token Regularization
@@ -279,6 +282,9 @@ Internalize this capability → truly learn powerful reasoning
 
 - **"UpSkill: Mutual Information Skill Learning for Structured Response Diversity in LLMs"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[arxiv 2602](https://arxiv.org/abs/2602.22296)]
+- **"Improving RL Exploration for LLM Reasoning through Retrospective Replay"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2504](https://arxiv.org/abs/2504.14363)]
+  - *Introduces retrospective replay to revisit and learn from past exploration trajectories in LLM RL, improving sample efficiency and discovery of novel reasoning paths.*
   - *Mutual information-based skill learning to promote structured diversity in LLM responses.*
   - *Uses the volume spanned by embedding vectors in representation space to measure semantic diversity across a set of rollouts. DPP-based diversity reward.*
 
@@ -326,6 +332,15 @@ Internalize this capability → truly learn powerful reasoning
 
 - **"Dual Consensus: Escaping from Spurious Majority in Unsupervised RLVR via Two-Stage Vote Mechanism"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2603](https://arxiv.org/abs/2603.16223)]
+- **"Controllable Exploration in Hybrid-Policy RLVR for Multi-Modal Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2602](https://arxiv.org/abs/2602.20197)]
+  - *Proposes controllable exploration mechanisms in hybrid-policy RLVR to systematically adjust exploration intensity during multi-modal reasoning training.*
+- **"HTPO: Towards Exploration-Exploitation Balanced Policy Optimization via Hindsight Thinking"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2605](https://arxiv.org/abs/2605.08283)]
+  - *Balances exploration-exploitation in policy optimization for LLM reasoning through hindsight thinking mechanisms.*
+- **"Temperature as a Meta-Policy: Adaptive Temperature in LLM Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2602](https://arxiv.org/abs/2602.11779)]
+  - *Models temperature as a learnable meta-policy to dynamically balance exploration-exploitation during LLM RL training.*
   - *Two-stage voting mechanism to escape spurious majority modes during unsupervised RLVR training.*
   - *Uses a partition function to align the policy distribution with the true reward distribution, enabling more principled exploration.*
 
@@ -381,6 +396,9 @@ Internalize this capability → truly learn powerful reasoning
   - *Aligns prototype entropy to maintain structured uncertainty during RL reasoning training.*
 - **"CE-GPPO: Coordinating Entropy via Gradient-Preserving Clipping Policy Optimization in RL"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2509](https://arxiv.org/abs/2509.20712)]
+- **"Clip-Low Increases Entropy and Clip-High Decreases Entropy in Reinforcement Learning for LLMs"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2509](https://arxiv.org/abs/2509.26114)]
+  - *Provides empirical and theoretical analysis of how clipping parameters affect entropy dynamics in LLM RL; clip-low boosts token diversity while clip-high suppresses it.*
   - *Gradient-preserving clipping to coordinate entropy across policy updates.*
   - *Analyzes the role of token/sequence entropy in shaping exploration behavior during RLVR training.*
 
