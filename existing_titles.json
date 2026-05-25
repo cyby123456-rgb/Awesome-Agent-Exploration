@@ -147,7 +147,26 @@
     "Generative Floor Plan Design with LLMs via Reinforcement Learning with Verifiable Rewards",
     "Instructing LLMs to Negotiate using Reinforcement Learning with Verifiable Rewards",
     "Post-Training Local LLM Agents for Linux Privilege Escalation with Verifiable Rewards",
-    "Breaking the Safety-Capability Tradeoff: Reinforcement Learning with Verifiable Rewards Maintains Safety Guardrails in LLMs"
+    "Breaking the Safety-Capability Tradeoff: Reinforcement Learning with Verifiable Rewards Maintains Safety Guardrails in LLMs",
+    "LLMs as Noisy Channels: A Shannon Perspective on Model Capacity and Scaling Laws",
+    "ETCHR: Editing To Clarify and Harness Reasoning",
+    "Good Token Hunting: A Hitchhiker's Guide to Token Selection for Visual Geometry Transformers",
+    "PGT: Procedurally Generated Tasks for improving visual grounding in MLLMs",
+    "LaMo: Self-Supervised Latent Motion Priors for Physical Realism in Video Generation",
+    "Vision Transformers Need Better Token Interaction",
+    "Human Decision-Making with Persuasive and Narrative LLM Explanations",
+    "Robotic Strawberry Harvesting with Robust Vision and Deep Reinforcement Learning based Sim-to-Real Control",
+    "Strong Teacher Not Needed? On Distillation in LLM Pretraining",
+    "Point Tracking Improves World Action Models",
+    "It's the humans, not the data: Geopolitical bias in LLMs originates in post-training, amplified by the language of the prompt",
+    "Advanced AI Service Provisioning in O-RAN through LLM Engine Integration",
+    "Engagement-Optimized Care: When LLMs become Mental Health Infrastructure",
+    "Benchmarking LLMs for Community Governance Simulation with Life-history Narratives",
+    "Precipitation diffusion downscaling and application to out-of-distribution simulations with and without stratospheric aerosol injection",
+    "Learning a Particle Dynamics Model with Real-world Videos",
+    "PiD: Fast and High-Resolution Latent Decoding with Pixel Diffusion",
+    "Astrophysical Parameters of 5056 Open Star Clusters from Bayesian Nested Sampling with PARSEC Isochrones",
+    "Debiased Negative Mining Improves Out-of-distribution Detection with Pre-trained Vision-Language Models"
   ],
-  "count": 148
+  "count": 167
 }

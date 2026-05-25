@@ -138,6 +138,11 @@ Internalize this capability → truly learn powerful reasoning
 ## 2. Token-Level Exploration
 
 
+
+- **"Good Token Hunting: A Hitchhiker's Guide to Token Selection for Visual Geometry Transformers"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2605](http://arxiv.org/abs/2605.23892v1)]
+  - *Visual geometry transformers have become powerful architectures for multi-view 3D reconstruction, enabling joint prediction of multiple 3D attributes in a fe....*
+
 - **"Adaptive Divergence Regularized Policy Optimization for Fine-tuning Generative Models"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2510](https://arxiv.org/abs/2510.18053)]
   - *Uses adaptive divergence regularization to maintain exploration during policy optimization.*
@@ -246,6 +251,11 @@ Internalize this capability → truly learn powerful reasoning
   - *Effective information retrieval requires reasoning over partial evidence and refining strategies as information emerges. Yet current approaches fall short: neural retrievers lack reasoning capabilitie...*
 
 ## 3. Sequence / Response-Level Exploration
+
+
+- **"PiD: Fast and High-Resolution Latent Decoding with Pixel Diffusion"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
+  [[arxiv 2605](http://arxiv.org/abs/2605.23902v1)]
+  - *Most practical high-resolution text-to-image systems, including latent diffusion and autoregressive models, perform generation in a compact latent space, and....*
 
 - **"Outcome-based Exploration for LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen) ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2602](https://arxiv.org/abs/2602.03635)]
@@ -385,6 +395,14 @@ Internalize this capability → truly learn powerful reasoning
 ## 5. Semantic-Ignorant Exploration (Entropy / Temperature / Noise)
 
 
+
+- **"LLMs as Noisy Channels: A Shannon Perspective on Model Capacity and Scaling Laws"** ![](https://img.shields.io/badge/random--exploration-orange)
+  [[arxiv 2605](http://arxiv.org/abs/2605.23901v1)]
+  - *Existing scaling laws for Large Language Models (LLMs), predominantly monotonic power laws, fail to explain emerging non-monotonic phenomena such as catastro....*
+- **"ETCHR: Editing To Clarify and Harness Reasoning"** ![](https://img.shields.io/badge/random--exploration-orange)
+  [[arxiv 2605](http://arxiv.org/abs/2605.23897v1)]
+  - *Multimodal Large Language Models have advanced visual reasoning, yet a purely textual chain of thought remains a bottleneck for questions that require fine-g....*
+
 - **"Let it Calm: Exploratory Annealed Decoding for Verifiable Reinforcement Learning"** ![](https://img.shields.io/badge/random--exploration-orange)
   [[arxiv 2510](https://arxiv.org/abs/2510.05251)]
   - *Annealed decoding strategy that starts with high exploration and gradually reduces to focus on exploitation.*
@@ -490,6 +508,17 @@ Internalize this capability → truly learn powerful reasoning
 ## 6. Exploration in Specific Scenarios
 
 ### 6.1 RLVR (Math / Code)
+
+- **"Advanced AI Service Provisioning in O-RAN through LLM Engine Integration"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2605](http://arxiv.org/abs/2605.23809v1)]
+  - *The Open Radio Access Network (O-RAN) architecture allows AI to be embedded directly into the RAN through modular xApps and rApps, yet creating these applica....*
+- **"Astrophysical Parameters of 5056 Open Star Clusters from Bayesian Nested Sampling with PARSEC Isochrones"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2605](http://arxiv.org/abs/2605.23802v1)]
+  - *We present a homogeneous catalogue of fundamental astrophysical parameters -- age, metallicity ([Fe/H]), heliocentric distance, and colour excess $E(G_{\math....*
+- **"Debiased Negative Mining Improves Out-of-distribution Detection with Pre-trained Vision-Language Models"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2605](http://arxiv.org/abs/2605.23797v1)]
+  - *Aiming at identifying unexpected inputs from unknown classes, out-of-distribution (OOD) detection has emerged as a pivotal approach to enhancing the reliabil....*
+
 - **"HINT: Helping Ineffective rollouts Navigate Towards effectiveness"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2510](https://arxiv.org/abs/2510.09388)]
   - *Does hinting or directly providing the answer better facilitate exploration?*
@@ -559,6 +588,11 @@ Internalize this capability → truly learn powerful reasoning
 - **Inference-phase noise: Layer 16** shows slightly positive effect (helped > hurt, 4.7% vs 4.0%)
 
 ### 6.2 Unsupervised / Minimal Label Scenarios
+
+- **"Benchmarking LLMs for Community Governance Simulation with Life-history Narratives"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2605](http://arxiv.org/abs/2605.23783v1)]
+  - *Effective community governance hinges on understanding what specific residents think and need.*
+
 - **"Learn the Ropes, Then Trust the Wins: Self-imitation with Progressive Exploration for Agentic Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Routledge](https://doi.org/10.4324/9780429484216)]
 
@@ -639,6 +673,14 @@ Internalize this capability → truly learn powerful reasoning
   - *Fine-tuning large language models (LLMs) for downstream tasks typically exhibit a fundamental safety-capability tradeoff, where improving task performance degrades safety alignment even on benign data...*
 
 ## 7. The Escape Debate: Can RL Surpass Base Model?
+
+- **"Strong Teacher Not Needed? On Distillation in LLM Pretraining"** ![](https://img.shields.io/badge/rl--limitations-red)
+  [[arxiv 2605](http://arxiv.org/abs/2605.23857v1)]
+  - *Knowledge distillation generally assumes a strong-to-weak relationship where stronger teachers yield better students.*
+- **"It's the humans, not the data: Geopolitical bias in LLMs originates in post-training, amplified by the language of the prompt"** ![](https://img.shields.io/badge/rl--limitations-red)
+  [[arxiv 2605](http://arxiv.org/abs/2605.23825v1)]
+  - *It has generally been assumed that geopolitical bias in language models originates from the training data used during the pre-training phase.*
+
 - **"Can GRPO Help LLMs Transcend Their Pretraining Origin?"** ![](https://img.shields.io/badge/rl--limitations-red)
   [[Papers on Joyce 2013](https://doi.org/10.2478/pjbr-2013-0003)]
 - **"Reasoning with Sampling: Your Base Model is Smarter Than You Think"** ![](https://img.shields.io/badge/rl--limitations-red)
@@ -673,6 +715,35 @@ Internalize this capability → truly learn powerful reasoning
 
 ## 8. Related Topics
 
+
+
+- **"PGT: Procedurally Generated Tasks for improving visual grounding in MLLMs"** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2605](http://arxiv.org/abs/2605.23883v1)]
+  - *Despite remarkable progress in Multimodal Large Language Models (MLLMs), these models still struggle with fine-grained understanding tasks.*
+- **"LaMo: Self-Supervised Latent Motion Priors for Physical Realism in Video Generation"** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2605](http://arxiv.org/abs/2605.23878v1)]
+  - *Modern video generators produce visually compelling clips but still struggle with physical and motion consistency, limiting their use as reliable world simul....*
+- **"Vision Transformers Need Better Token Interaction"** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2605](http://arxiv.org/abs/2605.23868v1)]
+  - *Vision Transformers (ViTs) can learn strong image-level representations while their patch representations become less effective for dense prediction during p....*
+- **"Human Decision-Making with Persuasive and Narrative LLM Explanations"** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2605](http://arxiv.org/abs/2605.23867v1)]
+  - *Large language models (LLMs) have the potential to aid and improve human decision-making in classification tasks, not only by providing fairly accurate predi....*
+- **"Robotic Strawberry Harvesting with Robust Vision and Deep Reinforcement Learning based Sim-to-Real Control"** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2605](http://arxiv.org/abs/2605.23863v1)]
+  - *This study presents a closed-loop robotic strawberry harvesting system that combines a robust vision module, simulation-trained deep reinforcement learning (....*
+- **"Point Tracking Improves World Action Models"** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2605](http://arxiv.org/abs/2605.23856v1)]
+  - *Robot policy learning benefits from world-action models that capture environment dynamics, but pixel-level prediction entangles dynamics with nuisance factor....*
+- **"Engagement-Optimized Care: When LLMs become Mental Health Infrastructure"** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2605](http://arxiv.org/abs/2605.23787v1)]
+  - *General-purpose LLMs are increasingly functioning as mental health infrastructure due to gaps in care left by provider shortages, inadequate insurance covera....*
+- **"Precipitation diffusion downscaling and application to out-of-distribution simulations with and without stratospheric aerosol injection"** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2605](http://arxiv.org/abs/2605.23776v1)]
+  - *Stratospheric aerosol injection (SAI), a possible climate engineering strategy where reflective particles are injected into the stratosphere, has been explor....*
+- **"Learning a Particle Dynamics Model with Real-world Videos"** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2605](http://arxiv.org/abs/2605.23845v1)]
+  - *Data-driven learning approaches for physics simulation, sometimes referred to as world models, have emerged as promising alternatives to traditional physics ....*
 
 - **"AMFT: Aligning LLM Reasoners by Meta-Learning the Optimal Imitation-Exploration Balance"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2508](https://arxiv.org/abs/2508.06944)]
