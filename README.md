@@ -16,17 +16,11 @@
   From token-level diversity to policy distribution reshaping — understanding how models discover better, more diverse, and more creative solutions beyond their current probability distribution.
 </p>
 
----
-
 <p align="center">
   <a href="#what-is-exploration">What is Exploration?</a> ·
   <a href="#why-exploration-matters">Why Exploration Matters?</a> ·
   <a href="#table-of-contents">Table of Contents</a>
 </p>
-
-> Contributions are welcome. If you find missing papers, inaccurate classifications, or newly released work, feel free to open an issue or PR.
-
----
 
 ## What is Exploration?
 
@@ -60,8 +54,6 @@ Ability to solve more tasks at the task level
 Internalize this capability → truly learn powerful reasoning
 ```
 
----
-
 ## Why Exploration Matters
 
 ### Background / Motivation
@@ -85,8 +77,6 @@ Internalize this capability → truly learn powerful reasoning
 
 | View | Supporting Work |
 |---|---|
-| ❌ **Cannot escape** — RLVR does not truly expand beyond base model capabilities | *The Invisible Leash: Why RLVR May or May Not Escape Its Origin* |
-| ✅ **Can escape**, but current methods underutilize RL's potential | *ProRL: Prolonged Reinforcement Learning Expands Reasoning Boundaries in Large Language Models* |
 
 ## Table of Contents
 
@@ -101,8 +91,6 @@ Internalize this capability → truly learn powerful reasoning
   - [6.3 Creative Generation & Open-Ended Tasks](#63-creative-generation--open-ended-tasks)
 - [7. The Escape Debate: Can RL Surpass Base Model?](#7-the-escape-debate-can-rl-surpass-base-model)
 
----
-
 ## 1. Survey & Frameworks
 
 - **"Navigating the Alpha Jungle: An LLM-Powered MCTS Framework for Formulaic Factor Mining"** ![](https://img.shields.io/badge/exploration--llm-blue)
@@ -112,7 +100,7 @@ Internalize this capability → truly learn powerful reasoning
 - **"The Landscape of Agentic Reinforcement Learning for LLMs: A Survey"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2509](https://arxiv.org/abs/2509.02547)]
 
-- **"From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR"** ![](https://img.shields.io/badge/exploration--llm-blue) — *(Work in progress)* ![](https://img.shields.io/badge/random--exploration-orange)
+- **"From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR"** ![](https://img.shields.io/badge/exploration--llm-blue) ![](https://img.shields.io/badge/random--exploration-orange)
   [[arxiv 2508](https://arxiv.org/abs/2508.07534)]
 
 - **"Understanding R1-Zero-Like Training: A Critical Perspective"** ![](https://img.shields.io/badge/rl--limitations-red)
@@ -120,8 +108,6 @@ Internalize this capability → truly learn powerful reasoning
 
 - **"DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2501](https://arxiv.org/abs/2501.12948)]
-
----
 
 - **"COS(M+O)S: Curiosity and RL-Enhanced MCTS for Exploring Story Space via Language Models"** ![](https://img.shields.io/badge/random--exploration-orange)
   [[arxiv 2501](https://arxiv.org/abs/2501.17104)]
@@ -154,7 +140,6 @@ Internalize this capability → truly learn powerful reasoning
 
 - **"Adaptive Divergence Regularized Policy Optimization for Fine-tuning Generative Models"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2510](https://arxiv.org/abs/2510.18053)]
-
 
 - **"Reasoning with Exploration: An Entropy Perspective on Reinforcement Learning for LLMs"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2503](https://arxiv.org/abs/2503.20783)]
@@ -198,8 +183,6 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2604](https://arxiv.org/abs/2604.13902)]
 - **"Transformation-Augmented GRPO for Enhancing Exploration in Reasoning of Large Language Models"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2601](https://arxiv.org/abs/2601.22478)]
-
----
 
 - **"Clip-Low Increases Entropy and Clip-High Decreases Entropy in Reinforcement Learning of Large Language Models"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2509](https://arxiv.org/abs/2509.26114)]
@@ -253,9 +236,8 @@ Internalize this capability → truly learn powerful reasoning
 
 - **"DARLING: Diversity-Aware Reinforcement Learning"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[arxiv 2509](https://arxiv.org/abs/2509.07980)]
-  - ⚠️ *Potential issue: Clustering trap — coarse clustering may miss fine-grained diversity.*
 
-- **"Enhancing Diversity in Large Language Models via Determinantal Point Processes"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6) (DQO)
+- **"Enhancing Diversity in Large Language Models via Determinantal Point Processes"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[arxiv 2509](https://arxiv.org/abs/2509.06941)]
 
 - **"Reinforced Efficient Reasoning via Semantically Diverse Exploration"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
@@ -296,8 +278,6 @@ Internalize this capability → truly learn powerful reasoning
 - **"Improving RL Exploration for LLM Reasoning through Retrospective Replay"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2504](https://arxiv.org/abs/2504.14363)]
 
----
-
 - **"EnergyLens: Predictive Energy-Aware Exploration for Multi-GPU LLM Inference Optimization"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2605](https://arxiv.org/abs/2605.14249)]
 
@@ -319,7 +299,6 @@ Internalize this capability → truly learn powerful reasoning
 
 - **"Risk-Sensitive RL for Alleviating Exploration Dilemmas in Large Language Models"** ![](https://img.shields.io/badge/risk--sensitive-EC4899) ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2509](https://arxiv.org/abs/2509.24261)]
-  - ⚠️ *Open question: What if hard problems are truly unsolvable, no matter how many attempts?*
 
 - **"FlowRL: Matching Reward Distributions for LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2509](https://arxiv.org/abs/2509.15207)]
@@ -348,8 +327,6 @@ Internalize this capability → truly learn powerful reasoning
 - **"Temperature as a Meta-Policy: Adaptive Temperature in LLM Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2602](https://arxiv.org/abs/2602.11779)]
 
----
-
 ## 5. Semantic-Ignorant Exploration (Entropy / Temperature / Noise)
 
 - **"Global Convergence of Policy Gradient for Entropy Regularized Linear-Quadratic Control with multiplicative noise"** ![](https://img.shields.io/badge/random--exploration-orange)
@@ -363,8 +340,6 @@ Internalize this capability → truly learn powerful reasoning
 
 - **"Let it Calm: Exploratory Annealed Decoding for Verifiable Reinforcement Learning"** ![](https://img.shields.io/badge/random--exploration-orange)
   [[arxiv 2510](https://arxiv.org/abs/2510.05251)]
-
-> Methods that increase generation randomness without considering semantic information — solving generation-level diversity issues.
 
 ### 5.1 Entropy-Based Methods
 
@@ -424,12 +399,6 @@ Internalize this capability → truly learn powerful reasoning
   [[ACL 2024](https://doi.org/10.18653/v1/2024.acl-long.409)]
 - **"Evolution Strategies as a Scalable Alternative to Reinforcement Learning"** ![](https://img.shields.io/badge/noisy--net-06B6D4)
   [[ICMLA 2025](https://doi.org/10.1109/icmla66185.2025.00016)]
-
-- **Hidden State Noise Injection (Training Phase)** — *(Your work)*
-
-- **Hidden State Noise Injection (Inference Phase)** — *(Your work)*
-
-
 
 - **"From Noise to Diversity: Random Embedding Injection in LLM Reasoning"** ![](https://img.shields.io/badge/random--exploration-orange)
   [[arxiv 2605](https://arxiv.org/abs/2605.11936)]
@@ -543,8 +512,6 @@ Internalize this capability → truly learn powerful reasoning
 - **"POPE: Learning to Reason on Hard Problems via Privileged On-Policy Exploration"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Springer](https://doi.org/10.1007/978-3-8349-8397-8_2)]
 
-> Sparse reward scenarios where exploration helps find better answers and solve harder problems.
-
 - **"RL-Plus: Countering Capability Boundary Collapse of LLMs in Reinforcement Learning with Hybrid-policy Optimization"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[NACADA 2005](https://doi.org/10.1111/j.1939-7445.2005.tb00147.x)]
 
@@ -570,10 +537,6 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2605](https://arxiv.org/abs/2605.09853)]
 - **"Cog-DRIFT: Exploration on Adaptively Reformulated Instances Enables Learning from Hard Reasoning Problems"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2604](https://arxiv.org/abs/2604.04767)]
-
-- **Training-phase noise: Layer 5 only** achieves best balance (+18.8pp pass@1, healthy entropy)
-- **Training-phase noise: All-layer** achieves best pass@1 (+18.4pp) but causes entropy collapse (0.055)
-- **Inference-phase noise: Layer 16** shows slightly positive effect (helped > hurt, 4.7% vs 4.0%)
 
 ### 6.2 Unsupervised / Minimal Label Scenarios
 
@@ -630,8 +593,6 @@ Internalize this capability → truly learn powerful reasoning
 - **"Breaking the Exploration Bottleneck: Rubric-Scaffolded Reinforcement Learning for General LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2103](https://arxiv.org/abs/2103.12726)]
 
----
-
 - **"Beyond Accuracy: Evaluating Strategy Diversity in LLM Mathematical Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2605](https://arxiv.org/abs/2605.09292)]
 
@@ -663,13 +624,6 @@ Internalize this capability → truly learn powerful reasoning
 
 - **"Exploration vs Exploitation: Rethinking RLVR through Clipping, Entropy, and Spurious Reward"** ![](https://img.shields.io/badge/rl--limitations-red)
   [[arxiv 2512](https://arxiv.org/abs/2512.16912)]
-
-| Position | Argument | Key Work |
-|---|---|---|
-| ❌ **Cannot escape** | RLVR merely selects and aggregates base model capabilities; does not create new ones | *The Invisible Leash*, *Understanding R1-Zero-Like Training* |
-| ✅ **Can escape** | Current methods under-exploit RL; prolonged training with high-entropy methods (DAPO-like) keeps improving pass@k | *ProRL* |
-| 🤷 **Conditional** | Depends on exploration quality; better exploration mechanisms may unlock new capabilities | *(Active research)* |
-
 
 [![CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
 
