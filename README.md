@@ -744,6 +744,9 @@ Internalize this capability → truly learn powerful reasoning
 - **"Learning a Particle Dynamics Model with Real-world Videos"** ![](https://img.shields.io/badge/related--topics-888)
   [[arxiv 2605](http://arxiv.org/abs/2605.23845v1)]
   - *Data-driven learning approaches for physics simulation, sometimes referred to as world models, have emerged as promising alternatives to traditional physics ....*
+- **"Vapor-Cell-Induced Uncertainty in Rydberg Atom Measurements via the Electric-Field Volume-Integral-Equation Method"** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2605](http://arxiv.org/abs/2605.23870v1)]
+  - *Electromagnetic scattering effects of a vapor cell on electric-field measurements using Rydberg atom-based sensors are analyzed with the aid of the volume in....*
 
 - **"AMFT: Aligning LLM Reasoners by Meta-Learning the Optimal Imitation-Exploration Balance"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2508](https://arxiv.org/abs/2508.06944)]
