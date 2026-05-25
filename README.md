@@ -113,26 +113,15 @@ Internalize this capability → truly learn powerful reasoning
 ## 1. Survey & Frameworks
 
 
+- **"Navigating the Alpha Jungle: An LLM-Powered MCTS Framework for Formulaic Factor Mining"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2505](https://arxiv.org/abs/2505.11122)]
+  - *alpha factor mining is pivotal in quantitative investment for identifying predictive signals from complex financial data.*
 - **"RLFactory: A Plug-and-Play Reinforcement Learning Post-Training Framework for LLM Multi-Turn Tool-Use"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2509](https://arxiv.org/abs/2509.06980)]
   - *large language models excel at basic reasoning but struggle with tasks that require interaction with external tools.*
 - **"The Landscape of Agentic Reinforcement Learning for LLMs: A Survey"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2509](https://arxiv.org/abs/2509.02547)]
   - *the emergence of agentic reinforcement learning (agentic rl) marks a paradigm shift from conventional reinforcement learning applied to large language models....*
-- **"Reasoning through Exploration: A Reinforcement Learning Framework for Robust Function Calling"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2508](https://arxiv.org/abs/2508.05118)]
-  - *the effective training of large language models (llms) for function calling faces a critical challenge: balancing exploration of complex reasoning paths with....*
-- **"When Motion Learns to Listen: Diffusion-Prior Lyapunov Actor-Critic Framework with LLM Guidance for Stable and Robust AUV Control in Underwater Tasks"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2511](https://arxiv.org/abs/2511.16900)]
-  - *autonomous underwater vehicles (auvs) are indispensable for marine exploration; yet, their control is hindered by nonlinear hydrodynamics, time-varying distu....*
-- **"The rise and potential of large language model based agents: a survey"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv](http://arxiv.org/pdf/2309.07864)]
-- **"Reinforced MLLM: A Survey on RL-Based Reasoning in Multimodal Large Language Models"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2504](https://arxiv.org/abs/2504.21277)]
-  - *the application of reinforcement learning (rl) to enhance the reasoning capabilities of multimodal large language models (mllms) constitutes a rapidly advanc....*
-- **"Stop Overthinking: A Survey on Efficient Reasoning for Large Language Models"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2503](https://arxiv.org/abs/2503.16419)]
-  - *large language models (llms) have demonstrated remarkable capabilities in complex tasks.*
 
 - **"From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR"** ![](https://img.shields.io/badge/exploration--llm-blue) — *(Work in progress)* ![](https://img.shields.io/badge/random--exploration-orange)
   [[arxiv 2508](https://arxiv.org/abs/2508.07534)]
@@ -161,15 +150,24 @@ Internalize this capability → truly learn powerful reasoning
 
 
 
+- **"ETTRL: Balancing Exploration and Exploitation in LLM Test-Time Reinforcement Learning Via Entropy Mechanism"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2508](https://arxiv.org/abs/2508.11356)]
+  - *recent advancements in large language models have yielded significant improvements in complex reasoning tasks such as mathematics and programming.*
+- **"Efficient Reinforcement Learning with Semantic and Token Entropy for LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2512](https://arxiv.org/abs/2512.04359)]
+  - *reinforcement learning with verifiable rewards (rlvr) has demonstrated superior performance in enhancing the reasoning capability of large language models (l....*
+- **"Depth-Breadth Synergy in RLVR: Unlocking LLM Reasoning Gains with Adaptive Exploration"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2508](https://arxiv.org/abs/2508.13755)]
+  - *reinforcement learning with verifiable reward (rlvr) is a powerful method for enhancing the reasoning abilities of large language models, but its full potent....*
+- **"Semantic-Space Exploration and Exploitation in RLVR for LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2509](https://arxiv.org/abs/2509.23808)]
+  - *reinforcement learning with verifiable rewards (rlvr) for llm reasoning is often framed as balancing exploration and exploitation in action space, typically ....*
 - **"CE-GPPO: Coordinating Entropy via Gradient-Preserving Clipping Policy Optimization in Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2509](https://arxiv.org/abs/2509.20712)]
   - *reinforcement learning (rl) has become a powerful paradigm for optimizing large language models (llms) to handle complex reasoning tasks.*
 - **"On Entropy Control in LLM-RL Algorithms"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2509](https://arxiv.org/abs/2509.03493)]
   - *for rl algorithms, appropriate entropy control is crucial to their effectiveness.*
-- **"Efficient Reinforcement Learning with Semantic and Token Entropy for LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2512](https://arxiv.org/abs/2512.04359)]
-  - *reinforcement learning with verifiable rewards (rlvr) has demonstrated superior performance in enhancing the reasoning capability of large language models (l....*
 - **"From Exploration to Exploitation: A Two-Stage Entropy RLVR Approach for Noise-Tolerant MLLM Training"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2511](https://arxiv.org/abs/2511.07738)]
   - *reinforcement learning with verifiable rewards (rlvr) for multimodal large language models (mllms) is highly dependent on high-quality labeled data, which is....*
@@ -293,6 +291,18 @@ Internalize this capability → truly learn powerful reasoning
 ## 3. Sequence / Response-Level Exploration
 
 
+- **"Breaking $\textit{Winner-Takes-All}$: Cooperative Policy Optimization Improves Diverse LLM Reasoning"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
+  [[arxiv 2605](https://arxiv.org/abs/2605.11461)]
+  - *reinforcement learning with verifiers (rlvr) has become a central paradigm for improving llm reasoning, yet popular group-based optimization algorithms like ....*
+- **"DeepTheorem: Advancing LLM Reasoning for Theorem Proving Through Natural Language and Reinforcement Learning"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
+  [[arxiv 2505](https://arxiv.org/abs/2505.23754)]
+  - *theorem proving serves as a major testbed for evaluating complex reasoning abilities in large language models (llms).*
+- **"Count Counts: Motivating Exploration in LLM Reasoning with Count-based Intrinsic Rewards"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
+  [[arxiv 2510](https://arxiv.org/abs/2510.16614)]
+  - *reinforcement learning (rl) has become a compelling way to strengthen the multi step reasoning ability of large language models (llms).*
+- **"TreeRL: LLM Reinforcement Learning with On-Policy Tree Search"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
+  [[arxiv 2506](https://arxiv.org/abs/2506.11902)]
+  - *reinforcement learning (rl) with tree search has demonstrated superior performance in traditional reasoning tasks.*
 - **"Can LLMs Guide Their Own Exploration? Gradient-Guided Reinforcement Learning for LLM Reasoning"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[arxiv 2512](https://arxiv.org/abs/2512.15687)]
   - *reinforcement learning has become essential for strengthening the reasoning abilities of large language models, yet current exploration mechanisms remain fun....*
@@ -305,9 +315,6 @@ Internalize this capability → truly learn powerful reasoning
 - **"Enhancing Diversity in Parallel Agents: A Maximum State Entropy Exploration Story"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[arxiv 2505](https://arxiv.org/abs/2505.01336)]
   - *parallel data collection has redefined reinforcement learning (rl), unlocking unprecedented efficiency and powering breakthroughs in large-scale real-world a....*
-- **"Breaking $\textit{Winner-Takes-All}$: Cooperative Policy Optimization Improves Diverse LLM Reasoning"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
-  [[arxiv 2605](https://arxiv.org/abs/2605.11461)]
-  - *reinforcement learning with verifiers (rlvr) has become a central paradigm for improving llm reasoning, yet popular group-based optimization algorithms like ....*
 - **"CLIPO: Contrastive Learning in Policy Optimization Generalizes RLVR"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[arxiv 2603](https://arxiv.org/abs/2603.10101)]
   - *reinforcement learning with verifiable rewards (rlvr) has significantly advanced the reasoning capacity of large language models (llms).*
@@ -317,27 +324,12 @@ Internalize this capability → truly learn powerful reasoning
 - **"DRA-GRPO: Your GRPO Needs to Know Diverse Reasoning Paths for Mathematical Reasoning"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[arxiv 2505](https://arxiv.org/abs/2505.09655)]
   - *post-training llms with reinforcement learning, specifically group relative policy optimization (grpo), has emerged as a paradigm for enhancing mathematical ....*
-- **"DeepTheorem: Advancing LLM Reasoning for Theorem Proving Through Natural Language and Reinforcement Learning"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
-  [[arxiv 2505](https://arxiv.org/abs/2505.23754)]
-  - *theorem proving serves as a major testbed for evaluating complex reasoning abilities in large language models (llms).*
 - **"An Empirical Study on Reinforcement Learning for Reasoning-Search Interleaved LLM Agents"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[arxiv 2505](https://arxiv.org/abs/2505.15117)]
   - *reinforcement learning (rl) has demonstrated strong potential in training large language models (llms) capable of complex reasoning for real-world problem so....*
 - **"MoDoMoDo: Multi-Domain Data Mixtures for Multimodal LLM Reinforcement Learning"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[arxiv 2505](https://arxiv.org/abs/2505.24871)]
   - *reinforcement learning with verifiable rewards (rlvr) has recently emerged as a powerful paradigm for post-training large language models (llms), achieving s....*
-- **"FARE: Fast-Slow Agentic Robotic Exploration"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
-  [[arxiv 2601](https://arxiv.org/abs/2601.14681)]
-  - *this work advances autonomous robot exploration by integrating agent-level semantic reasoning with fast local control.*
-- **"R1-Searcher++: Incentivizing the Dynamic Knowledge Acquisition of LLMs via Reinforcement Learning"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
-  [[arxiv 2505](https://arxiv.org/abs/2505.17005)]
-  - *large language models (llms) are powerful but prone to hallucinations due to static knowledge.*
-- **"CLEANER: Self-Purified Trajectories Boost Agentic Reinforcement Learning"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
-  [[arxiv 2601](https://arxiv.org/abs/2601.15141)]
-  - *agentic reinforcement learning (rl) has empowered large language models (llms) to utilize tools like python interpreters for complex problem-solving.*
-- **"Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
-  [[arxiv 2508](https://arxiv.org/abs/2508.19828)]
-  - *large language models (llms) have demonstrated impressive capabilities across a wide range of nlp tasks, but they remain fundamentally stateless, constrained....*
 
 - **"Outcome-based Exploration for LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen) ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2602](https://arxiv.org/abs/2602.03635)]
@@ -495,12 +487,6 @@ Internalize this capability → truly learn powerful reasoning
 - **"VeriRL: Boosting the LLM-based Verilog Code Generation via Reinforcement Learning"** ![](https://img.shields.io/badge/random--exploration-orange)
   [[arxiv 2508](https://arxiv.org/abs/2508.18462)]
   - *recent advancements in code generation have shown remarkable success across software domains, yet hardware description languages (hdls) such as verilog remai....*
-- **"Enhancing Efficiency and Exploration in Reinforcement Learning for LLMs"** ![](https://img.shields.io/badge/random--exploration-orange)
-  [[arxiv 2505](https://arxiv.org/abs/2505.18573)]
-  - *reasoning large language models (llms) excel in complex tasks, which has drawn significant attention to reinforcement learning (rl) for llms.*
-- **"Hydra: Structured Cross-Source Enhanced Large Language Model Reasoning"** ![](https://img.shields.io/badge/random--exploration-orange)
-  [[arxiv 2505](https://arxiv.org/abs/2505.17464)]
-  - *retrieval-augmented generation (rag) enhances large language models (llms) by incorporating external knowledge.*
 
 - **"Let it Calm: Exploratory Annealed Decoding for Verifiable Reinforcement Learning"** ![](https://img.shields.io/badge/random--exploration-orange)
   [[arxiv 2510](https://arxiv.org/abs/2510.05251)]
@@ -608,6 +594,75 @@ Internalize this capability → truly learn powerful reasoning
 
 ### 6.1 RLVR (Math / Code)
 
+- **"Advancing Language Model Reasoning through Reinforcement Learning and Inference Scaling"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2501](https://arxiv.org/abs/2501.11651)]
+  - *large language models (llms) have demonstrated remarkable capabilities in complex reasoning tasks.*
+- **"DRAFT-RL: Multi-Agent Chain-of-Draft Reasoning for Reinforcement Learning-Enhanced LLMs"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2511](https://arxiv.org/abs/2511.20468)]
+  - *large language models (llms) have shown impressive capabilities in multi-step reasoning and problem-solving.*
+- **"Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2502](https://arxiv.org/abs/2502.02508)]
+  - *large language models (llms) have demonstrated remarkable reasoning capabilities across diverse domains.*
+- **"Consistent Paths Lead to Truth: Self-Rewarding Reinforcement Learning for LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2506](https://arxiv.org/abs/2506.08745)]
+  - *recent advances of reinforcement learning (rl) have highlighted its potential in complex reasoning tasks, yet effective training often relies on external sup....*
+- **"TemplateRL: Structured Template-Guided Reinforcement Learning for LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2505](https://arxiv.org/abs/2505.15692)]
+  - *reinforcement learning (rl) has emerged as an effective paradigm for enhancing model reasoning.*
+- **"RLEP: Reinforcement Learning with Experience Replay for LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2507](https://arxiv.org/abs/2507.07451)]
+  - *reinforcement learning (rl) for large language models is an energy-intensive endeavor: training can be unstable, and the policy may gradually drift away from....*
+- **"Trust Region Preference Approximation: A simple and stable reinforcement learning algorithm for LLM reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2504](https://arxiv.org/abs/2504.04524)]
+  - *recently, large language models (llms) have rapidly evolved, approaching artificial general intelligence (agi) while benefiting from large-scale reinforcemen....*
+- **"The Surprising Effectiveness of Negative Reinforcement in LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2506](https://arxiv.org/abs/2506.01347)]
+  - *reinforcement learning with verifiable rewards (rlvr) is a promising approach for training language models (lms) on reasoning tasks that elicit emergent long....*
+- **"SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software Evolution"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2502](https://arxiv.org/abs/2502.18449)]
+  - *the recent deepseek-r1 release has demonstrated the immense potential of reinforcement learning (rl) in enhancing the general reasoning capabilities of large....*
+- **"Act Only When It Pays: Efficient Reinforcement Learning for LLM Reasoning via Selective Rollouts"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2506](https://arxiv.org/abs/2506.02177)]
+  - *reinforcement learning, such as ppo and grpo, has powered recent breakthroughs in llm reasoning.*
+- **"Logic-RL: Unleashing LLM Reasoning with Rule-Based Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2502](https://arxiv.org/abs/2502.14768)]
+  - *inspired by the success of deepseek-r1, we explore the potential of rule-based reinforcement learning (rl) in large reasoning models.*
+- **"Revisiting Reinforcement Learning for LLM Reasoning from A Cross-Domain Perspective"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2506](https://arxiv.org/abs/2506.14965)]
+  - *reinforcement learning (rl) has emerged as a promising approach to improve large language model (llm) reasoning, yet most open efforts focus narrowly on math....*
+- **"Curriculum Reinforcement Learning from Easy to Hard Tasks Improves LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2506](https://arxiv.org/abs/2506.06632)]
+  - *we aim to improve the reasoning capabilities of language models via reinforcement learning (rl).*
+- **"R-Search: Empowering LLM Reasoning with Search via Multi-Reward Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2506](https://arxiv.org/abs/2506.04185)]
+  - *large language models (llms) have notably progressed in multi-step and long-chain reasoning.*
+- **"SRPO: Enhancing Multimodal LLM Reasoning via Reflection-Aware Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2506](https://arxiv.org/abs/2506.01713)]
+  - *multimodal large language models (mllms) have shown promising capabilities in reasoning tasks, yet still struggle with complex problems requiring explicit se....*
+- **"SwS: Self-aware Weakness-driven Problem Synthesis in Reinforcement Learning for LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2506](https://arxiv.org/abs/2506.08989)]
+  - *reinforcement learning with verifiable rewards (rlvr) has proven effective for training large language models (llms) on complex reasoning tasks, such as math....*
+- **"Plan Then Action:High-Level Planning Guidance Reinforcement Learning for LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2510](https://arxiv.org/abs/2510.01833)]
+  - *large language models (llms) have demonstrated remarkable reasoning abilities in complex tasks, often relying on chain-of-thought (cot) reasoning.*
+- **"RL of Thoughts: Navigating LLM Reasoning with Inference-time Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2505](https://arxiv.org/abs/2505.14140)]
+  - *despite rapid advancements in large language models (llms), the token-level autoregressive nature constrains their complex reasoning capabilities.*
+- **"Walk Before You Run! Concise LLM Reasoning via Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2505](https://arxiv.org/abs/2505.21178)]
+  - *as test-time scaling becomes a pivotal research frontier in large language models (llms) development, contemporary and advanced post-training methodologies i....*
+- **"Reinforcement Learning with Verifiable Rewards Implicitly Incentivizes Correct Reasoning in Base LLMs"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2506](https://arxiv.org/abs/2506.14245)]
+  - *recent advancements in long chain-of-thought (cot) reasoning, particularly through the group relative policy optimization algorithm used by deepseek-r1, have....*
+- **"Not All Thoughts are Generated Equal: Efficient LLM Reasoning via Multi-Turn Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2505](https://arxiv.org/abs/2505.11827)]
+  - *compressing long chain-of-thought (cot) from large language models (llms) is an emerging strategy to improve the reasoning efficiency of llms.*
+- **"Reinforcement Learning vs. Distillation: Understanding Accuracy and Capability in LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2505](https://arxiv.org/abs/2505.14216)]
+  - *recent studies have shown that reinforcement learning with verifiable rewards (rlvr) enhances overall accuracy (pass@1) but often fails to improve capability....*
+- **"CLPO: Curriculum Learning meets Policy Optimization for LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2509](https://arxiv.org/abs/2509.25004)]
+  - *recently, online reinforcement learning with verifiable rewards (rlvr) has become a key paradigm for enhancing the reasoning capabilities of large language m....*
 - **"EPO: Entropy-regularized Policy Optimization for LLM Agents Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2509](https://arxiv.org/abs/2509.22576)]
   - *training llm agents in multi-turn environments with sparse rewards, where completing a single task requires 30+ turns of interaction within an episode, prese....*
@@ -623,120 +678,39 @@ Internalize this capability → truly learn powerful reasoning
 - **"PPO-BR: Dual-Signal Entropy-Reward Adaptation for Trust Region Policy Optimization"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2505](https://arxiv.org/abs/2505.17714)]
   - *despite proximal policy optimization (ppo) dominating policy gradient methods -- from robotic control to game ai -- its static trust region forces a brittle ....*
-- **"Consistent Paths Lead to Truth: Self-Rewarding Reinforcement Learning for LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2506](https://arxiv.org/abs/2506.08745)]
-  - *recent advances of reinforcement learning (rl) have highlighted its potential in complex reasoning tasks, yet effective training often relies on external sup....*
 - **"Think Silently, Think Fast: Dynamic Latent Compression of LLM Reasoning Chains"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2505](https://arxiv.org/abs/2505.16552)]
   - *large language models (llms) achieve superior performance through chain-of-thought (cot) reasoning, but these token-level reasoning chains are computationall....*
 - **"Prepare Reasoning Language Models for Multi-Agent Debate with Self-Debate Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2601](https://arxiv.org/abs/2601.22297)]
   - *the reasoning abilities of large language models (llms) have been substantially improved by reinforcement learning with verifiable rewards (rlvr).*
-- **"Revisiting Reinforcement Learning for LLM Reasoning from A Cross-Domain Perspective"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2506](https://arxiv.org/abs/2506.14965)]
-  - *reinforcement learning (rl) has emerged as a promising approach to improve large language model (llm) reasoning, yet most open efforts focus narrowly on math....*
-- **"Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2502](https://arxiv.org/abs/2502.02508)]
-  - *large language models (llms) have demonstrated remarkable reasoning capabilities across diverse domains.*
-- **"RLEP: Reinforcement Learning with Experience Replay for LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2507](https://arxiv.org/abs/2507.07451)]
-  - *reinforcement learning (rl) for large language models is an energy-intensive endeavor: training can be unstable, and the policy may gradually drift away from....*
-- **"RL of Thoughts: Navigating LLM Reasoning with Inference-time Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2505](https://arxiv.org/abs/2505.14140)]
-  - *despite rapid advancements in large language models (llms), the token-level autoregressive nature constrains their complex reasoning capabilities.*
 - **"RAGEN: Understanding Self-Evolution in LLM Agents via Multi-Turn Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2504](https://arxiv.org/abs/2504.20073)]
   - *training large language models (llms) as interactive agents presents unique challenges including long-horizon decision making and interacting with stochastic....*
 - **"Incentivizing Agentic Reasoning in LLM Judges via Tool-Integrated Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2510](https://arxiv.org/abs/2510.23038)]
   - *large language models (llms) are widely used as judges to evaluate response quality, providing a scalable alternative to human evaluation.*
-- **"SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software Evolution"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2502](https://arxiv.org/abs/2502.18449)]
-  - *the recent deepseek-r1 release has demonstrated the immense potential of reinforcement learning (rl) in enhancing the general reasoning capabilities of large....*
-- **"Logic-RL: Unleashing LLM Reasoning with Rule-Based Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2502](https://arxiv.org/abs/2502.14768)]
-  - *inspired by the success of deepseek-r1, we explore the potential of rule-based reinforcement learning (rl) in large reasoning models.*
-- **"Act Only When It Pays: Efficient Reinforcement Learning for LLM Reasoning via Selective Rollouts"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2506](https://arxiv.org/abs/2506.02177)]
-  - *reinforcement learning, such as ppo and grpo, has powered recent breakthroughs in llm reasoning.*
-- **"Curriculum Reinforcement Learning from Easy to Hard Tasks Improves LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2506](https://arxiv.org/abs/2506.06632)]
-  - *we aim to improve the reasoning capabilities of language models via reinforcement learning (rl).*
-- **"R-Search: Empowering LLM Reasoning with Search via Multi-Reward Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2506](https://arxiv.org/abs/2506.04185)]
-  - *large language models (llms) have notably progressed in multi-step and long-chain reasoning.*
 - **"DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2501](https://arxiv.org/abs/2501.12948)]
   - *general reasoning represents a long-standing and formidable challenge in artificial intelligence (ai).*
 - **"SRPO: A Cross-Domain Implementation of Large-Scale Reinforcement Learning on LLM"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2504](https://arxiv.org/abs/2504.14286)]
   - *recent advances of reasoning models, exemplified by openai's o1 and deepseek's r1, highlight the significant potential of reinforcement learning (rl) to enha....*
-- **"SRPO: Enhancing Multimodal LLM Reasoning via Reflection-Aware Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2506](https://arxiv.org/abs/2506.01713)]
-  - *multimodal large language models (mllms) have shown promising capabilities in reasoning tasks, yet still struggle with complex problems requiring explicit se....*
 - **"Interleaved Reasoning for Large Language Models via Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2505](https://arxiv.org/abs/2505.19640)]
   - *long chain-of-thought (cot) significantly enhances the reasoning capabilities of large language models (llms).*
-- **"Plan Then Action:High-Level Planning Guidance Reinforcement Learning for LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2510](https://arxiv.org/abs/2510.01833)]
-  - *large language models (llms) have demonstrated remarkable reasoning abilities in complex tasks, often relying on chain-of-thought (cot) reasoning.*
-- **"SwS: Self-aware Weakness-driven Problem Synthesis in Reinforcement Learning for LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2506](https://arxiv.org/abs/2506.08989)]
-  - *reinforcement learning with verifiable rewards (rlvr) has proven effective for training large language models (llms) on complex reasoning tasks, such as math....*
-- **"Walk Before You Run! Concise LLM Reasoning via Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2505](https://arxiv.org/abs/2505.21178)]
-  - *as test-time scaling becomes a pivotal research frontier in large language models (llms) development, contemporary and advanced post-training methodologies i....*
-- **"Trust Region Preference Approximation: A simple and stable reinforcement learning algorithm for LLM reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2504](https://arxiv.org/abs/2504.04524)]
-  - *recently, large language models (llms) have rapidly evolved, approaching artificial general intelligence (agi) while benefiting from large-scale reinforcemen....*
 - **"d1: Scaling Reasoning in Diffusion Large Language Models via Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2504](https://arxiv.org/abs/2504.12216)]
   - *recent large language models (llms) have demonstrated strong reasoning capabilities that benefits from online reinforcement learning (rl).*
-- **"Not All Thoughts are Generated Equal: Efficient LLM Reasoning via Multi-Turn Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2505](https://arxiv.org/abs/2505.11827)]
-  - *compressing long chain-of-thought (cot) from large language models (llms) is an emerging strategy to improve the reasoning efficiency of llms.*
 - **"General-Reasoner: Advancing LLM Reasoning Across All Domains"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2505](https://arxiv.org/abs/2505.14652)]
   - *reinforcement learning (rl) has recently demonstrated strong potential in enhancing the reasoning capabilities of large language models (llms).*
 - **"Cell-o1: Training LLMs to Solve Single-Cell Reasoning Puzzles with Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2506](https://arxiv.org/abs/2506.02911)]
   - *cell type annotation is a key task in analyzing the heterogeneity of single-cell rna sequencing data.*
-- **"Reinforcement Learning with Verifiable Rewards Implicitly Incentivizes Correct Reasoning in Base LLMs"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2506](https://arxiv.org/abs/2506.14245)]
-  - *recent advancements in long chain-of-thought (cot) reasoning, particularly through the group relative policy optimization algorithm used by deepseek-r1, have....*
-- **"Reinforcement Learning vs. Distillation: Understanding Accuracy and Capability in LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2505](https://arxiv.org/abs/2505.14216)]
-  - *recent studies have shown that reinforcement learning with verifiable rewards (rlvr) enhances overall accuracy (pass@1) but often fails to improve capability....*
 - **"Scaling Behaviors of LLM Reinforcement Learning Post-Training: An Empirical Study in Mathematical Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2509](https://arxiv.org/abs/2509.25300)]
   - *while scaling laws for large language models (llms) during pre-training have been extensively studied, their behavior under reinforcement learning (rl) post-....*
-- **"WeThink: Toward General-purpose Vision-Language Reasoning via Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2506](https://arxiv.org/abs/2506.07905)]
-  - *building on the success of text-based reasoning models like deepseek-r1, extending these capabilities to multimodal reasoning holds great promise.*
-- **"PriorZero: Bridging Language Priors and World Models for Decision Making"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2605](https://arxiv.org/abs/2605.12289)]
-  - *leveraging the rich world knowledge of large language models (llms) to enhance reinforcement learning (rl) agents offers a promising path toward general inte....*
-- **"E3-TIR: Enhanced Experience Exploitation for Tool-Integrated Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2604](https://arxiv.org/abs/2604.09455)]
-  - *while large language models (llms) have demonstrated significant potential in tool-integrated reasoning (tir), existing training paradigms face significant l....*
-- **"Monte Carlo Planning with Large Language Model for Text-Based Game Agents"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2504](https://arxiv.org/abs/2504.16855)]
-  - *text-based games provide valuable environments for language-based autonomous agents.*
-- **"Beyond Correctness: Confidence-Aware Reward Modeling for Enhancing Large Language Model Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2511](https://arxiv.org/abs/2511.07483)]
-  - *recent advancements in large language models (llms) have shifted the post-training paradigm from traditional instruction tuning and human preference alignmen....*
-- **"Towards a Unified View of Large Language Model Post-Training"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2509](https://arxiv.org/abs/2509.04419)]
-  - *two major sources of training data exist for post-training modern language models: online (model-generated rollouts) data, and offline (human or other-model ....*
-- **"Advancing Language Model Reasoning through Reinforcement Learning and Inference Scaling"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2501](https://arxiv.org/abs/2501.11651)]
-  - *large language models (llms) have demonstrated remarkable capabilities in complex reasoning tasks.*
-- **"Segment Policy Optimization: Effective Segment-Level Credit Assignment in RL for Large Language Models"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2505](https://arxiv.org/abs/2505.23564)]
-  - *enhancing the reasoning capabilities of large language models effectively using reinforcement learning (rl) remains a crucial challenge.*
-- **"Solver-Informed RL: Grounding Large Language Models for Authentic Optimization Modeling"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2505](https://arxiv.org/abs/2505.11792)]
-  - *optimization modeling is fundamental to decision-making across diverse domains.*
 
 - **"HINT: Helping Ineffective rollouts Navigate Towards effectiveness"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2510](https://arxiv.org/abs/2510.09388)]
@@ -957,21 +931,6 @@ Internalize this capability → truly learn powerful reasoning
 - **"TeLL-Drive: Enhancing Autonomous Driving with Teacher LLM-Guided Deep Reinforcement Learning"** ![](https://img.shields.io/badge/related--topics-888)
   [[arxiv 2502](https://arxiv.org/abs/2502.01387)]
   - *although deep reinforcement learning (drl) and large language models (llms) each show promise in addressing decision-making challenges in autonomous driving,....*
-- **"LA-RL: Language Action-guided Reinforcement Learning with Safety Guarantees for Autonomous Highway Driving"** ![](https://img.shields.io/badge/related--topics-888)
-  [[arxiv 2512](https://arxiv.org/abs/2512.05686)]
-  - *autonomous highway driving demands a critical balance between proactive, efficiency-seeking behavior and robust safety guarantees.*
-- **"Goal-Guided Efficient Exploration via Large Language Model in Reinforcement Learning"** ![](https://img.shields.io/badge/related--topics-888)
-  [[arxiv 2509](https://arxiv.org/abs/2509.22008)]
-  - *real-world decision-making tasks typically occur in complex and open environments, posing significant challenges to reinforcement learning (rl) agents'explor....*
-- **"Unilaw-R1: A Large Language Model for Legal Reasoning with Reinforcement Learning and Iterative Inference"** ![](https://img.shields.io/badge/related--topics-888)
-  [[arxiv 2510](https://arxiv.org/abs/2510.10072)]
-  - *reasoning-focused large language models (llms) are rapidly evolving across various domains, yet their capabilities in handling complex legal problems remains....*
-- **"Aligning Dialogue Agents with Global Feedback via Large Language Model Multimodal Reward Decomposition"** ![](https://img.shields.io/badge/related--topics-888)
-  [[arxiv 2505](https://arxiv.org/abs/2505.15922)]
-  - *we propose a large language model based reward decomposition framework for aligning dialogue agents using only a single session-level feedback signal.*
-- **"Assay2Mol: Large Language Model-based Drug Design Using BioAssay Context"** ![](https://img.shields.io/badge/related--topics-888)
-  [[arxiv 2507](https://arxiv.org/abs/2507.12574)]
-  - *scientific databases aggregate vast amounts of quantitative data alongside descriptive text.*
 
 - **"AMFT: Aligning LLM Reasoners by Meta-Learning the Optimal Imitation-Exploration Balance"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2508](https://arxiv.org/abs/2508.06944)]
