@@ -77,6 +77,8 @@ Internalize this capability → truly learn powerful reasoning
 
 | View | Supporting Work |
 |---|---|
+| ❌ **Cannot escape** — RLVR does not truly expand beyond base model capabilities | *The Invisible Leash: Why RLVR May or May Not Escape Its Origin* |
+| ✅ **Can escape**, but current methods underutilize RL's potential | *ProRL: Prolonged Reinforcement Learning Expands Reasoning Boundaries in Large Language Models* |
 
 ## Table of Contents
 
