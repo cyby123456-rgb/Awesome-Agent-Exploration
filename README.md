@@ -152,6 +152,12 @@ Internalize this capability → truly learn powerful reasoning
 - **Depth-Breadth Synergy in RLVR: Unlocking LLM Reasoning Gains with Adaptive Exploration** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2508](https://arxiv.org/abs/2508.13755)]
 ### 2.1 Entropy-Aware Mechanisms
+- **Rethinking Token-Level Credit Assignment in RLVR: A Polarity-Entropy Analysis** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2604](https://arxiv.org/abs/2604.11056)]
+
+- **EP-GRPO: Entropy-Progress Aligned Group Relative Policy Optimization with Implicit Process Reward** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2605](https://arxiv.org/abs/2605.04960)]
+
 
 - **Targeted Exploration via Unified Entropy Control for Reinforcement Learning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2604](https://arxiv.org/abs/2604.14646)]
@@ -212,6 +218,15 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2509](https://arxiv.org/abs/2509.21880)]
 
 ## 3. Sequence / Response-Level Exploration
+- **Beyond Mode Collapse: Distribution Matching for Diverse Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2605](https://arxiv.org/abs/2605.19461)]
+
+- **How You Begin is How You Reason: Driving Exploration in RLVR via Prefix-Tuned Priors** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2605](https://arxiv.org/abs/2605.08817)]
+
+- **Nudging Beyond the Comfort Zone: Efficient Strategy-Guided Exploration for RLVR** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2605](https://arxiv.org/abs/2605.15726)]
+
 
 - **Breaking $\textit{Winner-Takes-All}$: Cooperative Policy Optimization Improves Diverse LLM Reasoning** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[arxiv 2605](https://arxiv.org/abs/2605.11461)]
@@ -297,6 +312,12 @@ Internalize this capability → truly learn powerful reasoning
 - **Entropy-guided sequence weighting for efficient exploration in RL-based LLM fine-tuning** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[arxiv 2503](https://arxiv.org/abs/2503.22456)]
 ## 4. Policy Distribution-Level Exploration
+- **expo: Exploration-prioritized policy optimization via adaptive KL regulation and Gaussian noise injection** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2605](https://arxiv.org/abs/2605.09923)]
+
+- **fg-expo: Frontier-guided exploration-prioritized policy optimization via adaptive KL and gradient regulation** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2605](https://arxiv.org/abs/2605.11403)]
+
 
 - **HTPO: Towards Exploration-Exploitation Balanced Policy Optimization via Hindsight Thinking** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2605](https://arxiv.org/abs/2605.08283)]
@@ -354,6 +375,12 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2508](https://arxiv.org/abs/2508.18462)]
 
 ### 5.1 Entropy-Based Methods
+- **Taming the Thinker: Conditional Entropy Shaping for Adaptive LLM Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2605](https://arxiv.org/abs/2605.19358)]
+
+- **OGER: A Robust Offline-Guided Exploration Reward for Hybrid Reinforcement Learning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2604](https://arxiv.org/abs/2604.18530)]
+
 
 - **Embarrassingly Simple Self-Distillation Improves Code Generation** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2604](https://arxiv.org/abs/2604.01193)]
@@ -391,6 +418,12 @@ Internalize this capability → truly learn powerful reasoning
 - **The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2503](https://arxiv.org/abs/2503.14442)]
 ### 5.3 Curiosity & Intrinsic Motivation
+- **Curiosity-Driven Reinforcement Learning from Human Feedback** ![](https://img.shields.io/badge/random--exploration-orange)
+  [[arxiv 2501](https://arxiv.org/abs/2501.11463)]
+
+- **HAMMER: Hamiltonian Curiosity Augmented Large Language Model Reinforcement** ![](https://img.shields.io/badge/random--exploration-orange)
+  [[arxiv 2509](https://arxiv.org/abs/2509.25240)]
+
 
 - **CDE: Curiosity-Driven Exploration for Efficient Reinforcement Learning in Large Language Models** ![](https://img.shields.io/badge/random--exploration-orange)
   [[ELEKTRO 2014](https://doi.org/10.1109/elektro.2014.6848933)]
@@ -421,6 +454,15 @@ Internalize this capability → truly learn powerful reasoning
 ## 6. Exploration in Specific Scenarios
 
 ### 6.1 RLVR (Math / Code)
+- **T²PO: Uncertainty-Guided Exploration Control for Stable Multi-Turn Agentic Reinforcement Learning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2605](https://arxiv.org/abs/2605.02178)]
+
+- **SAGE: Shaping Anchors for Guided Exploration in RLVR of LLMs** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2605](https://arxiv.org/abs/2605.18864)]
+
+- **Look Before You Leap: Autonomous Exploration for LLM Agents** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2605](https://arxiv.org/abs/2605.16143)]
+
 
 - **Exploration-Driven Optimization for Test-Time Large Language Model Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2605](https://arxiv.org/abs/2605.09853)]
@@ -624,6 +666,9 @@ Internalize this capability → truly learn powerful reasoning
 - **DRA-GRPO: Exploring Diversity-Aware Reward Adjustment for R1-Zero-Like Training of Large Language Models** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[CHICC 2019](https://doi.org/10.23919/chicc.2019.8866029)]
 ## 7. The Escape Debate: Can RL Surpass Base Model?
+- **On the Direction of RLVR Updates for LLM Reasoning: Identification and Exploitation** ![](https://img.shields.io/badge/rl--limitations-red)
+  [[arxiv 2603](https://arxiv.org/abs/2603.22117)]
+
 - **Exploration vs Exploitation: Rethinking RLVR through Clipping, Entropy, and Spurious Reward** ![](https://img.shields.io/badge/rl--limitations-red)
   [[arxiv 2512](https://arxiv.org/abs/2512.16912)]
 

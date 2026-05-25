@@ -227,7 +227,22 @@
     "The Landscape of Agentic Reinforcement Learning for LLMs: A Survey",
     "General-Reasoner: Advancing LLM Reasoning Across All Domains",
     "Cell-o1: Training LLMs to Solve Single-Cell Reasoning Puzzles with Reinforcement Learning",
-    "Scaling Behaviors of LLM Reinforcement Learning Post-Training: An Empirical Study in Mathematical Reasoning"
+    "Scaling Behaviors of LLM Reinforcement Learning Post-Training: An Empirical Study in Mathematical Reasoning",
+    "T²PO: Uncertainty-Guided Exploration Control for Stable Multi-Turn Agentic Reinforcement Learning",
+    "HAMMER: Hamiltonian Curiosity Augmented Large Language Model Reinforcement",
+    "Curiosity-Driven Reinforcement Learning from Human Feedback",
+    "Look Before You Leap: Autonomous Exploration for LLM Agents",
+    "SAGE: Shaping Anchors for Guided Exploration in RLVR of LLMs",
+    "fg-expo: Frontier-guided exploration-prioritized policy optimization via adaptive KL and gradient regulation",
+    "expo: Exploration-prioritized policy optimization via adaptive KL regulation and Gaussian noise injection",
+    "Nudging Beyond the Comfort Zone: Efficient Strategy-Guided Exploration for RLVR",
+    "How You Begin is How You Reason: Driving Exploration in RLVR via Prefix-Tuned Priors",
+    "EP-GRPO: Entropy-Progress Aligned Group Relative Policy Optimization with Implicit Process Reward",
+    "OGER: A Robust Offline-Guided Exploration Reward for Hybrid Reinforcement Learning",
+    "Rethinking Token-Level Credit Assignment in RLVR: A Polarity-Entropy Analysis",
+    "Beyond Mode Collapse: Distribution Matching for Diverse Reasoning",
+    "Taming the Thinker: Conditional Entropy Shaping for Adaptive LLM Reasoning",
+    "On the Direction of RLVR Updates for LLM Reasoning: Identification and Exploitation"
   ],
-  "count": 228
+  "count": 243
 }
