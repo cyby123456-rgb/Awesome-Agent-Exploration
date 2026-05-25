@@ -16,7 +16,6 @@
   From token-level diversity to policy distribution reshaping — understanding how models discover better, more diverse, and more creative solutions beyond their current probability distribution.
 </p>
 
----
 
 <p align="center">
   <a href="#what-is-exploration">What is Exploration?</a> ·
@@ -26,7 +25,6 @@
 
 > Contributions are welcome. If you find missing papers, inaccurate classifications, or newly released work, feel free to open an issue or PR.
 
----
 
 ## What is Exploration?
 
@@ -60,7 +58,6 @@ Ability to solve more tasks at the task level
 Internalize this capability → truly learn powerful reasoning
 ```
 
----
 
 ## Why Exploration Matters
 
@@ -94,7 +91,6 @@ Internalize this capability → truly learn powerful reasoning
 - Does pass@k truly represent model capability boundaries? Are there better metrics?
 - What exactly does exploration enhance — reasoning ability, problem-solving ability, or semantic diversity?
 
----
 
 ## Table of Contents
 
@@ -112,7 +108,6 @@ Internalize this capability → truly learn powerful reasoning
   - [8.1 Hidden State Noise & Layer-wise Analysis](#81-hidden-state-noise--layer-wise-analysis)
   - [8.2 Rubric-based Training & Evaluation](#82-rubric-based-training--evaluation)
 
----
 
 ## 1. Survey & Frameworks
 
@@ -140,7 +135,6 @@ Internalize this capability → truly learn powerful reasoning
   - *Foundational work demonstrating how RL (GRPO) incentivizes reasoning capabilities in LLMs through exploration of long chain-of-thought.*
   - *Argues that RL training effects are largely dependent on base model capability — RL alone may not bring genuine capability improvement to the model.*
 
----
 
 - **"COS(M+O)S: Curiosity and RL-Enhanced MCTS for Exploring Story Space via Language Models"** ![](https://img.shields.io/badge/random--exploration-orange)
   [[arxiv 2501](https://arxiv.org/abs/2501.17104)]
@@ -270,7 +264,6 @@ Internalize this capability → truly learn powerful reasoning
 
 > **Core insight**: The key to exploration-exploitation balance lies in **how to reshape the token distribution**. High-value candidate tokens should be elevated but without creating a "one-token-dominates-all" situation. Noise tokens are interference and should have their probability mass reduced without affecting other candidates. This perspective aligns with hidden state noise research — **adding noise is fundamentally perturbing the token distribution**.
 
----
 
 - **"Clip-Low Increases Entropy and Clip-High Decreases Entropy in Reinforcement Learning of Large Language Models"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2509](https://arxiv.org/abs/2509.26114)]
@@ -404,7 +397,6 @@ Internalize this capability → truly learn powerful reasoning
   - *Mutual information-based skill learning to promote structured diversity in LLM responses.*
   - *Uses the volume spanned by embedding vectors in representation space to measure semantic diversity across a set of rollouts. DPP-based diversity reward.*
 
----
 
 - **"EnergyLens: Predictive Energy-Aware Exploration for Multi-GPU LLM Inference Optimization"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2605](https://arxiv.org/abs/2605.14249)]
@@ -473,7 +465,6 @@ Internalize this capability → truly learn powerful reasoning
   - *Two-stage voting mechanism to escape spurious majority modes during unsupervised RLVR training.*
   - *Uses a partition function to align the policy distribution with the true reward distribution, enabling more principled exploration.*
 
----
 
 ## 5. Semantic-Ignorant Exploration (Entropy / Temperature / Noise)
 
@@ -584,7 +575,6 @@ Internalize this capability → truly learn powerful reasoning
 > - Noise tokens → reduce probability mass without interfering with other candidates
 > - Hidden state noise → fundamentally a controlled perturbation of the token distribution
 
----
 
 - **"From Noise to Diversity: Random Embedding Injection in LLM Reasoning"** ![](https://img.shields.io/badge/random--exploration-orange)
   [[arxiv 2605](https://arxiv.org/abs/2605.11936)]
@@ -848,7 +838,6 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2103](https://arxiv.org/abs/2103.12726)]
   - *Adds an external rubric-based scaffold in open-ended tasks. Different scaffolds across groups ensure sufficient diversity; inter-step scaffold decay allows the model to gradually reduce scaffold dependence and truly internalize exploration. Redefines reward based on external criteria.*
 
----
 
 - **"Beyond Accuracy: Evaluating Strategy Diversity in LLM Mathematical Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2605](https://arxiv.org/abs/2605.09292)]
@@ -905,7 +894,6 @@ Internalize this capability → truly learn powerful reasoning
 - What would it take for general task reasoning (not just math/code) to benefit from exploration?
 - Can models learn completely new styles (e.g., telling a joke in a new style) without supervised examples?
 
----
 
 ## 8. Related Topics
 
@@ -993,7 +981,6 @@ Internalize this capability → truly learn powerful reasoning
   [[GitHub](https://github.com/FreedomIntelligence/Awesome-Rubrics)]
   - *Curated reading list on rubric-based evaluation, reward modeling, and post-training.*
 
----
 
 - **"Evaluating Pragmatic Reasoning in Large Language Models: Evidence from Scalar Diversity"** ![](https://img.shields.io/badge/related--topics-888)
   [[arxiv 2605](https://arxiv.org/abs/2605.09042)]
@@ -1007,7 +994,6 @@ Internalize this capability → truly learn powerful reasoning
 - **Does the "optimal exploration layer" vary by task type** (math vs code vs creative)?
 - **Can exploration mechanisms discovered in RLVR transfer** to unsupervised or weakly supervised settings?
 
----
 
 ## License
 
