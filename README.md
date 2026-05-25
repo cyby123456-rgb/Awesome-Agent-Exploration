@@ -619,10 +619,6 @@ Internalize this capability → truly learn powerful reasoning
 - **Exploration vs Exploitation: Rethinking RLVR through Clipping, Entropy, and Spurious Reward** ![](https://img.shields.io/badge/rl--limitations-red)
   [[arxiv 2512](https://arxiv.org/abs/2512.16912)]
 
-[![CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
-
-This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-
 - **Reasoning with Sampling: Your Base Model is Smarter Than You Think** ![](https://img.shields.io/badge/rl--limitations-red)
   [[arxiv 2510](https://arxiv.org/abs/2510.09388v1)]
 - **The Debate on RLVR Reasoning Capability Boundary: Shrinkage, Expansion, or Both? A Two-Stage Dynamic View** ![](https://img.shields.io/badge/rl--limitations-red)
@@ -632,3 +628,7 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
   [[Papers on Joyce 2013](https://doi.org/10.2478/pjbr-2013-0003)]
 - **JustRL: Scaling a 1.5B LLM with a Simple RL Recipe** ![](https://img.shields.io/badge/rl--limitations-red)
   [[Preprint](https://doi.org/10.70675/e40c3140z2868z4db2z997az453e4804bae1)]
+
+[![CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
