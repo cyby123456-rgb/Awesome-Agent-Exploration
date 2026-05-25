@@ -88,14 +88,6 @@ Internalize this capability → truly learn powerful reasoning
 | ❌ **Cannot escape** — RLVR does not truly expand beyond base model capabilities | *The Invisible Leash: Why RLVR May or May Not Escape Its Origin* |
 | ✅ **Can escape**, but current methods underutilize RL's potential | *ProRL: Prolonged Reinforcement Learning Expands Reasoning Boundaries in Large Language Models* |
 
-### Open Questions
-
-- Is there really a tension between exploration and exploitation? Can both be improved?
-- Does pass@k truly represent model capability boundaries? Are there better metrics?
-- What exactly does exploration enhance — reasoning ability, problem-solving ability, or semantic diversity?
-
----
-
 ## Table of Contents
 
 - [1. Survey & Frameworks](#1-survey--frameworks)
@@ -108,9 +100,6 @@ Internalize this capability → truly learn powerful reasoning
   - [6.2 Unsupervised / Minimal Label Scenarios](#62-unsupervised--minimal-label-scenarios)
   - [6.3 Creative Generation & Open-Ended Tasks](#63-creative-generation--open-ended-tasks)
 - [7. The Escape Debate: Can RL Surpass Base Model?](#7-the-escape-debate-can-rl-surpass-base-model)
-- [8. Related Topics](#8-related-topics)
-  - [8.1 Hidden State Noise & Layer-wise Analysis](#81-hidden-state-noise--layer-wise-analysis)
-  - [8.2 Rubric-based Training & Evaluation](#82-rubric-based-training--evaluation)
 
 ---
 
@@ -166,9 +155,6 @@ Internalize this capability → truly learn powerful reasoning
 - **"Adaptive Divergence Regularized Policy Optimization for Fine-tuning Generative Models"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2510](https://arxiv.org/abs/2510.18053)]
 
-> Local, token-level diversity does not necessarily lead to answer-level diversity.
-
-### 2.1 Entropy-Aware Mechanisms
 
 - **"Reasoning with Exploration: An Entropy Perspective on Reinforcement Learning for LLMs"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2503](https://arxiv.org/abs/2503.20783)]
@@ -212,24 +198,6 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2604](https://arxiv.org/abs/2604.13902)]
 - **"Transformation-Augmented GRPO for Enhancing Exploration in Reasoning of Large Language Models"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2601](https://arxiv.org/abs/2601.22478)]
-
-### 2.5 Summary of Token-Level Methods
-- **"LEARNING DYNAMICS OF LLM FINETUNING"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2407](https://arxiv.org/abs/2407.10490)]
-- **"Pass@k Training for Adaptively Balancing Exploration and Exploitation of Large Reasoning Models"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2510](https://arxiv.org/abs/2510.14807)]
-- **"Pass@K Policy Optimization: Solving Harder Reinforcement Learning Problems"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2508](https://arxiv.org/abs/2508.10751)]
-- **"TRE: Encouraging Exploration in the Trust Region"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2505](https://arxiv.org/abs/2505.15201)]
-
-| Method | Approach | Key Mechanism |
-|---|---|---|
-| Beyond 80/20 | Selective update | Update only high-entropy tokens |
-| lp-reg | Under-weighting regularization | Reduce penalty on low-probability tokens |
-| SIMKO | Gradient redistribution | Reshape token probability distribution |
-
-> **Core insight**: The key to exploration-exploitation balance lies in **how to reshape the token distribution**. High-value candidate tokens should be elevated but without creating a "one-token-dominates-all" situation. Noise tokens are interference and should have their probability mass reduced without affecting other candidates. This perspective aligns with hidden state noise research — **adding noise is fundamentally perturbing the token distribution**.
 
 ---
 
@@ -461,14 +429,7 @@ Internalize this capability → truly learn powerful reasoning
 
 - **Hidden State Noise Injection (Inference Phase)** — *(Your work)*
 
-### 5.3 Core Insight
 
-> Exploration and exploitation ultimately come down to **how to reshape the token distribution**:
-> - High-value candidate tokens → elevate probability, but avoid monopolization
-> - Noise tokens → reduce probability mass without interfering with other candidates
-> - Hidden state noise → fundamentally a controlled perturbation of the token distribution
-
----
 
 - **"From Noise to Diversity: Random Embedding Injection in LLM Reasoning"** ![](https://img.shields.io/badge/random--exploration-orange)
   [[arxiv 2605](https://arxiv.org/abs/2605.11936)]
@@ -709,97 +670,6 @@ Internalize this capability → truly learn powerful reasoning
 | ✅ **Can escape** | Current methods under-exploit RL; prolonged training with high-entropy methods (DAPO-like) keeps improving pass@k | *ProRL* |
 | 🤷 **Conditional** | Depends on exploration quality; better exploration mechanisms may unlock new capabilities | *(Active research)* |
 
-### Open Questions
-
-- Why does pass@k keep improving with prolonged training in DAPO-style methods?
-- What would it take for general task reasoning (not just math/code) to benefit from exploration?
-- Can models learn completely new styles (e.g., telling a joke in a new style) without supervised examples?
-
----
-
-## 8. Related Topics
-
-- **"Policy Gradient with Adaptive Entropy Annealing for Continual Fine-Tuning"** ![](https://img.shields.io/badge/related--topics-888)
-  [[arxiv 2602](https://arxiv.org/abs/2602.14078)]
-- **"Where-to-Learn: Analytical Policy Gradient Directed Exploration for On-Policy Robotic Reinforcement Learning"** ![](https://img.shields.io/badge/related--topics-888)
-  [[arxiv 2603](https://arxiv.org/abs/2603.27317)]
-- **"Modeling shopper interest broadness with entropy-driven dialogue policy in the context of arbitrarily large product catalogs"** ![](https://img.shields.io/badge/related--topics-888)
-  [[arxiv 2509](https://arxiv.org/abs/2509.06185)]
-- **"RAPO: Expanding Exploration for LLM Agents via Retrieval-Augmented Policy Optimization"** ![](https://img.shields.io/badge/related--topics-888)
-  [[arxiv 2603](https://arxiv.org/abs/2603.03078)]
-- **"Explore-on-Graph: Incentivizing Autonomous Exploration of Large Language Models on Knowledge Graphs with Path-refined Reward Modeling"** ![](https://img.shields.io/badge/related--topics-888)
-  [[arxiv 2602](https://arxiv.org/abs/2602.21728)]
-- **"UniVG-R1: Reasoning Guided Universal Visual Grounding with Reinforcement Learning"** ![](https://img.shields.io/badge/related--topics-888)
-  [[arxiv 2505](https://arxiv.org/abs/2505.14231)]
-- **"Rank-R1: Enhancing Reasoning in LLM-based Document Rerankers via Reinforcement Learning"** ![](https://img.shields.io/badge/related--topics-888)
-  [[arxiv 2503](https://arxiv.org/abs/2503.06034)]
-- **"TeLL-Drive: Enhancing Autonomous Driving with Teacher LLM-Guided Deep Reinforcement Learning"** ![](https://img.shields.io/badge/related--topics-888)
-  [[arxiv 2502](https://arxiv.org/abs/2502.01387)]
-
-- **"AMFT: Aligning LLM Reasoners by Meta-Learning the Optimal Imitation-Exploration Balance"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2508](https://arxiv.org/abs/2508.06944)]
-
-- **"AMR-SD: Asymmetric Meta-Reflective Self-Distillation for Token-Level Credit Assignment"** ![](https://img.shields.io/badge/feature--perturbation-F59E0B)
-  [[arxiv 2605](https://arxiv.org/abs/2605.18529)]
-
-- **"Socratic RL: A Novel Framework for Efficient Knowledge Acquisition through Iterative Reflection and Viewpoint Distillation"** ![](https://img.shields.io/badge/random--exploration-orange)
-  [[arxiv 2506](https://arxiv.org/abs/2506.13358)]
-
-- **"SPEC-RL: Accelerating On-Policy Reinforcement Learning with Speculative Rollouts"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2509](https://arxiv.org/abs/2509.23232)]
-
-- **"LAD: Learning Advantage Distribution for Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2602](https://arxiv.org/abs/2602.20132)]
-
-- **"AT2PO: Agentic Turn-based Policy Optimization via Tree Search"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv 2601](https://arxiv.org/abs/2601.04767)]
-
-### 8.1 Model Ensembling
-- **"Demystifying Reinforcement Learning in Agentic Reasoning"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[PeerJ Preprints](https://doi.org/10.32388/ozbejx)]
-- **"Why My Reward Model Fails in RL Training? Rethinking Reward Design for Effective LLM Reasoning"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[ResearchSquare](https://doi.org/10.21203/rs.3.rs-9337712/v1)]
-- **"Diﬀerential Smoothing Mitigates Sharpening and Improves LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[SSRN](https://doi.org/10.2139/ssrn.6169669)]
-
-- **"Weight Ensembling Improves Reasoning in Language Models"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[Preprints 2026](https://doi.org/10.20944/preprints202603.0287.v1)]
-
-### 8.2 Hidden State Noise & Layer-wise Analysis
-
-> Hidden state noise as a mechanism for training-phase exploration and inference-phase interpretability.
-
-| Work | Key Finding |
-|---|---|
-| **ROME** (Meng et al., 2022) | Middle layers (~1/3-2/3) are core for factual association; front layers handle subject identification, back layers handle output |
-| **Finlayson et al.** (NAACL 2021) | Perturbing hidden states to locate syntactic agreement processing — closest methodology to noise-based exploration |
-| **Training Noise Experiments** (Your work) | Layer 5 noise achieves best trade-off; all-layer noise causes entropy collapse |
-| **Inference Noise Experiments** (Your work) | 97% token flip, ~4% answer change — supports gradual functional differentiation |
-
-### 8.3 Rubric-based Training & Evaluation
-
-> For exploration in open-ended tasks without ground-truth answers.
-
-- **"Awesome-Rubrics"** ![](https://img.shields.io/badge/exploration--llm-blue) — *FreedomIntelligence*
-  [[IJCAI 2022](https://doi.org/10.24963/ijcai.2022/770)]
-  [[GitHub](https://github.com/FreedomIntelligence/Awesome-Rubrics)]
-
----
-
-- **"Evaluating Pragmatic Reasoning in Large Language Models: Evidence from Scalar Diversity"** ![](https://img.shields.io/badge/related--topics-888)
-  [[arxiv 2605](https://arxiv.org/abs/2605.09042)]
-
-## Open Questions & Future Directions
-
-- **Is there a principled upper bound** on what exploration can achieve given a fixed base model?
-- **How do token-level and sequence-level exploration interact** — does better token diversity always translate to better answer diversity?
-- **Can we design noise schedules** for hidden state perturbation during training that avoid entropy collapse while maintaining exploration benefits?
-- **Does the "optimal exploration layer" vary by task type** (math vs code vs creative)?
-- **Can exploration mechanisms discovered in RLVR transfer** to unsupervised or weakly supervised settings?
-
----
-
-## License
 
 [![CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
 
