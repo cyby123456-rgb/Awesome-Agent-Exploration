@@ -120,7 +120,19 @@
     "Policy Split: Incentivizing Dual-Mode Exploration in LLM Reinforcement with Dual-Mode Entropy Regularization",
     "AEM: Adaptive Entropy Modulation for Multi-Turn Agentic Reinforcement Learning",
     "How You Begin is How You Reason: Driving Exploration in RLVR via Prefix-Tuned Priors",
-    "Does RL Expand the Capability Boundary of LLM Agents? A PASS@(k,T) Analysis"
+    "Does RL Expand the Capability Boundary of LLM Agents? A PASS@(k,T) Analysis",
+    "Can LLMs Guide Their Own Exploration? Gradient-Guided Reinforcement Learning for LLM Reasoning",
+    "LAD: Learning Advantage Distribution for Reasoning",
+    "Entropy-guided sequence weighting for efficient exploration in RL-based LLM fine-tuning",
+    "EPO: Entropy-regularized Policy Optimization for LLM Agents Reinforcement Learning",
+    "Global Convergence of Policy Gradient for Entropy Regularized Linear-Quadratic Control with multiplicative noise",
+    "On Entropy Control in LLM-RL Algorithms",
+    "Improving RL Exploration for LLM Reasoning through Retrospective Replay",
+    "Harnessing Uncertainty: Entropy-Modulated Policy Gradients for Long-Horizon LLM Agents",
+    "Enhancing Diversity in Parallel Agents: A Maximum State Entropy Exploration Story",
+    "Policy Gradient with Adaptive Entropy Annealing for Continual Fine-Tuning",
+    "Where-to-Learn: Analytical Policy Gradient Directed Exploration for On-Policy Robotic Reinforcement Learning",
+    "Asymmetric Proximal Policy Optimization: mini-critics boost LLM reasoning"
   ],
-  "count": 121
+  "count": 133
 }
