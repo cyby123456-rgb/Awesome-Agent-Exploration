@@ -115,27 +115,9 @@ Internalize this capability → truly learn powerful reasoning
 ---
 
 ## 1. Survey & Frameworks
-- **"Asymmetric Proximal Policy Optimization: mini-critics boost LLM reasoning"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 1001](https://arxiv.org/abs/2510.01656)]
-
-- **"Enhancing Diversity in Parallel Agents: A Maximum State Entropy Exploration Story"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 0501](https://arxiv.org/abs/2505.01336)]
-
-- **"Harnessing Uncertainty: Entropy-Modulated Policy Gradients for Long-Horizon LLM Agents"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 0909](https://arxiv.org/abs/2509.09265)]
-
-- **"Global Convergence of Policy Gradient for Entropy Regularized Linear-Quadratic Control with multiplicative noise"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 1002](https://arxiv.org/abs/2510.02896)]
-
-- **"EPO: Entropy-regularized Policy Optimization for LLM Agents Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 0922](https://arxiv.org/abs/2509.22576)]
-
-- **"LAD: Learning Advantage Distribution for Reasoning"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 0220](https://arxiv.org/abs/2602.20132)]
 
 - **"Can LLMs Guide Their Own Exploration? Gradient-Guided Reinforcement Learning for LLM Reasoning"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 1215](https://arxiv.org/abs/2512.15687)]
-
+  [[arxiv 2512](https://arxiv.org/abs/2512.15687)]
 
 - **"From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR"** ![](https://img.shields.io/badge/exploration--llm-blue) — *(Work in progress)* ![](https://img.shields.io/badge/random--exploration-orange)
   [[arxiv 2508](https://arxiv.org/abs/2508.07534)]
@@ -230,9 +212,6 @@ Internalize this capability → truly learn powerful reasoning
 ---
 
 ## 3. Sequence / Response-Level Exploration
-- **"Improving RL Exploration for LLM Reasoning through Retrospective Replay"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 0414](https://arxiv.org/abs/2504.14363)]
-
 
 - **"Semantic Flow Regularization: Teaching LLMs to Generate Diverse Yet Coherent Responses"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[arxiv 202605](https://arxiv.org/abs/2605.27971)]
@@ -342,21 +321,26 @@ Internalize this capability → truly learn powerful reasoning
 ---
 
 ## 5. Semantic-Ignorant Exploration (Entropy / Temperature / Noise)
-- **"Where-to-Learn: Analytical Policy Gradient Directed Exploration for On-Policy Robotic Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 0327](https://arxiv.org/abs/2603.27317)]
-
-- **"Policy Gradient with Adaptive Entropy Annealing for Continual Fine-Tuning"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 0214](https://arxiv.org/abs/2602.14078)]
-
-- **"On Entropy Control in LLM-RL Algorithms"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 0903](https://arxiv.org/abs/2509.03493)]
-
-- **"Entropy-guided sequence weighting for efficient exploration in RL-based LLM fine-tuning"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 0322](https://arxiv.org/abs/2503.22456)]
-
 
 - **"AEM: Adaptive Entropy Modulation for Multi-Turn Agentic Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 202605](https://arxiv.org/abs/2605.00425)]
+  [[arxiv 2605](https://arxiv.org/abs/2605.00425)]
+
+- **"Entropy-guided sequence weighting for efficient exploration in RL-based LLM fine-tuning"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2503](https://arxiv.org/abs/2503.22456)]
+
+- **"On Entropy Control in LLM-RL Algorithms"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2509](https://arxiv.org/abs/2509.03493)]
+
+- **"Policy Gradient with Adaptive Entropy Annealing for Continual Fine-Tuning"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2602](https://arxiv.org/abs/2602.14078)]
+
+- **"EPO: Entropy-regularized Policy Optimization for LLM Agents Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2509](https://arxiv.org/abs/2509.22576)]
+
+- **"Harnessing Uncertainty: Entropy-Modulated Policy Gradients for Long-Horizon LLM Agents"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2509](https://arxiv.org/abs/2509.09265)]
+
+
 
 - **"Let it Calm: Exploratory Annealed Decoding for Verifiable Reinforcement Learning"** ![](https://img.shields.io/badge/random--exploration-orange)
   [[arxiv 2510](https://arxiv.org/abs/2510.05251)]
@@ -577,6 +561,9 @@ Internalize this capability → truly learn powerful reasoning
 ---
 
 ## 8. Related Topics
+
+- **"Asymmetric Proximal Policy Optimization: mini-critics boost LLM reasoning"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2510](https://arxiv.org/abs/2510.01656)]
 
 - **"AMFT: Aligning LLM Reasoners by Meta-Learning the Optimal Imitation-Exploration Balance"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2508](https://arxiv.org/abs/2508.06944)]
