@@ -278,6 +278,8 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2602](https://arxiv.org/abs/2602.22296)]
 - **"Improving RL Exploration for LLM Reasoning through Retrospective Replay"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2504](https://arxiv.org/abs/2504.14363)]
+- **"Recovering Diversity Without Losing Alignment: A DPO Recipe for Post-Trained LLMs"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
+  [[arxiv 2605](https://arxiv.org/abs/2605.30021)]
 
 ---
 
@@ -332,6 +334,8 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2605](https://arxiv.org/abs/2605.08283)]
 - **"Temperature as a Meta-Policy: Adaptive Temperature in LLM Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2602](https://arxiv.org/abs/2602.11779)]
+- **"Meta-Cognitive Memory Policy Optimization for Long-Horizon LLM Agents"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2605](https://arxiv.org/abs/2605.30159)]
 
 ---
 
@@ -410,6 +414,8 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2509](https://arxiv.org/abs/2509.20712)]
 - **"Clip-Low Increases Entropy and Clip-High Decreases Entropy in Reinforcement Learning for LLMs"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2509](https://arxiv.org/abs/2509.26114)]
+- **"Reasoning with Sampling: Cutting at Decision Points"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2605](https://arxiv.org/abs/2605.30327)]
 
 ### 5.3 Curiosity & Intrinsic Motivation
 
@@ -498,6 +504,8 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2604](https://arxiv.org/abs/2604.18493)]
 - **"Know When to Explore: Difficulty-Aware Certainty as a Guide for LLM Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2509](https://arxiv.org/abs/2509.00125)]
+- **"Reinforcement Learning with Robust Rubric Rewards"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2605](https://arxiv.org/abs/2605.30244)]
 - **"Exploration-Driven Optimization for Test-Time Large Language Model Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2605](https://arxiv.org/abs/2605.09853)]
 - **"Cog-DRIFT: Exploration on Adaptively Reformulated Instances Enables Learning from Hard Reasoning Problems"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
@@ -609,6 +617,8 @@ Internalize this capability → truly learn powerful reasoning
 
 - **"AT2PO: Agentic Turn-based Policy Optimization via Tree Search"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2601](https://arxiv.org/abs/2601.04767)]
+- **"Unifying Temporal and Structural Credit Assignment in LLM-Based Multi-Agent Prompt Optimization"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2605](https://arxiv.org/abs/2605.30227)]
 
 ### 8.1 Model Ensembling
 - **"Demystifying Reinforcement Learning in Agentic Reasoning"** ![](https://img.shields.io/badge/exploration--llm-blue)

@@ -178,6 +178,11 @@
     "Not All Thoughts are Generated Equal: Efficient LLM Reasoning via Multi-Turn Reinforcement Learning",
     "Count Counts: Motivating Exploration in LLM Reasoning with Count-based Intrinsic Rewards",
     "Trading-R1: Financial Trading with LLM Reasoning via Reinforcement Learning",
+    "Reasoning with Sampling: Cutting at Decision Points",
+    "Recovering Diversity Without Losing Alignment: A DPO Recipe for Post-Trained LLMs",
+    "Meta-Cognitive Memory Policy Optimization for Long-Horizon LLM Agents",
+    "Reinforcement Learning with Robust Rubric Rewards",
+    "Unifying Temporal and Structural Credit Assignment in LLM-Based Multi-Agent Prompt Optimization",
     "Reinforcement Learning vs. Distillation: Understanding Accuracy and Capability in LLM Reasoning",
     "CLPO: Curriculum Learning meets Policy Optimization for LLM Reasoning",
     "TreeRL: LLM Reinforcement Learning with On-Policy Tree Search",
@@ -285,5 +290,5 @@
     "Optimizing Test-Time Compute via Meta Reinforcement Fine-Tuning",
     "e3: Learning to Explore Enables Extrapolation of Test-Time Compute for LLMs"
   ],
-  "count": 284
+  "count": 289
 }
