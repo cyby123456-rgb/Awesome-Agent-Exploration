@@ -132,6 +132,9 @@ Internalize this capability → truly learn powerful reasoning
 
 ## 2. Token-Level Exploration
 
+- **"Shorthand for Thought: Compressing LLM Reasoning via Entropy-Guided Supertokens"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2604](https://arxiv.org/abs/2604.26355)]
+
 - **"Adaptive Divergence Regularized Policy Optimization for Fine-tuning Generative Models"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2510](https://arxiv.org/abs/2510.18053)]
 
@@ -213,6 +216,12 @@ Internalize this capability → truly learn powerful reasoning
 
 ## 3. Sequence / Response-Level Exploration
 
+- **"Reinforce LLM Reasoning through Multi-Agent Reflection"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2506](https://arxiv.org/abs/2506.08379)]
+
+- **"Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
+  [[arxiv 2502](https://arxiv.org/abs/2502.02508)]
+
 - **"Semantic Flow Regularization: Teaching LLMs to Generate Diverse Yet Coherent Responses"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[arxiv 202605](https://arxiv.org/abs/2605.27971)]
 
@@ -273,6 +282,12 @@ Internalize this capability → truly learn powerful reasoning
 ---
 
 ## 4. Policy Distribution-Level Exploration
+- **"e3: Learning to Explore Enables Extrapolation of Test-Time Compute for LLMs"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2506](https://arxiv.org/abs/2506.09026)]
+
+- **"Optimizing Test-Time Compute via Meta Reinforcement Fine-Tuning"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2503](https://arxiv.org/abs/2503.07572)]
+
 - **"Beyond Mode Collapse: Distribution Matching for Diverse Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 202605](https://arxiv.org/abs/2605.19461)]
 
@@ -321,6 +336,18 @@ Internalize this capability → truly learn powerful reasoning
 ---
 
 ## 5. Semantic-Ignorant Exploration (Entropy / Temperature / Noise)
+
+- **"Entropy-Gated Branching for Efficient Test-Time Reasoning"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2503](https://arxiv.org/abs/2503.21961)]
+
+- **"Reasoning Under 1 Billion: Memory-Augmented Reinforcement Learning for Large Language Models"** ![](https://img.shields.io/badge/random--exploration-orange)
+  [[arxiv 2504](https://arxiv.org/abs/2504.02273)]
+
+- **"SuS: Strategy-aware Surprise for Intrinsic Exploration"** ![](https://img.shields.io/badge/random--exploration-orange)
+  [[arxiv 2601](https://arxiv.org/abs/2601.10349)]
+
+- **"Count Counts: Motivating Exploration in LLM Reasoning with Count-based Intrinsic Rewards"** ![](https://img.shields.io/badge/random--exploration-orange)
+  [[arxiv 2510](https://arxiv.org/abs/2510.16614)]
 
 - **"AEM: Adaptive Entropy Modulation for Multi-Turn Agentic Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2605](https://arxiv.org/abs/2605.00425)]
