@@ -128,6 +128,8 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2501](https://arxiv.org/abs/2501.17104)]
 
 ## 2. Token-Level Exploration
+- **ERPO: Token-Level Entropy-Regulated Policy Optimization for Large Reasoning Models** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2603](https://arxiv.org/abs/2603.28204)]
 
 - **Entropy-Gated Selective Policy Optimization:Token-Level Gradient Allocation for Hybrid Training of Large Language Models** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2602](https://arxiv.org/abs/2602.03309)]
@@ -239,6 +241,14 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2509](https://arxiv.org/abs/2509.21880)]
 
 ## 3. Sequence / Response-Level Exploration
+- **Hint-Guided Diversified Policy Optimization for LLM Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2606](https://arxiv.org/abs/2606.03021)]
+- **PrAg-PO: Prompt Augmented Policy Optimization for Robust and Diverse Mathematical Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2602](https://arxiv.org/abs/2602.03190)]
+- **SetPO: Set-Level Policy Optimization for Diversity-Preserving LLM Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2602](https://arxiv.org/abs/2602.01062)]
+- **Quality-constrained Entropy Maximization Policy Optimization for LLM Diversity** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2602](https://arxiv.org/abs/2602.15894)]
 - **When RL Suppresses Its Own Vocabulary: Recovering Reasoning Diversity in Puzzle-to-Math Transfer** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2605](https://arxiv.org/abs/2605.29190)]
 
@@ -354,6 +364,14 @@ Internalize this capability → truly learn powerful reasoning
 - **Entropy-guided sequence weighting for efficient exploration in RL-based LLM fine-tuning** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[arxiv 2503](https://arxiv.org/abs/2503.22456)]
 ## 4. Policy Distribution-Level Exploration
+- **Policy of Thoughts: Scaling LLM Reasoning via Test-time Policy Evolution** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2601](https://arxiv.org/abs/2601.20379)]
+- **Random Policy Valuation is Enough for LLM Reasoning with Verifiable Rewards** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2509](https://arxiv.org/abs/2509.24981)]
+- **Beyond KL Divergence: Policy Optimization with Flexible Bregman Divergences for LLM Reasoning** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2602](https://arxiv.org/abs/2602.04380)]
+- **Cast a Wider Net: Coordinated Pass@K Policy Optimization for Code Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2605](https://arxiv.org/abs/2605.27000)]
 - **Agent Explorative Policy Optimization for Multimodal Agentic Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2605](https://arxiv.org/abs/2605.28774)]
 
@@ -419,6 +437,8 @@ Internalize this capability → truly learn powerful reasoning
   [[Routledge](https://doi.org/10.4324/9781351274326-4)]
 
 ## 5. Semantic-Ignorant Exploration (Entropy / Temperature / Noise)
+- **From Curiosity to Caution: Mitigating Reward Hacking for Best-of-N with Pessimism** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2604](https://arxiv.org/abs/2604.04648)]
 
 - **Global Convergence of Policy Gradient for Entropy Regularized Linear-Quadratic Control with multiplicative noise** ![](https://img.shields.io/badge/random--exploration-orange)
   [[arxiv 2510](https://arxiv.org/abs/2510.02896)]
@@ -536,6 +556,8 @@ Internalize this capability → truly learn powerful reasoning
 ## 6. Exploration in Specific Scenarios
 
 ### 6.1 RLVR (Math / Code)
+- **Enhancing Reasoning for Diffusion LLMs via Distribution Matching Policy Optimization** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2510](https://arxiv.org/abs/2510.08233)]
 - **Test-Time Deep Thinking to Explore Implicit Rules** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2605](https://arxiv.org/abs/2605.24828)]
 
