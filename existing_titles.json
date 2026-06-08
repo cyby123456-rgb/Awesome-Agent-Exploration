@@ -1,5 +1,12 @@
 {
   "titles": [
+    "AIPO: Learning to Reason from Active Interaction",
+    "Breaking the Reward Barrier: Accelerating Tree-of-Thought Reasoning via Speculative Exploration",
+    "CoSPlay: Cooperative Self-Play at Test-Time with Self-Generated Code and Unit Test",
+    "LaTER: Efficient Test-Time Reasoning via Latent Exploration and Explicit Verification",
+    "Less Noise, More Voice: Reinforcement Learning for Reasoning via Instruction Purification",
+    "TMAS: Scaling Test-Time Compute via Multi-Agent Synergy",
+    "WorldLLM: Improving LLMs' world modeling using curiosity-driven theory-making",
     "\"Like Taking the Path of Least Resistance\": Exploring the Impact of LLM Interaction on the Creative Process of Programming",
     "AMFT: Aligning LLM Reasoners by Meta-Learning the Optimal Imitation-Exploration Balance",
     "AMR-SD: Asymmetric Meta-Reflective Self-Distillation for Token-Level Credit Assignment",

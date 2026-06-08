@@ -363,6 +363,13 @@ Internalize this capability → truly learn powerful reasoning
 
 - **Entropy-guided sequence weighting for efficient exploration in RL-based LLM fine-tuning** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[arxiv 2503](https://arxiv.org/abs/2503.22456)]
+- **LaTER: Efficient Test-Time Reasoning via Latent Exploration and Explicit Verification** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2605](https://arxiv.org/abs/2605.07315)]
+- **Breaking the Reward Barrier: Accelerating Tree-of-Thought Reasoning via Speculative Exploration** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2605](https://arxiv.org/abs/2605.10195)]
+- **TMAS: Scaling Test-Time Compute via Multi-Agent Synergy** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2605](https://arxiv.org/abs/2605.10344)]
+
 ## 4. Policy Distribution-Level Exploration
 - **Policy of Thoughts: Scaling LLM Reasoning via Test-time Policy Evolution** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2601](https://arxiv.org/abs/2601.20379)]
@@ -525,6 +532,8 @@ Internalize this capability → truly learn powerful reasoning
 - **CDE: Curiosity-Driven Exploration for Efficient Reinforcement Learning in Large Language Models** ![](https://img.shields.io/badge/random--exploration-orange)
   [[ELEKTRO 2014](https://doi.org/10.1109/elektro.2014.6848933)]
 
+- **WorldLLM: Improving LLMs' world modeling using curiosity-driven theory-making** ![](https://img.shields.io/badge/random--exploration-orange)
+  [[arxiv 2506](https://arxiv.org/abs/2506.06725)]
 - **Navigate the Unknown: Enhancing LLM Reasoning with Intrinsic Motivation Guided Exploration** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Thesis](https://doi.org/10.14711/thesis-hdl169584)]
 
@@ -753,6 +762,13 @@ Internalize this capability → truly learn powerful reasoning
 
 - **Differential Smoothing Mitigates Sharpening and Improves LLM Reasoning** ![](https://img.shields.io/badge/feature--perturbation-F59E0B)
   [[Preprint](https://doi.org/10.70675/9ec0ac47z466az43f9z8715z765efa057193)]
+
+- **Less Noise, More Voice: Reinforcement Learning for Reasoning via Instruction Purification** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2601](https://arxiv.org/abs/2601.21244)]
+- **AIPO: Learning to Reason from Active Interaction** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2605](https://arxiv.org/abs/2605.08401)]
+- **CoSPlay: Cooperative Self-Play at Test-Time with Self-Generated Code and Unit Test** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2605](https://arxiv.org/abs/2605.23491)]
 
 ### 6.2 Unsupervised / Minimal Label Scenarios
 
