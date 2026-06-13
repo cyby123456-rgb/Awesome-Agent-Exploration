@@ -318,6 +318,23 @@
     "The Unreasonable Effectiveness of Entropy Minimization in LLM Reasoning",
     "Unrewarded Exploration in Large Language Models Reveals Latent Learning from Psychology",
     "Discovery and Reinforcement of Tool-Integrated Reasoning Chains via Rollout Trees",
-    "Multi-Path Collaborative Reasoning via Reinforcement Learning"
+    "Multi-Path Collaborative Reasoning via Reinforcement Learning",
+    "A Comparative Theoretical Analysis of Entropy Control Methods in Reinforcement Learning",
+    "On the Entropy Dynamics in Reinforcement Fine-Tuning of Large Language Models",
+    "Selective-Advantage Entropy-Adaptive Horizon GRPO: Asymmetric Token-Level Discounting for Efficient Reinforcement Learning of Language Models",
+    "Asymmetric Advantage Modulation Calibrates Entropy Dynamics in RLVR",
+    "APPO: Agentic Procedural Policy Optimization",
+    "ETR: Entropy Trend Reward for Efficient Chain-of-Thought Reasoning",
+    "DPEPO: Diverse Parallel Exploration Policy Optimization for LLM-based Agents",
+    "DyJR: Preserving Diversity in Reinforcement Learning with Verifiable Rewards via Dynamic Jensen-Shannon Replay",
+    "N-GRPO: Embedding-Level Neighbor Mixing for Enhanced Policy Optimization",
+    "RLVR without Ineffective Samples: Group Prioritized Off-Policy Optimization for LLM Reasoning",
+    "AGPO: Adaptive Group Policy Optimization with Dual Statistical Feedback",
+    "Adaptive Negative Reinforcement for LLM Reasoning: Dynamically Balancing Correction and Diversity in RLVR",
+    "Listwise Policy Optimization: Group-based RLVR as Target-Projection on the LLM Response Simplex",
+    "Nonsense Helps: Prompt Space Perturbation Broadens Reasoning Exploration",
+    "CuES: A Curiosity-driven and Environment-grounded Synthesis Framework for Agentic RL",
+    "Does RL Expand the Capability Boundary of LLM Agents? A PASS@(k,T) Analysis",
+    "Why Pass@k Optimization Can Degrade Pass@1: Prompt Interference in LLM Post-training"
   ]
 }
