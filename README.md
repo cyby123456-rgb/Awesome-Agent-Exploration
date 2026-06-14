@@ -132,10 +132,22 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2601](https://arxiv.org/abs/2601.08274)]
 
 
-- **A Comparative Theoretical Analysis of Entropy Control Methods in Reinforcement Learning** ![](https://img.shields.io/badge/exploration--llm)
+- **GFlowPO: Generative Flow Network as a Language Model Prompt Optimizer** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2602](https://arxiv.org/abs/2602.03358)]
+
+- **Towards a Unified View of Large Language Model Post-Training** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2509](https://arxiv.org/abs/2509.04419)]
+
+- **Reinforced MLLM: A Survey on RL-Based Reasoning in Multimodal Large Language Models** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2504](https://arxiv.org/abs/2504.21277)]
+
+- **Stop Overthinking: A Survey on Efficient Reasoning for Large Language Models** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2503](https://arxiv.org/abs/2503.16419)]
+
+- **A Comparative Theoretical Analysis of Entropy Control Methods in Reinforcement Learning** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2604](https://arxiv.org/abs/2604.09676)]
 
-- **On the Entropy Dynamics in Reinforcement Fine-Tuning of Large Language Models** ![](https://img.shields.io/badge/exploration--llm)
+- **On the Entropy Dynamics in Reinforcement Fine-Tuning of Large Language Models** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2602](https://arxiv.org/abs/2602.03392)]
 
 ## 2. Token-Level Exploration
@@ -550,6 +562,15 @@ Internalize this capability → truly learn powerful reasoning
 - **Listwise Policy Optimization: Group-based RLVR as Target-Projection on the LLM Response Simplex** ![](https://img.shields.io/badge/exploration--path)
   [[arxiv 2605](https://arxiv.org/abs/2605.06139)]
 
+- **Enhancing Efficiency and Exploration in Reinforcement Learning for LLMs** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2505](https://arxiv.org/abs/2505.18573)]
+
+- **Trust-Region Adaptive Policy Optimization** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2512](https://arxiv.org/abs/2512.17636)]
+
+- **PriorZero: Bridging Language Priors and World Models for Decision Making** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2605](https://arxiv.org/abs/2605.12289)]
+
 ## 5. Semantic-Ignorant Exploration (Entropy / Temperature / Noise)
 - **From Curiosity to Caution: Mitigating Reward Hacking for Best-of-N with Pessimism** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2604](https://arxiv.org/abs/2604.04648)]
@@ -890,6 +911,18 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2605](https://arxiv.org/abs/2605.23491)]
 - **Reinforcement-aware Knowledge Distillation for LLM Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2602](https://arxiv.org/abs/2602.22495)]
+
+- **R1-Searcher++: Incentivizing the Dynamic Knowledge Acquisition of LLMs via Reinforcement Learning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2505](https://arxiv.org/abs/2505.17005)]
+
+- **CLEANER: Self-Purified Trajectories Boost Agentic Reinforcement Learning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2601](https://arxiv.org/abs/2601.15141)]
+
+- **Think Anywhere in Code Generation** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2603](https://arxiv.org/abs/2603.29957)]
+
+- **Beyond Correctness: Confidence-Aware Reward Modeling for Enhancing Large Language Model Reasoning** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2511](https://arxiv.org/abs/2511.07483)]
 
 
 ### 6.2 Unsupervised / Minimal Label Scenarios

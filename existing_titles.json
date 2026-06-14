@@ -335,6 +335,17 @@
     "Nonsense Helps: Prompt Space Perturbation Broadens Reasoning Exploration",
     "CuES: A Curiosity-driven and Environment-grounded Synthesis Framework for Agentic RL",
     "Does RL Expand the Capability Boundary of LLM Agents? A PASS@(k,T) Analysis",
-    "Why Pass@k Optimization Can Degrade Pass@1: Prompt Interference in LLM Post-training"
+    "Why Pass@k Optimization Can Degrade Pass@1: Prompt Interference in LLM Post-training",
+    "GFlowPO: Generative Flow Network as a Language Model Prompt Optimizer",
+    "Towards a Unified View of Large Language Model Post-Training",
+    "Reinforced MLLM: A Survey on RL-Based Reasoning in Multimodal Large Language Models",
+    "Stop Overthinking: A Survey on Efficient Reasoning for Large Language Models",
+    "Enhancing Efficiency and Exploration in Reinforcement Learning for LLMs",
+    "Trust-Region Adaptive Policy Optimization",
+    "PriorZero: Bridging Language Priors and World Models for Decision Making",
+    "R1-Searcher++: Incentivizing the Dynamic Knowledge Acquisition of LLMs via Reinforcement Learning",
+    "CLEANER: Self-Purified Trajectories Boost Agentic Reinforcement Learning",
+    "Think Anywhere in Code Generation",
+    "Beyond Correctness: Confidence-Aware Reward Modeling for Enhancing Large Language Model Reasoning"
   ]
 }
