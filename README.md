@@ -102,6 +102,12 @@ Internalize this capability → truly learn powerful reasoning
 - [7. The Escape Debate: Can RL Surpass Base Model?](#7-the-escape-debate-can-rl-surpass-base-model)
 
 ## 1. Survey & Frameworks
+- **Meta-Thinking in LLMs via Multi-Agent Reinforcement Learning: A Survey** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2504](https://arxiv.org/abs/2504.14520)]
+
+- **Inverse Reinforcement Learning Meets Large Language Model Post-Training: Basics, Advances, and Opportunities** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2507](https://arxiv.org/abs/2507.13158)]
+
 
 - **Generative Floor Plan Design with LLMs via Reinforcement Learning with Verifiable Rewards** ![](https://img.shields.io/badge/random--exploration-orange)
   [[arxiv 2605](https://arxiv.org/abs/2605.14117)]
@@ -151,6 +157,15 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2602](https://arxiv.org/abs/2602.03392)]
 
 ## 2. Token-Level Exploration
+- **TreePO: Bridging the Gap of Policy Optimization and Efficacy and Inference Efficiency with Heuristic Tree-based Modeling** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2508](https://arxiv.org/abs/2508.17445)]
+
+- **IAPO: Information-Aware Policy Optimization for Token-Efficient Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2602](https://arxiv.org/abs/2602.19049)]
+
+- **Guided by Gut: Efficient Test-Time Scaling with Reinforced Intrinsic Confidence** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2505](https://arxiv.org/abs/2505.20325)]
+
 - **ERPO: Token-Level Entropy-Regulated Policy Optimization for Large Reasoning Models** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2603](https://arxiv.org/abs/2603.28204)]
 
@@ -300,6 +315,18 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2606](https://arxiv.org/abs/2606.12384)]
 
 ## 3. Sequence / Response-Level Exploration
+- **$\texttt{SPECS}$: Faster Test-Time Scaling through Speculative Drafts** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2506](https://arxiv.org/abs/2506.15733)]
+
+- **Rewarding Graph Reasoning Process makes LLMs more Generalized Reasoners** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2503](https://arxiv.org/abs/2503.00845)]
+
+- **Graph-O1 : Monte Carlo Tree Search with Reinforcement Learning for Text-Attributed Graph Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2512](https://arxiv.org/abs/2512.17912)]
+
+- **SIGHT: Reinforcement Learning with Self-Evidence and Information-Gain Diverse Branching for Search Agent** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2602](https://arxiv.org/abs/2602.11551)]
+
 - **Hint-Guided Diversified Policy Optimization for LLM Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2606](https://arxiv.org/abs/2606.03021)]
 - **PrAg-PO: Prompt Augmented Policy Optimization for Robust and Diverse Mathematical Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
@@ -460,6 +487,36 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2604](https://arxiv.org/abs/2604.24320)]
 
 ## 4. Policy Distribution-Level Exploration
+- **Emergent Hierarchical Reasoning in LLMs through Reinforcement Learning** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2509](https://arxiv.org/abs/2509.03646)]
+
+- **Agentic Policy Optimization via Instruction-Policy Co-Evolution** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2512](https://arxiv.org/abs/2512.01945)]
+
+- **Bottom-up Policy Optimization: Your Language Model Policy Secretly Contains Internal Policies** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2512](https://arxiv.org/abs/2512.19673)]
+
+- **DISA: Offline Importance Sampling for Distribution-Matching LLM-RL** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2605](https://arxiv.org/abs/2605.17295)]
+
+- **EEPO: Exploration-Enhanced Policy Optimization via Sample-Then-Forget** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2510](https://arxiv.org/abs/2510.05837)]
+
+- **General Preference Reinforcement Learning** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2605](https://arxiv.org/abs/2605.18721)]
+
+- **COPO: Consistency-Aware Policy Optimization** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2508](https://arxiv.org/abs/2508.04138)]
+
+- **DUMP: Automated Distribution-Level Curriculum Learning for RL-based LLM Post-training** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2504](https://arxiv.org/abs/2504.09710)]
+
+- **Internalizing World Models via Self-Play Finetuning for Agentic RL** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2510](https://arxiv.org/abs/2510.15047)]
+
+- **R$^2$PO: Decoupling Training Trajectories from Inference Responses for LLM Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2601](https://arxiv.org/abs/2601.11960)]
+
 - **Policy of Thoughts: Scaling LLM Reasoning via Test-time Policy Evolution** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2601](https://arxiv.org/abs/2601.20379)]
 - **Random Policy Valuation is Enough for LLM Reasoning with Verifiable Rewards** ![](https://img.shields.io/badge/exploration--llm-blue)
@@ -572,6 +629,9 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2605](https://arxiv.org/abs/2605.12289)]
 
 ## 5. Semantic-Ignorant Exploration (Entropy / Temperature / Noise)
+- **Parallel Test-Time Scaling for Latent Reasoning Models** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2510](https://arxiv.org/abs/2510.07745)]
+
 - **From Curiosity to Caution: Mitigating Reward Hacking for Best-of-N with Pessimism** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2604](https://arxiv.org/abs/2604.04648)]
 
@@ -703,6 +763,18 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2512](https://arxiv.org/abs/2512.01311)]
 
 ## 6. Exploration in Specific Scenarios
+- **SPADER: Step-wise Peer Advantage with Diversity-Aware Exploration Rewards for Multi-Answer Question Answering** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2606](https://arxiv.org/abs/2606.00593)]
+
+- **Collaborative Multi-Agent Test-Time Reinforcement Learning for Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2601](https://arxiv.org/abs/2601.09667)]
+
+- **From Verifiable Dot to Reward Chain: Harnessing Verifiable Reference-based Rewards for Reinforcement Learning of Open-ended Generation** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2601](https://arxiv.org/abs/2601.18533)]
+
+- **Flow-of-Options: Diversified and Improved LLM Reasoning by Thinking Through Options** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2502](https://arxiv.org/abs/2502.12929)]
+
 
 ### 6.1 RLVR (Math / Code)
 - **Enhancing Reasoning for Diffusion LLMs via Distribution Matching Policy Optimization** ![](https://img.shields.io/badge/exploration--path-brightgreen)
@@ -1012,6 +1084,9 @@ Internalize this capability → truly learn powerful reasoning
 - **DRA-GRPO: Exploring Diversity-Aware Reward Adjustment for R1-Zero-Like Training of Large Language Models** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[CHICC 2019](https://doi.org/10.23919/chicc.2019.8866029)]
 ## 7. The Escape Debate: Can RL Surpass Base Model?
+- **Exploration Hacking: Can LLMs Learn to Resist RL Training?** ![](https://img.shields.io/badge/rl--limitations-red)
+  [[arxiv 2604](https://arxiv.org/abs/2604.28182)]
+
 - **On the Direction of RLVR Updates for LLM Reasoning: Identification and Exploitation** ![](https://img.shields.io/badge/rl--limitations-red)
   [[arxiv 2603](https://arxiv.org/abs/2603.22117)]
 
