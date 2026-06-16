@@ -288,7 +288,15 @@
     "Shorthand for Thought: Compressing LLM Reasoning via Entropy-Guided Supertokens",
     "Reinforce LLM Reasoning through Multi-Agent Reflection",
     "Optimizing Test-Time Compute via Meta Reinforcement Fine-Tuning",
-    "e3: Learning to Explore Enables Extrapolation of Test-Time Compute for LLMs"
+    "e3: Learning to Explore Enables Extrapolation of Test-Time Compute for LLMs",
+    "ExpRL: Exploratory RL for LLM Mid-Training",
+    "Entropy-Gated Latent Recursion",
+    "Latent Thought Flow: Efficient Latent Reasoning in Large Language Models",
+    "Context-Aware RL for Agentic and Multimodal LLMs",
+    "GD^2PO: Mitigating Multi-Reward Conflicts via Group-Dynamic reward-Decoupled Policy Optimization",
+    "The Value Axis: Language Models Encode Whether They're on the Right Track",
+    "Scaling LLM Reasoning from Minimal Labels: A Semi-Supervised Framework with a Lightweight Verifier",
+    "Tyler: Typed Latent Reasoning for Language Models -- When to Think, What to Compute, and How Much to Allocate"
   ],
   "count": 289
 }
