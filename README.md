@@ -157,6 +157,8 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2602](https://arxiv.org/abs/2602.03392)]
 
 ## 2. Token-Level Exploration
+- **HTPO: Towards Exploration-Exploitation Balanced Policy Optimization via Hierarchical Token-level Objective Control** ![](https://img.shields.io/badge/exploration--llm-(blue))
+  [[arxiv 2605](https://arxiv.org/abs/2605.08283)]
 - **TreePO: Bridging the Gap of Policy Optimization and Efficacy and Inference Efficiency with Heuristic Tree-based Modeling** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2508](https://arxiv.org/abs/2508.17445)]
 
@@ -315,6 +317,14 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2606](https://arxiv.org/abs/2606.12384)]
 
 ## 3. Sequence / Response-Level Exploration
+- **PACR: Progressively Ascending Confidence Reward for LLM Reasoning** ![](https://img.shields.io/badge/exploration--llm-(blue))
+  [[arxiv 2510](https://arxiv.org/abs/2510.22255)]
+- **From Reasoning Chains to Verifiable Subproblems: Curriculum Reinforcement Learning Enables Credit Assignment for LLM Reasoning** ![](https://img.shields.io/badge/exploration--llm-(blue))
+  [[arxiv 2605](https://arxiv.org/abs/2605.22074)]
+- **Reward Hacking Mitigation using Verifiable Composite Rewards** ![](https://img.shields.io/badge/exploration--llm-(blue))
+  [[arxiv 2509](https://arxiv.org/abs/2509.15557)]
+- **EvoCoT: Overcoming the Exploration Bottleneck in Reinforcement Learning** ![](https://img.shields.io/badge/exploration--llm-(blue))
+  [[arxiv 2508](https://arxiv.org/abs/2508.07809)]
 - **$\texttt{SPECS}$: Faster Test-Time Scaling through Speculative Drafts** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2506](https://arxiv.org/abs/2506.15733)]
 
@@ -487,6 +497,14 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2604](https://arxiv.org/abs/2604.24320)]
 
 ## 4. Policy Distribution-Level Exploration
+- **XRPO: Pushing the limits of GRPO with Targeted Exploration and Exploitation** ![](https://img.shields.io/badge/exploration--llm-(blue))
+  [[arxiv 2510](https://arxiv.org/abs/2510.06672)]
+- **GHPO: Adaptive Guidance for Stable and Efficient LLM Reinforcement Learning** ![](https://img.shields.io/badge/exploration--llm-(blue))
+  [[arxiv 2507](https://arxiv.org/abs/2507.10628)]
+- **Pinpointing crucial steps: Attribution-based Credit Assignment for Verifiable Reinforcement Learning** ![](https://img.shields.io/badge/exploration--llm-(blue))
+  [[arxiv 2510](https://arxiv.org/abs/2510.08899)]
+- **Reference-guided Policy Optimization for Molecular Optimization via LLM Reasoning** ![](https://img.shields.io/badge/exploration--llm-(blue))
+  [[arxiv 2603](https://arxiv.org/abs/2603.05900)]
 - **Emergent Hierarchical Reasoning in LLMs through Reinforcement Learning** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2509](https://arxiv.org/abs/2509.03646)]
 
@@ -629,6 +647,8 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2605](https://arxiv.org/abs/2605.12289)]
 
 ## 5. Semantic-Ignorant Exploration (Entropy / Temperature / Noise)
+- **LLM-Driven Intrinsic Motivation for Sparse Reward Reinforcement Learning** ![](https://img.shields.io/badge/exploration--llm-(blue))
+  [[arxiv 2508](https://arxiv.org/abs/2508.18420)]
 - **Parallel Test-Time Scaling for Latent Reasoning Models** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2510](https://arxiv.org/abs/2510.07745)]
 
@@ -763,6 +783,28 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2512](https://arxiv.org/abs/2512.01311)]
 
 ## 6. Exploration in Specific Scenarios
+- **When Greedy Wins: Emergent Exploitation Bias in Meta-Bandit LLM Training** ![](https://img.shields.io/badge/exploration--llm-(blue))
+  [[arxiv 2509](https://arxiv.org/abs/2509.24923)]
+- **Backdoors in RLVR: Jailbreak Backdoors in LLMs From Verifiable Reward** ![](https://img.shields.io/badge/exploration--llm-(blue))
+  [[arxiv 2604](https://arxiv.org/abs/2604.09748)]
+- **Boosting LLM Reasoning via Human-Inspired Reward Shaping** ![](https://img.shields.io/badge/exploration--llm-(blue)) ![](https://img.shields.io/badge/exploration--path-(brightgreen))
+  [[arxiv 2602](https://arxiv.org/abs/2602.04265)]
+- **APEX: Autonomous Policy Exploration for Self-Evolving LLM Agents** ![](https://img.shields.io/badge/exploration--llm-(blue))
+  [[arxiv 2605](https://arxiv.org/abs/2605.21240)]
+- **MAGE: Meta-Reinforcement Learning for Language Agents toward Strategic Exploration and Exploitation** ![](https://img.shields.io/badge/exploration--llm-(blue))
+  [[arxiv 2603](https://arxiv.org/abs/2603.03680)]
+- **HarmRLVR: Weaponizing Verifiable Rewards for Harmful LLM Alignment** ![](https://img.shields.io/badge/exploration--llm-(blue))
+  [[arxiv 2510](https://arxiv.org/abs/2510.15499)]
+- **AgentPRM: Process Reward Models for LLM Agents via Step-Wise Promise and Progress** ![](https://img.shields.io/badge/exploration--llm-(blue))
+  [[arxiv 2511](https://arxiv.org/abs/2511.08325)]
+- **Beyond Rubrics: Exploration-Guided Evaluation Skills for Reward Modeling** ![](https://img.shields.io/badge/exploration--llm-(blue))
+  [[arxiv 2606](https://arxiv.org/abs/2606.07040)]
+- **Chunks as Arms: Multi-Armed Bandit-Guided Sampling for Long-Context LLM Preference Optimization** ![](https://img.shields.io/badge/exploration--llm-(blue))
+  [[arxiv 2508](https://arxiv.org/abs/2508.13993)]
+- **Plan-MCTS: Plan Exploration for Action Exploitation in Web Navigation** ![](https://img.shields.io/badge/exploration--llm-(blue)) ![](https://img.shields.io/badge/exploration--path-(brightgreen)) ![](https://img.shields.io/badge/noisy--net-(06B6D4))
+  [[arxiv 2602](https://arxiv.org/abs/2602.14083)]
+- **RTLSeek: Boosting the LLM-Based RTL Generation with Multi-Stage Diversity-Oriented Reinforcement Learning** ![](https://img.shields.io/badge/exploration--llm-(blue))
+  [[arxiv 2603](https://arxiv.org/abs/2603.27630)]
 - **SPADER: Step-wise Peer Advantage with Diversity-Aware Exploration Rewards for Multi-Answer Question Answering** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2606](https://arxiv.org/abs/2606.00593)]
 
@@ -1084,6 +1126,10 @@ Internalize this capability → truly learn powerful reasoning
 - **DRA-GRPO: Exploring Diversity-Aware Reward Adjustment for R1-Zero-Like Training of Large Language Models** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[CHICC 2019](https://doi.org/10.23919/chicc.2019.8866029)]
 ## 7. The Escape Debate: Can RL Surpass Base Model?
+- **RL-PLUS: Countering Capability Boundary Collapse of LLMs in Reinforcement Learning with Hybrid-policy Optimization** ![](https://img.shields.io/badge/exploration--llm-(blue)) ![](https://img.shields.io/badge/exploration--path-(brightgreen))
+  [[arxiv 2508](https://arxiv.org/abs/2508.00222)]
+- **Reward and Guidance through Rubrics: Promoting Exploration to Improve Multi-Domain Reasoning** ![](https://img.shields.io/badge/exploration--llm-(blue)) ![](https://img.shields.io/badge/rl--limitations-(red))
+  [[arxiv 2511](https://arxiv.org/abs/2511.12344)]
 - **Exploration Hacking: Can LLMs Learn to Resist RL Training?** ![](https://img.shields.io/badge/rl--limitations-red)
   [[arxiv 2604](https://arxiv.org/abs/2604.28182)]
 
