@@ -157,6 +157,27 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2602](https://arxiv.org/abs/2602.03392)]
 
 ## 2. Token-Level Exploration
+- **Dynamic Rollout Editing for Reducing Overthinking in RL-Trained Reasoning Models** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2606](https://arxiv.org/abs/2606.17890)]
+
+- **CARE: Competence-Aware Reward Shaping for Adaptive Reasoning Length in Video-MLLMs** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2606](https://arxiv.org/abs/2606.19927)]
+
+- **3SPO: State-Score-Supervised Policy Optimization for LLM Agents** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2606](https://arxiv.org/abs/2606.09961)]
+
+- **VeriGate: Verifier-Gated Step-Level Supervision for GRPO** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2605](https://arxiv.org/abs/2605.30451)]
+
+- **VIMPO: Value-Implicit Policy Optimization for LLMs** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2606](https://arxiv.org/abs/2606.20008)]
+
+- **CATPO: Critique-Augmented Tree Policy Optimization** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2606](https://arxiv.org/abs/2606.08346)]
+
+- **EchoRL: Reinforcement Learning via Rollout Echoing** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2605](https://arxiv.org/abs/2605.31228)]
+
 - **HTPO: Towards Exploration-Exploitation Balanced Policy Optimization via Hierarchical Token-level Objective Control** ![](https://img.shields.io/badge/exploration--llm-(blue))
   [[arxiv 2605](https://arxiv.org/abs/2605.08283)]
 - **TreePO: Bridging the Gap of Policy Optimization and Efficacy and Inference Efficiency with Heuristic Tree-based Modeling** ![](https://img.shields.io/badge/exploration--path-brightgreen)
@@ -332,6 +353,15 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2606](https://arxiv.org/abs/2606.10968)]
 
 ## 3. Sequence / Response-Level Exploration
+- **GraphPO: Graph-based Policy Optimization for Reasoning Models** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2606](https://arxiv.org/abs/2606.18954)]
+
+- **StarOR: Synergizing Tree Search and Test-Time Reinforcement Learning for Optimization Modeling** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2606](https://arxiv.org/abs/2606.15197)]
+
+- **ReSkill: Reconciling Skill Creation with Policy Optimization in Agentic RL** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2606](https://arxiv.org/abs/2606.01619)]
+
 - **PACR: Progressively Ascending Confidence Reward for LLM Reasoning** ![](https://img.shields.io/badge/exploration--llm-(blue))
   [[arxiv 2510](https://arxiv.org/abs/2510.22255)]
 - **From Reasoning Chains to Verifiable Subproblems: Curriculum Reinforcement Learning Enables Credit Assignment for LLM Reasoning** ![](https://img.shields.io/badge/exploration--llm-(blue))
@@ -781,6 +811,12 @@ Internalize this capability → truly learn powerful reasoning
 - **The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2503](https://arxiv.org/abs/2503.14442)]
 ### 5.3 Curiosity & Intrinsic Motivation
+- **Planning to Explore: Curiosity-Driven Planning for LLM Test Generation** ![](https://img.shields.io/badge/random--exploration-orange)
+  [[arxiv 2604](https://arxiv.org/abs/2604.05159)]
+
+- **In-Context Curiosity: Distilling Exploration for Decision-Pretrained Transformers on Bandit Tasks** ![](https://img.shields.io/badge/random--exploration-orange)
+  [[arxiv 2510](https://arxiv.org/abs/2510.00347)]
+
 - **Curiosity-Driven Reinforcement Learning from Human Feedback** ![](https://img.shields.io/badge/random--exploration-orange)
   [[arxiv 2501](https://arxiv.org/abs/2501.11463)]
 
@@ -888,6 +924,9 @@ Internalize this capability → truly learn powerful reasoning
 
 
 ### 6.1 RLVR (Math / Code)
+- **Combinatorial Synthesis: Scaling Code RLVR via Atomic Decomposition and Recombination** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2605](https://arxiv.org/abs/2605.31058)]
+
 - **Enhancing Reasoning for Diffusion LLMs via Distribution Matching Policy Optimization** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2510](https://arxiv.org/abs/2510.08233)]
 - **Test-Time Deep Thinking to Explore Implicit Rules** ![](https://img.shields.io/badge/exploration--path-brightgreen)
@@ -1109,6 +1148,9 @@ Internalize this capability → truly learn powerful reasoning
 
 
 ### 6.2 Unsupervised / Minimal Label Scenarios
+- **GeoMin: Data-Efficient Semi-Supervised RLVR via Geometric Distribution Modeling** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2606](https://arxiv.org/abs/2606.04516)]
+
 
 - **GradAlign: Gradient-Aligned Data Selection for LLM Reinforcement Learning** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2602](https://arxiv.org/abs/2602.21492)]

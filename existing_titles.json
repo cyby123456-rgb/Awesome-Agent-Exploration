@@ -430,6 +430,20 @@
     "Are Tools Always Beneficial? Learning to Invoke Tools Adaptively for Dual-Mode Multimodal LLM Reasoning",
     "G-Zero: Self-Play for Open-Ended Generation from Zero Data",
     "S-GRPO: Unified Post-Training for Large Vision-Language Models",
-    "Robust Tool Use via Fission-GRPO: Learning to Recover from Execution Errors"
+    "Robust Tool Use via Fission-GRPO: Learning to Recover from Execution Errors",
+    "GraphPO: Graph-based Policy Optimization for Reasoning Models",
+    "Dynamic Rollout Editing for Reducing Overthinking in RL-Trained Reasoning Models",
+    "CARE: Competence-Aware Reward Shaping for Adaptive Reasoning Length in Video-MLLMs",
+    "StarOR: Synergizing Tree Search and Test-Time Reinforcement Learning for Optimization Modeling",
+    "3SPO: State-Score-Supervised Policy Optimization for LLM Agents",
+    "ReSkill: Reconciling Skill Creation with Policy Optimization in Agentic RL",
+    "VeriGate: Verifier-Gated Step-Level Supervision for GRPO",
+    "Planning to Explore: Curiosity-Driven Planning for LLM Test Generation",
+    "In-Context Curiosity: Distilling Exploration for Decision-Pretrained Transformers on Bandit Tasks",
+    "VIMPO: Value-Implicit Policy Optimization for LLMs",
+    "CATPO: Critique-Augmented Tree Policy Optimization",
+    "GeoMin: Data-Efficient Semi-Supervised RLVR via Geometric Distribution Modeling",
+    "EchoRL: Reinforcement Learning via Rollout Echoing",
+    "Combinatorial Synthesis: Scaling Code RLVR via Atomic Decomposition and Recombination"
   ]
 }
