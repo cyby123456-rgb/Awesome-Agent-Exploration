@@ -161,9 +161,6 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2602](https://arxiv.org/abs/2602.03392)]
 
 ## 2. Token-Level Exploration
-- **Ask, Solve, Generate: Self-Evolving Unified Multimodal Understanding and Generation via Self-Consistency Rewards** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2606](https://arxiv.org/abs/2606.27376v1)]
-
 - **When Context Misleads: Surprisal, Energy and Attention Entropy as Metrics of Coherence Illusions in LLMs** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2606](https://arxiv.org/abs/2606.21203)]
 - **Beyond Penalizing Mistakes: Stabilizing Efficiency Training in Large Reasoning Models via Adaptive Correct-Only Rewards** ![](https://img.shields.io/badge/exploration--path-brightgreen)
@@ -368,13 +365,6 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2606](https://arxiv.org/abs/2606.10968)]
 
 ## 3. Sequence / Response-Level Exploration
-- **PhysiFormer: Learning to Simulate Mechanics in World Space** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2606](https://arxiv.org/abs/2606.27364v1)]
-- **Designing Reward Signals for Portable Query Generation: A Case Study in Industrial Semantic Job Search** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2606](https://arxiv.org/abs/2606.27291v1)]
-- **Automating Potential-based Reward Shaping with Vision Language Model Guidance** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2606](https://arxiv.org/abs/2606.27180v1)]
-
 - **DART: Draft-Agreement Routing for Training-Free Adaptive Thinking Budgets in Hybrid Reasoning Models** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2606](https://arxiv.org/abs/2606.23181)]
 - **TRACE: A Unified Rollout Budget Allocation Framework for Efficient Agentic Reinforcement Learning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
@@ -584,9 +574,6 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2602](https://arxiv.org/abs/2602.10048)]
 
 ## 4. Policy Distribution-Level Exploration
-- **Empowering GUI Agents via Autonomous Experience Exploration and Hindsight Experience Utilization for Task Planning** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2606](https://arxiv.org/abs/2606.27330v1)]
-
 - **On-Policy Self-Distillation with Sampled Demonstrations Reduces Output Diversity** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2606](https://arxiv.org/abs/2606.26091)]
 - **Latent-GRPO: Group Relative Policy Optimization for Latent Reasoning** ![](https://img.shields.io/badge/exploration--llm-blue)
@@ -767,9 +754,6 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2606](https://arxiv.org/abs/2606.06673)]
 
 ## 5. Semantic-Ignorant Exploration (Entropy / Temperature / Noise)
-- **LLM-Based Examination of Eligibility Criteria from Securities Prospectuses at the German Central Bank** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2606](https://arxiv.org/abs/2606.27316v1)]
-
 - **DLWM: Diverse Latent World Models for Efficient Multimodal Reasoning** ![](https://img.shields.io/badge/random--exploration-orange)
   [[arxiv 2606](https://arxiv.org/abs/2606.15160)]
 - **Thoughts-as-Planning: Latent World Models for Chain-of-Thoughts Optimization via Reinforcement Planning** ![](https://img.shields.io/badge/random--exploration-orange)
@@ -946,11 +930,6 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2504](https://arxiv.org/abs/2504.03206)]
 
 ## 6. Exploration in Specific Scenarios
-- **Reinforcement Learning without Ground-Truth Solutions can Improve LLMs** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2606](https://arxiv.org/abs/2606.27369v1)]
-- **Autoregressive Boltzmann Generators** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2606](https://arxiv.org/abs/2606.27361v1)]
-
 - **Towards Diverse Scientific Hypothesis Search with Large Language Models** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2606](https://arxiv.org/abs/2606.10587)]
 - **LLM-ACES: Closed-Loop Discovery of Dynamical Systems with LLM-Guided Adaptive Search** ![](https://img.shields.io/badge/exploration--llm-blue)
@@ -1337,9 +1316,6 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2601](https://arxiv.org/abs/2601.15625)]
 
 ## 7. The Escape Debate: Can RL Surpass Base Model?
-- **Scalable Behavior Cloning with Open Data, Training, and Evaluation** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2606](https://arxiv.org/abs/2606.27375v1)]
-
 - **Rethinking Reward Supervision: Rubric-Conditioned Self-Distillation** ![](https://img.shields.io/badge/related--topics-888)
   [[arxiv 2606](https://arxiv.org/abs/2606.19327)]
 - **OPERA: Aligning Open-Ended Reasoning via Objective Perplexity-based Reinforcement Learning** ![](https://img.shields.io/badge/related--topics-888)
