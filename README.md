@@ -388,6 +388,8 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2606](https://arxiv.org/abs/2606.25451v1)]
 - **Learning from Own Solutions: Self-Conditioned Credit Assignment for Reinforcement Learning with Verifiable Rewards** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2606](https://arxiv.org/abs/2606.18810v1)]
+- **GEOALIGN: Geometric Rollout Curation for Robust LLM Reinforcement Learning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2606](https://arxiv.org/abs/2606.26917)]
 
 - **DART: Draft-Agreement Routing for Training-Free Adaptive Thinking Budgets in Hybrid Reasoning Models** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2606](https://arxiv.org/abs/2606.23181)]
@@ -1055,6 +1057,8 @@ Internalize this capability → truly learn powerful reasoning
 ### 6.1 RLVR (Math / Code)
 - **Combinatorial Synthesis: Scaling Code RLVR via Atomic Decomposition and Recombination** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2605](https://arxiv.org/abs/2605.31058)]
+- **Reinforcement Learning without Ground-Truth Solutions can Improve LLMs** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2606](https://arxiv.org/abs/2606.27369)]
 
 - **Enhancing Reasoning for Diffusion LLMs via Distribution Matching Policy Optimization** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2510](https://arxiv.org/abs/2510.08233)]

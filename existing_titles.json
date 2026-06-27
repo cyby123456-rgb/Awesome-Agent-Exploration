@@ -35,6 +35,8 @@
     "Asymmetric Proximal Policy Optimization: mini-critics boost LLM reasoning",
     "Auditing Reward Hackability in Code RL Training Environments",
     "Awesome-Rubrics",
+    "Reinforcement Learning without Ground-Truth Solutions can Improve LLMs",
+    "GEOALIGN: Geometric Rollout Curation for Robust LLM Reinforcement Learning",
     "BALTO: Balanced Token-Level Policy Optimization for Hallucination Mitigation",
     "BAPO: Stabilizing Off-Policy Reinforcement Learning for LLMs via Balanced Policy Optimization with Adaptive Clipping",
     "Back to Basics: Revisiting Exploration in Reinforcement Learning for LLM Reasoning via Generative Probabilities",
