@@ -103,13 +103,6 @@ Internalize this capability → truly learn powerful reasoning
 
 ## 1. Survey & Frameworks
 
-- **The Key to Going Linear: Analysis-Driven Transformer Linearization** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07706)]
-- **An optimal control approach for neural network architecture adaptation with a posteriori error estimation** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07637)]
-- **User identity conditions moral wrongness ratings in non-reasoning large language models** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07605)]
-
 - **OpenSIR: Open-Ended Self-Improving Reasoner** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2511](https://arxiv.org/abs/2511.00602)]
 - **Don't Let Gains FADE: Breaking Down Policy Gradient Weights in RL** ![](https://img.shields.io/badge/exploration--llm-blue)
@@ -237,17 +230,6 @@ Internalize this capability → truly learn powerful reasoning
 
 ## 2. Token-Level Exploration
 
-- **How Data Shapes RoPE Frequency Usage: From Positional Scale Matching to Length Generalization** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07678)]
-- **Thermal-response Functions and the Peierls-Boltzmann Equation for Second Sound and Phonon Hydrodynamics in Graphene** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07644)]
-- **Answering Without Referring: How AI Search Rewrites the Web's Economic Bargain** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07652)]
-- **Small Matrices with Large Inverses: Unimodular $4 \times 4$ Cases** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07688)]
-- **Rethinking the Choice Behavior of Sugar Metabolism in Bacteria** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07677)]
-
 - **Distilling LLM Feedback for Lean Theorem Proving** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2605](https://arxiv.org/abs/2605.30861)]
 
@@ -359,9 +341,6 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2508](https://arxiv.org/abs/2508.13755)]
 ### 2.1 Entropy-Aware Mechanisms
 
-- **Asymmetric Focal Loss Improves Graph Neural Network Prediction of Drug-Drug Interactions** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07611)]
-
 - **A flexibility result for polynomial entropy of pointwise periodic homeomorphisms** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2606](https://arxiv.org/abs/2606.28283)]
 - **Rethinking Token-Level Credit Assignment in RLVR: A Polarity-Entropy Analysis** ![](https://img.shields.io/badge/exploration--path-brightgreen)
@@ -429,17 +408,6 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2503](https://arxiv.org/abs/2503.14442)]
 
 ### 2.4 Policy Gradient Reshaping
-
-- **Co-LMLM: Continuous-Query Limited Memory Language Models** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07707)]
-- **Selective Timestep Weighting and Advantage-Based Replay for Sample-Efficient Diffusion RLHF** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07693)]
-- **Max Out GRPO Signal: Adaptive Trace Prefix Control for Hard Reasoning Problems** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07674)]
-- **Semilocal exchange functionals from the exact-exchange condition for the hydrogen atom: Hydrogenic exactness and recovery of Rydberg-like bound states** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07648)]
-- **Bayesian spatial modelling framework for assessing residential flood risk in property insurance** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07609)]
 
 - **Don't Let Gains FADE: Breaking Down Policy Gradient Weights in RL** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2607](https://arxiv.org/abs/2607.01490)]
@@ -997,21 +965,6 @@ Internalize this capability → truly learn powerful reasoning
 
 ## 5. Semantic-Ignorant Exploration (Entropy / Temperature / Noise)
 
-- **Breaking Database Lock-in: Agentic Regeneration of High Performance Storage Readers for Database Bypass** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07696)]
-- **Any-Dimensional Learning by Sampling** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07680)]
-- **Guidance Breaks the Fitted Operator: A Terminal-Fitted Repair for Classifier-Free Guidance** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07665)]
-- **RL Post-Training Builds Compositional Reasoning Strategies** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07646)]
-- **Time-state superposition in non-equilibrium fluidized granular matter** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07645)]
-- **Koopman Spectral Analysis of Lithium-Ion Battery Dynamics: State of Charge as a Marginally Stable Observable** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07594)]
-- **Analysis of polarization drift of optical signals over deployed aerial-inground fiber connections** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07629)]
-
 - **Constraining primordial oscillations and inflationary particle production with Planck, ACT DR6, and DESI DR2** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2606](https://arxiv.org/abs/2606.28310)]
 - **Accretion-Driven Evolution of Compact-Object Populations in Gas-Rich Environments and the Origin of Massive Gravitational-Wave Sources** ![](https://img.shields.io/badge/exploration--llm-blue)
@@ -1101,11 +1054,6 @@ Internalize this capability → truly learn powerful reasoning
 
 ### 5.2 Entropy- & Probability-Based Methods
 
-- **Future Confidence Distillation in Large Language Models** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07626)]
-- **Minimum Norm Interpolation via The Local Theory of Banach Spaces: The Role of Gaussianity** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07694)]
-
 - **Second-Order KKT Guarantees for Bregman ADMM in Nonconvex and Non-Lipschitz Optimization** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2606](https://arxiv.org/abs/2606.28307)]
 - **Bridging Ab Initio Symmetries and Global Nuclear Masses with Interpretable Neural Networks** ![](https://img.shields.io/badge/exploration--llm-blue)
@@ -1183,9 +1131,6 @@ Internalize this capability → truly learn powerful reasoning
   [[Thesis](https://doi.org/10.14711/thesis-hdl169584)]
 
 ### 5.4 Noise-Based Perturbation
-
-- **PeTeR: Post-Training Robustification of Probabilistic Circuits** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07671)]
 
 - **WARP-RM: A Warp-Augmented Relative Progress Reward Model for Data Curation** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2606](https://arxiv.org/abs/2606.28320)]
@@ -1274,13 +1219,6 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2504](https://arxiv.org/abs/2504.03206)]
 
 ## 6. Exploration in Specific Scenarios
-
-- **Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07695)]
-- **Agent Delivery Engineering Predictive Reliability Framework** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07689)]
-- **PHaul: A PPO-based forwarding agent for Sub6 enhanced Integrated Access and Backhaul networks** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07584)]
 
 - **Distilling LLM Feedback for Lean Theorem Proving** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2605](https://arxiv.org/abs/2605.30861)]
@@ -1376,23 +1314,6 @@ Internalize this capability → truly learn powerful reasoning
 
 
 ### 6.1 RLVR (Math / Code)
-
-- **Agon: Competitive Cross-Model RL with Implicit Rival Grading of Reasoning** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07690)]
-- **MedPMC: A Systematic Framework for Scaling High-Fidelity Medical Multimodal Data for Foundation Models** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07673)]
-- **What Makes a Good Bug Report for an AI Agent?** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07593)]
-- **Exploiting Spanning Trees for Directed Acyclicity** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07705)]
-- **DiaLLM: An Investigation into the Robustness-Generation Gap in English Dialect Adaptation** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07669)]
-- **Embedded Blockchain Infrastructure Management (eBIM): A RISC-V-Empowered Hardware--Software Co-Design Framework Towards Trustworthy Blockchain** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07625)]
-- **Multi-channel collective dissipation via the symmetric irreducible representation of SU(4)** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07701)]
-- **Non-Hermitian Edge State Endocytosis** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07703)]
 
 - **Distilling LLM Feedback for Lean Theorem Proving** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2605](https://arxiv.org/abs/2605.30861)]
@@ -1672,11 +1593,6 @@ Internalize this capability → truly learn powerful reasoning
 
 ### 6.2 Unsupervised / Minimal Label Scenarios
 
-- **Does Bielik Know What It Doesn't Know? Activation Dispersion Separates Entity Familiarity from Factual Reliability Across Model Scale** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07670)]
-- **Recursive Self-Improvement in AI: From Bounded Self-Refinement to Autonomous Research Loops** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07663)]
-
 - **OpenSIR: Open-Ended Self-Improving Reasoner** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2511](https://arxiv.org/abs/2511.00602)]
 
@@ -1702,13 +1618,6 @@ Internalize this capability → truly learn powerful reasoning
   [[Oxford Handbook](https://doi.org/10.1093/oxfordhb/9780190464745.013.28)]
 
 ### 6.3 Creative Generation & Open-Ended Tasks
-
-- **SkillCenter: A Large-Scale Source-Grounded Skill Library for Autonomous AI Agents** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07676)]
-- **Dual Latent Memory in Vision-Language-Action Models for Robotic Manipulation** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07608)]
-- **Human and LLM Collaboration for Accelerated Materials Synthesis and Discovery** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07604)]
 
 - **OpenSIR: Open-Ended Self-Improving Reasoner** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2511](https://arxiv.org/abs/2511.00602)]
@@ -1839,9 +1748,6 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2601](https://arxiv.org/abs/2601.15625)]
 
 ## 7. The Escape Debate: Can RL Surpass Base Model?
-
-- **Unlearning to Protect: A Distilled Reinforcement Learning Framework with Privacy-Preserving Feature Unlearning and XAI for IoT Security** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.07635)]
 
 - **DexCompose: Reusing Dexterous Policies for Multi-Task Manipulation with a Single Hand** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2606](https://arxiv.org/abs/2606.28323)]
