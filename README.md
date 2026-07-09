@@ -230,6 +230,13 @@ Internalize this capability → truly learn powerful reasoning
 
 ## 2. Token-Level Exploration
 
+- **Token-Level Policy Optimization: Linking Group-Level Rewards to Token-Level Aggregation via Markov Likelihood** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2510](https://arxiv.org/abs/2510.09369)]
+- **AlignDistil: Token-Level Language Model Alignment as Adaptive Policy Distillation** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2503](https://arxiv.org/abs/2503.02832)]
+- **CITER: Collaborative Inference for Efficient Large Language Model Decoding with Token-Level Routing** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2502](https://arxiv.org/abs/2502.01976)]
+
 - **Distilling LLM Feedback for Lean Theorem Proving** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2605](https://arxiv.org/abs/2605.30861)]
 
@@ -388,6 +395,9 @@ Internalize this capability → truly learn powerful reasoning
 
 
 ### 2.2 High-Entropy Token Targeting
+
+- **Entropy-Gated Selective Policy Optimization: Token-Level Gradient Allocation for Hybrid Training of Large Language Models** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2602](https://arxiv.org/abs/2602.03309)]
 - **Entropy-KL Divergence-based Token Masking: A Novel Approach for Selective Fine-tuning of Large Language Models** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2605](https://arxiv.org/abs/2605.29303)]
 
@@ -408,6 +418,17 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2503](https://arxiv.org/abs/2503.14442)]
 
 ### 2.4 Policy Gradient Reshaping
+
+- **Seek in the Dark: Reasoning via Test-Time Instance-Level Policy Gradient in Latent Space** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2505](https://arxiv.org/abs/2505.13308)]
+- **ResT: Reshaping Token-Level Policy Gradients for Tool-Use Large Language Models** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2509](https://arxiv.org/abs/2509.21826)]
+- **Beyond Token-Level Policy Gradients for Complex Reasoning with Large Language Models** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2602](https://arxiv.org/abs/2602.14386)]
+- **Stabilizing Off-Policy Training for Long-Horizon LLM Agent via Turn-Level Importance Sampling and Clipping-Triggered Normalization** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2511](https://arxiv.org/abs/2511.20718)]
+- **KL-Regularised Q-Learning: A Token-level Action-Value perspective on Online RLHF** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2508](https://arxiv.org/abs/2508.17000)]
 
 - **Don't Let Gains FADE: Breaking Down Policy Gradient Weights in RL** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2607](https://arxiv.org/abs/2607.01490)]
