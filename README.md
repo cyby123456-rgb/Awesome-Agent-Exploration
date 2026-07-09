@@ -419,6 +419,9 @@ Internalize this capability → truly learn powerful reasoning
 
 ### 2.4 Policy Gradient Reshaping
 
+- **Single-Rollout Asynchronous Optimization for Agentic Reinforcement Learning** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.07508)]
+
 - **Seek in the Dark: Reasoning via Test-Time Instance-Level Policy Gradient in Latent Space** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2505](https://arxiv.org/abs/2505.13308)]
 - **ResT: Reshaping Token-Level Policy Gradients for Tool-Use Large Language Models** ![](https://img.shields.io/badge/exploration--llm-blue)
@@ -1639,6 +1642,9 @@ Internalize this capability → truly learn powerful reasoning
   [[Oxford Handbook](https://doi.org/10.1093/oxfordhb/9780190464745.013.28)]
 
 ### 6.3 Creative Generation & Open-Ended Tasks
+
+- **Creativity from Friction: Human-AI Interaction for Exploratory Structural Design** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.07521)]
 
 - **OpenSIR: Open-Ended Self-Improving Reasoner** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2511](https://arxiv.org/abs/2511.00602)]
