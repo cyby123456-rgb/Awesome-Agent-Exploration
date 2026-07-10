@@ -103,6 +103,24 @@ Internalize this capability → truly learn powerful reasoning
 
 ## 1. Survey & Frameworks
 
+- **TLPO: Token-Level Policy Optimization for Mitigating Language Confusion in Large Language Models** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2604](https://arxiv.org/abs/2604.26553)]
+- **In-Token Rationality Optimization: Towards Accurate and Concise LLM Reasoning via Self-Feedback** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2511](https://arxiv.org/abs/2511.09865)]
+- **LLM-Based Scientific Equation Discovery via Physics-Informed Token-Regularized Policy Optimization** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2602](https://arxiv.org/abs/2602.10576)]
+- **Joint Selection for Large-Scale Pre-Training Data via Policy Gradient-based Mask Learning** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2512](https://arxiv.org/abs/2512.24265)]
+- **OPPO: Bayesian Value Recursion for Token-Level Credit Assignment in LLM Reasoning** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2605](https://arxiv.org/abs/2605.21851)]
+- **C2GSPG: Confidence-calibrated Group Sequence Policy Gradient towards Self-aware Reasoning** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2509](https://arxiv.org/abs/2509.23129)]
+- **Contextually Entangled Gradient Mapping for Optimized LLM Comprehension** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2502](https://arxiv.org/abs/2502.00048)]
+- **GRADE: Replacing Policy Gradients with Backpropagation for LLM Alignment** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2601](https://arxiv.org/abs/2601.11574)]
+- **GTPO and GRPO-S: Token and Sequence-Level Reward Shaping with Policy Entropy** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2508](https://arxiv.org/abs/2508.04349)]
 - **OpenSIR: Open-Ended Self-Improving Reasoner** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2511](https://arxiv.org/abs/2511.00602)]
 - **Don't Let Gains FADE: Breaking Down Policy Gradient Weights in RL** ![](https://img.shields.io/badge/exploration--llm-blue)
@@ -230,6 +248,8 @@ Internalize this capability → truly learn powerful reasoning
 
 ## 2. Token-Level Exploration
 
+- **Cmprsr: Abstractive Token-Level Question-Agnostic Prompt Compressor** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2511](https://arxiv.org/abs/2511.12281)]
 - **Token-Level Policy Optimization: Linking Group-Level Rewards to Token-Level Aggregation via Markov Likelihood** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2510](https://arxiv.org/abs/2510.09369)]
 - **AlignDistil: Token-Level Language Model Alignment as Adaptive Policy Distillation** ![](https://img.shields.io/badge/exploration--llm-blue)
@@ -348,6 +368,10 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2508](https://arxiv.org/abs/2508.13755)]
 ### 2.1 Entropy-Aware Mechanisms
 
+- **Asymmetric On-Policy Distillation: Bridging Exploitation and Imitation at the Token Level** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2605](https://arxiv.org/abs/2605.06387)]
+- **SSPO: Subsentence-level Policy Optimization** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2511](https://arxiv.org/abs/2511.04256)]
 - **A flexibility result for polynomial entropy of pointwise periodic homeomorphisms** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2606](https://arxiv.org/abs/2606.28283)]
 - **Rethinking Token-Level Credit Assignment in RLVR: A Polarity-Entropy Analysis** ![](https://img.shields.io/badge/exploration--path-brightgreen)
@@ -411,6 +435,8 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2506](https://arxiv.org/abs/2506.01939)]
 ### 2.3 Low-Probability Token Regularization
 
+- **Rethinking Importance Sampling in LLM Policy Optimization: A Cumulative Token Perspective** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2605](https://arxiv.org/abs/2605.07331)]
 - **Compress the Easy, Explore the Hard: Difficulty-Aware Entropy Regularization for Efficient LLM Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2602](https://arxiv.org/abs/2602.22642)]
 
@@ -419,6 +445,10 @@ Internalize this capability → truly learn powerful reasoning
 
 ### 2.4 Policy Gradient Reshaping
 
+- **Token-Efficient RL for LLM Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2504](https://arxiv.org/abs/2504.20834)]
+- **Discriminative Policy Optimization for Token-Level Reward Models** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2505](https://arxiv.org/abs/2505.23363)]
 - **Single-Rollout Asynchronous Optimization for Agentic Reinforcement Learning** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2607](https://arxiv.org/abs/2607.07508)]
 
@@ -518,6 +548,8 @@ Internalize this capability → truly learn powerful reasoning
 
 ## 3. Sequence / Response-Level Exploration
 
+- **Keep Policy Gradient in Charge: Sibling-Guided Credit Distillation for Long-Horizon Tool-Use Agents** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2606](https://arxiv.org/abs/2606.12634)]
 - **Distilling LLM Feedback for Lean Theorem Proving** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2605](https://arxiv.org/abs/2605.30861)]
 - **Don't Let Gains FADE: Breaking Down Policy Gradient Weights in RL** ![](https://img.shields.io/badge/exploration--llm-blue)

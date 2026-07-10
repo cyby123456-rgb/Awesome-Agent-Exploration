@@ -600,6 +600,22 @@
     "why semantic entropy fails: geometry-aware and calibrated uncertainty for policy optimization",
     "wider or deeper? scaling llm inference-time compute with adaptive branching tree search",
     "worldllm: improving llms' world modeling using curiosity-driven theory-making",
-    "xrpo: pushing the limits of grpo with targeted exploration and exploitation"
+    "xrpo: pushing the limits of grpo with targeted exploration and exploitation",
+    "TLPO: Token-Level Policy Optimization for Mitigating Language Confusion in Large Language Models",
+    "Token-Efficient RL for LLM Reasoning",
+    "Rethinking Importance Sampling in LLM Policy Optimization: A Cumulative Token Perspective",
+    "Asymmetric On-Policy Distillation: Bridging Exploitation and Imitation at the Token Level",
+    "In-Token Rationality Optimization: Towards Accurate and Concise LLM Reasoning via Self-Feedback",
+    "LLM-Based Scientific Equation Discovery via Physics-Informed Token-Regularized Policy Optimization",
+    "Joint Selection for Large-Scale Pre-Training Data via Policy Gradient-based Mask Learning",
+    "Cmprsr: Abstractive Token-Level Question-Agnostic Prompt Compressor",
+    "OPPO: Bayesian Value Recursion for Token-Level Credit Assignment in LLM Reasoning",
+    "Discriminative Policy Optimization for Token-Level Reward Models",
+    "SSPO: Subsentence-level Policy Optimization",
+    "Keep Policy Gradient in Charge: Sibling-Guided Credit Distillation for Long-Horizon Tool-Use Agents",
+    "C2GSPG: Confidence-calibrated Group Sequence Policy Gradient towards Self-aware Reasoning",
+    "Contextually Entangled Gradient Mapping for Optimized LLM Comprehension",
+    "GRADE: Replacing Policy Gradients with Backpropagation for LLM Alignment",
+    "GTPO and GRPO-S: Token and Sequence-Level Reward Shaping with Policy Entropy"
   ]
 }
