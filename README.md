@@ -297,6 +297,9 @@ Internalize this capability → truly learn powerful reasoning
 
 - **On the Entropy Dynamics in Reinforcement Fine-Tuning of Large Language Models** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2602](https://arxiv.org/abs/2602.03392)]
+- **A Formula-Driven Survey and Research Agenda for On-Policy Distillation** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2606](https://arxiv.org/abs/2606.22793)]
+
 
 ## 2. Token-Level Exploration
 
@@ -607,6 +610,21 @@ Internalize this capability → truly learn powerful reasoning
 
 - **Dropout-GRPO: Variational Stochasticity for Continuous Latent Reasoning** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2606](https://arxiv.org/abs/2606.10184)]
+- **DemoPSD: Disagreement-Modulated Policy Self-Distillation** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2607](https://arxiv.org/abs/2607.02502)]
+- **Tailoring Teaching to Aptitude: Direction-Adaptive Self-Distillation for LLM Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2605](https://arxiv.org/abs/2605.22263)]
+- **Turning Off-Policy Tokens On-Policy: A Plug-in Approach for Improving LLM Alignment** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2607](https://arxiv.org/abs/2607.04728)]
+- **ACPO: Adaptive Credit Policy Optimization via Fine-Grained Surrogate Entropy** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2607](https://arxiv.org/abs/2607.03126)]
+- **Trajectory-Refined Distillation** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2606](https://arxiv.org/abs/2606.08432)]
+- **Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2603](https://arxiv.org/abs/2603.25562)]
+- **STAPO: Stabilizing Reinforcement Learning for LLMs by Silencing Rare Spurious Tokens** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2602](https://arxiv.org/abs/2602.15620)]
+
 ## 3. Sequence / Response-Level Exploration
 
 - **Score Accuracy Along the Forward Diffusion Does Not Certify Numerical Stability in Diffusion Sampling** ![](https://img.shields.io/badge/exploration--path-brightgreen)
@@ -901,6 +919,15 @@ Internalize this capability → truly learn powerful reasoning
 
 - **PAINT: Partial-Solution Adaptive Interpolated Training for Self-Distilled Reasoners** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2604](https://arxiv.org/abs/2604.26573)]
+- **Rollout-Level Advantage-Prioritized Experience Replay for GRPO** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2606](https://arxiv.org/abs/2606.04560)]
+- **How to Allocate, How to Learn? Dynamic Rollout Allocation and Advantage Modulation for Policy Optimization** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2602](https://arxiv.org/abs/2602.19208)]
+- **ATLAS: Agentic Test-time Learning-to-Allocate Scaling** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2606](https://arxiv.org/abs/2606.01667)]
+- **Skill-SD: Skill-Conditioned Self-Distillation for Multi-turn LLM Agents** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2604](https://arxiv.org/abs/2604.10674)]
+
 ## 4. Policy Distribution-Level Exploration
 
 - **Distilling LLM Feedback for Lean Theorem Proving** ![](https://img.shields.io/badge/exploration--llm-blue)
@@ -1140,6 +1167,15 @@ Internalize this capability → truly learn powerful reasoning
 
 - **Learning to Explore: Scaling Agentic Reasoning via Exploration-Aware Policy Optimization** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2605](https://arxiv.org/abs/2605.08978)]
+- **Bridging SFT and RL: Dynamic Policy Optimization for Robust Reasoning** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2604](https://arxiv.org/abs/2604.08926)]
+- **Overconfident Errors Need Stronger Correction: Asymmetric Confidence Penalties for Reinforcement Learning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2602](https://arxiv.org/abs/2602.21420)]
+- **Beyond Stochastic Exploration: What Makes Training Data Valuable for Agentic Search** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2604](https://arxiv.org/abs/2604.08124)]
+- **Restoring the Sweet Spot: Pass-Rate Weighted Self-Distillation for LLM Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2605](https://arxiv.org/abs/2605.27765)]
+
 ## 5. Semantic-Ignorant Exploration (Entropy / Temperature / Noise)
 
 - **Constraining primordial oscillations and inflationary particle production with Planck, ACT DR6, and DESI DR2** ![](https://img.shields.io/badge/exploration--llm-blue)
@@ -1233,6 +1269,9 @@ Internalize this capability → truly learn powerful reasoning
 
 - **The Unreasonable Effectiveness of Entropy Minimization in LLM Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2505](https://arxiv.org/abs/2505.15134)]
+- **How Far Can Unsupervised RLVR Scale LLM Training?** ![](https://img.shields.io/badge/random--exploration-orange)
+  [[arxiv 2603](https://arxiv.org/abs/2603.08660)]
+
 
 
 ### 5.2 Entropy- & Probability-Based Methods
@@ -1322,6 +1361,9 @@ Internalize this capability → truly learn powerful reasoning
 
 - **Large Language Models Explore by Latent Distilling** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2604](https://arxiv.org/abs/2604.24927)]
+- **Verifier-Free RL for LLMs via Intrinsic Gradient-Norm Reward** ![](https://img.shields.io/badge/random--exploration-orange)
+  [[arxiv 2605](https://arxiv.org/abs/2605.09920)]
+
 ### 5.4 Noise-Based Perturbation
 
 - **WARP-RM: A Warp-Augmented Relative Progress Reward Model for Data Curation** ![](https://img.shields.io/badge/exploration--llm-blue)

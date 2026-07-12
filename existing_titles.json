@@ -692,6 +692,24 @@
     "ARIADNE: Agentic Reward-Informed Adaptive Decision Exploration via Blackboard-Driven MCTS for Competitive Program Generation",
     "Evolutionary Task Discovery: Advancing Reasoning Frontiers via Skill Composition and Complexity Scaling",
     "Large Language Models Explore by Latent Distilling",
-    "Teaching the Way, Not the Answer: Privileged Tutoring Distillation for Multimodal Policy Optimization"
+    "Teaching the Way, Not the Answer: Privileged Tutoring Distillation for Multimodal Policy Optimization",
+    "DemoPSD: Disagreement-Modulated Policy Self-Distillation",
+    "Tailoring Teaching to Aptitude: Direction-Adaptive Self-Distillation for LLM Reasoning",
+    "Turning Off-Policy Tokens On-Policy: A Plug-in Approach for Improving LLM Alignment",
+    "ACPO: Adaptive Credit Policy Optimization via Fine-Grained Surrogate Entropy",
+    "Trajectory-Refined Distillation",
+    "Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes",
+    "STAPO: Stabilizing Reinforcement Learning for LLMs by Silencing Rare Spurious Tokens",
+    "Bridging SFT and RL: Dynamic Policy Optimization for Robust Reasoning",
+    "Overconfident Errors Need Stronger Correction: Asymmetric Confidence Penalties for Reinforcement Learning",
+    "Beyond Stochastic Exploration: What Makes Training Data Valuable for Agentic Search",
+    "Restoring the Sweet Spot: Pass-Rate Weighted Self-Distillation for LLM Reasoning",
+    "A Formula-Driven Survey and Research Agenda for On-Policy Distillation",
+    "Rollout-Level Advantage-Prioritized Experience Replay for GRPO",
+    "How to Allocate, How to Learn? Dynamic Rollout Allocation and Advantage Modulation for Policy Optimization",
+    "ATLAS: Agentic Test-time Learning-to-Allocate Scaling",
+    "Skill-SD: Skill-Conditioned Self-Distillation for Multi-turn LLM Agents",
+    "Verifier-Free RL for LLMs via Intrinsic Gradient-Norm Reward",
+    "How Far Can Unsupervised RLVR Scale LLM Training?"
   ]
 }
