@@ -100,6 +100,7 @@ Internalize this capability → truly learn powerful reasoning
   - [6.2 Unsupervised / Minimal Label Scenarios](#62-unsupervised--minimal-label-scenarios)
   - [6.3 Creative Generation & Open-Ended Tasks](#63-creative-generation--open-ended-tasks)
 - [7. The Escape Debate: Can RL Surpass Base Model?](#7-the-escape-debate-can-rl-surpass-base-model)
+- [8. Related Topics](#8-related-topics)
 
 ## 1. Survey & Frameworks
 
@@ -300,6 +301,15 @@ Internalize this capability → truly learn powerful reasoning
 - **A Formula-Driven Survey and Research Agenda for On-Policy Distillation** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2606](https://arxiv.org/abs/2606.22793)]
 
+
+- **A Survey on LLM Test-Time Compute via Search: Tasks, LLM Profiling, Search Algorithms, and Relevant Frameworks** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2501](https://arxiv.org/abs/2501.10069)]
+
+- **Reasoning on a Budget: A Survey of Adaptive and Controllable Test-Time Compute in LLMs** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2507](https://arxiv.org/abs/2507.02076)]
+
+- **A Survey of Test-Time Compute: From Intuitive Inference to Deliberate Reasoning** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2501](https://arxiv.org/abs/2501.02497)]
 
 ## 2. Token-Level Exploration
 
@@ -927,6 +937,33 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2606](https://arxiv.org/abs/2606.01667)]
 - **Skill-SD: Skill-Conditioned Self-Distillation for Multi-turn LLM Agents** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2604](https://arxiv.org/abs/2604.10674)]
+
+- **More Test-Time Compute Can Hurt: Overestimation Bias in LLM Beam Search** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2603](https://arxiv.org/abs/2603.15377)]
+
+- **Towards Thinking-Optimal Scaling of Test-Time Compute for LLM Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2502](https://arxiv.org/abs/2502.18080)]
+
+- **Rank1: Test-Time Compute for Reranking in Information Retrieval** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2502](https://arxiv.org/abs/2502.18418)]
+
+- **Beyond Test-Time Compute Strategies: Advocating Energy-per-Token in LLM Inference** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2603](https://arxiv.org/abs/2603.20224)]
+
+- **Adaptive Test-Time Compute Allocation via Learned Heuristics over Categorical Structure** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2602](https://arxiv.org/abs/2602.03975)]
+
+- **∇-Reasoner: LLM Reasoning via Test-Time Gradient Descent in Latent Space** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2603](https://arxiv.org/abs/2603.04948)]
+
+- **Reward Model Generalization for Compute-Aware Test-Time Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2505](https://arxiv.org/abs/2505.18065)]
+
+- **Atom of Thoughts for Markov LLM Test-Time Scaling** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2502](https://arxiv.org/abs/2502.12018)]
+
+- **When More Thinking Hurts: Overthinking in LLM Test-Time Compute Scaling** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2604](https://arxiv.org/abs/2604.10739)]
 
 ## 4. Policy Distribution-Level Exploration
 
@@ -2027,6 +2064,45 @@ Internalize this capability → truly learn powerful reasoning
 
 - **Teaching the Way, Not the Answer: Privileged Tutoring Distillation for Multimodal Policy Optimization** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2606](https://arxiv.org/abs/2606.07000)]
+- **ScaleRTL: Scaling LLMs with Reasoning Data and Test-Time Compute for Accurate RTL Code Generation** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2506](https://arxiv.org/abs/2506.05566)]
+
+- **Scaling Test-time Compute for LLM Agents** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2506](https://arxiv.org/abs/2506.12928)]
+
+- **Latency and Token-Aware Test-Time Compute** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2509](https://arxiv.org/abs/2509.09864)]
+
+- **Generalizing Test-time Compute-optimal Scaling as an Optimizable Graph** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2511](https://arxiv.org/abs/2511.00086)]
+
+- **AgentTTS: Large Language Model Agent for Test-time Compute-optimal Scaling Strategy in Complex Tasks** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2508](https://arxiv.org/abs/2508.00890)]
+
+- **VideoChat-R1.5: Visual Test-Time Scaling to Reinforce Multimodal Reasoning by Iterative Perception** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2509](https://arxiv.org/abs/2509.21100)]
+
+- **Adaptive Test-Time Reasoning via Reward-Guided Dual-Phase Search** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2509](https://arxiv.org/abs/2509.25420)]
+
+- **Evaluating Judges as Evaluators: The JETTS Benchmark of LLM-as-Judges as Test-Time Scaling Evaluators** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2504](https://arxiv.org/abs/2504.15253)]
+
+- **FastTTS: Accelerating Test-Time Scaling for Edge LLM Reasoning** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2509](https://arxiv.org/abs/2509.00195)]
+
+- **Thinking Longer, Not Larger: Enhancing Software Engineering Agents via Scaling Test-Time Compute** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2503](https://arxiv.org/abs/2503.23803)]
+
+- **What If We Allocate Test-Time Compute Adaptively?** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2602](https://arxiv.org/abs/2602.01070)]
+
+- **Rethinking Fine-Tuning when Scaling Test-Time Compute: Limiting Confidence Improves Mathematical Reasoning** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2502](https://arxiv.org/abs/2502.07154)]
+
+- **Trae Agent: An LLM-based Agent for Software Engineering with Test-time Scaling** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2507](https://arxiv.org/abs/2507.23370)]
+
 ## 7. The Escape Debate: Can RL Surpass Base Model?
 
 - **The mini-Page Curve in Cosmology** ![](https://img.shields.io/badge/rl--limitations-red)
@@ -2109,6 +2185,33 @@ Internalize this capability → truly learn powerful reasoning
 
 - **From $P(y|x)$ to $P(y)$: Investigating Reinforcement Learning in Pre-train Space** ![](https://img.shields.io/badge/rl--limitations-red)
   [[arxiv 2604](https://arxiv.org/abs/2604.14142)]
+
+## 8. Related Topics
+
+- **Noise Hypernetworks: Amortizing Test-Time Compute in Diffusion Models** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2508](https://arxiv.org/abs/2508.09968)]
+
+- **ThinkBooster: A Unified Framework for Seamless Test-Time Scaling of LLM Reasoning** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2606](https://arxiv.org/abs/2606.06915)]
+
+- **ParaThinker: Native Parallel Thinking as a New Paradigm to Scale LLM Test-time Compute** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2509](https://arxiv.org/abs/2509.04475)]
+
+- **When To Solve, When To Verify: Compute-Optimal Problem Solving and Generative Verification for LLM Reasoning** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2504](https://arxiv.org/abs/2504.01005)]
+
+- **GenPRM: Scaling Test-Time Compute of Process Reward Models via Generative Reasoning** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2504](https://arxiv.org/abs/2504.00891)]
+
+- **Test-Time Compute Games** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2601](https://arxiv.org/abs/2601.21839)]
+
+- **Can 1B LLM Surpass 405B LLM? Rethinking Compute-Optimal Test-Time Scaling** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2502](https://arxiv.org/abs/2502.06703)]
+
+- **M1: Towards Scalable Test-Time Compute with Mamba Reasoning Models** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2504](https://arxiv.org/abs/2504.10449)]
+
 
 [![CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
 
