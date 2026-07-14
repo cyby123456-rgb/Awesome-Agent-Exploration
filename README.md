@@ -251,7 +251,6 @@ Internalize this capability → truly learn powerful reasoning
 - **Inverse Reinforcement Learning Meets Large Language Model Post-Training: Basics, Advances, and Opportunities** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2507](https://arxiv.org/abs/2507.13158)]
 
-
 - **Generative Floor Plan Design with LLMs via Reinforcement Learning with Verifiable Rewards** ![](https://img.shields.io/badge/random--exploration-orange)
   [[arxiv 2605](https://arxiv.org/abs/2605.14117)]
 
@@ -280,7 +279,6 @@ Internalize this capability → truly learn powerful reasoning
 - **Discovery and Reinforcement of Tool-Integrated Reasoning Chains via Rollout Trees** ![](https://img.shields.io/badge/exploration--path-brightgreen) ![](https://img.shields.io/badge/random--exploration-orange)
   [[arxiv 2601](https://arxiv.org/abs/2601.08274)]
 
-
 - **GFlowPO: Generative Flow Network as a Language Model Prompt Optimizer** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2602](https://arxiv.org/abs/2602.03358)]
 
@@ -301,7 +299,6 @@ Internalize this capability → truly learn powerful reasoning
 - **A Formula-Driven Survey and Research Agenda for On-Policy Distillation** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2606](https://arxiv.org/abs/2606.22793)]
 
-
 - **A Survey on LLM Test-Time Compute via Search: Tasks, LLM Profiling, Search Algorithms, and Relevant Frameworks** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2501](https://arxiv.org/abs/2501.10069)]
 
@@ -309,6 +306,11 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2507](https://arxiv.org/abs/2507.02076)]
 
 - **A Survey of Test-Time Compute: From Intuitive Inference to Deliberate Reasoning** ![](https://img.shields.io/badge/exploration--llm-blue)
+- **GRPO-CARE: Consistency-Aware Reinforcement Learning for Multimodal Reasoning** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2506](https://arxiv.org/abs/2506.16141)]
+- **Unveiling Implicit Advantage Symmetry: Why GRPO Struggles with Exploration and Difficulty Adaptation** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2602](https://arxiv.org/abs/2602.05548)]
+
   [[arxiv 2501](https://arxiv.org/abs/2501.02497)]
 
 ## 2. Token-Level Exploration
@@ -445,7 +447,6 @@ Internalize this capability → truly learn powerful reasoning
 - **EP-GRPO: Entropy-Progress Aligned Group Relative Policy Optimization with Implicit Process Reward** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2605](https://arxiv.org/abs/2605.04960)]
 
-
 - **Targeted Exploration via Unified Entropy Control for Reinforcement Learning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2604](https://arxiv.org/abs/2604.14646)]
 
@@ -467,7 +468,6 @@ Internalize this capability → truly learn powerful reasoning
 - **DAPO: An Open-Source LLM Reinforcement Learning System at Scale** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2503](https://arxiv.org/abs/2503.14442)]
 
-
 - **Stabilizing Knowledge, Promoting Reasoning: Dual-Token Constraints for RLVR** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2507](https://arxiv.org/abs/2507.15778)]
 
@@ -477,11 +477,11 @@ Internalize this capability → truly learn powerful reasoning
 - **Sparse but Critical: A Token-Level Analysis of Distributional Shifts in RLVR Fine-Tuning of LLMs** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2603](https://arxiv.org/abs/2603.22446)]
 
-
 - **Latent-Space Contrastive Reinforcement Learning for Stable and Efficient LLM Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+- **Rethinking Entropy Interventions in RLVR: An Entropy Change Perspective** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2510](https://arxiv.org/abs/2510.10150)]
+
   [[arxiv 2601](https://arxiv.org/abs/2601.17275)]
-
-
 
 ### 2.2 High-Entropy Token Targeting
 
@@ -576,7 +576,6 @@ Internalize this capability → truly learn powerful reasoning
 - **No Prompt Left Behind: Exploiting Zero-Variance Prompts in LLM Reinforcement Learning via Entropy-Guided Advantage Shaping** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2509](https://arxiv.org/abs/2509.21880)]
 
-
 - **$λ$-GRPO: Unifying the GRPO Frameworks with Learnable Token Preferences** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2510](https://arxiv.org/abs/2510.06870)]
 
@@ -585,7 +584,6 @@ Internalize this capability → truly learn powerful reasoning
 
 - **Rethinking Token-Level Policy Optimization for Multimodal Chain-of-Thought** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2603](https://arxiv.org/abs/2603.22847)]
-
 
 - **Selective-Advantage Entropy-Adaptive Horizon GRPO: Asymmetric Token-Level Discounting for Efficient Reinforcement Learning of Language Models** ![](https://img.shields.io/badge/exploration--path)
   [[arxiv 2606](https://arxiv.org/abs/2606.05434)]
@@ -610,7 +608,6 @@ Internalize this capability → truly learn powerful reasoning
 
 - **Beyond Uniform Token-Level Trust Region in LLM Reinforcement Learning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2606](https://arxiv.org/abs/2606.10968)]
-
 
 - **When Implausible Tokens Get Reinforced: Tail-Aware Credit Calibration for LLM Reinforcement Learning** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2607](https://arxiv.org/abs/2607.07976)]
@@ -766,7 +763,6 @@ Internalize this capability → truly learn powerful reasoning
 - **Nudging Beyond the Comfort Zone: Efficient Strategy-Guided Exploration for RLVR** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2605](https://arxiv.org/abs/2605.15726)]
 
-
 - **Breaking $\textit{Winner-Takes-All}$: Cooperative Policy Optimization Improves Diverse LLM Reasoning** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[arxiv 2605](https://arxiv.org/abs/2605.11461)]
 
@@ -892,7 +888,6 @@ Internalize this capability → truly learn powerful reasoning
 - **Multi-Path Collaborative Reasoning via Reinforcement Learning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2512](https://arxiv.org/abs/2512.01485)]
 
-
 - **ETR: Entropy Trend Reward for Efficient Chain-of-Thought Reasoning** ![](https://img.shields.io/badge/exploration--path)
   [[arxiv 2604](https://arxiv.org/abs/2604.05355)]
 
@@ -904,7 +899,6 @@ Internalize this capability → truly learn powerful reasoning
 
 - **Long Chain-of-Thought Compression via Fine-Grained Group Policy Optimization** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2602](https://arxiv.org/abs/2602.10048)]
-
 
 - **Information Gain-based Rollout Policy Optimization: An Adaptive Tree-Structured Rollout Approach for Multi-Turn LLM Agents** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2607](https://arxiv.org/abs/2607.06223)]
@@ -963,6 +957,9 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2502](https://arxiv.org/abs/2502.12018)]
 
 - **When More Thinking Hurts: Overthinking in LLM Test-Time Compute Scaling** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+- **Sleep-time Compute: Beyond Inference Scaling at Test-time** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2504](https://arxiv.org/abs/2504.13171)]
+
   [[arxiv 2604](https://arxiv.org/abs/2604.10739)]
 
 ## 4. Policy Distribution-Level Exploration
@@ -1071,7 +1068,6 @@ Internalize this capability → truly learn powerful reasoning
 - **fg-expo: Frontier-guided exploration-prioritized policy optimization via adaptive KL and gradient regulation** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2605](https://arxiv.org/abs/2605.11403)]
 
-
 - **HTPO: Towards Exploration-Exploitation Balanced Policy Optimization via Hindsight Thinking** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2605](https://arxiv.org/abs/2605.08283)]
 
@@ -1128,7 +1124,6 @@ Internalize this capability → truly learn powerful reasoning
 - **Smaller Models are Natural Explorers for Policy-Level Diversity in GRPO** ![](https://img.shields.io/badge/exploration--path-brightgreen) ![](https://img.shields.io/badge/random--exploration-orange)
   [[arxiv 2605](https://arxiv.org/abs/2605.30789)]
 
-
 - **DyJR: Preserving Diversity in Reinforcement Learning with Verifiable Rewards via Dynamic Jensen-Shannon Replay** ![](https://img.shields.io/badge/exploration--path)
   [[arxiv 2603](https://arxiv.org/abs/2603.16157)]
 
@@ -1179,7 +1174,6 @@ Internalize this capability → truly learn powerful reasoning
 
 - **Uncertainty-Aware LLM-Guided Policy Shaping for Sparse-Reward Reinforcement Learning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2606](https://arxiv.org/abs/2606.06673)]
-
 
 - **Entropy Pacing Policy Optimization for Multi-Task Agentic Reinforcement Learning** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2607](https://arxiv.org/abs/2607.07178)]
@@ -1295,7 +1289,6 @@ Internalize this capability → truly learn powerful reasoning
 - **OGER: A Robust Offline-Guided Exploration Reward for Hybrid Reinforcement Learning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2604](https://arxiv.org/abs/2604.18530)]
 
-
 - **Embarrassingly Simple Self-Distillation Improves Code Generation** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2604](https://arxiv.org/abs/2604.01193)]
 
@@ -1307,9 +1300,13 @@ Internalize this capability → truly learn powerful reasoning
 - **The Unreasonable Effectiveness of Entropy Minimization in LLM Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2505](https://arxiv.org/abs/2505.15134)]
 - **How Far Can Unsupervised RLVR Scale LLM Training?** ![](https://img.shields.io/badge/random--exploration-orange)
+- **Expand and Prune: Maximizing Trajectory Diversity for Effective GRPO in Generative Models** ![](https://img.shields.io/badge/exploration--llm-blue) ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2512](https://arxiv.org/abs/2512.15347)]
+
+- **Why Tree-Style Branching Matters for Thought Advantage Estimation in GRPO** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2509](https://arxiv.org/abs/2509.24494)]
+
   [[arxiv 2603](https://arxiv.org/abs/2603.08660)]
-
-
 
 ### 5.2 Entropy- & Probability-Based Methods
 
@@ -1386,7 +1383,6 @@ Internalize this capability → truly learn powerful reasoning
 - **HAMMER: Hamiltonian Curiosity Augmented Large Language Model Reinforcement** ![](https://img.shields.io/badge/random--exploration-orange)
   [[arxiv 2509](https://arxiv.org/abs/2509.25240)]
 
-
 - **CDE: Curiosity-Driven Exploration for Efficient Reinforcement Learning in Large Language Models** ![](https://img.shields.io/badge/random--exploration-orange)
   [[ELEKTRO 2014](https://doi.org/10.1109/elektro.2014.6848933)]
 
@@ -1395,10 +1391,10 @@ Internalize this capability → truly learn powerful reasoning
 - **Navigate the Unknown: Enhancing LLM Reasoning with Intrinsic Motivation Guided Exploration** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[Thesis](https://doi.org/10.14711/thesis-hdl169584)]
 
-
 - **Large Language Models Explore by Latent Distilling** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2604](https://arxiv.org/abs/2604.24927)]
 - **Verifier-Free RL for LLMs via Intrinsic Gradient-Norm Reward** ![](https://img.shields.io/badge/random--exploration-orange)
+
   [[arxiv 2605](https://arxiv.org/abs/2605.09920)]
 
 ### 5.4 Noise-Based Perturbation
@@ -1487,6 +1483,9 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2603](https://arxiv.org/abs/2603.06317)]
 
 - **Enhancing Personalized Multi-Turn Dialogue with Curiosity Reward** ![](https://img.shields.io/badge/random--exploration-orange)
+- **LLMs Gaming Verifiers: RLVR can Lead to Reward Hacking** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2604](https://arxiv.org/abs/2604.15149)]
+
   [[arxiv 2504](https://arxiv.org/abs/2504.03206)]
 
 ## 6. Exploration in Specific Scenarios
@@ -1583,7 +1582,6 @@ Internalize this capability → truly learn powerful reasoning
 - **Flow-of-Options: Diversified and Improved LLM Reasoning by Thinking Through Options** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2502](https://arxiv.org/abs/2502.12929)]
 
-
 ### 6.1 RLVR (Math / Code)
 
 - **SolarChain-Eval: A Physics-Constrained Benchmark for Trustworthy Economic Agents in Decentralized Energy Markets** ![](https://img.shields.io/badge/exploration--llm-blue)
@@ -1668,7 +1666,6 @@ Internalize this capability → truly learn powerful reasoning
 
 - **Look Before You Leap: Autonomous Exploration for LLM Agents** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2605](https://arxiv.org/abs/2605.16143)]
-
 
 - **Exploration-Driven Optimization for Test-Time Large Language Model Reasoning** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2605](https://arxiv.org/abs/2605.09853)]
@@ -1871,8 +1868,6 @@ Internalize this capability → truly learn powerful reasoning
 - **Beyond Correctness: Confidence-Aware Reward Modeling for Enhancing Large Language Model Reasoning** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2511](https://arxiv.org/abs/2511.07483)]
 
-
-
 - **Are We Measuring Strategy or Phrasing? The Gap Between Surface- and Approach-Level Diversity in LLM Math Reasoning** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
   [[arxiv 2606](https://arxiv.org/abs/2606.29985)]
 
@@ -1892,6 +1887,14 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2605](https://arxiv.org/abs/2605.06908)]
 
 - **ARIADNE: Agentic Reward-Informed Adaptive Decision Exploration via Blackboard-Driven MCTS for Competitive Program Generation** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+- **MMR-GRPO: Accelerating GRPO-Style Training through Diversity-Aware Reward Reweighting** ![](https://img.shields.io/badge/exploration--llm-blue) ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2601](https://arxiv.org/abs/2601.09085)]
+
+- **AgentGym-RL: Training LLM Agents for Long-Horizon Decision Making through Multi-Turn Reinforcement Learning** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2509](https://arxiv.org/abs/2509.08755)]
+- **End-to-End Test-Time Training for Long Context** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2512](https://arxiv.org/abs/2512.23675)]
+
   [[arxiv 2605](https://arxiv.org/abs/2605.02431)]
 ### 6.2 Unsupervised / Minimal Label Scenarios
 
@@ -1902,7 +1905,6 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2606](https://arxiv.org/abs/2606.28279)]
 - **GeoMin: Data-Efficient Semi-Supervised RLVR via Geometric Distribution Modeling** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2606](https://arxiv.org/abs/2606.04516)]
-
 
 - **GradAlign: Gradient-Aligned Data Selection for LLM Reinforcement Learning** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2602](https://arxiv.org/abs/2602.21492)]
@@ -2058,7 +2060,6 @@ Internalize this capability → truly learn powerful reasoning
 - **Robust Tool Use via Fission-GRPO: Learning to Recover from Execution Errors** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2601](https://arxiv.org/abs/2601.15625)]
 
-
 - **Evolutionary Task Discovery: Advancing Reasoning Frontiers via Skill Composition and Complexity Scaling** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2605](https://arxiv.org/abs/2605.11666)]
 
@@ -2101,6 +2102,7 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2502](https://arxiv.org/abs/2502.07154)]
 
 - **Trae Agent: An LLM-based Agent for Software Engineering with Test-time Scaling** ![](https://img.shields.io/badge/exploration--llm-blue)
+
   [[arxiv 2507](https://arxiv.org/abs/2507.23370)]
 
 ## 7. The Escape Debate: Can RL Surpass Base Model?
@@ -2184,6 +2186,7 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2606](https://arxiv.org/abs/2606.18388)]
 
 - **From $P(y|x)$ to $P(y)$: Investigating Reinforcement Learning in Pre-train Space** ![](https://img.shields.io/badge/rl--limitations-red)
+
   [[arxiv 2604](https://arxiv.org/abs/2604.14142)]
 
 ## 8. Related Topics
@@ -2210,8 +2213,8 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2502](https://arxiv.org/abs/2502.06703)]
 
 - **M1: Towards Scalable Test-Time Compute with Mamba Reasoning Models** ![](https://img.shields.io/badge/related--topics-888)
-  [[arxiv 2504](https://arxiv.org/abs/2504.10449)]
 
+  [[arxiv 2504](https://arxiv.org/abs/2504.10449)]
 
 [![CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
 
