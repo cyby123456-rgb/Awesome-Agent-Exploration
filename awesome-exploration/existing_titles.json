@@ -325,8 +325,8 @@
     "Who Grades the Grader? Co-Evolving Evaluation Metrics and Skills for Self-Improving LLM Agents",
     "Regular Curves, Singular Graphs: Cantor Parts and the Relaxed Willmore Energy",
     "Learning Mechanistic Reasoning for Chemical Reactions with Large Language Models",
-    "Bulkhead: Automated Semantic Detection and Remediation of Container Escape Vulnerabilities",
-    "From Critic to Confidence: PPO for Language-Based Quantitative Prediction with Confidence Estimation"
+    "Step-wise Policy for Rare-tool Knowledge (SPaRK): Offline RL that Drives Diverse Tool Use in LLMs",
+    "Writer-R1: Enhancing Generative Writing in LLMs via Memory-augmented Replay Policy Optimization"
   ],
   "count": 327
 }

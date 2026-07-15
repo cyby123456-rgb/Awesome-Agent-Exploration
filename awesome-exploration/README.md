@@ -155,11 +155,6 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2607](https://arxiv.org/abs/2607.12786)]
 - **"EvoGraph-R1: Self-Evolving Multimodal Knowledge Hypergraphs for Agentic Retrieval"** ![](https://img.shields.io/badge/exploration--llm-blue)
 
-- **"Bulkhead: Automated Semantic Detection and Remediation of Container Escape Vulnerabilities"** ![](https://img.shields.io/badge/rl--limitations-red)
-  [[arxiv 2607](https://arxiv.org/abs/2607.12723)]
-- **"From Critic to Confidence: PPO for Language-Based Quantitative Prediction with Confidence Estimation"** ![](https://img.shields.io/badge/exploration--llm-blue)
-  [[arxiv 2607](https://arxiv.org/abs/2607.12687)]
-
   [[arxiv 2607](https://arxiv.org/abs/2607.12764)]
 
   [[arxiv 2501](https://arxiv.org/abs/2501.12948)]
@@ -259,7 +254,6 @@ Internalize this capability → truly learn powerful reasoning
 - **"Silent Alarm: A J-Space Protocol for Comparing Danger Recognition Across Models and Quantization Levels"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2607](https://arxiv.org/abs/2607.12792)]
 
-
 ---
 
 ## 3. Sequence / Response-Level Exploration
@@ -338,6 +332,10 @@ Internalize this capability → truly learn powerful reasoning
 - **"LLM Judges Can Be Too Generous When There Is No Reference Answer"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2607](https://arxiv.org/abs/2607.12885)]
 - **"Verifier-Based Reinforcement Fine-Tuning of Reasoning Models for Thermal Energy Storage Control"** ![](https://img.shields.io/badge/exploration--llm-blue)
+
+- **"Step-wise Policy for Rare-tool Knowledge (SPaRK): Offline RL that Drives Diverse Tool Use in LLMs"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2507](https://arxiv.org/abs/2507.11371)]
+
   [[arxiv 2607](https://arxiv.org/abs/2607.12856)]
 
   [[arxiv 2605](https://arxiv.org/abs/2605.30021)]
@@ -435,8 +433,6 @@ Internalize this capability → truly learn powerful reasoning
 - **"Harnessing Uncertainty: Entropy-Modulated Policy Gradients for Long-Horizon LLM Agents"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2509](https://arxiv.org/abs/2509.09265)]
 
-
-
 - **"Let it Calm: Exploratory Annealed Decoding for Verifiable Reinforcement Learning"** ![](https://img.shields.io/badge/random--exploration-orange)
   [[arxiv 2510](https://arxiv.org/abs/2510.05251)]
 
@@ -518,7 +514,6 @@ Internalize this capability → truly learn powerful reasoning
 
 - **"Regular Curves, Singular Graphs: Cantor Parts and the Relaxed Willmore Energy"** ![](https://img.shields.io/badge/random--exploration-orange)
   [[arxiv 2607](https://arxiv.org/abs/2607.12899)]
-
 
 ---
 
@@ -642,6 +637,10 @@ Internalize this capability → truly learn powerful reasoning
 - **"UniVR: Thinking in Visual Space for Unified Visual Reasoning"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2607](https://arxiv.org/abs/2607.12800)]
 - **"Who Grades the Grader? Co-Evolving Evaluation Metrics and Skills for Self-Improving LLM Agents"** ![](https://img.shields.io/badge/exploration--llm-blue)
+
+- **"Writer-R1: Enhancing Generative Writing in LLMs via Memory-augmented Replay Policy Optimization"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2603](https://arxiv.org/abs/2603.15061)]
+
   [[arxiv 2607](https://arxiv.org/abs/2607.12790)]
 
   [[arxiv 2103](https://arxiv.org/abs/2103.12726)]
@@ -673,7 +672,6 @@ Internalize this capability → truly learn powerful reasoning
 
 - **"Learning Mechanistic Reasoning for Chemical Reactions with Large Language Models"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2607](https://arxiv.org/abs/2607.12771)]
-
 
 ### Open Questions
 
