@@ -324,7 +324,9 @@
     "UniVR: Thinking in Visual Space for Unified Visual Reasoning",
     "Who Grades the Grader? Co-Evolving Evaluation Metrics and Skills for Self-Improving LLM Agents",
     "Regular Curves, Singular Graphs: Cantor Parts and the Relaxed Willmore Energy",
-    "Learning Mechanistic Reasoning for Chemical Reactions with Large Language Models"
+    "Learning Mechanistic Reasoning for Chemical Reactions with Large Language Models",
+    "Bulkhead: Automated Semantic Detection and Remediation of Container Escape Vulnerabilities",
+    "From Critic to Confidence: PPO for Language-Based Quantitative Prediction with Confidence Estimation"
   ],
-  "count": 325
+  "count": 327
 }

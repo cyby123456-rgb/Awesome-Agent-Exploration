@@ -154,6 +154,12 @@ Internalize this capability → truly learn powerful reasoning
 - **"CoRe: A Comprehensive Framework for Cross-Image Comparative Reasoning in Vision-Language Models"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2607](https://arxiv.org/abs/2607.12786)]
 - **"EvoGraph-R1: Self-Evolving Multimodal Knowledge Hypergraphs for Agentic Retrieval"** ![](https://img.shields.io/badge/exploration--llm-blue)
+
+- **"Bulkhead: Automated Semantic Detection and Remediation of Container Escape Vulnerabilities"** ![](https://img.shields.io/badge/rl--limitations-red)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12723)]
+- **"From Critic to Confidence: PPO for Language-Based Quantitative Prediction with Confidence Estimation"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12687)]
+
   [[arxiv 2607](https://arxiv.org/abs/2607.12764)]
 
   [[arxiv 2501](https://arxiv.org/abs/2501.12948)]
