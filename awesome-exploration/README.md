@@ -126,6 +126,36 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2503](https://arxiv.org/abs/2503.20783)]
 
 - **"DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--llm-blue)
+
+- **"Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.13034)]
+- **"PalmClaw: A Native On-Device Agent Framework for Mobile Phones"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.13027)]
+- **"FormalAnalyticGeo: A Neural-Symbolic Based Framework for Multimodal Analytic Geometry Problem Generation"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12982)]
+- **"Evaluating Large Language Models on Misconceptions in Multi-Turn Medical Conversations"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12884)]
+- **"MetaInfer: A Knowledge Only LLM Inference Engine Generator SKILL Toolbox"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12875)]
+- **"HeteroMosaic: Exposing and Exploiting Heterogeneous Execution Opportunities for Energy-Efficient Edge LLM Inference"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12839)]
+- **"Open-KNEAD: Knowledge-grounded Nutrition Estimation via Agentic Decomposition"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12911)]
+- **"Can LLMs Write Reliable Rubrics? A Meta-Evaluation for Experiment Reproduction"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12835)]
+- **"Knowledgeless Language Models: Suppressing Parametric Recall for Evidence-Grounded Language Modeling"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12831)]
+- **"Accelerating Masked Diffusion Large Language Models: A Survey of Efficient Inference Techniques"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12829)]
+- **"Breaking Déjà Vu: Independent Auditing of Visual Place Recognition through Vision-Language Reasoning"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12818)]
+- **"Do We Really Need Multimodal Emotion Language Models Larger Than 1B Parameters?"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12787)]
+- **"CoRe: A Comprehensive Framework for Cross-Image Comparative Reasoning in Vision-Language Models"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12786)]
+- **"EvoGraph-R1: Self-Evolving Multimodal Knowledge Hypergraphs for Agentic Retrieval"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12764)]
+
   [[arxiv 2501](https://arxiv.org/abs/2501.12948)]
 
 ---
@@ -212,6 +242,18 @@ Internalize this capability → truly learn powerful reasoning
 
 > **Core insight**: The key to exploration-exploitation balance lies in **how to reshape the token distribution**. High-value candidate tokens should be elevated but without creating a "one-token-dominates-all" situation. Noise tokens are interference and should have their probability mass reduced without affecting other candidates. This perspective aligns with hidden state noise research — **adding noise is fundamentally perturbing the token distribution**.
 
+- **"Resist and Update: Counterfactual Report Coordinates for Incentive-Compatible LLMs"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12985)]
+- **"The Illusion of Robustness: Aggregate Accuracy Hides Prediction Flips under Task-Irrelevant Context"** ![](https://img.shields.io/badge/random--exploration-orange)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12963)]
+- **"Audio-Native Speech Recognition with a Frozen Discrete-Diffusion Language Model"** ![](https://img.shields.io/badge/random--exploration-orange)
+  [[arxiv 2607](https://arxiv.org/abs/2607.13013)]
+- **"Visual Access Boundaries in Vision-Language Model Reasoning"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12815)]
+- **"Silent Alarm: A J-Space Protocol for Comparing Danger Recognition Across Models and Quantization Levels"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12792)]
+
+
 ---
 
 ## 3. Sequence / Response-Level Exploration
@@ -282,6 +324,16 @@ Internalize this capability → truly learn powerful reasoning
 - **"Improving RL Exploration for LLM Reasoning through Retrospective Replay"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2504](https://arxiv.org/abs/2504.14363)]
 - **"Recovering Diversity Without Losing Alignment: A DPO Recipe for Post-Trained LLMs"** ![](https://img.shields.io/badge/semantic--diversity-8B5CF6)
+
+- **"Win by Silence: Deletion Non-Monotonicity, Autonomous Exploitation, and Typed-State Gating in LLM Plan Evaluation"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12986)]
+- **"MemOps: Benchmarking Lifecycle Memory Operations in Long-Horizon Conversations"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12893)]
+- **"LLM Judges Can Be Too Generous When There Is No Reference Answer"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12885)]
+- **"Verifier-Based Reinforcement Fine-Tuning of Reasoning Models for Thermal Energy Storage Control"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12856)]
+
   [[arxiv 2605](https://arxiv.org/abs/2605.30021)]
 
 ---
@@ -458,6 +510,10 @@ Internalize this capability → truly learn powerful reasoning
 > - Noise tokens → reduce probability mass without interfering with other candidates
 > - Hidden state noise → fundamentally a controlled perturbation of the token distribution
 
+- **"Regular Curves, Singular Graphs: Cantor Parts and the Relaxed Willmore Energy"** ![](https://img.shields.io/badge/random--exploration-orange)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12899)]
+
+
 ---
 
 ## 6. Exploration in Specific Scenarios
@@ -574,6 +630,14 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2103](https://arxiv.org/abs/2103.12726)]
 
 - **"Breaking the Exploration Bottleneck: Rubric-Scaffolded Reinforcement Learning for General LLM Reasoning"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+
+- **"Form, Not Content? A Preregistered, Placebo-Controlled Evaluation of Learned Error-Conditioned Self-Repair Through Prompts and Weights in Frozen Small Code Models"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12962)]
+- **"UniVR: Thinking in Visual Space for Unified Visual Reasoning"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12800)]
+- **"Who Grades the Grader? Co-Evolving Evaluation Metrics and Skills for Self-Improving LLM Agents"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12790)]
+
   [[arxiv 2103](https://arxiv.org/abs/2103.12726)]
 
 ---
@@ -600,6 +664,10 @@ Internalize this capability → truly learn powerful reasoning
 | ❌ **Cannot escape** | RLVR merely selects and aggregates base model capabilities; does not create new ones | *The Invisible Leash*, *Understanding R1-Zero-Like Training* |
 | ✅ **Can escape** | Current methods under-exploit RL; prolonged training with high-entropy methods (DAPO-like) keeps improving pass@k | *ProRL* |
 | 🤷 **Conditional** | Depends on exploration quality; better exploration mechanisms may unlock new capabilities | *(Active research)* |
+
+- **"Learning Mechanistic Reasoning for Chemical Reactions with Large Language Models"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.12771)]
+
 
 ### Open Questions
 
