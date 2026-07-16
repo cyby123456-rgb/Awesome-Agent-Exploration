@@ -214,6 +214,9 @@ Internalize this capability → truly learn powerful reasoning
 
 ### 2.4 Policy Gradient Reshaping
 
+- **"TRACE: Turn-level Reward Assignment via Credit Estimation for Long-Horizon Agents"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.13988)]
+
 - **"Taming Extreme Tokens: Covariance-Aware GRPO with Gaussian-Kernel Advantage Reweighting"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 202605](https://arxiv.org/abs/2605.11538)]
 
@@ -257,6 +260,9 @@ Internalize this capability → truly learn powerful reasoning
 ---
 
 ## 3. Sequence / Response-Level Exploration
+
+- **"Deep Interaction: An Efficient Human-AI Interaction Method for Large Reasoning Models"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2607](https://arxiv.org/abs/2607.14049)]
 
 - **"Towards Empowerment Gain through Causal Structure Learning in Model-Based RL"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[[arxiv 2502]](https://arxiv.org/abs/2502.10077)]
@@ -525,6 +531,9 @@ Internalize this capability → truly learn powerful reasoning
 
 ## 6. Exploration in Specific Scenarios
 
+- **"Agent Skill Security: Threat Models, Attacks, Defenses, and Evaluation"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2607](https://arxiv.org/abs/2607.13987)]
+
 - **"Bridging Values and Behavior: A Hierarchical Framework for Proactive Embodied Agents"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[[arxiv 2604]](https://arxiv.org/abs/2604.27699)]
 
@@ -532,6 +541,9 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2606](https://arxiv.org/abs/2606.17024)]
 
 ### 6.1 RLVR (Math / Code)
+
+- **"SIVA-RL: Sensitivity-Invariance Visual Alignment for Multimodal Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2607](https://arxiv.org/abs/2607.13931)]
 - **"How You Begin is How You Reason: Driving Exploration in RLVR via Prefix-Tuned Priors"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 202605](https://arxiv.org/abs/2605.08817)]
 
