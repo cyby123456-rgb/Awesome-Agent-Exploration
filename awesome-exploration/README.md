@@ -258,6 +258,9 @@ Internalize this capability → truly learn powerful reasoning
 
 ## 3. Sequence / Response-Level Exploration
 
+- **"Deep Interaction: An Efficient Human-AI Interaction Method for Large Reasoning Models"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2607](https://arxiv.org/abs/2607.14049)]
+
 - **"Towards Empowerment Gain through Causal Structure Learning in Model-Based RL"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[[arxiv 2502]](https://arxiv.org/abs/2502.10077)]
 
@@ -524,6 +527,9 @@ Internalize this capability → truly learn powerful reasoning
 ---
 
 ## 6. Exploration in Specific Scenarios
+
+- **"Agent Skill Security: Threat Models, Attacks, Defenses, and Evaluation"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2607](https://arxiv.org/abs/2607.13987)]
 
 - **"Bridging Values and Behavior: A Hierarchical Framework for Proactive Embodied Agents"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[[arxiv 2604]](https://arxiv.org/abs/2604.27699)]

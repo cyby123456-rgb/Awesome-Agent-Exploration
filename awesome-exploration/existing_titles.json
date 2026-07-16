@@ -329,7 +329,9 @@
     "Writer-R1: Enhancing Generative Writing in LLMs via Memory-augmented Replay Policy Optimization",
     "Artificial Agency Program: Curiosity, compression, and communication in agents",
     "Towards Empowerment Gain through Causal Structure Learning in Model-Based RL",
-    "Bridging Values and Behavior: A Hierarchical Framework for Proactive Embodied Agents"
+    "Bridging Values and Behavior: A Hierarchical Framework for Proactive Embodied Agents",
+    "Deep Interaction: An Efficient Human-AI Interaction Method for Large Reasoning Models",
+    "Agent Skill Security: Threat Models, Attacks, Defenses, and Evaluation"
   ],
-  "count": 330
+  "count": 332
 }
