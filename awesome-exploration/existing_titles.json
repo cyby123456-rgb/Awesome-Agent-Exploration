@@ -326,7 +326,10 @@
     "Regular Curves, Singular Graphs: Cantor Parts and the Relaxed Willmore Energy",
     "Learning Mechanistic Reasoning for Chemical Reactions with Large Language Models",
     "Step-wise Policy for Rare-tool Knowledge (SPaRK): Offline RL that Drives Diverse Tool Use in LLMs",
-    "Writer-R1: Enhancing Generative Writing in LLMs via Memory-augmented Replay Policy Optimization"
+    "Writer-R1: Enhancing Generative Writing in LLMs via Memory-augmented Replay Policy Optimization",
+    "Artificial Agency Program: Curiosity, compression, and communication in agents",
+    "Towards Empowerment Gain through Causal Structure Learning in Model-Based RL",
+    "Bridging Values and Behavior: A Hierarchical Framework for Proactive Embodied Agents"
   ],
-  "count": 327
+  "count": 330
 }

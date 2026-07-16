@@ -258,6 +258,9 @@ Internalize this capability → truly learn powerful reasoning
 
 ## 3. Sequence / Response-Level Exploration
 
+- **"Towards Empowerment Gain through Causal Structure Learning in Model-Based RL"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[[arxiv 2502]](https://arxiv.org/abs/2502.10077)]
+
 - **"Context-Aware RL for Agentic and Multimodal LLMs"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2606](https://arxiv.org/abs/2606.17053)]
 
@@ -403,6 +406,9 @@ Internalize this capability → truly learn powerful reasoning
 
 ## 5. Semantic-Ignorant Exploration (Entropy / Temperature / Noise)
 
+- **"Artificial Agency Program: Curiosity, compression, and communication in agents"** ![](https://img.shields.io/badge/random--exploration-orange)
+  [[[arxiv 2602]](https://arxiv.org/abs/2602.24100)]
+
 - **"Entropy-Gated Branching for Efficient Test-Time Reasoning"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2503](https://arxiv.org/abs/2503.21961)]
 
@@ -518,6 +524,9 @@ Internalize this capability → truly learn powerful reasoning
 ---
 
 ## 6. Exploration in Specific Scenarios
+
+- **"Bridging Values and Behavior: A Hierarchical Framework for Proactive Embodied Agents"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[[arxiv 2604]](https://arxiv.org/abs/2604.27699)]
 
 - **"ExpRL: Exploratory RL for LLM Mid-Training"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 2606](https://arxiv.org/abs/2606.17024)]
