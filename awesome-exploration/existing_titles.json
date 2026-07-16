@@ -329,7 +329,10 @@
     "Writer-R1: Enhancing Generative Writing in LLMs via Memory-augmented Replay Policy Optimization",
     "Artificial Agency Program: Curiosity, compression, and communication in agents",
     "Towards Empowerment Gain through Causal Structure Learning in Model-Based RL",
-    "Bridging Values and Behavior: A Hierarchical Framework for Proactive Embodied Agents"
+    "Bridging Values and Behavior: A Hierarchical Framework for Proactive Embodied Agents",
+    "Ground What You See: Hallucination-Resistant MLLMs via Caption Feedback, Diversity-Aware Sampling, and Conflict Regularization",
+    "More Test-Time Compute Can Hurt: Overestimation Bias in LLM Beam Search",
+    "Spend Less, Reason Better: Budget-Aware Value Tree Search for LLM Agents"
   ],
-  "count": 330
+  "count": 333
 }

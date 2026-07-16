@@ -258,6 +258,9 @@ Internalize this capability → truly learn powerful reasoning
 
 ## 3. Sequence / Response-Level Exploration
 
+- **"More Test-Time Compute Can Hurt: Overestimation Bias in LLM Beam Search"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2603](https://arxiv.org/abs/2603.15377)]
+
 - **"Towards Empowerment Gain through Causal Structure Learning in Model-Based RL"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[[arxiv 2502]](https://arxiv.org/abs/2502.10077)]
 
@@ -406,6 +409,9 @@ Internalize this capability → truly learn powerful reasoning
 
 ## 5. Semantic-Ignorant Exploration (Entropy / Temperature / Noise)
 
+- **"Ground What You See: Hallucination-Resistant MLLMs via Caption Feedback, Diversity-Aware Sampling, and Conflict Regularization"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2601](https://arxiv.org/abs/2601.06224)]
+
 - **"Artificial Agency Program: Curiosity, compression, and communication in agents"** ![](https://img.shields.io/badge/random--exploration-orange)
   [[[arxiv 2602]](https://arxiv.org/abs/2602.24100)]
 
@@ -524,6 +530,9 @@ Internalize this capability → truly learn powerful reasoning
 ---
 
 ## 6. Exploration in Specific Scenarios
+
+- **"Spend Less, Reason Better: Budget-Aware Value Tree Search for LLM Agents"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2603](https://arxiv.org/abs/2603.12634)]
 
 - **"Bridging Values and Behavior: A Hierarchical Framework for Proactive Embodied Agents"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[[arxiv 2604]](https://arxiv.org/abs/2604.27699)]
