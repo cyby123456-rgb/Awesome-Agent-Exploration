@@ -214,6 +214,11 @@ Internalize this capability → truly learn powerful reasoning
 
 ### 2.4 Policy Gradient Reshaping
 
+- **"Inpainting-Guided Policy Optimization for Diffusion Large Language Models"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2509](https://arxiv.org/abs/2509.10396)]
+- **"Reference-guided Policy Optimization for Molecular Optimization via LLM Reasoning"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2603](https://arxiv.org/abs/2603.05900)]
+
 - **"Taming Extreme Tokens: Covariance-Aware GRPO with Gaussian-Kernel Advantage Reweighting"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[arxiv 202605](https://arxiv.org/abs/2605.11538)]
 
@@ -257,6 +262,9 @@ Internalize this capability → truly learn powerful reasoning
 ---
 
 ## 3. Sequence / Response-Level Exploration
+
+- **"More Test-Time Compute Can Hurt: Overestimation Bias in LLM Beam Search"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2603](https://arxiv.org/abs/2603.15377)]
 
 - **"Towards Empowerment Gain through Causal Structure Learning in Model-Based RL"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[[arxiv 2502]](https://arxiv.org/abs/2502.10077)]
@@ -406,6 +414,9 @@ Internalize this capability → truly learn powerful reasoning
 
 ## 5. Semantic-Ignorant Exploration (Entropy / Temperature / Noise)
 
+- **"Ground What You See: Hallucination-Resistant MLLMs via Caption Feedback, Diversity-Aware Sampling, and Conflict Regularization"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
+  [[arxiv 2601](https://arxiv.org/abs/2601.06224)]
+
 - **"Artificial Agency Program: Curiosity, compression, and communication in agents"** ![](https://img.shields.io/badge/random--exploration-orange)
   [[[arxiv 2602]](https://arxiv.org/abs/2602.24100)]
 
@@ -525,6 +536,9 @@ Internalize this capability → truly learn powerful reasoning
 
 ## 6. Exploration in Specific Scenarios
 
+- **"Spend Less, Reason Better: Budget-Aware Value Tree Search for LLM Agents"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2603](https://arxiv.org/abs/2603.12634)]
+
 - **"Bridging Values and Behavior: A Hierarchical Framework for Proactive Embodied Agents"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[[arxiv 2604]](https://arxiv.org/abs/2604.27699)]
 
@@ -532,6 +546,9 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2606](https://arxiv.org/abs/2606.17024)]
 
 ### 6.1 RLVR (Math / Code)
+
+- **"Audited Skill-Graph Self-Improvement for Agentic LLMs via Verifiable Rewards, Experience Synthesis, and Continual Memory"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2512](https://arxiv.org/abs/2512.23760)]
 - **"How You Begin is How You Reason: Driving Exploration in RLVR via Prefix-Tuned Priors"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 202605](https://arxiv.org/abs/2605.08817)]
 
@@ -596,6 +613,11 @@ Internalize this capability → truly learn powerful reasoning
   [[arxiv 2606](https://arxiv.org/abs/2606.16811)]
 
 ### 6.2 Unsupervised / Minimal Label Scenarios
+
+- **"Syn-GRPO: Self-Evolving Data Synthesis for MLLM Perception Reasoning"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2511](https://arxiv.org/abs/2511.19343)]
+- **"First SFT, Second RL, Third UPT: Continual Improving Multi-Modal LLM Reasoning via Unsupervised Post-Training"** ![](https://img.shields.io/badge/exploration--llm-blue)
+  [[arxiv 2505](https://arxiv.org/abs/2505.22453)]
 - **"Learn the Ropes, Then Trust the Wins: Self-imitation with Progressive Exploration for Agentic Reinforcement Learning"** ![](https://img.shields.io/badge/exploration--llm-blue)
   [[Routledge](https://doi.org/10.4324/9780429484216)]
 
@@ -691,6 +713,33 @@ Internalize this capability → truly learn powerful reasoning
 ---
 
 ## 8. Related Topics
+
+- **"Latent-Space Contrastive Reinforcement Learning for Stable and Efficient LLM Reasoning"** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2601](https://arxiv.org/abs/2601.17275)]
+- **"Audio-DeepThinker: Progressive Reasoning-Aware Reinforcement Learning for High-Quality Chain-of-Thought Emergence in Audio Language Models"** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2604](https://arxiv.org/abs/2604.18187)]
+- **"Reinforcement Learning for Reasoning in Large Language Models with One Training Example"** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2504](https://arxiv.org/abs/2504.20571)]
+- **"ReMiT: RL-Guided Mid-Training for Iterative LLM Evolution"** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2602](https://arxiv.org/abs/2602.03075)]
+- **"KnowRL: Teaching Language Models to Know What They Know"** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2510](https://arxiv.org/abs/2510.11407)]
+- **"Round-trip Reinforcement Learning: Self-Consistent Training for Better Chemical LLMs"** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2510](https://arxiv.org/abs/2510.01527)]
+- **"Enhancing LLM Reasoning with Iterative DPO: A Comprehensive Empirical Investigation"** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2503](https://arxiv.org/abs/2503.12854)]
+- **"S2R: Teaching LLMs to Self-verify and Self-correct via Reinforcement Learning"** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2502](https://arxiv.org/abs/2502.12853)]
+- **"G1: Teaching LLMs to Reason on Graphs with Reinforcement Learning"** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2505](https://arxiv.org/abs/2505.18499)]
+- **"Time Series Forecasting as Reasoning: A Slow-Thinking Approach with Reinforced LLMs"** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2506](https://arxiv.org/abs/2506.10630)]
+- **"CARFT: Boosting LLM Reasoning via Contrastive Learning with Annotated Chain-of-Thought-based Reinforced Fine-Tuning"** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2508](https://arxiv.org/abs/2508.15868)]
+- **"Rethinking Reasoning Quality in Large Language Models through Enhanced Chain-of-Thought via RL"** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2509](https://arxiv.org/abs/2509.06024)]
+- **"h1: Bootstrapping LLMs to Reason over Longer Horizons via Reinforcement Learning"** ![](https://img.shields.io/badge/related--topics-888)
+  [[arxiv 2510](https://arxiv.org/abs/2510.07312)]
 
 - **"Tyler: Typed Latent Reasoning for Language Models -- When to Think, What to Compute, and How Much to Allocate"** ![](https://img.shields.io/badge/exploration--path-brightgreen)
   [[arxiv 2606](https://arxiv.org/abs/2606.16360)]
