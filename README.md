@@ -2,12 +2,12 @@
 
 <p align="center">
   <a href="#"><img src="https://img.shields.io/badge/Status-Building-brightgreen" alt="Building"></a>
-  <a href="https://github.com/sindresorhus/awesome"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome"></a>
+  <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
   <a href="https://github.com/cyby123456-rgb/Awesome-Exploration/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" alt="PRs Welcome"></a>
 </p>
 
 <p align="center">
-  <b>📋 List View</b> · <a href="README_DETAILED.md">🔍 Detailed View (with paper descriptions &amp; comments)</a>
+  <b>📋 List View</b> · <a href="README_DETAILED.md">🔍 Detailed View</a> · <a href="CONTRIBUTING.md">Contributing</a> · <a href="docs/ROADMAP.md">Roadmap</a>
 </p>
 
 <p align="center">
