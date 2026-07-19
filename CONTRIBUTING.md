@@ -1,9 +1,9 @@
 # Contributing to Awesome Exploration
 
 Thank you for helping improve this reading list. The repository is intentionally
-focused on **exploration mechanisms in reinforcement learning and post-training
-for large language models**. It is a curated guide, not a feed of every paper
-that mentions reinforcement learning, entropy, search, diversity, or agents.
+focused on **exploration in language-model generation, RLVR post-training, and
+interactive agents**. It is a curated guide, not a feed of every paper that
+mentions reinforcement learning, entropy, search, diversity, or agents.
 
 ## Scope
 
@@ -11,6 +11,10 @@ A paper is in scope when exploration is part of its primary contribution or
 analysis. At least one of the following should be true:
 
 - It changes how an LLM policy explores during RL/RLVR or post-training.
+- It changes how an LLM explores candidate generations or reasoning paths at
+  inference time.
+- It changes how a language agent explores states, actions, tools, or long-horizon
+  trajectories in an external environment.
 - It explicitly preserves or increases token-, response-, trajectory-, latent-,
   or policy-level diversity.
 - It studies entropy collapse, exploration/exploitation, or capability-boundary
@@ -39,10 +43,10 @@ Every proposed entry must include:
    not accepted.
 2. A one- or two-sentence curation rationale based on reading the abstract (and,
    for ambiguous cases, the method or experiments), not just the title.
-3. The most specific existing section and an accurate mechanism tag.
+3. One primary area and accurate multi-dimensional tags.
 4. The official code link when one is available.
-5. Matching updates to `README.md` and `README_DETAILED.md` until those files are
-   generated from a single catalog.
+5. A change to the structured registry in `data/papers.json`. The Markdown views
+   are generated and must not be edited directly.
 
 Prefer one strong, well-supported entry over a large batch. Automated discovery
 may create review candidates, but it must not write directly to the canonical
@@ -50,30 +54,44 @@ list without human review.
 
 ## Entry format
 
-Compact view:
+Each paper has exactly one `primary_area` and may use several orthogonal tag
+dimensions. The required dimensions are `phase` and `level`; at least one
+`signal` or `mechanism` tag is also required.
 
-```markdown
-- **Paper Title** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv YYMM](https://arxiv.org/abs/YYMM.NNNNN)]
-  [[Code](https://github.com/owner/repository)]
+```json
+{
+  "id": "arxiv:2510.03222",
+  "title": "Low-probability Tokens Sustain Exploration in Reinforcement Learning with Verifiable Reward",
+  "url": "https://arxiv.org/abs/2510.03222",
+  "date": "2025-10-03",
+  "primary_area": "rlvr-exploration",
+  "paper_type": "method",
+  "phase": ["rl-training"],
+  "level": ["token", "policy-distribution"],
+  "signal": ["entropy/probability"],
+  "mechanism": ["regularization"],
+  "problem": ["entropy-collapse"],
+  "setting": ["math"]
+}
 ```
 
-Detailed view:
+Valid primary areas are `llm-exploration`, `rlvr-exploration`,
+`agentic-exploration`, and `understanding-evaluation`. Classical non-LLM RL
+papers are not normal entries; the maintainers keep a deliberately small
+appendix of foundational references.
 
-```markdown
-- **Paper Title** ![](https://img.shields.io/badge/exploration--path-brightgreen)
-  [[arxiv YYMM](https://arxiv.org/abs/YYMM.NNNNN)]
-  [[Code](https://github.com/owner/repository)]
-  - *What exploration mechanism is introduced or analyzed, and why it belongs in this section.*
-```
+See [`docs/TAXONOMY.md`](docs/TAXONOMY.md) for the primary-area decision rule,
+the meaning of every tag dimension, and worked classification examples.
 
 ## Before opening a pull request
 
 - Search the repository for both the exact title and the arXiv/DOI identifier.
 - Verify that the link resolves to the same title and authors.
-- Check that the classification and badge agree.
-- Run `python3 scripts/audit_catalog.py` and note whether your change introduces
-  any additional duplicate or drift warnings.
+- Check that the primary area and all tag dimensions describe the paper's actual
+  exploration contribution rather than incidental keywords.
+- Run `python3 scripts/validate_catalog.py`.
+- Run `python3 scripts/generate_catalog.py` and include the generated Markdown
+  changes.
 - Keep unrelated formatting changes out of a paper-addition pull request.
 
 The catalog currently has historical quality debt. A contribution should reduce
