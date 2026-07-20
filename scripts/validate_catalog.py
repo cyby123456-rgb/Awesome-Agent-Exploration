@@ -1,51 +1,49 @@
 #!/usr/bin/env python3
-"""Fail when the public paper catalog contains duplicate titles or arXiv IDs."""
+"""Validate the canonical public paper catalog."""
 
 from __future__ import annotations
 
+import json
 import re
 import sys
-from collections import defaultdict
+from collections import Counter
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-README = ROOT / "README.md"
-TITLE = re.compile(r"^- \*\*(.+?)\*\*", re.MULTILINE)
-ARXIV = re.compile(r"arxiv\.org/abs/([^\])\s]+)")
+DATA = ROOT / "data" / "papers.json"
+ARXIV = re.compile(r"^\d{4}\.\d{4,5}(v\d+)?$")
 
 
-def duplicates(values: list[str]) -> dict[str, int]:
-    counts: dict[str, int] = defaultdict(int)
-    for value in values:
-        counts[value] += 1
-    return {value: count for value, count in counts.items() if count > 1}
+def normalise(title: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "", title.lower())
 
 
 def main() -> int:
-    text = README.read_text(encoding="utf-8")
-    title_dupes = duplicates(TITLE.findall(text))
-
-    arxiv_to_titles: dict[str, set[str]] = defaultdict(set)
-    for block in re.split(r"(?=^- \*\*)", text, flags=re.MULTILINE):
-        match = TITLE.match(block)
-        if match:
-            for arxiv_id in ARXIV.findall(block):
-                arxiv_to_titles[arxiv_id].add(match.group(1))
-    id_conflicts = {key: value for key, value in arxiv_to_titles.items() if len(value) > 1}
-
-    if title_dupes or id_conflicts:
-        if title_dupes:
-            print("Duplicate titles:", file=sys.stderr)
-            for title, count in sorted(title_dupes.items()):
-                print(f"  {count}x {title}", file=sys.stderr)
-        if id_conflicts:
-            print("arXiv IDs assigned to multiple titles:", file=sys.stderr)
-            for arxiv_id, titles in sorted(id_conflicts.items()):
-                print(f"  {arxiv_id}: {', '.join(sorted(titles))}", file=sys.stderr)
+    papers = json.loads(DATA.read_text(encoding="utf-8"))["papers"]
+    errors: list[str] = []
+    title_counts = Counter(normalise(p["title"]) for p in papers)
+    duplicates = [key for key, count in title_counts.items() if count > 1]
+    if duplicates:
+        errors.append(f"duplicate titles: {len(duplicates)}")
+    missing_ids = [p["title"] for p in papers if not p.get("arxiv")]
+    if missing_ids:
+        errors.append(f"entries without a primary-source link: {', '.join(missing_ids)}")
+    ids = [p["arxiv"] for p in papers if p.get("arxiv")]
+    id_counts = Counter(ids)
+    duplicate_ids = [key for key, count in id_counts.items() if count > 1]
+    if duplicate_ids:
+        errors.append(f"duplicate arXiv IDs: {', '.join(sorted(duplicate_ids))}")
+    malformed = [key for key in ids if not ARXIV.fullmatch(key)]
+    if malformed:
+        errors.append(f"malformed arXiv IDs: {', '.join(sorted(malformed))}")
+    invalid_scopes = [p["title"] for p in papers if p.get("scope") not in {"Core", "Adjacent", "Context"}]
+    if invalid_scopes:
+        errors.append(f"invalid scope labels: {', '.join(invalid_scopes)}")
+    if errors:
+        print("Catalog validation failed:", *errors, sep="\n- ", file=sys.stderr)
         return 1
-
-    print("Catalog validation passed.")
+    print(f"Catalog validation passed: {len(papers)} unique entries, {len(ids)} primary-source links.")
     return 0
 
 
