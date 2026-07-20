@@ -18,23 +18,30 @@ AREA_LABELS = {
     "understanding-evaluation": "Understanding, Evaluation & Benchmarks",
 }
 
+AREA_SUMMARIES = {
+    "llm-exploration": "Exploration during language-model generation and inference, without RL policy updates as the central contribution.",
+    "rlvr-exploration": "Exploration during RL/RLVR post-training, where exploration changes the rollout distribution or policy update.",
+    "agentic-exploration": "Exploration by language agents acting over states, tools, observations, and long-horizon trajectories.",
+    "understanding-evaluation": "Work that measures, explains, surveys, or benchmarks exploration rather than primarily introducing an intervention.",
+}
+
 AREA_DESCRIPTIONS = {
-    "llm-exploration": (
-        "Exploration during generation and inference: sampling, decoding, semantic "
-        "diversity, latent steering, and test-time search without requiring RL training."
-    ),
-    "rlvr-exploration": (
-        "Exploration during RL/RLVR post-training: entropy collapse, token and rollout "
-        "diversity, intrinsic rewards, policy-distribution control, and capability expansion."
-    ),
-    "agentic-exploration": (
-        "Exploration in interactive environments: web, tool, GUI, knowledge-graph and "
-        "embodied search, long-horizon trajectories, memory, and self-play."
-    ),
-    "understanding-evaluation": (
-        "Empirical, theoretical, survey, and benchmark work that measures exploration, "
-        "diversity, training dynamics, or capability boundaries."
-    ),
+    "llm-exploration": [
+        "This category covers exploration that happens while a language model is generating or selecting candidate outputs, rather than through a reinforcement-learning update. Typical examples include sampling and decoding strategies, self-consistency, semantic-diversity methods, latent-state steering, and tree or graph search at inference time.",
+        "The central question is how to search a model's existing generative distribution more broadly, safely, or efficiently. Papers belong here when the main contribution improves or analyzes candidate generation, reasoning-path search, or output diversity without making RL post-training the core mechanism.",
+    ],
+    "rlvr-exploration": [
+        "This category concerns exploration during reinforcement learning or RL with verifiable rewards (RLVR). Here, exploration changes which rollouts are collected, how reward or advantage signals are assigned, or how the policy distribution is updated during training.",
+        "It includes work on entropy or mode collapse, low-probability tokens, rollout diversity, intrinsic or shaped rewards, gradient and regularization interventions, curriculum design, and attempts to push beyond a base model's capability boundary. The defining feature is that exploration is part of the learning loop, not only an inference-time search choice.",
+    ],
+    "agentic-exploration": [
+        "This category covers language agents that explore an external or persistent environment: webpages, tools, GUIs, knowledge graphs, games, embodied worlds, or multi-agent settings. The object of exploration is usually a trajectory of states, actions, observations, and tool calls rather than a single textual response.",
+        "These papers focus on challenges such as partial observability, long horizons, recovery from failed actions, memory, environment coverage, and interactive search. A paper belongs here when external interaction is central to the exploration problem and evaluation.",
+    ],
+    "understanding-evaluation": [
+        "This category collects empirical analyses, theoretical accounts, surveys, metrics, and benchmarks that help the field understand exploration. Rather than primarily proposing a new exploration intervention, these works measure diversity, characterize training dynamics, evaluate capability boundaries, or establish a shared vocabulary and test bed.",
+        "They are essential for judging whether a method genuinely improves exploration instead of merely changing accuracy or sampling behavior. Keeping them separate makes the evidence about a phenomenon easy to distinguish from methods designed to change it.",
+    ],
 }
 
 TAG_DIMENSIONS = [
@@ -49,6 +56,14 @@ TAG_DIMENSIONS = [
 
 def load_catalog() -> dict:
     return json.loads(DATA_PATH.read_text(encoding="utf-8"))
+
+
+def area_description_lines(area: str) -> list[str]:
+    """Render each explanatory paragraph as a distinct Markdown paragraph."""
+    lines: list[str] = []
+    for paragraph in AREA_DESCRIPTIONS[area]:
+        lines.extend([paragraph, ""])
+    return lines
 
 
 def compact_tags(paper: dict) -> str:
@@ -115,7 +130,7 @@ def render_readme(catalog: dict) -> str:
         "",
         "| Primary area | Definition |",
         "|---|---|",
-        *[f"| **{AREA_LABELS[a]}** | {AREA_DESCRIPTIONS[a]} |" for a in AREA_LABELS],
+        *[f"| **{AREA_LABELS[a]}** | {AREA_SUMMARIES[a]} |" for a in AREA_LABELS],
         "",
         "The former Token / Sequence / Policy sections are now `level` tags. Entropy, temperature, and "
         "noise are grouped under distributional/stochastic exploration while remaining distinct tags.",
@@ -144,7 +159,7 @@ def render_readme(catalog: dict) -> str:
         )
 
     for index, (area, label) in enumerate(AREA_LABELS.items(), start=1):
-        lines.extend(["", f"## {index}. {label}", "", AREA_DESCRIPTIONS[area], ""])
+        lines.extend(["", f"## {index}. {label}", "", *area_description_lines(area)])
         selected = sorted(
             (p for p in papers if p["primary_area"] == area),
             key=lambda p: (p.get("date", ""), p["title"]),
@@ -205,7 +220,7 @@ def render_detailed(catalog: dict) -> str:
         "",
     ]
     for index, (area, label) in enumerate(AREA_LABELS.items(), start=1):
-        lines.extend([f"## {index}. {label}", "", AREA_DESCRIPTIONS[area], ""])
+        lines.extend([f"## {index}. {label}", "", *area_description_lines(area)])
         selected = sorted(
             (p for p in papers if p["primary_area"] == area),
             key=lambda p: (p.get("date", ""), p["title"]),

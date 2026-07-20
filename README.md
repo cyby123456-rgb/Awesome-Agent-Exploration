@@ -12,10 +12,10 @@ Each paper has exactly one primary area and may carry multiple orthogonal tags. 
 
 | Primary area | Definition |
 |---|---|
-| **LLM Generation & Inference Exploration** | Exploration during generation and inference: sampling, decoding, semantic diversity, latent steering, and test-time search without requiring RL training. |
-| **Exploration for RLVR** | Exploration during RL/RLVR post-training: entropy collapse, token and rollout diversity, intrinsic rewards, policy-distribution control, and capability expansion. |
-| **Agentic Exploration** | Exploration in interactive environments: web, tool, GUI, knowledge-graph and embodied search, long-horizon trajectories, memory, and self-play. |
-| **Understanding, Evaluation & Benchmarks** | Empirical, theoretical, survey, and benchmark work that measures exploration, diversity, training dynamics, or capability boundaries. |
+| **LLM Generation & Inference Exploration** | Exploration during language-model generation and inference, without RL policy updates as the central contribution. |
+| **Exploration for RLVR** | Exploration during RL/RLVR post-training, where exploration changes the rollout distribution or policy update. |
+| **Agentic Exploration** | Exploration by language agents acting over states, tools, observations, and long-horizon trajectories. |
+| **Understanding, Evaluation & Benchmarks** | Work that measures, explains, surveys, or benchmarks exploration rather than primarily introducing an intervention. |
 
 The former Token / Sequence / Policy sections are now `level` tags. Entropy, temperature, and noise are grouped under distributional/stochastic exploration while remaining distinct tags.
 
@@ -72,7 +72,9 @@ The former Token / Sequence / Policy sections are now `level` tags. Entropy, tem
 
 ## 1. LLM Generation & Inference Exploration
 
-Exploration during generation and inference: sampling, decoding, semantic diversity, latent steering, and test-time search without requiring RL training.
+This category covers exploration that happens while a language model is generating or selecting candidate outputs, rather than through a reinforcement-learning update. Typical examples include sampling and decoding strategies, self-consistency, semantic-diversity methods, latent-state steering, and tree or graph search at inference time.
+
+The central question is how to search a model's existing generative distribution more broadly, safely, or efficiently. Papers belong here when the main contribution improves or analyzes candidate generation, reasoning-path search, or output diversity without making RL post-training the core mechanism.
 
 | Date | Paper | Source | Tags |
 |---|---|---|---|
@@ -139,7 +141,9 @@ Exploration during generation and inference: sampling, decoding, semantic divers
 
 ## 2. Exploration for RLVR
 
-Exploration during RL/RLVR post-training: entropy collapse, token and rollout diversity, intrinsic rewards, policy-distribution control, and capability expansion.
+This category concerns exploration during reinforcement learning or RL with verifiable rewards (RLVR). Here, exploration changes which rollouts are collected, how reward or advantage signals are assigned, or how the policy distribution is updated during training.
+
+It includes work on entropy or mode collapse, low-probability tokens, rollout diversity, intrinsic or shaped rewards, gradient and regularization interventions, curriculum design, and attempts to push beyond a base model's capability boundary. The defining feature is that exploration is part of the learning loop, not only an inference-time search choice.
 
 | Date | Paper | Source | Tags |
 |---|---|---|---|
@@ -265,7 +269,9 @@ Exploration during RL/RLVR post-training: entropy collapse, token and rollout di
 
 ## 3. Agentic Exploration
 
-Exploration in interactive environments: web, tool, GUI, knowledge-graph and embodied search, long-horizon trajectories, memory, and self-play.
+This category covers language agents that explore an external or persistent environment: webpages, tools, GUIs, knowledge graphs, games, embodied worlds, or multi-agent settings. The object of exploration is usually a trajectory of states, actions, observations, and tool calls rather than a single textual response.
+
+These papers focus on challenges such as partial observability, long horizons, recovery from failed actions, memory, environment coverage, and interactive search. A paper belongs here when external interaction is central to the exploration problem and evaluation.
 
 | Date | Paper | Source | Tags |
 |---|---|---|---|
@@ -317,7 +323,9 @@ Exploration in interactive environments: web, tool, GUI, knowledge-graph and emb
 
 ## 4. Understanding, Evaluation & Benchmarks
 
-Empirical, theoretical, survey, and benchmark work that measures exploration, diversity, training dynamics, or capability boundaries.
+This category collects empirical analyses, theoretical accounts, surveys, metrics, and benchmarks that help the field understand exploration. Rather than primarily proposing a new exploration intervention, these works measure diversity, characterize training dynamics, evaluate capability boundaries, or establish a shared vocabulary and test bed.
+
+They are essential for judging whether a method genuinely improves exploration instead of merely changing accuracy or sampling behavior. Keeping them separate makes the evidence about a phenomenon easy to distinguish from methods designed to change it.
 
 | Date | Paper | Source | Tags |
 |---|---|---|---|
