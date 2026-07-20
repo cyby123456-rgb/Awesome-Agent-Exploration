@@ -1,0 +1,469 @@
+{
+  "schema_version": 1,
+  "candidates": [
+    {
+      "id": "legacy:2503.20783:understanding-r1-zero-like-training-a-critical-perspective",
+      "status": "pending",
+      "title": "Understanding R1-Zero-Like Training: A Critical Perspective",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2503.20783",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2503.20783:reasoning-with-exploration-an-entropy-perspective-on-reinforcement-learning-for-llms",
+      "status": "pending",
+      "title": "Reasoning with Exploration: An Entropy Perspective on Reinforcement Learning for LLMs",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2503.20783",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2503.20783:the-entropy-mechanism-of-reinforcement-learning-for-reasoning-language-models",
+      "status": "pending",
+      "title": "The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2503.20783",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2501.12948:deepseek-r1-incentivizing-reasoning-capability-in-llms-via-reinforcement-learning",
+      "status": "pending",
+      "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2501.12948",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2501.12948:deepseek-r1-incentivizes-reasoning-in-llms-through-reinforcement-learning",
+      "status": "pending",
+      "title": "DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2501.12948",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2605.08283:htpo-towards-exploration-exploitation-balanced-policy-optimization-via-hierarchical-token-level-objective-control",
+      "status": "pending",
+      "title": "HTPO: Towards Exploration-Exploitation Balanced Policy Optimization via Hierarchical Token-level Objective Control",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2605.08283",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2605.08283:htpo-towards-exploration-exploitation-balanced-policy-optimization-via-hindsight-thinking",
+      "status": "pending",
+      "title": "HTPO: Towards Exploration-Exploitation Balanced Policy Optimization via Hindsight Thinking",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2605.08283",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2602.03309:entropy-gated-selective-policy-optimization-token-level-gradient-allocation-for-hybrid-training-of-large-language-models",
+      "status": "pending",
+      "title": "Entropy-Gated Selective Policy Optimization:Token-Level Gradient Allocation for Hybrid Training of Large Language Models",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2602.03309",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2602.03309:entropy-gated-selective-policy-optimization-token-level-gradient-allocation-for-enhanced-llm-reasoning",
+      "status": "pending",
+      "title": "Entropy-Gated Selective Policy Optimization: Token-Level Gradient Allocation for Enhanced LLM Reasoning",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2602.03309",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2509.20712:ce-gppo-coordinating-entropy-via-gradient-preserving-clipping-policy-optimization-in-reinforcement-learning",
+      "status": "pending",
+      "title": "CE-GPPO: Coordinating Entropy via Gradient-Preserving Clipping Policy Optimization in Reinforcement Learning",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2509.20712",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2509.20712:ce-gppo-coordinating-entropy-via-gradient-preserving-clipping-policy-optimization-in-rl",
+      "status": "pending",
+      "title": "CE-GPPO: Coordinating Entropy via Gradient-Preserving Clipping Policy Optimization in RL",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2509.20712",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2508.11356:ettrl-balancing-exploration-and-exploitation-in-llm-test-time-reinforcement-learning-via-entropy-mechanism",
+      "status": "pending",
+      "title": "ETTRL: Balancing Exploration and Exploitation in LLM Test-Time Reinforcement Learning Via Entropy Mechanism",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2508.11356",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2508.11356:ettrl-balancing-exploration-and-exploitation-in-llm-test-time-rl-via-entropy-mechanism",
+      "status": "pending",
+      "title": "ETTRL: Balancing Exploration and Exploitation in LLM Test-Time RL Via Entropy Mechanism",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2508.11356",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2503.14442:dapo-an-open-source-llm-reinforcement-learning-system-at-scale",
+      "status": "pending",
+      "title": "DAPO: An Open-Source LLM Reinforcement Learning System at Scale",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2503.14442",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2503.14442:low-probability-tokens-sustain-exploration-in-reinforcement-learning-with-verifiable-reward",
+      "status": "pending",
+      "title": "Low-probability Tokens Sustain Exploration in Reinforcement Learning with Verifiable Reward",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2503.14442",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2509.26114:clip-low-increases-entropy-and-clip-high-decreases-entropy-in-reinforcement-learning-of-large-language-models",
+      "status": "pending",
+      "title": "Clip-Low Increases Entropy and Clip-High Decreases Entropy in Reinforcement Learning of Large Language Models",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2509.26114",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2509.26114:clip-low-increases-entropy-and-clip-high-decreases-entropy-in-reinforcement-learning-for-llms",
+      "status": "pending",
+      "title": "Clip-Low Increases Entropy and Clip-High Decreases Entropy in Reinforcement Learning for LLMs",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2509.26114",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2605.11461:breaking-textit-winner-takes-all-cooperative-policy-optimization-improves-diverse-llm-reasoning",
+      "status": "pending",
+      "title": "Breaking $\\textit{Winner-Takes-All}$: Cooperative Policy Optimization Improves Diverse LLM Reasoning",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2605.11461",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2605.11461:breaking-winner-takes-all-cooperative-policy-optimization-improves-diverse-llm-reasoning",
+      "status": "pending",
+      "title": "Breaking Winner-Takes-All: Cooperative Policy Optimization Improves Diverse LLM Reasoning",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2605.11461",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2509.07980:parallel-r1-towards-parallel-thinking-via-reinforcement-learning",
+      "status": "pending",
+      "title": "Parallel-R1: Towards Parallel Thinking via Reinforcement Learning",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2509.07980",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2509.07980:darling-diversity-aware-reinforcement-learning",
+      "status": "pending",
+      "title": "DARLING: Diversity-Aware Reinforcement Learning",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2509.07980",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2509.07980:parameter-space-noise-for-exploration",
+      "status": "pending",
+      "title": "Parameter Space Noise for Exploration",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2509.07980",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2508.02260v1:entropy-preserving-reinforcement-learning",
+      "status": "pending",
+      "title": "ENTROPY-PRESERVING REINFORCEMENT LEARNING",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2508.02260v1",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2508.02260v1:exploration-via-feature-perturbation-in-contextual-bandits",
+      "status": "pending",
+      "title": "Exploration via Feature Perturbation in Contextual Bandits",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2508.02260v1",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2505.12346:seed-grpo-semantic-entropy-enhanced-grpo-for-uncertainty-aware-policy-optimization",
+      "status": "pending",
+      "title": "SEED-GRPO: Semantic Entropy Enhanced GRPO for Uncertainty-Aware Policy Optimization",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2505.12346",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2505.12346:noisygrpo-incentivizing-multimodal-cotreasoning-via-noise-injection-and-bayesian-estimation",
+      "status": "pending",
+      "title": "NoisyGRPO: Incentivizing Multimodal CoTReasoning via Noise Injection and Bayesian Estimation",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2505.12346",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2510.09388:hint-helping-ineffective-rollouts-navigate-towards-effectiveness",
+      "status": "pending",
+      "title": "HINT: Helping Ineffective rollouts Navigate Towards effectiveness",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2510.09388",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2510.09388:the-art-of-scaling-reinforcement-learning-compute-for-llms",
+      "status": "pending",
+      "title": "The Art of Scaling Reinforcement Learning Compute for LLMs",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2510.09388",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2510.09388v1:the-path-of-self-evolving-large-language-models-achieving-data-e-cient-learning-via-intrinsic-feedback",
+      "status": "pending",
+      "title": "The Path of Self-Evolving Large Language Models: Achieving Data-Eﬃcient Learning via Intrinsic Feedback",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2510.09388v1",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2510.09388v1:reasoning-with-sampling-your-base-model-is-smarter-than-you-think",
+      "status": "pending",
+      "title": "Reasoning with Sampling: Your Base Model is Smarter Than You Think",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2510.09388v1",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2509.15194:evolving-language-models-without-labels-majority-drives-selection-novelty-promotes-variation",
+      "status": "pending",
+      "title": "Evolving Language Models without Labels: Majority Drives Selection, Novelty Promotes Variation",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2509.15194",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2509.15194:diversity-incentivized-exploration-for-versatile-reasoning",
+      "status": "pending",
+      "title": "DIVERSITY-INCENTIVIZED EXPLORATION FOR VERSATILE REASONING",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2509.15194",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2103.12726:policy-information-capacity-information-theoretic-measure-for-task-complexity-in-deep-reinforcement-learning",
+      "status": "pending",
+      "title": "Policy Information Capacity: Information-Theoretic Measure for Task Complexity in Deep Reinforcement Learning",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2103.12726",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2103.12726:jointly-reinforcing-diversity-and-quality-in-language-model-generations",
+      "status": "pending",
+      "title": "Jointly Reinforcing Diversity and Quality in Language Model Generations",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2103.12726",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:2103.12726:breaking-the-exploration-bottleneck-rubric-scaffolded-reinforcement-learning-for-general-llm-reasoning",
+      "status": "pending",
+      "title": "Breaking the Exploration Bottleneck: Rubric-Scaffolded Reinforcement Learning for General LLM Reasoning",
+      "reason": "Conflicting legacy arXiv mapping",
+      "legacy_source": "https://arxiv.org/abs/2103.12726",
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:no-source:a-survey-of-test-time-compute-from-intuitive-inference-to-deliberate-reasoning",
+      "status": "pending",
+      "title": "A Survey of Test-Time Compute: From Intuitive Inference to Deliberate Reasoning",
+      "reason": "Missing primary-source link",
+      "legacy_source": null,
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:no-source:latent-space-contrastive-reinforcement-learning-for-stable-and-efficient-llm-reasoning",
+      "status": "pending",
+      "title": "Latent-Space Contrastive Reinforcement Learning for Stable and Efficient LLM Reasoning",
+      "reason": "Missing primary-source link",
+      "legacy_source": null,
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:no-source:distribution-centric-policy-optimization-dominates-exploration-exploitation-trade-off",
+      "status": "pending",
+      "title": "Distribution-Centric Policy Optimization Dominates Exploration-Exploitation Trade-off",
+      "reason": "Missing primary-source link",
+      "legacy_source": null,
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:no-source:how-far-can-unsupervised-rlvr-scale-llm-training",
+      "status": "pending",
+      "title": "How Far Can Unsupervised RLVR Scale LLM Training?",
+      "reason": "Missing primary-source link",
+      "legacy_source": null,
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:no-source:cde-curiosity-driven-exploration-for-efficient-reinforcement-learning-in-large-language-models",
+      "status": "pending",
+      "title": "CDE: Curiosity-Driven Exploration for Efficient Reinforcement Learning in Large Language Models",
+      "reason": "Missing primary-source link",
+      "legacy_source": null,
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:no-source:navigate-the-unknown-enhancing-llm-reasoning-with-intrinsic-motivation-guided-exploration",
+      "status": "pending",
+      "title": "Navigate the Unknown: Enhancing LLM Reasoning with Intrinsic Motivation Guided Exploration",
+      "reason": "Missing primary-source link",
+      "legacy_source": null,
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:no-source:learning-to-explore-with-parameter-space-noise-a-deep-dive-into-parameter-space-noise-for-reinforcement-learning-with-verifiable-rewards",
+      "status": "pending",
+      "title": "Learning to Explore with Parameter-Space Noise: A Deep Dive into Parameter-Space Noise for Reinforcement Learning with Verifiable Rewards",
+      "reason": "Missing primary-source link",
+      "legacy_source": null,
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:no-source:evolution-strategies-as-a-scalable-alternative-to-reinforcement-learning",
+      "status": "pending",
+      "title": "Evolution Strategies as a Scalable Alternative to Reinforcement Learning",
+      "reason": "Missing primary-source link",
+      "legacy_source": null,
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:no-source:miner-mining-intrinsic-mastery-for-data-efficient-rl-in-large-reasoning-models",
+      "status": "pending",
+      "title": "MINER: Mining Intrinsic Mastery for Data-Efficient RL in Large Reasoning Models",
+      "reason": "Missing primary-source link",
+      "legacy_source": null,
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:no-source:pope-learning-to-reason-on-hard-problems-via-privileged-on-policy-exploration",
+      "status": "pending",
+      "title": "POPE: Learning to Reason on Hard Problems via Privileged On-Policy Exploration",
+      "reason": "Missing primary-source link",
+      "legacy_source": null,
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:no-source:rl-plus-countering-capability-boundary-collapse-of-llms-in-reinforcement-learning-with-hybrid-policy-optimization",
+      "status": "pending",
+      "title": "RL-Plus: Countering Capability Boundary Collapse of LLMs in Reinforcement Learning with Hybrid-policy Optimization",
+      "reason": "Missing primary-source link",
+      "legacy_source": null,
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:no-source:the-role-of-exploration-modules-in-small-language-models-for-knowledge-graph-question-answering",
+      "status": "pending",
+      "title": "The Role of Exploration Modules in Small Language Models for Knowledge Graph Question Answering",
+      "reason": "Missing primary-source link",
+      "legacy_source": null,
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:no-source:rlve-scaling-up-reinforcement-learning-for-language-models-with-adaptive-verifiable-environments",
+      "status": "pending",
+      "title": "RLVE: Scaling Up Reinforcement Learning for Language Models with Adaptive Verifiable Environments",
+      "reason": "Missing primary-source link",
+      "legacy_source": null,
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:no-source:learn-the-ropes-then-trust-the-wins-self-imitation-with-progressive-exploration-for-agentic-reinforcement-learning",
+      "status": "pending",
+      "title": "Learn the Ropes, Then Trust the Wins: Self-imitation with Progressive Exploration for Agentic Reinforcement Learning",
+      "reason": "Missing primary-source link",
+      "legacy_source": null,
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:no-source:reasoning-path-divergence-a-new-metric-and-curation-strategy-to-unlock-llm-diverse-thinking",
+      "status": "pending",
+      "title": "Reasoning Path Divergence: A New Metric and Curation Strategy to Unlock LLM Diverse Thinking",
+      "reason": "Missing primary-source link",
+      "legacy_source": null,
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:no-source:diversity-aware-policy-optimization-for-large-language-model-reasoning",
+      "status": "pending",
+      "title": "Diversity-Aware Policy Optimization for Large Language Model Reasoning",
+      "reason": "Missing primary-source link",
+      "legacy_source": null,
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:no-source:diversity-driven-exploration-strategy-for-deep-reinforcement-learning",
+      "status": "pending",
+      "title": "Diversity-Driven Exploration Strategy for Deep Reinforcement Learning",
+      "reason": "Missing primary-source link",
+      "legacy_source": null,
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:no-source:edge-grpo-entropy-driven-grpo-with-guided-error-correction-for-advantage-diversity",
+      "status": "pending",
+      "title": "EDGE-GRPO: Entropy-Driven GRPO with Guided Error Correction for Advantage Diversity",
+      "reason": "Missing primary-source link",
+      "legacy_source": null,
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:no-source:intent-factored-generation-unleashing-the-diversity-in-your-language-model",
+      "status": "pending",
+      "title": "Intent Factored Generation: Unleashing the Diversity in Your Language Model",
+      "reason": "Missing primary-source link",
+      "legacy_source": null,
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:no-source:qudsim-quantifying-discourse-similarities-in-llm-generated-text",
+      "status": "pending",
+      "title": "QUDsim: Quantifying Discourse Similarities in LLM-Generated Text",
+      "reason": "Missing primary-source link",
+      "legacy_source": null,
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:no-source:dra-grpo-exploring-diversity-aware-reward-adjustment-for-r1-zero-like-training-of-large-language-models",
+      "status": "pending",
+      "title": "DRA-GRPO: Exploring Diversity-Aware Reward Adjustment for R1-Zero-Like Training of Large Language Models",
+      "reason": "Missing primary-source link",
+      "legacy_source": null,
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:no-source:can-grpo-help-llms-transcend-their-pretraining-origin",
+      "status": "pending",
+      "title": "Can GRPO Help LLMs Transcend Their Pretraining Origin?",
+      "reason": "Missing primary-source link",
+      "legacy_source": null,
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "legacy:no-source:justrl-scaling-a-1-5b-llm-with-a-simple-rl-recipe",
+      "status": "pending",
+      "title": "JustRL: Scaling a 1.5B LLM with a Simple RL Recipe",
+      "reason": "Missing primary-source link",
+      "legacy_source": null,
+      "next_step": "Verify the exact title and primary source before taxonomy review."
+    }
+  ]
+}
