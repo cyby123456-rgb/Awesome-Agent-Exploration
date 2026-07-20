@@ -6,6 +6,7 @@ from __future__ import annotations
 import json
 from collections import Counter
 from pathlib import Path
+from urllib.parse import quote
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -113,6 +114,16 @@ TAG_DIMENSIONS = [
     ("Setting", "math; code; multimodal; creative/open-ended; web; tool use; knowledge graph; embodied; multi-agent"),
 ]
 
+BADGE_COLORS = {
+    "phase": "2563EB",
+    "level": "7C3AED",
+    "signal": "0F766E",
+    "mechanism": "D97706",
+    "problem": "DC2626",
+    "setting": "4B5563",
+    "type": "475569",
+}
+
 
 def load_catalog() -> dict:
     return json.loads(DATA_PATH.read_text(encoding="utf-8"))
@@ -126,16 +137,35 @@ def area_description_lines(area: str) -> list[str]:
     return lines
 
 
-def compact_tags(paper: dict) -> str:
-    values: list[str] = []
+def tag_badge(dimension: str, value: str) -> str:
+    """Render taxonomy metadata as a compact, color-coded Shields badge."""
+    label = quote(dimension, safe="")
+    message = quote(value, safe="")
+    color = BADGE_COLORS[dimension]
+    return (
+        f"![{dimension}: {value}]"
+        f"(https://img.shields.io/badge/{label}-{message}-{color}?style=flat-square)"
+    )
+
+
+def tags_for(paper: dict, *, compact: bool) -> str:
+    values: list[tuple[str, str]] = []
     # Keep the compact view informative: show the main phase, at most two
     # intervention levels, then prioritize exploration signals and operators.
-    values.extend(paper.get("phase", [])[:1])
-    values.extend(paper.get("level", [])[:2])
-    values.extend(paper.get("signal", [])[:2])
-    values.extend(paper.get("mechanism", [])[:2])
+    values.extend(("phase", value) for value in paper.get("phase", [])[:1])
+    values.extend(("level", value) for value in paper.get("level", [])[:2])
+    values.extend(("signal", value) for value in paper.get("signal", [])[:2])
+    values.extend(("mechanism", value) for value in paper.get("mechanism", [])[:2])
+    if not compact:
+        values = [
+            (dimension, value)
+            for dimension in ("phase", "level", "signal", "mechanism", "problem", "setting")
+            for value in paper.get(dimension, [])
+        ]
     unique = list(dict.fromkeys(values))
-    return " ".join(f"`{value}`" for value in unique[:6])
+    if compact:
+        unique = unique[:6]
+    return " ".join(tag_badge(dimension, value) for dimension, value in unique)
 
 
 def papers_by_subtopic(papers: list[dict], area: str) -> dict[str, list[dict]]:
@@ -252,7 +282,7 @@ def render_readme(catalog: dict) -> str:
     for paper in featured:
         lines.append(
             f"- **[{paper['title']}]({paper['url']})** — {source_label(paper)} · "
-            f"{AREA_LABELS[paper['primary_area']]} · {compact_tags(paper)}"
+            f"{AREA_LABELS[paper['primary_area']]} · {tags_for(paper, compact=True)}"
         )
 
     lines.extend(["", "<a id=\"catalog\"></a>", "", "## Catalog"])
@@ -268,7 +298,7 @@ def render_readme(catalog: dict) -> str:
             for paper in grouped:
                 lines.append(
                     f"| {source_label(paper)} | [{paper['title']}]({paper['url']}) | "
-                    f"{compact_tags(paper)} |"
+                    f"{tags_for(paper, compact=True)} |"
                 )
             lines.append("")
 
@@ -335,18 +365,11 @@ def render_detailed(catalog: dict) -> str:
                     authors = paper["authors"]
                     shown = ", ".join(authors[:8]) + (" et al." if len(authors) > 8 else "")
                     lines.append(f"  - Authors: {shown}")
-                lines.append(f"  - Type: `{paper['paper_type']}` · Date: `{paper.get('date', '')}`")
-                for key, label_name in (
-                    ("phase", "Phase"),
-                    ("level", "Level"),
-                    ("signal", "Signal"),
-                    ("mechanism", "Mechanism"),
-                    ("problem", "Problem"),
-                    ("setting", "Setting"),
-                ):
-                    values = paper.get(key, [])
-                    if values:
-                        lines.append(f"  - {label_name}: " + " ".join(f"`{v}`" for v in values))
+                lines.append(
+                    f"  - {tag_badge('type', paper['paper_type'])} · Date: `{paper.get('date', '')}`"
+                )
+                if tags := tags_for(paper, compact=False):
+                    lines.append(f"  - {tags}")
                 if paper.get("rationale"):
                     lines.append(f"  - {paper['rationale']}")
             lines.append("")
