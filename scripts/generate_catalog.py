@@ -62,6 +62,48 @@ AREA_DESCRIPTIONS = {
     ],
 }
 
+SUBTOPIC_LABELS = {
+    "llm-exploration": {
+        "decoding-sampling": "Decoding & Sampling",
+        "search-deliberation": "Search & Deliberation",
+        "representation-steering": "Representation & Latent Steering",
+        "diversity-coverage": "Diversity & Coverage",
+    },
+    "rlvr-exploration": {
+        "entropy-distribution": "Entropy & Distribution Control",
+        "credit-optimization": "Credit Assignment & Optimization",
+        "reward-rollout": "Reward & Rollout Shaping",
+        "capability-dynamics": "Capability Boundaries & Training Dynamics",
+    },
+    "data-task-curriculum-exploration": {
+        "data-selection-prompting": "Data Selection & Prompt Exploration",
+        "task-synthesis-curriculum": "Task Synthesis & Curriculum",
+        "agent-task-environments": "Agent Task & Environment Generation",
+    },
+    "agentic-exploration": {
+        "web-tools-gui": "Web, Tools & GUI",
+        "planning-interaction": "Planning & Interactive Search",
+        "embodied-environments": "Embodied & Simulated Environments",
+    },
+    "self-improvement-population-exploration": {
+        "self-play-coevolution": "Self-Play & Co-Evolution",
+        "multi-agent-ensembles": "Multi-Agent & Ensemble Exploration",
+        "iterative-self-improvement": "Iterative Self-Improvement",
+    },
+    "memory-knowledge-exploration": {
+        "replay-trajectory-memory": "Replay & Trajectory Memory",
+        "retrieval-long-context": "Retrieval & Long-Context Memory",
+        "knowledge-graph-memory": "Knowledge-Graph Memory",
+        "memory-guided-planning": "Memory-Guided Planning",
+    },
+    "understanding-evaluation": {
+        "theory-training-dynamics": "Theory & Training Dynamics",
+        "benchmarks-metrics": "Benchmarks & Metrics",
+        "surveys-position": "Surveys & Position Papers",
+        "capability-boundaries": "Capability Boundaries",
+    },
+}
+
 TAG_DIMENSIONS = [
     ("Phase", "data generation; supervised post-training; RL training; inference; test-time adaptation; continual/self-improvement"),
     ("Level", "token; response/sequence; trajectory/action; latent/representation; policy distribution; data/task; population"),
@@ -94,6 +136,13 @@ def compact_tags(paper: dict) -> str:
     values.extend(paper.get("mechanism", [])[:2])
     unique = list(dict.fromkeys(values))
     return " ".join(f"`{value}`" for value in unique[:6])
+
+
+def papers_by_subtopic(papers: list[dict], area: str) -> dict[str, list[dict]]:
+    groups: dict[str, list[dict]] = {key: [] for key in SUBTOPIC_LABELS[area]}
+    for paper in papers:
+        groups[paper["subtopic"]].append(paper)
+    return {key: values for key, values in groups.items() if values}
 
 
 def source_label(paper: dict) -> str:
@@ -191,6 +240,8 @@ def render_readme(catalog: dict) -> str:
         "",
         "## Start here",
         "",
+        "> These are signposts into the full catalog. Every highlighted paper—including all conference papers—also appears once in its corresponding category and subcategory below.",
+        "",
     ]
 
     featured = sorted(
@@ -212,12 +263,14 @@ def render_readme(catalog: dict) -> str:
             key=lambda p: (p.get("date", ""), p["title"]),
             reverse=True,
         )
-        lines.extend(["| Evidence | Paper | Research lens |", "|---|---|---|"])
-        for paper in selected:
-            lines.append(
-                f"| {source_label(paper)} | [{paper['title']}]({paper['url']}) | "
-                f"{compact_tags(paper)} |"
-            )
+        for subtopic, grouped in papers_by_subtopic(selected, area).items():
+            lines.extend([f"### {SUBTOPIC_LABELS[area][subtopic]} · {len(grouped)} papers", "", "| Evidence | Paper | Research lens |", "|---|---|---|"])
+            for paper in grouped:
+                lines.append(
+                    f"| {source_label(paper)} | [{paper['title']}]({paper['url']}) | "
+                    f"{compact_tags(paper)} |"
+                )
+            lines.append("")
 
     lines.extend(
         [
@@ -252,7 +305,7 @@ def render_readme(catalog: dict) -> str:
             "",
         ]
     )
-    return "\n".join(lines)
+    return "\n".join(lines).rstrip() + "\n"
 
 
 def render_detailed(catalog: dict) -> str:
@@ -272,30 +325,33 @@ def render_detailed(catalog: dict) -> str:
             key=lambda p: (p.get("date", ""), p["title"]),
             reverse=True,
         )
-        for paper in selected:
-            lines.append(
-                f"- **[{paper['title']}]({paper['url']})** — {source_label(paper)}"
-            )
-            if paper.get("authors"):
-                authors = paper["authors"]
-                shown = ", ".join(authors[:8]) + (" et al." if len(authors) > 8 else "")
-                lines.append(f"  - Authors: {shown}")
-            lines.append(f"  - Type: `{paper['paper_type']}` · Date: `{paper.get('date', '')}`")
-            for key, label_name in (
-                ("phase", "Phase"),
-                ("level", "Level"),
-                ("signal", "Signal"),
-                ("mechanism", "Mechanism"),
-                ("problem", "Problem"),
-                ("setting", "Setting"),
-            ):
-                values = paper.get(key, [])
-                if values:
-                    lines.append(f"  - {label_name}: " + " ".join(f"`{v}`" for v in values))
-            if paper.get("rationale"):
-                lines.append(f"  - {paper['rationale']}")
+        for subtopic, grouped in papers_by_subtopic(selected, area).items():
+            lines.extend([f"### {SUBTOPIC_LABELS[area][subtopic]} · {len(grouped)} papers", ""])
+            for paper in grouped:
+                lines.append(
+                    f"- **[{paper['title']}]({paper['url']})** — {source_label(paper)}"
+                )
+                if paper.get("authors"):
+                    authors = paper["authors"]
+                    shown = ", ".join(authors[:8]) + (" et al." if len(authors) > 8 else "")
+                    lines.append(f"  - Authors: {shown}")
+                lines.append(f"  - Type: `{paper['paper_type']}` · Date: `{paper.get('date', '')}`")
+                for key, label_name in (
+                    ("phase", "Phase"),
+                    ("level", "Level"),
+                    ("signal", "Signal"),
+                    ("mechanism", "Mechanism"),
+                    ("problem", "Problem"),
+                    ("setting", "Setting"),
+                ):
+                    values = paper.get(key, [])
+                    if values:
+                        lines.append(f"  - {label_name}: " + " ".join(f"`{v}`" for v in values))
+                if paper.get("rationale"):
+                    lines.append(f"  - {paper['rationale']}")
+            lines.append("")
         lines.append("")
-    return "\n".join(lines)
+    return "\n".join(lines).rstrip() + "\n"
 
 
 def main() -> None:

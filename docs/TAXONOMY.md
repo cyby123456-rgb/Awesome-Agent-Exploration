@@ -101,6 +101,21 @@ Tags preserve secondary aspects, so a paper does not need multiple primary
 areas. When the boundary remains ambiguous, classify by the component evaluated
 in the main experiments and state the choice in the curation rationale.
 
+## Subtopics
+
+Every paper also has one subtopic within its primary area. Subtopics are a
+navigation aid, not a replacement for the orthogonal tags below.
+
+| Primary area | Subtopics |
+|---|---|
+| LLM Generation & Inference | Decoding & Sampling; Search & Deliberation; Representation & Latent Steering; Diversity & Coverage |
+| Policy & RLVR | Entropy & Distribution Control; Credit Assignment & Optimization; Reward & Rollout Shaping; Capability Boundaries & Training Dynamics |
+| Data, Task & Curriculum | Data Selection & Prompt Exploration; Task Synthesis & Curriculum; Agent Task & Environment Generation |
+| Agentic & Environment | Web, Tools & GUI; Planning & Interactive Search; Embodied & Simulated Environments |
+| Self-Improvement & Population | Self-Play & Co-Evolution; Multi-Agent & Ensemble Exploration; Iterative Self-Improvement |
+| Memory & Knowledge | Replay & Trajectory Memory; Retrieval & Long-Context Memory; Knowledge-Graph Memory; Memory-Guided Planning |
+| Understanding, Evaluation & Benchmarks | Theory & Training Dynamics; Benchmarks & Metrics; Surveys & Position Papers; Capability Boundaries |
+
 ## Tag dimensions
 
 Each tag dimension answers a different question. Multiple values within a

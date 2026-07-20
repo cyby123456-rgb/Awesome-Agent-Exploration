@@ -25,6 +25,15 @@ AREAS = {
     "understanding-evaluation",
 }
 PAPER_TYPES = {"method", "analysis", "benchmark", "survey", "position"}
+SUBTOPICS = {
+    "llm-exploration": {"decoding-sampling", "search-deliberation", "representation-steering", "diversity-coverage"},
+    "rlvr-exploration": {"entropy-distribution", "credit-optimization", "reward-rollout", "capability-dynamics"},
+    "data-task-curriculum-exploration": {"data-selection-prompting", "task-synthesis-curriculum", "agent-task-environments"},
+    "agentic-exploration": {"web-tools-gui", "planning-interaction", "embodied-environments"},
+    "self-improvement-population-exploration": {"self-play-coevolution", "multi-agent-ensembles", "iterative-self-improvement"},
+    "memory-knowledge-exploration": {"replay-trajectory-memory", "retrieval-long-context", "knowledge-graph-memory", "memory-guided-planning"},
+    "understanding-evaluation": {"theory-training-dynamics", "benchmarks-metrics", "surveys-position", "capability-boundaries"},
+}
 OFFICIAL_2026_HOSTS = {"aclanthology.org", "iclr.cc", "icml.cc"}
 TAG_VALUES = {
     "phase": {"data-generation", "supervised-post-training", "rl-training", "inference", "test-time-adaptation", "continual/self-improvement"},
@@ -51,12 +60,14 @@ def main() -> int:
 
     for index, paper in enumerate(papers):
         label = paper.get("title", f"record #{index}")
-        required = ("id", "title", "url", "date", "primary_area", "paper_type", "phase", "level")
+        required = ("id", "title", "url", "date", "primary_area", "subtopic", "paper_type", "phase", "level")
         for field in required:
             if not paper.get(field):
                 errors.append(f"{label}: missing {field}")
         if paper.get("primary_area") not in AREAS:
             errors.append(f"{label}: invalid primary_area {paper.get('primary_area')!r}")
+        elif paper.get("subtopic") not in SUBTOPICS[paper["primary_area"]]:
+            errors.append(f"{label}: invalid subtopic {paper.get('subtopic')!r} for {paper['primary_area']}")
         if paper.get("paper_type") not in PAPER_TYPES:
             errors.append(f"{label}: invalid paper_type {paper.get('paper_type')!r}")
         if not re.fullmatch(r"\d{4}(?:-\d{2}(?:-\d{2})?)?", paper.get("date", "")):

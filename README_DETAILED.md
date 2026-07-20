@@ -10,14 +10,107 @@ This category covers exploration that happens while a language model is generati
 
 The central question is how to search a model's existing generative distribution more broadly, safely, or efficiently. Papers belong here when the main contribution improves or analyzes candidate generation, reasoning-path search, or output diversity without making RL post-training the core mechanism.
 
-- **[From Noise to Diversity: Random Embedding Injection in LLM Reasoning](https://arxiv.org/abs/2605.11936)** — arXiv
-  - Authors: Heejun Kim, Seungpil Lee, Jewon Yeom, Jaewon Sok, Seonghyeon Park, Jeongjae Park, Taesup Kim, Sundong Kim
-  - Type: `method` · Date: `2026-05-12`
+### Decoding & Sampling · 13 papers
+
+- **[Thermometer of Thoughts: Enhancing LLM’s Exploration via Attention Temperature Modulation](https://aclanthology.org/2026.acl-long.200/)** — **ACL 2026 Main**
+  - Authors: Zhiyuan Yu, Shijian Xiao, Cam-Tu Nguyen, Zhangyue Yin, Lekai Xing, Wenzhong Li, Sanglu Lu
+  - Type: `method` · Date: `2026`
   - Phase: `inference`
-  - Level: `latent/representation`
-  - Signal: `semantic-diversity`
-  - Mechanism: `noise/perturbation`
-  - Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.
+  - Level: `response/sequence`
+  - Signal: `entropy/probability`
+  - Mechanism: `temperature-control`
+  - Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.
+- **[Scalable Power Sampling: Unlocking Efficient, Training-Free Reasoning for LLMs via Distribution Sharpening](https://icml.cc/virtual/2026/poster/63925)** — **ICML 2026**
+  - Authors: Xiaotong Ji, Rasul Tutunov, Matthieu Zimmer, Haitham Bou Ammar
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `response/sequence`
+  - Signal: `entropy/probability`
+  - Mechanism: `sampling/decoding`
+  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, novelty/curiosity, reward/advantage.
+- **[Sample Smart, Not Hard: Correctness-First Decoding for Better Reasoning in LLMs](https://iclr.cc/virtual/2026/poster/10007335)** — **ICLR 2026**
+  - Authors: Xueyan Li, Guinan Su, Mrinmaya Sachan, Jonas Geiping
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `response/sequence`
+  - Mechanism: `sampling/decoding`
+  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
+- **[Reliability-Aware Adaptive Self-Consistency for Efficient Sampling in LLM Reasoning](https://aclanthology.org/2026.findings-acl.1085/)** — **ACL 2026 Findings**
+  - Authors: Junseok Kim, Nakyeong Yang, Kyungmin Min, Kyomin Jung
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `response/sequence`
+  - Mechanism: `sampling/decoding`
+  - Officially accepted at ACL 2026 Findings. Exploration focus: uncertainty/confidence, sampling/decoding.
+- **[One-shot Entropy Minimization for Language Model Reasoning](https://icml.cc/virtual/2026/poster/66725)** — **ICML 2026**
+  - Authors: Zitian Gao, Yilong Chen, Haoming Luo, Joey Zhou, Bryan Dai
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `response/sequence`
+  - Signal: `entropy/probability`
+  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, gradient-reshaping.
+- **[ModeX: Evaluator-Free Best-of-N Selection for Open-Ended Generation](https://aclanthology.org/2026.acl-long.655/)** — **ACL 2026 Main**
+  - Authors: Hyeong Kyu Choi, Sharon Li
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `response/sequence`
+  - Mechanism: `sampling/decoding`
+  - Setting: `creative/open-ended`
+  - Officially accepted at ACL 2026 Main. Exploration focus: reward/advantage, disagreement, sampling/decoding.
+- **[From Bits to Rounds: Parallel Decoding with Exploration for Diffusion Language Models](https://icml.cc/virtual/2026/poster/65555)** — **ICML 2026**
+  - Authors: Hengyu Fu, Baihe Huang, Virginia Adams, Charles Wang, Junkeun Yi, Mohammad Mahdi Kamani, Venkat Krishna Srinivasan, Jiantao Jiao
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `response/sequence`
+  - Mechanism: `sampling/decoding`
+  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
+- **[Entropy-Aware On-Policy Distillation of Language Models](https://icml.cc/virtual/2026/poster/64855)** — **ICML 2026**
+  - Authors: Woogyeol Jin, Taywon Min, Yongjin Yang, Swanand Kadhe, Yi Zhou, Dennis Wei, Nathalie Baracaldo, Kimin Lee
+  - Type: `method` · Date: `2026`
+  - Phase: `supervised-post-training` `rl-training` `inference`
+  - Level: `policy-distribution`
+  - Signal: `entropy/probability`
+  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
+- **[EAGer: Entropy-Aware GEneRation for Adaptive Inference-Time Scaling](https://icml.cc/virtual/2026/poster/65185)** — **ICML 2026**
+  - Authors: Daniel Scalena, Leonidas Zotos, Elisabetta Fersini, Malvina Nissim, Ahmet Üstün
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `response/sequence`
+  - Signal: `entropy/probability`
+  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, sampling/decoding.
+- **[ConMA : Confidence-Guided Kernel Sampling with Multi-Stage Aggregation for LLM Reasoning](https://aclanthology.org/2026.findings-acl.1475/)** — **ACL 2026 Findings**
+  - Authors: Yinuo Wang, Qingjie Li, Wenyao Cui, Qiuchi Li, Zhang Huaping
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `response/sequence`
+  - Signal: `uncertainty/confidence`
+  - Mechanism: `sampling/decoding`
+  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
+- **[Beyond Rejection Sampling: Trajectory Fusion for Scaling Mathematical Reasoning](https://aclanthology.org/2026.findings-acl.390/)** — **ACL 2026 Findings**
+  - Authors: Jie Deng, Hanshuang Tong, Jun Li, Shining Liang, Ning Wu, Hongzhi Li, Yutao Xie
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `trajectory/action`
+  - Mechanism: `sampling/decoding`
+  - Setting: `math`
+  - Officially accepted at ACL 2026 Findings. Exploration focus: semantic-diversity, sampling/decoding.
+- **[The Road Less Traveled: Enhancing Exploration in LLMs via Sequential Sampling](https://arxiv.org/abs/2510.15502)** — arXiv
+  - Authors: Shijia Kang, Muhan Zhang
+  - Type: `method` · Date: `2025-10-17`
+  - Phase: `inference`
+  - Level: `response/sequence`
+  - Mechanism: `sampling/decoding`
+  - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
+- **[Evolving Language Models without Labels: Majority Drives Selection, Novelty Promotes Variation](https://arxiv.org/abs/2509.15194)** — arXiv
+  - Authors: Yujun Zhou, Zhenwen Liang, Haolin Liu, Wenhao Yu, Kishan Panaganti, Linfeng Song, Dian Yu, Xiangliang Zhang et al.
+  - Type: `method` · Date: `2025-09-18`
+  - Phase: `inference`
+  - Level: `response/sequence`
+  - Signal: `novelty/curiosity`
+  - Exploration focus: entropy/probability, uncertainty/confidence, novelty/curiosity.
+
+### Search & Deliberation · 23 papers
+
 - **[e3: Learning to Explore Enables Extrapolation of Test-Time Compute for LLMs](https://iclr.cc/virtual/2026/poster/10008718)** — **ICLR 2026**
   - Authors: Amrith Setlur, Matthew Yang, Charlie Snell, Jeremiah Greer, Ian Wu, Virginia Smith, Max Simchowitz, Aviral Kumar
   - Type: `method` · Date: `2026`
@@ -25,15 +118,6 @@ The central question is how to search a model's existing generative distribution
   - Level: `response/sequence`
   - Mechanism: `structured-search`
   - Officially accepted at ICLR 2026. Exploration focus: gradient-reshaping, curriculum/task-generation, structured-search.
-- **[Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity](https://icml.cc/virtual/2026/poster/60489)** — **ICML 2026**
-  - Authors: Jiayi Zhang, Simon Yu, Derek Chong, Anthony Sicilia, Michael Tomz, Christopher Manning, Weiyan Shi
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `response/sequence`
-  - Signal: `semantic-diversity`
-  - Mechanism: `sampling/decoding`
-  - Problem: `mode-collapse`
-  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.
 - **[Uncertainty-Aware Test-Time Search for Optimization Problem Solving](https://aclanthology.org/2026.acl-long.1975/)** — **ACL 2026 Main**
   - Authors: Linlin Yu, Xujiang Zhao, Dong Li, Yanchi Liu, Wei Cheng, Zhengzhang Chen, Chen Zhao, Feng Chen et al.
   - Type: `method` · Date: `2026`
@@ -57,28 +141,6 @@ The central question is how to search a model's existing generative distribution
   - Level: `response/sequence`
   - Mechanism: `sampling/decoding` `tree-search/branching` `backtracking/resampling`
   - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, sampling/decoding, noise/perturbation.
-- **[Thermometer of Thoughts: Enhancing LLM’s Exploration via Attention Temperature Modulation](https://aclanthology.org/2026.acl-long.200/)** — **ACL 2026 Main**
-  - Authors: Zhiyuan Yu, Shijian Xiao, Cam-Tu Nguyen, Zhangyue Yin, Lekai Xing, Wenzhong Li, Sanglu Lu
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `response/sequence`
-  - Signal: `entropy/probability`
-  - Mechanism: `temperature-control`
-  - Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.
-- **[The Geometric Reasoner: Manifold-Informed Latent Foresight Search for Long-Context Reasoning](https://icml.cc/virtual/2026/poster/61787)** — **ICML 2026**
-  - Authors: Ren Zhuang, Ben Wang, Shuifa Sun
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `latent/representation`
-  - Mechanism: `structured-search`
-  - Officially accepted at ICML 2026. Exploration focus: semantic-diversity, coverage, regularization.
-- **[TS$^2$: Training with Sparsemax+, Testing with Softmax for Accurate and Diverse LLM Fine-Tuning](https://iclr.cc/virtual/2026/poster/10010811)** — **ICLR 2026**
-  - Authors: Ziyang Xu, Ananthu Rajendran Pillai, Yinghua Yao, Yuangang Pan
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `response/sequence`
-  - Signal: `semantic-diversity`
-  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.
 - **[Student Guides Teacher: Weak-to-Strong Inference via Spectral Orthogonal Exploration](https://aclanthology.org/2026.acl-long.761/)** — **ACL 2026 Main**
   - Authors: Dayu Wang, Jiaye Yang, Weikang Li, Jiahui Liang, Yang Li, Deguo Xia, Jizhou Huang
   - Type: `method` · Date: `2026`
@@ -94,66 +156,6 @@ The central question is how to search a model's existing generative distribution
   - Mechanism: `structured-search`
   - Setting: `code`
   - Officially accepted at ACL 2026 Main. Exploration focus: novelty/curiosity, tree-search/branching, replay/memory.
-- **[Scalable Power Sampling: Unlocking Efficient, Training-Free Reasoning for LLMs via Distribution Sharpening](https://icml.cc/virtual/2026/poster/63925)** — **ICML 2026**
-  - Authors: Xiaotong Ji, Rasul Tutunov, Matthieu Zimmer, Haitham Bou Ammar
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `response/sequence`
-  - Signal: `entropy/probability`
-  - Mechanism: `sampling/decoding`
-  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, novelty/curiosity, reward/advantage.
-- **[Sample Smart, Not Hard: Correctness-First Decoding for Better Reasoning in LLMs](https://iclr.cc/virtual/2026/poster/10007335)** — **ICLR 2026**
-  - Authors: Xueyan Li, Guinan Su, Mrinmaya Sachan, Jonas Geiping
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `response/sequence`
-  - Mechanism: `sampling/decoding`
-  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
-- **[SED-SFT: Selectively Encouraging Diversity in Supervised Fine-Tuning](https://aclanthology.org/2026.acl-short.54/)** — **ACL 2026 Main**
-  - Authors: Yijie Chen, Yijin Liu, Fandong Meng
-  - Type: `method` · Date: `2026`
-  - Phase: `supervised-post-training` `inference`
-  - Level: `response/sequence`
-  - Signal: `semantic-diversity`
-  - Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, semantic-diversity, regularization.
-- **[Representation-Based Exploration for Language Models: From Test-Time to Post-Training](https://iclr.cc/virtual/2026/poster/10009438)** — **ICLR 2026**
-  - Authors: Jens Tuyls, Dylan Foster, Akshay Krishnamurthy, Jordan Ash
-  - Type: `method` · Date: `2026`
-  - Phase: `inference` `rl-training`
-  - Level: `latent/representation` `response/sequence`
-  - Signal: `semantic-diversity` `novelty/curiosity`
-  - Mechanism: `reward-shaping/intrinsic-reward` `sampling/decoding`
-  - Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity, structured-search.
-- **[Reliability-Aware Adaptive Self-Consistency for Efficient Sampling in LLM Reasoning](https://aclanthology.org/2026.findings-acl.1085/)** — **ACL 2026 Findings**
-  - Authors: Junseok Kim, Nakyeong Yang, Kyungmin Min, Kyomin Jung
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `response/sequence`
-  - Mechanism: `sampling/decoding`
-  - Officially accepted at ACL 2026 Findings. Exploration focus: uncertainty/confidence, sampling/decoding.
-- **[Reasoning with Sampling: Your Base Model is Smarter Than You Think](https://iclr.cc/virtual/2026/poster/10009093)** — **ICLR 2026**
-  - Authors: Aayush Karan, Yilun Du
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `response/sequence`
-  - Signal: `entropy/probability` `semantic-diversity`
-  - Mechanism: `sampling/decoding`
-  - Problem: `mode-collapse` `capability-boundary`
-  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
-- **[Post-training Large Language Models for Diverse High-Quality Responses](https://iclr.cc/virtual/2026/poster/10010944)** — **ICLR 2026**
-  - Authors: Yilei Chen, Souradip Chakraborty, Lorenz Wolf, Ioannis Paschalidis, Aldo Pacchiano
-  - Type: `method` · Date: `2026`
-  - Phase: `supervised-post-training` `inference`
-  - Level: `response/sequence`
-  - Signal: `semantic-diversity`
-  - Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity.
-- **[One-shot Entropy Minimization for Language Model Reasoning](https://icml.cc/virtual/2026/poster/66725)** — **ICML 2026**
-  - Authors: Zitian Gao, Yilong Chen, Haoming Luo, Joey Zhou, Bryan Dai
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `response/sequence`
-  - Signal: `entropy/probability`
-  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, gradient-reshaping.
 - **[Neural Chain-of-Thought Search: Searching the Optimal Reasoning Path to Enhance Large Language Models](https://aclanthology.org/2026.findings-acl.1149/)** — **ACL 2026 Findings**
   - Authors: Guoming Ling, Zhongzhan Huang, Yupei Lin, Junxin Li, Shanshan Zhong, Hefeng Wu, Liang Lin
   - Type: `method` · Date: `2026`
@@ -161,35 +163,6 @@ The central question is how to search a model's existing generative distribution
   - Level: `response/sequence`
   - Mechanism: `structured-search`
   - Officially accepted at ACL 2026 Findings. Exploration focus: semantic-diversity, structured-search.
-- **[ModeX: Evaluator-Free Best-of-N Selection for Open-Ended Generation](https://aclanthology.org/2026.acl-long.655/)** — **ACL 2026 Main**
-  - Authors: Hyeong Kyu Choi, Sharon Li
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `response/sequence`
-  - Mechanism: `sampling/decoding`
-  - Setting: `creative/open-ended`
-  - Officially accepted at ACL 2026 Main. Exploration focus: reward/advantage, disagreement, sampling/decoding.
-- **[Learning Diverse Responses with Prefix-Conditioned Supervised Fine-Tuning](https://aclanthology.org/2026.acl-long.9/)** — **ACL 2026 Main**
-  - Authors: Zhiyuan Fan, Guanqiao Chen, Yanyi Huang, Mingkuan Zhao, Dadi Guo, Yi R. Fung
-  - Type: `method` · Date: `2026`
-  - Phase: `supervised-post-training` `inference`
-  - Level: `response/sequence`
-  - Signal: `semantic-diversity`
-  - Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.
-- **[Large Language Models Explore by Latent Distilling](https://icml.cc/virtual/2026/poster/63542)** — **ICML 2026**
-  - Authors: Yuanhao Zeng, Ao Lu, Lufei Li, Zheng Zhang, Yexin Li, Kan Ren
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `latent/representation`
-  - Mechanism: `structured-search`
-  - Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, semantic-diversity, sampling/decoding.
-- **[Language of Thought Shapes Output Diversity in Large Language Models](https://aclanthology.org/2026.acl-long.628/)** — **ACL 2026 Main**
-  - Authors: Shaoyang Xu, Wenxuan Zhang
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `response/sequence`
-  - Signal: `semantic-diversity`
-  - Officially accepted at ACL 2026 Main. Exploration focus: novelty/curiosity, semantic-diversity, coverage.
 - **[HyPER: Bridging Exploration and Exploitation for Scalable LLM Reasoning with Hypothesis Path Expansion and Reduction](https://icml.cc/virtual/2026/poster/65181)** — **ICML 2026**
   - Authors: Shengxuan Qiu, Haochen Huang, Shuzhang Zhong, Pengfei Zuo, Meng Li
   - Type: `method` · Date: `2026`
@@ -198,29 +171,6 @@ The central question is how to search a model's existing generative distribution
   - Mechanism: `tree-search/branching`
   - Problem: `exploration-exploitation`
   - Officially accepted at ICML 2026. Exploration focus: uncertainty/confidence, semantic-diversity, sampling/decoding.
-- **[GuidedSampling: Steering LLMs Towards Diverse Candidate Solutions at Inference-Time](https://iclr.cc/virtual/2026/poster/10009336)** — **ICLR 2026**
-  - Authors: Divij Handa, Mihir Parmar, Aswin RRV, Md Nayem Uddin, Hamid Palangi, Chitta Baral
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `response/sequence`
-  - Signal: `semantic-diversity`
-  - Mechanism: `sampling/decoding` `noise/perturbation`
-  - Officially accepted at ICLR 2026. Exploration focus: semantic-diversity, sampling/decoding, noise/perturbation.
-- **[From Bits to Rounds: Parallel Decoding with Exploration for Diffusion Language Models](https://icml.cc/virtual/2026/poster/65555)** — **ICML 2026**
-  - Authors: Hengyu Fu, Baihe Huang, Virginia Adams, Charles Wang, Junkeun Yi, Mohammad Mahdi Kamani, Venkat Krishna Srinivasan, Jiantao Jiao
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `response/sequence`
-  - Mechanism: `sampling/decoding`
-  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
-- **[Exploring Diverse Generation Paths via Inference-time Stiefel Activation Steering](https://iclr.cc/virtual/2026/poster/10006851)** — **ICLR 2026**
-  - Authors: Dongxuan Zhu, Ly Khanh, Andy Yat-Ming Cheung, Man-Chung Yue, Viet Anh Nguyen
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `response/sequence` `latent/representation`
-  - Signal: `semantic-diversity`
-  - Mechanism: `noise/perturbation`
-  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.
 - **[Escaping Mode Collapse in LLM Generation](https://icml.cc/virtual/2026/poster/65524)** — **ICML 2026**
   - Authors: Xin Du, Kumiko Tanaka-Ishii
   - Type: `method` · Date: `2026`
@@ -237,13 +187,6 @@ The central question is how to search a model's existing generative distribution
   - Signal: `entropy/probability`
   - Mechanism: `sampling/decoding` `tree-search/branching`
   - Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, sampling/decoding.
-- **[Entropy-Aware On-Policy Distillation of Language Models](https://icml.cc/virtual/2026/poster/64855)** — **ICML 2026**
-  - Authors: Woogyeol Jin, Taywon Min, Yongjin Yang, Swanand Kadhe, Yi Zhou, Dennis Wei, Nathalie Baracaldo, Kimin Lee
-  - Type: `method` · Date: `2026`
-  - Phase: `supervised-post-training` `rl-training` `inference`
-  - Level: `policy-distribution`
-  - Signal: `entropy/probability`
-  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
 - **[Efficient Test-Time Scaling via Hierarchical Search and Self-Verification for Discrete Diffusion Language Models](https://icml.cc/virtual/2026/poster/64102)** — **ICML 2026**
   - Authors: Jinbin Bai, Yixuan Li, Yuchen Zhu, Yi Xin, Qingyu Shi, Aosong Feng, Xiaohong Liu, Molei Tao et al.
   - Type: `method` · Date: `2026`
@@ -251,29 +194,6 @@ The central question is how to search a model's existing generative distribution
   - Level: `response/sequence`
   - Mechanism: `structured-search`
   - Officially accepted at ICML 2026. Exploration focus: uncertainty/confidence, semantic-diversity, sampling/decoding.
-- **[EAGer: Entropy-Aware GEneRation for Adaptive Inference-Time Scaling](https://icml.cc/virtual/2026/poster/65185)** — **ICML 2026**
-  - Authors: Daniel Scalena, Leonidas Zotos, Elisabetta Fersini, Malvina Nissim, Ahmet Üstün
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `response/sequence`
-  - Signal: `entropy/probability`
-  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, sampling/decoding.
-- **[Diversity Matters: Revisiting Test-Time Compute in Vision-Language Models](https://icml.cc/virtual/2026/poster/63569)** — **ICML 2026**
-  - Authors: Yijie Tong, Yifan Hou, Shaobo Cui, Antoine Bosselut, Mrinmaya Sachan
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `response/sequence`
-  - Signal: `semantic-diversity`
-  - Setting: `multimodal`
-  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
-- **[Diverse Text Decoding via Iterative Reweighting](https://iclr.cc/virtual/2026/poster/10011729)** — **ICLR 2026**
-  - Authors: Ruiqi Shi, Sinno Jialin Pan
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `response/sequence`
-  - Signal: `semantic-diversity`
-  - Mechanism: `sampling/decoding`
-  - Officially accepted at ICLR 2026. Exploration focus: semantic-diversity, sampling/decoding.
 - **[Diffuse Thinking: Exploring Diffusion Language Models as Efficient Thought Proposers for Reasoning](https://aclanthology.org/2026.acl-long.1231/)** — **ACL 2026 Main**
   - Authors: Chenyang Shao, Sijian Ren, Fengli Xu, Yong Li
   - Type: `method` · Date: `2026`
@@ -281,21 +201,6 @@ The central question is how to search a model's existing generative distribution
   - Level: `response/sequence`
   - Mechanism: `structured-search`
   - Officially accepted at ACL 2026 Main. Exploration focus: semantic-diversity.
-- **[Differential Fine-Tuning Large Language Models Towards Better Diverse Reasoning Abilities](https://iclr.cc/virtual/2026/poster/10008716)** — **ICLR 2026**
-  - Authors: Xiaosong Yuan, Chen Shen, Shaotian Yan, kaiyuan liu, Xiaofeng Zhang, Sinan Fan, Liang Xie, Wenxiao Wang et al.
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `response/sequence`
-  - Signal: `semantic-diversity`
-  - Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity.
-- **[D-FUSEr: Diverse Failure, Unified Success via Error-Distribution Shaping in LLM Reasoning](https://icml.cc/virtual/2026/poster/63783)** — **ICML 2026**
-  - Authors: David Baek, Andrew Estornell, Yichi Zhang, Muhammad Faaiz Taufiq, Jean-Francois Ton, Jie Mei, Tao Wang
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `response/sequence`
-  - Signal: `entropy/probability` `semantic-diversity`
-  - Problem: `recovery/error-correction`
-  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
 - **[Continuous Chain of Thought Enables Parallel Exploration and Reasoning](https://iclr.cc/virtual/2026/poster/10007055)** — **ICLR 2026**
   - Authors: Alperen Gozeten, Muhammed Ildiz, Xuechen Zhang, Hrayr Harutyunyan, Ankit Singh Rawat, Samet Oymak
   - Type: `method` · Date: `2026`
@@ -303,14 +208,6 @@ The central question is how to search a model's existing generative distribution
   - Level: `response/sequence`
   - Mechanism: `structured-search`
   - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, sampling/decoding.
-- **[ConMA : Confidence-Guided Kernel Sampling with Multi-Stage Aggregation for LLM Reasoning](https://aclanthology.org/2026.findings-acl.1475/)** — **ACL 2026 Findings**
-  - Authors: Yinuo Wang, Qingjie Li, Wenyao Cui, Qiuchi Li, Zhang Huaping
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `response/sequence`
-  - Signal: `uncertainty/confidence`
-  - Mechanism: `sampling/decoding`
-  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
 - **[Chain-in-Tree: Back to Sequential Reasoning in LLM Tree Search](https://aclanthology.org/2026.findings-acl.214/)** — **ACL 2026 Findings**
   - Authors: Xinzhe Li
   - Type: `method` · Date: `2026`
@@ -325,21 +222,6 @@ The central question is how to search a model's existing generative distribution
   - Level: `response/sequence`
   - Mechanism: `sampling/decoding` `backtracking/resampling`
   - Officially accepted at ICML 2026. Exploration focus: entropy/probability, sampling/decoding, backtracking/resampling.
-- **[Beyond Rejection Sampling: Trajectory Fusion for Scaling Mathematical Reasoning](https://aclanthology.org/2026.findings-acl.390/)** — **ACL 2026 Findings**
-  - Authors: Jie Deng, Hanshuang Tong, Jun Li, Shining Liang, Ning Wu, Hongzhi Li, Yutao Xie
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `trajectory/action`
-  - Mechanism: `sampling/decoding`
-  - Setting: `math`
-  - Officially accepted at ACL 2026 Findings. Exploration focus: semantic-diversity, sampling/decoding.
-- **[Beyond Logits: Metastable Latent Dynamics for Sample-Efficient Best-of-N Selection in LLMs](https://icml.cc/virtual/2026/poster/66569)** — **ICML 2026**
-  - Authors: Xinrong Li, Zidong Zhou, Keyu Shen, Wenhao Zhou, Shangqi Guo
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `token` `latent/representation`
-  - Mechanism: `sampling/decoding`
-  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, sampling/decoding.
 - **[Annotations Mitigate Post-Training Mode Collapse](https://icml.cc/virtual/2026/poster/63468)** — **ICML 2026**
   - Authors: Jacob Mitchell Springer, Madhu Advani, Lukas Aichberger, Arwen Bradley, Eran Malach, Omid Saremi, Sinead Williamson, Preetum Nakkiran et al.
   - Type: `method` · Date: `2026`
@@ -369,27 +251,6 @@ The central question is how to search a model's existing generative distribution
   - Level: `response/sequence`
   - Mechanism: `structured-search`
   - Exploration focus: uncertainty/confidence, novelty/curiosity, semantic-diversity.
-- **[The Road Less Traveled: Enhancing Exploration in LLMs via Sequential Sampling](https://arxiv.org/abs/2510.15502)** — arXiv
-  - Authors: Shijia Kang, Muhan Zhang
-  - Type: `method` · Date: `2025-10-17`
-  - Phase: `inference`
-  - Level: `response/sequence`
-  - Mechanism: `sampling/decoding`
-  - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
-- **[Evolving Language Models without Labels: Majority Drives Selection, Novelty Promotes Variation](https://arxiv.org/abs/2509.15194)** — arXiv
-  - Authors: Yujun Zhou, Zhenwen Liang, Haolin Liu, Wenhao Yu, Kishan Panaganti, Linfeng Song, Dian Yu, Xiangliang Zhang et al.
-  - Type: `method` · Date: `2025-09-18`
-  - Phase: `inference`
-  - Level: `response/sequence`
-  - Signal: `novelty/curiosity`
-  - Exploration focus: entropy/probability, uncertainty/confidence, novelty/curiosity.
-- **[Learning from Diverse Reasoning Paths with Routing and Collaboration](https://arxiv.org/abs/2508.16861)** — arXiv
-  - Authors: Zhenyu Lei, Zhen Tan, Song Wang, Yaochen Zhu, Zihan Chen, Yushun Dong, Jundong Li
-  - Type: `method` · Date: `2025-08-23`
-  - Phase: `inference`
-  - Level: `response/sequence`
-  - Signal: `semantic-diversity`
-  - Exploration focus: semantic-diversity.
 - **[COS(M+O)S: Curiosity and RL-Enhanced MCTS for Exploring Story Space via Language Models](https://arxiv.org/abs/2501.17104)** — arXiv
   - Authors: Tobias Materzok
   - Type: `method` · Date: `2025-01-28`
@@ -428,11 +289,164 @@ The central question is how to search a model's existing generative distribution
   - Setting: `math` `creative/open-ended`
   - Established deliberate search, lookahead, and backtracking over language-model thoughts.
 
+### Representation & Latent Steering · 6 papers
+
+- **[From Noise to Diversity: Random Embedding Injection in LLM Reasoning](https://arxiv.org/abs/2605.11936)** — arXiv
+  - Authors: Heejun Kim, Seungpil Lee, Jewon Yeom, Jaewon Sok, Seonghyeon Park, Jeongjae Park, Taesup Kim, Sundong Kim
+  - Type: `method` · Date: `2026-05-12`
+  - Phase: `inference`
+  - Level: `latent/representation`
+  - Signal: `semantic-diversity`
+  - Mechanism: `noise/perturbation`
+  - Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.
+- **[The Geometric Reasoner: Manifold-Informed Latent Foresight Search for Long-Context Reasoning](https://icml.cc/virtual/2026/poster/61787)** — **ICML 2026**
+  - Authors: Ren Zhuang, Ben Wang, Shuifa Sun
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `latent/representation`
+  - Mechanism: `structured-search`
+  - Officially accepted at ICML 2026. Exploration focus: semantic-diversity, coverage, regularization.
+- **[Representation-Based Exploration for Language Models: From Test-Time to Post-Training](https://iclr.cc/virtual/2026/poster/10009438)** — **ICLR 2026**
+  - Authors: Jens Tuyls, Dylan Foster, Akshay Krishnamurthy, Jordan Ash
+  - Type: `method` · Date: `2026`
+  - Phase: `inference` `rl-training`
+  - Level: `latent/representation` `response/sequence`
+  - Signal: `semantic-diversity` `novelty/curiosity`
+  - Mechanism: `reward-shaping/intrinsic-reward` `sampling/decoding`
+  - Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity, structured-search.
+- **[Large Language Models Explore by Latent Distilling](https://icml.cc/virtual/2026/poster/63542)** — **ICML 2026**
+  - Authors: Yuanhao Zeng, Ao Lu, Lufei Li, Zheng Zhang, Yexin Li, Kan Ren
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `latent/representation`
+  - Mechanism: `structured-search`
+  - Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, semantic-diversity, sampling/decoding.
+- **[Exploring Diverse Generation Paths via Inference-time Stiefel Activation Steering](https://iclr.cc/virtual/2026/poster/10006851)** — **ICLR 2026**
+  - Authors: Dongxuan Zhu, Ly Khanh, Andy Yat-Ming Cheung, Man-Chung Yue, Viet Anh Nguyen
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `response/sequence` `latent/representation`
+  - Signal: `semantic-diversity`
+  - Mechanism: `noise/perturbation`
+  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.
+- **[Beyond Logits: Metastable Latent Dynamics for Sample-Efficient Best-of-N Selection in LLMs](https://icml.cc/virtual/2026/poster/66569)** — **ICML 2026**
+  - Authors: Xinrong Li, Zidong Zhou, Keyu Shen, Wenhao Zhou, Shangqi Guo
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `token` `latent/representation`
+  - Mechanism: `sampling/decoding`
+  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, sampling/decoding.
+
+### Diversity & Coverage · 13 papers
+
+- **[Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity](https://icml.cc/virtual/2026/poster/60489)** — **ICML 2026**
+  - Authors: Jiayi Zhang, Simon Yu, Derek Chong, Anthony Sicilia, Michael Tomz, Christopher Manning, Weiyan Shi
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `response/sequence`
+  - Signal: `semantic-diversity`
+  - Mechanism: `sampling/decoding`
+  - Problem: `mode-collapse`
+  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.
+- **[TS$^2$: Training with Sparsemax+, Testing with Softmax for Accurate and Diverse LLM Fine-Tuning](https://iclr.cc/virtual/2026/poster/10010811)** — **ICLR 2026**
+  - Authors: Ziyang Xu, Ananthu Rajendran Pillai, Yinghua Yao, Yuangang Pan
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `response/sequence`
+  - Signal: `semantic-diversity`
+  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.
+- **[SED-SFT: Selectively Encouraging Diversity in Supervised Fine-Tuning](https://aclanthology.org/2026.acl-short.54/)** — **ACL 2026 Main**
+  - Authors: Yijie Chen, Yijin Liu, Fandong Meng
+  - Type: `method` · Date: `2026`
+  - Phase: `supervised-post-training` `inference`
+  - Level: `response/sequence`
+  - Signal: `semantic-diversity`
+  - Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, semantic-diversity, regularization.
+- **[Reasoning with Sampling: Your Base Model is Smarter Than You Think](https://iclr.cc/virtual/2026/poster/10009093)** — **ICLR 2026**
+  - Authors: Aayush Karan, Yilun Du
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `response/sequence`
+  - Signal: `entropy/probability` `semantic-diversity`
+  - Mechanism: `sampling/decoding`
+  - Problem: `mode-collapse` `capability-boundary`
+  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
+- **[Post-training Large Language Models for Diverse High-Quality Responses](https://iclr.cc/virtual/2026/poster/10010944)** — **ICLR 2026**
+  - Authors: Yilei Chen, Souradip Chakraborty, Lorenz Wolf, Ioannis Paschalidis, Aldo Pacchiano
+  - Type: `method` · Date: `2026`
+  - Phase: `supervised-post-training` `inference`
+  - Level: `response/sequence`
+  - Signal: `semantic-diversity`
+  - Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity.
+- **[Learning Diverse Responses with Prefix-Conditioned Supervised Fine-Tuning](https://aclanthology.org/2026.acl-long.9/)** — **ACL 2026 Main**
+  - Authors: Zhiyuan Fan, Guanqiao Chen, Yanyi Huang, Mingkuan Zhao, Dadi Guo, Yi R. Fung
+  - Type: `method` · Date: `2026`
+  - Phase: `supervised-post-training` `inference`
+  - Level: `response/sequence`
+  - Signal: `semantic-diversity`
+  - Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.
+- **[Language of Thought Shapes Output Diversity in Large Language Models](https://aclanthology.org/2026.acl-long.628/)** — **ACL 2026 Main**
+  - Authors: Shaoyang Xu, Wenxuan Zhang
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `response/sequence`
+  - Signal: `semantic-diversity`
+  - Officially accepted at ACL 2026 Main. Exploration focus: novelty/curiosity, semantic-diversity, coverage.
+- **[GuidedSampling: Steering LLMs Towards Diverse Candidate Solutions at Inference-Time](https://iclr.cc/virtual/2026/poster/10009336)** — **ICLR 2026**
+  - Authors: Divij Handa, Mihir Parmar, Aswin RRV, Md Nayem Uddin, Hamid Palangi, Chitta Baral
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `response/sequence`
+  - Signal: `semantic-diversity`
+  - Mechanism: `sampling/decoding` `noise/perturbation`
+  - Officially accepted at ICLR 2026. Exploration focus: semantic-diversity, sampling/decoding, noise/perturbation.
+- **[Diversity Matters: Revisiting Test-Time Compute in Vision-Language Models](https://icml.cc/virtual/2026/poster/63569)** — **ICML 2026**
+  - Authors: Yijie Tong, Yifan Hou, Shaobo Cui, Antoine Bosselut, Mrinmaya Sachan
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `response/sequence`
+  - Signal: `semantic-diversity`
+  - Setting: `multimodal`
+  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
+- **[Diverse Text Decoding via Iterative Reweighting](https://iclr.cc/virtual/2026/poster/10011729)** — **ICLR 2026**
+  - Authors: Ruiqi Shi, Sinno Jialin Pan
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `response/sequence`
+  - Signal: `semantic-diversity`
+  - Mechanism: `sampling/decoding`
+  - Officially accepted at ICLR 2026. Exploration focus: semantic-diversity, sampling/decoding.
+- **[Differential Fine-Tuning Large Language Models Towards Better Diverse Reasoning Abilities](https://iclr.cc/virtual/2026/poster/10008716)** — **ICLR 2026**
+  - Authors: Xiaosong Yuan, Chen Shen, Shaotian Yan, kaiyuan liu, Xiaofeng Zhang, Sinan Fan, Liang Xie, Wenxiao Wang et al.
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `response/sequence`
+  - Signal: `semantic-diversity`
+  - Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity.
+- **[D-FUSEr: Diverse Failure, Unified Success via Error-Distribution Shaping in LLM Reasoning](https://icml.cc/virtual/2026/poster/63783)** — **ICML 2026**
+  - Authors: David Baek, Andrew Estornell, Yichi Zhang, Muhammad Faaiz Taufiq, Jean-Francois Ton, Jie Mei, Tao Wang
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `response/sequence`
+  - Signal: `entropy/probability` `semantic-diversity`
+  - Problem: `recovery/error-correction`
+  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
+- **[Learning from Diverse Reasoning Paths with Routing and Collaboration](https://arxiv.org/abs/2508.16861)** — arXiv
+  - Authors: Zhenyu Lei, Zhen Tan, Song Wang, Yaochen Zhu, Zihan Chen, Yushun Dong, Jundong Li
+  - Type: `method` · Date: `2025-08-23`
+  - Phase: `inference`
+  - Level: `response/sequence`
+  - Signal: `semantic-diversity`
+  - Exploration focus: semantic-diversity.
+
+
 ## 2. Policy & RLVR Exploration
 
 This category concerns exploration during reinforcement learning or RL with verifiable rewards (RLVR). Here, exploration changes which rollouts are collected, how reward or advantage signals are assigned, or how the policy distribution is updated during training.
 
 It includes work on entropy or mode collapse, low-probability tokens, rollout diversity, intrinsic or shaped rewards, gradient and regularization interventions, curriculum design, and attempts to push beyond a base model's capability boundary. The defining feature is that exploration is part of the learning loop, not only an inference-time search choice.
+
+### Entropy & Distribution Control · 42 papers
 
 - **[Entropy Polarity in Reinforcement Fine-Tuning: Direction, Asymmetry, and Control](https://arxiv.org/abs/2605.11775)** — arXiv
   - Authors: Jiazheng Zhang, Ziche Fu, Junrui Shen, Yunbin Zhao, Yunke Zhang, Zhiheng Xi, Long Ma, Chenxin An et al.
@@ -441,21 +455,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Level: `policy-distribution`
   - Signal: `entropy/probability`
   - Exploration focus: entropy/probability, reward/advantage, gradient-reshaping.
-- **[Breaking $\textit{Winner-Takes-All}$: Cooperative Policy Optimization Improves Diverse LLM Reasoning](https://arxiv.org/abs/2605.11461)** — arXiv
-  - Authors: Haoxuan Chen, Tianming Liang, Wei-Shi Zheng, Jian-Fang Hu
-  - Type: `method` · Date: `2026-05-12`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `semantic-diversity`
-  - Mechanism: `gradient-reshaping`
-  - Exploration focus: entropy/probability, semantic-diversity, coverage.
-- **[Exploration-Driven Optimization for Test-Time Large Language Model Reasoning](https://arxiv.org/abs/2605.09853)** — arXiv
-  - Authors: Changhao Li, Yuchen Zhuang, Chenxiao Gao, Haotian Sun, Rushi Qiang, Chao Zhang, Bo Dai
-  - Type: `method` · Date: `2026-05-11`
-  - Phase: `rl-training` `inference`
-  - Level: `policy-distribution`
-  - Mechanism: `structured-search`
-  - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
 - **[Addressing Performance Saturation for LLM RL via Precise Entropy Curve Control](https://arxiv.org/abs/2604.26326)** — arXiv
   - Authors: Bolian Li, Yifan Wang, Yi Ding, Anamika Lochab, Ananth Grama, Ruqi Zhang
   - Type: `method` · Date: `2026-04-29`
@@ -464,14 +463,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Signal: `entropy/probability`
   - Problem: `local-optimum`
   - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
-- **[DiPO: Disentangled Perplexity Policy Optimization for Fine-grained Exploration-Exploitation Trade-Off](https://arxiv.org/abs/2604.13902)** — arXiv
-  - Authors: Xiaofan Li, Ming Yang, Zhiyuan Ma, Shichao Ma, Jintao Du, Yu Cheng, Weiqiang Wang, Zhizhong Zhang et al.
-  - Type: `method` · Date: `2026-04-15`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Mechanism: `gradient-reshaping`
-  - Problem: `exploration-exploitation`
-  - Exploration focus: semantic-diversity, reward/advantage, gradient-reshaping.
 - **[Policy Split: Incentivizing Dual-Mode Exploration in LLM Reinforcement with Dual-Mode Entropy Regularization](https://arxiv.org/abs/2604.11510)** — arXiv
   - Authors: Jiashu Yao, Heyan Huang, Daiqing Wu, Zeming Liu, Yuhang Guo
   - Type: `method` · Date: `2026-04-13`
@@ -480,20 +471,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Signal: `entropy/probability`
   - Mechanism: `regularization`
   - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
-- **[Cog-DRIFT: Exploration on Adaptively Reformulated Instances Enables Learning from Hard Reasoning Problems](https://arxiv.org/abs/2604.04767)** — arXiv
-  - Authors: Justin Chih-Yao Chen, Archiki Prasad, Zaid Khan, Joykirat Singh, Runchu Tian, Elias Stengel-Eskin, Mohit Bansal
-  - Type: `method` · Date: `2026-04-06`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Mechanism: `structured-search`
-  - Exploration focus: reward/advantage, curriculum/task-generation, structured-search.
-- **[Bootstrapping Exploration with Group-Level Natural Language Feedback in Reinforcement Learning](https://arxiv.org/abs/2603.04597)** — arXiv
-  - Authors: Lei Huang, Xiang Cheng, Chenxiao Zhao, Guobin Shen, Junjie Yang, Xiaocheng Feng, Yuxuan Gu, Xing Yu et al.
-  - Type: `method` · Date: `2026-03-04`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Mechanism: `structured-search`
-  - Exploration focus: semantic-diversity, reward/advantage.
 - **[Compress the Easy, Explore the Hard: Difficulty-Aware Entropy Regularization for Efficient LLM Reasoning](https://arxiv.org/abs/2602.22642)** — arXiv
   - Authors: Qin-Wen Luo, Sheng Ren, Xiang Chen, Rui Liu, Jun Fang, Naiqiang Tan, Sheng-Jun Huang
   - Type: `method` · Date: `2026-02-26`
@@ -502,13 +479,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Signal: `entropy/probability`
   - Mechanism: `regularization`
   - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
-- **[UpSkill: Mutual Information Skill Learning for Structured Response Diversity in LLMs](https://arxiv.org/abs/2602.22296)** — arXiv
-  - Authors: Devan Shah, Owen Yang, Daniel Yang, Chongyi Zheng, Benjamin Eysenbach
-  - Type: `method` · Date: `2026-02-25`
-  - Phase: `rl-training`
-  - Level: `response/sequence` `policy-distribution`
-  - Signal: `semantic-diversity` `information-gain`
-  - Exploration focus: novelty/curiosity, semantic-diversity, information-gain.
 - **[DSDR: Dual-Scale Diversity Regularization for Exploration in LLM Reasoning](https://arxiv.org/abs/2602.19895)** — arXiv
   - Authors: Zhongwei Wan, Yun Shen, Zhihao Dou, Donghao Zhou, Yu Zhang, Xin Wang, Hui Shen, Jing Xiong et al.
   - Type: `method` · Date: `2026-02-23`
@@ -549,6 +519,501 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Signal: `entropy/probability`
   - Mechanism: `gradient-reshaping`
   - Exploration focus: entropy/probability, reward/advantage, gradient-reshaping.
+- **[Targeted Exploration via Unified Entropy Control for Reinforcement Learning](https://aclanthology.org/2026.findings-acl.828/)** — **ACL 2026 Findings**
+  - Authors: Chen Wang, Lai Wei, Yanzhi Zhang, Chenyang Shao, Zedong Dan, Weiran Huang, Ge Lan, Yue Wang
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `entropy/probability`
+  - Mechanism: `structured-search`
+  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, semantic-diversity, gradient-reshaping.
+- **[SPS: Steering Probability Squeezing for Better Exploration in Reinforcement Learning for Large Language Models](https://aclanthology.org/2026.findings-acl.865/)** — **ACL 2026 Findings**
+  - Authors: Yifu Huo, Chenglong Wang, Ziming Zhu, Shunjie Xing, Peinan Feng, Tongran Liu, Qiaozhi He, Tian Hua Zhou et al.
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `token` `policy-distribution`
+  - Signal: `entropy/probability`
+  - Mechanism: `noise/perturbation` `gradient-reshaping`
+  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
+- **[SAGE: Shaping Anchors for Guided Exploration in RLVR of LLMs](https://icml.cc/virtual/2026/poster/63563)** — **ICML 2026**
+  - Authors: Chanuk Lee, Minki Kang, Sung Ju Hwang
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Mechanism: `regularization`
+  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, novelty/curiosity, coverage.
+- **[On Entropy Control in LLM-RL Algorithms](https://iclr.cc/virtual/2026/poster/10010002)** — **ICLR 2026**
+  - Authors: Han Shen
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `entropy/probability`
+  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, regularization.
+- **[Low-probability Tokens Sustain Exploration in Reinforcement Learning with Verifiable Reward](https://aclanthology.org/2026.findings-acl.1209/)** — **ACL 2026 Findings**
+  - Authors: Guanhua Huang, Tingqiang Xu, Mingze Wang, Qi Yi, Xue Gong, Siheng Li, Ruibin Xiong, Kejiao Li et al.
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `token` `policy-distribution`
+  - Signal: `entropy/probability`
+  - Mechanism: `regularization`
+  - Problem: `entropy-collapse`
+  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
+- **[Learning While Staying Curious: Entropy-Preserving Supervised Fine-Tuning via Adaptive Self-Distillation for Large Reasoning Models](https://aclanthology.org/2026.acl-long.617/)** — **ACL 2026 Main**
+  - Authors: Hao Wang, Hao Gu, Hongming Piao, Kaixiong Gong, Yuxiao Ye, Xiangyu Yue, Sirui Han, Yike Guo et al.
+  - Type: `method` · Date: `2026`
+  - Phase: `supervised-post-training` `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `entropy/probability`
+  - Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, uncertainty/confidence, novelty/curiosity.
+- **[Entropy-preserving reinforcement learning](https://iclr.cc/virtual/2026/poster/10010707)** — **ICLR 2026**
+  - Authors: Aleksei Petrenko, Ben Lipkin, Kevin Chen, Erik Wijmans, Marco Cusumano-Towner, Raja Giryes, Philipp Krähenbühl
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `entropy/probability`
+  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
+- **[Entropy-Aware Reshaping of Reinforcement Signals for Multi-Answer Reasoning](https://aclanthology.org/2026.findings-acl.2001/)** — **ACL 2026 Findings**
+  - Authors: Zhi Li, Huidan Xu, Zhen Hu, Yali Du, Ying Liu
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `entropy/probability`
+  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, reward/advantage.
+- **[Entropy Scheduling in Reinforcement Learning for Large Language Models](https://aclanthology.org/2026.findings-acl.206/)** — **ACL 2026 Findings**
+  - Authors: Xingjin Wang, Howe Tissue, Lu Wang, Linjing Li, Daniel Dajun Zeng
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `entropy/probability`
+  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, semantic-diversity, curriculum/task-generation.
+- **[ETR: Entropy Trend Reward for Efficient Chain-of-Thought Reasoning](https://aclanthology.org/2026.acl-long.799/)** — **ACL 2026 Main**
+  - Authors: Xuan Xiong, Huan Liu, Li Gu, Zhixiang Chi, Yue Qiu, Yuanhao YU, Yang Wang
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `response/sequence` `policy-distribution`
+  - Signal: `entropy/probability` `reward/advantage`
+  - Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, uncertainty/confidence, reward/advantage.
+- **[ECHO: Entropy-Confidence Hybrid Optimization for Test-Time Reinforcement Learning](https://icml.cc/virtual/2026/poster/63137)** — **ICML 2026**
+  - Authors: Chu Zhao, Enneng Yang, Yuting Liu, Jianzhe Zhao, Guibing Guo
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training` `inference`
+  - Level: `policy-distribution`
+  - Signal: `entropy/probability` `uncertainty/confidence`
+  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, reward/advantage.
+- **[Do Not Let Low-Probability Tokens Over-Dominate in RL for LLMs](https://iclr.cc/virtual/2026/poster/10010601)** — **ICLR 2026**
+  - Authors: Zhihe Yang, Xufang Luo, Zilong Wang, Dongqi Han, Zhiyuan He, Dongsheng Li, Yunjian Xu
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `token` `policy-distribution`
+  - Signal: `entropy/probability`
+  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, reward/advantage.
+- **[DARTS: Distribution-Aware Active Rollout Trajectory Shaping for Accelerating LLM Reinforcement Learning](https://icml.cc/virtual/2026/poster/61634)** — **ICML 2026**
+  - Authors: Yujie Wang, Siwei Chen, Longzan Luo, Xinyi Liu, Xupeng Miao, Fangcheng Fu, Bin Cui
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `response/sequence` `trajectory/action` `policy-distribution`
+  - Signal: `entropy/probability`
+  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, novelty/curiosity.
+- **[Beyond Mode Collapse: Distribution Matching for Diverse Reasoning](https://icml.cc/virtual/2026/poster/65266)** — **ICML 2026**
+  - Authors: Xiaozhe Li, Yang Li, Xinyu Fang, Shengyuan Ding, Peiji Li, Yongkang Chen, Yichuan Ma, TianYi Lyu et al.
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `entropy/probability` `semantic-diversity`
+  - Problem: `mode-collapse`
+  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, semantic-diversity, coverage.
+- **[Beyond High-Entropy Exploration: Correctness-Aware Low-Entropy Segment-Based Advantage Shaping for Reasoning LLMs](https://aclanthology.org/2026.findings-acl.1650/)** — **ACL 2026 Findings**
+  - Authors: Xinzhu Chen, Xuesheng Li, Zhongxiang Sun, Weijie Yu
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `entropy/probability` `reward/advantage`
+  - Mechanism: `gradient-reshaping`
+  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, reward/advantage, gradient-reshaping.
+- **[Anchored Policy Optimization: Mitigating Exploration Collapse via Support-Constrained Rectification](https://icml.cc/virtual/2026/poster/65360)** — **ICML 2026**
+  - Authors: Tianyi Wang, Long Li, Hongcan Guo, Yibiao Chen, Yixia Li, Yong Wang, Yun Chen, Guanhua CHEN
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Mechanism: `regularization` `gradient-reshaping`
+  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
+- **[ARES: Multimodal Adaptive Reasoning via Difficulty-Aware Token-Level Entropy Shaping](https://iclr.cc/virtual/2026/poster/10011711)** — **ICLR 2026**
+  - Authors: Shuang Chen, Hangyu Guo, Yimeng Ye, Shijue Huang, Wenbo Hu, Jiayu Chen, Manyuan Zhang, Haoxi Li et al.
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `token` `policy-distribution`
+  - Signal: `entropy/probability`
+  - Setting: `multimodal`
+  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
+- **[A Few Bad Apples Spoil the Bunch: Preventing Global Entropy Collapse Driven by a Small Set of Tokens in LLM Reasoning](https://aclanthology.org/2026.findings-acl.641/)** — **ACL 2026 Findings**
+  - Authors: Jaeeun Jang, Hansle Lee, Sangmin Kim
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `token` `policy-distribution`
+  - Signal: `entropy/probability`
+  - Problem: `entropy-collapse`
+  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
+- **[Efficient Reinforcement Learning with Semantic and Token Entropy for LLM Reasoning](https://arxiv.org/abs/2512.04359)** — arXiv
+  - Authors: Hongye Cao, Zhixin Bai, Ziyue Peng, Boyan Wang, Tianpei Yang, Jing Huo, Yuyao Zhang, Yang Gao
+  - Type: `method` · Date: `2025-12-04`
+  - Phase: `rl-training`
+  - Level: `token` `policy-distribution`
+  - Signal: `entropy/probability`
+  - Exploration focus: entropy/probability, reward/advantage, regularization.
+- **[From Exploration to Exploitation: A Two-Stage Entropy RLVR Approach for Noise-Tolerant MLLM Training](https://arxiv.org/abs/2511.07738)** — arXiv
+  - Authors: Donglai Xu, Hongzheng Yang, Yuzhi Zhao, Pingping Zhang, Jinpeng Chen, Wenao Ma, Zhijian Hou, Mengyang Wu et al.
+  - Type: `method` · Date: `2025-11-11`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `entropy/probability`
+  - Mechanism: `noise/perturbation`
+  - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
+- **[Revisiting Entropy Regularization: Adaptive Coefficient Unlocks Its Potential for LLM Reinforcement Learning](https://arxiv.org/abs/2510.10959)** — arXiv
+  - Authors: Xiaoyun Zhang, Xiaojian Yuan, Di Huang, Wang You, Chen Hu, Jingqing Ruan, Ai Jian, Kejiang Chen et al.
+  - Type: `method` · Date: `2025-10-13`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `entropy/probability`
+  - Mechanism: `regularization`
+  - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
+- **[Clip-Low Increases Entropy and Clip-High Decreases Entropy in Reinforcement Learning of Large Language Models](https://arxiv.org/abs/2509.26114)** — arXiv
+  - Authors: Jaesung R. Park, Junsu Kim, Gyeongman Kim, Jinyoung Jo, Sean Choi, Jaewoong Cho, Ernest K. Ryu
+  - Type: `method` · Date: `2025-09-30`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `entropy/probability`
+  - Mechanism: `gradient-reshaping`
+  - Exploration focus: entropy/probability, reward/advantage, gradient-reshaping.
+- **[CE-GPPO: Coordinating Entropy via Gradient-Preserving Clipping Policy Optimization in Reinforcement Learning](https://arxiv.org/abs/2509.20712)** — arXiv
+  - Authors: Zhenpeng Su, Leiyu Pan, Minxuan Lv, Yuntao Li, Wenping Hu, Fuzheng Zhang, Kun Gai, Guorui Zhou
+  - Type: `method` · Date: `2025-09-25`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `entropy/probability`
+  - Mechanism: `gradient-reshaping`
+  - Exploration focus: entropy/probability, novelty/curiosity, gradient-reshaping.
+- **[ETTRL: Balancing Exploration and Exploitation in LLM Test-Time Reinforcement Learning Via Entropy Mechanism](https://arxiv.org/abs/2508.11356)** — arXiv
+  - Authors: Jia Liu, ChangYi He, YingQiao Lin, MingMin Yang, FeiYang Shen, ShaoGuo Liu
+  - Type: `method` · Date: `2025-08-15`
+  - Phase: `rl-training` `inference`
+  - Level: `policy-distribution`
+  - Signal: `entropy/probability`
+  - Mechanism: `structured-search`
+  - Problem: `exploration-exploitation`
+  - Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
+- **[CURE: Critical-Token-Guided Re-Concatenation for Entropy-Collapse Prevention](https://arxiv.org/abs/2508.11016)** — arXiv
+  - Authors: Qingbin Li, Rongkun Xue, Jie Wang, Ming Zhou, Zhi Li, Xiaofeng Ji, Yongqi Wang, Miao Liu et al.
+  - Type: `method` · Date: `2025-08-14`
+  - Phase: `rl-training`
+  - Level: `token` `policy-distribution`
+  - Signal: `entropy/probability`
+  - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
+- **[Decomposing the Entropy-Performance Exchange: The Missing Keys to Unlocking Effective Reinforcement Learning](https://arxiv.org/abs/2508.02260)** — arXiv
+  - Authors: Jia Deng, Jie Chen, Zhipeng Chen, Wayne Xin Zhao, Ji-Rong Wen
+  - Type: `method` · Date: `2025-08-04`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `entropy/probability`
+  - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
+- **[Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning](https://arxiv.org/abs/2506.01939)** — arXiv
+  - Authors: Shenzhi Wang, Le Yu, Chang Gao, Chujie Zheng, Shixuan Liu, Rui Lu, Kai Dang, Xionghui Chen et al.
+  - Type: `method` · Date: `2025-06-02`
+  - Phase: `rl-training`
+  - Level: `token` `policy-distribution`
+  - Signal: `entropy/probability`
+  - Mechanism: `gradient-reshaping`
+  - Problem: `entropy-collapse`
+  - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
+- **[ProRL: Prolonged Reinforcement Learning Expands Reasoning Boundaries in Large Language Models](https://arxiv.org/abs/2505.24864)** — arXiv
+  - Authors: Mingjie Liu, Shizhe Diao, Ximing Lu, Jian Hu, Xin Dong, Yejin Choi, Jan Kautz, Yi Dong
+  - Type: `method` · Date: `2025-05-30`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `coverage`
+  - Mechanism: `regularization`
+  - Problem: `capability-boundary` `long-horizon`
+  - Exploration focus: structured-search.
+- **[The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models](https://arxiv.org/abs/2505.22617)** — arXiv
+  - Authors: Ganqu Cui, Yuchen Zhang, Jiacheng Chen, Lifan Yuan, Zhi Wang, Yuxin Zuo, Haozhan Li, Yuchen Fan
+  - Type: `method` · Date: `2025-05-28`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `entropy/probability`
+  - Mechanism: `regularization` `gradient-reshaping`
+  - Problem: `entropy-collapse`
+  - Exploration focus: entropy/probability.
+- **[PPO-BR: Dual-Signal Entropy-Reward Adaptation for Trust Region Policy Optimization](https://arxiv.org/abs/2505.17714)** — arXiv
+  - Authors: Ben Rahman
+  - Type: `method` · Date: `2025-05-23`
+  - Phase: `rl-training` `test-time-adaptation`
+  - Level: `policy-distribution`
+  - Signal: `entropy/probability` `reward/advantage`
+  - Mechanism: `gradient-reshaping`
+  - Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
+- **[SEED-GRPO: Semantic Entropy Enhanced GRPO for Uncertainty-Aware Policy Optimization](https://arxiv.org/abs/2505.12346)** — arXiv
+  - Authors: Minghan Chen, Guikun Chen, Wenguan Wang, Yi Yang
+  - Type: `method` · Date: `2025-05-18`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `entropy/probability` `uncertainty/confidence`
+  - Mechanism: `gradient-reshaping`
+  - Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
+- **[Entropy-guided sequence weighting for efficient exploration in RL-based LLM fine-tuning](https://arxiv.org/abs/2503.22456)** — arXiv
+  - Authors: Abdullah Vanlioglu
+  - Type: `method` · Date: `2025-03-28`
+  - Phase: `rl-training`
+  - Level: `response/sequence` `policy-distribution`
+  - Signal: `entropy/probability`
+  - Mechanism: `structured-search`
+  - Exploration focus: entropy/probability, uncertainty/confidence, novelty/curiosity.
+- **[DAPO: An Open-Source LLM Reinforcement Learning System at Scale](https://arxiv.org/abs/2503.14476)** — arXiv
+  - Type: `method` · Date: `2025-03-18`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `entropy/probability`
+  - Mechanism: `sampling/decoding` `gradient-reshaping`
+  - Problem: `entropy-collapse`
+  - Exploration focus: structured-search.
+
+### Credit Assignment & Optimization · 17 papers
+
+- **[Breaking $\textit{Winner-Takes-All}$: Cooperative Policy Optimization Improves Diverse LLM Reasoning](https://arxiv.org/abs/2605.11461)** — arXiv
+  - Authors: Haoxuan Chen, Tianming Liang, Wei-Shi Zheng, Jian-Fang Hu
+  - Type: `method` · Date: `2026-05-12`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `semantic-diversity`
+  - Mechanism: `gradient-reshaping`
+  - Exploration focus: entropy/probability, semantic-diversity, coverage.
+- **[DiPO: Disentangled Perplexity Policy Optimization for Fine-grained Exploration-Exploitation Trade-Off](https://arxiv.org/abs/2604.13902)** — arXiv
+  - Authors: Xiaofan Li, Ming Yang, Zhiyuan Ma, Shichao Ma, Jintao Du, Yu Cheng, Weiqiang Wang, Zhizhong Zhang et al.
+  - Type: `method` · Date: `2026-04-15`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Mechanism: `gradient-reshaping`
+  - Problem: `exploration-exploitation`
+  - Exploration focus: semantic-diversity, reward/advantage, gradient-reshaping.
+- **[Unlocking Exploration in RLVR: Uncertainty-aware Advantage Shaping for Deeper Reasoning](https://aclanthology.org/2026.findings-acl.951/)** — **ACL 2026 Findings**
+  - Authors: Can Xie, Ruotong Pan, Xiangyu Wu, Zhang Yunfei, Jiayi Fu, Tingting Gao, Guorui Zhou
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `uncertainty/confidence` `reward/advantage`
+  - Mechanism: `gradient-reshaping`
+  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
+- **[Token Hidden Reward: Steering Exploration-Exploitation in Group Relative Deep Reinforcement Learning](https://iclr.cc/virtual/2026/poster/10008016)** — **ICLR 2026**
+  - Authors: Wenlong Deng, YI REN, Yushu Li, Boying Gong, Danica Sutherland, Xiaoxiao Li, Christos Thrampoulidis
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `token` `policy-distribution`
+  - Signal: `reward/advantage`
+  - Mechanism: `noise/perturbation`
+  - Problem: `exploration-exploitation`
+  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
+- **[Reward and Guidance through Rubrics: Promoting Exploration to Improve Multi-Domain Reasoning](https://icml.cc/virtual/2026/poster/65737)** — **ICML 2026**
+  - Authors: Baolong Bi, Shenghua Liu, Yiwei Wang, Siqian Tong, Lingrui Mei, Yuyao Ge, Yilong Xu, Jiafeng Guo et al.
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `reward/advantage`
+  - Mechanism: `structured-search`
+  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, reward/advantage.
+- **[Lookahead Tree-Based Rollouts for Enhanced Trajectory-Level Exploration in Reinforcement Learning with Verifiable Rewards](https://iclr.cc/virtual/2026/poster/10011530)** — **ICLR 2026**
+  - Authors: Shangyu Xing, Siyuan Wang, Chenyuan Yang, Xin-Yu Dai, Xiang Ren
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `response/sequence` `trajectory/action` `policy-distribution`
+  - Signal: `reward/advantage`
+  - Mechanism: `tree-search/branching`
+  - Officially accepted at ICLR 2026. Exploration focus: uncertainty/confidence, novelty/curiosity, semantic-diversity.
+- **[Long Live The Balance: Information Bottleneck Driven Tree-based Policy Optimization](https://icml.cc/virtual/2026/poster/62699)** — **ICML 2026**
+  - Authors: Hao Jiang, Shurui Li, Tianpeng Bu, Bowen Xu, Xin Liu, Qihua Chen, hongtao duan, lulu hu et al.
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `information-gain`
+  - Mechanism: `gradient-reshaping` `tree-search/branching`
+  - Problem: `exploration-exploitation`
+  - Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, semantic-diversity, information-gain.
+- **[How to Allocate, How to Learn? Dynamic Rollout Allocation and Advantage Modulation for Policy Optimization](https://aclanthology.org/2026.findings-acl.724/)** — **ACL 2026 Findings**
+  - Authors: Yangyi Fang, Jiaye Lin, Xiaoliang Fu, Cong Qin, Haolin Shi, Chaowen Hu, Lu Pan, Ke Zeng et al.
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `response/sequence` `policy-distribution`
+  - Signal: `reward/advantage`
+  - Mechanism: `gradient-reshaping`
+  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
+- **[Free Energy-Driven Reinforcement Learning with Adaptive Advantage Shaping for Unsupervised Reasoning in LLMs](https://aclanthology.org/2026.acl-long.797/)** — **ACL 2026 Main**
+  - Authors: Yiming Huang, Zhenbo Shi, Xin-Cheng Wen, Jichuan Zeng, Cuiyun Gao, Peiyi Han, Chuanyi Liu
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `reward/advantage`
+  - Mechanism: `gradient-reshaping`
+  - Officially accepted at ACL 2026 Main. Exploration focus: novelty/curiosity, reward/advantage, disagreement.
+- **[EEPO: Exploration-Enhanced Policy Optimization via Sample-Then-Forget](https://iclr.cc/virtual/2026/poster/10009769)** — **ICLR 2026**
+  - Authors: Liang CHEN, Xueting Han, Qizhou Wang, Bo Han, Jing Bai, Hinrich Schuetze, Kam-Fai Wong
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Mechanism: `gradient-reshaping`
+  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, reward/advantage, sampling/decoding.
+- **[Contextual Rollout Bandits for Reinforcement Learning with Verifiable Rewards](https://icml.cc/virtual/2026/poster/60796)** — **ICML 2026**
+  - Authors: Xiaodong Lu, Xiaohan Wang, Jiajun Chai, Guojun Yin, Wei Lin, Zhijun Chen, Yu Luo, Fuzhen Zhuang et al.
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `response/sequence` `policy-distribution`
+  - Signal: `reward/advantage`
+  - Officially accepted at ICML 2026. Exploration focus: reward/advantage, noise/perturbation.
+- **[Beyond Euclidean Clipping: Overcoming Exploration Collapse in LLM RL via Riemannian Isometric Policy Optimization](https://icml.cc/virtual/2026/poster/61727)** — **ICML 2026**
+  - Authors: Zhicheng Cai, Xinyuan Guo, Hanlin Wu, Mingxuan Wang, Wei-Ying Ma, Ya-Qin Zhang, Hao Zhou
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Mechanism: `gradient-reshaping`
+  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, gradient-reshaping.
+- **[Can LLMs Guide Their Own Exploration? Gradient-Guided Reinforcement Learning for LLM Reasoning](https://arxiv.org/abs/2512.15687)** — arXiv
+  - Authors: Zhenwen Liang, Sidi Lu, Wenhao Yu, Kishan Panaganti, Yujun Zhou, Haitao Mi, Dong Yu
+  - Type: `method` · Date: `2025-12-17`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Mechanism: `gradient-reshaping`
+  - Exploration focus: entropy/probability, novelty/curiosity, reward/advantage.
+- **[More Than One Teacher: Adaptive Multi-Guidance Policy Optimization for Diverse Exploration](https://arxiv.org/abs/2510.02227)** — arXiv
+  - Authors: Xiaoyang Yuan, Yujuan Ding, Yi Bin, Wenqi Shao, Jinyu Cai, Jingkuan Song, Yang Yang, Heng Tao Shen
+  - Type: `method` · Date: `2025-10-02`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `semantic-diversity`
+  - Mechanism: `gradient-reshaping`
+  - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
+- **[RL-PLUS: Countering Capability Boundary Collapse of LLMs in Reinforcement Learning with Hybrid-policy Optimization](https://arxiv.org/abs/2508.00222)** — arXiv
+  - Authors: Yihong Dong, Xue Jiang, Yongding Tao, Huanyu Liu, Kechi Zhang, Lili Mou, Rongyu Cao, Yingwei Ma
+  - Type: `method` · Date: `2025-07-31`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Mechanism: `gradient-reshaping`
+  - Problem: `capability-boundary`
+  - Exploration focus: gradient-reshaping.
+- **[R-Search: Empowering LLM Reasoning with Search via Multi-Reward Reinforcement Learning](https://arxiv.org/abs/2506.04185)** — arXiv
+  - Authors: Qingfei Zhao, Ruobing Wang, Dingling Xu, Daren Zha, Limin Liu
+  - Type: `method` · Date: `2025-06-04`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `reward/advantage`
+  - Mechanism: `structured-search`
+  - Exploration focus: novelty/curiosity, reward/advantage, structured-search.
+- **[DGRO: Enhancing LLM Reasoning via Exploration-Exploitation Control and Reward Variance Management](https://arxiv.org/abs/2505.12951)** — arXiv
+  - Authors: Xuerui Su, Liya Guo, Yue Wang, Yi Zhu, Zhiming Ma, Zun Wang, Yuting Liu
+  - Type: `method` · Date: `2025-05-19`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `reward/advantage`
+  - Mechanism: `structured-search`
+  - Problem: `exploration-exploitation`
+  - Exploration focus: reward/advantage, sampling/decoding, regularization.
+
+### Reward & Rollout Shaping · 8 papers
+
+- **[VANE: Guiding High-Value Exploration in RLVR via Outcome-Process Novelty Shaping](https://aclanthology.org/2026.findings-acl.1434/)** — **ACL 2026 Findings**
+  - Authors: Xu He, Jialiang Guo, Fucheng Xiong, Haodong Zhao, Xingyang li, Ke Zeng, Xunliang Cai
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `novelty/curiosity` `reward/advantage`
+  - Mechanism: `reward-shaping/intrinsic-reward`
+  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
+- **[SSL4RL: Revisiting Self-supervised Learning as Intrinsic Reward for Visual-Language Reasoning](https://icml.cc/virtual/2026/poster/60895)** — **ICML 2026**
+  - Authors: Xiaojun Guo, Runyu Zhou, Yifei Wang, Qi Zhang, Chenheng Zhang, Stefanie Jegelka, Xiaohan Wang, Jiajun Chai et al.
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `reward/advantage`
+  - Mechanism: `reward-shaping/intrinsic-reward`
+  - Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, reward/advantage, reward-shaping/intrinsic-reward.
+- **[Rewarding the Rare: Uniqueness-Aware RL for Creative Problem Solving in LLMs](https://aclanthology.org/2026.findings-acl.1982/)** — **ACL 2026 Findings**
+  - Authors: Zhiyuan Hu, Yucheng Wang, Yufei He, Jiaying Wu, Yilun Zhao, See-Kiong Ng, Cynthia Breazeal, Anh Tuan Luu et al.
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `novelty/curiosity` `reward/advantage`
+  - Mechanism: `reward-shaping/intrinsic-reward`
+  - Setting: `creative/open-ended`
+  - Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, semantic-diversity, coverage.
+- **[HEALing Entropy Collapse: Enhancing Exploration in Few-Shot RLVR via Hybrid-Domain Entropy Dynamics Alignment](https://aclanthology.org/2026.acl-long.1418/)** — **ACL 2026 Main**
+  - Authors: Zhanyu Liu, Qingguo Hu, Ante Wang, Chenqing Liu, Zhishang Xiang, Hui Li, Delai Qiu, Jinsong Su
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `entropy/probability` `semantic-diversity`
+  - Mechanism: `reward-shaping/intrinsic-reward`
+  - Problem: `entropy-collapse`
+  - Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
+- **[GTPO and GRPO-S: Token and Sequence-Level Reward Shaping with Policy Entropy](https://icml.cc/virtual/2026/poster/65174)** — **ICML 2026**
+  - Authors: Hongze Tan, Zihan Wang, Jianfei Pan, Jinghao Lin, Hao Wang, Yifan Wu, Tao Chen, Zhihang Zheng et al.
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `token` `response/sequence` `policy-distribution`
+  - Signal: `entropy/probability` `reward/advantage`
+  - Mechanism: `reward-shaping/intrinsic-reward`
+  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, reward/advantage, regularization.
+- **[Count Counts: Motivating Exploration in LLM Reasoning with Count-based Intrinsic Rewards](https://iclr.cc/virtual/2026/poster/10011073)** — **ICLR 2026**
+  - Authors: Xuan Zhang, Ruixiao Li, Zhijian Zhou, Long Li, Yulei Qin, Ke Li, Xing Sun, Xiaoyu Tan et al.
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `reward/advantage`
+  - Mechanism: `reward-shaping/intrinsic-reward`
+  - Officially accepted at ICLR 2026. Exploration focus: uncertainty/confidence, novelty/curiosity, reward/advantage.
+- **[CDE: Curiosity-Driven Exploration for Efficient Reinforcement Learning in Large Language Models](https://iclr.cc/virtual/2026/poster/10011417)** — **ICLR 2026**
+  - Authors: Runpeng Dai, Linfeng Song, Haolin Liu, Zhenwen Liang, Dian Yu, Haitao Mi, Zhaopeng Tu, Rui Liu et al.
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `novelty/curiosity` `uncertainty/confidence`
+  - Mechanism: `reward-shaping/intrinsic-reward`
+  - Problem: `entropy-collapse`
+  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
+- **[Outcome-based Exploration for LLM Reasoning](https://arxiv.org/abs/2509.06941)** — arXiv
+  - Authors: Yuda Song, Julia Kempe, Remi Munos
+  - Type: `method` · Date: `2025-09-08`
+  - Phase: `rl-training`
+  - Level: `response/sequence` `policy-distribution`
+  - Signal: `reward/advantage` `semantic-diversity`
+  - Mechanism: `reward-shaping/intrinsic-reward`
+  - Problem: `mode-collapse`
+  - Exploration focus: structured-search.
+
+### Capability Boundaries & Training Dynamics · 43 papers
+
+- **[Exploration-Driven Optimization for Test-Time Large Language Model Reasoning](https://arxiv.org/abs/2605.09853)** — arXiv
+  - Authors: Changhao Li, Yuchen Zhuang, Chenxiao Gao, Haotian Sun, Rushi Qiang, Chao Zhang, Bo Dai
+  - Type: `method` · Date: `2026-05-11`
+  - Phase: `rl-training` `inference`
+  - Level: `policy-distribution`
+  - Mechanism: `structured-search`
+  - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
+- **[Cog-DRIFT: Exploration on Adaptively Reformulated Instances Enables Learning from Hard Reasoning Problems](https://arxiv.org/abs/2604.04767)** — arXiv
+  - Authors: Justin Chih-Yao Chen, Archiki Prasad, Zaid Khan, Joykirat Singh, Runchu Tian, Elias Stengel-Eskin, Mohit Bansal
+  - Type: `method` · Date: `2026-04-06`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Mechanism: `structured-search`
+  - Exploration focus: reward/advantage, curriculum/task-generation, structured-search.
+- **[Bootstrapping Exploration with Group-Level Natural Language Feedback in Reinforcement Learning](https://arxiv.org/abs/2603.04597)** — arXiv
+  - Authors: Lei Huang, Xiang Cheng, Chenxiao Zhao, Guobin Shen, Junjie Yang, Xiaocheng Feng, Yuxuan Gu, Xing Yu et al.
+  - Type: `method` · Date: `2026-03-04`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Mechanism: `structured-search`
+  - Exploration focus: semantic-diversity, reward/advantage.
+- **[UpSkill: Mutual Information Skill Learning for Structured Response Diversity in LLMs](https://arxiv.org/abs/2602.22296)** — arXiv
+  - Authors: Devan Shah, Owen Yang, Daniel Yang, Chongyi Zheng, Benjamin Eysenbach
+  - Type: `method` · Date: `2026-02-25`
+  - Phase: `rl-training`
+  - Level: `response/sequence` `policy-distribution`
+  - Signal: `semantic-diversity` `information-gain`
+  - Exploration focus: novelty/curiosity, semantic-diversity, information-gain.
 - **[Transformation-Augmented GRPO for Enhancing Exploration in Reasoning of Large Language Models](https://arxiv.org/abs/2601.22478)** — arXiv
   - Authors: Khiem Le, Phuc Nguyen, Youssef Mroueh, Chi-Heng Lin, Shangqian Gao, Ting Hua, Nitesh V. Chawla
   - Type: `method` · Date: `2026-01-30`
@@ -572,31 +1037,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Mechanism: `structured-search`
   - Problem: `exploration-exploitation`
   - Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, novelty/curiosity.
-- **[VANE: Guiding High-Value Exploration in RLVR via Outcome-Process Novelty Shaping](https://aclanthology.org/2026.findings-acl.1434/)** — **ACL 2026 Findings**
-  - Authors: Xu He, Jialiang Guo, Fucheng Xiong, Haodong Zhao, Xingyang li, Ke Zeng, Xunliang Cai
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `novelty/curiosity` `reward/advantage`
-  - Mechanism: `reward-shaping/intrinsic-reward`
-  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
-- **[Unlocking Exploration in RLVR: Uncertainty-aware Advantage Shaping for Deeper Reasoning](https://aclanthology.org/2026.findings-acl.951/)** — **ACL 2026 Findings**
-  - Authors: Can Xie, Ruotong Pan, Xiangyu Wu, Zhang Yunfei, Jiayi Fu, Tingting Gao, Guorui Zhou
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `uncertainty/confidence` `reward/advantage`
-  - Mechanism: `gradient-reshaping`
-  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
-- **[Token Hidden Reward: Steering Exploration-Exploitation in Group Relative Deep Reinforcement Learning](https://iclr.cc/virtual/2026/poster/10008016)** — **ICLR 2026**
-  - Authors: Wenlong Deng, YI REN, Yushu Li, Boying Gong, Danica Sutherland, Xiaoxiao Li, Christos Thrampoulidis
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `token` `policy-distribution`
-  - Signal: `reward/advantage`
-  - Mechanism: `noise/perturbation`
-  - Problem: `exploration-exploitation`
-  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
 - **[Temporal Sampling for Forgotten Reasoning in LLMs](https://aclanthology.org/2026.acl-long.1305/)** — **ACL 2026 Main**
   - Authors: Yuetai Li, Zhangchen Xu, Fengqing Jiang, Bhaskar Ramasubramanian, Luyao Niu, Bill Yuchen Lin, Xiang Yue, Radha Poovendran
   - Type: `method` · Date: `2026`
@@ -604,14 +1044,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Level: `policy-distribution`
   - Mechanism: `sampling/decoding`
   - Officially accepted at ACL 2026 Main. Exploration focus: semantic-diversity, sampling/decoding.
-- **[Targeted Exploration via Unified Entropy Control for Reinforcement Learning](https://aclanthology.org/2026.findings-acl.828/)** — **ACL 2026 Findings**
-  - Authors: Chen Wang, Lai Wei, Yanzhi Zhang, Chenyang Shao, Zedong Dan, Weiran Huang, Ge Lan, Yue Wang
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `entropy/probability`
-  - Mechanism: `structured-search`
-  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, semantic-diversity, gradient-reshaping.
 - **[Smaller Models are Natural Explorers for Policy-Level Diversity in GRPO](https://icml.cc/virtual/2026/poster/64272)** — **ICML 2026**
   - Authors: Yiming Ren, Yiran Xu, Zicheng Lin, Chufan Shi, Yukang Chen, Dingdong WANG, Tianhe Wu, Junjie Wang et al.
   - Type: `method` · Date: `2026`
@@ -637,29 +1069,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Signal: `semantic-diversity`
   - Mechanism: `structured-search`
   - Officially accepted at ICLR 2026. Exploration focus: semantic-diversity, reward/advantage.
-- **[SSL4RL: Revisiting Self-supervised Learning as Intrinsic Reward for Visual-Language Reasoning](https://icml.cc/virtual/2026/poster/60895)** — **ICML 2026**
-  - Authors: Xiaojun Guo, Runyu Zhou, Yifei Wang, Qi Zhang, Chenheng Zhang, Stefanie Jegelka, Xiaohan Wang, Jiajun Chai et al.
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `reward/advantage`
-  - Mechanism: `reward-shaping/intrinsic-reward`
-  - Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, reward/advantage, reward-shaping/intrinsic-reward.
-- **[SPS: Steering Probability Squeezing for Better Exploration in Reinforcement Learning for Large Language Models](https://aclanthology.org/2026.findings-acl.865/)** — **ACL 2026 Findings**
-  - Authors: Yifu Huo, Chenglong Wang, Ziming Zhu, Shunjie Xing, Peinan Feng, Tongran Liu, Qiaozhi He, Tian Hua Zhou et al.
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `token` `policy-distribution`
-  - Signal: `entropy/probability`
-  - Mechanism: `noise/perturbation` `gradient-reshaping`
-  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
-- **[SAGE: Shaping Anchors for Guided Exploration in RLVR of LLMs](https://icml.cc/virtual/2026/poster/63563)** — **ICML 2026**
-  - Authors: Chanuk Lee, Minki Kang, Sung Ju Hwang
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Mechanism: `regularization`
-  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, novelty/curiosity, coverage.
 - **[Risk-Sensitive Reinforcement Learning for Alleviating Exploration Dilemmas in Large Language Models](https://iclr.cc/virtual/2026/poster/10011269)** — **ICLR 2026**
   - Authors: Yuhua Jiang, Jiawei Huang, Yufeng Yuan, Xin Mao, YuYue, Qianchuan Zhao, Lin Yan
   - Type: `method` · Date: `2026`
@@ -667,23 +1076,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Level: `policy-distribution`
   - Mechanism: `structured-search`
   - Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity, coverage.
-- **[Rewarding the Rare: Uniqueness-Aware RL for Creative Problem Solving in LLMs](https://aclanthology.org/2026.findings-acl.1982/)** — **ACL 2026 Findings**
-  - Authors: Zhiyuan Hu, Yucheng Wang, Yufei He, Jiaying Wu, Yilun Zhao, See-Kiong Ng, Cynthia Breazeal, Anh Tuan Luu et al.
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `novelty/curiosity` `reward/advantage`
-  - Mechanism: `reward-shaping/intrinsic-reward`
-  - Setting: `creative/open-ended`
-  - Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, semantic-diversity, coverage.
-- **[Reward and Guidance through Rubrics: Promoting Exploration to Improve Multi-Domain Reasoning](https://icml.cc/virtual/2026/poster/65737)** — **ICML 2026**
-  - Authors: Baolong Bi, Shenghua Liu, Yiwei Wang, Siqian Tong, Lingrui Mei, Yuyao Ge, Yilong Xu, Jiafeng Guo et al.
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `reward/advantage`
-  - Mechanism: `structured-search`
-  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, reward/advantage.
 - **[Restoring Exploration after Post-Training: Latent Exploration Decoding for Large Reasoning Models](https://icml.cc/virtual/2026/poster/66546)** — **ICML 2026**
   - Authors: Wenhui Tan, Fiorenzo Parascandolo, Enver Sangineto, Jianzhong Ju, Zhenbo Luo, Qian Cao, Rita Cucchiara, Ruihua Song et al.
   - Type: `method` · Date: `2026`
@@ -713,46 +1105,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Level: `policy-distribution`
   - Mechanism: `structured-search`
   - Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, reward/advantage, self-play/co-evolution.
-- **[On Entropy Control in LLM-RL Algorithms](https://iclr.cc/virtual/2026/poster/10010002)** — **ICLR 2026**
-  - Authors: Han Shen
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `entropy/probability`
-  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, regularization.
-- **[Low-probability Tokens Sustain Exploration in Reinforcement Learning with Verifiable Reward](https://aclanthology.org/2026.findings-acl.1209/)** — **ACL 2026 Findings**
-  - Authors: Guanhua Huang, Tingqiang Xu, Mingze Wang, Qi Yi, Xue Gong, Siheng Li, Ruibin Xiong, Kejiao Li et al.
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `token` `policy-distribution`
-  - Signal: `entropy/probability`
-  - Mechanism: `regularization`
-  - Problem: `entropy-collapse`
-  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
-- **[Lookahead Tree-Based Rollouts for Enhanced Trajectory-Level Exploration in Reinforcement Learning with Verifiable Rewards](https://iclr.cc/virtual/2026/poster/10011530)** — **ICLR 2026**
-  - Authors: Shangyu Xing, Siyuan Wang, Chenyuan Yang, Xin-Yu Dai, Xiang Ren
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `response/sequence` `trajectory/action` `policy-distribution`
-  - Signal: `reward/advantage`
-  - Mechanism: `tree-search/branching`
-  - Officially accepted at ICLR 2026. Exploration focus: uncertainty/confidence, novelty/curiosity, semantic-diversity.
-- **[Long Live The Balance: Information Bottleneck Driven Tree-based Policy Optimization](https://icml.cc/virtual/2026/poster/62699)** — **ICML 2026**
-  - Authors: Hao Jiang, Shurui Li, Tianpeng Bu, Bowen Xu, Xin Liu, Qihua Chen, hongtao duan, lulu hu et al.
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `information-gain`
-  - Mechanism: `gradient-reshaping` `tree-search/branching`
-  - Problem: `exploration-exploitation`
-  - Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, semantic-diversity, information-gain.
-- **[Learning While Staying Curious: Entropy-Preserving Supervised Fine-Tuning via Adaptive Self-Distillation for Large Reasoning Models](https://aclanthology.org/2026.acl-long.617/)** — **ACL 2026 Main**
-  - Authors: Hao Wang, Hao Gu, Hongming Piao, Kaixiong Gong, Yuxiao Ye, Xiangyu Yue, Sirui Han, Yike Guo et al.
-  - Type: `method` · Date: `2026`
-  - Phase: `supervised-post-training` `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `entropy/probability`
-  - Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, uncertainty/confidence, novelty/curiosity.
 - **[Knapsack RL: Unlocking Exploration of LLMs via Optimizing Budget Allocation](https://icml.cc/virtual/2026/poster/60948)** — **ICML 2026**
   - Authors: Ziniu Li, Congliang Chen, Tianyun Yang, Tian Ding, Ruoyu Sun, Ge Zhang, Wenhao Huang, Zhiquan Luo
   - Type: `method` · Date: `2026`
@@ -767,23 +1119,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Level: `policy-distribution`
   - Mechanism: `tree-search/branching`
   - Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity, sampling/decoding.
-- **[How to Allocate, How to Learn? Dynamic Rollout Allocation and Advantage Modulation for Policy Optimization](https://aclanthology.org/2026.findings-acl.724/)** — **ACL 2026 Findings**
-  - Authors: Yangyi Fang, Jiaye Lin, Xiaoliang Fu, Cong Qin, Haolin Shi, Chaowen Hu, Lu Pan, Ke Zeng et al.
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `response/sequence` `policy-distribution`
-  - Signal: `reward/advantage`
-  - Mechanism: `gradient-reshaping`
-  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
-- **[HEALing Entropy Collapse: Enhancing Exploration in Few-Shot RLVR via Hybrid-Domain Entropy Dynamics Alignment](https://aclanthology.org/2026.acl-long.1418/)** — **ACL 2026 Main**
-  - Authors: Zhanyu Liu, Qingguo Hu, Ante Wang, Chenqing Liu, Zhishang Xiang, Hui Li, Delai Qiu, Jinsong Su
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `entropy/probability` `semantic-diversity`
-  - Mechanism: `reward-shaping/intrinsic-reward`
-  - Problem: `entropy-collapse`
-  - Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
 - **[Guided by Gut: Efficient Test-Time Scaling with Reinforced Intrinsic Confidence](https://aclanthology.org/2026.acl-long.739/)** — **ACL 2026 Main**
   - Authors: Amirhosein Ghasemabadi, Keith G. Mills, Baochun Li, Di Niu
   - Type: `method` · Date: `2026`
@@ -798,22 +1133,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Level: `response/sequence` `policy-distribution`
   - Mechanism: `structured-search`
   - Officially accepted at ICML 2026. Exploration focus: reward/advantage, disagreement, gradient-reshaping.
-- **[GTPO and GRPO-S: Token and Sequence-Level Reward Shaping with Policy Entropy](https://icml.cc/virtual/2026/poster/65174)** — **ICML 2026**
-  - Authors: Hongze Tan, Zihan Wang, Jianfei Pan, Jinghao Lin, Hao Wang, Yifan Wu, Tao Chen, Zhihang Zheng et al.
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `token` `response/sequence` `policy-distribution`
-  - Signal: `entropy/probability` `reward/advantage`
-  - Mechanism: `reward-shaping/intrinsic-reward`
-  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, reward/advantage, regularization.
-- **[Free Energy-Driven Reinforcement Learning with Adaptive Advantage Shaping for Unsupervised Reasoning in LLMs](https://aclanthology.org/2026.acl-long.797/)** — **ACL 2026 Main**
-  - Authors: Yiming Huang, Zhenbo Shi, Xin-Cheng Wen, Jichuan Zeng, Cuiyun Gao, Peiyi Han, Chuanyi Liu
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `reward/advantage`
-  - Mechanism: `gradient-reshaping`
-  - Officially accepted at ACL 2026 Main. Exploration focus: novelty/curiosity, reward/advantage, disagreement.
 - **[Exploration-Exploitation Reshaping towards Efficient Reasoning for Large Language Models](https://aclanthology.org/2026.findings-acl.1520/)** — **ACL 2026 Findings**
   - Authors: Yufeng Shi, Weilin Luo, Yuxiang Zhang, Zongmeng Zhang, Haoyang Liu, Yubing Wang, Bin Wang, Wengang Zhou et al.
   - Type: `method` · Date: `2026`
@@ -844,27 +1163,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Mechanism: `structured-search`
   - Problem: `mode-collapse`
   - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
-- **[Entropy-preserving reinforcement learning](https://iclr.cc/virtual/2026/poster/10010707)** — **ICLR 2026**
-  - Authors: Aleksei Petrenko, Ben Lipkin, Kevin Chen, Erik Wijmans, Marco Cusumano-Towner, Raja Giryes, Philipp Krähenbühl
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `entropy/probability`
-  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
-- **[Entropy-Aware Reshaping of Reinforcement Signals for Multi-Answer Reasoning](https://aclanthology.org/2026.findings-acl.2001/)** — **ACL 2026 Findings**
-  - Authors: Zhi Li, Huidan Xu, Zhen Hu, Yali Du, Ying Liu
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `entropy/probability`
-  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, reward/advantage.
-- **[Entropy Scheduling in Reinforcement Learning for Large Language Models](https://aclanthology.org/2026.findings-acl.206/)** — **ACL 2026 Findings**
-  - Authors: Xingjin Wang, Howe Tissue, Lu Wang, Linjing Li, Daniel Dajun Zeng
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `entropy/probability`
-  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, semantic-diversity, curriculum/task-generation.
 - **[Empowering Small VLMs to Think with Dynamic Memorization and Exploration](https://iclr.cc/virtual/2026/poster/10007260)** — **ICLR 2026**
   - Authors: Jiazhen Liu, Yuchuan Deng, Long Chen
   - Type: `method` · Date: `2026`
@@ -873,27 +1171,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Mechanism: `structured-search`
   - Setting: `multimodal`
   - Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity, reward/advantage.
-- **[ETR: Entropy Trend Reward for Efficient Chain-of-Thought Reasoning](https://aclanthology.org/2026.acl-long.799/)** — **ACL 2026 Main**
-  - Authors: Xuan Xiong, Huan Liu, Li Gu, Zhixiang Chi, Yue Qiu, Yuanhao YU, Yang Wang
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `response/sequence` `policy-distribution`
-  - Signal: `entropy/probability` `reward/advantage`
-  - Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, uncertainty/confidence, reward/advantage.
-- **[EEPO: Exploration-Enhanced Policy Optimization via Sample-Then-Forget](https://iclr.cc/virtual/2026/poster/10009769)** — **ICLR 2026**
-  - Authors: Liang CHEN, Xueting Han, Qizhou Wang, Bo Han, Jing Bai, Hinrich Schuetze, Kam-Fai Wong
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Mechanism: `gradient-reshaping`
-  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, reward/advantage, sampling/decoding.
-- **[ECHO: Entropy-Confidence Hybrid Optimization for Test-Time Reinforcement Learning](https://icml.cc/virtual/2026/poster/63137)** — **ICML 2026**
-  - Authors: Chu Zhao, Enneng Yang, Yuting Liu, Jianzhe Zhao, Guibing Guo
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training` `inference`
-  - Level: `policy-distribution`
-  - Signal: `entropy/probability` `uncertainty/confidence`
-  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, reward/advantage.
 - **[Dynamics-Predictive Sampling for Active RL Finetuning of Large Reasoning Models](https://iclr.cc/virtual/2026/poster/10006780)** — **ICLR 2026**
   - Authors: Yixiu Mao, Yun Qu, Qi Wang, Heming Zou, Xiangyang Ji
   - Type: `method` · Date: `2026`
@@ -901,13 +1178,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Level: `policy-distribution`
   - Mechanism: `sampling/decoding`
   - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
-- **[Do Not Let Low-Probability Tokens Over-Dominate in RL for LLMs](https://iclr.cc/virtual/2026/poster/10010601)** — **ICLR 2026**
-  - Authors: Zhihe Yang, Xufang Luo, Zilong Wang, Dongqi Han, Zhiyuan He, Dongsheng Li, Yunjian Xu
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `token` `policy-distribution`
-  - Signal: `entropy/probability`
-  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, reward/advantage.
 - **[Diversity-Incentivized Exploration for Versatile Reasoning](https://iclr.cc/virtual/2026/poster/10011130)** — **ICLR 2026**
   - Authors: Zican Hu, Shilin Zhang, Yafu Li, Jianhao (Elliott) Yan, Xuyang Hu, Leyang Cui, Xiaoye Qu, Chunlin Chen et al.
   - Type: `method` · Date: `2026`
@@ -948,13 +1218,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Mechanism: `tree-search/branching`
   - Setting: `creative/open-ended`
   - Officially accepted at ACL 2026 Main. Exploration focus: semantic-diversity, reward/advantage, reward-shaping/intrinsic-reward.
-- **[DARTS: Distribution-Aware Active Rollout Trajectory Shaping for Accelerating LLM Reinforcement Learning](https://icml.cc/virtual/2026/poster/61634)** — **ICML 2026**
-  - Authors: Yujie Wang, Siwei Chen, Longzan Luo, Xinyi Liu, Xupeng Miao, Fangcheng Fu, Bin Cui
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `response/sequence` `trajectory/action` `policy-distribution`
-  - Signal: `entropy/probability`
-  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, novelty/curiosity.
 - **[DARL: Encouraging Diverse Answers for General Reasoning without Verifiers](https://aclanthology.org/2026.findings-acl.1530/)** — **ACL 2026 Findings**
   - Authors: Chongxuan Huang, Lei Lin, Xiaodong Shi, Wenping Hu, Ruiming Tang
   - Type: `method` · Date: `2026`
@@ -962,14 +1225,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Level: `policy-distribution`
   - Signal: `semantic-diversity`
   - Officially accepted at ACL 2026 Findings. Exploration focus: semantic-diversity, reward/advantage.
-- **[Count Counts: Motivating Exploration in LLM Reasoning with Count-based Intrinsic Rewards](https://iclr.cc/virtual/2026/poster/10011073)** — **ICLR 2026**
-  - Authors: Xuan Zhang, Ruixiao Li, Zhijian Zhou, Long Li, Yulei Qin, Ke Li, Xing Sun, Xiaoyu Tan et al.
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `reward/advantage`
-  - Mechanism: `reward-shaping/intrinsic-reward`
-  - Officially accepted at ICLR 2026. Exploration focus: uncertainty/confidence, novelty/curiosity, reward/advantage.
 - **[Controllable Exploration in Hybrid-Policy RLVR for Multi-Modal Reasoning](https://iclr.cc/virtual/2026/poster/10011411)** — **ICLR 2026**
   - Authors: Zhuoxu Huang, Mengxi Jia, Hao Sun, Xuelong Li, Jungong Han
   - Type: `method` · Date: `2026`
@@ -977,22 +1232,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Level: `policy-distribution`
   - Mechanism: `structured-search`
   - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, reward/advantage.
-- **[Contextual Rollout Bandits for Reinforcement Learning with Verifiable Rewards](https://icml.cc/virtual/2026/poster/60796)** — **ICML 2026**
-  - Authors: Xiaodong Lu, Xiaohan Wang, Jiajun Chai, Guojun Yin, Wei Lin, Zhijun Chen, Yu Luo, Fuzhen Zhuang et al.
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `response/sequence` `policy-distribution`
-  - Signal: `reward/advantage`
-  - Officially accepted at ICML 2026. Exploration focus: reward/advantage, noise/perturbation.
-- **[CDE: Curiosity-Driven Exploration for Efficient Reinforcement Learning in Large Language Models](https://iclr.cc/virtual/2026/poster/10011417)** — **ICLR 2026**
-  - Authors: Runpeng Dai, Linfeng Song, Haolin Liu, Zhenwen Liang, Dian Yu, Haitao Mi, Zhaopeng Tu, Rui Liu et al.
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `novelty/curiosity` `uncertainty/confidence`
-  - Mechanism: `reward-shaping/intrinsic-reward`
-  - Problem: `entropy-collapse`
-  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
 - **[BroRL: Scaling Reinforcement Learning via Broadened Exploration](https://icml.cc/virtual/2026/poster/64690)** — **ICML 2026**
   - Authors: Jian Hu, Mingjie Liu, Ximing Lu, Fang Wu, Zaid Harchaoui, Shizhe Diao, Yejin Choi, Pavlo Molchanov et al.
   - Type: `method` · Date: `2026`
@@ -1007,14 +1246,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Level: `policy-distribution`
   - Mechanism: `structured-search`
   - Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, semantic-diversity, reward/advantage.
-- **[Beyond Mode Collapse: Distribution Matching for Diverse Reasoning](https://icml.cc/virtual/2026/poster/65266)** — **ICML 2026**
-  - Authors: Xiaozhe Li, Yang Li, Xinyu Fang, Shengyuan Ding, Peiji Li, Yongkang Chen, Yichuan Ma, TianYi Lyu et al.
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `entropy/probability` `semantic-diversity`
-  - Problem: `mode-collapse`
-  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, semantic-diversity, coverage.
 - **[Beyond Markovian: Reflective Exploration via Bayes-Adaptive RL for LLM Reasoning](https://iclr.cc/virtual/2026/poster/10006770)** — **ICLR 2026**
   - Authors: Shenao Zhang, Yaqing Wang, Yinxiao Liu, Tianqi Liu, Peter Grabowski, Eugene Ie, Zhaoran Wang, Yunxuan Li
   - Type: `method` · Date: `2026`
@@ -1022,21 +1253,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Level: `policy-distribution`
   - Mechanism: `structured-search`
   - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, uncertainty/confidence.
-- **[Beyond High-Entropy Exploration: Correctness-Aware Low-Entropy Segment-Based Advantage Shaping for Reasoning LLMs](https://aclanthology.org/2026.findings-acl.1650/)** — **ACL 2026 Findings**
-  - Authors: Xinzhu Chen, Xuesheng Li, Zhongxiang Sun, Weijie Yu
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `entropy/probability` `reward/advantage`
-  - Mechanism: `gradient-reshaping`
-  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, reward/advantage, gradient-reshaping.
-- **[Beyond Euclidean Clipping: Overcoming Exploration Collapse in LLM RL via Riemannian Isometric Policy Optimization](https://icml.cc/virtual/2026/poster/61727)** — **ICML 2026**
-  - Authors: Zhicheng Cai, Xinyuan Guo, Hanlin Wu, Mingxuan Wang, Wei-Ying Ma, Ya-Qin Zhang, Hao Zhou
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Mechanism: `gradient-reshaping`
-  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, gradient-reshaping.
 - **[Attention as a Compass: Efficient Exploration for Process-Supervised RL in Reasoning Models](https://iclr.cc/virtual/2026/poster/10009884)** — **ICLR 2026**
   - Authors: Runze Liu, Jiakang Wang, Yuling Shi, Zhihui Xie, Chenxin An, Kaiyan Zhang, Jian Zhao, Xiaodong Gu et al.
   - Type: `method` · Date: `2026`
@@ -1044,51 +1260,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Level: `policy-distribution`
   - Mechanism: `structured-search`
   - Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, reward/advantage, sampling/decoding.
-- **[Anchored Policy Optimization: Mitigating Exploration Collapse via Support-Constrained Rectification](https://icml.cc/virtual/2026/poster/65360)** — **ICML 2026**
-  - Authors: Tianyi Wang, Long Li, Hongcan Guo, Yibiao Chen, Yixia Li, Yong Wang, Yun Chen, Guanhua CHEN
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Mechanism: `regularization` `gradient-reshaping`
-  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
-- **[ARES: Multimodal Adaptive Reasoning via Difficulty-Aware Token-Level Entropy Shaping](https://iclr.cc/virtual/2026/poster/10011711)** — **ICLR 2026**
-  - Authors: Shuang Chen, Hangyu Guo, Yimeng Ye, Shijue Huang, Wenbo Hu, Jiayu Chen, Manyuan Zhang, Haoxi Li et al.
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `token` `policy-distribution`
-  - Signal: `entropy/probability`
-  - Setting: `multimodal`
-  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
-- **[A Few Bad Apples Spoil the Bunch: Preventing Global Entropy Collapse Driven by a Small Set of Tokens in LLM Reasoning](https://aclanthology.org/2026.findings-acl.641/)** — **ACL 2026 Findings**
-  - Authors: Jaeeun Jang, Hansle Lee, Sangmin Kim
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `token` `policy-distribution`
-  - Signal: `entropy/probability`
-  - Problem: `entropy-collapse`
-  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
-- **[Can LLMs Guide Their Own Exploration? Gradient-Guided Reinforcement Learning for LLM Reasoning](https://arxiv.org/abs/2512.15687)** — arXiv
-  - Authors: Zhenwen Liang, Sidi Lu, Wenhao Yu, Kishan Panaganti, Yujun Zhou, Haitao Mi, Dong Yu
-  - Type: `method` · Date: `2025-12-17`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Mechanism: `gradient-reshaping`
-  - Exploration focus: entropy/probability, novelty/curiosity, reward/advantage.
-- **[Efficient Reinforcement Learning with Semantic and Token Entropy for LLM Reasoning](https://arxiv.org/abs/2512.04359)** — arXiv
-  - Authors: Hongye Cao, Zhixin Bai, Ziyue Peng, Boyan Wang, Tianpei Yang, Jing Huo, Yuyao Zhang, Yang Gao
-  - Type: `method` · Date: `2025-12-04`
-  - Phase: `rl-training`
-  - Level: `token` `policy-distribution`
-  - Signal: `entropy/probability`
-  - Exploration focus: entropy/probability, reward/advantage, regularization.
-- **[From Exploration to Exploitation: A Two-Stage Entropy RLVR Approach for Noise-Tolerant MLLM Training](https://arxiv.org/abs/2511.07738)** — arXiv
-  - Authors: Donglai Xu, Hongzheng Yang, Yuzhi Zhao, Pingping Zhang, Jinpeng Chen, Wenao Ma, Zhijian Hou, Mengyang Wu et al.
-  - Type: `method` · Date: `2025-11-11`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `entropy/probability`
-  - Mechanism: `noise/perturbation`
-  - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
 - **[Scheduling Your LLM Reinforcement Learning with Reasoning Trees](https://arxiv.org/abs/2510.24832)** — arXiv
   - Authors: Hong Wang, Zhezheng Hao, Jian Luo, Chenxing Wei, Yao Shu, Lei Liu, Qiang Lin, Hande Dong et al.
   - Type: `method` · Date: `2025-10-28`
@@ -1096,14 +1267,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Level: `policy-distribution`
   - Mechanism: `tree-search/branching`
   - Exploration focus: novelty/curiosity, reward/advantage, tree-search/branching.
-- **[Revisiting Entropy Regularization: Adaptive Coefficient Unlocks Its Potential for LLM Reinforcement Learning](https://arxiv.org/abs/2510.10959)** — arXiv
-  - Authors: Xiaoyun Zhang, Xiaojian Yuan, Di Huang, Wang You, Chen Hu, Jingqing Ruan, Ai Jian, Kejiang Chen et al.
-  - Type: `method` · Date: `2025-10-13`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `entropy/probability`
-  - Mechanism: `regularization`
-  - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
 - **[Let it Calm: Exploratory Annealed Decoding for Verifiable Reinforcement Learning](https://arxiv.org/abs/2510.05251)** — arXiv
   - Authors: Chenghao Yang, Lin Gui, Chenxiao Yang, Victor Veitch, Lizhu Zhang, Zhuokai Zhao
   - Type: `method` · Date: `2025-10-06`
@@ -1111,39 +1274,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Level: `policy-distribution`
   - Mechanism: `sampling/decoding`
   - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
-- **[More Than One Teacher: Adaptive Multi-Guidance Policy Optimization for Diverse Exploration](https://arxiv.org/abs/2510.02227)** — arXiv
-  - Authors: Xiaoyang Yuan, Yujuan Ding, Yi Bin, Wenqi Shao, Jinyu Cai, Jingkuan Song, Yang Yang, Heng Tao Shen
-  - Type: `method` · Date: `2025-10-02`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `semantic-diversity`
-  - Mechanism: `gradient-reshaping`
-  - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
-- **[Clip-Low Increases Entropy and Clip-High Decreases Entropy in Reinforcement Learning of Large Language Models](https://arxiv.org/abs/2509.26114)** — arXiv
-  - Authors: Jaesung R. Park, Junsu Kim, Gyeongman Kim, Jinyoung Jo, Sean Choi, Jaewoong Cho, Ernest K. Ryu
-  - Type: `method` · Date: `2025-09-30`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `entropy/probability`
-  - Mechanism: `gradient-reshaping`
-  - Exploration focus: entropy/probability, reward/advantage, gradient-reshaping.
-- **[CE-GPPO: Coordinating Entropy via Gradient-Preserving Clipping Policy Optimization in Reinforcement Learning](https://arxiv.org/abs/2509.20712)** — arXiv
-  - Authors: Zhenpeng Su, Leiyu Pan, Minxuan Lv, Yuntao Li, Wenping Hu, Fuzheng Zhang, Kun Gai, Guorui Zhou
-  - Type: `method` · Date: `2025-09-25`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `entropy/probability`
-  - Mechanism: `gradient-reshaping`
-  - Exploration focus: entropy/probability, novelty/curiosity, gradient-reshaping.
-- **[Outcome-based Exploration for LLM Reasoning](https://arxiv.org/abs/2509.06941)** — arXiv
-  - Authors: Yuda Song, Julia Kempe, Remi Munos
-  - Type: `method` · Date: `2025-09-08`
-  - Phase: `rl-training`
-  - Level: `response/sequence` `policy-distribution`
-  - Signal: `reward/advantage` `semantic-diversity`
-  - Mechanism: `reward-shaping/intrinsic-reward`
-  - Problem: `mode-collapse`
-  - Exploration focus: structured-search.
 - **[Know When to Explore: Difficulty-Aware Certainty as a Guide for LLM Reinforcement Learning](https://arxiv.org/abs/2509.00125)** — arXiv
   - Authors: Ang Li, Zhihang Yuan, Yang Zhang, Shouda Liu, Yisen Wang
   - Type: `method` · Date: `2025-08-29`
@@ -1152,22 +1282,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Signal: `uncertainty/confidence`
   - Mechanism: `structured-search`
   - Exploration focus: uncertainty/confidence, novelty/curiosity, reward/advantage.
-- **[ETTRL: Balancing Exploration and Exploitation in LLM Test-Time Reinforcement Learning Via Entropy Mechanism](https://arxiv.org/abs/2508.11356)** — arXiv
-  - Authors: Jia Liu, ChangYi He, YingQiao Lin, MingMin Yang, FeiYang Shen, ShaoGuo Liu
-  - Type: `method` · Date: `2025-08-15`
-  - Phase: `rl-training` `inference`
-  - Level: `policy-distribution`
-  - Signal: `entropy/probability`
-  - Mechanism: `structured-search`
-  - Problem: `exploration-exploitation`
-  - Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
-- **[CURE: Critical-Token-Guided Re-Concatenation for Entropy-Collapse Prevention](https://arxiv.org/abs/2508.11016)** — arXiv
-  - Authors: Qingbin Li, Rongkun Xue, Jie Wang, Ming Zhou, Zhi Li, Xiaofeng Ji, Yongqi Wang, Miao Liu et al.
-  - Type: `method` · Date: `2025-08-14`
-  - Phase: `rl-training`
-  - Level: `token` `policy-distribution`
-  - Signal: `entropy/probability`
-  - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
 - **[AMFT: Aligning LLM Reasoners by Meta-Learning the Optimal Imitation-Exploration Balance](https://arxiv.org/abs/2508.06944)** — arXiv
   - Authors: Lixuan He, Jie Feng, Yong Li
   - Type: `method` · Date: `2025-08-09`
@@ -1176,21 +1290,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Mechanism: `structured-search`
   - Problem: `exploration-exploitation`
   - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
-- **[Decomposing the Entropy-Performance Exchange: The Missing Keys to Unlocking Effective Reinforcement Learning](https://arxiv.org/abs/2508.02260)** — arXiv
-  - Authors: Jia Deng, Jie Chen, Zhipeng Chen, Wayne Xin Zhao, Ji-Rong Wen
-  - Type: `method` · Date: `2025-08-04`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `entropy/probability`
-  - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
-- **[RL-PLUS: Countering Capability Boundary Collapse of LLMs in Reinforcement Learning with Hybrid-policy Optimization](https://arxiv.org/abs/2508.00222)** — arXiv
-  - Authors: Yihong Dong, Xue Jiang, Yongding Tao, Huanyu Liu, Kechi Zhang, Lili Mou, Rongyu Cao, Yingwei Ma
-  - Type: `method` · Date: `2025-07-31`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Mechanism: `gradient-reshaping`
-  - Problem: `capability-boundary`
-  - Exploration focus: gradient-reshaping.
 - **[TreeRL: LLM Reinforcement Learning with On-Policy Tree Search](https://arxiv.org/abs/2506.11902)** — arXiv
   - Authors: Zhenyu Hou, Ziniu Hu, Yujiang Li, Rui Lu, Jie Tang, Yuxiao Dong
   - Type: `method` · Date: `2025-06-13`
@@ -1198,82 +1297,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Level: `policy-distribution`
   - Mechanism: `tree-search/branching`
   - Exploration focus: entropy/probability, uncertainty/confidence, reward/advantage.
-- **[R-Search: Empowering LLM Reasoning with Search via Multi-Reward Reinforcement Learning](https://arxiv.org/abs/2506.04185)** — arXiv
-  - Authors: Qingfei Zhao, Ruobing Wang, Dingling Xu, Daren Zha, Limin Liu
-  - Type: `method` · Date: `2025-06-04`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `reward/advantage`
-  - Mechanism: `structured-search`
-  - Exploration focus: novelty/curiosity, reward/advantage, structured-search.
-- **[Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning](https://arxiv.org/abs/2506.01939)** — arXiv
-  - Authors: Shenzhi Wang, Le Yu, Chang Gao, Chujie Zheng, Shixuan Liu, Rui Lu, Kai Dang, Xionghui Chen et al.
-  - Type: `method` · Date: `2025-06-02`
-  - Phase: `rl-training`
-  - Level: `token` `policy-distribution`
-  - Signal: `entropy/probability`
-  - Mechanism: `gradient-reshaping`
-  - Problem: `entropy-collapse`
-  - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
-- **[ProRL: Prolonged Reinforcement Learning Expands Reasoning Boundaries in Large Language Models](https://arxiv.org/abs/2505.24864)** — arXiv
-  - Authors: Mingjie Liu, Shizhe Diao, Ximing Lu, Jian Hu, Xin Dong, Yejin Choi, Jan Kautz, Yi Dong
-  - Type: `method` · Date: `2025-05-30`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `coverage`
-  - Mechanism: `regularization`
-  - Problem: `capability-boundary` `long-horizon`
-  - Exploration focus: structured-search.
-- **[The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models](https://arxiv.org/abs/2505.22617)** — arXiv
-  - Authors: Ganqu Cui, Yuchen Zhang, Jiacheng Chen, Lifan Yuan, Zhi Wang, Yuxin Zuo, Haozhan Li, Yuchen Fan
-  - Type: `method` · Date: `2025-05-28`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `entropy/probability`
-  - Mechanism: `regularization` `gradient-reshaping`
-  - Problem: `entropy-collapse`
-  - Exploration focus: entropy/probability.
-- **[PPO-BR: Dual-Signal Entropy-Reward Adaptation for Trust Region Policy Optimization](https://arxiv.org/abs/2505.17714)** — arXiv
-  - Authors: Ben Rahman
-  - Type: `method` · Date: `2025-05-23`
-  - Phase: `rl-training` `test-time-adaptation`
-  - Level: `policy-distribution`
-  - Signal: `entropy/probability` `reward/advantage`
-  - Mechanism: `gradient-reshaping`
-  - Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
-- **[DGRO: Enhancing LLM Reasoning via Exploration-Exploitation Control and Reward Variance Management](https://arxiv.org/abs/2505.12951)** — arXiv
-  - Authors: Xuerui Su, Liya Guo, Yue Wang, Yi Zhu, Zhiming Ma, Zun Wang, Yuting Liu
-  - Type: `method` · Date: `2025-05-19`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `reward/advantage`
-  - Mechanism: `structured-search`
-  - Problem: `exploration-exploitation`
-  - Exploration focus: reward/advantage, sampling/decoding, regularization.
-- **[SEED-GRPO: Semantic Entropy Enhanced GRPO for Uncertainty-Aware Policy Optimization](https://arxiv.org/abs/2505.12346)** — arXiv
-  - Authors: Minghan Chen, Guikun Chen, Wenguan Wang, Yi Yang
-  - Type: `method` · Date: `2025-05-18`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `entropy/probability` `uncertainty/confidence`
-  - Mechanism: `gradient-reshaping`
-  - Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
-- **[Entropy-guided sequence weighting for efficient exploration in RL-based LLM fine-tuning](https://arxiv.org/abs/2503.22456)** — arXiv
-  - Authors: Abdullah Vanlioglu
-  - Type: `method` · Date: `2025-03-28`
-  - Phase: `rl-training`
-  - Level: `response/sequence` `policy-distribution`
-  - Signal: `entropy/probability`
-  - Mechanism: `structured-search`
-  - Exploration focus: entropy/probability, uncertainty/confidence, novelty/curiosity.
-- **[DAPO: An Open-Source LLM Reinforcement Learning System at Scale](https://arxiv.org/abs/2503.14476)** — arXiv
-  - Type: `method` · Date: `2025-03-18`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `entropy/probability`
-  - Mechanism: `sampling/decoding` `gradient-reshaping`
-  - Problem: `entropy-collapse`
-  - Exploration focus: structured-search.
 - **[Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search](https://arxiv.org/abs/2502.02508)** — arXiv
   - Authors: Maohao Shen, Guangtao Zeng, Zhenting Qi, Zhang-Wei Hong, Zhenfang Chen, Wei Lu, Gregory Wornell, Subhro Das et al.
   - Type: `method` · Date: `2025-02-04`
@@ -1282,11 +1305,14 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Mechanism: `structured-search`
   - Exploration focus: semantic-diversity, sampling/decoding, structured-search.
 
+
 ## 3. Data, Task & Curriculum Exploration
 
 This category covers exploration over the learning material itself: which data to generate or select, which tasks to attempt, how to vary difficulty, and how to construct a curriculum. Rather than changing only a model's next-token or policy distribution, these methods expand or prioritize the problem space from which learning signals are drawn.
 
 It includes active data selection, synthetic task generation, adaptive curricula, and exploration-aware training-set construction. A paper belongs here when deciding what to learn from is its central exploration mechanism.
+
+### Data Selection & Prompt Exploration · 6 papers
 
 - **[Think Earlier, Not Longer: Prompt Optimization via Reducing Unhealthy Exploration](https://aclanthology.org/2026.findings-acl.817/)** — **ACL 2026 Findings**
   - Authors: Ling-I Wu, Minyu Chen, Jingyang Li, Xi Chang, Guoqiang Li
@@ -1302,21 +1328,6 @@ It includes active data selection, synthetic task generation, adaptive curricula
   - Level: `response/sequence` `data/task`
   - Signal: `entropy/probability` `semantic-diversity`
   - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
-- **[Scaling Synthetic Task Generation for Agents via Exploration](https://iclr.cc/virtual/2026/poster/10007463)** — **ICLR 2026**
-  - Authors: Ram Ramrakhya, Andrew Szot, Omar Attia, Bogdan Mazoure, Anh Nguyen, Yuhao Yang, Zhe Gan, Harsh Agrawal et al.
-  - Type: `method` · Date: `2026`
-  - Phase: `data-generation` `inference`
-  - Level: `response/sequence` `trajectory/action` `data/task`
-  - Mechanism: `curriculum/task-generation`
-  - Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity, coverage.
-- **[SQLAgent: Learning to Explore Before Generating as a Data Engineer](https://aclanthology.org/2026.findings-acl.1959/)** — **ACL 2026 Findings**
-  - Authors: Wenjia Jiang, Yiwei Wang, Boyan Han, Joey Tianyi Zhou, Chi Zhang
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `trajectory/action` `data/task`
-  - Mechanism: `structured-search`
-  - Setting: `code`
-  - Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, tree-search/branching.
 - **[No Prompt Left Behind: Exploiting Zero-Variance Prompts in LLM Reinforcement Learning via Entropy-Guided Advantage Shaping](https://iclr.cc/virtual/2026/poster/10007755)** — **ICLR 2026**
   - Authors: Thanh-Long V. Le, Myeongho Jeon, Kim Vu, Viet Lai, Eunho Yang
   - Type: `method` · Date: `2026`
@@ -1333,14 +1344,6 @@ It includes active data selection, synthetic task generation, adaptive curricula
   - Mechanism: `sampling/decoding`
   - Setting: `math`
   - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, novelty/curiosity, sampling/decoding.
-- **[DIVE: Scaling Diversity in Agentic Task Synthesis for Generalizable Tool Use](https://icml.cc/virtual/2026/poster/66305)** — **ICML 2026**
-  - Authors: Aili Chen, Chi Zhang, Junteng Liu, Jiangjie Chen, Chengyu Du, Yunji Li, Ming Zhong, Qin Wang et al.
-  - Type: `method` · Date: `2026`
-  - Phase: `data-generation`
-  - Level: `trajectory/action` `data/task`
-  - Signal: `semantic-diversity`
-  - Setting: `tool-use`
-  - Officially accepted at ICML 2026. Exploration focus: semantic-diversity, coverage.
 - **[Beyond Templates: Dynamic Adaptation of Reasoning Demonstrations via Feasibility-Aware Exploration](https://aclanthology.org/2026.findings-acl.327/)** — **ACL 2026 Findings**
   - Authors: Yong Wu, Weihang Pan, Ke Li, Chen Binhui, Ping Li, Binbin Lin
   - Type: `method` · Date: `2026`
@@ -1348,13 +1351,6 @@ It includes active data selection, synthetic task generation, adaptive curricula
   - Level: `data/task`
   - Mechanism: `structured-search`
   - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
-- **[Beyond Stochastic Exploration: What Makes Training Data Valuable for Agentic Search](https://aclanthology.org/2026.findings-acl.160/)** — **ACL 2026 Findings**
-  - Authors: Chuzhan Hao, Wenfeng Feng, Guochao Jiang, Guofeng Quan, Guohua Liu, Yuewei Zhang
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `trajectory/action` `data/task`
-  - Mechanism: `structured-search`
-  - Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, reward/advantage, regularization.
 - **[Explore Data Left Behind in Reinforcement Learning for Reasoning Language Models](https://arxiv.org/abs/2511.04800)** — arXiv
   - Authors: Chenxi Liu, Junjie Liang, Yuqi Jia, Bochuan Cao, Yang Bai, Heng Huang, Xun Chen
   - Type: `method` · Date: `2025-11-06`
@@ -1363,11 +1359,82 @@ It includes active data selection, synthetic task generation, adaptive curricula
   - Mechanism: `structured-search`
   - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
 
+### Agent Task & Environment Generation · 4 papers
+
+- **[Scaling Synthetic Task Generation for Agents via Exploration](https://iclr.cc/virtual/2026/poster/10007463)** — **ICLR 2026**
+  - Authors: Ram Ramrakhya, Andrew Szot, Omar Attia, Bogdan Mazoure, Anh Nguyen, Yuhao Yang, Zhe Gan, Harsh Agrawal et al.
+  - Type: `method` · Date: `2026`
+  - Phase: `data-generation` `inference`
+  - Level: `response/sequence` `trajectory/action` `data/task`
+  - Mechanism: `curriculum/task-generation`
+  - Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity, coverage.
+- **[SQLAgent: Learning to Explore Before Generating as a Data Engineer](https://aclanthology.org/2026.findings-acl.1959/)** — **ACL 2026 Findings**
+  - Authors: Wenjia Jiang, Yiwei Wang, Boyan Han, Joey Tianyi Zhou, Chi Zhang
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `trajectory/action` `data/task`
+  - Mechanism: `structured-search`
+  - Setting: `code`
+  - Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, tree-search/branching.
+- **[DIVE: Scaling Diversity in Agentic Task Synthesis for Generalizable Tool Use](https://icml.cc/virtual/2026/poster/66305)** — **ICML 2026**
+  - Authors: Aili Chen, Chi Zhang, Junteng Liu, Jiangjie Chen, Chengyu Du, Yunji Li, Ming Zhong, Qin Wang et al.
+  - Type: `method` · Date: `2026`
+  - Phase: `data-generation`
+  - Level: `trajectory/action` `data/task`
+  - Signal: `semantic-diversity`
+  - Setting: `tool-use`
+  - Officially accepted at ICML 2026. Exploration focus: semantic-diversity, coverage.
+- **[Beyond Stochastic Exploration: What Makes Training Data Valuable for Agentic Search](https://aclanthology.org/2026.findings-acl.160/)** — **ACL 2026 Findings**
+  - Authors: Chuzhan Hao, Wenfeng Feng, Guochao Jiang, Guofeng Quan, Guohua Liu, Yuewei Zhang
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `trajectory/action` `data/task`
+  - Mechanism: `structured-search`
+  - Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, reward/advantage, regularization.
+
+
 ## 4. Agentic & Environment Exploration
 
 This category covers language agents that explore an external or persistent environment: webpages, tools, GUIs, knowledge graphs, games, embodied worlds, or multi-agent settings. The object of exploration is usually a trajectory of states, actions, observations, and tool calls rather than a single textual response.
 
 These papers focus on challenges such as partial observability, long horizons, recovery from failed actions, memory, environment coverage, and interactive search. A paper belongs here when external interaction is central to the exploration problem and evaluation.
+
+### Web, Tools & GUI · 4 papers
+
+- **[What You Think is What You See: Driving Exploration in VLM Agents via Visual-Linguistic Curiosity](https://icml.cc/virtual/2026/poster/60509)** — **ICML 2026**
+  - Authors: Haoxi Li, Qinglin Hou, Jianfei Ma, Jinxiang Lai, Tao Han, Sikai Bai, Jingcai Guo, Jie ZHANG et al.
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `trajectory/action`
+  - Signal: `novelty/curiosity`
+  - Mechanism: `structured-search`
+  - Setting: `multimodal`
+  - Officially accepted at ICML 2026. Exploration focus: uncertainty/confidence, novelty/curiosity, reward/advantage.
+- **[T$^2$PO: Uncertainty-Guided Exploration Control for Stable Multi-Turn Agentic Reinforcement Learning](https://icml.cc/virtual/2026/poster/63090)** — **ICML 2026**
+  - Authors: Haixin Wang, Hejie Cui, Chenwei Zhang, Jiahui Gao, Shuowei Jin, Shijie Geng, Xinyang Zhang, Nasser Zalmout et al.
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `trajectory/action`
+  - Signal: `uncertainty/confidence`
+  - Mechanism: `structured-search`
+  - Officially accepted at ICML 2026. Exploration focus: uncertainty/confidence, semantic-diversity, gradient-reshaping.
+- **[Go-Browse: Training Web Agents with Structured Exploration](https://iclr.cc/virtual/2026/poster/10010264)** — **ICLR 2026**
+  - Authors: Apurva Gandhi, Graham Neubig
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `trajectory/action`
+  - Mechanism: `structured-search`
+  - Setting: `web`
+  - Officially accepted at ICLR 2026. Exploration focus: uncertainty/confidence, semantic-diversity, structured-search.
+- **[DreamPhase: Offline Imagination and Uncertainty-Guided Planning for Large-Language-Model Agents](https://iclr.cc/virtual/2026/poster/10011238)** — **ICLR 2026**
+  - Authors: Shayan Mohajer Hamidi, Linfeng Ye, Konstantinos Plataniotis
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `trajectory/action`
+  - Signal: `uncertainty/confidence`
+  - Officially accepted at ICLR 2026. Exploration focus: uncertainty/confidence, reward/advantage, tree-search/branching.
+
+### Planning & Interactive Search · 16 papers
 
 - **[RAPO: Expanding Exploration for LLM Agents via Retrieval-Augmented Policy Optimization](https://arxiv.org/abs/2603.03078)** — arXiv
   - Authors: Siwei Zhang, Yun Xiong, Xi Chen, Zi'an Jia, Renhong Huang, Jiarong Xu, Jiawei Zhang
@@ -1383,15 +1450,6 @@ These papers focus on challenges such as partial observability, long horizons, r
   - Level: `trajectory/action` `policy-distribution`
   - Mechanism: `gradient-reshaping` `tree-search/branching`
   - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
-- **[What You Think is What You See: Driving Exploration in VLM Agents via Visual-Linguistic Curiosity](https://icml.cc/virtual/2026/poster/60509)** — **ICML 2026**
-  - Authors: Haoxi Li, Qinglin Hou, Jianfei Ma, Jinxiang Lai, Tao Han, Sikai Bai, Jingcai Guo, Jie ZHANG et al.
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `trajectory/action`
-  - Signal: `novelty/curiosity`
-  - Mechanism: `structured-search`
-  - Setting: `multimodal`
-  - Officially accepted at ICML 2026. Exploration focus: uncertainty/confidence, novelty/curiosity, reward/advantage.
 - **[Unlocking Long-Horizon Agentic Search with Large-Scale End-to-End RL](https://iclr.cc/virtual/2026/poster/10009929)** — **ICLR 2026**
   - Authors: Jiaxuan Gao, Wei Fu, Minyang Xie, Shusheng Xu, Chuyi He, Zhiyu Mei, Banghua Zhu, Yi Wu
   - Type: `method` · Date: `2026`
@@ -1407,14 +1465,6 @@ These papers focus on challenges such as partial observability, long horizons, r
   - Level: `trajectory/action`
   - Mechanism: `structured-search`
   - Officially accepted at ICLR 2026. Exploration focus: sampling/decoding.
-- **[T$^2$PO: Uncertainty-Guided Exploration Control for Stable Multi-Turn Agentic Reinforcement Learning](https://icml.cc/virtual/2026/poster/63090)** — **ICML 2026**
-  - Authors: Haixin Wang, Hejie Cui, Chenwei Zhang, Jiahui Gao, Shuowei Jin, Shijie Geng, Xinyang Zhang, Nasser Zalmout et al.
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `trajectory/action`
-  - Signal: `uncertainty/confidence`
-  - Mechanism: `structured-search`
-  - Officially accepted at ICML 2026. Exploration focus: uncertainty/confidence, semantic-diversity, gradient-reshaping.
 - **[RE-TRAC: REcursive TRAjectory Compression for Deep Search Agents](https://icml.cc/virtual/2026/poster/60790)** — **ICML 2026**
   - Authors: jialiang zhu, Gongrui Zhang, Xiaolong Ma, Lin Xu, Miaosen Zhang, Ruiqi Yang, Song Wang, Kai Qiu et al.
   - Type: `method` · Date: `2026`
@@ -1467,14 +1517,6 @@ These papers focus on challenges such as partial observability, long horizons, r
   - Mechanism: `gradient-reshaping`
   - Problem: `long-horizon`
   - Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, reward/advantage.
-- **[Go-Browse: Training Web Agents with Structured Exploration](https://iclr.cc/virtual/2026/poster/10010264)** — **ICLR 2026**
-  - Authors: Apurva Gandhi, Graham Neubig
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `trajectory/action`
-  - Mechanism: `structured-search`
-  - Setting: `web`
-  - Officially accepted at ICLR 2026. Exploration focus: uncertainty/confidence, semantic-diversity, structured-search.
 - **[FusionFlow: Enabling Deep Structural Exploration for Automated Agentic Workflow Generation](https://aclanthology.org/2026.acl-long.1278/)** — **ACL 2026 Main**
   - Authors: Xiang Wang, Zongtao Yang, Zhuojian Hong, Shuhao Zhang, Wei Wei
   - Type: `method` · Date: `2026`
@@ -1482,13 +1524,6 @@ These papers focus on challenges such as partial observability, long horizons, r
   - Level: `response/sequence` `trajectory/action`
   - Mechanism: `structured-search`
   - Officially accepted at ACL 2026 Main. Exploration focus: structured-search.
-- **[DreamPhase: Offline Imagination and Uncertainty-Guided Planning for Large-Language-Model Agents](https://iclr.cc/virtual/2026/poster/10011238)** — **ICLR 2026**
-  - Authors: Shayan Mohajer Hamidi, Linfeng Ye, Konstantinos Plataniotis
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `trajectory/action`
-  - Signal: `uncertainty/confidence`
-  - Officially accepted at ICLR 2026. Exploration focus: uncertainty/confidence, reward/advantage, tree-search/branching.
 - **[DPEPO: Diverse Parallel Exploration Policy Optimization for LLM-based Agents](https://aclanthology.org/2026.acl-long.2151/)** — **ACL 2026 Main**
   - Authors: JunShuo Zhang, Chengrui Huang, Feng Guo, Zihan Li, Ke Shi, Menghua Jiang, Jiguo Yu, Shuo Shang et al.
   - Type: `method` · Date: `2026`
@@ -1504,14 +1539,6 @@ These papers focus on challenges such as partial observability, long horizons, r
   - Level: `trajectory/action`
   - Mechanism: `structured-search`
   - Officially accepted at ACL 2026 Findings. Exploration focus: structured-search.
-- **[Active Exploring like a Pigeon: Reinforcing Spatial Reasoning via Agentic Vision-Language Models](https://icml.cc/virtual/2026/poster/61450)** — **ICML 2026**
-  - Authors: Wei Deng, Xianlin Zhang, Mengshi Qi
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `trajectory/action`
-  - Mechanism: `structured-search`
-  - Setting: `multimodal` `embodied`
-  - Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, reward/advantage, replay/memory.
 - **[EPO: Entropy-regularized Policy Optimization for LLM Agents Reinforcement Learning](https://arxiv.org/abs/2509.22576)** — arXiv
   - Authors: Wujiang Xu, Wentian Zhao, Zhenting Wang, Yu-Jhe Li, Can Jin, Mingyu Jin, Kai Mei, Kun Wan et al.
   - Type: `method` · Date: `2025-09-26`
@@ -1528,6 +1555,17 @@ These papers focus on challenges such as partial observability, long horizons, r
   - Signal: `entropy/probability` `semantic-diversity`
   - Mechanism: `structured-search`
   - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
+
+### Embodied & Simulated Environments · 2 papers
+
+- **[Active Exploring like a Pigeon: Reinforcing Spatial Reasoning via Agentic Vision-Language Models](https://icml.cc/virtual/2026/poster/61450)** — **ICML 2026**
+  - Authors: Wei Deng, Xianlin Zhang, Mengshi Qi
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `trajectory/action`
+  - Mechanism: `structured-search`
+  - Setting: `multimodal` `embodied`
+  - Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, reward/advantage, replay/memory.
 - **[ReAct: Synergizing Reasoning and Acting in Language Models](https://openreview.net/forum?id=WE_vluYUL-X)** — ICLR 2023
   - Authors: Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, Yuan Cao
   - Type: `method` · Date: `2023`
@@ -1539,11 +1577,14 @@ These papers focus on challenges such as partial observability, long horizons, r
   - Setting: `web` `tool-use` `embodied`
   - Established the interleaving of reasoning and environment actions for information-seeking agents.
 
+
 ## 5. Self-Improvement & Population Exploration
 
 This category covers exploration that emerges from repeated improvement loops or from interaction among multiple policies. Examples include self-play, co-evolution, ensembles, multi-agent collaboration, and generate–evaluate–train cycles that deliberately preserve diverse attempts.
 
 The key question is how a system can discover capabilities beyond a single fixed policy by using its own history, peer policies, or iterative feedback. Papers belong here when the population or self-improvement loop—not merely one rollout—is the main exploration unit.
+
+### Self-Play & Co-Evolution · 6 papers
 
 - **[WIST: Web-Grounded Iterative Self-Play Tree for Domain-Targeted Reasoning Improvement](https://aclanthology.org/2026.acl-long.1456/)** — **ACL 2026 Main**
   - Authors: Fangyuan Li, Pengfei Li, Shijie Wang, Junqi Gao, Jianxing Liu, Biqing Qi, Yuqiang Li
@@ -1575,13 +1616,6 @@ The key question is how a system can discover capabilities beyond a single fixed
   - Level: `trajectory/action`
   - Mechanism: `replay/memory` `self-play/co-evolution`
   - Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, semantic-diversity, gradient-reshaping.
-- **[Reinforcement Learning for Self-Improving Agent with Skill Library](https://aclanthology.org/2026.acl-long.69/)** — **ACL 2026 Main**
-  - Authors: Jiongxiao Wang, Qiaojing Yan, Yawei Wang, Yijun Tian, Soumya Smruti Mishra, Zhichao Xu, Megha Gandhi, Panpan Xu et al.
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training` `continual/self-improvement`
-  - Level: `trajectory/action`
-  - Mechanism: `structured-search`
-  - Officially accepted at ACL 2026 Main. Exploration focus: novelty/curiosity, reward/advantage, replay/memory.
 - **[R-Diverse: Mitigating Diversity Illusion in Self-Play LLM Training](https://icml.cc/virtual/2026/poster/65447)** — **ICML 2026**
   - Authors: Gengsheng Li, Jinghan He, Shijie Wang, Dan Zhang, Ruiqi Liu, Renrui Zhang, Zijun Yao, Junfeng Fang et al.
   - Type: `method` · Date: `2026`
@@ -1591,6 +1625,17 @@ The key question is how a system can discover capabilities beyond a single fixed
   - Mechanism: `self-play/co-evolution`
   - Setting: `multi-agent`
   - Officially accepted at ICML 2026. Exploration focus: semantic-diversity, replay/memory, self-play/co-evolution.
+- **[CoVerRL: Breaking the Consensus Trap in Label-Free Reasoning via Generator-Verifier Co-Evolution](https://aclanthology.org/2026.acl-long.1376/)** — **ACL 2026 Main**
+  - Authors: Teng Pan, Yuchen Yan, Zixuan Wang, Ruiqing Zhang, Guiyang Hou, Wenqi Zhang, Weiming Lu, Jun Xiao et al.
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Signal: `disagreement`
+  - Mechanism: `self-play/co-evolution`
+  - Officially accepted at ACL 2026 Main. Exploration focus: semantic-diversity, reward/advantage, disagreement.
+
+### Multi-Agent & Ensemble Exploration · 3 papers
+
 - **[Multi-LLM Collaborative Search for Complex Problem Solving](https://aclanthology.org/2026.findings-acl.2115/)** — **ACL 2026 Findings**
   - Authors: Sen Yang, Yafu Li, Wai Lam, Yu Cheng
   - Type: `method` · Date: `2026`
@@ -1606,24 +1651,6 @@ The key question is how a system can discover capabilities beyond a single fixed
   - Mechanism: `tree-search/branching` `ensemble/population`
   - Setting: `multi-agent`
   - Officially accepted at ACL 2026 Findings. Exploration focus: reward/advantage, tree-search/branching, backtracking/resampling.
-- **[CoVerRL: Breaking the Consensus Trap in Label-Free Reasoning via Generator-Verifier Co-Evolution](https://aclanthology.org/2026.acl-long.1376/)** — **ACL 2026 Main**
-  - Authors: Teng Pan, Yuchen Yan, Zixuan Wang, Ruiqing Zhang, Guiyang Hou, Wenqi Zhang, Weiming Lu, Jun Xiao et al.
-  - Type: `method` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Signal: `disagreement`
-  - Mechanism: `self-play/co-evolution`
-  - Officially accepted at ACL 2026 Main. Exploration focus: semantic-diversity, reward/advantage, disagreement.
-- **[Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291)** — TMLR 2024
-  - Authors: Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan, Anima Anandkumar
-  - Type: `method` · Date: `2024`
-  - Phase: `continual/self-improvement`
-  - Level: `trajectory/action` `data/task`
-  - Signal: `novelty/curiosity` `coverage`
-  - Mechanism: `curriculum/task-generation` `replay/memory`
-  - Problem: `long-horizon`
-  - Setting: `embodied` `creative/open-ended`
-  - A foundational open-ended agent combining automatic curriculum, skill discovery, and lifelong memory.
 - **[Self-Consistency Improves Chain of Thought Reasoning in Language Models](https://iclr.cc/virtual/2023/poster/11718)** — ICLR 2023
   - Authors: Xuezhi Wang, Jason Wei, Dale Schuurmans, Quoc V. Le, Ed H. Chi, Sharan Narang, Aakanksha Chowdhery, Denny Zhou
   - Type: `method` · Date: `2023`
@@ -1634,6 +1661,26 @@ The key question is how a system can discover capabilities beyond a single fixed
   - Problem: `mode-collapse`
   - Setting: `math`
   - Foundational diverse-path sampling and answer aggregation for language-model reasoning.
+
+### Iterative Self-Improvement · 3 papers
+
+- **[Reinforcement Learning for Self-Improving Agent with Skill Library](https://aclanthology.org/2026.acl-long.69/)** — **ACL 2026 Main**
+  - Authors: Jiongxiao Wang, Qiaojing Yan, Yawei Wang, Yijun Tian, Soumya Smruti Mishra, Zhichao Xu, Megha Gandhi, Panpan Xu et al.
+  - Type: `method` · Date: `2026`
+  - Phase: `rl-training` `continual/self-improvement`
+  - Level: `trajectory/action`
+  - Mechanism: `structured-search`
+  - Officially accepted at ACL 2026 Main. Exploration focus: novelty/curiosity, reward/advantage, replay/memory.
+- **[Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291)** — TMLR 2024
+  - Authors: Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan, Anima Anandkumar
+  - Type: `method` · Date: `2024`
+  - Phase: `continual/self-improvement`
+  - Level: `trajectory/action` `data/task`
+  - Signal: `novelty/curiosity` `coverage`
+  - Mechanism: `curriculum/task-generation` `replay/memory`
+  - Problem: `long-horizon`
+  - Setting: `embodied` `creative/open-ended`
+  - A foundational open-ended agent combining automatic curriculum, skill discovery, and lifelong memory.
 - **[Reflexion: Language Agents with Verbal Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html)** — NeurIPS 2023
   - Authors: Noah Shinn, Federico Cassano, Ashwin Gopinath, Karthik Narasimhan, Shunyu Yao
   - Type: `method` · Date: `2023`
@@ -1645,21 +1692,15 @@ The key question is how a system can discover capabilities beyond a single fixed
   - Setting: `code` `tool-use`
   - Introduced verbal feedback and episodic memory for learning from agent trial and error.
 
+
 ## 6. Memory & Knowledge Exploration
 
 This category covers exploration over information stored beyond the immediate prompt: retrieved documents, episodic traces, long-context memories, knowledge graphs, or internal memory representations. The focus is not simply whether a model has memory, but how it searches, selects, combines, writes, compresses, or updates memory to expand its effective search space.
 
 It includes memory-retrieval policies, memory writing and consolidation, forgetting, structured knowledge navigation, and memory-guided planning. A paper belongs here when actively exploring or managing knowledge is central to the method or evaluation.
 
-- **[Explore-on-Graph: Incentivizing Autonomous Exploration of Large Language Models on Knowledge Graphs with Path-refined Reward Modeling](https://iclr.cc/virtual/2026/poster/10009840)** — **ICLR 2026**
-  - Authors: Shiqi Yan, Yubo Chen, Ruiqi Zhou, Zhengxi Yao, Shuai Chen, Tianyi Zhang, Shijie Zhang, Wei-Qiang Zhang et al.
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `trajectory/action`
-  - Signal: `reward/advantage`
-  - Mechanism: `structured-search`
-  - Setting: `knowledge-graph`
-  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
+### Replay & Trajectory Memory · 11 papers
+
 - **[Exploratory Memory-Augmented LLM Agent via Hybrid On- and Off-Policy Optimization](https://iclr.cc/virtual/2026/poster/10009229)** — **ICLR 2026**
   - Authors: Zeyuan Liu, Jeonghye Kim, Xufang Luo, Dongsheng Li, Yuqing Yang
   - Type: `method` · Date: `2026`
@@ -1704,14 +1745,6 @@ It includes memory-retrieval policies, memory writing and consolidation, forgett
   - Mechanism: `tree-search/branching` `replay/memory`
   - Problem: `local-optimum`
   - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, coverage, reward/advantage.
-- **[Chain-of-Relations: Faithful and Efficient LLM Reasoning over Knowledge Graphs via Relation-Centric Exploration](https://aclanthology.org/2026.findings-acl.2138/)** — **ACL 2026 Findings**
-  - Authors: Chenhui Liu, Jianpeng Zhou, Jiahai Wang
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `trajectory/action`
-  - Mechanism: `structured-search`
-  - Setting: `knowledge-graph`
-  - Officially accepted at ACL 2026 Findings. Exploration focus: structured-search.
 - **[Branch-and-Browse: Efficient and Controllable Web Exploration with Tree-Structured Reasoning and Action Memory](https://aclanthology.org/2026.acl-long.838/)** — **ACL 2026 Main**
   - Authors: Shiqi He, Yue Cui, Xinyu Ma, Yaliang Li, Bolin Ding, Mosharaf Chowdhury
   - Type: `method` · Date: `2026`
@@ -1720,22 +1753,6 @@ It includes memory-retrieval policies, memory writing and consolidation, forgett
   - Mechanism: `tree-search/branching` `replay/memory`
   - Setting: `web`
   - Officially accepted at ACL 2026 Main. Exploration focus: tree-search/branching, backtracking/resampling, replay/memory.
-- **[Backjump-on-Graph: Empowering LLMs with Reinforced Retrospective Exploration for Agentic KG Reasoning](https://icml.cc/virtual/2026/poster/61995)** — **ICML 2026**
-  - Authors: Yunqi Zhang, Shiqi Yan, Zhenzhao Yuan, Wenrui Liang, Yangming Liu, Zhixiao Qi, Tianyi Zhang, Shijie Zhang et al.
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `trajectory/action`
-  - Mechanism: `backtracking/resampling`
-  - Setting: `knowledge-graph`
-  - Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, reward/advantage, backtracking/resampling.
-- **[Autonomous Knowledge Graph Exploration with Adaptive Breadth-Depth Retrieval](https://aclanthology.org/2026.acl-long.714/)** — **ACL 2026 Main**
-  - Authors: Joaquin Polonuer, Lucas Vittor, Iñaki Arango, Ayush Noori, David A. Clifton, Luciano Del Corro, Marinka Zitnik
-  - Type: `method` · Date: `2026`
-  - Phase: `inference`
-  - Level: `trajectory/action`
-  - Mechanism: `tree-search/branching`
-  - Setting: `knowledge-graph`
-  - Officially accepted at ACL 2026 Main. Exploration focus: coverage, structured-search.
 - **[RLEP: Reinforcement Learning with Experience Replay for LLM Reasoning](https://arxiv.org/abs/2507.07451)** — arXiv
   - Authors: Hongzhi Zhang, Jia Fu, Jingyuan Zhang, Kai Fu, Qi Wang, Fuzheng Zhang, Guorui Zhou
   - Type: `method` · Date: `2025-07-10`
@@ -1768,11 +1785,50 @@ It includes memory-retrieval policies, memory writing and consolidation, forgett
   - Setting: `web` `code` `tool-use`
   - Unified environment feedback, reflection, and Monte Carlo tree search for language agents.
 
+### Knowledge-Graph Memory · 4 papers
+
+- **[Explore-on-Graph: Incentivizing Autonomous Exploration of Large Language Models on Knowledge Graphs with Path-refined Reward Modeling](https://iclr.cc/virtual/2026/poster/10009840)** — **ICLR 2026**
+  - Authors: Shiqi Yan, Yubo Chen, Ruiqi Zhou, Zhengxi Yao, Shuai Chen, Tianyi Zhang, Shijie Zhang, Wei-Qiang Zhang et al.
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `trajectory/action`
+  - Signal: `reward/advantage`
+  - Mechanism: `structured-search`
+  - Setting: `knowledge-graph`
+  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
+- **[Chain-of-Relations: Faithful and Efficient LLM Reasoning over Knowledge Graphs via Relation-Centric Exploration](https://aclanthology.org/2026.findings-acl.2138/)** — **ACL 2026 Findings**
+  - Authors: Chenhui Liu, Jianpeng Zhou, Jiahai Wang
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `trajectory/action`
+  - Mechanism: `structured-search`
+  - Setting: `knowledge-graph`
+  - Officially accepted at ACL 2026 Findings. Exploration focus: structured-search.
+- **[Backjump-on-Graph: Empowering LLMs with Reinforced Retrospective Exploration for Agentic KG Reasoning](https://icml.cc/virtual/2026/poster/61995)** — **ICML 2026**
+  - Authors: Yunqi Zhang, Shiqi Yan, Zhenzhao Yuan, Wenrui Liang, Yangming Liu, Zhixiao Qi, Tianyi Zhang, Shijie Zhang et al.
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `trajectory/action`
+  - Mechanism: `backtracking/resampling`
+  - Setting: `knowledge-graph`
+  - Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, reward/advantage, backtracking/resampling.
+- **[Autonomous Knowledge Graph Exploration with Adaptive Breadth-Depth Retrieval](https://aclanthology.org/2026.acl-long.714/)** — **ACL 2026 Main**
+  - Authors: Joaquin Polonuer, Lucas Vittor, Iñaki Arango, Ayush Noori, David A. Clifton, Luciano Del Corro, Marinka Zitnik
+  - Type: `method` · Date: `2026`
+  - Phase: `inference`
+  - Level: `trajectory/action`
+  - Mechanism: `tree-search/branching`
+  - Setting: `knowledge-graph`
+  - Officially accepted at ACL 2026 Main. Exploration focus: coverage, structured-search.
+
+
 ## 7. Understanding, Evaluation & Benchmarks
 
 This category collects empirical analyses, theoretical accounts, surveys, metrics, and benchmarks that help the field understand exploration. Rather than primarily proposing a new exploration intervention, these works measure diversity, characterize training dynamics, evaluate capability boundaries, or establish a shared vocabulary and test bed.
 
 They are essential for judging whether a method genuinely improves exploration instead of merely changing accuracy or sampling behavior. Keeping them separate makes the evidence about a phenomenon easy to distinguish from methods designed to change it.
+
+### Theory & Training Dynamics · 26 papers
 
 - **[Beyond Accuracy: Evaluating Strategy Diversity in LLM Mathematical Reasoning](https://arxiv.org/abs/2605.09292)** — arXiv
   - Authors: Xia Yang, Xuanyi Zhang, Hao Hu, Feng Ji
@@ -1782,13 +1838,6 @@ They are essential for judging whether a method genuinely improves exploration i
   - Signal: `semantic-diversity`
   - Setting: `math`
   - Exploration focus: novelty/curiosity, semantic-diversity, coverage.
-- **[Why Did Apple Fall: Evaluating Curiosity in Large Language Models](https://aclanthology.org/2026.findings-acl.1954/)** — **ACL 2026 Findings**
-  - Authors: Haoyu Wang, Sihang Jiang, Yuyan Chen, Yitong Wang, Xiaojun Meng, Jiansheng Wei, Yanghua Xiao
-  - Type: `benchmark` · Date: `2026`
-  - Phase: `inference`
-  - Level: `response/sequence`
-  - Signal: `novelty/curiosity`
-  - Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, reward/advantage, reward-shaping/intrinsic-reward.
 - **[When Greedy Wins: Emergent Exploitation Bias in Meta-Bandit LLM Training](https://iclr.cc/virtual/2026/poster/10008807)** — **ICLR 2026**
   - Authors: Sanxing Chen, Xiaoyin Chen, Yukun Huang, Roy Xie, Bhuwan Dhingra
   - Type: `analysis` · Date: `2026`
@@ -1880,14 +1929,6 @@ They are essential for judging whether a method genuinely improves exploration i
   - Level: `policy-distribution`
   - Mechanism: `backtracking/resampling`
   - Officially accepted at ICML 2026. Exploration focus: reward/advantage, backtracking/resampling.
-- **[Post-Training with Policy Gradients: Optimality and the Base Model Barrier](https://icml.cc/virtual/2026/poster/61683)** — **ICML 2026**
-  - Authors: Alireza Mousavi-Hosseini, Murat Erdogdu
-  - Type: `analysis` · Date: `2026`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Mechanism: `gradient-reshaping`
-  - Problem: `capability-boundary`
-  - Officially accepted at ICML 2026. Exploration focus: reward/advantage, gradient-reshaping.
 - **[On the Entropy Dynamics in Reinforcement Fine-Tuning of Large Language Models](https://icml.cc/virtual/2026/poster/63897)** — **ICML 2026**
   - Authors: Shumin Wang, Yuexiang Xie, Wenhao Zhang, Yuchang Sun, Yanxi Chen, Yaliang Li, Yanyong Zhang
   - Type: `analysis` · Date: `2026`
@@ -1975,6 +2016,44 @@ They are essential for judging whether a method genuinely improves exploration i
   - Level: `response/sequence`
   - Signal: `entropy/probability`
   - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
+- **[An Empirical Study on Reinforcement Learning for Reasoning-Search Interleaved LLM Agents](https://arxiv.org/abs/2505.15117)** — arXiv
+  - Authors: Bowen Jin, Jinsung Yoon, Priyanka Kargupta, Sercan O. Arik, Jiawei Han
+  - Type: `analysis` · Date: `2025-05-21`
+  - Phase: `rl-training`
+  - Level: `response/sequence`
+  - Mechanism: `structured-search`
+  - Exploration focus: reward/advantage, structured-search.
+
+### Benchmarks & Metrics · 1 papers
+
+- **[Why Did Apple Fall: Evaluating Curiosity in Large Language Models](https://aclanthology.org/2026.findings-acl.1954/)** — **ACL 2026 Findings**
+  - Authors: Haoyu Wang, Sihang Jiang, Yuyan Chen, Yitong Wang, Xiaojun Meng, Jiansheng Wei, Yanghua Xiao
+  - Type: `benchmark` · Date: `2026`
+  - Phase: `inference`
+  - Level: `response/sequence`
+  - Signal: `novelty/curiosity`
+  - Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, reward/advantage, reward-shaping/intrinsic-reward.
+
+### Surveys & Position Papers · 1 papers
+
+- **[From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR](https://arxiv.org/abs/2508.07534)** — arXiv
+  - Authors: Jia Deng, Jie Chen, Zhipeng Chen, Daixuan Cheng, Fei Bai, Beichen Zhang, Yinqian Min, Yanzipeng Gao et al.
+  - Type: `survey` · Date: `2025-08-11`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Mechanism: `structured-search`
+  - Exploration focus: entropy/probability, coverage, reward/advantage.
+
+### Capability Boundaries · 2 papers
+
+- **[Post-Training with Policy Gradients: Optimality and the Base Model Barrier](https://icml.cc/virtual/2026/poster/61683)** — **ICML 2026**
+  - Authors: Alireza Mousavi-Hosseini, Murat Erdogdu
+  - Type: `analysis` · Date: `2026`
+  - Phase: `rl-training`
+  - Level: `policy-distribution`
+  - Mechanism: `gradient-reshaping`
+  - Problem: `capability-boundary`
+  - Officially accepted at ICML 2026. Exploration focus: reward/advantage, gradient-reshaping.
 - **[The Debate on RLVR Reasoning Capability Boundary: Shrinkage, Expansion, or Both? A Two-Stage Dynamic View](https://arxiv.org/abs/2510.04028)** — arXiv
   - Authors: Xinhao Yao, Lu Yu, Xiaolin Hu, Fengwei Teng, Qing Cui, Jun Zhou, Yong Liu
   - Type: `analysis` · Date: `2025-10-05`
@@ -1983,17 +2062,3 @@ They are essential for judging whether a method genuinely improves exploration i
   - Mechanism: `structured-search`
   - Problem: `capability-boundary`
   - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
-- **[From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR](https://arxiv.org/abs/2508.07534)** — arXiv
-  - Authors: Jia Deng, Jie Chen, Zhipeng Chen, Daixuan Cheng, Fei Bai, Beichen Zhang, Yinqian Min, Yanzipeng Gao et al.
-  - Type: `survey` · Date: `2025-08-11`
-  - Phase: `rl-training`
-  - Level: `policy-distribution`
-  - Mechanism: `structured-search`
-  - Exploration focus: entropy/probability, coverage, reward/advantage.
-- **[An Empirical Study on Reinforcement Learning for Reasoning-Search Interleaved LLM Agents](https://arxiv.org/abs/2505.15117)** — arXiv
-  - Authors: Bowen Jin, Jinsung Yoon, Priyanka Kargupta, Sercan O. Arik, Jiawei Han
-  - Type: `analysis` · Date: `2025-05-21`
-  - Phase: `rl-training`
-  - Level: `response/sequence`
-  - Mechanism: `structured-search`
-  - Exploration focus: reward/advantage, structured-search.

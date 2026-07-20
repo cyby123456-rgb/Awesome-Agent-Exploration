@@ -68,6 +68,7 @@ dimensions. The required dimensions are `phase` and `level`; at least one
   "url": "https://arxiv.org/abs/2510.03222",
   "date": "2025-10-03",
   "primary_area": "rlvr-exploration",
+  "subtopic": "entropy-distribution",
   "paper_type": "method",
   "phase": ["rl-training"],
   "level": ["token", "policy-distribution"],
@@ -78,7 +79,8 @@ dimensions. The required dimensions are `phase` and `level`; at least one
 }
 ```
 
-Valid primary areas are `llm-exploration`, `rlvr-exploration`,
+Every entry also needs one valid `subtopic` within its primary area. Valid primary
+areas are `llm-exploration`, `rlvr-exploration`,
 `data-task-curriculum-exploration`, `agentic-exploration`,
 `self-improvement-population-exploration`, `memory-knowledge-exploration`, and
 `understanding-evaluation`. Classical non-LLM RL papers are not normal entries;
