@@ -79,9 +79,10 @@ dimensions. The required dimensions are `phase` and `level`; at least one
 ```
 
 Valid primary areas are `llm-exploration`, `rlvr-exploration`,
-`agentic-exploration`, and `understanding-evaluation`. Classical non-LLM RL
-papers are not normal entries; the maintainers keep a deliberately small
-appendix of foundational references.
+`data-task-curriculum-exploration`, `agentic-exploration`,
+`self-improvement-population-exploration`, `memory-knowledge-exploration`, and
+`understanding-evaluation`. Classical non-LLM RL papers are not normal entries;
+the maintainers keep a deliberately small appendix of foundational references.
 
 See [`docs/TAXONOMY.md`](docs/TAXONOMY.md) for the primary-area decision rule,
 the meaning of every tag dimension, and worked classification examples.

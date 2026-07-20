@@ -18,7 +18,10 @@ DATA_PATH = ROOT / "data" / "papers.json"
 AREAS = {
     "llm-exploration",
     "rlvr-exploration",
+    "data-task-curriculum-exploration",
     "agentic-exploration",
+    "self-improvement-population-exploration",
+    "memory-knowledge-exploration",
     "understanding-evaluation",
 }
 PAPER_TYPES = {"method", "analysis", "benchmark", "survey", "position"}

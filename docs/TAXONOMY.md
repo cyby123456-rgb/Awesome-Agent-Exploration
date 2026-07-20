@@ -35,62 +35,67 @@ method or findings transfer to other areas.
 ### 1. LLM Generation & Inference Exploration
 
 Exploration among candidate tokens, responses, reasoning paths, or latent states
-during generation and inference, without requiring an RL policy update as the
-central contribution.
+during generation and inference, without an RL policy update as the central
+contribution. This includes sampling, decoding, diverse generation, latent
+steering, self-consistency, and test-time search.
 
-Typical work includes sampling and decoding, diverse generation, latent
-steering, self-consistency, tree or graph reasoning, and test-time search.
+### 2. Policy & RLVR Exploration
 
-**Why it is separate:** exploration can happen entirely inside model generation.
-Putting all such work under RLVR would incorrectly imply that policy training is
-required; putting it under agents would incorrectly imply an external
-environment.
+Exploration during RL or RLVR post-training, where the method changes rollout
+collection, reward or advantage signals, the policy distribution, or the policy
+update. Entropy collapse, low-probability tokens, reward shaping, and gradient
+interventions belong here.
 
-### 2. Exploration for RLVR
+### 3. Data, Task & Curriculum Exploration
 
-Exploration during reinforcement learning or reinforcement learning with
-verifiable rewards, including entropy collapse, rollout diversity, intrinsic or
-shaped rewards, policy-distribution control, gradient interventions, curriculum,
-and capability expansion.
+Exploration over what the model learns from: active data selection, synthetic
+task generation, difficulty control, adaptive curricula, and
+exploration-aware training-set construction. The primary exploration object is
+the data or problem space rather than a single model trajectory.
 
-**Why it is separate:** here exploration affects the data distribution and the
-policy update. This creates problems and interventions—such as on-policy
-collapse, advantage shaping, or exploration-aware optimization—that are
-different from inference-only sampling.
+### 4. Agentic & Environment Exploration
 
-### 3. Agentic Exploration
+Exploration by a language agent acting in an external environment, such as the
+web, tools, GUIs, games, or embodied worlds. The explored object is normally a
+sequence of states, actions, observations, or tool calls.
 
-Exploration by a language agent acting in an external or persistent environment,
-such as the web, tools, GUIs, knowledge graphs, games, embodied worlds, or
-multi-agent systems. The explored object is normally a sequence of states,
-actions, observations, or tool calls.
+### 5. Self-Improvement & Population Exploration
 
-**Why it is separate:** agentic exploration is governed by interaction,
-partial observability, long horizons, memory, recovery, and environment
-coverage—not only by diversity in generated text.
+Exploration through repeated improve-and-evaluate loops or interaction among
+multiple policies. This covers self-play, co-evolution, ensembles, multi-agent
+collaboration, and systems that preserve diversity across iterations.
 
-### 4. Understanding, Evaluation & Benchmarks
+### 6. Memory & Knowledge Exploration
+
+Exploration over retrieved documents, episodic traces, long-context memory,
+knowledge graphs, or internal memory representations. The question is how a
+system searches, selects, combines, writes, compresses, or updates memory to
+extend its effective context and search space.
+
+### 7. Understanding, Evaluation & Benchmarks
 
 Empirical analysis, theory, surveys, metrics, and benchmarks whose main
 contribution is to explain or measure exploration, diversity, training dynamics,
 or capability boundaries rather than introduce an exploration method.
 
-**Why it is separate:** explanatory and evaluative work is essential, but mixing
-it into method sections makes it difficult to distinguish evidence about a
-phenomenon from interventions intended to change that phenomenon.
-
 ### Primary-area decision rule
 
 Use the paper's main contribution, not every context mentioned in the paper:
 
-1. If the main exploration loop acts in an external environment, use
-   `agentic-exploration`.
-2. Otherwise, if exploration is changed through an RL/RLVR policy update, use
-   `rlvr-exploration`.
-3. Otherwise, if exploration happens during model generation, decoding, or
-   test-time search, use `llm-exploration`.
-4. If the main contribution measures, explains, benchmarks, or surveys rather
+1. If the main contribution measures, explains, benchmarks, or surveys rather
    than intervenes, use `understanding-evaluation`.
+2. Otherwise, if population interaction or an iterative self-improvement loop
+   is the main exploration unit, use `self-improvement-population-exploration`.
+3. Otherwise, if searching or managing memory and knowledge is central, use
+   `memory-knowledge-exploration`.
+4. Otherwise, if selecting data, tasks, or curricula is central, use
+   `data-task-curriculum-exploration`.
+5. Otherwise, if the main exploration loop acts in an external environment, use
+   `agentic-exploration`.
+6. Otherwise, if exploration is changed through an RL/RLVR policy update, use
+   `rlvr-exploration`.
+7. Otherwise, use `llm-exploration` for generation, decoding, and test-time
+   search.
 
 Tags preserve secondary aspects, so a paper does not need multiple primary
 areas. When the boundary remains ambiguous, classify by the component evaluated

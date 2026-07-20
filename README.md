@@ -4,7 +4,7 @@
 
 **A curated research map of exploration in language models, RLVR, and agents.**
 
-[![Curated catalog](https://img.shields.io/badge/catalog-curated-3B82F6?style=flat-square)](docs/CURATION_2026.md) [![254 papers](https://img.shields.io/badge/papers-254-8B5CF6?style=flat-square)](#catalog) [![Four research tracks](https://img.shields.io/badge/tracks-4-10B981?style=flat-square)](#research-map) [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-F59E0B?style=flat-square)](CONTRIBUTING.md)
+[![Curated catalog](https://img.shields.io/badge/catalog-curated-3B82F6?style=flat-square)](docs/CURATION_2026.md) [![254 papers](https://img.shields.io/badge/papers-254-8B5CF6?style=flat-square)](#catalog) [![Seven research tracks](https://img.shields.io/badge/tracks-7-10B981?style=flat-square)](#research-map) [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-F59E0B?style=flat-square)](CONTRIBUTING.md)
 
 [Guide](#guide) · [Research map](#research-map) · [Start here](#start-here) · [Catalog](#catalog) · [Detailed metadata](README_DETAILED.md) · [Contribute](CONTRIBUTING.md)
 
@@ -15,7 +15,7 @@
 | Start here | What you will find |
 |---|---|
 | **[What counts as exploration](#what-counts-as-exploration)** | Our scope: exploration must be a concrete research variable, not only a keyword. |
-| **[Research map](#research-map)** | The four places exploration occurs: generation, RLVR, agents, and evaluation. |
+| **[Research map](#research-map)** | The seven places exploration occurs: generation, RLVR, data, agents, self-improvement, memory, and evaluation. |
 | **[Taxonomy lens](#taxonomy-lens)** | How phase, level, signal, mechanism, problem, and setting describe each paper. |
 | **[Start here](#start-here)** | A cross-section of recommended papers for first-time readers. |
 | **[Full catalog](#catalog)** | All curated papers, grouped by their primary research context. |
@@ -33,9 +33,12 @@ Every paper has one home in the map; its tags then describe the research lens. S
 | Track | Best for |
 |---|---|
 | **[LLM Generation & Inference](#1-llm-generation--inference-exploration)** | Sampling, decoding, reasoning-path search, and output diversity without an RL update. |
-| **[Exploration for RLVR](#2-exploration-for-rlvr)** | Entropy collapse, rollout diversity, reward shaping, and policy-distribution control during training. |
-| **[Agentic Exploration](#3-agentic-exploration)** | Web, tool, GUI, knowledge-graph, embodied, or multi-agent trajectories. |
-| **[Understanding & Evaluation](#4-understanding-evaluation--benchmarks)** | Surveys, theory, metrics, benchmarks, and evidence about exploration. |
+| **[Policy & RLVR](#2-policy--rlvr-exploration)** | Entropy collapse, rollout diversity, reward shaping, and policy-distribution control during training. |
+| **[Data, Task & Curriculum](#3-data-task--curriculum-exploration)** | Active data selection, task generation, and adaptive difficulty or curriculum design. |
+| **[Agentic & Environment](#4-agentic--environment-exploration)** | Web, tool, GUI, knowledge-graph, embodied, or multi-agent trajectories. |
+| **[Self-Improvement & Population](#5-self-improvement--population-exploration)** | Self-play, ensembles, collaboration, and iterative improve-and-evaluate loops. |
+| **[Memory & Knowledge](#6-memory--knowledge-exploration)** | Retrieval, memory writing, consolidation, knowledge graphs, and long-context search. |
+| **[Understanding & Evaluation](#7-understanding-evaluation--benchmarks)** | Surveys, theory, metrics, benchmarks, and evidence about exploration. |
 
 <a id="taxonomy-lens"></a>
 
@@ -59,9 +62,12 @@ The former Token / Sequence / Policy sections are now `level` tags. Entropy, tem
 
 | Collection | Papers |
 |---|---:|
-| LLM Generation & Inference Exploration | 60 |
-| Exploration for RLVR | 119 |
-| Agentic Exploration | 45 |
+| LLM Generation & Inference Exploration | 55 |
+| Policy & RLVR Exploration | 110 |
+| Data, Task & Curriculum Exploration | 10 |
+| Agentic & Environment Exploration | 22 |
+| Self-Improvement & Population Exploration | 12 |
+| Memory & Knowledge Exploration | 15 |
 | Understanding, Evaluation & Benchmarks | 30 |
 | **Curated total** | **254** |
 
@@ -79,23 +85,23 @@ The former Token / Sequence / Policy sections are now `level` tags. Entropy, tem
 
 - **[Representation-Based Exploration for Language Models: From Test-Time to Post-Training](https://iclr.cc/virtual/2026/poster/10009438)** — **ICLR 2026** · LLM Generation & Inference Exploration · `inference` `latent/representation` `response/sequence` `semantic-diversity` `novelty/curiosity` `reward-shaping/intrinsic-reward`
 - **[Reasoning with Sampling: Your Base Model is Smarter Than You Think](https://iclr.cc/virtual/2026/poster/10009093)** — **ICLR 2026** · LLM Generation & Inference Exploration · `inference` `response/sequence` `entropy/probability` `semantic-diversity` `sampling/decoding`
-- **[Low-probability Tokens Sustain Exploration in Reinforcement Learning with Verifiable Reward](https://aclanthology.org/2026.findings-acl.1209/)** — **ACL 2026 Findings** · Exploration for RLVR · `rl-training` `token` `policy-distribution` `entropy/probability` `regularization`
-- **[Learning to Explore: Scaling Agentic Reasoning via Exploration-Aware Policy Optimization](https://icml.cc/virtual/2026/poster/63287)** — **ICML 2026** · Agentic Exploration · `rl-training` `trajectory/action` `policy-distribution` `gradient-reshaping`
-- **[Go-Browse: Training Web Agents with Structured Exploration](https://iclr.cc/virtual/2026/poster/10010264)** — **ICLR 2026** · Agentic Exploration · `inference` `trajectory/action` `structured-search`
-- **[CDE: Curiosity-Driven Exploration for Efficient Reinforcement Learning in Large Language Models](https://iclr.cc/virtual/2026/poster/10011417)** — **ICLR 2026** · Exploration for RLVR · `rl-training` `policy-distribution` `novelty/curiosity` `uncertainty/confidence` `reward-shaping/intrinsic-reward`
-- **[Outcome-based Exploration for LLM Reasoning](https://arxiv.org/abs/2509.06941)** — arXiv · Exploration for RLVR · `rl-training` `response/sequence` `policy-distribution` `reward/advantage` `semantic-diversity` `reward-shaping/intrinsic-reward`
+- **[Low-probability Tokens Sustain Exploration in Reinforcement Learning with Verifiable Reward](https://aclanthology.org/2026.findings-acl.1209/)** — **ACL 2026 Findings** · Policy & RLVR Exploration · `rl-training` `token` `policy-distribution` `entropy/probability` `regularization`
+- **[Learning to Explore: Scaling Agentic Reasoning via Exploration-Aware Policy Optimization](https://icml.cc/virtual/2026/poster/63287)** — **ICML 2026** · Agentic & Environment Exploration · `rl-training` `trajectory/action` `policy-distribution` `gradient-reshaping`
+- **[Go-Browse: Training Web Agents with Structured Exploration](https://iclr.cc/virtual/2026/poster/10010264)** — **ICLR 2026** · Agentic & Environment Exploration · `inference` `trajectory/action` `structured-search`
+- **[CDE: Curiosity-Driven Exploration for Efficient Reinforcement Learning in Large Language Models](https://iclr.cc/virtual/2026/poster/10011417)** — **ICLR 2026** · Policy & RLVR Exploration · `rl-training` `policy-distribution` `novelty/curiosity` `uncertainty/confidence` `reward-shaping/intrinsic-reward`
+- **[Outcome-based Exploration for LLM Reasoning](https://arxiv.org/abs/2509.06941)** — arXiv · Policy & RLVR Exploration · `rl-training` `response/sequence` `policy-distribution` `reward/advantage` `semantic-diversity` `reward-shaping/intrinsic-reward`
 - **[From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR](https://arxiv.org/abs/2508.07534)** — arXiv · Understanding, Evaluation & Benchmarks · `rl-training` `policy-distribution` `structured-search`
-- **[Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning](https://arxiv.org/abs/2506.01939)** — arXiv · Exploration for RLVR · `rl-training` `token` `policy-distribution` `entropy/probability` `gradient-reshaping`
-- **[ProRL: Prolonged Reinforcement Learning Expands Reasoning Boundaries in Large Language Models](https://arxiv.org/abs/2505.24864)** — arXiv · Exploration for RLVR · `rl-training` `policy-distribution` `coverage` `regularization`
-- **[The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models](https://arxiv.org/abs/2505.22617)** — arXiv · Exploration for RLVR · `rl-training` `policy-distribution` `entropy/probability` `regularization` `gradient-reshaping`
-- **[DAPO: An Open-Source LLM Reinforcement Learning System at Scale](https://arxiv.org/abs/2503.14476)** — arXiv · Exploration for RLVR · `rl-training` `policy-distribution` `entropy/probability` `sampling/decoding` `gradient-reshaping`
-- **[Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291)** — TMLR 2024 · Agentic Exploration · `continual/self-improvement` `trajectory/action` `data/task` `novelty/curiosity` `coverage` `curriculum/task-generation`
-- **[Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models](https://proceedings.mlr.press/v235/zhou24r.html)** — ICML 2024 · Agentic Exploration · `inference` `trajectory/action` `reward/advantage` `tree-search/branching` `replay/memory`
+- **[Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning](https://arxiv.org/abs/2506.01939)** — arXiv · Policy & RLVR Exploration · `rl-training` `token` `policy-distribution` `entropy/probability` `gradient-reshaping`
+- **[ProRL: Prolonged Reinforcement Learning Expands Reasoning Boundaries in Large Language Models](https://arxiv.org/abs/2505.24864)** — arXiv · Policy & RLVR Exploration · `rl-training` `policy-distribution` `coverage` `regularization`
+- **[The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models](https://arxiv.org/abs/2505.22617)** — arXiv · Policy & RLVR Exploration · `rl-training` `policy-distribution` `entropy/probability` `regularization` `gradient-reshaping`
+- **[DAPO: An Open-Source LLM Reinforcement Learning System at Scale](https://arxiv.org/abs/2503.14476)** — arXiv · Policy & RLVR Exploration · `rl-training` `policy-distribution` `entropy/probability` `sampling/decoding` `gradient-reshaping`
+- **[Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291)** — TMLR 2024 · Self-Improvement & Population Exploration · `continual/self-improvement` `trajectory/action` `data/task` `novelty/curiosity` `coverage` `curriculum/task-generation`
+- **[Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models](https://proceedings.mlr.press/v235/zhou24r.html)** — ICML 2024 · Memory & Knowledge Exploration · `inference` `trajectory/action` `reward/advantage` `tree-search/branching` `replay/memory`
 - **[Reasoning with Language Model is Planning with World Model](https://aclanthology.org/2023.emnlp-main.507/)** — EMNLP 2023 · LLM Generation & Inference Exploration · `inference` `response/sequence` `trajectory/action` `reward/advantage` `tree-search/branching`
 - **[Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://proceedings.neurips.cc/paper_files/paper/2023/hash/271db9922b8d1f4dd7aaef84ed5ac703-Abstract.html)** — NeurIPS 2023 · LLM Generation & Inference Exploration · `inference` `response/sequence` `reward/advantage` `coverage` `tree-search/branching` `backtracking/resampling`
-- **[Self-Consistency Improves Chain of Thought Reasoning in Language Models](https://iclr.cc/virtual/2023/poster/11718)** — ICLR 2023 · LLM Generation & Inference Exploration · `inference` `response/sequence` `semantic-diversity` `sampling/decoding` `ensemble/population`
-- **[Reflexion: Language Agents with Verbal Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html)** — NeurIPS 2023 · Agentic Exploration · `test-time-adaptation` `trajectory/action` `reward/advantage` `replay/memory`
-- **[ReAct: Synergizing Reasoning and Acting in Language Models](https://openreview.net/forum?id=WE_vluYUL-X)** — ICLR 2023 · Agentic Exploration · `inference` `trajectory/action` `information-gain` `structured-search`
+- **[Self-Consistency Improves Chain of Thought Reasoning in Language Models](https://iclr.cc/virtual/2023/poster/11718)** — ICLR 2023 · Self-Improvement & Population Exploration · `inference` `response/sequence` `semantic-diversity` `sampling/decoding` `ensemble/population`
+- **[Reflexion: Language Agents with Verbal Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html)** — NeurIPS 2023 · Self-Improvement & Population Exploration · `test-time-adaptation` `trajectory/action` `reward/advantage` `replay/memory`
+- **[ReAct: Synergizing Reasoning and Acting in Language Models](https://openreview.net/forum?id=WE_vluYUL-X)** — ICLR 2023 · Agentic & Environment Exploration · `inference` `trajectory/action` `information-gain` `structured-search`
 
 <a id="catalog"></a>
 
@@ -115,12 +121,10 @@ The central question is how to search a model's existing generative distribution
 | **ACL 2026 Main** | [Uncertainty-Aware Test-Time Search for Optimization Problem Solving](https://aclanthology.org/2026.acl-long.1975/) | `inference` `response/sequence` `uncertainty/confidence` `structured-search` |
 | **ICML 2026** | [Towards Diverse Scientific Hypothesis Search with Large Language Models](https://icml.cc/virtual/2026/poster/66259) | `inference` `response/sequence` `semantic-diversity` `structured-search` |
 | **ICLR 2026** | [Thought Branches: Interpreting LLM Reasoning Requires Resampling](https://iclr.cc/virtual/2026/poster/10008605) | `inference` `response/sequence` `sampling/decoding` `tree-search/branching` |
-| **ACL 2026 Findings** | [Think Earlier, Not Longer: Prompt Optimization via Reducing Unhealthy Exploration](https://aclanthology.org/2026.findings-acl.817/) | `inference` `data/task` `structured-search` |
 | **ACL 2026 Main** | [Thermometer of Thoughts: Enhancing LLM’s Exploration via Attention Temperature Modulation](https://aclanthology.org/2026.acl-long.200/) | `inference` `response/sequence` `entropy/probability` `temperature-control` |
 | **ICML 2026** | [The Geometric Reasoner: Manifold-Informed Latent Foresight Search for Long-Context Reasoning](https://icml.cc/virtual/2026/poster/61787) | `inference` `latent/representation` `structured-search` |
 | **ICLR 2026** | [TS$^2$: Training with Sparsemax+, Testing with Softmax for Accurate and Diverse LLM Fine-Tuning](https://iclr.cc/virtual/2026/poster/10010811) | `inference` `response/sequence` `semantic-diversity` |
 | **ACL 2026 Main** | [Student Guides Teacher: Weak-to-Strong Inference via Spectral Orthogonal Exploration](https://aclanthology.org/2026.acl-long.761/) | `inference` `response/sequence` `structured-search` |
-| **ICLR 2026** | [String Seed of Thought: Prompting LLMs for Distribution-Faithful and Diverse Generation](https://iclr.cc/virtual/2026/poster/10007633) | `inference` `response/sequence` `data/task` `entropy/probability` `semantic-diversity` |
 | **ACL 2026 Main** | [SeDev: Structured Semantic Exploration for LLM-Driven Code Generation](https://aclanthology.org/2026.acl-long.1641/) | `inference` `response/sequence` `structured-search` |
 | **ICML 2026** | [Scalable Power Sampling: Unlocking Efficient, Training-Free Reasoning for LLMs via Distribution Sharpening](https://icml.cc/virtual/2026/poster/63925) | `inference` `response/sequence` `entropy/probability` `sampling/decoding` |
 | **ICLR 2026** | [Sample Smart, Not Hard: Correctness-First Decoding for Better Reasoning in LLMs](https://iclr.cc/virtual/2026/poster/10007335) | `inference` `response/sequence` `sampling/decoding` |
@@ -131,7 +135,6 @@ The central question is how to search a model's existing generative distribution
 | **ICLR 2026** | [Post-training Large Language Models for Diverse High-Quality Responses](https://iclr.cc/virtual/2026/poster/10010944) | `supervised-post-training` `response/sequence` `semantic-diversity` |
 | **ICML 2026** | [One-shot Entropy Minimization for Language Model Reasoning](https://icml.cc/virtual/2026/poster/66725) | `inference` `response/sequence` `entropy/probability` |
 | **ACL 2026 Findings** | [Neural Chain-of-Thought Search: Searching the Optimal Reasoning Path to Enhance Large Language Models](https://aclanthology.org/2026.findings-acl.1149/) | `inference` `response/sequence` `structured-search` |
-| **ACL 2026 Findings** | [Multi-LLM Collaborative Search for Complex Problem Solving](https://aclanthology.org/2026.findings-acl.2115/) | `inference` `population/multi-policy` `ensemble/population` |
 | **ACL 2026 Main** | [ModeX: Evaluator-Free Best-of-N Selection for Open-Ended Generation](https://aclanthology.org/2026.acl-long.655/) | `inference` `response/sequence` `sampling/decoding` |
 | **ACL 2026 Main** | [Learning Diverse Responses with Prefix-Conditioned Supervised Fine-Tuning](https://aclanthology.org/2026.acl-long.9/) | `supervised-post-training` `response/sequence` `semantic-diversity` |
 | **ICML 2026** | [Large Language Models Explore by Latent Distilling](https://icml.cc/virtual/2026/poster/63542) | `inference` `latent/representation` `structured-search` |
@@ -154,7 +157,6 @@ The central question is how to search a model's existing generative distribution
 | **ACL 2026 Findings** | [ConMA : Confidence-Guided Kernel Sampling with Multi-Stage Aggregation for LLM Reasoning](https://aclanthology.org/2026.findings-acl.1475/) | `inference` `response/sequence` `uncertainty/confidence` `sampling/decoding` |
 | **ACL 2026 Findings** | [Chain-in-Tree: Back to Sequential Reasoning in LLM Tree Search](https://aclanthology.org/2026.findings-acl.214/) | `inference` `response/sequence` `tree-search/branching` |
 | **ICML 2026** | [Cache Coherent Resampling for Efficient Test Time Scaling in LLM Reasoning via Adaptive Sequential Monte Carlo](https://icml.cc/virtual/2026/poster/64829) | `inference` `response/sequence` `sampling/decoding` `backtracking/resampling` |
-| **ACL 2026 Findings** | [Beyond Templates: Dynamic Adaptation of Reasoning Demonstrations via Feasibility-Aware Exploration](https://aclanthology.org/2026.findings-acl.327/) | `inference` `data/task` `structured-search` |
 | **ACL 2026 Findings** | [Beyond Rejection Sampling: Trajectory Fusion for Scaling Mathematical Reasoning](https://aclanthology.org/2026.findings-acl.390/) | `inference` `trajectory/action` `sampling/decoding` |
 | **ICML 2026** | [Beyond Logits: Metastable Latent Dynamics for Sample-Efficient Best-of-N Selection in LLMs](https://icml.cc/virtual/2026/poster/66569) | `inference` `token` `latent/representation` `sampling/decoding` |
 | **ICML 2026** | [Annotations Mitigate Post-Training Mode Collapse](https://icml.cc/virtual/2026/poster/63468) | `supervised-post-training` `response/sequence` `structured-search` |
@@ -168,9 +170,8 @@ The central question is how to search a model's existing generative distribution
 | EMNLP 2023 | [Reasoning with Language Model is Planning with World Model](https://aclanthology.org/2023.emnlp-main.507/) | `inference` `response/sequence` `trajectory/action` `reward/advantage` `tree-search/branching` |
 | arXiv | [Graph of Thoughts: Solving Elaborate Problems with Large Language Models](https://arxiv.org/abs/2308.09687) | `inference` `response/sequence` `semantic-diversity` `tree-search/branching` `structured-search` |
 | NeurIPS 2023 | [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://proceedings.neurips.cc/paper_files/paper/2023/hash/271db9922b8d1f4dd7aaef84ed5ac703-Abstract.html) | `inference` `response/sequence` `reward/advantage` `coverage` `tree-search/branching` `backtracking/resampling` |
-| ICLR 2023 | [Self-Consistency Improves Chain of Thought Reasoning in Language Models](https://iclr.cc/virtual/2023/poster/11718) | `inference` `response/sequence` `semantic-diversity` `sampling/decoding` `ensemble/population` |
 
-## 2. Exploration for RLVR
+## 2. Policy & RLVR Exploration
 
 > **Research focus.** This category concerns exploration during reinforcement learning or RL with verifiable rewards (RLVR). Here, exploration changes which rollouts are collected, how reward or advantage signals are assigned, or how the policy distribution is updated during training.
 
@@ -215,7 +216,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
 | **ACL 2026 Main** | [Reinforced Efficient Reasoning via Semantically Diverse Exploration](https://aclanthology.org/2026.acl-long.2216/) | `rl-training` `policy-distribution` `semantic-diversity` `structured-search` |
 | **ACL 2026 Findings** | [Reasoning-Guided Exploration for Online DPO](https://aclanthology.org/2026.findings-acl.1370/) | `rl-training` `policy-distribution` `structured-search` |
 | **ICLR 2026** | [On Entropy Control in LLM-RL Algorithms](https://iclr.cc/virtual/2026/poster/10010002) | `rl-training` `policy-distribution` `entropy/probability` |
-| **ICLR 2026** | [No Prompt Left Behind: Exploiting Zero-Variance Prompts in LLM Reinforcement Learning via Entropy-Guided Advantage Shaping](https://iclr.cc/virtual/2026/poster/10007755) | `rl-training` `policy-distribution` `data/task` `entropy/probability` `reward/advantage` `gradient-reshaping` |
 | **ACL 2026 Findings** | [Low-probability Tokens Sustain Exploration in Reinforcement Learning with Verifiable Reward](https://aclanthology.org/2026.findings-acl.1209/) | `rl-training` `token` `policy-distribution` `entropy/probability` `regularization` |
 | **ICLR 2026** | [Lookahead Tree-Based Rollouts for Enhanced Trajectory-Level Exploration in Reinforcement Learning with Verifiable Rewards](https://iclr.cc/virtual/2026/poster/10011530) | `rl-training` `response/sequence` `trajectory/action` `reward/advantage` `tree-search/branching` |
 | **ICML 2026** | [Long Live The Balance: Information Bottleneck Driven Tree-based Policy Optimization](https://icml.cc/virtual/2026/poster/62699) | `rl-training` `policy-distribution` `information-gain` `gradient-reshaping` `tree-search/branching` |
@@ -229,7 +229,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
 | **ICML 2026** | [GTPO and GRPO-S: Token and Sequence-Level Reward Shaping with Policy Entropy](https://icml.cc/virtual/2026/poster/65174) | `rl-training` `token` `response/sequence` `entropy/probability` `reward/advantage` `reward-shaping/intrinsic-reward` |
 | **ACL 2026 Main** | [Free Energy-Driven Reinforcement Learning with Adaptive Advantage Shaping for Unsupervised Reasoning in LLMs](https://aclanthology.org/2026.acl-long.797/) | `rl-training` `policy-distribution` `reward/advantage` `gradient-reshaping` |
 | **ACL 2026 Findings** | [Exploration-Exploitation Reshaping towards Efficient Reasoning for Large Language Models](https://aclanthology.org/2026.findings-acl.1520/) | `rl-training` `policy-distribution` `structured-search` |
-| **ICML 2026** | [Experience is the Best Teacher: Motivating Effective Exploration in Reinforcement Learning for LLMs](https://icml.cc/virtual/2026/poster/65561) | `rl-training` `policy-distribution` `replay/memory` |
 | **ICLR 2026** | [Expanding Reasoning Potential in Foundation Model by Learning Diverse Chains of Thought Patterns](https://iclr.cc/virtual/2026/poster/10011658) | `rl-training` `response/sequence` `policy-distribution` `semantic-diversity` |
 | **ACL 2026 Findings** | [EvoCoT: Overcoming the Exploration Bottleneck in Reinforcement Learning for LLMs](https://aclanthology.org/2026.findings-acl.1031/) | `rl-training` `policy-distribution` `structured-search` |
 | **ICLR 2026** | [Escaping Policy Contraction: Contraction-Aware PPO (CaPPO) for Stable Language Model Fine-Tuning](https://iclr.cc/virtual/2026/poster/10006831) | `rl-training` `policy-distribution` `structured-search` |
@@ -241,12 +240,10 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
 | **ICLR 2026** | [EEPO: Exploration-Enhanced Policy Optimization via Sample-Then-Forget](https://iclr.cc/virtual/2026/poster/10009769) | `rl-training` `policy-distribution` `gradient-reshaping` |
 | **ICML 2026** | [ECHO: Entropy-Confidence Hybrid Optimization for Test-Time Reinforcement Learning](https://icml.cc/virtual/2026/poster/63137) | `rl-training` `policy-distribution` `entropy/probability` `uncertainty/confidence` |
 | **ICLR 2026** | [Dynamics-Predictive Sampling for Active RL Finetuning of Large Reasoning Models](https://iclr.cc/virtual/2026/poster/10006780) | `rl-training` `policy-distribution` `sampling/decoding` |
-| **ACL 2026 Findings** | [Dynamic Sampling that Adapts: Self-Aware Iterative Data Persistent Optimization for Mathematical Reasoning](https://aclanthology.org/2026.findings-acl.1412/) | `rl-training` `policy-distribution` `data/task` `sampling/decoding` |
 | **ICLR 2026** | [Do Not Let Low-Probability Tokens Over-Dominate in RL for LLMs](https://iclr.cc/virtual/2026/poster/10010601) | `rl-training` `token` `policy-distribution` `entropy/probability` |
 | **ICLR 2026** | [Diversity-Incentivized Exploration for Versatile Reasoning](https://iclr.cc/virtual/2026/poster/10011130) | `rl-training` `policy-distribution` `semantic-diversity` `structured-search` |
 | **ICLR 2026** | [Diversity-Enhanced Reasoning for Subjective Questions](https://iclr.cc/virtual/2026/poster/10011855) | `rl-training` `policy-distribution` `semantic-diversity` |
 | **ICML 2026** | [Depth-Breadth Synergy in RLVR: Unlocking LLM Reasoning Gains with Adaptive Exploration](https://icml.cc/virtual/2026/poster/60955) | `rl-training` `policy-distribution` `structured-search` |
-| **ICLR 2026** | [DeepSearch: Overcome the Bottleneck of Reinforcement Learning with Verifiable Rewards via Tree-based Search](https://iclr.cc/virtual/2026/poster/10010078) | `rl-training` `policy-distribution` `coverage` `reward/advantage` `tree-search/branching` `replay/memory` |
 | **ACL 2026 Findings** | [DRA-GRPO: Your GRPO Needs to Know Diverse Reasoning Paths for Mathematical Reasoning](https://aclanthology.org/2026.findings-acl.685/) | `rl-training` `response/sequence` `policy-distribution` `semantic-diversity` |
 | **ACL 2026 Main** | [DPWriter: Reinforcement Learning with Diverse Planning Branching for Creative Writing](https://aclanthology.org/2026.acl-long.647/) | `rl-training` `policy-distribution` `semantic-diversity` `tree-search/branching` |
 | **ICML 2026** | [DARTS: Distribution-Aware Active Rollout Trajectory Shaping for Accelerating LLM Reinforcement Learning](https://icml.cc/virtual/2026/poster/61634) | `rl-training` `response/sequence` `trajectory/action` `entropy/probability` |
@@ -254,7 +251,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
 | **ICLR 2026** | [Count Counts: Motivating Exploration in LLM Reasoning with Count-based Intrinsic Rewards](https://iclr.cc/virtual/2026/poster/10011073) | `rl-training` `policy-distribution` `reward/advantage` `reward-shaping/intrinsic-reward` |
 | **ICLR 2026** | [Controllable Exploration in Hybrid-Policy RLVR for Multi-Modal Reasoning](https://iclr.cc/virtual/2026/poster/10011411) | `rl-training` `policy-distribution` `structured-search` |
 | **ICML 2026** | [Contextual Rollout Bandits for Reinforcement Learning with Verifiable Rewards](https://icml.cc/virtual/2026/poster/60796) | `rl-training` `response/sequence` `policy-distribution` `reward/advantage` |
-| **ACL 2026 Main** | [CoVerRL: Breaking the Consensus Trap in Label-Free Reasoning via Generator-Verifier Co-Evolution](https://aclanthology.org/2026.acl-long.1376/) | `rl-training` `policy-distribution` `disagreement` `self-play/co-evolution` |
 | **ICLR 2026** | [CDE: Curiosity-Driven Exploration for Efficient Reinforcement Learning in Large Language Models](https://iclr.cc/virtual/2026/poster/10011417) | `rl-training` `policy-distribution` `novelty/curiosity` `uncertainty/confidence` `reward-shaping/intrinsic-reward` |
 | **ICML 2026** | [BroRL: Scaling Reinforcement Learning via Broadened Exploration](https://icml.cc/virtual/2026/poster/64690) | `rl-training` `policy-distribution` `structured-search` |
 | **ICML 2026** | [Breaking the Exploration Bottleneck: Rubric-Scaffolded Reinforcement Learning for General LLM Reasoning](https://icml.cc/virtual/2026/poster/64959) | `rl-training` `policy-distribution` `structured-search` |
@@ -269,7 +265,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
 | arXiv | [Can LLMs Guide Their Own Exploration? Gradient-Guided Reinforcement Learning for LLM Reasoning](https://arxiv.org/abs/2512.15687) | `rl-training` `policy-distribution` `gradient-reshaping` |
 | arXiv | [Efficient Reinforcement Learning with Semantic and Token Entropy for LLM Reasoning](https://arxiv.org/abs/2512.04359) | `rl-training` `token` `policy-distribution` `entropy/probability` |
 | arXiv | [From Exploration to Exploitation: A Two-Stage Entropy RLVR Approach for Noise-Tolerant MLLM Training](https://arxiv.org/abs/2511.07738) | `rl-training` `policy-distribution` `entropy/probability` `noise/perturbation` |
-| arXiv | [Explore Data Left Behind in Reinforcement Learning for Reasoning Language Models](https://arxiv.org/abs/2511.04800) | `rl-training` `policy-distribution` `data/task` `structured-search` |
 | arXiv | [Scheduling Your LLM Reinforcement Learning with Reasoning Trees](https://arxiv.org/abs/2510.24832) | `rl-training` `policy-distribution` `tree-search/branching` |
 | arXiv | [Revisiting Entropy Regularization: Adaptive Coefficient Unlocks Its Potential for LLM Reinforcement Learning](https://arxiv.org/abs/2510.10959) | `rl-training` `policy-distribution` `entropy/probability` `regularization` |
 | arXiv | [Let it Calm: Exploratory Annealed Decoding for Verifiable Reinforcement Learning](https://arxiv.org/abs/2510.05251) | `rl-training` `policy-distribution` `sampling/decoding` |
@@ -283,8 +278,6 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
 | arXiv | [AMFT: Aligning LLM Reasoners by Meta-Learning the Optimal Imitation-Exploration Balance](https://arxiv.org/abs/2508.06944) | `rl-training` `policy-distribution` `structured-search` |
 | arXiv | [Decomposing the Entropy-Performance Exchange: The Missing Keys to Unlocking Effective Reinforcement Learning](https://arxiv.org/abs/2508.02260) | `rl-training` `policy-distribution` `entropy/probability` |
 | arXiv | [RL-PLUS: Countering Capability Boundary Collapse of LLMs in Reinforcement Learning with Hybrid-policy Optimization](https://arxiv.org/abs/2508.00222) | `rl-training` `policy-distribution` `gradient-reshaping` |
-| arXiv | [RLEP: Reinforcement Learning with Experience Replay for LLM Reasoning](https://arxiv.org/abs/2507.07451) | `rl-training` `policy-distribution` `replay/memory` |
-| arXiv | [EFRame: Deeper Reasoning via Exploration-Filter-Replay Reinforcement Learning Framework](https://arxiv.org/abs/2506.22200) | `rl-training` `policy-distribution` `replay/memory` |
 | arXiv | [TreeRL: LLM Reinforcement Learning with On-Policy Tree Search](https://arxiv.org/abs/2506.11902) | `rl-training` `policy-distribution` `tree-search/branching` |
 | arXiv | [R-Search: Empowering LLM Reasoning with Search via Multi-Reward Reinforcement Learning](https://arxiv.org/abs/2506.04185) | `rl-training` `policy-distribution` `reward/advantage` `structured-search` |
 | arXiv | [Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning](https://arxiv.org/abs/2506.01939) | `rl-training` `token` `policy-distribution` `entropy/probability` `gradient-reshaping` |
@@ -293,12 +286,30 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
 | arXiv | [PPO-BR: Dual-Signal Entropy-Reward Adaptation for Trust Region Policy Optimization](https://arxiv.org/abs/2505.17714) | `rl-training` `policy-distribution` `entropy/probability` `reward/advantage` `gradient-reshaping` |
 | arXiv | [DGRO: Enhancing LLM Reasoning via Exploration-Exploitation Control and Reward Variance Management](https://arxiv.org/abs/2505.12951) | `rl-training` `policy-distribution` `reward/advantage` `structured-search` |
 | arXiv | [SEED-GRPO: Semantic Entropy Enhanced GRPO for Uncertainty-Aware Policy Optimization](https://arxiv.org/abs/2505.12346) | `rl-training` `policy-distribution` `entropy/probability` `uncertainty/confidence` `gradient-reshaping` |
-| arXiv | [Improving RL Exploration for LLM Reasoning through Retrospective Replay](https://arxiv.org/abs/2504.14363) | `rl-training` `policy-distribution` `backtracking/resampling` `replay/memory` |
 | arXiv | [Entropy-guided sequence weighting for efficient exploration in RL-based LLM fine-tuning](https://arxiv.org/abs/2503.22456) | `rl-training` `response/sequence` `policy-distribution` `entropy/probability` `structured-search` |
 | arXiv | [DAPO: An Open-Source LLM Reinforcement Learning System at Scale](https://arxiv.org/abs/2503.14476) | `rl-training` `policy-distribution` `entropy/probability` `sampling/decoding` `gradient-reshaping` |
 | arXiv | [Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search](https://arxiv.org/abs/2502.02508) | `rl-training` `response/sequence` `policy-distribution` `structured-search` |
 
-## 3. Agentic Exploration
+## 3. Data, Task & Curriculum Exploration
+
+> **Research focus.** This category covers exploration over the learning material itself: which data to generate or select, which tasks to attempt, how to vary difficulty, and how to construct a curriculum. Rather than changing only a model's next-token or policy distribution, these methods expand or prioritize the problem space from which learning signals are drawn.
+
+It includes active data selection, synthetic task generation, adaptive curricula, and exploration-aware training-set construction. A paper belongs here when deciding what to learn from is its central exploration mechanism.
+
+| Evidence | Paper | Research lens |
+|---|---|---|
+| **ACL 2026 Findings** | [Think Earlier, Not Longer: Prompt Optimization via Reducing Unhealthy Exploration](https://aclanthology.org/2026.findings-acl.817/) | `inference` `data/task` `structured-search` |
+| **ICLR 2026** | [String Seed of Thought: Prompting LLMs for Distribution-Faithful and Diverse Generation](https://iclr.cc/virtual/2026/poster/10007633) | `inference` `response/sequence` `data/task` `entropy/probability` `semantic-diversity` |
+| **ICLR 2026** | [Scaling Synthetic Task Generation for Agents via Exploration](https://iclr.cc/virtual/2026/poster/10007463) | `data-generation` `response/sequence` `trajectory/action` `curriculum/task-generation` |
+| **ACL 2026 Findings** | [SQLAgent: Learning to Explore Before Generating as a Data Engineer](https://aclanthology.org/2026.findings-acl.1959/) | `inference` `trajectory/action` `data/task` `structured-search` |
+| **ICLR 2026** | [No Prompt Left Behind: Exploiting Zero-Variance Prompts in LLM Reinforcement Learning via Entropy-Guided Advantage Shaping](https://iclr.cc/virtual/2026/poster/10007755) | `rl-training` `policy-distribution` `data/task` `entropy/probability` `reward/advantage` `gradient-reshaping` |
+| **ACL 2026 Findings** | [Dynamic Sampling that Adapts: Self-Aware Iterative Data Persistent Optimization for Mathematical Reasoning](https://aclanthology.org/2026.findings-acl.1412/) | `rl-training` `policy-distribution` `data/task` `sampling/decoding` |
+| **ICML 2026** | [DIVE: Scaling Diversity in Agentic Task Synthesis for Generalizable Tool Use](https://icml.cc/virtual/2026/poster/66305) | `data-generation` `trajectory/action` `data/task` `semantic-diversity` |
+| **ACL 2026 Findings** | [Beyond Templates: Dynamic Adaptation of Reasoning Demonstrations via Feasibility-Aware Exploration](https://aclanthology.org/2026.findings-acl.327/) | `inference` `data/task` `structured-search` |
+| **ACL 2026 Findings** | [Beyond Stochastic Exploration: What Makes Training Data Valuable for Agentic Search](https://aclanthology.org/2026.findings-acl.160/) | `inference` `trajectory/action` `data/task` `structured-search` |
+| arXiv | [Explore Data Left Behind in Reinforcement Learning for Reasoning Language Models](https://arxiv.org/abs/2511.04800) | `rl-training` `policy-distribution` `data/task` `structured-search` |
+
+## 4. Agentic & Environment Exploration
 
 > **Research focus.** This category covers language agents that explore an external or persistent environment: webpages, tools, GUIs, knowledge graphs, games, embodied worlds, or multi-agent settings. The object of exploration is usually a trajectory of states, actions, observations, and tool calls rather than a single textual response.
 
@@ -309,50 +320,72 @@ These papers focus on challenges such as partial observability, long horizons, r
 | arXiv | [RAPO: Expanding Exploration for LLM Agents via Retrieval-Augmented Policy Optimization](https://arxiv.org/abs/2603.03078) | `rl-training` `trajectory/action` `policy-distribution` `gradient-reshaping` |
 | arXiv | [AT$^2$PO: Agentic Turn-based Policy Optimization via Tree Search](https://arxiv.org/abs/2601.04767) | `rl-training` `trajectory/action` `policy-distribution` `gradient-reshaping` `tree-search/branching` |
 | **ICML 2026** | [What You Think is What You See: Driving Exploration in VLM Agents via Visual-Linguistic Curiosity](https://icml.cc/virtual/2026/poster/60509) | `inference` `trajectory/action` `novelty/curiosity` `structured-search` |
-| **ACL 2026 Main** | [WIST: Web-Grounded Iterative Self-Play Tree for Domain-Targeted Reasoning Improvement](https://aclanthology.org/2026.acl-long.1456/) | `inference` `trajectory/action` `population/multi-policy` `self-play/co-evolution` |
 | **ICLR 2026** | [Unlocking Long-Horizon Agentic Search with Large-Scale End-to-End RL](https://iclr.cc/virtual/2026/poster/10009929) | `inference` `trajectory/action` `structured-search` |
-| **ICLR 2026** | [Towards Self-Evolving Agent Benchmarks : Validatable Agent Trajectory via Test-Time Exploration](https://iclr.cc/virtual/2026/poster/10011762) | `inference` `trajectory/action` `self-play/co-evolution` |
 | **ICLR 2026** | [Toward Efficient Exploration by Large Language Model Agents](https://iclr.cc/virtual/2026/poster/10009979) | `inference` `trajectory/action` `structured-search` |
 | **ICML 2026** | [T$^2$PO: Uncertainty-Guided Exploration Control for Stable Multi-Turn Agentic Reinforcement Learning](https://icml.cc/virtual/2026/poster/63090) | `rl-training` `trajectory/action` `uncertainty/confidence` `structured-search` |
-| **ICLR 2026** | [Search Self-Play: Pushing the Frontier of Agent Capability without Supervision](https://iclr.cc/virtual/2026/poster/10008777) | `inference` `trajectory/action` `population/multi-policy` `self-play/co-evolution` |
-| **ICLR 2026** | [Scaling Synthetic Task Generation for Agents via Exploration](https://iclr.cc/virtual/2026/poster/10007463) | `data-generation` `response/sequence` `trajectory/action` `curriculum/task-generation` |
-| **ACL 2026 Findings** | [SQLAgent: Learning to Explore Before Generating as a Data Engineer](https://aclanthology.org/2026.findings-acl.1959/) | `inference` `trajectory/action` `data/task` `structured-search` |
-| **ICML 2026** | [SEAgent: Self-Evolving Computer Use Agent with Autonomous Learning from Experience](https://icml.cc/virtual/2026/poster/65711) | `continual/self-improvement` `trajectory/action` `replay/memory` `self-play/co-evolution` |
-| **ACL 2026 Main** | [Reinforcement Learning for Self-Improving Agent with Skill Library](https://aclanthology.org/2026.acl-long.69/) | `rl-training` `trajectory/action` `structured-search` |
 | **ICML 2026** | [RE-TRAC: REcursive TRAjectory Compression for Deep Search Agents](https://icml.cc/virtual/2026/poster/60790) | `inference` `trajectory/action` `structured-search` |
-| **ICML 2026** | [R-Diverse: Mitigating Diversity Illusion in Self-Play LLM Training](https://icml.cc/virtual/2026/poster/65447) | `inference` `trajectory/action` `population/multi-policy` `semantic-diversity` `self-play/co-evolution` |
 | **ACL 2026 Main** | [PExA: Parallel Exploration Agent for Complex Text-to-SQL](https://aclanthology.org/2026.acl-short.48/) | `inference` `trajectory/action` `structured-search` |
 | **ICLR 2026** | [Meta-RL Induces Exploration in Language Agents](https://iclr.cc/virtual/2026/poster/10011567) | `inference` `trajectory/action` `structured-search` |
 | **ACL 2026 Findings** | [MAXS: Meta-Adaptive Exploration with LLM Agents](https://aclanthology.org/2026.findings-acl.670/) | `inference` `trajectory/action` `structured-search` |
 | **ICML 2026** | [Learning to Explore: Scaling Agentic Reasoning via Exploration-Aware Policy Optimization](https://icml.cc/virtual/2026/poster/63287) | `rl-training` `trajectory/action` `policy-distribution` `gradient-reshaping` |
 | **ICLR 2026** | [Learn the Ropes, Then Trust the Wins: Self-imitation with Progressive Exploration for Agentic Reinforcement Learning](https://iclr.cc/virtual/2026/poster/10010088) | `rl-training` `trajectory/action` `structured-search` |
-| **ACL 2026 Findings** | [LLM Inductive Reasoning Through Multi-Agent Enhanced Monte Carlo Tree Search](https://aclanthology.org/2026.findings-acl.1178/) | `inference` `trajectory/action` `population/multi-policy` `tree-search/branching` `ensemble/population` |
 | **ICML 2026** | [Harnessing Uncertainty: Entropy-Modulated Policy Gradients for Long-Horizon LLM Agents](https://icml.cc/virtual/2026/poster/63273) | `rl-training` `trajectory/action` `policy-distribution` `entropy/probability` `uncertainty/confidence` `gradient-reshaping` |
 | **ICLR 2026** | [Go-Browse: Training Web Agents with Structured Exploration](https://iclr.cc/virtual/2026/poster/10010264) | `inference` `trajectory/action` `structured-search` |
 | **ACL 2026 Main** | [FusionFlow: Enabling Deep Structural Exploration for Automated Agentic Workflow Generation](https://aclanthology.org/2026.acl-long.1278/) | `inference` `response/sequence` `trajectory/action` `structured-search` |
-| **ICLR 2026** | [Explore-on-Graph: Incentivizing Autonomous Exploration of Large Language Models on Knowledge Graphs with Path-refined Reward Modeling](https://iclr.cc/virtual/2026/poster/10009840) | `inference` `trajectory/action` `reward/advantage` `structured-search` |
-| **ICLR 2026** | [Exploratory Memory-Augmented LLM Agent via Hybrid On- and Off-Policy Optimization](https://iclr.cc/virtual/2026/poster/10009229) | `rl-training` `trajectory/action` `policy-distribution` `gradient-reshaping` `replay/memory` |
-| **ACL 2026 Main** | [Empowering GUI Agents via Autonomous Experience Exploration and Hindsight Experience Utilization for Task Planning](https://aclanthology.org/2026.acl-long.1670/) | `inference` `trajectory/action` `data/task` `replay/memory` |
-| **ICLR 2026** | [Dyna-Mind: Learning to Simulate from Experience for Better AI Agents](https://iclr.cc/virtual/2026/poster/10010625) | `inference` `trajectory/action` `replay/memory` |
-| **ICLR 2026** | [Dual-Scale World Memory for LLM Agents towards Hard-Exploration Problems](https://iclr.cc/virtual/2026/poster/10008626) | `inference` `trajectory/action` `replay/memory` |
 | **ICLR 2026** | [DreamPhase: Offline Imagination and Uncertainty-Guided Planning for Large-Language-Model Agents](https://iclr.cc/virtual/2026/poster/10011238) | `inference` `trajectory/action` `uncertainty/confidence` |
 | **ACL 2026 Main** | [DPEPO: Diverse Parallel Exploration Policy Optimization for LLM-based Agents](https://aclanthology.org/2026.acl-long.2151/) | `rl-training` `trajectory/action` `policy-distribution` `semantic-diversity` `gradient-reshaping` |
-| **ICML 2026** | [DIVE: Scaling Diversity in Agentic Task Synthesis for Generalizable Tool Use](https://icml.cc/virtual/2026/poster/66305) | `data-generation` `trajectory/action` `data/task` `semantic-diversity` |
-| **ACL 2026 Findings** | [Chain-of-Relations: Faithful and Efficient LLM Reasoning over Knowledge Graphs via Relation-Centric Exploration](https://aclanthology.org/2026.findings-acl.2138/) | `inference` `trajectory/action` `structured-search` |
-| **ACL 2026 Main** | [Branch-and-Browse: Efficient and Controllable Web Exploration with Tree-Structured Reasoning and Action Memory](https://aclanthology.org/2026.acl-long.838/) | `inference` `trajectory/action` `tree-search/branching` `replay/memory` |
-| **ACL 2026 Findings** | [Beyond Stochastic Exploration: What Makes Training Data Valuable for Agentic Search](https://aclanthology.org/2026.findings-acl.160/) | `inference` `trajectory/action` `data/task` `structured-search` |
 | **ACL 2026 Findings** | [Beneficial Reasoning Behaviors in Agentic Search and Effective Training Methods to Obtain Them](https://aclanthology.org/2026.findings-acl.1400/) | `inference` `trajectory/action` `structured-search` |
-| **ICML 2026** | [Backjump-on-Graph: Empowering LLMs with Reinforced Retrospective Exploration for Agentic KG Reasoning](https://icml.cc/virtual/2026/poster/61995) | `inference` `trajectory/action` `backtracking/resampling` |
-| **ACL 2026 Main** | [Autonomous Knowledge Graph Exploration with Adaptive Breadth-Depth Retrieval](https://aclanthology.org/2026.acl-long.714/) | `inference` `trajectory/action` `tree-search/branching` |
 | **ICML 2026** | [Active Exploring like a Pigeon: Reinforcing Spatial Reasoning via Agentic Vision-Language Models](https://icml.cc/virtual/2026/poster/61450) | `inference` `trajectory/action` `structured-search` |
 | arXiv | [EPO: Entropy-regularized Policy Optimization for LLM Agents Reinforcement Learning](https://arxiv.org/abs/2509.22576) | `rl-training` `trajectory/action` `policy-distribution` `entropy/probability` `regularization` `gradient-reshaping` |
 | arXiv | [Enhancing Diversity in Parallel Agents: A Maximum State Entropy Exploration Story](https://arxiv.org/abs/2505.01336) | `inference` `trajectory/action` `entropy/probability` `semantic-diversity` `structured-search` |
-| TMLR 2024 | [Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291) | `continual/self-improvement` `trajectory/action` `data/task` `novelty/curiosity` `coverage` `curriculum/task-generation` |
-| ICML 2024 | [Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models](https://proceedings.mlr.press/v235/zhou24r.html) | `inference` `trajectory/action` `reward/advantage` `tree-search/branching` `replay/memory` |
-| NeurIPS 2023 | [Reflexion: Language Agents with Verbal Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html) | `test-time-adaptation` `trajectory/action` `reward/advantage` `replay/memory` |
 | ICLR 2023 | [ReAct: Synergizing Reasoning and Acting in Language Models](https://openreview.net/forum?id=WE_vluYUL-X) | `inference` `trajectory/action` `information-gain` `structured-search` |
 
-## 4. Understanding, Evaluation & Benchmarks
+## 5. Self-Improvement & Population Exploration
+
+> **Research focus.** This category covers exploration that emerges from repeated improvement loops or from interaction among multiple policies. Examples include self-play, co-evolution, ensembles, multi-agent collaboration, and generate–evaluate–train cycles that deliberately preserve diverse attempts.
+
+The key question is how a system can discover capabilities beyond a single fixed policy by using its own history, peer policies, or iterative feedback. Papers belong here when the population or self-improvement loop—not merely one rollout—is the main exploration unit.
+
+| Evidence | Paper | Research lens |
+|---|---|---|
+| **ACL 2026 Main** | [WIST: Web-Grounded Iterative Self-Play Tree for Domain-Targeted Reasoning Improvement](https://aclanthology.org/2026.acl-long.1456/) | `inference` `trajectory/action` `population/multi-policy` `self-play/co-evolution` |
+| **ICLR 2026** | [Towards Self-Evolving Agent Benchmarks : Validatable Agent Trajectory via Test-Time Exploration](https://iclr.cc/virtual/2026/poster/10011762) | `inference` `trajectory/action` `self-play/co-evolution` |
+| **ICLR 2026** | [Search Self-Play: Pushing the Frontier of Agent Capability without Supervision](https://iclr.cc/virtual/2026/poster/10008777) | `inference` `trajectory/action` `population/multi-policy` `self-play/co-evolution` |
+| **ICML 2026** | [SEAgent: Self-Evolving Computer Use Agent with Autonomous Learning from Experience](https://icml.cc/virtual/2026/poster/65711) | `continual/self-improvement` `trajectory/action` `replay/memory` `self-play/co-evolution` |
+| **ACL 2026 Main** | [Reinforcement Learning for Self-Improving Agent with Skill Library](https://aclanthology.org/2026.acl-long.69/) | `rl-training` `trajectory/action` `structured-search` |
+| **ICML 2026** | [R-Diverse: Mitigating Diversity Illusion in Self-Play LLM Training](https://icml.cc/virtual/2026/poster/65447) | `inference` `trajectory/action` `population/multi-policy` `semantic-diversity` `self-play/co-evolution` |
+| **ACL 2026 Findings** | [Multi-LLM Collaborative Search for Complex Problem Solving](https://aclanthology.org/2026.findings-acl.2115/) | `inference` `population/multi-policy` `ensemble/population` |
+| **ACL 2026 Findings** | [LLM Inductive Reasoning Through Multi-Agent Enhanced Monte Carlo Tree Search](https://aclanthology.org/2026.findings-acl.1178/) | `inference` `trajectory/action` `population/multi-policy` `tree-search/branching` `ensemble/population` |
+| **ACL 2026 Main** | [CoVerRL: Breaking the Consensus Trap in Label-Free Reasoning via Generator-Verifier Co-Evolution](https://aclanthology.org/2026.acl-long.1376/) | `rl-training` `policy-distribution` `disagreement` `self-play/co-evolution` |
+| TMLR 2024 | [Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291) | `continual/self-improvement` `trajectory/action` `data/task` `novelty/curiosity` `coverage` `curriculum/task-generation` |
+| ICLR 2023 | [Self-Consistency Improves Chain of Thought Reasoning in Language Models](https://iclr.cc/virtual/2023/poster/11718) | `inference` `response/sequence` `semantic-diversity` `sampling/decoding` `ensemble/population` |
+| NeurIPS 2023 | [Reflexion: Language Agents with Verbal Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html) | `test-time-adaptation` `trajectory/action` `reward/advantage` `replay/memory` |
+
+## 6. Memory & Knowledge Exploration
+
+> **Research focus.** This category covers exploration over information stored beyond the immediate prompt: retrieved documents, episodic traces, long-context memories, knowledge graphs, or internal memory representations. The focus is not simply whether a model has memory, but how it searches, selects, combines, writes, compresses, or updates memory to expand its effective search space.
+
+It includes memory-retrieval policies, memory writing and consolidation, forgetting, structured knowledge navigation, and memory-guided planning. A paper belongs here when actively exploring or managing knowledge is central to the method or evaluation.
+
+| Evidence | Paper | Research lens |
+|---|---|---|
+| **ICLR 2026** | [Explore-on-Graph: Incentivizing Autonomous Exploration of Large Language Models on Knowledge Graphs with Path-refined Reward Modeling](https://iclr.cc/virtual/2026/poster/10009840) | `inference` `trajectory/action` `reward/advantage` `structured-search` |
+| **ICLR 2026** | [Exploratory Memory-Augmented LLM Agent via Hybrid On- and Off-Policy Optimization](https://iclr.cc/virtual/2026/poster/10009229) | `rl-training` `trajectory/action` `policy-distribution` `gradient-reshaping` `replay/memory` |
+| **ICML 2026** | [Experience is the Best Teacher: Motivating Effective Exploration in Reinforcement Learning for LLMs](https://icml.cc/virtual/2026/poster/65561) | `rl-training` `policy-distribution` `replay/memory` |
+| **ACL 2026 Main** | [Empowering GUI Agents via Autonomous Experience Exploration and Hindsight Experience Utilization for Task Planning](https://aclanthology.org/2026.acl-long.1670/) | `inference` `trajectory/action` `data/task` `replay/memory` |
+| **ICLR 2026** | [Dyna-Mind: Learning to Simulate from Experience for Better AI Agents](https://iclr.cc/virtual/2026/poster/10010625) | `inference` `trajectory/action` `replay/memory` |
+| **ICLR 2026** | [Dual-Scale World Memory for LLM Agents towards Hard-Exploration Problems](https://iclr.cc/virtual/2026/poster/10008626) | `inference` `trajectory/action` `replay/memory` |
+| **ICLR 2026** | [DeepSearch: Overcome the Bottleneck of Reinforcement Learning with Verifiable Rewards via Tree-based Search](https://iclr.cc/virtual/2026/poster/10010078) | `rl-training` `policy-distribution` `coverage` `reward/advantage` `tree-search/branching` `replay/memory` |
+| **ACL 2026 Findings** | [Chain-of-Relations: Faithful and Efficient LLM Reasoning over Knowledge Graphs via Relation-Centric Exploration](https://aclanthology.org/2026.findings-acl.2138/) | `inference` `trajectory/action` `structured-search` |
+| **ACL 2026 Main** | [Branch-and-Browse: Efficient and Controllable Web Exploration with Tree-Structured Reasoning and Action Memory](https://aclanthology.org/2026.acl-long.838/) | `inference` `trajectory/action` `tree-search/branching` `replay/memory` |
+| **ICML 2026** | [Backjump-on-Graph: Empowering LLMs with Reinforced Retrospective Exploration for Agentic KG Reasoning](https://icml.cc/virtual/2026/poster/61995) | `inference` `trajectory/action` `backtracking/resampling` |
+| **ACL 2026 Main** | [Autonomous Knowledge Graph Exploration with Adaptive Breadth-Depth Retrieval](https://aclanthology.org/2026.acl-long.714/) | `inference` `trajectory/action` `tree-search/branching` |
+| arXiv | [RLEP: Reinforcement Learning with Experience Replay for LLM Reasoning](https://arxiv.org/abs/2507.07451) | `rl-training` `policy-distribution` `replay/memory` |
+| arXiv | [EFRame: Deeper Reasoning via Exploration-Filter-Replay Reinforcement Learning Framework](https://arxiv.org/abs/2506.22200) | `rl-training` `policy-distribution` `replay/memory` |
+| arXiv | [Improving RL Exploration for LLM Reasoning through Retrospective Replay](https://arxiv.org/abs/2504.14363) | `rl-training` `policy-distribution` `backtracking/resampling` `replay/memory` |
+| ICML 2024 | [Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models](https://proceedings.mlr.press/v235/zhou24r.html) | `inference` `trajectory/action` `reward/advantage` `tree-search/branching` `replay/memory` |
+
+## 7. Understanding, Evaluation & Benchmarks
 
 > **Research focus.** This category collects empirical analyses, theoretical accounts, surveys, metrics, and benchmarks that help the field understand exploration. Rather than primarily proposing a new exploration intervention, these works measure diversity, characterize training dynamics, evaluate capability boundaries, or establish a shared vocabulary and test bed.
 

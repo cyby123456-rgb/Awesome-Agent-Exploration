@@ -2405,7 +2405,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "data-task-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2928,7 +2928,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "memory-knowledge-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3334,7 +3334,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "data-task-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training",
@@ -3516,7 +3516,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "memory-knowledge-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3815,7 +3815,7 @@
       "date": "2026",
       "venue": "ACL 2026 Main",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "self-improvement-population-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4378,7 +4378,7 @@
       "date": "2025-11-06",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "data-task-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4865,7 +4865,7 @@
       "date": "2025-07-10",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "memory-knowledge-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4899,7 +4899,7 @@
       "date": "2025-06-27",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "memory-knowledge-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5225,7 +5225,7 @@
       "date": "2025-04-19",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "memory-knowledge-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5573,7 +5573,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "llm-exploration",
+      "primary_area": "data-task-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -5733,7 +5733,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "llm-exploration",
+      "primary_area": "data-task-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -6100,7 +6100,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "llm-exploration",
+      "primary_area": "self-improvement-population-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -6869,7 +6869,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "llm-exploration",
+      "primary_area": "data-task-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "inference",
@@ -7363,7 +7363,7 @@
       "date": "2023",
       "venue": "ICLR 2023",
       "source_group": "foundational-llm",
-      "primary_area": "llm-exploration",
+      "primary_area": "self-improvement-population-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -7514,7 +7514,7 @@
       "date": "2026",
       "venue": "ACL 2026 Main",
       "source_group": "conference-2026",
-      "primary_area": "agentic-exploration",
+      "primary_area": "self-improvement-population-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -7593,7 +7593,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "agentic-exploration",
+      "primary_area": "self-improvement-population-exploration",
       "paper_type": "benchmark",
       "phase": [
         "inference",
@@ -7699,7 +7699,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "agentic-exploration",
+      "primary_area": "self-improvement-population-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -7738,7 +7738,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "agentic-exploration",
+      "primary_area": "data-task-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "data-generation",
@@ -7773,7 +7773,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "agentic-exploration",
+      "primary_area": "data-task-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -7811,7 +7811,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "agentic-exploration",
+      "primary_area": "self-improvement-population-exploration",
       "paper_type": "method",
       "phase": [
         "continual/self-improvement"
@@ -7848,7 +7848,7 @@
       "date": "2026",
       "venue": "ACL 2026 Main",
       "source_group": "conference-2026",
-      "primary_area": "agentic-exploration",
+      "primary_area": "self-improvement-population-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training",
@@ -7933,7 +7933,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "agentic-exploration",
+      "primary_area": "self-improvement-population-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -8151,7 +8151,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "agentic-exploration",
+      "primary_area": "self-improvement-population-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -8300,7 +8300,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "agentic-exploration",
+      "primary_area": "memory-knowledge-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -8336,7 +8336,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "agentic-exploration",
+      "primary_area": "memory-knowledge-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -8371,7 +8371,7 @@
       "date": "2026",
       "venue": "ACL 2026 Main",
       "source_group": "conference-2026",
-      "primary_area": "agentic-exploration",
+      "primary_area": "memory-knowledge-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -8408,7 +8408,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "agentic-exploration",
+      "primary_area": "memory-knowledge-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -8437,7 +8437,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "agentic-exploration",
+      "primary_area": "memory-knowledge-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -8547,7 +8547,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "agentic-exploration",
+      "primary_area": "data-task-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "data-generation"
@@ -8580,7 +8580,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "agentic-exploration",
+      "primary_area": "memory-knowledge-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -8615,7 +8615,7 @@
       "date": "2026",
       "venue": "ACL 2026 Main",
       "source_group": "conference-2026",
-      "primary_area": "agentic-exploration",
+      "primary_area": "memory-knowledge-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -8651,7 +8651,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "agentic-exploration",
+      "primary_area": "data-task-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -8722,7 +8722,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "agentic-exploration",
+      "primary_area": "memory-knowledge-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -8758,7 +8758,7 @@
       "date": "2026",
       "venue": "ACL 2026 Main",
       "source_group": "conference-2026",
-      "primary_area": "agentic-exploration",
+      "primary_area": "memory-knowledge-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -8900,7 +8900,7 @@
       "date": "2024",
       "venue": "TMLR 2024",
       "source_group": "foundational-llm",
-      "primary_area": "agentic-exploration",
+      "primary_area": "self-improvement-population-exploration",
       "paper_type": "method",
       "phase": [
         "continual/self-improvement"
@@ -8941,7 +8941,7 @@
       "date": "2024",
       "venue": "ICML 2024",
       "source_group": "foundational-llm",
-      "primary_area": "agentic-exploration",
+      "primary_area": "memory-knowledge-exploration",
       "paper_type": "method",
       "phase": [
         "inference",
@@ -8983,7 +8983,7 @@
       "date": "2023",
       "venue": "NeurIPS 2023",
       "source_group": "foundational-llm",
-      "primary_area": "agentic-exploration",
+      "primary_area": "self-improvement-population-exploration",
       "paper_type": "method",
       "phase": [
         "test-time-adaptation",
