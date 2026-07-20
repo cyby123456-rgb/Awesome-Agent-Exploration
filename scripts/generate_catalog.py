@@ -120,15 +120,23 @@ def render_readme(catalog: dict) -> str:
         "[![Four research tracks](https://img.shields.io/badge/tracks-4-10B981?style=flat-square)](#research-map) "
         "[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-F59E0B?style=flat-square)](CONTRIBUTING.md)",
         "",
-        "[Research map](#research-map) · [Start here](#start-here) · [Catalog](#catalog) · [Detailed metadata](README_DETAILED.md) · [Contribute](CONTRIBUTING.md)",
+        "[Guide](#guide) · [Research map](#research-map) · [Start here](#start-here) · [Catalog](#catalog) · [Detailed metadata](README_DETAILED.md) · [Contribute](CONTRIBUTING.md)",
         "",
         "</div>",
         "",
-        "> **What this list is for:** finding work that treats exploration as a first-class research variable—where it occurs, what signal identifies it, and which mechanism changes it.",
+        "## Guide",
         "",
-        "This list treats exploration as a **primary research variable**, not as a keyword. A paper must "
-        "identify where exploration happens and introduce or analyze a concrete exploration signal or mechanism. "
-        "Generic RL, agent, test-time-scaling, self-improvement, and diversity papers are excluded.",
+        "| Start here | What you will find |",
+        "|---|---|",
+        "| **[What counts as exploration](#what-counts-as-exploration)** | Our scope: exploration must be a concrete research variable, not only a keyword. |",
+        "| **[Research map](#research-map)** | The four places exploration occurs: generation, RLVR, agents, and evaluation. |",
+        "| **[Taxonomy lens](#taxonomy-lens)** | How phase, level, signal, mechanism, problem, and setting describe each paper. |",
+        "| **[Start here](#start-here)** | A cross-section of recommended papers for first-time readers. |",
+        "| **[Full catalog](#catalog)** | All curated papers, grouped by their primary research context. |",
+        "",
+        "## What counts as exploration?",
+        "",
+        "> This repository treats exploration as a **primary research variable**: a paper must identify where exploration happens and introduce or analyze a concrete exploration signal or mechanism. Generic RL, agents, test-time scaling, self-improvement, and diversity work are excluded when exploration is merely incidental.",
         "",
         f"> Evidence snapshot: **{catalog['snapshot_date']}** · [Taxonomy design](docs/TAXONOMY.md) · [2026 curation notes](docs/CURATION_2026.md)",
         "",
@@ -142,6 +150,8 @@ def render_readme(catalog: dict) -> str:
         "| **[Exploration for RLVR](#2-exploration-for-rlvr)** | Entropy collapse, rollout diversity, reward shaping, and policy-distribution control during training. |",
         "| **[Agentic Exploration](#3-agentic-exploration)** | Web, tool, GUI, knowledge-graph, embodied, or multi-agent trajectories. |",
         "| **[Understanding & Evaluation](#4-understanding-evaluation--benchmarks)** | Surveys, theory, metrics, benchmarks, and evidence about exploration. |",
+        "",
+        "<a id=\"taxonomy-lens\"></a>",
         "",
         "<details>",
         "<summary><strong>How to read the tags</strong></summary>",
@@ -181,12 +191,11 @@ def render_readme(catalog: dict) -> str:
             key=lambda p: (p.get("date", ""), p["title"]),
             reverse=True,
         )
-        lines.extend(["| Published | Paper | Evidence | Research lens |", "|---|---|---|---|"])
+        lines.extend(["| Evidence | Paper | Research lens |", "|---|---|---|"])
         for paper in selected:
-            date = paper.get("date", "")[:7] or str(paper.get("year", ""))
             lines.append(
-                f"| {date} | [{paper['title']}]({paper['url']}) | "
-                f"{source_label(paper)} | {compact_tags(paper)} |"
+                f"| {source_label(paper)} | [{paper['title']}]({paper['url']}) | "
+                f"{compact_tags(paper)} |"
             )
 
     lines.extend(
