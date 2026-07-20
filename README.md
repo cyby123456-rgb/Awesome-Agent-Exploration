@@ -1,23 +1,36 @@
+<div align="center">
+
 # Awesome Exploration
 
-> A curated reading list on exploration in language-model generation, RLVR, and agents.
+**A curated research map of exploration in language models, RLVR, and agents.**
+
+[![Curated catalog](https://img.shields.io/badge/catalog-curated-3B82F6?style=flat-square)](docs/CURATION_2026.md) [![254 papers](https://img.shields.io/badge/papers-254-8B5CF6?style=flat-square)](#catalog) [![Four research tracks](https://img.shields.io/badge/tracks-4-10B981?style=flat-square)](#research-map) [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-F59E0B?style=flat-square)](CONTRIBUTING.md)
+
+[Research map](#research-map) · [Start here](#start-here) · [Catalog](#catalog) · [Detailed metadata](README_DETAILED.md) · [Contribute](CONTRIBUTING.md)
+
+</div>
+
+> **What this list is for:** finding work that treats exploration as a first-class research variable—where it occurs, what signal identifies it, and which mechanism changes it.
 
 This list treats exploration as a **primary research variable**, not as a keyword. A paper must identify where exploration happens and introduce or analyze a concrete exploration signal or mechanism. Generic RL, agent, test-time-scaling, self-improvement, and diversity papers are excluded.
 
-**Evidence snapshot:** 2026-07-19 · [Taxonomy design](docs/TAXONOMY.md) · [Detailed metadata](README_DETAILED.md) · [2026 curation notes](docs/CURATION_2026.md) · [Contribution guide](CONTRIBUTING.md)
+> Evidence snapshot: **2026-07-19** · [Taxonomy design](docs/TAXONOMY.md) · [2026 curation notes](docs/CURATION_2026.md)
 
-## Taxonomy
+## Research map
 
-Each paper has exactly one primary area and may carry multiple orthogonal tags. See [Taxonomy design](docs/TAXONOMY.md) for the decision rules, meaning of each dimension, and the rationale for separating signals such as entropy from mechanisms such as temperature or noise.
+Every paper has one home in the map; its tags then describe the research lens. Start with the track that matches your question, then use the tags to compare mechanisms across tracks.
 
-| Primary area | Definition |
+| Track | Best for |
 |---|---|
-| **LLM Generation & Inference Exploration** | Exploration during language-model generation and inference, without RL policy updates as the central contribution. |
-| **Exploration for RLVR** | Exploration during RL/RLVR post-training, where exploration changes the rollout distribution or policy update. |
-| **Agentic Exploration** | Exploration by language agents acting over states, tools, observations, and long-horizon trajectories. |
-| **Understanding, Evaluation & Benchmarks** | Work that measures, explains, surveys, or benchmarks exploration rather than primarily introducing an intervention. |
+| **[LLM Generation & Inference](#1-llm-generation--inference-exploration)** | Sampling, decoding, reasoning-path search, and output diversity without an RL update. |
+| **[Exploration for RLVR](#2-exploration-for-rlvr)** | Entropy collapse, rollout diversity, reward shaping, and policy-distribution control during training. |
+| **[Agentic Exploration](#3-agentic-exploration)** | Web, tool, GUI, knowledge-graph, embodied, or multi-agent trajectories. |
+| **[Understanding & Evaluation](#4-understanding-evaluation--benchmarks)** | Surveys, theory, metrics, benchmarks, and evidence about exploration. |
 
-The former Token / Sequence / Policy sections are now `level` tags. Entropy, temperature, and noise are grouped under distributional/stochastic exploration while remaining distinct tags.
+<details>
+<summary><strong>How to read the tags</strong></summary>
+
+The former Token / Sequence / Policy sections are now `level` tags. Entropy, temperature, and noise belong to a broad distributional-and-stochastic family, but remain separate tags because they play different causal roles.
 
 | Tag dimension | Values |
 |---|---|
@@ -27,6 +40,8 @@ The former Token / Sequence / Policy sections are now `level` tags. Entropy, tem
 | **Mechanism** | sampling/decoding; temperature control; noise/perturbation; regularization; gradient reshaping; intrinsic reward; structured/tree search; replay/memory; curriculum; self-play; ensemble/population |
 | **Problem** | entropy or mode collapse; sparse reward; local optimum; capability boundary; long horizon; exploration/exploitation; recovery |
 | **Setting** | math; code; multimodal; creative/open-ended; web; tool use; knowledge graph; embodied; multi-agent |
+
+</details>
 
 ## Catalog at a glance
 
@@ -70,13 +85,17 @@ The former Token / Sequence / Policy sections are now `level` tags. Entropy, tem
 - **[Reflexion: Language Agents with Verbal Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html)** — NeurIPS 2023 · Agentic Exploration · `test-time-adaptation` `trajectory/action` `reward/advantage` `replay/memory`
 - **[ReAct: Synergizing Reasoning and Acting in Language Models](https://openreview.net/forum?id=WE_vluYUL-X)** — ICLR 2023 · Agentic Exploration · `inference` `trajectory/action` `information-gain` `structured-search`
 
+<a id="catalog"></a>
+
+## Catalog
+
 ## 1. LLM Generation & Inference Exploration
 
-This category covers exploration that happens while a language model is generating or selecting candidate outputs, rather than through a reinforcement-learning update. Typical examples include sampling and decoding strategies, self-consistency, semantic-diversity methods, latent-state steering, and tree or graph search at inference time.
+> **Research focus.** This category covers exploration that happens while a language model is generating or selecting candidate outputs, rather than through a reinforcement-learning update. Typical examples include sampling and decoding strategies, self-consistency, semantic-diversity methods, latent-state steering, and tree or graph search at inference time.
 
 The central question is how to search a model's existing generative distribution more broadly, safely, or efficiently. Papers belong here when the main contribution improves or analyzes candidate generation, reasoning-path search, or output diversity without making RL post-training the core mechanism.
 
-| Date | Paper | Source | Tags |
+| Published | Paper | Evidence | Research lens |
 |---|---|---|---|
 | 2026-05 | [From Noise to Diversity: Random Embedding Injection in LLM Reasoning](https://arxiv.org/abs/2605.11936) | arXiv | `inference` `latent/representation` `semantic-diversity` `noise/perturbation` |
 | 2026 | [e3: Learning to Explore Enables Extrapolation of Test-Time Compute for LLMs](https://iclr.cc/virtual/2026/poster/10008718) | **ICLR 2026** | `inference` `response/sequence` `structured-search` |
@@ -141,11 +160,11 @@ The central question is how to search a model's existing generative distribution
 
 ## 2. Exploration for RLVR
 
-This category concerns exploration during reinforcement learning or RL with verifiable rewards (RLVR). Here, exploration changes which rollouts are collected, how reward or advantage signals are assigned, or how the policy distribution is updated during training.
+> **Research focus.** This category concerns exploration during reinforcement learning or RL with verifiable rewards (RLVR). Here, exploration changes which rollouts are collected, how reward or advantage signals are assigned, or how the policy distribution is updated during training.
 
 It includes work on entropy or mode collapse, low-probability tokens, rollout diversity, intrinsic or shaped rewards, gradient and regularization interventions, curriculum design, and attempts to push beyond a base model's capability boundary. The defining feature is that exploration is part of the learning loop, not only an inference-time search choice.
 
-| Date | Paper | Source | Tags |
+| Published | Paper | Evidence | Research lens |
 |---|---|---|---|
 | 2026-05 | [Entropy Polarity in Reinforcement Fine-Tuning: Direction, Asymmetry, and Control](https://arxiv.org/abs/2605.11775) | arXiv | `rl-training` `policy-distribution` `entropy/probability` |
 | 2026-05 | [Breaking $\textit{Winner-Takes-All}$: Cooperative Policy Optimization Improves Diverse LLM Reasoning](https://arxiv.org/abs/2605.11461) | arXiv | `rl-training` `policy-distribution` `semantic-diversity` `gradient-reshaping` |
@@ -269,11 +288,11 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
 
 ## 3. Agentic Exploration
 
-This category covers language agents that explore an external or persistent environment: webpages, tools, GUIs, knowledge graphs, games, embodied worlds, or multi-agent settings. The object of exploration is usually a trajectory of states, actions, observations, and tool calls rather than a single textual response.
+> **Research focus.** This category covers language agents that explore an external or persistent environment: webpages, tools, GUIs, knowledge graphs, games, embodied worlds, or multi-agent settings. The object of exploration is usually a trajectory of states, actions, observations, and tool calls rather than a single textual response.
 
 These papers focus on challenges such as partial observability, long horizons, recovery from failed actions, memory, environment coverage, and interactive search. A paper belongs here when external interaction is central to the exploration problem and evaluation.
 
-| Date | Paper | Source | Tags |
+| Published | Paper | Evidence | Research lens |
 |---|---|---|---|
 | 2026-03 | [RAPO: Expanding Exploration for LLM Agents via Retrieval-Augmented Policy Optimization](https://arxiv.org/abs/2603.03078) | arXiv | `rl-training` `trajectory/action` `policy-distribution` `gradient-reshaping` |
 | 2026-01 | [AT$^2$PO: Agentic Turn-based Policy Optimization via Tree Search](https://arxiv.org/abs/2601.04767) | arXiv | `rl-training` `trajectory/action` `policy-distribution` `gradient-reshaping` `tree-search/branching` |
@@ -323,11 +342,11 @@ These papers focus on challenges such as partial observability, long horizons, r
 
 ## 4. Understanding, Evaluation & Benchmarks
 
-This category collects empirical analyses, theoretical accounts, surveys, metrics, and benchmarks that help the field understand exploration. Rather than primarily proposing a new exploration intervention, these works measure diversity, characterize training dynamics, evaluate capability boundaries, or establish a shared vocabulary and test bed.
+> **Research focus.** This category collects empirical analyses, theoretical accounts, surveys, metrics, and benchmarks that help the field understand exploration. Rather than primarily proposing a new exploration intervention, these works measure diversity, characterize training dynamics, evaluate capability boundaries, or establish a shared vocabulary and test bed.
 
 They are essential for judging whether a method genuinely improves exploration instead of merely changing accuracy or sampling behavior. Keeping them separate makes the evidence about a phenomenon easy to distinguish from methods designed to change it.
 
-| Date | Paper | Source | Tags |
+| Published | Paper | Evidence | Research lens |
 |---|---|---|---|
 | 2026-05 | [Beyond Accuracy: Evaluating Strategy Diversity in LLM Mathematical Reasoning](https://arxiv.org/abs/2605.09292) | arXiv | `inference` `response/sequence` `semantic-diversity` |
 | 2026 | [Why Did Apple Fall: Evaluating Curiosity in Large Language Models](https://aclanthology.org/2026.findings-acl.1954/) | **ACL 2026 Findings** | `inference` `response/sequence` `novelty/curiosity` |

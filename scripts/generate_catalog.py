@@ -109,35 +109,50 @@ def statistics_table(papers: list[dict]) -> list[str]:
 def render_readme(catalog: dict) -> str:
     papers = catalog["papers"]
     lines = [
+        "<div align=\"center\">",
+        "",
         "# Awesome Exploration",
         "",
-        "> A curated reading list on exploration in language-model generation, RLVR, and agents.",
+        "**A curated research map of exploration in language models, RLVR, and agents.**",
+        "",
+        "[![Curated catalog](https://img.shields.io/badge/catalog-curated-3B82F6?style=flat-square)](docs/CURATION_2026.md) "
+        f"[![{len(papers)} papers](https://img.shields.io/badge/papers-{len(papers)}-8B5CF6?style=flat-square)](#catalog) "
+        "[![Four research tracks](https://img.shields.io/badge/tracks-4-10B981?style=flat-square)](#research-map) "
+        "[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-F59E0B?style=flat-square)](CONTRIBUTING.md)",
+        "",
+        "[Research map](#research-map) · [Start here](#start-here) · [Catalog](#catalog) · [Detailed metadata](README_DETAILED.md) · [Contribute](CONTRIBUTING.md)",
+        "",
+        "</div>",
+        "",
+        "> **What this list is for:** finding work that treats exploration as a first-class research variable—where it occurs, what signal identifies it, and which mechanism changes it.",
         "",
         "This list treats exploration as a **primary research variable**, not as a keyword. A paper must "
         "identify where exploration happens and introduce or analyze a concrete exploration signal or mechanism. "
         "Generic RL, agent, test-time-scaling, self-improvement, and diversity papers are excluded.",
         "",
-        f"**Evidence snapshot:** {catalog['snapshot_date']} · "
-        "[Taxonomy design](docs/TAXONOMY.md) · [Detailed metadata](README_DETAILED.md) · "
-        "[2026 curation notes](docs/CURATION_2026.md) · "
-        "[Contribution guide](CONTRIBUTING.md)",
+        f"> Evidence snapshot: **{catalog['snapshot_date']}** · [Taxonomy design](docs/TAXONOMY.md) · [2026 curation notes](docs/CURATION_2026.md)",
         "",
-        "## Taxonomy",
+        "## Research map",
         "",
-        "Each paper has exactly one primary area and may carry multiple orthogonal tags. "
-        "See [Taxonomy design](docs/TAXONOMY.md) for the decision rules, meaning of each dimension, "
-        "and the rationale for separating signals such as entropy from mechanisms such as temperature or noise.",
+        "Every paper has one home in the map; its tags then describe the research lens. Start with the track that matches your question, then use the tags to compare mechanisms across tracks.",
         "",
-        "| Primary area | Definition |",
+        "| Track | Best for |",
         "|---|---|",
-        *[f"| **{AREA_LABELS[a]}** | {AREA_SUMMARIES[a]} |" for a in AREA_LABELS],
+        "| **[LLM Generation & Inference](#1-llm-generation--inference-exploration)** | Sampling, decoding, reasoning-path search, and output diversity without an RL update. |",
+        "| **[Exploration for RLVR](#2-exploration-for-rlvr)** | Entropy collapse, rollout diversity, reward shaping, and policy-distribution control during training. |",
+        "| **[Agentic Exploration](#3-agentic-exploration)** | Web, tool, GUI, knowledge-graph, embodied, or multi-agent trajectories. |",
+        "| **[Understanding & Evaluation](#4-understanding-evaluation--benchmarks)** | Surveys, theory, metrics, benchmarks, and evidence about exploration. |",
         "",
-        "The former Token / Sequence / Policy sections are now `level` tags. Entropy, temperature, and "
-        "noise are grouped under distributional/stochastic exploration while remaining distinct tags.",
+        "<details>",
+        "<summary><strong>How to read the tags</strong></summary>",
+        "",
+        "The former Token / Sequence / Policy sections are now `level` tags. Entropy, temperature, and noise belong to a broad distributional-and-stochastic family, but remain separate tags because they play different causal roles.",
         "",
         "| Tag dimension | Values |",
         "|---|---|",
         *[f"| **{name}** | {values} |" for name, values in TAG_DIMENSIONS],
+        "",
+        "</details>",
         "",
         "## Catalog at a glance",
         "",
@@ -158,14 +173,15 @@ def render_readme(catalog: dict) -> str:
             f"{AREA_LABELS[paper['primary_area']]} · {compact_tags(paper)}"
         )
 
+    lines.extend(["", "<a id=\"catalog\"></a>", "", "## Catalog"])
     for index, (area, label) in enumerate(AREA_LABELS.items(), start=1):
-        lines.extend(["", f"## {index}. {label}", "", *area_description_lines(area)])
+        lines.extend(["", f"## {index}. {label}", "", f"> **Research focus.** {AREA_DESCRIPTIONS[area][0]}", "", AREA_DESCRIPTIONS[area][1], ""])
         selected = sorted(
             (p for p in papers if p["primary_area"] == area),
             key=lambda p: (p.get("date", ""), p["title"]),
             reverse=True,
         )
-        lines.extend(["| Date | Paper | Source | Tags |", "|---|---|---|---|"])
+        lines.extend(["| Published | Paper | Evidence | Research lens |", "|---|---|---|---|"])
         for paper in selected:
             date = paper.get("date", "")[:7] or str(paper.get("year", ""))
             lines.append(
