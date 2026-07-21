@@ -12,6 +12,8 @@ The central question is how to search a model's existing generative distribution
 
 ### Decoding & Sampling · 13 papers
 
+Methods that broaden candidate generation at inference time, with probability shaping, temperature, and sampling strategy as the key levers for balancing diversity, quality, and cost.
+
 - **[Thermometer of Thoughts: Enhancing LLM’s Exploration via Attention Temperature Modulation](https://aclanthology.org/2026.acl-long.200/)** — **ACL 2026 Main**
   - Authors: Zhiyuan Yu, Shijian Xiao, Cam-Tu Nguyen, Zhangyue Yin, Lekai Xing, Wenzhong Li, Sanglu Lu
   - Type: `method` · Date: `2026`
@@ -79,6 +81,8 @@ The central question is how to search a model's existing generative distribution
   - Exploration focus: entropy/probability, uncertainty/confidence, novelty/curiosity.
 
 ### Search & Deliberation · 23 papers
+
+Methods that explore multi-step reasoning paths through branching, resampling, planning, or verification, with search-budget allocation and path quality as the central concerns.
 
 - **[e3: Learning to Explore Enables Extrapolation of Test-Time Compute for LLMs](https://iclr.cc/virtual/2026/poster/10008718)** — **ICLR 2026**
   - Authors: Amrith Setlur, Matthew Yang, Charlie Snell, Jeremiah Greer, Ian Wu, Virginia Smith, Max Simchowitz, Aviral Kumar
@@ -198,6 +202,8 @@ The central question is how to search a model's existing generative distribution
 
 ### Representation & Latent Steering · 6 papers
 
+Methods that diversify generation by steering activations, embeddings, or latent states, focusing on controllable variation beyond output-level sampling.
+
 - **[From Noise to Diversity: Random Embedding Injection in LLM Reasoning](https://arxiv.org/abs/2605.11936)** — arXiv
   - Authors: Heejun Kim, Seungpil Lee, Jewon Yeom, Jaewon Sok, Seonghyeon Park, Jeongjae Park, Taesup Kim, Sundong Kim
   - Type: `method` · Date: `2026-05-12`
@@ -230,6 +236,8 @@ The central question is how to search a model's existing generative distribution
   - Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, sampling/decoding.
 
 ### Diversity & Coverage · 13 papers
+
+Methods that counter mode collapse and expand semantic coverage, emphasizing how novelty and breadth can improve without sacrificing correctness or coherence.
 
 - **[Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity](https://icml.cc/virtual/2026/poster/60489)** — **ICML 2026**
   - Authors: Jiayi Zhang, Simon Yu, Derek Chong, Anthony Sicilia, Michael Tomz, Christopher Manning, Weiyan Shi
@@ -305,6 +313,8 @@ This category concerns exploration during reinforcement learning or RL with veri
 It includes work on entropy or mode collapse, low-probability tokens, rollout diversity, intrinsic or shaped rewards, gradient and regularization interventions, curriculum design, and attempts to push beyond a base model's capability boundary. The defining feature is that exploration is part of the learning loop, not only an inference-time search choice.
 
 ### Entropy & Distribution Control · 42 papers
+
+Work that analyzes or controls policy entropy and token probabilities during RL, aiming to preserve useful distributional support while preventing premature collapse.
 
 - **[Entropy Polarity in Reinforcement Fine-Tuning: Direction, Asymmetry, and Control](https://arxiv.org/abs/2605.11775)** — arXiv
   - Authors: Jiazheng Zhang, Ziche Fu, Junrui Shen, Yunbin Zhao, Yunke Zhang, Zhiheng Xi, Long Ma, Chenxin An et al.
@@ -518,6 +528,8 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
 
 ### Credit Assignment & Optimization · 17 papers
 
+Methods that reshape rewards, advantages, or gradients so exploratory behavior receives an informative learning signal, with stable and precise credit assignment as the key challenge.
+
 - **[Breaking $\textit{Winner-Takes-All}$: Cooperative Policy Optimization Improves Diverse LLM Reasoning](https://arxiv.org/abs/2605.11461)** — arXiv
   - Authors: Haoxuan Chen, Tianming Liang, Wei-Shi Zheng, Jian-Fang Hu
   - Type: `method` · Date: `2026-05-12`
@@ -606,6 +618,8 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
 
 ### Reward & Rollout Shaping · 8 papers
 
+Methods that alter rollout collection, reward shaping, intrinsic bonuses, or resampling to elicit more varied and informative training trajectories.
+
 - **[VANE: Guiding High-Value Exploration in RLVR via Outcome-Process Novelty Shaping](https://aclanthology.org/2026.findings-acl.1434/)** — **ACL 2026 Findings**
   - Authors: Xu He, Jialiang Guo, Fucheng Xiong, Haodong Zhao, Xingyang li, Ke Zeng, Xunliang Cai
   - Type: `method` · Date: `2026`
@@ -648,6 +662,8 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
   - Exploration focus: structured-search.
 
 ### Capability Boundaries & Training Dynamics · 43 papers
+
+Work that studies how RL training expands, redistributes, or erodes model capabilities, focusing on generalization boundaries, stability, and genuine capability growth.
 
 - **[Exploration-Driven Optimization for Test-Time Large Language Model Reasoning](https://arxiv.org/abs/2605.09853)** — arXiv
   - Authors: Changhao Li, Yuchen Zhuang, Chenxiao Gao, Haotian Sun, Rushi Qiang, Chao Zhang, Bo Dai
@@ -874,6 +890,8 @@ It includes active data selection, synthetic task generation, adaptive curricula
 
 ### Data Selection & Prompt Exploration · 6 papers
 
+Methods that select, prioritize, or prompt candidate training examples, using informativeness, uncertainty, and coverage to decide which data is most valuable next.
+
 - **[Think Earlier, Not Longer: Prompt Optimization via Reducing Unhealthy Exploration](https://aclanthology.org/2026.findings-acl.817/)** — **ACL 2026 Findings**
   - Authors: Ling-I Wu, Minyu Chen, Jingyang Li, Xi Chang, Guoqiang Li
   - Type: `method` · Date: `2026`
@@ -907,6 +925,8 @@ It includes active data selection, synthetic task generation, adaptive curricula
 
 ### Agent Task & Environment Generation · 4 papers
 
+Methods that create interactive tasks or environments for agents, emphasizing realism, behavioral coverage, controllable difficulty, and useful feedback.
+
 - **[Scaling Synthetic Task Generation for Agents via Exploration](https://iclr.cc/virtual/2026/poster/10007463)** — **ICLR 2026**
   - Authors: Ram Ramrakhya, Andrew Szot, Omar Attia, Bogdan Mazoure, Anh Nguyen, Yuhao Yang, Zhe Gan, Harsh Agrawal et al.
   - Type: `method` · Date: `2026`
@@ -937,6 +957,8 @@ These papers focus on challenges such as partial observability, long horizons, r
 
 ### Web, Tools & GUI · 4 papers
 
+Agents that explore websites, tools, and graphical interfaces, where action grounding, partial observability, tool choice, and recovery from failed interactions are central.
+
 - **[What You Think is What You See: Driving Exploration in VLM Agents via Visual-Linguistic Curiosity](https://icml.cc/virtual/2026/poster/60509)** — **ICML 2026**
   - Authors: Haoxi Li, Qinglin Hou, Jianfei Ma, Jinxiang Lai, Tao Han, Sikai Bai, Jingcai Guo, Jie ZHANG et al.
   - Type: `method` · Date: `2026`
@@ -959,6 +981,8 @@ These papers focus on challenges such as partial observability, long horizons, r
   - Officially accepted at ICLR 2026. Exploration focus: uncertainty/confidence, reward/advantage, tree-search/branching.
 
 ### Planning & Interactive Search · 16 papers
+
+Agents that search over multi-step action plans while interacting with an environment, focusing on long-horizon feedback, replanning, and efficient state-space coverage.
 
 - **[RAPO: Expanding Exploration for LLM Agents via Retrieval-Augmented Policy Optimization](https://arxiv.org/abs/2603.03078)** — arXiv
   - Authors: Siwei Zhang, Yun Xiong, Xi Chen, Zi'an Jia, Renhong Huang, Jiarong Xu, Jiawei Zhang
@@ -1043,6 +1067,8 @@ These papers focus on challenges such as partial observability, long horizons, r
 
 ### Embodied & Simulated Environments · 2 papers
 
+Agents that explore physical or simulated worlds, with spatial reasoning, world-model learning, action consequences, and sample-efficient coverage as key issues.
+
 - **[Active Exploring like a Pigeon: Reinforcing Spatial Reasoning via Agentic Vision-Language Models](https://icml.cc/virtual/2026/poster/61450)** — **ICML 2026**
   - Authors: Wei Deng, Xianlin Zhang, Mengshi Qi
   - Type: `method` · Date: `2026`
@@ -1062,6 +1088,8 @@ This category covers exploration that emerges from repeated improvement loops or
 The key question is how a system can discover capabilities beyond a single fixed policy by using its own history, peer policies, or iterative feedback. Papers belong here when the population or self-improvement loop—not merely one rollout—is the main exploration unit.
 
 ### Self-Play & Co-Evolution · 6 papers
+
+Systems in which policies or agents generate challenges for one another, using competitive or cooperative pressure to build an adaptive curriculum while maintaining diversity and stability.
 
 - **[WIST: Web-Grounded Iterative Self-Play Tree for Domain-Targeted Reasoning Improvement](https://aclanthology.org/2026.acl-long.1456/)** — **ACL 2026 Main**
   - Authors: Fangyuan Li, Pengfei Li, Shijie Wang, Junqi Gao, Jianxing Liu, Biqing Qi, Yuqiang Li
@@ -1096,6 +1124,8 @@ The key question is how a system can discover capabilities beyond a single fixed
 
 ### Multi-Agent & Ensemble Exploration · 3 papers
 
+Systems that combine multiple agents or policies to expand behavioral coverage, with disagreement, specialization, coordination, and aggregation as the main design axes.
+
 - **[Multi-LLM Collaborative Search for Complex Problem Solving](https://aclanthology.org/2026.findings-acl.2115/)** — **ACL 2026 Findings**
   - Authors: Sen Yang, Yafu Li, Wai Lam, Yu Cheng
   - Type: `method` · Date: `2026`
@@ -1113,6 +1143,8 @@ The key question is how a system can discover capabilities beyond a single fixed
   - Foundational diverse-path sampling and answer aggregation for language-model reasoning.
 
 ### Iterative Self-Improvement · 3 papers
+
+Systems that repeatedly generate, evaluate, and learn from their own outputs, focusing on retaining novelty and avoiding self-reinforcing errors or collapse across iterations.
 
 - **[Reinforcement Learning for Self-Improving Agent with Skill Library](https://aclanthology.org/2026.acl-long.69/)** — **ACL 2026 Main**
   - Authors: Jiongxiao Wang, Qiaojing Yan, Yawei Wang, Yijun Tian, Soumya Smruti Mishra, Zhichao Xu, Megha Gandhi, Panpan Xu et al.
@@ -1138,6 +1170,8 @@ This category covers exploration over information stored beyond the immediate pr
 It includes memory-retrieval policies, memory writing and consolidation, forgetting, structured knowledge navigation, and memory-guided planning. A paper belongs here when actively exploring or managing knowledge is central to the method or evaluation.
 
 ### Replay & Trajectory Memory · 11 papers
+
+Methods that store and revisit prior trajectories or experiences, emphasizing which memories to retain, replay, and credit for better long-horizon exploration.
 
 - **[Exploratory Memory-Augmented LLM Agent via Hybrid On- and Off-Policy Optimization](https://iclr.cc/virtual/2026/poster/10009229)** — **ICLR 2026**
   - Authors: Zeyuan Liu, Jeonghye Kim, Xufang Luo, Dongsheng Li, Yuqing Yang
@@ -1197,6 +1231,8 @@ It includes memory-retrieval policies, memory writing and consolidation, forgett
 
 ### Knowledge-Graph Memory · 4 papers
 
+Methods that traverse or update structured knowledge and memory graphs, focusing on relation-aware search, multi-hop coverage, and reliable knowledge integration.
+
 - **[Explore-on-Graph: Incentivizing Autonomous Exploration of Large Language Models on Knowledge Graphs with Path-refined Reward Modeling](https://iclr.cc/virtual/2026/poster/10009840)** — **ICLR 2026**
   - Authors: Shiqi Yan, Yubo Chen, Ruiqi Zhou, Zhengxi Yao, Shuai Chen, Tianyi Zhang, Shijie Zhang, Wei-Qiang Zhang et al.
   - Type: `method` · Date: `2026`
@@ -1226,6 +1262,8 @@ This category collects empirical analyses, theoretical accounts, surveys, metric
 They are essential for judging whether a method genuinely improves exploration instead of merely changing accuracy or sampling behavior. Keeping them separate makes the evidence about a phenomenon easy to distinguish from methods designed to change it.
 
 ### Theory & Training Dynamics · 26 papers
+
+Theoretical and empirical work that explains why exploration changes during training, isolating causal mechanisms behind entropy, diversity, optimization, and policy dynamics.
 
 - **[Beyond Accuracy: Evaluating Strategy Diversity in LLM Mathematical Reasoning](https://arxiv.org/abs/2605.09292)** — arXiv
   - Authors: Xia Yang, Xuanyi Zhang, Hao Hu, Feng Ji
@@ -1360,6 +1398,8 @@ They are essential for judging whether a method genuinely improves exploration i
 
 ### Benchmarks & Metrics · 1 papers
 
+Benchmarks and metrics that quantify exploration quality, emphasizing valid measures of diversity, coverage, efficiency, reproducibility, and downstream utility.
+
 - **[Why Did Apple Fall: Evaluating Curiosity in Large Language Models](https://aclanthology.org/2026.findings-acl.1954/)** — **ACL 2026 Findings**
   - Authors: Haoyu Wang, Sihang Jiang, Yuyan Chen, Yitong Wang, Xiaojun Meng, Jiansheng Wei, Yanghua Xiao
   - Type: `benchmark` · Date: `2026`
@@ -1368,6 +1408,8 @@ They are essential for judging whether a method genuinely improves exploration i
 
 ### Surveys & Position Papers · 1 papers
 
+Surveys and position papers that organize the field's definitions, evidence, trade-offs, and open problems into a coherent research agenda.
+
 - **[From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR](https://arxiv.org/abs/2508.07534)** — arXiv
   - Authors: Jia Deng, Jie Chen, Zhipeng Chen, Daixuan Cheng, Fei Bai, Beichen Zhang, Yinqian Min, Yanzipeng Gao et al.
   - Type: `survey` · Date: `2025-08-11`
@@ -1375,6 +1417,8 @@ They are essential for judging whether a method genuinely improves exploration i
   - Exploration focus: entropy/probability, coverage, reward/advantage.
 
 ### Capability Boundaries · 2 papers
+
+Work that tests whether exploration reaches beyond a model's existing competence, distinguishing genuine capability expansion from redistribution, memorization, or extra sampling.
 
 - **[Post-Training with Policy Gradients: Optimality and the Base Model Barrier](https://icml.cc/virtual/2026/poster/61683)** — **ICML 2026**
   - Authors: Alireza Mousavi-Hosseini, Murat Erdogdu

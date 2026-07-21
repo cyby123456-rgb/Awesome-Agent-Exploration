@@ -117,6 +117,8 @@ The central question is how to search a model's existing generative distribution
 
 ### Decoding & Sampling · 13 papers
 
+Methods that broaden candidate generation at inference time, with probability shaping, temperature, and sampling strategy as the key levers for balancing diversity, quality, and cost.
+
 | Evidence | Paper | Research lens |
 |---|---|---|
 | **ACL 2026 Main** | [Thermometer of Thoughts: Enhancing LLM’s Exploration via Attention Temperature Modulation](https://aclanthology.org/2026.acl-long.200/) | ![phase: inference](https://img.shields.io/badge/phase-inference-2563EB?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-0F766E?style=flat-square) ![mechanism: temperature-control](https://img.shields.io/badge/mechanism-temperature--control-2563EB?style=flat-square) |
@@ -134,6 +136,8 @@ The central question is how to search a model's existing generative distribution
 | arXiv | [Evolving Language Models without Labels: Majority Drives Selection, Novelty Promotes Variation](https://arxiv.org/abs/2509.15194) | ![phase: inference](https://img.shields.io/badge/phase-inference-2563EB?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-0F766E?style=flat-square) ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-7C3AED?style=flat-square) |
 
 ### Search & Deliberation · 23 papers
+
+Methods that explore multi-step reasoning paths through branching, resampling, planning, or verification, with search-budget allocation and path quality as the central concerns.
 
 | Evidence | Paper | Research lens |
 |---|---|---|
@@ -163,6 +167,8 @@ The central question is how to search a model's existing generative distribution
 
 ### Representation & Latent Steering · 6 papers
 
+Methods that diversify generation by steering activations, embeddings, or latent states, focusing on controllable variation beyond output-level sampling.
+
 | Evidence | Paper | Research lens |
 |---|---|---|
 | arXiv | [From Noise to Diversity: Random Embedding Injection in LLM Reasoning](https://arxiv.org/abs/2605.11936) | ![phase: inference](https://img.shields.io/badge/phase-inference-2563EB?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-0F766E?style=flat-square) ![mechanism: noise/perturbation](https://img.shields.io/badge/mechanism-noise%2Fperturbation-7C3AED?style=flat-square) |
@@ -173,6 +179,8 @@ The central question is how to search a model's existing generative distribution
 | **ICML 2026** | [Beyond Logits: Metastable Latent Dynamics for Sample-Efficient Best-of-N Selection in LLMs](https://icml.cc/virtual/2026/poster/66569) | ![phase: inference](https://img.shields.io/badge/phase-inference-2563EB?style=flat-square) ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-0891B2?style=flat-square) ![level: token](https://img.shields.io/badge/level-token-7C3AED?style=flat-square) |
 
 ### Diversity & Coverage · 13 papers
+
+Methods that counter mode collapse and expand semantic coverage, emphasizing how novelty and breadth can improve without sacrificing correctness or coherence.
 
 | Evidence | Paper | Research lens |
 |---|---|---|
@@ -198,6 +206,8 @@ The central question is how to search a model's existing generative distribution
 It includes work on entropy or mode collapse, low-probability tokens, rollout diversity, intrinsic or shaped rewards, gradient and regularization interventions, curriculum design, and attempts to push beyond a base model's capability boundary. The defining feature is that exploration is part of the learning loop, not only an inference-time search choice.
 
 ### Entropy & Distribution Control · 42 papers
+
+Work that analyzes or controls policy entropy and token probabilities during RL, aiming to preserve useful distributional support while preventing premature collapse.
 
 | Evidence | Paper | Research lens |
 |---|---|---|
@@ -246,6 +256,8 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
 
 ### Credit Assignment & Optimization · 17 papers
 
+Methods that reshape rewards, advantages, or gradients so exploratory behavior receives an informative learning signal, with stable and precise credit assignment as the key challenge.
+
 | Evidence | Paper | Research lens |
 |---|---|---|
 | arXiv | [Breaking $\textit{Winner-Takes-All}$: Cooperative Policy Optimization Improves Diverse LLM Reasoning](https://arxiv.org/abs/2605.11461) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-2563EB?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-0F766E?style=flat-square) ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-C2410C?style=flat-square) |
@@ -268,6 +280,8 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
 
 ### Reward & Rollout Shaping · 8 papers
 
+Methods that alter rollout collection, reward shaping, intrinsic bonuses, or resampling to elicit more varied and informative training trajectories.
+
 | Evidence | Paper | Research lens |
 |---|---|---|
 | **ACL 2026 Findings** | [VANE: Guiding High-Value Exploration in RLVR via Outcome-Process Novelty Shaping](https://aclanthology.org/2026.findings-acl.1434/) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-2563EB?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-0F766E?style=flat-square) ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-15803D?style=flat-square) |
@@ -280,6 +294,8 @@ It includes work on entropy or mode collapse, low-probability tokens, rollout di
 | arXiv | [Outcome-based Exploration for LLM Reasoning](https://arxiv.org/abs/2509.06941) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-2563EB?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-0F766E?style=flat-square) ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-15803D?style=flat-square) |
 
 ### Capability Boundaries & Training Dynamics · 43 papers
+
+Work that studies how RL training expands, redistributes, or erodes model capabilities, focusing on generalization boundaries, stability, and genuine capability growth.
 
 | Evidence | Paper | Research lens |
 |---|---|---|
@@ -336,6 +352,8 @@ It includes active data selection, synthetic task generation, adaptive curricula
 
 ### Data Selection & Prompt Exploration · 6 papers
 
+Methods that select, prioritize, or prompt candidate training examples, using informativeness, uncertainty, and coverage to decide which data is most valuable next.
+
 | Evidence | Paper | Research lens |
 |---|---|---|
 | **ACL 2026 Findings** | [Think Earlier, Not Longer: Prompt Optimization via Reducing Unhealthy Exploration](https://aclanthology.org/2026.findings-acl.817/) | ![phase: inference](https://img.shields.io/badge/phase-inference-2563EB?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-0F766E?style=flat-square) ![level: data/task](https://img.shields.io/badge/level-data%2Ftask-7C3AED?style=flat-square) |
@@ -346,6 +364,8 @@ It includes active data selection, synthetic task generation, adaptive curricula
 | arXiv | [Explore Data Left Behind in Reinforcement Learning for Reasoning Language Models](https://arxiv.org/abs/2511.04800) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-2563EB?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-0F766E?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-7C3AED?style=flat-square) |
 
 ### Agent Task & Environment Generation · 4 papers
+
+Methods that create interactive tasks or environments for agents, emphasizing realism, behavioral coverage, controllable difficulty, and useful feedback.
 
 | Evidence | Paper | Research lens |
 |---|---|---|
@@ -363,6 +383,8 @@ These papers focus on challenges such as partial observability, long horizons, r
 
 ### Web, Tools & GUI · 4 papers
 
+Agents that explore websites, tools, and graphical interfaces, where action grounding, partial observability, tool choice, and recovery from failed interactions are central.
+
 | Evidence | Paper | Research lens |
 |---|---|---|
 | **ICML 2026** | [What You Think is What You See: Driving Exploration in VLM Agents via Visual-Linguistic Curiosity](https://icml.cc/virtual/2026/poster/60509) | ![phase: inference](https://img.shields.io/badge/phase-inference-2563EB?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-0F766E?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-0F766E?style=flat-square) |
@@ -371,6 +393,8 @@ These papers focus on challenges such as partial observability, long horizons, r
 | **ICLR 2026** | [DreamPhase: Offline Imagination and Uncertainty-Guided Planning for Large-Language-Model Agents](https://iclr.cc/virtual/2026/poster/10011238) | ![phase: inference](https://img.shields.io/badge/phase-inference-2563EB?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-0F766E?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-7C3AED?style=flat-square) |
 
 ### Planning & Interactive Search · 16 papers
+
+Agents that search over multi-step action plans while interacting with an environment, focusing on long-horizon feedback, replanning, and efficient state-space coverage.
 
 | Evidence | Paper | Research lens |
 |---|---|---|
@@ -393,6 +417,8 @@ These papers focus on challenges such as partial observability, long horizons, r
 
 ### Embodied & Simulated Environments · 2 papers
 
+Agents that explore physical or simulated worlds, with spatial reasoning, world-model learning, action consequences, and sample-efficient coverage as key issues.
+
 | Evidence | Paper | Research lens |
 |---|---|---|
 | **ICML 2026** | [Active Exploring like a Pigeon: Reinforcing Spatial Reasoning via Agentic Vision-Language Models](https://icml.cc/virtual/2026/poster/61450) | ![phase: inference](https://img.shields.io/badge/phase-inference-2563EB?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-0F766E?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-7C3AED?style=flat-square) |
@@ -407,6 +433,8 @@ The key question is how a system can discover capabilities beyond a single fixed
 
 ### Self-Play & Co-Evolution · 6 papers
 
+Systems in which policies or agents generate challenges for one another, using competitive or cooperative pressure to build an adaptive curriculum while maintaining diversity and stability.
+
 | Evidence | Paper | Research lens |
 |---|---|---|
 | **ACL 2026 Main** | [WIST: Web-Grounded Iterative Self-Play Tree for Domain-Targeted Reasoning Improvement](https://aclanthology.org/2026.acl-long.1456/) | ![phase: inference](https://img.shields.io/badge/phase-inference-2563EB?style=flat-square) ![mechanism: self-play/co-evolution](https://img.shields.io/badge/mechanism-self--play%2Fco--evolution-DB2777?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-7C3AED?style=flat-square) |
@@ -418,6 +446,8 @@ The key question is how a system can discover capabilities beyond a single fixed
 
 ### Multi-Agent & Ensemble Exploration · 3 papers
 
+Systems that combine multiple agents or policies to expand behavioral coverage, with disagreement, specialization, coordination, and aggregation as the main design axes.
+
 | Evidence | Paper | Research lens |
 |---|---|---|
 | **ACL 2026 Findings** | [Multi-LLM Collaborative Search for Complex Problem Solving](https://aclanthology.org/2026.findings-acl.2115/) | ![phase: inference](https://img.shields.io/badge/phase-inference-2563EB?style=flat-square) ![mechanism: ensemble/population](https://img.shields.io/badge/mechanism-ensemble%2Fpopulation-9333EA?style=flat-square) ![level: population/multi-policy](https://img.shields.io/badge/level-population%2Fmulti--policy-7C3AED?style=flat-square) |
@@ -425,6 +455,8 @@ The key question is how a system can discover capabilities beyond a single fixed
 | ICLR 2023 | [Self-Consistency Improves Chain of Thought Reasoning in Language Models](https://iclr.cc/virtual/2023/poster/11718) | ![phase: inference](https://img.shields.io/badge/phase-inference-2563EB?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-0F766E?style=flat-square) ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-0891B2?style=flat-square) |
 
 ### Iterative Self-Improvement · 3 papers
+
+Systems that repeatedly generate, evaluate, and learn from their own outputs, focusing on retaining novelty and avoiding self-reinforcing errors or collapse across iterations.
 
 | Evidence | Paper | Research lens |
 |---|---|---|
@@ -440,6 +472,8 @@ The key question is how a system can discover capabilities beyond a single fixed
 It includes memory-retrieval policies, memory writing and consolidation, forgetting, structured knowledge navigation, and memory-guided planning. A paper belongs here when actively exploring or managing knowledge is central to the method or evaluation.
 
 ### Replay & Trajectory Memory · 11 papers
+
+Methods that store and revisit prior trajectories or experiences, emphasizing which memories to retain, replay, and credit for better long-horizon exploration.
 
 | Evidence | Paper | Research lens |
 |---|---|---|
@@ -457,6 +491,8 @@ It includes memory-retrieval policies, memory writing and consolidation, forgett
 
 ### Knowledge-Graph Memory · 4 papers
 
+Methods that traverse or update structured knowledge and memory graphs, focusing on relation-aware search, multi-hop coverage, and reliable knowledge integration.
+
 | Evidence | Paper | Research lens |
 |---|---|---|
 | **ICLR 2026** | [Explore-on-Graph: Incentivizing Autonomous Exploration of Large Language Models on Knowledge Graphs with Path-refined Reward Modeling](https://iclr.cc/virtual/2026/poster/10009840) | ![phase: inference](https://img.shields.io/badge/phase-inference-2563EB?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-0F766E?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-0F766E?style=flat-square) |
@@ -472,6 +508,8 @@ It includes memory-retrieval policies, memory writing and consolidation, forgett
 They are essential for judging whether a method genuinely improves exploration instead of merely changing accuracy or sampling behavior. Keeping them separate makes the evidence about a phenomenon easy to distinguish from methods designed to change it.
 
 ### Theory & Training Dynamics · 26 papers
+
+Theoretical and empirical work that explains why exploration changes during training, isolating causal mechanisms behind entropy, diversity, optimization, and policy dynamics.
 
 | Evidence | Paper | Research lens |
 |---|---|---|
@@ -504,17 +542,23 @@ They are essential for judging whether a method genuinely improves exploration i
 
 ### Benchmarks & Metrics · 1 papers
 
+Benchmarks and metrics that quantify exploration quality, emphasizing valid measures of diversity, coverage, efficiency, reproducibility, and downstream utility.
+
 | Evidence | Paper | Research lens |
 |---|---|---|
 | **ACL 2026 Findings** | [Why Did Apple Fall: Evaluating Curiosity in Large Language Models](https://aclanthology.org/2026.findings-acl.1954/) | ![phase: inference](https://img.shields.io/badge/phase-inference-2563EB?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-0F766E?style=flat-square) ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-7C3AED?style=flat-square) |
 
 ### Surveys & Position Papers · 1 papers
 
+Surveys and position papers that organize the field's definitions, evidence, trade-offs, and open problems into a coherent research agenda.
+
 | Evidence | Paper | Research lens |
 |---|---|---|
 | arXiv | [From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR](https://arxiv.org/abs/2508.07534) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-2563EB?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-0F766E?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-7C3AED?style=flat-square) |
 
 ### Capability Boundaries · 2 papers
+
+Work that tests whether exploration reaches beyond a model's existing competence, distinguishing genuine capability expansion from redistribution, memorization, or extra sampling.
 
 | Evidence | Paper | Research lens |
 |---|---|---|

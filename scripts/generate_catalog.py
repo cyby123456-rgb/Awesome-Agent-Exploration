@@ -105,6 +105,48 @@ SUBTOPIC_LABELS = {
     },
 }
 
+SUBTOPIC_SUMMARIES = {
+    "llm-exploration": {
+        "decoding-sampling": "Methods that broaden candidate generation at inference time, with probability shaping, temperature, and sampling strategy as the key levers for balancing diversity, quality, and cost.",
+        "search-deliberation": "Methods that explore multi-step reasoning paths through branching, resampling, planning, or verification, with search-budget allocation and path quality as the central concerns.",
+        "representation-steering": "Methods that diversify generation by steering activations, embeddings, or latent states, focusing on controllable variation beyond output-level sampling.",
+        "diversity-coverage": "Methods that counter mode collapse and expand semantic coverage, emphasizing how novelty and breadth can improve without sacrificing correctness or coherence.",
+    },
+    "rlvr-exploration": {
+        "entropy-distribution": "Work that analyzes or controls policy entropy and token probabilities during RL, aiming to preserve useful distributional support while preventing premature collapse.",
+        "credit-optimization": "Methods that reshape rewards, advantages, or gradients so exploratory behavior receives an informative learning signal, with stable and precise credit assignment as the key challenge.",
+        "reward-rollout": "Methods that alter rollout collection, reward shaping, intrinsic bonuses, or resampling to elicit more varied and informative training trajectories.",
+        "capability-dynamics": "Work that studies how RL training expands, redistributes, or erodes model capabilities, focusing on generalization boundaries, stability, and genuine capability growth.",
+    },
+    "data-task-curriculum-exploration": {
+        "data-selection-prompting": "Methods that select, prioritize, or prompt candidate training examples, using informativeness, uncertainty, and coverage to decide which data is most valuable next.",
+        "task-synthesis-curriculum": "Methods that generate and sequence tasks across difficulty levels, with adaptive progression, task diversity, and learnability as the main curriculum concerns.",
+        "agent-task-environments": "Methods that create interactive tasks or environments for agents, emphasizing realism, behavioral coverage, controllable difficulty, and useful feedback.",
+    },
+    "agentic-exploration": {
+        "web-tools-gui": "Agents that explore websites, tools, and graphical interfaces, where action grounding, partial observability, tool choice, and recovery from failed interactions are central.",
+        "planning-interaction": "Agents that search over multi-step action plans while interacting with an environment, focusing on long-horizon feedback, replanning, and efficient state-space coverage.",
+        "embodied-environments": "Agents that explore physical or simulated worlds, with spatial reasoning, world-model learning, action consequences, and sample-efficient coverage as key issues.",
+    },
+    "self-improvement-population-exploration": {
+        "self-play-coevolution": "Systems in which policies or agents generate challenges for one another, using competitive or cooperative pressure to build an adaptive curriculum while maintaining diversity and stability.",
+        "multi-agent-ensembles": "Systems that combine multiple agents or policies to expand behavioral coverage, with disagreement, specialization, coordination, and aggregation as the main design axes.",
+        "iterative-self-improvement": "Systems that repeatedly generate, evaluate, and learn from their own outputs, focusing on retaining novelty and avoiding self-reinforcing errors or collapse across iterations.",
+    },
+    "memory-knowledge-exploration": {
+        "replay-trajectory-memory": "Methods that store and revisit prior trajectories or experiences, emphasizing which memories to retain, replay, and credit for better long-horizon exploration.",
+        "retrieval-long-context": "Methods that explore documents or long contexts through retrieval and selection, with query quality, evidence coverage, and context-budget efficiency as key concerns.",
+        "knowledge-graph-memory": "Methods that traverse or update structured knowledge and memory graphs, focusing on relation-aware search, multi-hop coverage, and reliable knowledge integration.",
+        "memory-guided-planning": "Methods that use retrieved or accumulated memory to choose reasoning and action paths, emphasizing timely recall, memory updates, and decision relevance.",
+    },
+    "understanding-evaluation": {
+        "theory-training-dynamics": "Theoretical and empirical work that explains why exploration changes during training, isolating causal mechanisms behind entropy, diversity, optimization, and policy dynamics.",
+        "benchmarks-metrics": "Benchmarks and metrics that quantify exploration quality, emphasizing valid measures of diversity, coverage, efficiency, reproducibility, and downstream utility.",
+        "surveys-position": "Surveys and position papers that organize the field's definitions, evidence, trade-offs, and open problems into a coherent research agenda.",
+        "capability-boundaries": "Work that tests whether exploration reaches beyond a model's existing competence, distinguishing genuine capability expansion from redistribution, memorization, or extra sampling.",
+    },
+}
+
 TAG_DIMENSIONS = [
     ("Phase", "data generation; supervised post-training; RL training; inference; test-time adaptation; continual/self-improvement"),
     ("Level", "token; response/sequence; trajectory/action; latent/representation; policy distribution; data/task; population"),
@@ -328,7 +370,16 @@ def render_readme(catalog: dict) -> str:
             reverse=True,
         )
         for subtopic, grouped in papers_by_subtopic(selected, area).items():
-            lines.extend([f"### {SUBTOPIC_LABELS[area][subtopic]} · {len(grouped)} papers", "", "| Evidence | Paper | Research lens |", "|---|---|---|"])
+            lines.extend(
+                [
+                    f"### {SUBTOPIC_LABELS[area][subtopic]} · {len(grouped)} papers",
+                    "",
+                    SUBTOPIC_SUMMARIES[area][subtopic],
+                    "",
+                    "| Evidence | Paper | Research lens |",
+                    "|---|---|---|",
+                ]
+            )
             for paper in grouped:
                 lines.append(
                     f"| {source_label(paper)} | [{paper['title']}]({paper['url']}) | "
@@ -390,7 +441,14 @@ def render_detailed(catalog: dict) -> str:
             reverse=True,
         )
         for subtopic, grouped in papers_by_subtopic(selected, area).items():
-            lines.extend([f"### {SUBTOPIC_LABELS[area][subtopic]} · {len(grouped)} papers", ""])
+            lines.extend(
+                [
+                    f"### {SUBTOPIC_LABELS[area][subtopic]} · {len(grouped)} papers",
+                    "",
+                    SUBTOPIC_SUMMARIES[area][subtopic],
+                    "",
+                ]
+            )
             for paper in grouped:
                 lines.append(
                     f"- **[{paper['title']}]({paper['url']})** — {source_label(paper)}"
