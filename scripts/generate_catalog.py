@@ -5,12 +5,14 @@ from __future__ import annotations
 
 import json
 from collections import Counter
+from html import escape
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import quote, urlparse
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "papers.json"
+RESEARCH_MAP_PATH = ROOT / "assets" / "research-map.svg"
 
 AREA_LABELS = {
     "llm-exploration": "LLM Generation & Inference Exploration",
@@ -31,6 +33,58 @@ AREA_SUMMARIES = {
     "memory-knowledge-exploration": "Exploration over retrieved, written, consolidated, or structured memories and knowledge sources.",
     "understanding-evaluation": "Work that measures, explains, surveys, or benchmarks exploration rather than primarily introducing an intervention.",
 }
+
+RESEARCH_MAP_TRACKS = [
+    {
+        "area": "llm-exploration",
+        "eyebrow": "01 / GENERATION",
+        "title": ["LLM Exploration"],
+        "keywords": "sampling  |  search  |  diversity",
+        "color": "#6E8FB8",
+    },
+    {
+        "area": "rlvr-exploration",
+        "eyebrow": "02 / POLICY LEARNING",
+        "title": ["Policy & RLVR"],
+        "keywords": "entropy  |  reward  |  optimization",
+        "color": "#B07A68",
+    },
+    {
+        "area": "data-task-curriculum-exploration",
+        "eyebrow": "03 / LEARNING MATERIAL",
+        "title": ["Data, Task & Curriculum"],
+        "keywords": "selection  |  synthesis  |  difficulty",
+        "color": "#5F8F8B",
+    },
+    {
+        "area": "agentic-exploration",
+        "eyebrow": "04 / INTERACTION",
+        "title": ["Agentic & Environment"],
+        "keywords": "tools  |  planning  |  embodied worlds",
+        "color": "#8B80B6",
+    },
+    {
+        "area": "self-improvement-population-exploration",
+        "eyebrow": "05 / POPULATIONS",
+        "title": ["Self-Improvement", "& Population"],
+        "keywords": "self-play  |  ensembles  |  iteration",
+        "color": "#A07593",
+    },
+    {
+        "area": "memory-knowledge-exploration",
+        "eyebrow": "06 / INFORMATION",
+        "title": ["Memory & Knowledge"],
+        "keywords": "retrieval  |  replay  |  knowledge graphs",
+        "color": "#718B75",
+    },
+    {
+        "area": "understanding-evaluation",
+        "eyebrow": "07 / EVIDENCE",
+        "title": ["Understanding", "& Evaluation"],
+        "keywords": "theory  |  metrics  |  benchmarks",
+        "color": "#B06D73",
+    },
+]
 
 AREA_DESCRIPTIONS = {
     "llm-exploration": [
@@ -99,9 +153,9 @@ SUBTOPIC_LABELS = {
     },
     "understanding-evaluation": {
         "theory-training-dynamics": "Theory & Training Dynamics",
+        "capability-boundaries": "Capability Boundaries",
         "benchmarks-metrics": "Benchmarks & Metrics",
         "surveys-position": "Surveys & Position Papers",
-        "capability-boundaries": "Capability Boundaries",
     },
 }
 
@@ -157,30 +211,68 @@ TAG_DIMENSIONS = [
 ]
 
 BADGE_COLORS = {
-    "phase": "2563EB",
-    "level": "7C3AED",
-    "signal": "0F766E",
-    "mechanism": "D97706",
-    "problem": "DC2626",
-    "setting": "4B5563",
+    "phase": "6E8FB8",
+    "level": "8B80B6",
+    "signal": "5F8F8B",
+    "mechanism": "8C8960",
+    "problem": "B06D73",
+    "setting": "718B75",
 }
 
-# Mechanisms carry much of a paper's identity, so giving every mechanism the
-# same orange badge makes the catalog harder to scan than the taxonomy itself.
-MECHANISM_BADGE_COLORS = {
-    "sampling/decoding": "0891B2",
-    "temperature-control": "2563EB",
-    "noise/perturbation": "7C3AED",
-    "regularization": "4F46E5",
-    "gradient-reshaping": "C2410C",
-    "reward-shaping/intrinsic-reward": "15803D",
-    "tree-search/branching": "BE123C",
-    "structured-search": "0F766E",
-    "backtracking/resampling": "A21CAF",
-    "replay/memory": "475569",
-    "curriculum/task-generation": "A16207",
-    "self-play/co-evolution": "DB2777",
-    "ensemble/population": "9333EA",
+# Muted, value-specific colors keep neighboring papers distinguishable without
+# turning the catalog into a wall of high-saturation badges.
+TAG_VALUE_COLORS = {
+    ("phase", "data-generation"): "5F8F8B",
+    ("phase", "supervised-post-training"): "6E8FB8",
+    ("phase", "rl-training"): "7284C7",
+    ("phase", "inference"): "5B9AB5",
+    ("phase", "test-time-adaptation"): "7E8DBD",
+    ("phase", "continual/self-improvement"): "789B8A",
+    ("level", "token"): "8B80B6",
+    ("level", "response/sequence"): "8278A9",
+    ("level", "trajectory/action"): "8F7DAF",
+    ("level", "latent/representation"): "777FA8",
+    ("level", "policy-distribution"): "8C719E",
+    ("level", "data/task"): "9A7F9C",
+    ("level", "population/multi-policy"): "A07593",
+    ("signal", "entropy/probability"): "4F8D88",
+    ("signal", "uncertainty/confidence"): "5B8E9E",
+    ("signal", "novelty/curiosity"): "6B9275",
+    ("signal", "semantic-diversity"): "538F7D",
+    ("signal", "coverage"): "78935F",
+    ("signal", "information-gain"): "5E8C97",
+    ("signal", "reward/advantage"): "8C8960",
+    ("signal", "disagreement"): "8B7A9C",
+    ("mechanism", "sampling/decoding"): "5D8CA8",
+    ("mechanism", "temperature-control"): "6B84AD",
+    ("mechanism", "noise/perturbation"): "8176A8",
+    ("mechanism", "regularization"): "737FB0",
+    ("mechanism", "gradient-reshaping"): "B07A68",
+    ("mechanism", "reward-shaping/intrinsic-reward"): "6E946B",
+    ("mechanism", "tree-search/branching"): "A56F7A",
+    ("mechanism", "structured-search"): "568D83",
+    ("mechanism", "backtracking/resampling"): "8E759D",
+    ("mechanism", "replay/memory"): "6F8093",
+    ("mechanism", "curriculum/task-generation"): "A08B5F",
+    ("mechanism", "self-play/co-evolution"): "A36F8A",
+    ("mechanism", "ensemble/population"): "8774A5",
+    ("problem", "entropy-collapse"): "B06D73",
+    ("problem", "mode-collapse"): "B57676",
+    ("problem", "sparse-reward"): "B1846A",
+    ("problem", "local-optimum"): "A77878",
+    ("problem", "capability-boundary"): "9A738A",
+    ("problem", "long-horizon"): "8E7D6D",
+    ("problem", "exploration-exploitation"): "A27C63",
+    ("problem", "recovery/error-correction"): "9B6F75",
+    ("setting", "math"): "6D8CAB",
+    ("setting", "code"): "697F9D",
+    ("setting", "multimodal"): "8176A5",
+    ("setting", "creative/open-ended"): "A2778D",
+    ("setting", "web"): "5B8B86",
+    ("setting", "tool-use"): "718B75",
+    ("setting", "knowledge-graph"): "7B8466",
+    ("setting", "embodied"): "9A7D68",
+    ("setting", "multi-agent"): "8D7595",
 }
 
 REPRESENTATIVE_TAG_LIMIT = 3
@@ -205,11 +297,7 @@ def tag_badge(dimension: str, value: str) -> str:
     # hyphen inside the message by doubling it; otherwise values such as
     # ``capability-boundary`` render a red "404 / badge not found" SVG.
     message = quote(value, safe="").replace("-", "--")
-    color = (
-        MECHANISM_BADGE_COLORS.get(value, BADGE_COLORS[dimension])
-        if dimension == "mechanism"
-        else BADGE_COLORS[dimension]
-    )
+    color = TAG_VALUE_COLORS.get((dimension, value), BADGE_COLORS[dimension])
     return (
         f"![{dimension}: {value}]"
         f"(https://img.shields.io/badge/{label}-{message}-{color}?style=flat-square)"
@@ -252,6 +340,11 @@ def papers_by_subtopic(papers: list[dict], area: str) -> dict[str, list[dict]]:
 
 
 def source_label(paper: dict) -> str:
+    parsed_url = urlparse(paper["url"])
+    if parsed_url.netloc.lower() in {"arxiv.org", "www.arxiv.org"}:
+        arxiv_id = parsed_url.path.removeprefix("/abs/").strip("/")
+        if arxiv_id:
+            return f"arXiv `{arxiv_id}`"
     venue = paper.get("venue") or "Preprint"
     if paper.get("source_group") == "conference-2026":
         return f"**{venue}**"
@@ -279,6 +372,77 @@ def statistics_table(papers: list[dict]) -> list[str]:
     return lines
 
 
+def render_research_map(catalog: dict) -> str:
+    """Render a compact, data-driven overview of the seven research tracks."""
+    papers = catalog["papers"]
+    area_counts = Counter(paper["primary_area"] for paper in papers)
+    maximum = max(area_counts.values())
+    rows = []
+
+    for index, track in enumerate(RESEARCH_MAP_TRACKS, start=1):
+        count = area_counts[track["area"]]
+        percentage = count / len(papers) * 100
+        y = 142 + (index - 1) * 57
+        bar_width = max(12, round(600 * count / maximum, 1))
+        title = " ".join(track["title"])
+        color = track["color"]
+        rows.append(
+            f'<g aria-label="{escape(AREA_LABELS[track["area"]])}: {count} papers, '
+            f'{percentage:.1f} percent of the catalog">'
+            f'<circle cx="45" cy="{y - 4}" r="16" fill="{color}" />'
+            f'<text x="45" y="{y + 1}" class="track-index" text-anchor="middle">'
+            f'{index:02d}</text>'
+            f'<text x="76" y="{y - 4}" class="track-title">{escape(title)}</text>'
+            f'<text x="76" y="{y + 17}" class="track-keywords">'
+            f'{escape(track["keywords"])}</text>'
+            f'<rect x="430" y="{y - 14}" width="600" height="14" rx="7" '
+            f'class="bar-track" />'
+            f'<rect x="430" y="{y - 14}" width="{bar_width:g}" height="14" rx="7" '
+            f'fill="{color}" />'
+            f'<text x="1055" y="{y - 1}" class="track-count" text-anchor="end">'
+            f'{count}</text>'
+            f'<text x="1138" y="{y - 1}" class="track-share" text-anchor="end">'
+            f'{percentage:.1f}%</text>'
+            f'<line x1="30" y1="{y + 31}" x2="1170" y2="{y + 31}" class="row-line" />'
+            f'</g>'
+        )
+
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="570" viewBox="0 0 1200 570" role="img" aria-labelledby="map-title map-description">
+  <title id="map-title">Awesome Exploration research map</title>
+  <desc id="map-description">{len(papers)} curated papers organized into seven research tracks, with current paper counts and key topics for each track.</desc>
+  <defs>
+    <linearGradient id="map-background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FAFBFC" />
+      <stop offset="1" stop-color="#F4F7F8" />
+    </linearGradient>
+    <style>
+      text {{ font-family: "Avenir Next", "Trebuchet MS", sans-serif; }}
+      .map-heading {{ fill: #172033; font-size: 23px; font-weight: 500; letter-spacing: 0.7px; }}
+      .map-subtitle {{ fill: #667085; font-size: 13px; font-weight: 400; }}
+      .map-total {{ fill: #172033; font-size: 34px; font-weight: 500; }}
+      .map-total-label {{ fill: #667085; font-size: 11px; font-weight: 500; letter-spacing: 1.3px; }}
+      .track-index {{ fill: #FFFFFF; font-size: 10px; font-weight: 500; letter-spacing: 0.6px; }}
+      .track-title {{ fill: #172033; font-size: 17px; font-weight: 500; }}
+      .track-keywords {{ fill: #7A8495; font-size: 11px; font-weight: 400; }}
+      .track-count {{ fill: #344054; font-size: 18px; font-weight: 500; }}
+      .track-share {{ fill: #7A8495; font-size: 12px; font-weight: 400; }}
+      .bar-track {{ fill: #E5E9EF; }}
+      .row-line {{ stroke: #E3E7EC; stroke-width: 1; }}
+      .footer {{ fill: #8993A4; font-size: 10px; font-weight: 500; letter-spacing: 1.2px; }}
+    </style>
+  </defs>
+  <rect x="5" y="5" width="1190" height="560" rx="24" fill="url(#map-background)" />
+  <text x="36" y="48" class="map-heading">Exploration research landscape</text>
+  <text x="36" y="73" class="map-subtitle">Where exploration happens across language models, RLVR, agents, data, memory, and evaluation</text>
+  <text x="1138" y="48" class="map-total" text-anchor="end">{len(papers)}</text>
+  <text x="1138" y="70" class="map-total-label" text-anchor="end">CURATED PAPERS</text>
+  <line x1="30" y1="95" x2="1170" y2="95" class="row-line" />
+  {''.join(rows)}
+  <text x="600" y="550" class="footer" text-anchor="middle">SEVEN COMPLEMENTARY RESEARCH TRACKS  /  COUNTS GENERATED FROM THE CURATED REGISTRY</text>
+</svg>
+'''
+
+
 def render_readme(catalog: dict) -> str:
     papers = catalog["papers"]
     lines = [
@@ -287,6 +451,8 @@ def render_readme(catalog: dict) -> str:
         "# Awesome Exploration",
         "",
         "**A curated research map of exploration in language models, RLVR, and agents.**",
+        "",
+        f'<img src="assets/research-map.svg" alt="Research map of {len(papers)} papers across seven exploration categories" width="100%">',
         "",
         "[![Curated catalog](https://img.shields.io/badge/catalog-curated-3B82F6?style=flat-square)](docs/CURATION_2026.md) "
         f"[![{len(papers)} papers](https://img.shields.io/badge/papers-{len(papers)}-8B5CF6?style=flat-square)](#catalog) "
@@ -404,16 +570,6 @@ def render_readme(catalog: dict) -> str:
     lines.extend(
         [
             "",
-            "## Curation policy",
-            "",
-            "- One primary area per paper; the public views show up to three representative tags while the registry preserves the complete metadata.",
-            "- Conference status is shown only when backed by an official venue page.",
-            "- Automated discovery produces candidates, never accepted catalog entries.",
-            "- Classical RL is limited to the short appendix above.",
-            "- The public Markdown files are generated from [`data/papers.json`](data/papers.json).",
-            "",
-            "Run `python3 scripts/validate_catalog.py` and `python3 scripts/generate_catalog.py` after changing the registry.",
-            "",
             "## License",
             "",
             "[CC BY 4.0](LICENSE)",
@@ -471,9 +627,14 @@ def render_detailed(catalog: dict) -> str:
 
 def main() -> None:
     catalog = load_catalog()
+    RESEARCH_MAP_PATH.parent.mkdir(parents=True, exist_ok=True)
+    RESEARCH_MAP_PATH.write_text(render_research_map(catalog), encoding="utf-8")
     (ROOT / "README.md").write_text(render_readme(catalog), encoding="utf-8")
     (ROOT / "README_DETAILED.md").write_text(render_detailed(catalog), encoding="utf-8")
-    print(f"Generated README.md and README_DETAILED.md from {len(catalog['papers'])} papers")
+    print(
+        f"Generated research map, README.md, and README_DETAILED.md "
+        f"from {len(catalog['papers'])} papers"
+    )
 
 
 if __name__ == "__main__":

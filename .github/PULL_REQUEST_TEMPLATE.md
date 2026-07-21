@@ -15,9 +15,9 @@
 - [ ] The primary source URL resolves to this exact paper title and authors.
 - [ ] I searched for duplicate titles and arXiv/DOI identifiers.
 - [ ] This is not a generic LLM/RL/agent paper included only by keyword match.
-- [ ] I updated both the compact and detailed views consistently.
+- [ ] I updated `data/papers.json`; the generated views contain no manual edits.
 - [ ] I added a concise, factual curation rationale to the detailed view.
-- [ ] I ran `python3 scripts/audit_catalog.py` and did not introduce new warnings.
+- [ ] The automated catalog checks pass, or I ran `python3 scripts/audit_catalog.py` locally.
 
 ## Additional context
 

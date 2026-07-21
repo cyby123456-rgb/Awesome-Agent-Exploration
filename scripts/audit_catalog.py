@@ -7,7 +7,12 @@ from pathlib import Path
 import json
 
 import validate_catalog
-from generate_catalog import load_catalog, render_detailed, render_readme
+from generate_catalog import (
+    load_catalog,
+    render_detailed,
+    render_readme,
+    render_research_map,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -48,6 +53,7 @@ def main() -> int:
     expected = {
         "README.md": render_readme(catalog),
         "README_DETAILED.md": render_detailed(catalog),
+        "assets/research-map.svg": render_research_map(catalog),
     }
     drift = []
     for name, generated in expected.items():

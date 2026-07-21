@@ -1,0 +1,34 @@
+name: Catalog CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate catalog data
+        run: python3 scripts/validate_catalog.py
+
+      - name: Regenerate public views
+        run: python3 scripts/generate_catalog.py
+
+      - name: Check generated files are current
+        run: git diff --exit-code -- README.md README_DETAILED.md assets/research-map.svg
+
+      - name: Audit catalog parity
+        run: python3 scripts/audit_catalog.py
