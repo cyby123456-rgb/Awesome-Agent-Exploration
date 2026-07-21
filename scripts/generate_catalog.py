@@ -140,7 +140,10 @@ def area_description_lines(area: str) -> list[str]:
 def tag_badge(dimension: str, value: str) -> str:
     """Render taxonomy metadata as a compact, color-coded Shields badge."""
     label = quote(dimension, safe="")
-    message = quote(value, safe="")
+    # Shields' legacy badge route uses hyphens as field separators. Escape a
+    # hyphen inside the message by doubling it; otherwise values such as
+    # ``capability-boundary`` render a red "404 / badge not found" SVG.
+    message = quote(value, safe="").replace("-", "--")
     color = BADGE_COLORS[dimension]
     return (
         f"![{dimension}: {value}]"
