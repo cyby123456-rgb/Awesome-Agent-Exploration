@@ -137,6 +137,12 @@ part of the paper rather than an incidental keyword. `problem` and `setting` are
 optional because many papers are domain-general or do not target a named failure
 mode.
 
+The registry preserves all applicable metadata, but the generated public views
+show at most three representative tags per paper. They prefer one `phase`, one
+`signal`, and one `mechanism`; when one of those dimensions is absent, `level`,
+`problem`, or `setting` supplies the missing context. Mechanism badges use
+distinct colors so different interventions remain easy to scan.
+
 ## Entropy, temperature, and noise
 
 These concepts are related but should not be one tag:

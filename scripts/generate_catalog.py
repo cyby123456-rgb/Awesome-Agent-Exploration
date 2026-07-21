@@ -121,8 +121,27 @@ BADGE_COLORS = {
     "mechanism": "D97706",
     "problem": "DC2626",
     "setting": "4B5563",
-    "type": "475569",
 }
+
+# Mechanisms carry much of a paper's identity, so giving every mechanism the
+# same orange badge makes the catalog harder to scan than the taxonomy itself.
+MECHANISM_BADGE_COLORS = {
+    "sampling/decoding": "0891B2",
+    "temperature-control": "2563EB",
+    "noise/perturbation": "7C3AED",
+    "regularization": "4F46E5",
+    "gradient-reshaping": "C2410C",
+    "reward-shaping/intrinsic-reward": "15803D",
+    "tree-search/branching": "BE123C",
+    "structured-search": "0F766E",
+    "backtracking/resampling": "A21CAF",
+    "replay/memory": "475569",
+    "curriculum/task-generation": "A16207",
+    "self-play/co-evolution": "DB2777",
+    "ensemble/population": "9333EA",
+}
+
+REPRESENTATIVE_TAG_LIMIT = 3
 
 
 def load_catalog() -> dict:
@@ -144,31 +163,43 @@ def tag_badge(dimension: str, value: str) -> str:
     # hyphen inside the message by doubling it; otherwise values such as
     # ``capability-boundary`` render a red "404 / badge not found" SVG.
     message = quote(value, safe="").replace("-", "--")
-    color = BADGE_COLORS[dimension]
+    color = (
+        MECHANISM_BADGE_COLORS.get(value, BADGE_COLORS[dimension])
+        if dimension == "mechanism"
+        else BADGE_COLORS[dimension]
+    )
     return (
         f"![{dimension}: {value}]"
         f"(https://img.shields.io/badge/{label}-{message}-{color}?style=flat-square)"
     )
 
 
-def tags_for(paper: dict, *, compact: bool) -> str:
+def representative_tags(paper: dict) -> str:
+    """Render at most three tags that best distinguish a paper in the catalog."""
     values: list[tuple[str, str]] = []
-    # Keep the compact view informative: show the main phase, at most two
-    # intervention levels, then prioritize exploration signals and operators.
-    values.extend(("phase", value) for value in paper.get("phase", [])[:1])
-    values.extend(("level", value) for value in paper.get("level", [])[:2])
-    values.extend(("signal", value) for value in paper.get("signal", [])[:2])
-    values.extend(("mechanism", value) for value in paper.get("mechanism", [])[:2])
-    if not compact:
-        values = [
-            (dimension, value)
-            for dimension in ("phase", "level", "signal", "mechanism", "problem", "setting")
-            for value in paper.get(dimension, [])
-        ]
-    unique = list(dict.fromkeys(values))
-    if compact:
-        unique = unique[:6]
-    return " ".join(tag_badge(dimension, value) for dimension, value in unique)
+
+    # Phase, signal, and mechanism answer when, what guides, and how. Prefer
+    # one of each so repeated values in one dimension do not crowd the view.
+    for dimension in ("phase", "signal", "mechanism"):
+        if paper.get(dimension):
+            values.append((dimension, paper[dimension][0]))
+
+    # Some papers do not declare all three preferred dimensions. Fill the
+    # remaining slots with the most useful available context.
+    for dimension in ("level", "problem", "setting", "phase", "signal", "mechanism"):
+        for value in paper.get(dimension, []):
+            candidate = (dimension, value)
+            if candidate not in values:
+                values.append(candidate)
+            if len(values) == REPRESENTATIVE_TAG_LIMIT:
+                break
+        if len(values) == REPRESENTATIVE_TAG_LIMIT:
+            break
+
+    return " ".join(
+        tag_badge(dimension, value)
+        for dimension, value in values[:REPRESENTATIVE_TAG_LIMIT]
+    )
 
 
 def papers_by_subtopic(papers: list[dict], area: str) -> dict[str, list[dict]]:
@@ -285,7 +316,7 @@ def render_readme(catalog: dict) -> str:
     for paper in featured:
         lines.append(
             f"- **[{paper['title']}]({paper['url']})** — {source_label(paper)} · "
-            f"{AREA_LABELS[paper['primary_area']]} · {tags_for(paper, compact=True)}"
+            f"{AREA_LABELS[paper['primary_area']]} · {representative_tags(paper)}"
         )
 
     lines.extend(["", "<a id=\"catalog\"></a>", "", "## Catalog"])
@@ -301,7 +332,7 @@ def render_readme(catalog: dict) -> str:
             for paper in grouped:
                 lines.append(
                     f"| {source_label(paper)} | [{paper['title']}]({paper['url']}) | "
-                    f"{tags_for(paper, compact=True)} |"
+                    f"{representative_tags(paper)} |"
                 )
             lines.append("")
 
@@ -324,7 +355,7 @@ def render_readme(catalog: dict) -> str:
             "",
             "## Curation policy",
             "",
-            "- One primary area per paper; multiple tags are encouraged.",
+            "- One primary area per paper; the public views show up to three representative tags while the registry preserves the complete metadata.",
             "- Conference status is shown only when backed by an official venue page.",
             "- Automated discovery produces candidates, never accepted catalog entries.",
             "- Classical RL is limited to the short appendix above.",
@@ -369,9 +400,9 @@ def render_detailed(catalog: dict) -> str:
                     shown = ", ".join(authors[:8]) + (" et al." if len(authors) > 8 else "")
                     lines.append(f"  - Authors: {shown}")
                 lines.append(
-                    f"  - {tag_badge('type', paper['paper_type'])} · Date: `{paper.get('date', '')}`"
+                    f"  - Type: `{paper['paper_type']}` · Date: `{paper.get('date', '')}`"
                 )
-                if tags := tags_for(paper, compact=False):
+                if tags := representative_tags(paper):
                     lines.append(f"  - {tags}")
                 if paper.get("rationale"):
                     lines.append(f"  - {paper['rationale']}")
