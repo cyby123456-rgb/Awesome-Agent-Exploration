@@ -45,7 +45,7 @@ Every proposed entry must include:
    not accepted.
 2. A one- or two-sentence curation rationale based on reading the abstract (and,
    for ambiguous cases, the method or experiments), not just the title.
-3. One primary area and accurate multi-dimensional tags.
+3. One primary category and accurate multi-dimensional tags.
 4. The official code link when one is available.
 5. A change to the structured registry in `data/papers.json`. The Markdown views
    are generated and must not be edited directly.
@@ -68,7 +68,7 @@ dimensions. The required dimensions are `phase` and `level`; at least one
   "title": "Low-probability Tokens Sustain Exploration in Reinforcement Learning with Verifiable Reward",
   "url": "https://arxiv.org/abs/2510.03222",
   "date": "2025-10-03",
-  "primary_area": "training-policy-curriculum-exploration",
+  "primary_area": "rlvr-policy-curriculum-exploration",
   "subtopic": "entropy-distribution",
   "paper_type": "method",
   "phase": ["rl-training"],
@@ -80,13 +80,15 @@ dimensions. The required dimensions are `phase` and `level`; at least one
 }
 ```
 
-Every entry also needs one valid `subtopic` within its primary area. Valid
-primary areas are `llm-exploration`,
-`training-policy-curriculum-exploration`, `agentic-exploration`, and
-`understanding-evaluation`. Data, memory, population, and self-improvement are
-represented by subtopics and tags rather than separate primary areas. Classical
-non-LLM RL papers are not normal entries; the maintainers keep a deliberately
-small appendix of foundational references.
+Every entry also needs one valid `subtopic` within its primary category. Valid
+primary categories are `llm-exploration`,
+`rlvr-policy-curriculum-exploration`, `agentic-exploration`,
+`agentic-training-exploration`, and `understanding-evaluation`. Agentic papers
+belong in `agentic-training-exploration` when external interaction generates
+experience, tasks, or policy updates; inference- and test-time interaction stays
+in `agentic-exploration`. Data, memory, population, and self-improvement remain
+subtopics and tags. Classical non-LLM RL papers are not normal entries; the
+maintainers keep a deliberately small appendix of foundational references.
 
 See [`docs/TAXONOMY.md`](docs/TAXONOMY.md) for the primary-area decision rule,
 the meaning of every tag dimension, and worked classification examples.
@@ -95,8 +97,8 @@ the meaning of every tag dimension, and worked classification examples.
 
 - Search the repository for both the exact title and the arXiv/DOI identifier.
 - Verify that the link resolves to the same title and authors.
-- Check that the primary area and all tag dimensions describe the paper's actual
-  exploration contribution rather than incidental keywords.
+- Check that the primary category and all tag dimensions describe the paper's
+  actual exploration contribution rather than incidental keywords.
 - Run `python3 scripts/validate_catalog.py`.
 - Run `python3 scripts/generate_catalog.py` and include the generated Markdown
   changes.

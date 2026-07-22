@@ -5,7 +5,7 @@
 - Exact paper title:
 - Primary source URL:
 - Official code URL (if available):
-- Proposed primary context and subtopic:
+- Proposed primary category and subtopic:
 - Exploration mechanism:
 - Why this is directly relevant to LLM exploration:
 

@@ -15,16 +15,26 @@ DATA_PATH = ROOT / "data" / "papers.json"
 RESEARCH_MAP_PATH = ROOT / "assets" / "research-map.svg"
 
 AREA_LABELS = {
-    "llm-exploration": "LLM Generation & Inference Exploration",
-    "training-policy-curriculum-exploration": "Training, Policy & Curriculum Exploration",
-    "agentic-exploration": "Agentic & Environment Exploration",
+    "llm-exploration": "Exploration for LLM Generation & Inference",
+    "rlvr-policy-curriculum-exploration": "Exploration for RLVR, Policy & Curriculum",
+    "agentic-exploration": "Agentic Exploration",
+    "agentic-training-exploration": "Agentic Exploration for Training",
     "understanding-evaluation": "Understanding, Evaluation & Benchmarks",
+}
+
+AREA_ANCHORS = {
+    "llm-exploration": "category-1",
+    "rlvr-policy-curriculum-exploration": "category-2",
+    "agentic-exploration": "category-3",
+    "agentic-training-exploration": "category-4",
+    "understanding-evaluation": "category-5",
 }
 
 AREA_SUMMARIES = {
     "llm-exploration": "Exploration during language-model generation and inference, without RL policy updates as the central contribution.",
-    "training-policy-curriculum-exploration": "Exploration during learning, where data, tasks, curricula, rollouts, rewards, or policy updates change what the model discovers.",
-    "agentic-exploration": "Exploration by language agents acting over states, tools, observations, and long-horizon trajectories.",
+    "rlvr-policy-curriculum-exploration": "Exploration in RLVR and policy learning, where curricula, rollouts, rewards, or updates change what the model discovers.",
+    "agentic-exploration": "Exploration by language agents acting at inference time over states, tools, observations, and long-horizon trajectories.",
+    "agentic-training-exploration": "Agent-environment exploration used to generate experience, construct training tasks, or improve an agent policy.",
     "understanding-evaluation": "Work that measures, explains, surveys, or benchmarks exploration rather than primarily introducing an intervention.",
 }
 
@@ -32,28 +42,35 @@ RESEARCH_MAP_TRACKS = [
     {
         "area": "llm-exploration",
         "eyebrow": "01 / GENERATION",
-        "title": ["LLM Exploration"],
+        "title": ["Exploration for LLM Generation & Inference"],
         "keywords": "sampling  |  search  |  diversity",
         "color": "#6E8FB8",
     },
     {
-        "area": "training-policy-curriculum-exploration",
-        "eyebrow": "02 / LEARNING",
-        "title": ["Training, Policy & Curriculum"],
-        "keywords": "data  |  curriculum  |  reward  |  policy",
+        "area": "rlvr-policy-curriculum-exploration",
+        "eyebrow": "02 / POLICY LEARNING",
+        "title": ["Exploration for RLVR, Policy & Curriculum"],
+        "keywords": "curriculum  |  reward  |  policy",
         "color": "#B07A68",
     },
     {
         "area": "agentic-exploration",
         "eyebrow": "03 / INTERACTION",
-        "title": ["Agentic & Environment"],
+        "title": ["Agentic Exploration"],
         "keywords": "tools  |  planning  |  memory  |  worlds",
         "color": "#8B80B6",
     },
     {
+        "area": "agentic-training-exploration",
+        "eyebrow": "04 / AGENT LEARNING",
+        "title": ["Agentic Exploration for Training"],
+        "keywords": "experience  |  tasks  |  policy updates",
+        "color": "#5F8F8B",
+    },
+    {
         "area": "understanding-evaluation",
-        "eyebrow": "04 / EVIDENCE",
-        "title": ["Understanding", "& Evaluation"],
+        "eyebrow": "05 / EVIDENCE",
+        "title": ["Understanding, Evaluation & Benchmarks"],
         "keywords": "theory  |  metrics  |  benchmarks",
         "color": "#B06D73",
     },
@@ -64,13 +81,17 @@ AREA_DESCRIPTIONS = {
         "This category covers exploration that happens while a language model is generating or selecting candidate outputs, rather than through a reinforcement-learning update. Typical examples include sampling and decoding strategies, self-consistency, semantic-diversity methods, latent-state steering, and tree or graph search at inference time.",
         "The central question is how to search a model's existing generative distribution more broadly, safely, or efficiently. Papers belong here when the main contribution improves or analyzes candidate generation, reasoning-path search, or output diversity without making RL post-training the core mechanism.",
     ],
-    "training-policy-curriculum-exploration": [
-        "This category covers exploration inside the learning loop: selecting or generating data and tasks, constructing curricula, collecting rollouts, shaping rewards and advantages, and updating a policy during RL or RLVR post-training.",
-        "The central question is how training changes what the model can discover. Entropy control, capability expansion, replay, self-play, co-evolution, and policy populations belong here when they are learning mechanisms; their data, memory, or population roles remain visible through tags and subtopics.",
+    "rlvr-policy-curriculum-exploration": [
+        "This category covers exploration inside RLVR and policy-learning loops: constructing curricula, collecting rollouts, shaping rewards and advantages, and updating a language-model policy.",
+        "The central question is how learning changes what the model can discover. Entropy control, capability expansion, replay, self-play, co-evolution, data selection, and task synthesis belong here when they improve a model policy without making external agent-environment interaction the defining loop.",
     ],
     "agentic-exploration": [
-        "This category covers language agents that explore an external or persistent environment: webpages, tools, GUIs, knowledge graphs, games, embodied worlds, or multi-agent settings. The explored object is usually a trajectory of states, actions, observations, tool calls, and accumulated experience.",
-        "These papers focus on partial observability, long horizons, replanning, recovery, environment coverage, and memory-guided interaction. Self-improvement and memory remain tags or subtopics here when they support an agent's external exploration loop rather than define a separate research context.",
+        "This category covers language agents that explore an external or persistent environment at inference or test time: webpages, tools, GUIs, knowledge graphs, games, embodied worlds, or multi-agent settings.",
+        "The explored object is a trajectory of states, actions, observations, tool calls, and accumulated memory. Papers belong here when planning, recovery, information seeking, or environment coverage is the main contribution and no training update is central.",
+    ],
+    "agentic-training-exploration": [
+        "This category covers agent-environment exploration whose purpose is to create training experience, synthesize interactive tasks, or update and improve an agent policy.",
+        "It includes agentic RL, exploration-aware policy optimization, self-play training, autonomous experience collection, and environment generation. The defining feature is that external interaction supplies or structures the learning signal rather than serving only as test-time search.",
     ],
     "understanding-evaluation": [
         "This category collects empirical analyses, theoretical accounts, surveys, metrics, and benchmarks that help the field understand exploration. Rather than primarily proposing a new exploration intervention, these works measure diversity, characterize training dynamics, evaluate capability boundaries, or establish a shared vocabulary and test bed.",
@@ -82,11 +103,14 @@ AREA_BOTTLENECKS = {
     "llm-exploration": (
         "The central challenge is still the diversity-quality-efficiency trade-off: broader sampling and search can improve coverage while rapidly increasing inference cost or admitting low-quality paths. Results are also hard to compare because gains from exploration are often entangled with extra compute, verifier strength, and model scale, while semantic and latent diversity lack reliable task-independent measures."
     ),
-    "training-policy-curriculum-exploration": (
+    "rlvr-policy-curriculum-exploration": (
         "Training-time exploration remains vulnerable to entropy collapse, biased or sparse rewards, unstable credit assignment, and curricula that overfit to what a verifier can already recognize. A key open question is whether an intervention creates genuinely new capability or only redistributes probability mass over existing behavior; replay, self-play, and population methods add further stability, data-quality, and compute challenges."
     ),
     "agentic-exploration": (
         "Long horizons, partial observability, and compounding action errors make efficient coverage and reliable recovery difficult, especially when tools or environments change. Current benchmarks often simplify feedback and reset conditions, leaving unresolved questions around realistic exploration cost, safe interaction, memory quality, reproducibility, and whether improvements transfer beyond a narrow environment."
+    ),
+    "agentic-training-exploration": (
+        "Agent-generated trajectories are expensive, correlated, and vulnerable to reward hacking or compounding environment errors, while successful experience is often too sparse to train on directly. Open problems include reliable credit across long interactions, balancing diverse experience with learnability, preventing self-training feedback loops, and transferring policies across tools and environments."
     ),
     "understanding-evaluation": (
         "The field lacks standardized measures that separate useful exploration from superficial diversity, additional sampling compute, or benchmark-specific variance. Static and contamination-prone benchmarks, limited cross-model replication, and weak causal links between token-level statistics, training dynamics, and downstream capability make it difficult to identify which interventions genuinely expand exploration."
@@ -100,7 +124,7 @@ SUBTOPIC_LABELS = {
         "representation-steering": "Representation & Latent Steering",
         "diversity-coverage": "Diversity & Coverage",
     },
-    "training-policy-curriculum-exploration": {
+    "rlvr-policy-curriculum-exploration": {
         "entropy-distribution": "Entropy & Distribution Control",
         "credit-optimization": "Credit Assignment & Optimization",
         "reward-rollout": "Reward & Rollout Shaping",
@@ -114,6 +138,12 @@ SUBTOPIC_LABELS = {
         "planning-interaction": "Planning & Interactive Search",
         "embodied-environments": "Embodied & Simulated Environments",
         "knowledge-memory": "Knowledge & Memory-Guided Exploration",
+    },
+    "agentic-training-exploration": {
+        "web-tools-gui": "Web, Tools & GUI Training",
+        "planning-interaction": "Agentic Policy Learning",
+        "embodied-environments": "Embodied & Simulated Training",
+        "knowledge-memory": "Memory-Augmented Agent Training",
     },
     "understanding-evaluation": {
         "surveys-position": "Surveys & Position Papers",
@@ -130,7 +160,7 @@ SUBTOPIC_SUMMARIES = {
         "representation-steering": "Methods that diversify generation by steering activations, embeddings, or latent states, focusing on controllable variation beyond output-level sampling.",
         "diversity-coverage": "Methods that counter mode collapse and expand semantic coverage, emphasizing how novelty and breadth can improve without sacrificing correctness or coherence.",
     },
-    "training-policy-curriculum-exploration": {
+    "rlvr-policy-curriculum-exploration": {
         "entropy-distribution": "Work that analyzes or controls policy entropy and token probabilities during RL, aiming to preserve useful distributional support while preventing premature collapse.",
         "credit-optimization": "Methods that reshape rewards, advantages, or gradients so exploratory behavior receives an informative learning signal, with stable and precise credit assignment as the key challenge.",
         "reward-rollout": "Methods that alter rollout collection, reward shaping, intrinsic bonuses, or resampling to elicit more varied and informative training trajectories.",
@@ -144,6 +174,12 @@ SUBTOPIC_SUMMARIES = {
         "planning-interaction": "Agents that search over multi-step action plans while interacting with an environment, focusing on long-horizon feedback, replanning, and efficient state-space coverage.",
         "embodied-environments": "Agents that explore physical or simulated worlds, with spatial reasoning, world-model learning, action consequences, and sample-efficient coverage as key issues.",
         "knowledge-memory": "Agents that traverse knowledge graphs or use accumulated memory to guide future actions, emphasizing relation-aware search, timely recall, and experience-grounded planning.",
+    },
+    "agentic-training-exploration": {
+        "web-tools-gui": "Training methods that collect or synthesize experience in websites, tools, and graphical interfaces, with task diversity, feedback quality, and transfer as the central concerns.",
+        "planning-interaction": "Methods that train agent policies from exploratory multi-step trajectories, focusing on long-horizon credit, stable optimization, and useful behavioral diversity.",
+        "embodied-environments": "Training methods that explore physical or simulated worlds, where noisy observations, sparse rewards, environment coverage, and sample efficiency shape the learning problem.",
+        "knowledge-memory": "Methods that combine exploratory experience with replay or memory during agent training, emphasizing which trajectories to retain, retrieve, and learn from.",
     },
     "understanding-evaluation": {
         "theory-training-dynamics": "Theoretical and empirical work that explains why exploration changes during training, isolating causal mechanisms behind entropy, diversity, optimization, and policy dynamics.",
@@ -331,7 +367,7 @@ def statistics_table(papers: list[dict]) -> list[str]:
 
 
 def render_research_map(catalog: dict) -> str:
-    """Render a compact, data-driven overview of the four research contexts."""
+    """Render a compact, data-driven overview of the five research categories."""
     papers = catalog["papers"]
     area_counts = Counter(paper["primary_area"] for paper in papers)
     maximum = max(area_counts.values())
@@ -341,7 +377,7 @@ def render_research_map(catalog: dict) -> str:
         count = area_counts[track["area"]]
         percentage = count / len(papers) * 100
         y = 142 + (index - 1) * 57
-        bar_width = max(12, round(600 * count / maximum, 1))
+        bar_width = max(12, round(540 * count / maximum, 1))
         title = " ".join(track["title"])
         color = track["color"]
         rows.append(
@@ -353,9 +389,9 @@ def render_research_map(catalog: dict) -> str:
             f'<text x="76" y="{y - 4}" class="track-title">{escape(title)}</text>'
             f'<text x="76" y="{y + 17}" class="track-keywords">'
             f'{escape(track["keywords"])}</text>'
-            f'<rect x="430" y="{y - 14}" width="600" height="14" rx="7" '
+            f'<rect x="490" y="{y - 14}" width="540" height="14" rx="7" '
             f'class="bar-track" />'
-            f'<rect x="430" y="{y - 14}" width="{bar_width:g}" height="14" rx="7" '
+            f'<rect x="490" y="{y - 14}" width="{bar_width:g}" height="14" rx="7" '
             f'fill="{color}" />'
             f'<text x="1055" y="{y - 1}" class="track-count" text-anchor="end">'
             f'{count}</text>'
@@ -365,9 +401,9 @@ def render_research_map(catalog: dict) -> str:
             f'</g>'
         )
 
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="map-title map-description">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="map-title map-description">
   <title id="map-title">Awesome Exploration research map</title>
-  <desc id="map-description">{len(papers)} curated papers organized into four primary research contexts, with current paper counts and key topics for each context.</desc>
+  <desc id="map-description">{len(papers)} curated papers organized into five research categories, with current paper counts and key topics for each category.</desc>
   <defs>
     <linearGradient id="map-background" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#FAFBFC" />
@@ -389,14 +425,14 @@ def render_research_map(catalog: dict) -> str:
       .footer {{ fill: #8993A4; font-size: 10px; font-weight: 500; letter-spacing: 1.2px; }}
     </style>
   </defs>
-  <rect x="5" y="5" width="1190" height="390" rx="24" fill="url(#map-background)" />
+  <rect x="5" y="5" width="1190" height="460" rx="24" fill="url(#map-background)" />
   <text x="36" y="48" class="map-heading">Exploration research landscape</text>
-  <text x="36" y="73" class="map-subtitle">Four primary contexts; data, memory, population, and self-improvement remain orthogonal lenses</text>
+  <text x="36" y="73" class="map-subtitle">Five research categories across large language models, agents, training, and evaluation</text>
   <text x="1138" y="48" class="map-total" text-anchor="end">{len(papers)}</text>
   <text x="1138" y="70" class="map-total-label" text-anchor="end">CURATED PAPERS</text>
   <line x1="30" y1="95" x2="1170" y2="95" class="row-line" />
   {''.join(rows)}
-  <text x="600" y="380" class="footer" text-anchor="middle">FOUR PRIMARY RESEARCH CONTEXTS  /  COUNTS GENERATED FROM THE CURATED REGISTRY</text>
+  <text x="600" y="450" class="footer" text-anchor="middle">FIVE RESEARCH CATEGORIES  /  COUNTS GENERATED FROM THE CURATED REGISTRY</text>
 </svg>
 '''
 
@@ -408,16 +444,16 @@ def render_readme(catalog: dict) -> str:
         "",
         "# Awesome Exploration",
         "",
-        "**A curated research map of exploration in language models, RLVR, and agents.**",
+        "**A curated research map of exploration in large language models and agents.**",
         "",
         "[![Curated catalog](https://img.shields.io/badge/catalog-curated-3B82F6?style=flat-square)](docs/CURATION_2026.md) "
         f"[![{len(papers)} papers](https://img.shields.io/badge/papers-{len(papers)}-8B5CF6?style=flat-square)](#catalog) "
-        "[![Four research contexts](https://img.shields.io/badge/contexts-4-10B981?style=flat-square)](#research-map) "
+        "[![Five research categories](https://img.shields.io/badge/categories-5-10B981?style=flat-square)](#research-map) "
         "[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-F59E0B?style=flat-square)](CONTRIBUTING.md)",
         "",
         "[Guide](#guide) · [Research map](#research-map) · [Start here](#start-here) · [Catalog](#catalog) · [Detailed metadata](README_DETAILED.md) · [Contribute](CONTRIBUTING.md)",
         "",
-        f'<img src="assets/research-map.svg" alt="Research map of {len(papers)} papers across four exploration contexts" width="100%">',
+        f'<img src="assets/research-map.svg" alt="Research map of {len(papers)} papers across five exploration categories" width="100%">',
         "",
         "</div>",
         "",
@@ -425,11 +461,11 @@ def render_readme(catalog: dict) -> str:
         "",
         "| Start here | What you will find |",
         "|---|---|",
-        "| **[What counts as exploration](#what-counts-as-exploration)** | Our scope: exploration must be a concrete research variable, not only a keyword. |",
-        "| **[Research map](#research-map)** | Four primary contexts: generation, learning, agentic interaction, and evidence. |",
+        "| **[What counts as exploration](#what-counts-as-exploration)** | Sutton & Barto frame exploration as trying alternatives to improve future action selection, while exploitation uses current knowledge to obtain reward. |",
+        "| **[Research map](#research-map)** | Five categories spanning LLM generation, RLVR and policy learning, agentic inference, agentic training, and evidence. |",
         "| **[Taxonomy lens](#taxonomy-lens)** | How phase, level, signal, mechanism, problem, and setting describe each paper. |",
         "| **[Start here](#start-here)** | A cross-section of recommended papers for first-time readers. |",
-        "| **[Full catalog](#catalog)** | All curated papers, grouped by their primary research context. |",
+        "| **[Full catalog](#catalog)** | All curated papers, grouped by their primary research category. |",
         "",
         "## What counts as exploration?",
         "",
@@ -439,14 +475,15 @@ def render_readme(catalog: dict) -> str:
         "",
         "## Research map",
         "",
-        "Every paper has one home in the map; its tags then describe the research lens. Start with the track that matches your question, then use the tags to compare mechanisms across tracks.",
+        "Every paper has one home in the map; its tags then describe the research lens. Start with the category that matches your question, then use the tags to compare mechanisms across categories.",
         "",
-        "| Track | Best for |",
+        "| Category | Best for |",
         "|---|---|",
-        "| **[LLM Generation & Inference](#1-llm-generation--inference-exploration)** | Sampling, decoding, reasoning-path search, and output diversity without an RL update. |",
-        "| **[Training, Policy & Curriculum](#2-training-policy--curriculum-exploration)** | Data selection, curricula, RL/RLVR updates, replay, self-play, rewards, and policy-distribution control. |",
-        "| **[Agentic & Environment](#3-agentic--environment-exploration)** | Web, tool, GUI, knowledge-graph, embodied, memory-guided, or multi-agent trajectories. |",
-        "| **[Understanding & Evaluation](#4-understanding-evaluation--benchmarks)** | Surveys, theory, metrics, benchmarks, and evidence about exploration. |",
+        "| **[Exploration for LLM Generation & Inference](#category-1)** | Sampling, decoding, reasoning-path search, and output diversity without a learning update. |",
+        "| **[Exploration for RLVR, Policy & Curriculum](#category-2)** | Curricula, RL/RLVR updates, replay, rewards, and language-model policy-distribution control. |",
+        "| **[Agentic Exploration](#category-3)** | Test-time exploration across the web, tools, GUIs, knowledge graphs, and embodied environments. |",
+        "| **[Agentic Exploration for Training](#category-4)** | Agent experience collection, interactive task synthesis, self-play training, and agent policy optimization. |",
+        "| **[Understanding, Evaluation & Benchmarks](#category-5)** | Surveys, theory, metrics, benchmarks, and evidence about exploration. |",
         "",
         "<a id=\"taxonomy-lens\"></a>",
         "",
@@ -482,10 +519,26 @@ def render_readme(catalog: dict) -> str:
             f"{AREA_LABELS[paper['primary_area']]} · {representative_tags(paper)}"
         )
 
-    lines.extend(["", "<a id=\"catalog\"></a>", "", "## Catalog"])
+    lines.extend(
+        [
+            "",
+            "<a id=\"catalog\"></a>",
+            "",
+            "## Catalog",
+            "",
+            "### Categories",
+            "",
+            *[
+                f"{index}. [{label}](#{AREA_ANCHORS[area]})"
+                for index, (area, label) in enumerate(AREA_LABELS.items(), start=1)
+            ],
+        ]
+    )
     for index, (area, label) in enumerate(AREA_LABELS.items(), start=1):
         lines.extend(
             [
+                "",
+                f'<a id="{AREA_ANCHORS[area]}"></a>',
                 "",
                 f"## {index}. {label}",
                 "",

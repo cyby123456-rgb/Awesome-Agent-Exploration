@@ -10,7 +10,7 @@ language agents. It is not a general collection of reinforcement learning,
 search, diversity, self-improvement, or memory papers. The taxonomy has two
 jobs:
 
-1. make the list easy to browse by the research context containing the main
+1. make the list easy to browse by the research category containing the main
    exploration loop; and
 2. preserve the different ways exploration can be observed or changed.
 
@@ -21,28 +21,29 @@ as sibling sections creates overlaps and duplicate entries.
 
 The catalog therefore uses:
 
-- exactly **one primary area** for navigation; and
+- exactly **one primary category** for navigation; and
 - multiple **orthogonal tags** for phase, level, signal, mechanism, problem, and
   setting.
 
 `paper_type` separately describes the kind of research contribution. Data,
-memory, population, and self-improvement are not primary areas because each can
+memory, population, and self-improvement are not primary categories because each can
 support several different exploration loops; they remain visible through
 subtopics and tags.
 
-## Primary areas
+## Primary categories
 
-Primary areas answer: **Where does this paper's main exploration loop occur?**
-A paper appears in one area even when its method or findings transfer elsewhere.
+Primary categories answer: **Where does this paper's main exploration loop
+occur?** A paper appears in one category even when its method or findings
+transfer elsewhere.
 
-### 1. LLM Generation & Inference Exploration
+### 1. Exploration for LLM Generation & Inference
 
 Exploration among candidate tokens, responses, reasoning paths, or latent states
 during generation and inference, without a learning update as the central
 contribution. Key concerns are sampling, decoding, test-time search,
 self-consistency, representation steering, diversity, and coverage.
 
-### 2. Training, Policy & Curriculum Exploration
+### 2. Exploration for RLVR, Policy & Curriculum
 
 Exploration inside the learning loop, including data selection, task synthesis,
 curricula, rollout collection, rewards, advantages, replay, self-play, and RL or
@@ -50,51 +51,64 @@ RLVR policy updates. Key concerns are preserving useful distributional support,
 assigning credit, expanding capability, and deciding what experience should
 drive the next update.
 
-### 3. Agentic & Environment Exploration
+### 3. Agentic Exploration
 
-Exploration by a language agent acting in an external or persistent environment,
-including the web, tools, GUIs, knowledge graphs, games, and embodied worlds.
-Key concerns are long-horizon planning, partial observability, action grounding,
-recovery, environment coverage, and memory-guided interaction.
+Exploration by a language agent acting at inference or test time in an external
+or persistent environment, including the web, tools, GUIs, knowledge graphs,
+games, and embodied worlds. Key concerns are long-horizon planning, partial
+observability, action grounding, recovery, environment coverage, and
+memory-guided interaction.
 
-### 4. Understanding, Evaluation & Benchmarks
+### 4. Agentic Exploration for Training
+
+Agent-environment exploration used to create experience, synthesize interactive
+tasks, or improve an agent policy. Key concerns are agentic RL, long-horizon
+credit assignment, autonomous experience collection, self-play training,
+environment generation, and transferring learned policies across tools and
+environments.
+
+### 5. Understanding, Evaluation & Benchmarks
 
 Empirical analysis, theory, surveys, metrics, and benchmarks whose main
 contribution is evidence about exploration rather than an intervention. Key
 concerns are explaining training dynamics, measuring diversity and coverage,
 testing capability boundaries, and establishing reproducible evaluation.
 
-### Primary-area decision rule
+### Primary-category decision rule
 
 Use the paper's main contribution, not every context it mentions:
 
 1. If the main contribution only measures, explains, benchmarks, or surveys,
    use `understanding-evaluation`.
-2. Otherwise, if the main exploration loop acts in an external or persistent
-   environment, use `agentic-exploration`.
-3. Otherwise, if exploration changes what the model learns from or how it is
-   updated, use `training-policy-curriculum-exploration`.
-4. Otherwise, use `llm-exploration` for generation, decoding, representation
+2. Otherwise, if external agent interaction supplies experience, tasks, or a
+   policy update, use `agentic-training-exploration`.
+3. Otherwise, if the main exploration loop acts in an external or persistent
+   environment at inference or test time, use `agentic-exploration`.
+4. Otherwise, if exploration changes an LLM policy, RLVR rollout distribution,
+   data selection, or curriculum, use `rlvr-policy-curriculum-exploration`.
+5. Otherwise, use `llm-exploration` for generation, decoding, representation
    steering, and test-time search.
 
 This order resolves common ambiguities. Memory-guided web navigation is
-agentic; replay used to update a policy is training; self-consistency at
-inference is LLM generation; and a paper that only analyzes entropy collapse is
-understanding and evaluation. When the boundary remains ambiguous, classify by
-the component evaluated in the main experiments and state the choice in the
-curation rationale.
+agentic; web trajectories collected to update an agent are agentic training;
+RLVR entropy control without an external environment is policy learning;
+self-consistency at inference is LLM generation; and a paper that only analyzes
+entropy collapse is understanding and evaluation. When the boundary remains
+ambiguous, classify by the component evaluated in the main experiments and
+state the choice in the curation rationale.
 
 ## Subtopics
 
-Every paper has one subtopic within its primary area. Each subtopic states both
+Every paper has one subtopic within its primary category. Each subtopic states both
 the category and its central concern; it is a navigation aid rather than a
 replacement for the orthogonal tags below.
 
-| Primary area | Subtopics and key points |
+| Primary category | Subtopics and key points |
 |---|---|
-| LLM Generation & Inference | **Decoding & Sampling:** broadens candidate generation through probability shaping and sampling; **Search & Deliberation:** explores multi-step reasoning paths through branching, verification, or resampling; **Representation & Latent Steering:** diversifies behavior by intervening in internal representations; **Diversity & Coverage:** expands semantic breadth while preserving quality. |
-| Training, Policy & Curriculum | **Entropy & Distribution Control:** preserves useful policy support; **Credit Assignment & Optimization:** makes exploratory behavior learnable; **Reward & Rollout Shaping:** elicits informative trajectories; **Replay, Population & Self-Improvement:** reuses experience or interacting policies across updates; **Capability Expansion & Training Interventions:** changes or stabilizes what training can learn; **Data Selection & Prompt Exploration:** chooses informative training examples; **Task Synthesis & Curriculum:** generates and sequences learnable tasks. |
-| Agentic & Environment | **Web, Tools & GUI:** explores interactive digital interfaces; **Planning & Interactive Search:** searches long-horizon action plans under feedback; **Embodied & Simulated Environments:** explores spatial or simulated worlds; **Knowledge & Memory-Guided Exploration:** uses structured knowledge or accumulated experience to choose future actions. |
+| Exploration for LLM Generation & Inference | **Decoding & Sampling:** broadens candidate generation through probability shaping and sampling; **Search & Deliberation:** explores multi-step reasoning paths through branching, verification, or resampling; **Representation & Latent Steering:** diversifies behavior by intervening in internal representations; **Diversity & Coverage:** expands semantic breadth while preserving quality. |
+| Exploration for RLVR, Policy & Curriculum | **Entropy & Distribution Control:** preserves useful policy support; **Credit Assignment & Optimization:** makes exploratory behavior learnable; **Reward & Rollout Shaping:** elicits informative trajectories; **Replay, Population & Self-Improvement:** reuses experience or interacting policies across updates; **Capability Expansion & Training Interventions:** changes or stabilizes what training can learn; **Data Selection & Prompt Exploration:** chooses informative training examples; **Task Synthesis & Curriculum:** generates and sequences learnable tasks. |
+| Agentic Exploration | **Web, Tools & GUI:** explores interactive digital interfaces; **Planning & Interactive Search:** searches long-horizon action plans under feedback; **Embodied & Simulated Environments:** explores spatial or simulated worlds; **Knowledge & Memory-Guided Exploration:** uses structured knowledge or accumulated experience to choose future actions. |
+| Agentic Exploration for Training | **Web, Tools & GUI Training:** learns from interactive digital experience; **Agentic Policy Learning:** updates policies from exploratory trajectories; **Embodied & Simulated Training:** learns under noisy observations and sparse rewards; **Memory-Augmented Agent Training:** selects and reuses experience during learning. |
 | Understanding, Evaluation & Benchmarks | **Surveys & Position Papers:** organizes definitions and open problems; **Theory & Training Dynamics:** explains why exploration changes; **Capability Boundaries:** tests whether exploration reaches beyond existing competence; **Benchmarks & Metrics:** measures diversity, coverage, efficiency, and utility. |
 
 ## Tag dimensions
@@ -141,10 +155,11 @@ introduce no intervention.
 
 | Paper pattern | Primary area | Representative tags | Reasoning |
 |---|---|---|---|
-| An RLVR method preserves low-probability tokens with a regularizer | `training-policy-curriculum-exploration` | phase: `rl-training`; signal: `entropy/probability`; mechanism: `regularization` | The learning update is central; entropy is the signal and regularization is the intervention. |
+| An RLVR method preserves low-probability tokens with a regularizer | `rlvr-policy-curriculum-exploration` | phase: `rl-training`; signal: `entropy/probability`; mechanism: `regularization` | The learning update is central; entropy is the signal and regularization is the intervention. |
 | A decoder branches over candidate reasoning paths at inference time | `llm-exploration` | phase: `inference`; level: `response/sequence`; mechanism: `tree-search/branching` | It explores generations without making training the contribution. |
-| A web agent uses past trajectories to decide which tool to call next | `agentic-exploration` | phase: `inference`; level: `trajectory/action`; mechanism: `replay/memory` | Memory supports an external interaction loop, so it is an agentic lens rather than a primary area. |
-| A self-play system generates tasks and updates a policy from them | `training-policy-curriculum-exploration` | phase: `continual/self-improvement`; level: `population/multi-policy`; mechanism: `self-play/co-evolution` | Population and self-improvement describe how the learning loop expands experience. |
+| A web agent uses past trajectories to decide which tool to call next | `agentic-exploration` | phase: `inference`; level: `trajectory/action`; mechanism: `replay/memory` | Memory supports an external interaction loop, so it is an agentic lens rather than a primary category. |
+| A web agent explores pages to collect trajectories for a policy update | `agentic-training-exploration` | phase: `rl-training`; level: `trajectory/action`; mechanism: `structured-search` | External interaction generates the learning experience, so agent training is the primary category. |
+| A self-play system generates non-agent reasoning tasks and updates an LLM policy | `rlvr-policy-curriculum-exploration` | phase: `continual/self-improvement`; level: `population/multi-policy`; mechanism: `self-play/co-evolution` | Population and self-improvement describe how the policy-learning loop expands experience. |
 | A benchmark measures strategy diversity in mathematical reasoning | `understanding-evaluation` | type: `benchmark`; phase: `inference`; signal: `semantic-diversity` | Measurement, rather than a new exploration intervention, is the contribution. |
 
 ## Scope boundaries

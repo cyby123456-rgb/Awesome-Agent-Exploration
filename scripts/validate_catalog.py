@@ -17,14 +17,15 @@ DATA_PATH = ROOT / "data" / "papers.json"
 
 AREAS = {
     "llm-exploration",
-    "training-policy-curriculum-exploration",
+    "rlvr-policy-curriculum-exploration",
     "agentic-exploration",
+    "agentic-training-exploration",
     "understanding-evaluation",
 }
 PAPER_TYPES = {"method", "analysis", "benchmark", "survey", "position"}
 SUBTOPICS = {
     "llm-exploration": {"decoding-sampling", "search-deliberation", "representation-steering", "diversity-coverage"},
-    "training-policy-curriculum-exploration": {
+    "rlvr-policy-curriculum-exploration": {
         "data-selection-prompting",
         "task-synthesis-curriculum",
         "entropy-distribution",
@@ -34,6 +35,12 @@ SUBTOPICS = {
         "capability-dynamics",
     },
     "agentic-exploration": {
+        "web-tools-gui",
+        "planning-interaction",
+        "embodied-environments",
+        "knowledge-memory",
+    },
+    "agentic-training-exploration": {
         "web-tools-gui",
         "planning-interaction",
         "embodied-environments",
@@ -120,7 +127,7 @@ def main() -> int:
         errors.append("classical RL appendix must contain at most 8 papers")
 
     print(f"Validated {len(papers)} curated papers and {len(classic_titles)} classical references")
-    print("Primary areas:", dict(sorted(Counter(p["primary_area"] for p in papers).items())))
+    print("Primary categories:", dict(sorted(Counter(p["primary_area"] for p in papers).items())))
     print(
         "2026 venues:",
         dict(
