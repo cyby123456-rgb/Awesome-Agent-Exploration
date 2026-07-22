@@ -78,6 +78,21 @@ AREA_DESCRIPTIONS = {
     ],
 }
 
+AREA_BOTTLENECKS = {
+    "llm-exploration": (
+        "The central challenge is still the diversity-quality-efficiency trade-off: broader sampling and search can improve coverage while rapidly increasing inference cost or admitting low-quality paths. Results are also hard to compare because gains from exploration are often entangled with extra compute, verifier strength, and model scale, while semantic and latent diversity lack reliable task-independent measures."
+    ),
+    "training-policy-curriculum-exploration": (
+        "Training-time exploration remains vulnerable to entropy collapse, biased or sparse rewards, unstable credit assignment, and curricula that overfit to what a verifier can already recognize. A key open question is whether an intervention creates genuinely new capability or only redistributes probability mass over existing behavior; replay, self-play, and population methods add further stability, data-quality, and compute challenges."
+    ),
+    "agentic-exploration": (
+        "Long horizons, partial observability, and compounding action errors make efficient coverage and reliable recovery difficult, especially when tools or environments change. Current benchmarks often simplify feedback and reset conditions, leaving unresolved questions around realistic exploration cost, safe interaction, memory quality, reproducibility, and whether improvements transfer beyond a narrow environment."
+    ),
+    "understanding-evaluation": (
+        "The field lacks standardized measures that separate useful exploration from superficial diversity, additional sampling compute, or benchmark-specific variance. Static and contamination-prone benchmarks, limited cross-model replication, and weak causal links between token-level statistics, training dynamics, and downstream capability make it difficult to identify which interventions genuinely expand exploration."
+    ),
+}
+
 SUBTOPIC_LABELS = {
     "llm-exploration": {
         "decoding-sampling": "Decoding & Sampling",
@@ -86,13 +101,13 @@ SUBTOPIC_LABELS = {
         "diversity-coverage": "Diversity & Coverage",
     },
     "training-policy-curriculum-exploration": {
-        "data-selection-prompting": "Data Selection & Prompt Exploration",
-        "task-synthesis-curriculum": "Task Synthesis & Curriculum",
         "entropy-distribution": "Entropy & Distribution Control",
         "credit-optimization": "Credit Assignment & Optimization",
         "reward-rollout": "Reward & Rollout Shaping",
         "replay-population": "Replay, Population & Self-Improvement",
         "capability-dynamics": "Capability Expansion & Training Interventions",
+        "data-selection-prompting": "Data Selection & Prompt Exploration",
+        "task-synthesis-curriculum": "Task Synthesis & Curriculum",
     },
     "agentic-exploration": {
         "web-tools-gui": "Web, Tools & GUI",
@@ -116,13 +131,13 @@ SUBTOPIC_SUMMARIES = {
         "diversity-coverage": "Methods that counter mode collapse and expand semantic coverage, emphasizing how novelty and breadth can improve without sacrificing correctness or coherence.",
     },
     "training-policy-curriculum-exploration": {
-        "data-selection-prompting": "Methods that select, prioritize, or prompt training examples, using informativeness, uncertainty, and coverage to decide which data is most valuable next.",
-        "task-synthesis-curriculum": "Methods that generate and sequence tasks across difficulty levels, with adaptive progression, task diversity, and learnability as the main curriculum concerns.",
         "entropy-distribution": "Work that analyzes or controls policy entropy and token probabilities during RL, aiming to preserve useful distributional support while preventing premature collapse.",
         "credit-optimization": "Methods that reshape rewards, advantages, or gradients so exploratory behavior receives an informative learning signal, with stable and precise credit assignment as the key challenge.",
         "reward-rollout": "Methods that alter rollout collection, reward shaping, intrinsic bonuses, or resampling to elicit more varied and informative training trajectories.",
         "replay-population": "Learning systems that use replay, self-play, co-evolution, ensembles, or policy populations to retain useful experience and expand behavioral coverage across updates.",
         "capability-dynamics": "Training interventions designed to expand or stabilize model capabilities, focusing on generalization boundaries and genuine capability growth rather than evidence-only analysis.",
+        "data-selection-prompting": "Methods that select, prioritize, or prompt training examples, using informativeness, uncertainty, and coverage to decide which data is most valuable next.",
+        "task-synthesis-curriculum": "Methods that generate and sequence tasks across difficulty levels, with adaptive progression, task diversity, and learnability as the main curriculum concerns.",
     },
     "agentic-exploration": {
         "web-tools-gui": "Agents that explore websites, tools, and graphical interfaces, where action grounding, partial observability, tool choice, and recovery from failed interactions are central.",
@@ -224,6 +239,7 @@ def area_description_lines(area: str) -> list[str]:
     lines: list[str] = []
     for paragraph in AREA_DESCRIPTIONS[area]:
         lines.extend([paragraph, ""])
+    lines.extend([f"> **Research bottlenecks.** {AREA_BOTTLENECKS[area]}", ""])
     return lines
 
 
@@ -468,7 +484,19 @@ def render_readme(catalog: dict) -> str:
 
     lines.extend(["", "<a id=\"catalog\"></a>", "", "## Catalog"])
     for index, (area, label) in enumerate(AREA_LABELS.items(), start=1):
-        lines.extend(["", f"## {index}. {label}", "", f"> **Research focus.** {AREA_DESCRIPTIONS[area][0]}", "", AREA_DESCRIPTIONS[area][1], ""])
+        lines.extend(
+            [
+                "",
+                f"## {index}. {label}",
+                "",
+                f"> **Research focus.** {AREA_DESCRIPTIONS[area][0]}",
+                "",
+                AREA_DESCRIPTIONS[area][1],
+                "",
+                f"> **Research bottlenecks.** {AREA_BOTTLENECKS[area]}",
+                "",
+            ]
+        )
         selected = sorted(
             (p for p in papers if p["primary_area"] == area),
             key=lambda p: (p.get("date", ""), p["title"]),
