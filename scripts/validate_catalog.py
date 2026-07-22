@@ -17,21 +17,28 @@ DATA_PATH = ROOT / "data" / "papers.json"
 
 AREAS = {
     "llm-exploration",
-    "rlvr-exploration",
-    "data-task-curriculum-exploration",
+    "training-policy-curriculum-exploration",
     "agentic-exploration",
-    "self-improvement-population-exploration",
-    "memory-knowledge-exploration",
     "understanding-evaluation",
 }
 PAPER_TYPES = {"method", "analysis", "benchmark", "survey", "position"}
 SUBTOPICS = {
     "llm-exploration": {"decoding-sampling", "search-deliberation", "representation-steering", "diversity-coverage"},
-    "rlvr-exploration": {"entropy-distribution", "credit-optimization", "reward-rollout", "capability-dynamics"},
-    "data-task-curriculum-exploration": {"data-selection-prompting", "task-synthesis-curriculum", "agent-task-environments"},
-    "agentic-exploration": {"web-tools-gui", "planning-interaction", "embodied-environments"},
-    "self-improvement-population-exploration": {"self-play-coevolution", "multi-agent-ensembles", "iterative-self-improvement"},
-    "memory-knowledge-exploration": {"replay-trajectory-memory", "retrieval-long-context", "knowledge-graph-memory", "memory-guided-planning"},
+    "training-policy-curriculum-exploration": {
+        "data-selection-prompting",
+        "task-synthesis-curriculum",
+        "entropy-distribution",
+        "credit-optimization",
+        "reward-rollout",
+        "replay-population",
+        "capability-dynamics",
+    },
+    "agentic-exploration": {
+        "web-tools-gui",
+        "planning-interaction",
+        "embodied-environments",
+        "knowledge-memory",
+    },
     "understanding-evaluation": {"theory-training-dynamics", "benchmarks-metrics", "surveys-position", "capability-boundaries"},
 }
 OFFICIAL_2026_HOSTS = {"aclanthology.org", "iclr.cc", "icml.cc"}
@@ -70,6 +77,10 @@ def main() -> int:
             errors.append(f"{label}: invalid subtopic {paper.get('subtopic')!r} for {paper['primary_area']}")
         if paper.get("paper_type") not in PAPER_TYPES:
             errors.append(f"{label}: invalid paper_type {paper.get('paper_type')!r}")
+        elif paper["paper_type"] == "method" and paper.get("primary_area") == "understanding-evaluation":
+            errors.append(f"{label}: method papers must use an intervention context, not understanding-evaluation")
+        elif paper["paper_type"] != "method" and paper.get("primary_area") != "understanding-evaluation":
+            errors.append(f"{label}: evidence-only papers must use understanding-evaluation")
         if not re.fullmatch(r"\d{4}(?:-\d{2}(?:-\d{2})?)?", paper.get("date", "")):
             errors.append(f"{label}: date must be YYYY, YYYY-MM, or YYYY-MM-DD")
         if not paper.get("signal") and not paper.get("mechanism"):

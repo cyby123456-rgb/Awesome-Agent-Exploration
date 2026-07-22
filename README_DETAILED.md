@@ -10,7 +10,7 @@ This category covers exploration that happens while a language model is generati
 
 The central question is how to search a model's existing generative distribution more broadly, safely, or efficiently. Papers belong here when the main contribution improves or analyzes candidate generation, reasoning-path search, or output diversity without making RL post-training the core mechanism.
 
-### Decoding & Sampling · 13 papers
+### Decoding & Sampling · 14 papers
 
 Methods that broaden candidate generation at inference time, with probability shaping, temperature, and sampling strategy as the key levers for balancing diversity, quality, and cost.
 
@@ -79,8 +79,13 @@ Methods that broaden candidate generation at inference time, with probability sh
   - Type: `method` · Date: `2025-09-18`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - Exploration focus: entropy/probability, uncertainty/confidence, novelty/curiosity.
+- **[Self-Consistency Improves Chain of Thought Reasoning in Language Models](https://iclr.cc/virtual/2023/poster/11718)** — ICLR 2023
+  - Authors: Xuezhi Wang, Jason Wei, Dale Schuurmans, Quoc V. Le, Ed H. Chi, Sharan Narang, Aakanksha Chowdhery, Denny Zhou
+  - Type: `method` · Date: `2023`
+  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
+  - Foundational diverse-path sampling and answer aggregation for language-model reasoning.
 
-### Search & Deliberation · 25 papers
+### Search & Deliberation · 28 papers
 
 Methods that explore multi-step reasoning paths through branching, resampling, planning, or verification, with search-budget allocation and path quality as the central concerns.
 
@@ -104,6 +109,11 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - Type: `method` · Date: `2026`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square) ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, sampling/decoding, noise/perturbation.
+- **[Think Earlier, Not Longer: Prompt Optimization via Reducing Unhealthy Exploration](https://aclanthology.org/2026.findings-acl.817/)** — **ACL 2026 Findings**
+  - Authors: Ling-I Wu, Minyu Chen, Jingyang Li, Xi Chang, Guoqiang Li
+  - Type: `method` · Date: `2026`
+  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: data/task](https://img.shields.io/badge/level-data%2Ftask-9A7F9C?style=flat-square)
+  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, sampling/decoding.
 - **[Student Guides Teacher: Weak-to-Strong Inference via Spectral Orthogonal Exploration](https://aclanthology.org/2026.acl-long.761/)** — **ACL 2026 Main**
   - Authors: Dayu Wang, Jiaye Yang, Weikang Li, Jiahui Liang, Yang Li, Deguo Xia, Jizhou Huang
   - Type: `method` · Date: `2026`
@@ -119,6 +129,16 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - Type: `method` · Date: `2026`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - Officially accepted at ACL 2026 Findings. Exploration focus: semantic-diversity, structured-search.
+- **[Multi-LLM Collaborative Search for Complex Problem Solving](https://aclanthology.org/2026.findings-acl.2115/)** — **ACL 2026 Findings**
+  - Authors: Sen Yang, Yafu Li, Wai Lam, Yu Cheng
+  - Type: `method` · Date: `2026`
+  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: ensemble/population](https://img.shields.io/badge/mechanism-ensemble%2Fpopulation-8774A5?style=flat-square) ![level: population/multi-policy](https://img.shields.io/badge/level-population%2Fmulti--policy-A07593?style=flat-square)
+  - Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, semantic-diversity, tree-search/branching.
+- **[LLM Inductive Reasoning Through Multi-Agent Enhanced Monte Carlo Tree Search](https://aclanthology.org/2026.findings-acl.1178/)** — **ACL 2026 Findings**
+  - Authors: Xiang Li, Yucheng Zhou, Xiangzhi Wei, Zesheng Shi, Haiyuan Wan, Gong Yifan, Fangming Liu, Jing Li
+  - Type: `method` · Date: `2026`
+  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
+  - Officially accepted at ACL 2026 Findings. Exploration focus: reward/advantage, tree-search/branching, backtracking/resampling.
 - **[HyPER: Bridging Exploration and Exploitation for Scalable LLM Reasoning with Hypothesis Path Expansion and Reduction](https://icml.cc/virtual/2026/poster/65181)** — **ICML 2026**
   - Authors: Shengxuan Qiu, Haochen Huang, Shuzhang Zhong, Pengfei Zuo, Meng Li
   - Type: `method` · Date: `2026`
@@ -245,7 +265,7 @@ Methods that diversify generation by steering activations, embeddings, or latent
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square) ![level: token](https://img.shields.io/badge/level-token-8B80B6?style=flat-square)
   - Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, sampling/decoding.
 
-### Diversity & Coverage · 13 papers
+### Diversity & Coverage · 14 papers
 
 Methods that counter mode collapse and expand semantic coverage, emphasizing how novelty and breadth can improve without sacrificing correctness or coherence.
 
@@ -259,6 +279,11 @@ Methods that counter mode collapse and expand semantic coverage, emphasizing how
   - Type: `method` · Date: `2026`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.
+- **[String Seed of Thought: Prompting LLMs for Distribution-Faithful and Diverse Generation](https://iclr.cc/virtual/2026/poster/10007633)** — **ICLR 2026**
+  - Authors: Kou Misaki, Takuya Akiba
+  - Type: `method` · Date: `2026`
+  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
+  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
 - **[SED-SFT: Selectively Encouraging Diversity in Supervised Fine-Tuning](https://aclanthology.org/2026.acl-short.54/)** — **ACL 2026 Main**
   - Authors: Yijie Chen, Yijin Liu, Fandong Meng
   - Type: `method` · Date: `2026`
@@ -316,13 +341,58 @@ Methods that counter mode collapse and expand semantic coverage, emphasizing how
   - Exploration focus: semantic-diversity.
 
 
-## 2. Policy & RLVR Exploration
+## 2. Training, Policy & Curriculum Exploration
 
-This category concerns exploration during reinforcement learning or RL with verifiable rewards (RLVR). Here, exploration changes which rollouts are collected, how reward or advantage signals are assigned, or how the policy distribution is updated during training.
+This category covers exploration inside the learning loop: selecting or generating data and tasks, constructing curricula, collecting rollouts, shaping rewards and advantages, and updating a policy during RL or RLVR post-training.
 
-It includes work on entropy or mode collapse, low-probability tokens, rollout diversity, intrinsic or shaped rewards, gradient and regularization interventions, curriculum design, and attempts to push beyond a base model's capability boundary. The defining feature is that exploration is part of the learning loop, not only an inference-time search choice.
+The central question is how training changes what the model can discover. Entropy control, capability expansion, replay, self-play, co-evolution, and policy populations belong here when they are learning mechanisms; their data, memory, or population roles remain visible through tags and subtopics.
 
-### Entropy & Distribution Control · 42 papers
+### Data Selection & Prompt Exploration · 5 papers
+
+Methods that select, prioritize, or prompt training examples, using informativeness, uncertainty, and coverage to decide which data is most valuable next.
+
+- **[No Prompt Left Behind: Exploiting Zero-Variance Prompts in LLM Reinforcement Learning via Entropy-Guided Advantage Shaping](https://iclr.cc/virtual/2026/poster/10007755)** — **ICLR 2026**
+  - Authors: Thanh-Long V. Le, Myeongho Jeon, Kim Vu, Viet Lai, Eunho Yang
+  - Type: `method` · Date: `2026`
+  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
+  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, reward/advantage.
+- **[Dynamic Sampling that Adapts: Self-Aware Iterative Data Persistent Optimization for Mathematical Reasoning](https://aclanthology.org/2026.findings-acl.1412/)** — **ACL 2026 Findings**
+  - Authors: Jun Rao, Xuebo Liu, Hexuan Deng, Zepeng Lin, Zixiong Yu, Jiansheng Wei, Xiaojun Meng, Min Zhang
+  - Type: `method` · Date: `2026`
+  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
+  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, novelty/curiosity, sampling/decoding.
+- **[Beyond Templates: Dynamic Adaptation of Reasoning Demonstrations via Feasibility-Aware Exploration](https://aclanthology.org/2026.findings-acl.327/)** — **ACL 2026 Findings**
+  - Authors: Yong Wu, Weihang Pan, Ke Li, Chen Binhui, Ping Li, Binbin Lin
+  - Type: `method` · Date: `2026`
+  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: data/task](https://img.shields.io/badge/level-data%2Ftask-9A7F9C?style=flat-square)
+  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
+- **[Beyond Stochastic Exploration: What Makes Training Data Valuable for Agentic Search](https://aclanthology.org/2026.findings-acl.160/)** — **ACL 2026 Findings**
+  - Authors: Chuzhan Hao, Wenfeng Feng, Guochao Jiang, Guofeng Quan, Guohua Liu, Yuewei Zhang
+  - Type: `method` · Date: `2026`
+  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
+  - Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, reward/advantage, regularization.
+- **[Explore Data Left Behind in Reinforcement Learning for Reasoning Language Models](https://arxiv.org/abs/2511.04800)** — arXiv `2511.04800`
+  - Authors: Chenxi Liu, Junjie Liang, Yuqi Jia, Bochuan Cao, Yang Bai, Heng Huang, Xun Chen
+  - Type: `method` · Date: `2025-11-06`
+  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
+  - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
+
+### Task Synthesis & Curriculum · 2 papers
+
+Methods that generate and sequence tasks across difficulty levels, with adaptive progression, task diversity, and learnability as the main curriculum concerns.
+
+- **[Scaling Synthetic Task Generation for Agents via Exploration](https://iclr.cc/virtual/2026/poster/10007463)** — **ICLR 2026**
+  - Authors: Ram Ramrakhya, Andrew Szot, Omar Attia, Bogdan Mazoure, Anh Nguyen, Yuhao Yang, Zhe Gan, Harsh Agrawal et al.
+  - Type: `method` · Date: `2026`
+  - ![phase: data-generation](https://img.shields.io/badge/phase-data--generation-5F8F8B?style=flat-square) ![mechanism: curriculum/task-generation](https://img.shields.io/badge/mechanism-curriculum%2Ftask--generation-A08B5F?style=flat-square) ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
+  - Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity, coverage.
+- **[DIVE: Scaling Diversity in Agentic Task Synthesis for Generalizable Tool Use](https://icml.cc/virtual/2026/poster/66305)** — **ICML 2026**
+  - Authors: Aili Chen, Chi Zhang, Junteng Liu, Jiangjie Chen, Chengyu Du, Yunji Li, Ming Zhong, Qin Wang et al.
+  - Type: `method` · Date: `2026`
+  - ![phase: data-generation](https://img.shields.io/badge/phase-data--generation-5F8F8B?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
+  - Officially accepted at ICML 2026. Exploration focus: semantic-diversity, coverage.
+
+### Entropy & Distribution Control · 43 papers
 
 Work that analyzes or controls policy entropy and token probabilities during RL, aiming to preserve useful distributional support while preventing premature collapse.
 
@@ -371,6 +441,11 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - Type: `method` · Date: `2026-02-03`
   - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - Exploration focus: entropy/probability, reward/advantage, gradient-reshaping.
+- **[Understanding and Preventing Entropy Collapse in RLVR with On-Policy Entropy Flow Optimization](https://aclanthology.org/2026.findings-acl.879/)** — **ACL 2026 Findings**
+  - Authors: Huimin Xu, Shuai Zhao, Xiaobao Wu, Anh Tuan Luu
+  - Type: `method` · Date: `2026`
+  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
+  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, reward/advantage, regularization.
 - **[Targeted Exploration via Unified Entropy Control for Reinforcement Learning](https://aclanthology.org/2026.findings-acl.828/)** — **ACL 2026 Findings**
   - Authors: Chen Wang, Lai Wei, Yanzhi Zhang, Chenyang Shao, Zedong Dan, Weiran Huang, Ge Lan, Yue Wang
   - Type: `method` · Date: `2026`
@@ -626,7 +701,7 @@ Methods that reshape rewards, advantages, or gradients so exploratory behavior r
   - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - Exploration focus: reward/advantage, sampling/decoding, regularization.
 
-### Reward & Rollout Shaping · 8 papers
+### Reward & Rollout Shaping · 9 papers
 
 Methods that alter rollout collection, reward shaping, intrinsic bonuses, or resampling to elicit more varied and informative training trajectories.
 
@@ -655,6 +730,11 @@ Methods that alter rollout collection, reward shaping, intrinsic bonuses, or res
   - Type: `method` · Date: `2026`
   - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square)
   - Officially accepted at ICML 2026. Exploration focus: entropy/probability, reward/advantage, regularization.
+- **[DeepSearch: Overcome the Bottleneck of Reinforcement Learning with Verifiable Rewards via Tree-based Search](https://iclr.cc/virtual/2026/poster/10010078)** — **ICLR 2026**
+  - Authors: Fang Wu, Weihao Xuan, Heli Qi, Aaron Tu, Ximing Lu, Li Li, Yejin Choi
+  - Type: `method` · Date: `2026`
+  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: coverage](https://img.shields.io/badge/signal-coverage-78935F?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square)
+  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, coverage, reward/advantage.
 - **[Count Counts: Motivating Exploration in LLM Reasoning with Count-based Intrinsic Rewards](https://iclr.cc/virtual/2026/poster/10011073)** — **ICLR 2026**
   - Authors: Xuan Zhang, Ruixiao Li, Zhijian Zhou, Long Li, Yulei Qin, Ke Li, Xing Sun, Xiaoyu Tan et al.
   - Type: `method` · Date: `2026`
@@ -671,9 +751,69 @@ Methods that alter rollout collection, reward shaping, intrinsic bonuses, or res
   - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square)
   - Exploration focus: structured-search.
 
-### Capability Boundaries & Training Dynamics · 43 papers
+### Replay, Population & Self-Improvement · 11 papers
 
-Work that studies how RL training expands, redistributes, or erodes model capabilities, focusing on generalization boundaries, stability, and genuine capability growth.
+Learning systems that use replay, self-play, co-evolution, ensembles, or policy populations to retain useful experience and expand behavioral coverage across updates.
+
+- **[R-Diverse: Mitigating Diversity Illusion in Self-Play LLM Training](https://icml.cc/virtual/2026/poster/65447)** — **ICML 2026**
+  - Authors: Gengsheng Li, Jinghan He, Shijie Wang, Dan Zhang, Ruiqi Liu, Renrui Zhang, Zijun Yao, Junfeng Fang et al.
+  - Type: `method` · Date: `2026`
+  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: self-play/co-evolution](https://img.shields.io/badge/mechanism-self--play%2Fco--evolution-A36F8A?style=flat-square)
+  - Officially accepted at ICML 2026. Exploration focus: semantic-diversity, replay/memory, self-play/co-evolution.
+- **[Experience is the Best Teacher: Motivating Effective Exploration in Reinforcement Learning for LLMs](https://icml.cc/virtual/2026/poster/65561)** — **ICML 2026**
+  - Authors: Wenjian Zhang, Kongcheng Zhang, Jiaxin Qi, Baisheng Lai, Jianqiang Huang
+  - Type: `method` · Date: `2026`
+  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
+  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, reward/advantage, noise/perturbation.
+- **[CoVerRL: Breaking the Consensus Trap in Label-Free Reasoning via Generator-Verifier Co-Evolution](https://aclanthology.org/2026.acl-long.1376/)** — **ACL 2026 Main**
+  - Authors: Teng Pan, Yuchen Yan, Zixuan Wang, Ruiqing Zhang, Guiyang Hou, Wenqi Zhang, Weiming Lu, Jun Xiao et al.
+  - Type: `method` · Date: `2026`
+  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: disagreement](https://img.shields.io/badge/signal-disagreement-8B7A9C?style=flat-square) ![mechanism: self-play/co-evolution](https://img.shields.io/badge/mechanism-self--play%2Fco--evolution-A36F8A?style=flat-square)
+  - Officially accepted at ACL 2026 Main. Exploration focus: semantic-diversity, reward/advantage, disagreement.
+- **[RLEP: Reinforcement Learning with Experience Replay for LLM Reasoning](https://arxiv.org/abs/2507.07451)** — arXiv `2507.07451`
+  - Authors: Hongzhi Zhang, Jia Fu, Jingyuan Zhang, Kai Fu, Qi Wang, Fuzheng Zhang, Guorui Zhou
+  - Type: `method` · Date: `2025-07-10`
+  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
+  - Exploration focus: replay/memory, structured-search.
+- **[EFRame: Deeper Reasoning via Exploration-Filter-Replay Reinforcement Learning Framework](https://arxiv.org/abs/2506.22200)** — arXiv `2506.22200`
+  - Authors: Chen Wang, Lai Wei, Yanzhi Zhang, Chenyang Shao, Zedong Dan, Weiran Huang, Yuzhi Zhang, Yue Wang
+  - Type: `method` · Date: `2025-06-27`
+  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
+  - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
+- **[Improving RL Exploration for LLM Reasoning through Retrospective Replay](https://arxiv.org/abs/2504.14363)** — arXiv `2504.14363`
+  - Authors: Shihan Dou, Muling Wu, Jingwen Xu, Rui Zheng, Tao Gui, Qi Zhang, Xuanjing Huang
+  - Type: `method` · Date: `2025-04-19`
+  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: backtracking/resampling](https://img.shields.io/badge/mechanism-backtracking%2Fresampling-8E759D?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
+  - Exploration focus: novelty/curiosity, gradient-reshaping, backtracking/resampling.
+- **[LaRes: Evolutionary Reinforcement Learning with LLM-based Adaptive Reward Search](https://neurips.cc/virtual/2025/poster/116462)** — NeurIPS 2025
+  - Authors: Pengyi Li, Hongyao Tang, Jinbin Qiao, Yan Zheng, Jianye Hao
+  - Type: `method` · Date: `2025`
+  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: ensemble/population](https://img.shields.io/badge/mechanism-ensemble%2Fpopulation-8774A5?style=flat-square)
+  - Explores reward-function populations with LLM-guided evolution, Thompson sampling, and shared off-policy experience.
+- **[Sample-Efficient Quality-Diversity by Cooperative Coevolution](https://openreview.net/forum?id=JDud6zbpFv)** — ICLR 2024
+  - Authors: Ke Xue, Ren-Jian Wang, Pengyi Li, Dong Li, Jianye Hao, Chao Qian
+  - Type: `method` · Date: `2024`
+  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: self-play/co-evolution](https://img.shields.io/badge/mechanism-self--play%2Fco--evolution-A36F8A?style=flat-square)
+  - Uses cooperative coevolution to improve the sample efficiency of quality-diversity exploration over policy populations.
+- **[WToE: Learning When to Explore in Multiagent Reinforcement Learning](https://doi.org/10.1109/TCYB.2023.3328732)** — IEEE Transactions on Cybernetics
+  - Authors: Shaokang Dong, Hangyu Mao, Shangdong Yang, Shengyu Zhu, Wenbin Li, Jianye Hao, Yang Gao
+  - Type: `method` · Date: `2023-11-21`
+  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square) ![mechanism: noise/perturbation](https://img.shields.io/badge/mechanism-noise%2Fperturbation-8176A8?style=flat-square)
+  - Triggers variational exploration when inferred short-term policies diverge from current actors in nonstationary multiagent environments.
+- **[Promoting Quality and Diversity in Population-based Reinforcement Learning via Hierarchical Trajectory Space Exploration](https://doi.org/10.1109/ICRA46639.2022.9811888)** — ICRA 2022
+  - Authors: Jiayu Miao, Tianze Zhou, Kun Shao, Ming Zhou, Weinan Zhang, Jianye Hao, Yong Yu, Jun Wang
+  - Type: `method` · Date: `2022-05-23`
+  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: ensemble/population](https://img.shields.io/badge/mechanism-ensemble%2Fpopulation-8774A5?style=flat-square)
+  - Selects and mutates policy populations in a learned hierarchical trajectory space to jointly improve quality and diversity.
+- **[Generating Behavior-Diverse Game AIs with Evolutionary Multi-Objective Deep Reinforcement Learning](https://doi.org/10.24963/ijcai.2020/466)** — IJCAI 2020
+  - Authors: Ruimin Shen, Yan Zheng, Jianye Hao, Zhaopeng Meng, Yingfeng Chen, Changjie Fan, Yang Liu
+  - Type: `method` · Date: `2020-07-01`
+  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: ensemble/population](https://img.shields.io/badge/mechanism-ensemble%2Fpopulation-8774A5?style=flat-square)
+  - Evolves a population of deep-RL game policies against multiple objectives to cover distinct behavioral styles.
+
+### Capability Expansion & Training Interventions · 43 papers
+
+Training interventions designed to expand or stabilize model capabilities, focusing on generalization boundaries and genuine capability growth rather than evidence-only analysis.
 
 - **[Exploration-Driven Optimization for Test-Time Large Language Model Reasoning](https://arxiv.org/abs/2605.09853)** — arXiv `2605.09853`
   - Authors: Changhao Li, Yuchen Zhuang, Chenxiao Gao, Haotian Sun, Rushi Qiang, Chao Zhang, Bo Dai
@@ -892,85 +1032,13 @@ Work that studies how RL training expands, redistributes, or erodes model capabi
   - Exploration focus: semantic-diversity, sampling/decoding, structured-search.
 
 
-## 3. Data, Task & Curriculum Exploration
+## 3. Agentic & Environment Exploration
 
-This category covers exploration over the learning material itself: which data to generate or select, which tasks to attempt, how to vary difficulty, and how to construct a curriculum. Rather than changing only a model's next-token or policy distribution, these methods expand or prioritize the problem space from which learning signals are drawn.
+This category covers language agents that explore an external or persistent environment: webpages, tools, GUIs, knowledge graphs, games, embodied worlds, or multi-agent settings. The explored object is usually a trajectory of states, actions, observations, tool calls, and accumulated experience.
 
-It includes active data selection, synthetic task generation, adaptive curricula, and exploration-aware training-set construction. A paper belongs here when deciding what to learn from is its central exploration mechanism.
+These papers focus on partial observability, long horizons, replanning, recovery, environment coverage, and memory-guided interaction. Self-improvement and memory remain tags or subtopics here when they support an agent's external exploration loop rather than define a separate research context.
 
-### Data Selection & Prompt Exploration · 6 papers
-
-Methods that select, prioritize, or prompt candidate training examples, using informativeness, uncertainty, and coverage to decide which data is most valuable next.
-
-- **[Think Earlier, Not Longer: Prompt Optimization via Reducing Unhealthy Exploration](https://aclanthology.org/2026.findings-acl.817/)** — **ACL 2026 Findings**
-  - Authors: Ling-I Wu, Minyu Chen, Jingyang Li, Xi Chang, Guoqiang Li
-  - Type: `method` · Date: `2026`
-  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: data/task](https://img.shields.io/badge/level-data%2Ftask-9A7F9C?style=flat-square)
-  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, sampling/decoding.
-- **[String Seed of Thought: Prompting LLMs for Distribution-Faithful and Diverse Generation](https://iclr.cc/virtual/2026/poster/10007633)** — **ICLR 2026**
-  - Authors: Kou Misaki, Takuya Akiba
-  - Type: `method` · Date: `2026`
-  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
-  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
-- **[No Prompt Left Behind: Exploiting Zero-Variance Prompts in LLM Reinforcement Learning via Entropy-Guided Advantage Shaping](https://iclr.cc/virtual/2026/poster/10007755)** — **ICLR 2026**
-  - Authors: Thanh-Long V. Le, Myeongho Jeon, Kim Vu, Viet Lai, Eunho Yang
-  - Type: `method` · Date: `2026`
-  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
-  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, reward/advantage.
-- **[Dynamic Sampling that Adapts: Self-Aware Iterative Data Persistent Optimization for Mathematical Reasoning](https://aclanthology.org/2026.findings-acl.1412/)** — **ACL 2026 Findings**
-  - Authors: Jun Rao, Xuebo Liu, Hexuan Deng, Zepeng Lin, Zixiong Yu, Jiansheng Wei, Xiaojun Meng, Min Zhang
-  - Type: `method` · Date: `2026`
-  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
-  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, novelty/curiosity, sampling/decoding.
-- **[Beyond Templates: Dynamic Adaptation of Reasoning Demonstrations via Feasibility-Aware Exploration](https://aclanthology.org/2026.findings-acl.327/)** — **ACL 2026 Findings**
-  - Authors: Yong Wu, Weihang Pan, Ke Li, Chen Binhui, Ping Li, Binbin Lin
-  - Type: `method` · Date: `2026`
-  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: data/task](https://img.shields.io/badge/level-data%2Ftask-9A7F9C?style=flat-square)
-  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
-- **[Explore Data Left Behind in Reinforcement Learning for Reasoning Language Models](https://arxiv.org/abs/2511.04800)** — arXiv `2511.04800`
-  - Authors: Chenxi Liu, Junjie Liang, Yuqi Jia, Bochuan Cao, Yang Bai, Heng Huang, Xun Chen
-  - Type: `method` · Date: `2025-11-06`
-  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
-  - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
-
-### Agent Task & Environment Generation · 5 papers
-
-Methods that create interactive tasks or environments for agents, emphasizing realism, behavioral coverage, controllable difficulty, and useful feedback.
-
-- **[Scaling Synthetic Task Generation for Agents via Exploration](https://iclr.cc/virtual/2026/poster/10007463)** — **ICLR 2026**
-  - Authors: Ram Ramrakhya, Andrew Szot, Omar Attia, Bogdan Mazoure, Anh Nguyen, Yuhao Yang, Zhe Gan, Harsh Agrawal et al.
-  - Type: `method` · Date: `2026`
-  - ![phase: data-generation](https://img.shields.io/badge/phase-data--generation-5F8F8B?style=flat-square) ![mechanism: curriculum/task-generation](https://img.shields.io/badge/mechanism-curriculum%2Ftask--generation-A08B5F?style=flat-square) ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
-  - Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity, coverage.
-- **[SQLAgent: Learning to Explore Before Generating as a Data Engineer](https://aclanthology.org/2026.findings-acl.1959/)** — **ACL 2026 Findings**
-  - Authors: Wenjia Jiang, Yiwei Wang, Boyan Han, Joey Tianyi Zhou, Chi Zhang
-  - Type: `method` · Date: `2026`
-  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
-  - Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, tree-search/branching.
-- **[DIVE: Scaling Diversity in Agentic Task Synthesis for Generalizable Tool Use](https://icml.cc/virtual/2026/poster/66305)** — **ICML 2026**
-  - Authors: Aili Chen, Chi Zhang, Junteng Liu, Jiangjie Chen, Chengyu Du, Yunji Li, Ming Zhong, Qin Wang et al.
-  - Type: `method` · Date: `2026`
-  - ![phase: data-generation](https://img.shields.io/badge/phase-data--generation-5F8F8B?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
-  - Officially accepted at ICML 2026. Exploration focus: semantic-diversity, coverage.
-- **[Beyond Stochastic Exploration: What Makes Training Data Valuable for Agentic Search](https://aclanthology.org/2026.findings-acl.160/)** — **ACL 2026 Findings**
-  - Authors: Chuzhan Hao, Wenfeng Feng, Guochao Jiang, Guofeng Quan, Guohua Liu, Yuewei Zhang
-  - Type: `method` · Date: `2026`
-  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
-  - Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, reward/advantage, regularization.
-- **[EmbodiedScene: Towards Automated Generation of Diverse and Realistic Scenes for Embodied AI](https://embodiedscene1.github.io/embodied.scene/)** — ICML 2025
-  - Authors: Jinbin Qiao, Pengyi Li, Peilong Han, Yan Zheng, Jianye Hao
-  - Type: `method` · Date: `2025`
-  - ![phase: data-generation](https://img.shields.io/badge/phase-data--generation-5F8F8B?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: curriculum/task-generation](https://img.shields.io/badge/mechanism-curriculum%2Ftask--generation-A08B5F?style=flat-square)
-  - Combines LLM scene planning, evolutionary diversification, and VLM critique to expand realistic embodied training environments.
-
-
-## 4. Agentic & Environment Exploration
-
-This category covers language agents that explore an external or persistent environment: webpages, tools, GUIs, knowledge graphs, games, embodied worlds, or multi-agent settings. The object of exploration is usually a trajectory of states, actions, observations, and tool calls rather than a single textual response.
-
-These papers focus on challenges such as partial observability, long horizons, recovery from failed actions, memory, environment coverage, and interactive search. A paper belongs here when external interaction is central to the exploration problem and evaluation.
-
-### Web, Tools & GUI · 5 papers
+### Web, Tools & GUI · 9 papers
 
 Agents that explore websites, tools, and graphical interfaces, where action grounding, partial observability, tool choice, and recovery from failed interactions are central.
 
@@ -979,28 +1047,48 @@ Agents that explore websites, tools, and graphical interfaces, where action grou
   - Type: `method` · Date: `2026`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - Officially accepted at ICML 2026. Exploration focus: uncertainty/confidence, novelty/curiosity, reward/advantage.
+- **[WIST: Web-Grounded Iterative Self-Play Tree for Domain-Targeted Reasoning Improvement](https://aclanthology.org/2026.acl-long.1456/)** — **ACL 2026 Main**
+  - Authors: Fangyuan Li, Pengfei Li, Shijie Wang, Junqi Gao, Jianxing Liu, Biqing Qi, Yuqiang Li
+  - Type: `method` · Date: `2026`
+  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: self-play/co-evolution](https://img.shields.io/badge/mechanism-self--play%2Fco--evolution-A36F8A?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
+  - Officially accepted at ACL 2026 Main. Exploration focus: reward/advantage, curriculum/task-generation, self-play/co-evolution.
 - **[T$^2$PO: Uncertainty-Guided Exploration Control for Stable Multi-Turn Agentic Reinforcement Learning](https://icml.cc/virtual/2026/poster/63090)** — **ICML 2026**
   - Authors: Haixin Wang, Hejie Cui, Chenwei Zhang, Jiahui Gao, Shuowei Jin, Shijie Geng, Xinyang Zhang, Nasser Zalmout et al.
   - Type: `method` · Date: `2026`
   - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - Officially accepted at ICML 2026. Exploration focus: uncertainty/confidence, semantic-diversity, gradient-reshaping.
+- **[SEAgent: Self-Evolving Computer Use Agent with Autonomous Learning from Experience](https://icml.cc/virtual/2026/poster/65711)** — **ICML 2026**
+  - Authors: ZEYI SUN, Ziyu Liu, Yuhang Zang, Yuhang Cao, Xiaoyi Dong, Tong Wu, Dahua Lin, Jiaqi Wang
+  - Type: `method` · Date: `2026`
+  - ![phase: continual/self-improvement](https://img.shields.io/badge/phase-continual%2Fself--improvement-789B8A?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
+  - Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, semantic-diversity, gradient-reshaping.
 - **[Go-Browse: Training Web Agents with Structured Exploration](https://iclr.cc/virtual/2026/poster/10010264)** — **ICLR 2026**
   - Authors: Apurva Gandhi, Graham Neubig
   - Type: `method` · Date: `2026`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
   - Officially accepted at ICLR 2026. Exploration focus: uncertainty/confidence, semantic-diversity, structured-search.
+- **[Empowering GUI Agents via Autonomous Experience Exploration and Hindsight Experience Utilization for Task Planning](https://aclanthology.org/2026.acl-long.1670/)** — **ACL 2026 Main**
+  - Authors: Tianyi Men, Zhuoran Jin, Pengfei Cao, Yubo Chen, Kang Liu, Jun Zhao
+  - Type: `method` · Date: `2026`
+  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
+  - Officially accepted at ACL 2026 Main. Exploration focus: replay/memory.
 - **[DreamPhase: Offline Imagination and Uncertainty-Guided Planning for Large-Language-Model Agents](https://iclr.cc/virtual/2026/poster/10011238)** — **ICLR 2026**
   - Authors: Shayan Mohajer Hamidi, Linfeng Ye, Konstantinos Plataniotis
   - Type: `method` · Date: `2026`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
   - Officially accepted at ICLR 2026. Exploration focus: uncertainty/confidence, reward/advantage, tree-search/branching.
+- **[Branch-and-Browse: Efficient and Controllable Web Exploration with Tree-Structured Reasoning and Action Memory](https://aclanthology.org/2026.acl-long.838/)** — **ACL 2026 Main**
+  - Authors: Shiqi He, Yue Cui, Xinyu Ma, Yaliang Li, Bolin Ding, Mosharaf Chowdhury
+  - Type: `method` · Date: `2026`
+  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
+  - Officially accepted at ACL 2026 Main. Exploration focus: tree-search/branching, backtracking/resampling, replay/memory.
 - **[Automatic Web Testing Using Curiosity-Driven Reinforcement Learning](https://doi.org/10.1109/ICSE43902.2021.00048)** — ICSE 2021
   - Authors: Yan Zheng, Yi Liu, Xiaofei Xie, Yepang Liu, Lei Ma, Jianye Hao, Yang Liu
   - Type: `method` · Date: `2021-05-01`
   - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square)
   - Uses curiosity rewards and an incrementally learned automaton to explore long web-interaction sequences for testing.
 
-### Planning & Interactive Search · 16 papers
+### Planning & Interactive Search · 22 papers
 
 Agents that search over multi-step action plans while interacting with an environment, focusing on long-horizon feedback, replanning, and efficient state-space coverage.
 
@@ -1024,6 +1112,21 @@ Agents that search over multi-step action plans while interacting with an enviro
   - Type: `method` · Date: `2026`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
   - Officially accepted at ICLR 2026. Exploration focus: sampling/decoding.
+- **[Search Self-Play: Pushing the Frontier of Agent Capability without Supervision](https://iclr.cc/virtual/2026/poster/10008777)** — **ICLR 2026**
+  - Authors: Hongliang Lu, Yuhang Wen, Pengyu Cheng, Ruijin Ding, Jiaqi Guo, Haotian Xu, Chutian Wang, Haonan Chen et al.
+  - Type: `method` · Date: `2026`
+  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: self-play/co-evolution](https://img.shields.io/badge/mechanism-self--play%2Fco--evolution-A36F8A?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
+  - Officially accepted at ICLR 2026. Exploration focus: reward/advantage, self-play/co-evolution, structured-search.
+- **[SQLAgent: Learning to Explore Before Generating as a Data Engineer](https://aclanthology.org/2026.findings-acl.1959/)** — **ACL 2026 Findings**
+  - Authors: Wenjia Jiang, Yiwei Wang, Boyan Han, Joey Tianyi Zhou, Chi Zhang
+  - Type: `method` · Date: `2026`
+  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
+  - Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, tree-search/branching.
+- **[Reinforcement Learning for Self-Improving Agent with Skill Library](https://aclanthology.org/2026.acl-long.69/)** — **ACL 2026 Main**
+  - Authors: Jiongxiao Wang, Qiaojing Yan, Yawei Wang, Yijun Tian, Soumya Smruti Mishra, Zhichao Xu, Megha Gandhi, Panpan Xu et al.
+  - Type: `method` · Date: `2026`
+  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
+  - Officially accepted at ACL 2026 Main. Exploration focus: novelty/curiosity, reward/advantage, replay/memory.
 - **[RE-TRAC: REcursive TRAjectory Compression for Deep Search Agents](https://icml.cc/virtual/2026/poster/60790)** — **ICML 2026**
   - Authors: jialiang zhu, Gongrui Zhang, Xiaolong Ma, Lin Xu, Miaosen Zhang, Ruiqi Yang, Song Wang, Kai Qiu et al.
   - Type: `method` · Date: `2026`
@@ -1079,13 +1182,28 @@ Agents that search over multi-step action plans while interacting with an enviro
   - Type: `method` · Date: `2025-09-26`
   - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![mechanism: regularization](https://img.shields.io/badge/mechanism-regularization-737FB0?style=flat-square)
   - Exploration focus: entropy/probability, reward/advantage, regularization.
+- **[AgentSwift: Efficient LLM Agent Design via Value-guided Hierarchical Search](https://arxiv.org/abs/2506.06017)** — arXiv `2506.06017`
+  - Authors: Yu Li, Lehui Li, Zhihao Wu, Qingmin Liao, Jianye Hao, Kun Shao, Fengli Xu
+  - Type: `method` · Date: `2025-06-06`
+  - ![phase: continual/self-improvement](https://img.shields.io/badge/phase-continual%2Fself--improvement-789B8A?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
+  - Uses value-guided hierarchical search to explore a joint space of agent workflows, memory, planning, and tool components.
 - **[Enhancing Diversity in Parallel Agents: A Maximum State Entropy Exploration Story](https://arxiv.org/abs/2505.01336)** — arXiv `2505.01336`
   - Authors: Vincenzo De Paola, Riccardo Zamboni, Mirco Mutti, Marcello Restelli
   - Type: `method` · Date: `2025-05-02`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
+- **[Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models](https://proceedings.mlr.press/v235/zhou24r.html)** — ICML 2024
+  - Authors: Andy Zhou, Kai Yan, Michal Shlapentokh-Rothman, Haohan Wang, Yu-Xiong Wang
+  - Type: `method` · Date: `2024`
+  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square)
+  - Unified environment feedback, reflection, and Monte Carlo tree search for language agents.
+- **[Reflexion: Language Agents with Verbal Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html)** — NeurIPS 2023
+  - Authors: Noah Shinn, Federico Cassano, Ashwin Gopinath, Karthik Narasimhan, Shunyu Yao
+  - Type: `method` · Date: `2023`
+  - ![phase: test-time-adaptation](https://img.shields.io/badge/phase-test--time--adaptation-7E8DBD?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square)
+  - Introduced verbal feedback and episodic memory for learning from agent trial and error.
 
-### Embodied & Simulated Environments · 6 papers
+### Embodied & Simulated Environments · 8 papers
 
 Agents that explore physical or simulated worlds, with spatial reasoning, world-model learning, action consequences, and sample-efficient coverage as key issues.
 
@@ -1094,11 +1212,21 @@ Agents that explore physical or simulated worlds, with spatial reasoning, world-
   - Type: `method` · Date: `2026`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
   - Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, reward/advantage, replay/memory.
+- **[EmbodiedScene: Towards Automated Generation of Diverse and Realistic Scenes for Embodied AI](https://embodiedscene1.github.io/embodied.scene/)** — ICML 2025
+  - Authors: Jinbin Qiao, Pengyi Li, Peilong Han, Yan Zheng, Jianye Hao
+  - Type: `method` · Date: `2025`
+  - ![phase: data-generation](https://img.shields.io/badge/phase-data--generation-5F8F8B?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: curriculum/task-generation](https://img.shields.io/badge/mechanism-curriculum%2Ftask--generation-A08B5F?style=flat-square)
+  - Combines LLM scene planning, evolutionary diversification, and VLM critique to expand realistic embodied training environments.
 - **[OVD-Explorer: Optimism Should Not Be the Sole Pursuit of Exploration in Noisy Environments](https://doi.org/10.1609/aaai.v38i12.29303)** — AAAI 2024
   - Authors: Jinyi Liu, Zhi Wang, Yan Zheng, Jianye Hao, Chenjia Bai, Junjie Ye, Zhen Wang, Haiyin Piao et al.
   - Type: `method` · Date: `2024-03-24`
   - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square) ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square)
   - Introduces noise-aware optimistic exploration that avoids repeatedly probing stochastic but uninformative regions.
+- **[Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291)** — arXiv `2305.16291`
+  - Authors: Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan, Anima Anandkumar
+  - Type: `method` · Date: `2024`
+  - ![phase: continual/self-improvement](https://img.shields.io/badge/phase-continual%2Fself--improvement-789B8A?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![mechanism: curriculum/task-generation](https://img.shields.io/badge/mechanism-curriculum%2Ftask--generation-A08B5F?style=flat-square)
+  - A foundational open-ended agent combining automatic curriculum, skill discovery, and lifelong memory.
 - **[ReAct: Synergizing Reasoning and Acting in Language Models](https://openreview.net/forum?id=WE_vluYUL-X)** — ICLR 2023
   - Authors: Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, Yuan Cao
   - Type: `method` · Date: `2023`
@@ -1120,144 +1248,20 @@ Agents that explore physical or simulated worlds, with spatial reasoning, world-
   - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: coverage](https://img.shields.io/badge/signal-coverage-78935F?style=flat-square) ![mechanism: ensemble/population](https://img.shields.io/badge/mechanism-ensemble%2Fpopulation-8774A5?style=flat-square)
   - Balances game-winning progress with evolutionary exploration of the game-state space to expose difficult bugs.
 
+### Knowledge & Memory-Guided Exploration · 7 papers
 
-## 5. Self-Improvement & Population Exploration
+Agents that traverse knowledge graphs or use accumulated memory to guide future actions, emphasizing relation-aware search, timely recall, and experience-grounded planning.
 
-This category covers exploration that emerges from repeated improvement loops or from interaction among multiple policies. Examples include self-play, co-evolution, ensembles, multi-agent collaboration, and generate–evaluate–train cycles that deliberately preserve diverse attempts.
-
-The key question is how a system can discover capabilities beyond a single fixed policy by using its own history, peer policies, or iterative feedback. Papers belong here when the population or self-improvement loop—not merely one rollout—is the main exploration unit.
-
-### Self-Play & Co-Evolution · 7 papers
-
-Systems in which policies or agents generate challenges for one another, using competitive or cooperative pressure to build an adaptive curriculum while maintaining diversity and stability.
-
-- **[WIST: Web-Grounded Iterative Self-Play Tree for Domain-Targeted Reasoning Improvement](https://aclanthology.org/2026.acl-long.1456/)** — **ACL 2026 Main**
-  - Authors: Fangyuan Li, Pengfei Li, Shijie Wang, Junqi Gao, Jianxing Liu, Biqing Qi, Yuqiang Li
+- **[Explore-on-Graph: Incentivizing Autonomous Exploration of Large Language Models on Knowledge Graphs with Path-refined Reward Modeling](https://iclr.cc/virtual/2026/poster/10009840)** — **ICLR 2026**
+  - Authors: Shiqi Yan, Yubo Chen, Ruiqi Zhou, Zhengxi Yao, Shuai Chen, Tianyi Zhang, Shijie Zhang, Wei-Qiang Zhang et al.
   - Type: `method` · Date: `2026`
-  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: self-play/co-evolution](https://img.shields.io/badge/mechanism-self--play%2Fco--evolution-A36F8A?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
-  - Officially accepted at ACL 2026 Main. Exploration focus: reward/advantage, curriculum/task-generation, self-play/co-evolution.
-- **[Towards Self-Evolving Agent Benchmarks : Validatable Agent Trajectory via Test-Time Exploration](https://iclr.cc/virtual/2026/poster/10011762)** — **ICLR 2026**
-  - Authors: Dadi Guo, Tianyi Zhou, Dongrui Liu, Chen Qian, Qihan Ren, Shuai Shao, Zhiyuan Fan, Yi R. Fung et al.
-  - Type: `benchmark` · Date: `2026`
-  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: self-play/co-evolution](https://img.shields.io/badge/mechanism-self--play%2Fco--evolution-A36F8A?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
-  - Officially accepted at ICLR 2026. Exploration focus: self-play/co-evolution.
-- **[Search Self-Play: Pushing the Frontier of Agent Capability without Supervision](https://iclr.cc/virtual/2026/poster/10008777)** — **ICLR 2026**
-  - Authors: Hongliang Lu, Yuhang Wen, Pengyu Cheng, Ruijin Ding, Jiaqi Guo, Haotian Xu, Chutian Wang, Haonan Chen et al.
-  - Type: `method` · Date: `2026`
-  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: self-play/co-evolution](https://img.shields.io/badge/mechanism-self--play%2Fco--evolution-A36F8A?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
-  - Officially accepted at ICLR 2026. Exploration focus: reward/advantage, self-play/co-evolution, structured-search.
-- **[SEAgent: Self-Evolving Computer Use Agent with Autonomous Learning from Experience](https://icml.cc/virtual/2026/poster/65711)** — **ICML 2026**
-  - Authors: ZEYI SUN, Ziyu Liu, Yuhang Zang, Yuhang Cao, Xiaoyi Dong, Tong Wu, Dahua Lin, Jiaqi Wang
-  - Type: `method` · Date: `2026`
-  - ![phase: continual/self-improvement](https://img.shields.io/badge/phase-continual%2Fself--improvement-789B8A?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
-  - Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, semantic-diversity, gradient-reshaping.
-- **[R-Diverse: Mitigating Diversity Illusion in Self-Play LLM Training](https://icml.cc/virtual/2026/poster/65447)** — **ICML 2026**
-  - Authors: Gengsheng Li, Jinghan He, Shijie Wang, Dan Zhang, Ruiqi Liu, Renrui Zhang, Zijun Yao, Junfeng Fang et al.
-  - Type: `method` · Date: `2026`
-  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: self-play/co-evolution](https://img.shields.io/badge/mechanism-self--play%2Fco--evolution-A36F8A?style=flat-square)
-  - Officially accepted at ICML 2026. Exploration focus: semantic-diversity, replay/memory, self-play/co-evolution.
-- **[CoVerRL: Breaking the Consensus Trap in Label-Free Reasoning via Generator-Verifier Co-Evolution](https://aclanthology.org/2026.acl-long.1376/)** — **ACL 2026 Main**
-  - Authors: Teng Pan, Yuchen Yan, Zixuan Wang, Ruiqing Zhang, Guiyang Hou, Wenqi Zhang, Weiming Lu, Jun Xiao et al.
-  - Type: `method` · Date: `2026`
-  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: disagreement](https://img.shields.io/badge/signal-disagreement-8B7A9C?style=flat-square) ![mechanism: self-play/co-evolution](https://img.shields.io/badge/mechanism-self--play%2Fco--evolution-A36F8A?style=flat-square)
-  - Officially accepted at ACL 2026 Main. Exploration focus: semantic-diversity, reward/advantage, disagreement.
-- **[Sample-Efficient Quality-Diversity by Cooperative Coevolution](https://openreview.net/forum?id=JDud6zbpFv)** — ICLR 2024
-  - Authors: Ke Xue, Ren-Jian Wang, Pengyi Li, Dong Li, Jianye Hao, Chao Qian
-  - Type: `method` · Date: `2024`
-  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: self-play/co-evolution](https://img.shields.io/badge/mechanism-self--play%2Fco--evolution-A36F8A?style=flat-square)
-  - Uses cooperative coevolution to improve the sample efficiency of quality-diversity exploration over policy populations.
-
-### Multi-Agent & Ensemble Exploration · 7 papers
-
-Systems that combine multiple agents or policies to expand behavioral coverage, with disagreement, specialization, coordination, and aggregation as the main design axes.
-
-- **[Multi-LLM Collaborative Search for Complex Problem Solving](https://aclanthology.org/2026.findings-acl.2115/)** — **ACL 2026 Findings**
-  - Authors: Sen Yang, Yafu Li, Wai Lam, Yu Cheng
-  - Type: `method` · Date: `2026`
-  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: ensemble/population](https://img.shields.io/badge/mechanism-ensemble%2Fpopulation-8774A5?style=flat-square) ![level: population/multi-policy](https://img.shields.io/badge/level-population%2Fmulti--policy-A07593?style=flat-square)
-  - Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, semantic-diversity, tree-search/branching.
-- **[LLM Inductive Reasoning Through Multi-Agent Enhanced Monte Carlo Tree Search](https://aclanthology.org/2026.findings-acl.1178/)** — **ACL 2026 Findings**
-  - Authors: Xiang Li, Yucheng Zhou, Xiangzhi Wei, Zesheng Shi, Haiyuan Wan, Gong Yifan, Fangming Liu, Jing Li
-  - Type: `method` · Date: `2026`
-  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
-  - Officially accepted at ACL 2026 Findings. Exploration focus: reward/advantage, tree-search/branching, backtracking/resampling.
-- **[LaRes: Evolutionary Reinforcement Learning with LLM-based Adaptive Reward Search](https://neurips.cc/virtual/2025/poster/116462)** — NeurIPS 2025
-  - Authors: Pengyi Li, Hongyao Tang, Jinbin Qiao, Yan Zheng, Jianye Hao
-  - Type: `method` · Date: `2025`
-  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: ensemble/population](https://img.shields.io/badge/mechanism-ensemble%2Fpopulation-8774A5?style=flat-square)
-  - Explores reward-function populations with LLM-guided evolution, Thompson sampling, and shared off-policy experience.
-- **[WToE: Learning When to Explore in Multiagent Reinforcement Learning](https://doi.org/10.1109/TCYB.2023.3328732)** — IEEE Transactions on Cybernetics
-  - Authors: Shaokang Dong, Hangyu Mao, Shangdong Yang, Shengyu Zhu, Wenbin Li, Jianye Hao, Yang Gao
-  - Type: `method` · Date: `2023-11-21`
-  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square) ![mechanism: noise/perturbation](https://img.shields.io/badge/mechanism-noise%2Fperturbation-8176A8?style=flat-square)
-  - Triggers variational exploration when inferred short-term policies diverge from current actors in nonstationary multiagent environments.
-- **[Self-Consistency Improves Chain of Thought Reasoning in Language Models](https://iclr.cc/virtual/2023/poster/11718)** — ICLR 2023
-  - Authors: Xuezhi Wang, Jason Wei, Dale Schuurmans, Quoc V. Le, Ed H. Chi, Sharan Narang, Aakanksha Chowdhery, Denny Zhou
-  - Type: `method` · Date: `2023`
-  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
-  - Foundational diverse-path sampling and answer aggregation for language-model reasoning.
-- **[Promoting Quality and Diversity in Population-based Reinforcement Learning via Hierarchical Trajectory Space Exploration](https://doi.org/10.1109/ICRA46639.2022.9811888)** — ICRA 2022
-  - Authors: Jiayu Miao, Tianze Zhou, Kun Shao, Ming Zhou, Weinan Zhang, Jianye Hao, Yong Yu, Jun Wang
-  - Type: `method` · Date: `2022-05-23`
-  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: ensemble/population](https://img.shields.io/badge/mechanism-ensemble%2Fpopulation-8774A5?style=flat-square)
-  - Selects and mutates policy populations in a learned hierarchical trajectory space to jointly improve quality and diversity.
-- **[Generating Behavior-Diverse Game AIs with Evolutionary Multi-Objective Deep Reinforcement Learning](https://doi.org/10.24963/ijcai.2020/466)** — IJCAI 2020
-  - Authors: Ruimin Shen, Yan Zheng, Jianye Hao, Zhaopeng Meng, Yingfeng Chen, Changjie Fan, Yang Liu
-  - Type: `method` · Date: `2020-07-01`
-  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: ensemble/population](https://img.shields.io/badge/mechanism-ensemble%2Fpopulation-8774A5?style=flat-square)
-  - Evolves a population of deep-RL game policies against multiple objectives to cover distinct behavioral styles.
-
-### Iterative Self-Improvement · 4 papers
-
-Systems that repeatedly generate, evaluate, and learn from their own outputs, focusing on retaining novelty and avoiding self-reinforcing errors or collapse across iterations.
-
-- **[Reinforcement Learning for Self-Improving Agent with Skill Library](https://aclanthology.org/2026.acl-long.69/)** — **ACL 2026 Main**
-  - Authors: Jiongxiao Wang, Qiaojing Yan, Yawei Wang, Yijun Tian, Soumya Smruti Mishra, Zhichao Xu, Megha Gandhi, Panpan Xu et al.
-  - Type: `method` · Date: `2026`
-  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
-  - Officially accepted at ACL 2026 Main. Exploration focus: novelty/curiosity, reward/advantage, replay/memory.
-- **[AgentSwift: Efficient LLM Agent Design via Value-guided Hierarchical Search](https://arxiv.org/abs/2506.06017)** — arXiv `2506.06017`
-  - Authors: Yu Li, Lehui Li, Zhihao Wu, Qingmin Liao, Jianye Hao, Kun Shao, Fengli Xu
-  - Type: `method` · Date: `2025-06-06`
-  - ![phase: continual/self-improvement](https://img.shields.io/badge/phase-continual%2Fself--improvement-789B8A?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
-  - Uses value-guided hierarchical search to explore a joint space of agent workflows, memory, planning, and tool components.
-- **[Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291)** — arXiv `2305.16291`
-  - Authors: Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan, Anima Anandkumar
-  - Type: `method` · Date: `2024`
-  - ![phase: continual/self-improvement](https://img.shields.io/badge/phase-continual%2Fself--improvement-789B8A?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![mechanism: curriculum/task-generation](https://img.shields.io/badge/mechanism-curriculum%2Ftask--generation-A08B5F?style=flat-square)
-  - A foundational open-ended agent combining automatic curriculum, skill discovery, and lifelong memory.
-- **[Reflexion: Language Agents with Verbal Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html)** — NeurIPS 2023
-  - Authors: Noah Shinn, Federico Cassano, Ashwin Gopinath, Karthik Narasimhan, Shunyu Yao
-  - Type: `method` · Date: `2023`
-  - ![phase: test-time-adaptation](https://img.shields.io/badge/phase-test--time--adaptation-7E8DBD?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square)
-  - Introduced verbal feedback and episodic memory for learning from agent trial and error.
-
-
-## 6. Memory & Knowledge Exploration
-
-This category covers exploration over information stored beyond the immediate prompt: retrieved documents, episodic traces, long-context memories, knowledge graphs, or internal memory representations. The focus is not simply whether a model has memory, but how it searches, selects, combines, writes, compresses, or updates memory to expand its effective search space.
-
-It includes memory-retrieval policies, memory writing and consolidation, forgetting, structured knowledge navigation, and memory-guided planning. A paper belongs here when actively exploring or managing knowledge is central to the method or evaluation.
-
-### Replay & Trajectory Memory · 11 papers
-
-Methods that store and revisit prior trajectories or experiences, emphasizing which memories to retain, replay, and credit for better long-horizon exploration.
-
+  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
+  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
 - **[Exploratory Memory-Augmented LLM Agent via Hybrid On- and Off-Policy Optimization](https://iclr.cc/virtual/2026/poster/10009229)** — **ICLR 2026**
   - Authors: Zeyuan Liu, Jeonghye Kim, Xufang Luo, Dongsheng Li, Yuqing Yang
   - Type: `method` · Date: `2026`
   - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
   - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, gradient-reshaping.
-- **[Experience is the Best Teacher: Motivating Effective Exploration in Reinforcement Learning for LLMs](https://icml.cc/virtual/2026/poster/65561)** — **ICML 2026**
-  - Authors: Wenjian Zhang, Kongcheng Zhang, Jiaxin Qi, Baisheng Lai, Jianqiang Huang
-  - Type: `method` · Date: `2026`
-  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
-  - Officially accepted at ICML 2026. Exploration focus: entropy/probability, reward/advantage, noise/perturbation.
-- **[Empowering GUI Agents via Autonomous Experience Exploration and Hindsight Experience Utilization for Task Planning](https://aclanthology.org/2026.acl-long.1670/)** — **ACL 2026 Main**
-  - Authors: Tianyi Men, Zhuoran Jin, Pengfei Cao, Yubo Chen, Kang Liu, Jun Zhao
-  - Type: `method` · Date: `2026`
-  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
-  - Officially accepted at ACL 2026 Main. Exploration focus: replay/memory.
 - **[Dyna-Mind: Learning to Simulate from Experience for Better AI Agents](https://iclr.cc/virtual/2026/poster/10010625)** — **ICLR 2026**
   - Authors: Xiao Yu, Baolin Peng, Michel Galley, Hao Cheng, Qianhui Wu, Janardhan Kulkarni, Suman Nath, Zhou Yu et al.
   - Type: `method` · Date: `2026`
@@ -1268,46 +1272,6 @@ Methods that store and revisit prior trajectories or experiences, emphasizing wh
   - Type: `method` · Date: `2026`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
   - Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, reward/advantage, replay/memory.
-- **[DeepSearch: Overcome the Bottleneck of Reinforcement Learning with Verifiable Rewards via Tree-based Search](https://iclr.cc/virtual/2026/poster/10010078)** — **ICLR 2026**
-  - Authors: Fang Wu, Weihao Xuan, Heli Qi, Aaron Tu, Ximing Lu, Li Li, Yejin Choi
-  - Type: `method` · Date: `2026`
-  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: coverage](https://img.shields.io/badge/signal-coverage-78935F?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square)
-  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, coverage, reward/advantage.
-- **[Branch-and-Browse: Efficient and Controllable Web Exploration with Tree-Structured Reasoning and Action Memory](https://aclanthology.org/2026.acl-long.838/)** — **ACL 2026 Main**
-  - Authors: Shiqi He, Yue Cui, Xinyu Ma, Yaliang Li, Bolin Ding, Mosharaf Chowdhury
-  - Type: `method` · Date: `2026`
-  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
-  - Officially accepted at ACL 2026 Main. Exploration focus: tree-search/branching, backtracking/resampling, replay/memory.
-- **[RLEP: Reinforcement Learning with Experience Replay for LLM Reasoning](https://arxiv.org/abs/2507.07451)** — arXiv `2507.07451`
-  - Authors: Hongzhi Zhang, Jia Fu, Jingyuan Zhang, Kai Fu, Qi Wang, Fuzheng Zhang, Guorui Zhou
-  - Type: `method` · Date: `2025-07-10`
-  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
-  - Exploration focus: replay/memory, structured-search.
-- **[EFRame: Deeper Reasoning via Exploration-Filter-Replay Reinforcement Learning Framework](https://arxiv.org/abs/2506.22200)** — arXiv `2506.22200`
-  - Authors: Chen Wang, Lai Wei, Yanzhi Zhang, Chenyang Shao, Zedong Dan, Weiran Huang, Yuzhi Zhang, Yue Wang
-  - Type: `method` · Date: `2025-06-27`
-  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
-  - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
-- **[Improving RL Exploration for LLM Reasoning through Retrospective Replay](https://arxiv.org/abs/2504.14363)** — arXiv `2504.14363`
-  - Authors: Shihan Dou, Muling Wu, Jingwen Xu, Rui Zheng, Tao Gui, Qi Zhang, Xuanjing Huang
-  - Type: `method` · Date: `2025-04-19`
-  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: backtracking/resampling](https://img.shields.io/badge/mechanism-backtracking%2Fresampling-8E759D?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
-  - Exploration focus: novelty/curiosity, gradient-reshaping, backtracking/resampling.
-- **[Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models](https://proceedings.mlr.press/v235/zhou24r.html)** — ICML 2024
-  - Authors: Andy Zhou, Kai Yan, Michal Shlapentokh-Rothman, Haohan Wang, Yu-Xiong Wang
-  - Type: `method` · Date: `2024`
-  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square)
-  - Unified environment feedback, reflection, and Monte Carlo tree search for language agents.
-
-### Knowledge-Graph Memory · 4 papers
-
-Methods that traverse or update structured knowledge and memory graphs, focusing on relation-aware search, multi-hop coverage, and reliable knowledge integration.
-
-- **[Explore-on-Graph: Incentivizing Autonomous Exploration of Large Language Models on Knowledge Graphs with Path-refined Reward Modeling](https://iclr.cc/virtual/2026/poster/10009840)** — **ICLR 2026**
-  - Authors: Shiqi Yan, Yubo Chen, Ruiqi Zhou, Zhengxi Yao, Shuai Chen, Tianyi Zhang, Shijie Zhang, Wei-Qiang Zhang et al.
-  - Type: `method` · Date: `2026`
-  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
-  - Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
 - **[Chain-of-Relations: Faithful and Efficient LLM Reasoning over Knowledge Graphs via Relation-Centric Exploration](https://aclanthology.org/2026.findings-acl.2138/)** — **ACL 2026 Findings**
   - Authors: Chenhui Liu, Jianpeng Zhou, Jiahai Wang
   - Type: `method` · Date: `2026`
@@ -1325,13 +1289,13 @@ Methods that traverse or update structured knowledge and memory graphs, focusing
   - Officially accepted at ACL 2026 Main. Exploration focus: coverage, structured-search.
 
 
-## 7. Understanding, Evaluation & Benchmarks
+## 4. Understanding, Evaluation & Benchmarks
 
 This category collects empirical analyses, theoretical accounts, surveys, metrics, and benchmarks that help the field understand exploration. Rather than primarily proposing a new exploration intervention, these works measure diversity, characterize training dynamics, evaluate capability boundaries, or establish a shared vocabulary and test bed.
 
 They are essential for judging whether a method genuinely improves exploration instead of merely changing accuracy or sampling behavior. Keeping them separate makes the evidence about a phenomenon easy to distinguish from methods designed to change it.
 
-### Surveys & Position Papers · 1 papers
+### Surveys & Position Papers · 1 paper
 
 Surveys and position papers that organize the field's definitions, evidence, trade-offs, and open problems into a coherent research agenda.
 
@@ -1341,7 +1305,7 @@ Surveys and position papers that organize the field's definitions, evidence, tra
   - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - Exploration focus: entropy/probability, coverage, reward/advantage.
 
-### Theory & Training Dynamics · 26 papers
+### Theory & Training Dynamics · 25 papers
 
 Theoretical and empirical work that explains why exploration changes during training, isolating causal mechanisms behind entropy, diversity, optimization, and policy dynamics.
 
@@ -1365,11 +1329,6 @@ Theoretical and empirical work that explains why exploration changes during trai
   - Type: `analysis` · Date: `2026`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, sampling/decoding.
-- **[Understanding and Preventing Entropy Collapse in RLVR with On-Policy Entropy Flow Optimization](https://aclanthology.org/2026.findings-acl.879/)** — **ACL 2026 Findings**
-  - Authors: Huimin Xu, Shuai Zhao, Xiaobao Wu, Anh Tuan Luu
-  - Type: `method` · Date: `2026`
-  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
-  - Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, reward/advantage, regularization.
 - **[Understanding Reasoning Collapse in LLM Agent Reinforcement Learning](https://icml.cc/virtual/2026/poster/66821)** — **ICML 2026**
   - Authors: Zihan (Zenus) Wang, Chi Gui, Xing Jin, Qineng Wang, Licheng Liu, Kangrui Wang, Shiqi Chen, Linjie Li et al.
   - Type: `analysis` · Date: `2026`
@@ -1491,7 +1450,7 @@ Work that tests whether exploration reaches beyond a model's existing competence
   - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
 
-### Benchmarks & Metrics · 1 papers
+### Benchmarks & Metrics · 2 papers
 
 Benchmarks and metrics that quantify exploration quality, emphasizing valid measures of diversity, coverage, efficiency, reproducibility, and downstream utility.
 
@@ -1500,3 +1459,8 @@ Benchmarks and metrics that quantify exploration quality, emphasizing valid meas
   - Type: `benchmark` · Date: `2026`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, reward/advantage, reward-shaping/intrinsic-reward.
+- **[Towards Self-Evolving Agent Benchmarks : Validatable Agent Trajectory via Test-Time Exploration](https://iclr.cc/virtual/2026/poster/10011762)** — **ICLR 2026**
+  - Authors: Dadi Guo, Tianyi Zhou, Dongrui Liu, Chen Qian, Qihan Ren, Shuai Shao, Zhiyuan Fan, Yi R. Fung et al.
+  - Type: `benchmark` · Date: `2026`
+  - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: self-play/co-evolution](https://img.shields.io/badge/mechanism-self--play%2Fco--evolution-A36F8A?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
+  - Officially accepted at ICLR 2026. Exploration focus: self-play/co-evolution.

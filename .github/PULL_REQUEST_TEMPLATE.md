@@ -5,9 +5,9 @@
 - Exact paper title:
 - Primary source URL:
 - Official code URL (if available):
-- Proposed section:
+- Proposed primary context and subtopic:
 - Exploration mechanism:
-- Why this is directly relevant to LLM RL exploration:
+- Why this is directly relevant to LLM exploration:
 
 ## Curation checklist
 

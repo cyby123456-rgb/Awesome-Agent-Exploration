@@ -1,9 +1,10 @@
 # Contributing to Awesome Exploration
 
 Thank you for helping improve this reading list. The repository is intentionally
-focused on **exploration in language-model generation, RLVR post-training, and
-interactive agents**. It is a curated guide, not a feed of every paper that
-mentions reinforcement learning, entropy, search, diversity, or agents.
+focused on **exploration in language-model generation, learning and
+post-training, interactive agents, and evaluation**. It is a curated guide, not
+a feed of every paper that mentions reinforcement learning, entropy, search,
+diversity, or agents.
 
 ## Scope
 
@@ -67,7 +68,7 @@ dimensions. The required dimensions are `phase` and `level`; at least one
   "title": "Low-probability Tokens Sustain Exploration in Reinforcement Learning with Verifiable Reward",
   "url": "https://arxiv.org/abs/2510.03222",
   "date": "2025-10-03",
-  "primary_area": "rlvr-exploration",
+  "primary_area": "training-policy-curriculum-exploration",
   "subtopic": "entropy-distribution",
   "paper_type": "method",
   "phase": ["rl-training"],
@@ -79,12 +80,13 @@ dimensions. The required dimensions are `phase` and `level`; at least one
 }
 ```
 
-Every entry also needs one valid `subtopic` within its primary area. Valid primary
-areas are `llm-exploration`, `rlvr-exploration`,
-`data-task-curriculum-exploration`, `agentic-exploration`,
-`self-improvement-population-exploration`, `memory-knowledge-exploration`, and
-`understanding-evaluation`. Classical non-LLM RL papers are not normal entries;
-the maintainers keep a deliberately small appendix of foundational references.
+Every entry also needs one valid `subtopic` within its primary area. Valid
+primary areas are `llm-exploration`,
+`training-policy-curriculum-exploration`, `agentic-exploration`, and
+`understanding-evaluation`. Data, memory, population, and self-improvement are
+represented by subtopics and tags rather than separate primary areas. Classical
+non-LLM RL papers are not normal entries; the maintainers keep a deliberately
+small appendix of foundational references.
 
 See [`docs/TAXONOMY.md`](docs/TAXONOMY.md) for the primary-area decision rule,
 the meaning of every tag dimension, and worked classification examples.

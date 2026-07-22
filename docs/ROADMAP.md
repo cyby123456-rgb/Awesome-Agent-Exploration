@@ -5,8 +5,9 @@
 ## Current position
 
 Awesome Exploration is a curated map of exploration in language-model
-generation, RLVR post-training, and interactive agents. It is intentionally
-narrower than general RL, RLHF, reasoning, test-time-scaling, or agent lists.
+generation, learning and post-training, interactive agents, and evaluation. It
+is intentionally narrower than general RL, RLHF, reasoning, test-time-scaling,
+or agent lists.
 
 The repository now uses one structured source of truth:
 
@@ -26,12 +27,14 @@ have been removed. They remain available in Git history.
 Each paper has exactly one primary area:
 
 1. LLM Generation & Inference Exploration
-2. Exploration for RLVR
-3. Agentic Exploration
+2. Training, Policy & Curriculum Exploration
+3. Agentic & Environment Exploration
 4. Understanding, Evaluation & Benchmarks
 
 Orthogonal tags describe phase, intervention level, exploration signal,
-mechanism, target problem, and application setting. Classical non-LLM RL is
+mechanism, target problem, and application setting. Data, memory, population,
+and self-improvement remain subtopics or tags rather than primary areas.
+Classical non-LLM RL is
 limited to a short background appendix and is not counted in catalog totals.
 
 ## Acceptance rule

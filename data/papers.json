@@ -17,7 +17,7 @@
       "date": "2025",
       "venue": "NeurIPS 2025",
       "source_group": "tju-drl-publications",
-      "primary_area": "self-improvement-population-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training",
@@ -41,7 +41,7 @@
       "setting": [],
       "featured": false,
       "rationale": "Explores reward-function populations with LLM-guided evolution, Thompson sampling, and shared off-policy experience.",
-      "subtopic": "multi-agent-ensembles"
+      "subtopic": "replay-population"
     },
     {
       "id": "venue:neurips-2025-119108",
@@ -99,7 +99,7 @@
       "date": "2025-06-06",
       "venue": "Artificial Intelligence",
       "source_group": "tju-drl-publications",
-      "primary_area": "self-improvement-population-exploration",
+      "primary_area": "agentic-exploration",
       "paper_type": "method",
       "phase": [
         "continual/self-improvement"
@@ -123,7 +123,7 @@
       ],
       "featured": false,
       "rationale": "Uses value-guided hierarchical search to explore a joint space of agent workflows, memory, planning, and tool components.",
-      "subtopic": "iterative-self-improvement"
+      "subtopic": "planning-interaction"
     },
     {
       "id": "project:embodiedscene",
@@ -139,7 +139,7 @@
       "date": "2025",
       "venue": "ICML 2025",
       "source_group": "tju-drl-publications",
-      "primary_area": "data-task-curriculum-exploration",
+      "primary_area": "agentic-exploration",
       "paper_type": "method",
       "phase": [
         "data-generation"
@@ -163,7 +163,7 @@
       ],
       "featured": false,
       "rationale": "Combines LLM scene planning, evolutionary diversification, and VLM critique to expand realistic embodied training environments.",
-      "subtopic": "agent-task-environments"
+      "subtopic": "embodied-environments"
     },
     {
       "id": "arxiv:2505.02865",
@@ -222,7 +222,7 @@
       "date": "2024",
       "venue": "ICLR 2024",
       "source_group": "tju-drl-publications",
-      "primary_area": "self-improvement-population-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -246,7 +246,7 @@
       ],
       "featured": false,
       "rationale": "Uses cooperative coevolution to improve the sample efficiency of quality-diversity exploration over policy populations.",
-      "subtopic": "self-play-coevolution"
+      "subtopic": "replay-population"
     },
     {
       "id": "doi:10.1609/aaai.v38i12.29303",
@@ -309,7 +309,7 @@
       "date": "2022-05-23",
       "venue": "ICRA 2022",
       "source_group": "tju-drl-publications",
-      "primary_area": "self-improvement-population-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -334,7 +334,7 @@
       ],
       "featured": false,
       "rationale": "Selects and mutates policy populations in a learned hierarchical trajectory space to jointly improve quality and diversity.",
-      "subtopic": "multi-agent-ensembles"
+      "subtopic": "replay-population"
     },
     {
       "id": "arxiv:2105.06022",
@@ -481,7 +481,7 @@
       "date": "2020-07-01",
       "venue": "IJCAI 2020",
       "source_group": "tju-drl-publications",
-      "primary_area": "self-improvement-population-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -506,7 +506,7 @@
       ],
       "featured": false,
       "rationale": "Evolves a population of deep-RL game policies against multiple objectives to cover distinct behavioral styles.",
-      "subtopic": "multi-agent-ensembles"
+      "subtopic": "replay-population"
     },
     {
       "id": "doi:10.1109/ASE.2019.00077",
@@ -571,7 +571,7 @@
       "date": "2023-11-21",
       "venue": "IEEE Transactions on Cybernetics",
       "source_group": "tju-drl-publications",
-      "primary_area": "self-improvement-population-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -596,7 +596,7 @@
       ],
       "featured": false,
       "rationale": "Triggers variational exploration when inferred short-term policies diverge from current actors in nonstationary multiagent environments.",
-      "subtopic": "multi-agent-ensembles"
+      "subtopic": "replay-population"
     },
     {
       "id": "arxiv:2605.09292",
@@ -779,7 +779,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "understanding-evaluation",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -800,7 +800,7 @@
       "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, reward/advantage, regularization.",
       "discovery_category": "熵、分布与多样性",
-      "subtopic": "theory-training-dynamics"
+      "subtopic": "entropy-distribution"
     },
     {
       "id": "venue:understanding reasoning collapse in llm agent reinforcement learning",
@@ -1698,7 +1698,7 @@
       "date": "2026-05-12",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -1729,7 +1729,7 @@
       "date": "2026-05-12",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -1765,7 +1765,7 @@
       "date": "2026-05-11",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training",
@@ -1799,7 +1799,7 @@
       "date": "2026-04-29",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -1840,7 +1840,7 @@
       "date": "2026-04-15",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -1874,7 +1874,7 @@
       "date": "2026-04-13",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -1910,7 +1910,7 @@
       "date": "2026-04-06",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -1946,7 +1946,7 @@
       "date": "2026-03-04",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -1980,7 +1980,7 @@
       "date": "2026-02-26",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2014,7 +2014,7 @@
       "date": "2026-02-25",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2055,7 +2055,7 @@
       "date": "2026-02-23",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2094,7 +2094,7 @@
       "date": "2026-02-19",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2129,7 +2129,7 @@
       "date": "2026-02-13",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2162,7 +2162,7 @@
       "date": "2026-02-05",
       "venue": "arXiv",
       "source_group": "recent-curated",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2196,7 +2196,7 @@
       "date": "2026-02-03",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2233,7 +2233,7 @@
       "date": "2026-01-30",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2268,7 +2268,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2303,7 +2303,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2340,7 +2340,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2378,7 +2378,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2416,7 +2416,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2457,7 +2457,7 @@
       "date": "2026",
       "venue": "ACL 2026 Main",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training",
@@ -2494,7 +2494,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2535,7 +2535,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2575,7 +2575,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2617,7 +2617,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2658,7 +2658,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2700,7 +2700,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2735,7 +2735,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2770,7 +2770,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2808,7 +2808,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2850,7 +2850,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2889,7 +2889,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "supervised-post-training",
@@ -2929,7 +2929,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -2969,7 +2969,7 @@
       "date": "2026",
       "venue": "ACL 2026 Main",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3005,7 +3005,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3034,7 +3034,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3067,7 +3067,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "data-task-curriculum-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3109,7 +3109,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3147,7 +3147,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3189,7 +3189,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3231,7 +3231,7 @@
       "date": "2026",
       "venue": "ACL 2026 Main",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "supervised-post-training",
@@ -3268,7 +3268,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3304,7 +3304,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3341,7 +3341,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3380,7 +3380,7 @@
       "date": "2026",
       "venue": "ACL 2026 Main",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3417,7 +3417,7 @@
       "date": "2026",
       "venue": "ACL 2026 Main",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training",
@@ -3451,7 +3451,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3490,7 +3490,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3530,7 +3530,7 @@
       "date": "2026",
       "venue": "ACL 2026 Main",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3569,7 +3569,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3604,7 +3604,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "memory-knowledge-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3621,7 +3621,7 @@
       "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, reward/advantage, noise/perturbation.",
       "discovery_category": "探索机制与内在奖励",
-      "subtopic": "replay-trajectory-memory"
+      "subtopic": "replay-population"
     },
     {
       "id": "venue:10011658",
@@ -3640,7 +3640,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3678,7 +3678,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3709,7 +3709,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3746,7 +3746,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3779,7 +3779,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3812,7 +3812,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3843,7 +3843,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3880,7 +3880,7 @@
       "date": "2026",
       "venue": "ACL 2026 Main",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3917,7 +3917,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -3950,7 +3950,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training",
@@ -3985,7 +3985,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training",
@@ -4022,7 +4022,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "data-task-curriculum-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training",
@@ -4061,7 +4061,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4100,7 +4100,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4135,7 +4135,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4174,7 +4174,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4209,7 +4209,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "memory-knowledge-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4232,7 +4232,7 @@
       "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, coverage, reward/advantage.",
       "discovery_category": "采样与测试时探索",
-      "subtopic": "replay-trajectory-memory"
+      "subtopic": "reward-rollout"
     },
     {
       "id": "venue:2026.findings-acl.685",
@@ -4253,7 +4253,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4293,7 +4293,7 @@
       "date": "2026",
       "venue": "ACL 2026 Main",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4332,7 +4332,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4367,7 +4367,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4405,7 +4405,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4440,7 +4440,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4478,7 +4478,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4516,7 +4516,7 @@
       "date": "2026",
       "venue": "ACL 2026 Main",
       "source_group": "conference-2026",
-      "primary_area": "self-improvement-population-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4535,7 +4535,7 @@
       "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: semantic-diversity, reward/advantage, disagreement.",
       "discovery_category": "Agent 与自改进探索",
-      "subtopic": "self-play-coevolution"
+      "subtopic": "replay-population"
     },
     {
       "id": "venue:cde curiosity driven exploration for efficient reinforcement learning in large language models",
@@ -4557,7 +4557,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4601,7 +4601,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4643,7 +4643,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4684,7 +4684,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4723,7 +4723,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4755,7 +4755,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4793,7 +4793,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4835,7 +4835,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4871,7 +4871,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4910,7 +4910,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4944,7 +4944,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -4982,7 +4982,7 @@
       "date": "2025-12-17",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5017,7 +5017,7 @@
       "date": "2025-12-04",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5058,7 +5058,7 @@
       "date": "2025-11-11",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5094,7 +5094,7 @@
       "date": "2025-11-06",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "data-task-curriculum-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5131,7 +5131,7 @@
       "date": "2025-10-28",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5167,7 +5167,7 @@
       "date": "2025-10-13",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5202,7 +5202,7 @@
       "date": "2025-10-06",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training",
@@ -5238,7 +5238,7 @@
       "date": "2025-10-02",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5274,7 +5274,7 @@
       "date": "2025-09-30",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5311,7 +5311,7 @@
       "date": "2025-09-25",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5343,7 +5343,7 @@
       "date": "2025-09-08",
       "venue": "arXiv",
       "source_group": "recent-curated",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5381,7 +5381,7 @@
       "date": "2025-08-29",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5416,7 +5416,7 @@
       "date": "2025-08-15",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training",
@@ -5459,7 +5459,7 @@
       "date": "2025-08-14",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5490,7 +5490,7 @@
       "date": "2025-08-09",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5524,7 +5524,7 @@
       "date": "2025-08-04",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5559,7 +5559,7 @@
       "date": "2025-07-31",
       "venue": "arXiv",
       "source_group": "recent-curated",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5595,7 +5595,7 @@
       "date": "2025-07-10",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "memory-knowledge-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5611,7 +5611,7 @@
       "setting": [],
       "featured": false,
       "rationale": "Exploration focus: replay/memory, structured-search.",
-      "subtopic": "replay-trajectory-memory"
+      "subtopic": "replay-population"
     },
     {
       "id": "arxiv:2506.22200",
@@ -5630,7 +5630,7 @@
       "date": "2025-06-27",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "memory-knowledge-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5646,7 +5646,7 @@
       "setting": [],
       "featured": false,
       "rationale": "Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
-      "subtopic": "replay-trajectory-memory"
+      "subtopic": "replay-population"
     },
     {
       "id": "arxiv:2506.11902",
@@ -5663,7 +5663,7 @@
       "date": "2025-06-13",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5695,7 +5695,7 @@
       "date": "2025-06-04",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5742,7 +5742,7 @@
       "date": "2025-06-02",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5782,7 +5782,7 @@
       "date": "2025-05-30",
       "venue": "arXiv",
       "source_group": "recent-curated",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5822,7 +5822,7 @@
       "date": "2025-05-28",
       "venue": "arXiv",
       "source_group": "recent-curated",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5855,7 +5855,7 @@
       "date": "2025-05-23",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training",
@@ -5893,7 +5893,7 @@
       "date": "2025-05-19",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5928,7 +5928,7 @@
       "date": "2025-05-18",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5965,7 +5965,7 @@
       "date": "2025-04-19",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "memory-knowledge-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -5982,7 +5982,7 @@
       "setting": [],
       "featured": false,
       "rationale": "Exploration focus: novelty/curiosity, gradient-reshaping, backtracking/resampling.",
-      "subtopic": "replay-trajectory-memory"
+      "subtopic": "replay-population"
     },
     {
       "id": "arxiv:2503.22456",
@@ -5994,7 +5994,7 @@
       "date": "2025-03-28",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -6023,7 +6023,7 @@
       "date": "2025-03-18",
       "venue": "arXiv",
       "source_group": "recent-curated",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -6065,7 +6065,7 @@
       "date": "2025-02-04",
       "venue": "arXiv",
       "source_group": "verified-legacy",
-      "primary_area": "rlvr-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -6323,7 +6323,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "data-task-curriculum-exploration",
+      "primary_area": "llm-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -6340,7 +6340,7 @@
       "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, sampling/decoding.",
       "discovery_category": "探索机制与内在奖励",
-      "subtopic": "data-selection-prompting"
+      "subtopic": "search-deliberation"
     },
     {
       "id": "venue:2026.acl-long.200",
@@ -6488,7 +6488,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "data-task-curriculum-exploration",
+      "primary_area": "llm-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -6507,7 +6507,7 @@
       "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
       "discovery_category": "熵、分布与多样性",
-      "subtopic": "data-selection-prompting"
+      "subtopic": "diversity-coverage"
     },
     {
       "id": "venue:2026.acl-long.1641",
@@ -6866,7 +6866,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "self-improvement-population-exploration",
+      "primary_area": "llm-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -6883,7 +6883,7 @@
       "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, semantic-diversity, tree-search/branching.",
       "discovery_category": "采样与测试时探索",
-      "subtopic": "multi-agent-ensembles"
+      "subtopic": "search-deliberation"
     },
     {
       "id": "venue:2026.acl-long.655",
@@ -7658,7 +7658,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "data-task-curriculum-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "inference",
@@ -8166,7 +8166,7 @@
       "date": "2023",
       "venue": "ICLR 2023",
       "source_group": "foundational-llm",
-      "primary_area": "self-improvement-population-exploration",
+      "primary_area": "llm-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -8189,7 +8189,7 @@
       ],
       "featured": true,
       "rationale": "Foundational diverse-path sampling and answer aggregation for language-model reasoning.",
-      "subtopic": "multi-agent-ensembles"
+      "subtopic": "decoding-sampling"
     },
     {
       "id": "arxiv:2603.03078",
@@ -8321,7 +8321,7 @@
       "date": "2026",
       "venue": "ACL 2026 Main",
       "source_group": "conference-2026",
-      "primary_area": "self-improvement-population-exploration",
+      "primary_area": "agentic-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -8342,7 +8342,7 @@
       "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: reward/advantage, curriculum/task-generation, self-play/co-evolution.",
       "discovery_category": "Agent 与自改进探索",
-      "subtopic": "self-play-coevolution"
+      "subtopic": "web-tools-gui"
     },
     {
       "id": "venue:10009929",
@@ -8402,7 +8402,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "self-improvement-population-exploration",
+      "primary_area": "understanding-evaluation",
       "paper_type": "benchmark",
       "phase": [
         "inference",
@@ -8420,7 +8420,7 @@
       "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: self-play/co-evolution.",
       "discovery_category": "采样与测试时探索",
-      "subtopic": "self-play-coevolution"
+      "subtopic": "benchmarks-metrics"
     },
     {
       "id": "venue:toward efficient exploration by large language model agents",
@@ -8511,7 +8511,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "self-improvement-population-exploration",
+      "primary_area": "agentic-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -8531,7 +8531,7 @@
       "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: reward/advantage, self-play/co-evolution, structured-search.",
       "discovery_category": "Agent 与自改进探索",
-      "subtopic": "self-play-coevolution"
+      "subtopic": "planning-interaction"
     },
     {
       "id": "venue:scaling synthetic task generation for agents via exploration",
@@ -8551,7 +8551,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "data-task-curriculum-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "data-generation",
@@ -8571,7 +8571,7 @@
       "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity, coverage.",
       "discovery_category": "Agent 与自改进探索",
-      "subtopic": "agent-task-environments"
+      "subtopic": "task-synthesis-curriculum"
     },
     {
       "id": "venue:2026.findings-acl.1959",
@@ -8587,7 +8587,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "data-task-curriculum-exploration",
+      "primary_area": "agentic-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -8607,7 +8607,7 @@
       "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, tree-search/branching.",
       "discovery_category": "Agent 与自改进探索",
-      "subtopic": "agent-task-environments"
+      "subtopic": "planning-interaction"
     },
     {
       "id": "venue:65711",
@@ -8626,7 +8626,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "self-improvement-population-exploration",
+      "primary_area": "agentic-exploration",
       "paper_type": "method",
       "phase": [
         "continual/self-improvement"
@@ -8644,7 +8644,7 @@
       "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, semantic-diversity, gradient-reshaping.",
       "discovery_category": "Agent 与自改进探索",
-      "subtopic": "self-play-coevolution"
+      "subtopic": "web-tools-gui"
     },
     {
       "id": "venue:2026.acl-long.69",
@@ -8664,7 +8664,7 @@
       "date": "2026",
       "venue": "ACL 2026 Main",
       "source_group": "conference-2026",
-      "primary_area": "self-improvement-population-exploration",
+      "primary_area": "agentic-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training",
@@ -8682,7 +8682,7 @@
       "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: novelty/curiosity, reward/advantage, replay/memory.",
       "discovery_category": "Agent 与自改进探索",
-      "subtopic": "iterative-self-improvement"
+      "subtopic": "planning-interaction"
     },
     {
       "id": "venue:60790",
@@ -8751,7 +8751,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "self-improvement-population-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -8773,7 +8773,7 @@
       "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: semantic-diversity, replay/memory, self-play/co-evolution.",
       "discovery_category": "Agent 与自改进探索",
-      "subtopic": "self-play-coevolution"
+      "subtopic": "replay-population"
     },
     {
       "id": "venue:2026.acl-short.48",
@@ -8975,7 +8975,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "self-improvement-population-exploration",
+      "primary_area": "llm-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -8996,7 +8996,7 @@
       "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: reward/advantage, tree-search/branching, backtracking/resampling.",
       "discovery_category": "采样与测试时探索",
-      "subtopic": "multi-agent-ensembles"
+      "subtopic": "search-deliberation"
     },
     {
       "id": "venue:harnessing uncertainty entropy modulated policy gradients for long horizon llm agents",
@@ -9128,7 +9128,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "memory-knowledge-exploration",
+      "primary_area": "agentic-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -9149,7 +9149,7 @@
       "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
       "discovery_category": "探索机制与内在奖励",
-      "subtopic": "knowledge-graph-memory"
+      "subtopic": "knowledge-memory"
     },
     {
       "id": "venue:10009229",
@@ -9165,7 +9165,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "memory-knowledge-exploration",
+      "primary_area": "agentic-exploration",
       "paper_type": "method",
       "phase": [
         "rl-training"
@@ -9184,7 +9184,7 @@
       "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, gradient-reshaping.",
       "discovery_category": "探索机制与内在奖励",
-      "subtopic": "replay-trajectory-memory"
+      "subtopic": "knowledge-memory"
     },
     {
       "id": "venue:2026.acl-long.1670",
@@ -9201,7 +9201,7 @@
       "date": "2026",
       "venue": "ACL 2026 Main",
       "source_group": "conference-2026",
-      "primary_area": "memory-knowledge-exploration",
+      "primary_area": "agentic-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -9219,7 +9219,7 @@
       "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: replay/memory.",
       "discovery_category": "Agent 与自改进探索",
-      "subtopic": "replay-trajectory-memory"
+      "subtopic": "web-tools-gui"
     },
     {
       "id": "venue:10010625",
@@ -9239,7 +9239,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "memory-knowledge-exploration",
+      "primary_area": "agentic-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -9256,7 +9256,7 @@
       "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: reward/advantage, replay/memory, structured-search.",
       "discovery_category": "Agent 与自改进探索",
-      "subtopic": "replay-trajectory-memory"
+      "subtopic": "knowledge-memory"
     },
     {
       "id": "venue:dual scale world memory for llm agents towards hard exploration problems",
@@ -9269,7 +9269,7 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "memory-knowledge-exploration",
+      "primary_area": "agentic-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -9286,7 +9286,7 @@
       "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, reward/advantage, replay/memory.",
       "discovery_category": "Agent 与自改进探索",
-      "subtopic": "replay-trajectory-memory"
+      "subtopic": "knowledge-memory"
     },
     {
       "id": "venue:10011238",
@@ -9382,7 +9382,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "data-task-curriculum-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "data-generation"
@@ -9402,7 +9402,7 @@
       "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: semantic-diversity, coverage.",
       "discovery_category": "熵、分布与多样性",
-      "subtopic": "agent-task-environments"
+      "subtopic": "task-synthesis-curriculum"
     },
     {
       "id": "venue:2026.findings-acl.2138",
@@ -9416,7 +9416,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "memory-knowledge-exploration",
+      "primary_area": "agentic-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -9435,7 +9435,7 @@
       "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: structured-search.",
       "discovery_category": "探索机制与内在奖励",
-      "subtopic": "knowledge-graph-memory"
+      "subtopic": "knowledge-memory"
     },
     {
       "id": "venue:2026.acl-long.838",
@@ -9452,7 +9452,7 @@
       "date": "2026",
       "venue": "ACL 2026 Main",
       "source_group": "conference-2026",
-      "primary_area": "memory-knowledge-exploration",
+      "primary_area": "agentic-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -9472,7 +9472,7 @@
       "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: tree-search/branching, backtracking/resampling, replay/memory.",
       "discovery_category": "探索机制与内在奖励",
-      "subtopic": "replay-trajectory-memory"
+      "subtopic": "web-tools-gui"
     },
     {
       "id": "venue:2026.findings-acl.160",
@@ -9489,7 +9489,7 @@
       "date": "2026",
       "venue": "ACL 2026 Findings",
       "source_group": "conference-2026",
-      "primary_area": "data-task-curriculum-exploration",
+      "primary_area": "training-policy-curriculum-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -9507,7 +9507,7 @@
       "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, reward/advantage, regularization.",
       "discovery_category": "Agent 与自改进探索",
-      "subtopic": "agent-task-environments"
+      "subtopic": "data-selection-prompting"
     },
     {
       "id": "venue:2026.findings-acl.1400",
@@ -9562,7 +9562,7 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "memory-knowledge-exploration",
+      "primary_area": "agentic-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -9581,7 +9581,7 @@
       "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, reward/advantage, backtracking/resampling.",
       "discovery_category": "Agent 与自改进探索",
-      "subtopic": "knowledge-graph-memory"
+      "subtopic": "knowledge-memory"
     },
     {
       "id": "venue:2026.acl-long.714",
@@ -9599,7 +9599,7 @@
       "date": "2026",
       "venue": "ACL 2026 Main",
       "source_group": "conference-2026",
-      "primary_area": "memory-knowledge-exploration",
+      "primary_area": "agentic-exploration",
       "paper_type": "method",
       "phase": [
         "inference"
@@ -9618,7 +9618,7 @@
       "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: coverage, structured-search.",
       "discovery_category": "探索机制与内在奖励",
-      "subtopic": "knowledge-graph-memory"
+      "subtopic": "knowledge-memory"
     },
     {
       "id": "venue:61450",
@@ -9745,7 +9745,7 @@
       "date": "2024",
       "venue": "TMLR 2024",
       "source_group": "foundational-llm",
-      "primary_area": "self-improvement-population-exploration",
+      "primary_area": "agentic-exploration",
       "paper_type": "method",
       "phase": [
         "continual/self-improvement"
@@ -9771,7 +9771,7 @@
       ],
       "featured": true,
       "rationale": "A foundational open-ended agent combining automatic curriculum, skill discovery, and lifelong memory.",
-      "subtopic": "iterative-self-improvement"
+      "subtopic": "embodied-environments"
     },
     {
       "id": "pmlr:v235-zhou24r",
@@ -9787,7 +9787,7 @@
       "date": "2024",
       "venue": "ICML 2024",
       "source_group": "foundational-llm",
-      "primary_area": "memory-knowledge-exploration",
+      "primary_area": "agentic-exploration",
       "paper_type": "method",
       "phase": [
         "inference",
@@ -9814,7 +9814,7 @@
       ],
       "featured": true,
       "rationale": "Unified environment feedback, reflection, and Monte Carlo tree search for language agents.",
-      "subtopic": "replay-trajectory-memory"
+      "subtopic": "planning-interaction"
     },
     {
       "id": "neurips:1b44b878bb782e6954cd888628510e90",
@@ -9830,7 +9830,7 @@
       "date": "2023",
       "venue": "NeurIPS 2023",
       "source_group": "foundational-llm",
-      "primary_area": "self-improvement-population-exploration",
+      "primary_area": "agentic-exploration",
       "paper_type": "method",
       "phase": [
         "test-time-adaptation",
@@ -9854,7 +9854,7 @@
       ],
       "featured": true,
       "rationale": "Introduced verbal feedback and episodic memory for learning from agent trial and error.",
-      "subtopic": "iterative-self-improvement"
+      "subtopic": "planning-interaction"
     },
     {
       "id": "openreview:WE_vluYUL-X",

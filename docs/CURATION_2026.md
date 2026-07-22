@@ -52,6 +52,12 @@ records, 58 additional verified legacy papers were retained.
 The catalog also adds eight pre-2025 LLM/agent foundations and keeps seven
 classical non-LLM RL references in a background-only appendix.
 
+The catalog's seven mixed-axis sections were subsequently consolidated into
+four primary research contexts: generation and inference; training, policy, and
+curriculum; agentic interaction; and understanding and evaluation. Data,
+memory, population, and self-improvement remain available as orthogonal
+subtopics and tags, avoiding duplicate or ambiguous primary homes.
+
 ## Invariants
 
 - A paper appears once and has one primary area.
