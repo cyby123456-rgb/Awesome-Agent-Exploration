@@ -1,6 +1,6 @@
 # 2026 Curation Notes
 
-> Review snapshot: 2026-07-19.
+> Review snapshot: 2026-07-22.
 
 ## Sources
 
@@ -10,8 +10,17 @@ The 2026 review started from the complete accepted-paper pages for:
 - [ACL 2026 Findings](https://aclanthology.org/volumes/2026.findings-acl/)
 - [ICLR 2026](https://iclr.cc/virtual/2026/papers.html)
 - [ICML 2026](https://icml.cc/virtual/2026/papers.html)
+- [Tianjin University Deep Reinforcement Learning Lab publications](http://rl.beiyang.ren/)
 
 Every accepted entry in `data/papers.json` links to its official venue page.
+
+The Tianjin University lab review checked all 329 records exposed by its
+publication registry. A high-recall title pass retained 45 candidates covering
+exploration, curiosity, uncertainty, diversity, population methods, and search;
+abstract and source review then retained 14 papers where exploration is a
+primary variable or a concrete mechanism. Generic optimization search,
+application-level coverage, preference diversity, and uncertainty-only work
+were excluded.
 
 ## Selection result
 

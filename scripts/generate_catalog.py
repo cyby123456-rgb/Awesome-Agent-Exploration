@@ -452,14 +452,14 @@ def render_readme(catalog: dict) -> str:
         "",
         "**A curated research map of exploration in language models, RLVR, and agents.**",
         "",
-        f'<img src="assets/research-map.svg" alt="Research map of {len(papers)} papers across seven exploration categories" width="100%">',
-        "",
         "[![Curated catalog](https://img.shields.io/badge/catalog-curated-3B82F6?style=flat-square)](docs/CURATION_2026.md) "
         f"[![{len(papers)} papers](https://img.shields.io/badge/papers-{len(papers)}-8B5CF6?style=flat-square)](#catalog) "
         "[![Seven research tracks](https://img.shields.io/badge/tracks-7-10B981?style=flat-square)](#research-map) "
         "[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-F59E0B?style=flat-square)](CONTRIBUTING.md)",
         "",
         "[Guide](#guide) · [Research map](#research-map) · [Start here](#start-here) · [Catalog](#catalog) · [Detailed metadata](README_DETAILED.md) · [Contribute](CONTRIBUTING.md)",
+        "",
+        f'<img src="assets/research-map.svg" alt="Research map of {len(papers)} papers across seven exploration categories" width="100%">',
         "",
         "</div>",
         "",

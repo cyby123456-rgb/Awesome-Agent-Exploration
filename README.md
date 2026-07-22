@@ -4,11 +4,11 @@
 
 **A curated research map of exploration in language models, RLVR, and agents.**
 
-<img src="assets/research-map.svg" alt="Research map of 254 papers across seven exploration categories" width="100%">
-
-[![Curated catalog](https://img.shields.io/badge/catalog-curated-3B82F6?style=flat-square)](docs/CURATION_2026.md) [![254 papers](https://img.shields.io/badge/papers-254-8B5CF6?style=flat-square)](#catalog) [![Seven research tracks](https://img.shields.io/badge/tracks-7-10B981?style=flat-square)](#research-map) [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-F59E0B?style=flat-square)](CONTRIBUTING.md)
+[![Curated catalog](https://img.shields.io/badge/catalog-curated-3B82F6?style=flat-square)](docs/CURATION_2026.md) [![268 papers](https://img.shields.io/badge/papers-268-8B5CF6?style=flat-square)](#catalog) [![Seven research tracks](https://img.shields.io/badge/tracks-7-10B981?style=flat-square)](#research-map) [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-F59E0B?style=flat-square)](CONTRIBUTING.md)
 
 [Guide](#guide) · [Research map](#research-map) · [Start here](#start-here) · [Catalog](#catalog) · [Detailed metadata](README_DETAILED.md) · [Contribute](CONTRIBUTING.md)
+
+<img src="assets/research-map.svg" alt="Research map of 268 papers across seven exploration categories" width="100%">
 
 </div>
 
@@ -26,7 +26,7 @@
 
 > This repository treats exploration as a **primary research variable**: a paper must identify where exploration happens and introduce or analyze a concrete exploration signal or mechanism. Generic RL, agents, test-time scaling, self-improvement, and diversity work are excluded when exploration is merely incidental.
 
-> Evidence snapshot: **2026-07-19** · [Taxonomy design](docs/TAXONOMY.md) · [2026 curation notes](docs/CURATION_2026.md)
+> Evidence snapshot: **2026-07-22** · [Taxonomy design](docs/TAXONOMY.md) · [2026 curation notes](docs/CURATION_2026.md)
 
 ## Research map
 
@@ -64,14 +64,14 @@ The former Token / Sequence / Policy sections are now `level` tags. Entropy, tem
 
 | Collection | Papers |
 |---|---:|
-| LLM Generation & Inference Exploration | 55 |
+| LLM Generation & Inference Exploration | 57 |
 | Policy & RLVR Exploration | 110 |
-| Data, Task & Curriculum Exploration | 10 |
-| Agentic & Environment Exploration | 22 |
-| Self-Improvement & Population Exploration | 12 |
+| Data, Task & Curriculum Exploration | 11 |
+| Agentic & Environment Exploration | 27 |
+| Self-Improvement & Population Exploration | 18 |
 | Memory & Knowledge Exploration | 15 |
 | Understanding, Evaluation & Benchmarks | 30 |
-| **Curated total** | **254** |
+| **Curated total** | **268** |
 
 2026 peer-reviewed acceptances in the catalog:
 
@@ -137,7 +137,7 @@ Methods that broaden candidate generation at inference time, with probability sh
 | arXiv `2510.15502` | [The Road Less Traveled: Enhancing Exploration in LLMs via Sequential Sampling](https://arxiv.org/abs/2510.15502) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square) ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square) |
 | arXiv `2509.15194` | [Evolving Language Models without Labels: Majority Drives Selection, Novelty Promotes Variation](https://arxiv.org/abs/2509.15194) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square) |
 
-### Search & Deliberation · 23 papers
+### Search & Deliberation · 25 papers
 
 Methods that explore multi-step reasoning paths through branching, resampling, planning, or verification, with search-budget allocation and path quality as the central concerns.
 
@@ -162,7 +162,9 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
 | **ICML 2026** | [Aligning Tree-Search Policies with Fixed Token Budgets in Test-Time Scaling of LLMs](https://icml.cc/virtual/2026/poster/63795) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: token](https://img.shields.io/badge/level-token-8B80B6?style=flat-square) |
 | arXiv `2511.07581` | [Think Before You Retrieve: Learning Test-Time Adaptive Search with Small Language Models](https://arxiv.org/abs/2511.07581) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square) |
 | arXiv `2510.16916` | [SolverLLM: Leveraging Test-Time Scaling for Optimization Problem via LLM-Guided Search](https://arxiv.org/abs/2510.16916) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square) |
+| arXiv `2505.02865` | [Accelerating Large Language Model Reasoning via Speculative Search](https://arxiv.org/abs/2505.02865) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square) |
 | arXiv `2501.17104` | [COS(M+O)S: Curiosity and RL-Enhanced MCTS for Exploring Story Space via Language Models](https://arxiv.org/abs/2501.17104) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square) |
+| NeurIPS 2025 | [OptiTree: Hierarchical Thoughts Generation with Tree Search for LLM Optimization Modeling](https://neurips.cc/virtual/2025/poster/119108) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: information-gain](https://img.shields.io/badge/signal-information--gain-5E8C97?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square) |
 | EMNLP 2023 | [Reasoning with Language Model is Planning with World Model](https://aclanthology.org/2023.emnlp-main.507/) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square) |
 | arXiv `2308.09687` | [Graph of Thoughts: Solving Elaborate Problems with Large Language Models](https://arxiv.org/abs/2308.09687) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square) |
 | NeurIPS 2023 | [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://proceedings.neurips.cc/paper_files/paper/2023/hash/271db9922b8d1f4dd7aaef84ed5ac703-Abstract.html) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square) |
@@ -365,7 +367,7 @@ Methods that select, prioritize, or prompt candidate training examples, using in
 | **ACL 2026 Findings** | [Beyond Templates: Dynamic Adaptation of Reasoning Demonstrations via Feasibility-Aware Exploration](https://aclanthology.org/2026.findings-acl.327/) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: data/task](https://img.shields.io/badge/level-data%2Ftask-9A7F9C?style=flat-square) |
 | arXiv `2511.04800` | [Explore Data Left Behind in Reinforcement Learning for Reasoning Language Models](https://arxiv.org/abs/2511.04800) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square) |
 
-### Agent Task & Environment Generation · 4 papers
+### Agent Task & Environment Generation · 5 papers
 
 Methods that create interactive tasks or environments for agents, emphasizing realism, behavioral coverage, controllable difficulty, and useful feedback.
 
@@ -375,6 +377,7 @@ Methods that create interactive tasks or environments for agents, emphasizing re
 | **ACL 2026 Findings** | [SQLAgent: Learning to Explore Before Generating as a Data Engineer](https://aclanthology.org/2026.findings-acl.1959/) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) |
 | **ICML 2026** | [DIVE: Scaling Diversity in Agentic Task Synthesis for Generalizable Tool Use](https://icml.cc/virtual/2026/poster/66305) | ![phase: data-generation](https://img.shields.io/badge/phase-data--generation-5F8F8B?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) |
 | **ACL 2026 Findings** | [Beyond Stochastic Exploration: What Makes Training Data Valuable for Agentic Search](https://aclanthology.org/2026.findings-acl.160/) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) |
+| ICML 2025 | [EmbodiedScene: Towards Automated Generation of Diverse and Realistic Scenes for Embodied AI](https://embodiedscene1.github.io/embodied.scene/) | ![phase: data-generation](https://img.shields.io/badge/phase-data--generation-5F8F8B?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: curriculum/task-generation](https://img.shields.io/badge/mechanism-curriculum%2Ftask--generation-A08B5F?style=flat-square) |
 
 
 ## 4. Agentic & Environment Exploration
@@ -383,7 +386,7 @@ Methods that create interactive tasks or environments for agents, emphasizing re
 
 These papers focus on challenges such as partial observability, long horizons, recovery from failed actions, memory, environment coverage, and interactive search. A paper belongs here when external interaction is central to the exploration problem and evaluation.
 
-### Web, Tools & GUI · 4 papers
+### Web, Tools & GUI · 5 papers
 
 Agents that explore websites, tools, and graphical interfaces, where action grounding, partial observability, tool choice, and recovery from failed interactions are central.
 
@@ -393,6 +396,7 @@ Agents that explore websites, tools, and graphical interfaces, where action grou
 | **ICML 2026** | [T$^2$PO: Uncertainty-Guided Exploration Control for Stable Multi-Turn Agentic Reinforcement Learning](https://icml.cc/virtual/2026/poster/63090) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) |
 | **ICLR 2026** | [Go-Browse: Training Web Agents with Structured Exploration](https://iclr.cc/virtual/2026/poster/10010264) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) |
 | **ICLR 2026** | [DreamPhase: Offline Imagination and Uncertainty-Guided Planning for Large-Language-Model Agents](https://iclr.cc/virtual/2026/poster/10011238) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) |
+| ICSE 2021 | [Automatic Web Testing Using Curiosity-Driven Reinforcement Learning](https://doi.org/10.1109/ICSE43902.2021.00048) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square) |
 
 ### Planning & Interactive Search · 16 papers
 
@@ -417,14 +421,18 @@ Agents that search over multi-step action plans while interacting with an enviro
 | arXiv `2509.22576` | [EPO: Entropy-regularized Policy Optimization for LLM Agents Reinforcement Learning](https://arxiv.org/abs/2509.22576) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![mechanism: regularization](https://img.shields.io/badge/mechanism-regularization-737FB0?style=flat-square) |
 | arXiv `2505.01336` | [Enhancing Diversity in Parallel Agents: A Maximum State Entropy Exploration Story](https://arxiv.org/abs/2505.01336) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) |
 
-### Embodied & Simulated Environments · 2 papers
+### Embodied & Simulated Environments · 6 papers
 
 Agents that explore physical or simulated worlds, with spatial reasoning, world-model learning, action consequences, and sample-efficient coverage as key issues.
 
 | Evidence | Paper | Research lens |
 |---|---|---|
 | **ICML 2026** | [Active Exploring like a Pigeon: Reinforcing Spatial Reasoning via Agentic Vision-Language Models](https://icml.cc/virtual/2026/poster/61450) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) |
+| AAAI 2024 | [OVD-Explorer: Optimism Should Not Be the Sole Pursuit of Exploration in Noisy Environments](https://doi.org/10.1609/aaai.v38i12.29303) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square) ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square) |
 | ICLR 2023 | [ReAct: Synergizing Reasoning and Acting in Language Models](https://openreview.net/forum?id=WE_vluYUL-X) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: information-gain](https://img.shields.io/badge/signal-information--gain-5E8C97?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) |
+| arXiv `2110.10735` | [Dynamic Bottleneck for Robust Self-Supervised Exploration](https://arxiv.org/abs/2110.10735) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: information-gain](https://img.shields.io/badge/signal-information--gain-5E8C97?style=flat-square) ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square) |
+| arXiv `2105.06022` | [Principled Exploration via Optimistic Bootstrapping and Backward Induction](https://arxiv.org/abs/2105.06022) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square) ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square) |
+| ASE 2019 | [Wuji: Automatic Online Combat Game Testing Using Evolutionary Deep Reinforcement Learning](https://doi.org/10.1109/ASE.2019.00077) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: coverage](https://img.shields.io/badge/signal-coverage-78935F?style=flat-square) ![mechanism: ensemble/population](https://img.shields.io/badge/mechanism-ensemble%2Fpopulation-8774A5?style=flat-square) |
 
 
 ## 5. Self-Improvement & Population Exploration
@@ -433,7 +441,7 @@ Agents that explore physical or simulated worlds, with spatial reasoning, world-
 
 The key question is how a system can discover capabilities beyond a single fixed policy by using its own history, peer policies, or iterative feedback. Papers belong here when the population or self-improvement loop—not merely one rollout—is the main exploration unit.
 
-### Self-Play & Co-Evolution · 6 papers
+### Self-Play & Co-Evolution · 7 papers
 
 Systems in which policies or agents generate challenges for one another, using competitive or cooperative pressure to build an adaptive curriculum while maintaining diversity and stability.
 
@@ -445,8 +453,9 @@ Systems in which policies or agents generate challenges for one another, using c
 | **ICML 2026** | [SEAgent: Self-Evolving Computer Use Agent with Autonomous Learning from Experience](https://icml.cc/virtual/2026/poster/65711) | ![phase: continual/self-improvement](https://img.shields.io/badge/phase-continual%2Fself--improvement-789B8A?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) |
 | **ICML 2026** | [R-Diverse: Mitigating Diversity Illusion in Self-Play LLM Training](https://icml.cc/virtual/2026/poster/65447) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: self-play/co-evolution](https://img.shields.io/badge/mechanism-self--play%2Fco--evolution-A36F8A?style=flat-square) |
 | **ACL 2026 Main** | [CoVerRL: Breaking the Consensus Trap in Label-Free Reasoning via Generator-Verifier Co-Evolution](https://aclanthology.org/2026.acl-long.1376/) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: disagreement](https://img.shields.io/badge/signal-disagreement-8B7A9C?style=flat-square) ![mechanism: self-play/co-evolution](https://img.shields.io/badge/mechanism-self--play%2Fco--evolution-A36F8A?style=flat-square) |
+| ICLR 2024 | [Sample-Efficient Quality-Diversity by Cooperative Coevolution](https://openreview.net/forum?id=JDud6zbpFv) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: self-play/co-evolution](https://img.shields.io/badge/mechanism-self--play%2Fco--evolution-A36F8A?style=flat-square) |
 
-### Multi-Agent & Ensemble Exploration · 3 papers
+### Multi-Agent & Ensemble Exploration · 7 papers
 
 Systems that combine multiple agents or policies to expand behavioral coverage, with disagreement, specialization, coordination, and aggregation as the main design axes.
 
@@ -454,15 +463,20 @@ Systems that combine multiple agents or policies to expand behavioral coverage, 
 |---|---|---|
 | **ACL 2026 Findings** | [Multi-LLM Collaborative Search for Complex Problem Solving](https://aclanthology.org/2026.findings-acl.2115/) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: ensemble/population](https://img.shields.io/badge/mechanism-ensemble%2Fpopulation-8774A5?style=flat-square) ![level: population/multi-policy](https://img.shields.io/badge/level-population%2Fmulti--policy-A07593?style=flat-square) |
 | **ACL 2026 Findings** | [LLM Inductive Reasoning Through Multi-Agent Enhanced Monte Carlo Tree Search](https://aclanthology.org/2026.findings-acl.1178/) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) |
+| NeurIPS 2025 | [LaRes: Evolutionary Reinforcement Learning with LLM-based Adaptive Reward Search](https://neurips.cc/virtual/2025/poster/116462) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: ensemble/population](https://img.shields.io/badge/mechanism-ensemble%2Fpopulation-8774A5?style=flat-square) |
+| IEEE Transactions on Cybernetics | [WToE: Learning When to Explore in Multiagent Reinforcement Learning](https://doi.org/10.1109/TCYB.2023.3328732) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square) ![mechanism: noise/perturbation](https://img.shields.io/badge/mechanism-noise%2Fperturbation-8176A8?style=flat-square) |
 | ICLR 2023 | [Self-Consistency Improves Chain of Thought Reasoning in Language Models](https://iclr.cc/virtual/2023/poster/11718) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square) |
+| ICRA 2022 | [Promoting Quality and Diversity in Population-based Reinforcement Learning via Hierarchical Trajectory Space Exploration](https://doi.org/10.1109/ICRA46639.2022.9811888) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: ensemble/population](https://img.shields.io/badge/mechanism-ensemble%2Fpopulation-8774A5?style=flat-square) |
+| IJCAI 2020 | [Generating Behavior-Diverse Game AIs with Evolutionary Multi-Objective Deep Reinforcement Learning](https://doi.org/10.24963/ijcai.2020/466) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: ensemble/population](https://img.shields.io/badge/mechanism-ensemble%2Fpopulation-8774A5?style=flat-square) |
 
-### Iterative Self-Improvement · 3 papers
+### Iterative Self-Improvement · 4 papers
 
 Systems that repeatedly generate, evaluate, and learn from their own outputs, focusing on retaining novelty and avoiding self-reinforcing errors or collapse across iterations.
 
 | Evidence | Paper | Research lens |
 |---|---|---|
 | **ACL 2026 Main** | [Reinforcement Learning for Self-Improving Agent with Skill Library](https://aclanthology.org/2026.acl-long.69/) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) |
+| arXiv `2506.06017` | [AgentSwift: Efficient LLM Agent Design via Value-guided Hierarchical Search](https://arxiv.org/abs/2506.06017) | ![phase: continual/self-improvement](https://img.shields.io/badge/phase-continual%2Fself--improvement-789B8A?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) |
 | arXiv `2305.16291` | [Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291) | ![phase: continual/self-improvement](https://img.shields.io/badge/phase-continual%2Fself--improvement-789B8A?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![mechanism: curriculum/task-generation](https://img.shields.io/badge/mechanism-curriculum%2Ftask--generation-A08B5F?style=flat-square) |
 | NeurIPS 2023 | [Reflexion: Language Agents with Verbal Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html) | ![phase: test-time-adaptation](https://img.shields.io/badge/phase-test--time--adaptation-7E8DBD?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) |
 
