@@ -1331,6 +1331,16 @@ This category collects empirical analyses, theoretical accounts, surveys, metric
 
 They are essential for judging whether a method genuinely improves exploration instead of merely changing accuracy or sampling behavior. Keeping them separate makes the evidence about a phenomenon easy to distinguish from methods designed to change it.
 
+### Surveys & Position Papers · 1 papers
+
+Surveys and position papers that organize the field's definitions, evidence, trade-offs, and open problems into a coherent research agenda.
+
+- **[From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR](https://arxiv.org/abs/2508.07534)** — arXiv `2508.07534`
+  - Authors: Jia Deng, Jie Chen, Zhipeng Chen, Daixuan Cheng, Fei Bai, Beichen Zhang, Yinqian Min, Yanzipeng Gao et al.
+  - Type: `survey` · Date: `2025-08-11`
+  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
+  - Exploration focus: entropy/probability, coverage, reward/advantage.
+
 ### Theory & Training Dynamics · 26 papers
 
 Theoretical and empirical work that explains why exploration changes during training, isolating causal mechanisms behind entropy, diversity, optimization, and policy dynamics.
@@ -1490,13 +1500,3 @@ Benchmarks and metrics that quantify exploration quality, emphasizing valid meas
   - Type: `benchmark` · Date: `2026`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, reward/advantage, reward-shaping/intrinsic-reward.
-
-### Surveys & Position Papers · 1 papers
-
-Surveys and position papers that organize the field's definitions, evidence, trade-offs, and open problems into a coherent research agenda.
-
-- **[From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR](https://arxiv.org/abs/2508.07534)** — arXiv `2508.07534`
-  - Authors: Jia Deng, Jie Chen, Zhipeng Chen, Daixuan Cheng, Fei Bai, Beichen Zhang, Yinqian Min, Yanzipeng Gao et al.
-  - Type: `survey` · Date: `2025-08-11`
-  - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
-  - Exploration focus: entropy/probability, coverage, reward/advantage.

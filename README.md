@@ -523,6 +523,14 @@ Methods that traverse or update structured knowledge and memory graphs, focusing
 
 They are essential for judging whether a method genuinely improves exploration instead of merely changing accuracy or sampling behavior. Keeping them separate makes the evidence about a phenomenon easy to distinguish from methods designed to change it.
 
+### Surveys & Position Papers · 1 papers
+
+Surveys and position papers that organize the field's definitions, evidence, trade-offs, and open problems into a coherent research agenda.
+
+| Evidence | Paper | Research lens |
+|---|---|---|
+| arXiv `2508.07534` | [From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR](https://arxiv.org/abs/2508.07534) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square) |
+
 ### Theory & Training Dynamics · 26 papers
 
 Theoretical and empirical work that explains why exploration changes during training, isolating causal mechanisms behind entropy, diversity, optimization, and policy dynamics.
@@ -572,14 +580,6 @@ Benchmarks and metrics that quantify exploration quality, emphasizing valid meas
 | Evidence | Paper | Research lens |
 |---|---|---|
 | **ACL 2026 Findings** | [Why Did Apple Fall: Evaluating Curiosity in Large Language Models](https://aclanthology.org/2026.findings-acl.1954/) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square) |
-
-### Surveys & Position Papers · 1 papers
-
-Surveys and position papers that organize the field's definitions, evidence, trade-offs, and open problems into a coherent research agenda.
-
-| Evidence | Paper | Research lens |
-|---|---|---|
-| arXiv `2508.07534` | [From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR](https://arxiv.org/abs/2508.07534) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square) |
 
 
 ## Classical RL exploration — background only

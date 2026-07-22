@@ -152,10 +152,10 @@ SUBTOPIC_LABELS = {
         "memory-guided-planning": "Memory-Guided Planning",
     },
     "understanding-evaluation": {
+        "surveys-position": "Surveys & Position Papers",
         "theory-training-dynamics": "Theory & Training Dynamics",
         "capability-boundaries": "Capability Boundaries",
         "benchmarks-metrics": "Benchmarks & Metrics",
-        "surveys-position": "Surveys & Position Papers",
     },
 }
 

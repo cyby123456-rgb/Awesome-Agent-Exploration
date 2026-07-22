@@ -114,7 +114,7 @@ navigation aid, not a replacement for the orthogonal tags below.
 | Agentic & Environment | Web, Tools & GUI; Planning & Interactive Search; Embodied & Simulated Environments |
 | Self-Improvement & Population | Self-Play & Co-Evolution; Multi-Agent & Ensemble Exploration; Iterative Self-Improvement |
 | Memory & Knowledge | Replay & Trajectory Memory; Retrieval & Long-Context Memory; Knowledge-Graph Memory; Memory-Guided Planning |
-| Understanding, Evaluation & Benchmarks | Theory & Training Dynamics; Capability Boundaries; Benchmarks & Metrics; Surveys & Position Papers |
+| Understanding, Evaluation & Benchmarks | Surveys & Position Papers; Theory & Training Dynamics; Capability Boundaries; Benchmarks & Metrics |
 
 ## Tag dimensions
 
