@@ -520,14 +520,20 @@ def render_readme(catalog: dict) -> str:
                 "",
             ]
         )
-        for paper in featured:
-            lines.append(
-                f"- **[{paper['title']}]({paper['url']})** — {source_label(paper)} · "
-                f"{AREA_LABELS[paper['primary_area']]} · {representative_tags(paper)}"
-            )
     else:
+        lines.extend(
+            [
+                f"> **Curation in progress.** Select 10 papers manually from the {len(featured)} candidates below; no automatic ranking or truncation is applied.",
+                "",
+                f"### Candidate Pool · {paper_count_label(len(featured))}",
+                "",
+            ]
+        )
+
+    for paper in featured:
         lines.append(
-            "> **Curation in progress.** This section will contain 10 papers selected manually; no automatic ranking or truncation is applied."
+            f"- **[{paper['title']}]({paper['url']})** — {source_label(paper)} · "
+            f"{AREA_LABELS[paper['primary_area']]} · {representative_tags(paper)}"
         )
 
     lines.extend(
