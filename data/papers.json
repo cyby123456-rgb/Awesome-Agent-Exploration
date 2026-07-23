@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "snapshot_date": "2026-07-22",
+  "snapshot_date": "2026-07-23",
   "scope": "Exploration in LLM generation, RLVR, and agents.",
   "papers": [
     {
@@ -2040,6 +2040,7 @@
       ],
       "date": "2026-02-19",
       "venue": "arXiv",
+      "published_venue": "ACL 2026 Main",
       "source_group": "verified-legacy",
       "primary_area": "rlvr-policy-curriculum-exploration",
       "paper_type": "method",
@@ -5035,6 +5036,7 @@
       ],
       "date": "2025-10-13",
       "venue": "arXiv",
+      "published_venue": "ACL 2026 Findings",
       "source_group": "verified-legacy",
       "primary_area": "rlvr-policy-curriculum-exploration",
       "paper_type": "method",
@@ -5175,6 +5177,7 @@
       ],
       "date": "2025-09-25",
       "venue": "arXiv",
+      "published_venue": "ACL 2026 Main",
       "source_group": "verified-legacy",
       "primary_area": "rlvr-policy-curriculum-exploration",
       "paper_type": "method",
@@ -5416,6 +5419,7 @@
       ],
       "date": "2025-07-31",
       "venue": "arXiv",
+      "published_venue": "ACL 2026 Main",
       "source_group": "recent-curated",
       "primary_area": "rlvr-policy-curriculum-exploration",
       "paper_type": "method",
@@ -5517,6 +5521,7 @@
       ],
       "date": "2025-06-13",
       "venue": "arXiv",
+      "published_venue": "ACL 2025 Main",
       "source_group": "verified-legacy",
       "primary_area": "rlvr-policy-curriculum-exploration",
       "paper_type": "method",
@@ -5548,6 +5553,7 @@
       ],
       "date": "2025-06-04",
       "venue": "arXiv",
+      "published_venue": "ACL 2026 Findings",
       "source_group": "verified-legacy",
       "primary_area": "rlvr-policy-curriculum-exploration",
       "paper_type": "method",
@@ -5594,6 +5600,12 @@
       ],
       "date": "2025-06-02",
       "venue": "arXiv",
+      "notability": [
+        "high-citation"
+      ],
+      "citation_count": 433,
+      "citation_source": "Google Scholar (via Google Search)",
+      "citation_checked": "2026-07-23",
       "source_group": "verified-legacy",
       "primary_area": "rlvr-policy-curriculum-exploration",
       "paper_type": "method",
@@ -5635,6 +5647,12 @@
       ],
       "date": "2025-05-30",
       "venue": "arXiv",
+      "notability": [
+        "high-citation"
+      ],
+      "citation_count": 233,
+      "citation_source": "Google Scholar (via Google Search)",
+      "citation_checked": "2026-07-23",
       "source_group": "recent-curated",
       "primary_area": "rlvr-policy-curriculum-exploration",
       "paper_type": "method",
@@ -5676,6 +5694,12 @@
       ],
       "date": "2025-05-28",
       "venue": "arXiv",
+      "notability": [
+        "high-citation"
+      ],
+      "citation_count": 364,
+      "citation_source": "Google Scholar (via Google Search)",
+      "citation_checked": "2026-07-23",
       "source_group": "recent-curated",
       "primary_area": "rlvr-policy-curriculum-exploration",
       "paper_type": "method",
@@ -5873,6 +5897,13 @@
       "authors": [],
       "date": "2025-03-18",
       "venue": "arXiv",
+      "published_venue": "NeurIPS 2025",
+      "notability": [
+        "high-citation"
+      ],
+      "citation_count": 1874,
+      "citation_source": "Google Scholar (via Google Search)",
+      "citation_checked": "2026-07-23",
       "source_group": "recent-curated",
       "primary_area": "rlvr-policy-curriculum-exploration",
       "paper_type": "method",
@@ -7770,6 +7801,7 @@
       ],
       "date": "2025-08-23",
       "venue": "arXiv",
+      "published_venue": "EMNLP 2025 Main",
       "source_group": "verified-legacy",
       "primary_area": "llm-exploration",
       "paper_type": "method",
@@ -7877,6 +7909,13 @@
       ],
       "date": "2023-08-18",
       "venue": "arXiv",
+      "published_venue": "AAAI 2024",
+      "notability": [
+        "high-citation"
+      ],
+      "citation_count": 426,
+      "citation_source": "OpenAlex",
+      "citation_checked": "2026-07-23",
       "source_group": "foundational-llm",
       "primary_area": "llm-exploration",
       "paper_type": "method",

@@ -207,6 +207,22 @@ BADGE_COLORS = {
     "setting": "718B75",
 }
 
+TOP_TIER_VENUE_PREFIXES = (
+    "AAAI",
+    "ACL",
+    "ASE",
+    "EMNLP",
+    "ICLR",
+    "ICML",
+    "ICRA",
+    "ICSE",
+    "IJCAI",
+    "NEURIPS",
+    "TMLR",
+    "ARTIFICIAL INTELLIGENCE",
+    "IEEE TRANSACTIONS ON CYBERNETICS",
+)
+
 # Muted, value-specific colors keep neighboring papers distinguishable without
 # turning the catalog into a wall of high-saturation badges.
 TAG_VALUE_COLORS = {
@@ -336,11 +352,42 @@ def paper_count_label(count: int) -> str:
     return f"{count} {'paper' if count == 1 else 'papers'}"
 
 
+def subtopic_anchor(area: str, subtopic: str) -> str:
+    """Build stable anchors that do not depend on generated paper counts."""
+    return f"{AREA_ANCHORS[area]}-{subtopic}"
+
+
+def catalog_table_of_contents(papers: list[dict]) -> list[str]:
+    lines = []
+    for index, (area, label) in enumerate(AREA_LABELS.items(), start=1):
+        lines.append(f"{index}. [{label}](#{AREA_ANCHORS[area]})")
+        area_papers = [paper for paper in papers if paper["primary_area"] == area]
+        for subtopic, grouped in papers_by_subtopic(area_papers, area).items():
+            lines.append(
+                f"   - [{SUBTOPIC_LABELS[area][subtopic]}]"
+                f"(#{subtopic_anchor(area, subtopic)}) · {paper_count_label(len(grouped))}"
+            )
+    return lines
+
+
+def is_notable(paper: dict) -> bool:
+    """Flag papers with top-tier publication evidence or high citation impact."""
+    venue = (paper.get("published_venue") or paper.get("venue") or "").upper()
+    top_tier = venue.startswith(TOP_TIER_VENUE_PREFIXES)
+    return top_tier or "high-citation" in paper.get("notability", [])
+
+
+def notability_marker(paper: dict) -> str:
+    return "⭐ " if is_notable(paper) else ""
+
+
 def source_label(paper: dict) -> str:
     parsed_url = urlparse(paper["url"])
     if parsed_url.netloc.lower() in {"arxiv.org", "www.arxiv.org"}:
         arxiv_id = parsed_url.path.removeprefix("/abs/").strip("/")
         if arxiv_id:
+            if paper.get("published_venue"):
+                return f"{paper['published_venue']} · arXiv `{arxiv_id}`"
             return f"arXiv `{arxiv_id}`"
     venue = paper.get("venue") or "Preprint"
     if paper.get("source_group") == "conference-2026":
@@ -536,12 +583,11 @@ def render_readme(catalog: dict) -> str:
             "",
             "## Catalog",
             "",
+            "> ⭐ Published at a recognized top-tier venue or cited at least 100 times. Citation snapshot: **2026-07-23**; counts and sources are recorded in the paper registry.",
+            "",
             "### Categories",
             "",
-            *[
-                f"{index}. [{label}](#{AREA_ANCHORS[area]})"
-                for index, (area, label) in enumerate(AREA_LABELS.items(), start=1)
-            ],
+            *catalog_table_of_contents(papers),
         ]
     )
     for index, (area, label) in enumerate(AREA_LABELS.items(), start=1):
@@ -563,6 +609,8 @@ def render_readme(catalog: dict) -> str:
         for subtopic, grouped in papers_by_subtopic(selected, area).items():
             lines.extend(
                 [
+                    f'<a id="{subtopic_anchor(area, subtopic)}"></a>',
+                    "",
                     f"### {SUBTOPIC_LABELS[area][subtopic]} · {paper_count_label(len(grouped))}",
                     "",
                     SUBTOPIC_SUMMARIES[area][subtopic],
@@ -573,7 +621,7 @@ def render_readme(catalog: dict) -> str:
             )
             for paper in grouped:
                 lines.append(
-                    f"| {source_label(paper)} | [{paper['title']}]({paper['url']}) | "
+                    f"| {source_label(paper)} | {notability_marker(paper)}[{paper['title']}]({paper['url']}) | "
                     f"{representative_tags(paper)} |"
                 )
             lines.append("")
@@ -613,6 +661,8 @@ def render_detailed(catalog: dict) -> str:
         "",
         f"Evidence snapshot: **{catalog['snapshot_date']}** · {len(papers)} curated papers.",
         "",
+        "> ⭐ Published at a recognized top-tier venue or cited at least 100 times. Citation snapshot: **2026-07-23**; counts and sources are recorded in the paper registry.",
+        "",
     ]
     for index, (area, label) in enumerate(AREA_LABELS.items(), start=1):
         lines.extend([f"## {index}. {label}", "", *area_description_lines(area)])
@@ -632,7 +682,7 @@ def render_detailed(catalog: dict) -> str:
             )
             for paper in grouped:
                 lines.append(
-                    f"- **[{paper['title']}]({paper['url']})** — {source_label(paper)}"
+                    f"- {notability_marker(paper)}**[{paper['title']}]({paper['url']})** — {source_label(paper)}"
                 )
                 if paper.get("authors"):
                     authors = paper["authors"]

@@ -57,6 +57,7 @@ TAG_VALUES = {
     "problem": {"entropy-collapse", "mode-collapse", "sparse-reward", "local-optimum", "capability-boundary", "long-horizon", "exploration-exploitation", "recovery/error-correction"},
     "setting": {"math", "code", "multimodal", "creative/open-ended", "web", "tool-use", "knowledge-graph", "embodied", "multi-agent"},
 }
+NOTABILITY_VALUES = {"high-citation"}
 
 
 def normalize(value: str) -> str:
@@ -96,6 +97,26 @@ def main() -> int:
             invalid = sorted(set(paper.get(dimension, [])) - allowed)
             if invalid:
                 errors.append(f"{label}: invalid {dimension} tags {invalid}")
+
+        notability = paper.get("notability", [])
+        if not isinstance(notability, list):
+            errors.append(f"{label}: notability must be a list")
+            notability = []
+        invalid_notability = sorted(set(notability) - NOTABILITY_VALUES)
+        if invalid_notability:
+            errors.append(f"{label}: invalid notability values {invalid_notability}")
+        citation_count = paper.get("citation_count")
+        if citation_count is not None and (not isinstance(citation_count, int) or citation_count < 0):
+            errors.append(f"{label}: citation_count must be a nonnegative integer")
+        if "high-citation" in notability:
+            if not isinstance(citation_count, int) or citation_count < 100:
+                errors.append(f"{label}: high-citation requires citation_count >= 100")
+            if not paper.get("citation_source"):
+                errors.append(f"{label}: high-citation requires citation_source")
+            if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", paper.get("citation_checked", "")):
+                errors.append(f"{label}: high-citation requires citation_checked in YYYY-MM-DD format")
+        if paper.get("published_venue") is not None and not isinstance(paper["published_venue"], str):
+            errors.append(f"{label}: published_venue must be a string")
 
         paper_id = paper.get("id", "")
         if paper_id in seen_ids:
