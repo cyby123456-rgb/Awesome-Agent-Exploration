@@ -271,12 +271,15 @@ def load_catalog() -> dict:
 
 
 def area_description_lines(area: str) -> list[str]:
-    """Render each explanatory paragraph as a distinct Markdown paragraph."""
-    lines: list[str] = []
-    for paragraph in AREA_DESCRIPTIONS[area]:
-        lines.extend([paragraph, ""])
-    lines.extend([f"> **Research bottlenecks.** {AREA_BOTTLENECKS[area]}", ""])
-    return lines
+    """Render a compact, consistent overview for each research category."""
+    return [
+        "| Research lens | Summary |",
+        "|---|---|",
+        f"| **🧭 Scope** | {AREA_DESCRIPTIONS[area][0]} |",
+        f"| **🎯 Core question** | {AREA_DESCRIPTIONS[area][1]} |",
+        f"| **🚧 Open challenges** | {AREA_BOTTLENECKS[area]} |",
+        "",
+    ]
 
 
 def tag_badge(dimension: str, value: str) -> str:
@@ -512,18 +515,9 @@ def render_readme(catalog: dict) -> str:
         (p for p in papers if p.get("featured")),
         key=lambda p: p.get("featured_rank", 10_000),
     )
-    if len(featured) == 10:
+    if len(featured) != 10:
         lines.extend(
             [
-                "> Ten curator-selected entry points into the catalog. Each paper also appears once in its corresponding category and subcategory below.",
-                "",
-            ]
-        )
-    else:
-        lines.extend(
-            [
-                f"> **Curation in progress.** Select 10 papers manually from the {len(featured)} candidates below; no automatic ranking or truncation is applied.",
-                "",
                 f"### Candidate Pool · {paper_count_label(len(featured))}",
                 "",
             ]
@@ -558,12 +552,7 @@ def render_readme(catalog: dict) -> str:
                 "",
                 f"## {index}. {label}",
                 "",
-                f"> **Research focus.** {AREA_DESCRIPTIONS[area][0]}",
-                "",
-                AREA_DESCRIPTIONS[area][1],
-                "",
-                f"> **Research bottlenecks.** {AREA_BOTTLENECKS[area]}",
-                "",
+                *area_description_lines(area),
             ]
         )
         selected = sorted(

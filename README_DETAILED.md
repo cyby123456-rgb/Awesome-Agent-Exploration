@@ -6,11 +6,11 @@ Evidence snapshot: **2026-07-22** · 268 curated papers.
 
 ## 1. Exploration for LLM Generation & Inference
 
-This category covers exploration that happens while a language model is generating or selecting candidate outputs, rather than through a reinforcement-learning update. Typical examples include sampling and decoding strategies, self-consistency, semantic-diversity methods, latent-state steering, and tree or graph search at inference time.
-
-The central question is how to search a model's existing generative distribution more broadly, safely, or efficiently. Papers belong here when the main contribution improves or analyzes candidate generation, reasoning-path search, or output diversity without making RL post-training the core mechanism.
-
-> **Research bottlenecks.** The central challenge is still the diversity-quality-efficiency trade-off: broader sampling and search can improve coverage while rapidly increasing inference cost or admitting low-quality paths. Results are also hard to compare because gains from exploration are often entangled with extra compute, verifier strength, and model scale, while semantic and latent diversity lack reliable task-independent measures.
+| Research lens | Summary |
+|---|---|
+| **🧭 Scope** | This category covers exploration that happens while a language model is generating or selecting candidate outputs, rather than through a reinforcement-learning update. Typical examples include sampling and decoding strategies, self-consistency, semantic-diversity methods, latent-state steering, and tree or graph search at inference time. |
+| **🎯 Core question** | The central question is how to search a model's existing generative distribution more broadly, safely, or efficiently. Papers belong here when the main contribution improves or analyzes candidate generation, reasoning-path search, or output diversity without making RL post-training the core mechanism. |
+| **🚧 Open challenges** | The central challenge is still the diversity-quality-efficiency trade-off: broader sampling and search can improve coverage while rapidly increasing inference cost or admitting low-quality paths. Results are also hard to compare because gains from exploration are often entangled with extra compute, verifier strength, and model scale, while semantic and latent diversity lack reliable task-independent measures. |
 
 ### Decoding & Sampling · 14 papers
 
@@ -345,11 +345,11 @@ Methods that counter mode collapse and expand semantic coverage, emphasizing how
 
 ## 2. Exploration for RLVR, Policy & Curriculum
 
-This category covers exploration inside RLVR and policy-learning loops: constructing curricula, collecting rollouts, shaping rewards and advantages, and updating a language-model policy.
-
-The central question is how learning changes what the model can discover. Entropy control, capability expansion, replay, self-play, co-evolution, data selection, and task synthesis belong here when they improve a model policy without making external agent-environment interaction the defining loop.
-
-> **Research bottlenecks.** Training-time exploration remains vulnerable to entropy collapse, biased or sparse rewards, unstable credit assignment, and curricula that overfit to what a verifier can already recognize. A key open question is whether an intervention creates genuinely new capability or only redistributes probability mass over existing behavior; replay, self-play, and population methods add further stability, data-quality, and compute challenges.
+| Research lens | Summary |
+|---|---|
+| **🧭 Scope** | This category covers exploration inside RLVR and policy-learning loops: constructing curricula, collecting rollouts, shaping rewards and advantages, and updating a language-model policy. |
+| **🎯 Core question** | The central question is how learning changes what the model can discover. Entropy control, capability expansion, replay, self-play, co-evolution, data selection, and task synthesis belong here when they improve a model policy without making external agent-environment interaction the defining loop. |
+| **🚧 Open challenges** | Training-time exploration remains vulnerable to entropy collapse, biased or sparse rewards, unstable credit assignment, and curricula that overfit to what a verifier can already recognize. A key open question is whether an intervention creates genuinely new capability or only redistributes probability mass over existing behavior; replay, self-play, and population methods add further stability, data-quality, and compute challenges. |
 
 ### Entropy & Distribution Control · 43 papers
 
@@ -1033,11 +1033,11 @@ Methods that generate and sequence tasks across difficulty levels, with adaptive
 
 ## 3. Agentic Exploration
 
-This category covers language agents that explore an external or persistent environment at inference or test time: webpages, tools, GUIs, knowledge graphs, games, embodied worlds, or multi-agent settings.
-
-The explored object is a trajectory of states, actions, observations, tool calls, and accumulated memory. Papers belong here when planning, recovery, information seeking, or environment coverage is the main contribution and no training update is central.
-
-> **Research bottlenecks.** Long horizons, partial observability, and compounding action errors make efficient coverage and reliable recovery difficult, especially when tools or environments change. Current benchmarks often simplify feedback and reset conditions, leaving unresolved questions around realistic exploration cost, safe interaction, memory quality, reproducibility, and whether improvements transfer beyond a narrow environment.
+| Research lens | Summary |
+|---|---|
+| **🧭 Scope** | This category covers language agents that explore an external or persistent environment at inference or test time: webpages, tools, GUIs, knowledge graphs, games, embodied worlds, or multi-agent settings. |
+| **🎯 Core question** | The explored object is a trajectory of states, actions, observations, tool calls, and accumulated memory. Papers belong here when planning, recovery, information seeking, or environment coverage is the main contribution and no training update is central. |
+| **🚧 Open challenges** | Long horizons, partial observability, and compounding action errors make efficient coverage and reliable recovery difficult, especially when tools or environments change. Current benchmarks often simplify feedback and reset conditions, leaving unresolved questions around realistic exploration cost, safe interaction, memory quality, reproducibility, and whether improvements transfer beyond a narrow environment. |
 
 ### Web, Tools & GUI · 4 papers
 
@@ -1172,11 +1172,11 @@ Agents that traverse knowledge graphs or use accumulated memory to guide future 
 
 ## 4. Agentic Exploration for Training
 
-This category covers agent-environment exploration whose purpose is to create training experience, synthesize interactive tasks, or update and improve an agent policy.
-
-It includes agentic RL, exploration-aware policy optimization, self-play training, autonomous experience collection, and environment generation. The defining feature is that external interaction supplies or structures the learning signal rather than serving only as test-time search.
-
-> **Research bottlenecks.** Agent-generated trajectories are expensive, correlated, and vulnerable to reward hacking or compounding environment errors, while successful experience is often too sparse to train on directly. Open problems include reliable credit across long interactions, balancing diverse experience with learnability, preventing self-training feedback loops, and transferring policies across tools and environments.
+| Research lens | Summary |
+|---|---|
+| **🧭 Scope** | This category covers agent-environment exploration whose purpose is to create training experience, synthesize interactive tasks, or update and improve an agent policy. |
+| **🎯 Core question** | It includes agentic RL, exploration-aware policy optimization, self-play training, autonomous experience collection, and environment generation. The defining feature is that external interaction supplies or structures the learning signal rather than serving only as test-time search. |
+| **🚧 Open challenges** | Agent-generated trajectories are expensive, correlated, and vulnerable to reward hacking or compounding environment errors, while successful experience is often too sparse to train on directly. Open problems include reliable credit across long interactions, balancing diverse experience with learnability, preventing self-training feedback loops, and transferring policies across tools and environments. |
 
 ### Web, Tools & GUI Training · 6 papers
 
@@ -1326,11 +1326,11 @@ Methods that combine exploratory experience with replay or memory during agent t
 
 ## 5. Understanding, Evaluation & Benchmarks
 
-This category collects empirical analyses, theoretical accounts, surveys, metrics, and benchmarks that help the field understand exploration. Rather than primarily proposing a new exploration intervention, these works measure diversity, characterize training dynamics, evaluate capability boundaries, or establish a shared vocabulary and test bed.
-
-They are essential for judging whether a method genuinely improves exploration instead of merely changing accuracy or sampling behavior. Keeping them separate makes the evidence about a phenomenon easy to distinguish from methods designed to change it.
-
-> **Research bottlenecks.** The field lacks standardized measures that separate useful exploration from superficial diversity, additional sampling compute, or benchmark-specific variance. Static and contamination-prone benchmarks, limited cross-model replication, and weak causal links between token-level statistics, training dynamics, and downstream capability make it difficult to identify which interventions genuinely expand exploration.
+| Research lens | Summary |
+|---|---|
+| **🧭 Scope** | This category collects empirical analyses, theoretical accounts, surveys, metrics, and benchmarks that help the field understand exploration. Rather than primarily proposing a new exploration intervention, these works measure diversity, characterize training dynamics, evaluate capability boundaries, or establish a shared vocabulary and test bed. |
+| **🎯 Core question** | They are essential for judging whether a method genuinely improves exploration instead of merely changing accuracy or sampling behavior. Keeping them separate makes the evidence about a phenomenon easy to distinguish from methods designed to change it. |
+| **🚧 Open challenges** | The field lacks standardized measures that separate useful exploration from superficial diversity, additional sampling compute, or benchmark-specific variance. Static and contamination-prone benchmarks, limited cross-model replication, and weak causal links between token-level statistics, training dynamics, and downstream capability make it difficult to identify which interventions genuinely expand exploration. |
 
 ### Surveys & Position Papers · 1 paper
 
