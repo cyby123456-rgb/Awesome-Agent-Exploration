@@ -451,7 +451,7 @@ def render_readme(catalog: dict) -> str:
         "[![Five research categories](https://img.shields.io/badge/categories-5-10B981?style=flat-square)](#research-map) "
         "[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-F59E0B?style=flat-square)](CONTRIBUTING.md)",
         "",
-        "[Guide](#guide) · [Research map](#research-map) · [Start here](#start-here) · [Catalog](#catalog) · [Detailed metadata](README_DETAILED.md) · [Contribute](CONTRIBUTING.md)",
+        "[Guide](#guide) · [Research map](#research-map) · [10-paper introduction](#start-here) · [Catalog](#catalog) · [Detailed metadata](README_DETAILED.md) · [Contribute](CONTRIBUTING.md)",
         "",
         f'<img src="assets/research-map.svg" alt="Research map of {len(papers)} papers across five exploration categories" width="100%">',
         "",
@@ -464,7 +464,7 @@ def render_readme(catalog: dict) -> str:
         "| **[What counts as exploration](#what-counts-as-exploration)** | Sutton & Barto frame exploration as trying alternatives to improve future action selection, while exploitation uses current knowledge to obtain reward. |",
         "| **[Research map](#research-map)** | Five categories spanning LLM generation, RLVR and policy learning, agentic inference, agentic training, and evidence. |",
         "| **[Taxonomy lens](#taxonomy-lens)** | How phase, level, signal, mechanism, problem, and setting describe each paper. |",
-        "| **[Start here](#start-here)** | A cross-section of recommended papers for first-time readers. |",
+        "| **[10 papers to get started](#start-here)** | A manually selected introduction to LLM exploration; automatic ranking is intentionally avoided. |",
         "| **[Full catalog](#catalog)** | All curated papers, grouped by their primary research category. |",
         "",
         "## What counts as exploration?",
@@ -502,9 +502,9 @@ def render_readme(catalog: dict) -> str:
         "",
         *statistics_table(papers),
         "",
-        "## Start here",
+        '<a id="start-here"></a>',
         "",
-        "> These are signposts into the full catalog. Every highlighted paper—including all conference papers—also appears once in its corresponding category and subcategory below.",
+        "## 10 Papers to Get Started with LLM Exploration",
         "",
     ]
 
@@ -513,10 +513,21 @@ def render_readme(catalog: dict) -> str:
         key=lambda p: (p.get("date", ""), p["title"]),
         reverse=True,
     )
-    for paper in featured:
+    if len(featured) == 10:
+        lines.extend(
+            [
+                "> Ten curator-selected entry points into the catalog. Each paper also appears once in its corresponding category and subcategory below.",
+                "",
+            ]
+        )
+        for paper in featured:
+            lines.append(
+                f"- **[{paper['title']}]({paper['url']})** — {source_label(paper)} · "
+                f"{AREA_LABELS[paper['primary_area']]} · {representative_tags(paper)}"
+            )
+    else:
         lines.append(
-            f"- **[{paper['title']}]({paper['url']})** — {source_label(paper)} · "
-            f"{AREA_LABELS[paper['primary_area']]} · {representative_tags(paper)}"
+            "> **Curation in progress.** This section will contain 10 papers selected manually; no automatic ranking or truncation is applied."
         )
 
     lines.extend(
