@@ -510,8 +510,7 @@ def render_readme(catalog: dict) -> str:
 
     featured = sorted(
         (p for p in papers if p.get("featured")),
-        key=lambda p: (p.get("date", ""), p["title"]),
-        reverse=True,
+        key=lambda p: p.get("featured_rank", 10_000),
     )
     if len(featured) == 10:
         lines.extend(

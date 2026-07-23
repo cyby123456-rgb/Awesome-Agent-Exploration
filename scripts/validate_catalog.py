@@ -126,6 +126,16 @@ def main() -> int:
     if len(classic_titles) > 8:
         errors.append("classical RL appendix must contain at most 8 papers")
 
+    featured = [paper for paper in papers if paper.get("featured")]
+    featured_ranks = [paper.get("featured_rank") for paper in featured]
+    if len(featured) != 10:
+        errors.append(f"Start Here must contain exactly 10 featured papers, got {len(featured)}")
+    if sorted(featured_ranks, key=lambda rank: rank if isinstance(rank, int) else 10_000) != list(range(1, 11)):
+        errors.append("featured papers must have unique featured_rank values from 1 through 10")
+    for paper in papers:
+        if paper.get("featured_rank") is not None and not paper.get("featured"):
+            errors.append(f"{paper['title']}: featured_rank requires featured=true")
+
     print(f"Validated {len(papers)} curated papers and {len(classic_titles)} classical references")
     print("Primary categories:", dict(sorted(Counter(p["primary_area"] for p in papers).items())))
     print(

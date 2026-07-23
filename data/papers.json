@@ -39,7 +39,6 @@
         "local-optimum"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Explores reward-function populations with LLM-guided evolution, Thompson sampling, and shared off-policy experience.",
       "subtopic": "replay-population"
     },
@@ -79,7 +78,6 @@
       "setting": [
         "math"
       ],
-      "featured": false,
       "rationale": "Searches a hierarchical thought tree to adaptively decompose optimization-modeling problems and synthesize modeling plans.",
       "subtopic": "search-deliberation"
     },
@@ -121,7 +119,6 @@
         "tool-use",
         "web"
       ],
-      "featured": false,
       "rationale": "Uses value-guided hierarchical search to explore a joint space of agent workflows, memory, planning, and tool components.",
       "subtopic": "planning-interaction"
     },
@@ -161,7 +158,6 @@
       "setting": [
         "embodied"
       ],
-      "featured": false,
       "rationale": "Combines LLM scene planning, evolutionary diversification, and VLM critique to expand realistic embodied training environments.",
       "subtopic": "embodied-environments"
     },
@@ -203,7 +199,6 @@
       "setting": [
         "math"
       ],
-      "featured": false,
       "rationale": "Accelerates reasoning-path exploration by pairing small-model thought proposals with quality-preserving large-model rejection.",
       "subtopic": "search-deliberation"
     },
@@ -244,7 +239,6 @@
       "setting": [
         "embodied"
       ],
-      "featured": false,
       "rationale": "Uses cooperative coevolution to improve the sample efficiency of quality-diversity exploration over policy populations.",
       "subtopic": "replay-population"
     },
@@ -288,7 +282,6 @@
       "setting": [
         "embodied"
       ],
-      "featured": false,
       "rationale": "Introduces noise-aware optimistic exploration that avoids repeatedly probing stochastic but uninformative regions.",
       "subtopic": "embodied-environments"
     },
@@ -332,7 +325,6 @@
       "setting": [
         "embodied"
       ],
-      "featured": false,
       "rationale": "Selects and mutates policy populations in a learned hierarchical trajectory space to jointly improve quality and diversity.",
       "subtopic": "replay-population"
     },
@@ -374,7 +366,6 @@
       "setting": [
         "embodied"
       ],
-      "featured": false,
       "rationale": "Builds a bootstrap UCB bonus and propagates future uncertainty backward for time-consistent deep-RL exploration.",
       "subtopic": "embodied-environments"
     },
@@ -417,7 +408,6 @@
         "web",
         "tool-use"
       ],
-      "featured": false,
       "rationale": "Uses curiosity rewards and an incrementally learned automaton to explore long web-interaction sequences for testing.",
       "subtopic": "web-tools-gui"
     },
@@ -461,7 +451,6 @@
       "setting": [
         "embodied"
       ],
-      "featured": false,
       "rationale": "Learns dynamics-relevant bottleneck representations and an information-gain bonus for robust exploration under observation noise.",
       "subtopic": "embodied-environments"
     },
@@ -504,7 +493,6 @@
         "creative/open-ended",
         "embodied"
       ],
-      "featured": false,
       "rationale": "Evolves a population of deep-RL game policies against multiple objectives to cover distinct behavioral styles.",
       "subtopic": "replay-population"
     },
@@ -551,7 +539,6 @@
       "setting": [
         "embodied"
       ],
-      "featured": false,
       "rationale": "Balances game-winning progress with evolutionary exploration of the game-state space to expose difficult bugs.",
       "subtopic": "embodied-environments"
     },
@@ -594,7 +581,6 @@
       "setting": [
         "multi-agent"
       ],
-      "featured": false,
       "rationale": "Triggers variational exploration when inferred short-term policies diverge from current actors in nonstationary multiagent environments.",
       "subtopic": "replay-population"
     },
@@ -627,7 +613,6 @@
       "setting": [
         "math"
       ],
-      "featured": false,
       "rationale": "Exploration focus: novelty/curiosity, semantic-diversity, coverage.",
       "subtopic": "theory-training-dynamics"
     },
@@ -661,7 +646,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, reward/advantage, reward-shaping/intrinsic-reward.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "benchmarks-metrics"
@@ -694,7 +678,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: uncertainty/confidence, reward/advantage, sampling/decoding.",
       "discovery_category": "能力边界与训练动态",
       "subtopic": "theory-training-dynamics"
@@ -726,7 +709,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, coverage.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "theory-training-dynamics"
@@ -761,7 +743,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, sampling/decoding.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "theory-training-dynamics"
@@ -797,7 +778,6 @@
         "entropy-collapse"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, reward/advantage, regularization.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "entropy-distribution"
@@ -841,7 +821,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, semantic-diversity, information-gain.",
       "discovery_category": "能力边界与训练动态",
       "subtopic": "theory-training-dynamics"
@@ -872,7 +851,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: reward/advantage, sampling/decoding, gradient-reshaping.",
       "discovery_category": "能力边界与训练动态",
       "subtopic": "theory-training-dynamics"
@@ -915,7 +893,6 @@
         "mode-collapse"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: semantic-diversity, coverage, reward/advantage.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "theory-training-dynamics"
@@ -955,7 +932,6 @@
       "setting": [
         "multi-agent"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: semantic-diversity, ensemble/population.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "theory-training-dynamics"
@@ -995,7 +971,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, reward/advantage, sampling/decoding.",
       "discovery_category": "能力边界与训练动态",
       "subtopic": "theory-training-dynamics"
@@ -1032,7 +1007,6 @@
       "setting": [
         "multi-agent"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, ensemble/population.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "theory-training-dynamics"
@@ -1066,7 +1040,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
       "discovery_category": "能力边界与训练动态",
       "subtopic": "theory-training-dynamics"
@@ -1096,7 +1069,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: reward/advantage, backtracking/resampling.",
       "discovery_category": "能力边界与训练动态",
       "subtopic": "theory-training-dynamics"
@@ -1128,7 +1100,6 @@
         "capability-boundary"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: reward/advantage, gradient-reshaping.",
       "discovery_category": "能力边界与训练动态",
       "subtopic": "capability-boundaries"
@@ -1163,7 +1134,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "theory-training-dynamics"
@@ -1195,7 +1165,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: semantic-diversity, sampling/decoding, tree-search/branching.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "theory-training-dynamics"
@@ -1230,7 +1199,6 @@
         "mode-collapse"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, coverage.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "theory-training-dynamics"
@@ -1264,7 +1232,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, reward/advantage.",
       "discovery_category": "能力边界与训练动态",
       "subtopic": "theory-training-dynamics"
@@ -1301,7 +1268,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, reward/advantage, gradient-reshaping.",
       "discovery_category": "能力边界与训练动态",
       "subtopic": "theory-training-dynamics"
@@ -1338,7 +1304,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: semantic-diversity.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "theory-training-dynamics"
@@ -1380,7 +1345,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: structured-search.",
       "discovery_category": "能力边界与训练动态",
       "subtopic": "theory-training-dynamics"
@@ -1415,7 +1379,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "theory-training-dynamics"
@@ -1450,7 +1413,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: reward/advantage.",
       "discovery_category": "能力边界与训练动态",
       "subtopic": "theory-training-dynamics"
@@ -1488,7 +1450,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: reward/advantage, gradient-reshaping.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "theory-training-dynamics"
@@ -1524,7 +1485,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
       "subtopic": "theory-training-dynamics"
     },
@@ -1560,7 +1520,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
       "subtopic": "theory-training-dynamics"
     },
@@ -1596,7 +1555,6 @@
         "capability-boundary"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
       "subtopic": "capability-boundaries"
     },
@@ -1635,7 +1593,8 @@
       "setting": [],
       "featured": true,
       "rationale": "Exploration focus: entropy/probability, coverage, reward/advantage.",
-      "subtopic": "surveys-position"
+      "subtopic": "surveys-position",
+      "featured_rank": 1
     },
     {
       "id": "arxiv:2505.15117",
@@ -1665,7 +1624,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: reward/advantage, structured-search.",
       "subtopic": "theory-training-dynamics"
     },
@@ -1712,7 +1670,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, reward/advantage, gradient-reshaping.",
       "subtopic": "entropy-distribution"
     },
@@ -1745,7 +1702,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, semantic-diversity, coverage.",
       "subtopic": "credit-optimization"
     },
@@ -1780,7 +1736,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
       "subtopic": "capability-dynamics"
     },
@@ -1815,7 +1770,6 @@
         "local-optimum"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
       "subtopic": "entropy-distribution"
     },
@@ -1856,7 +1810,6 @@
         "exploration-exploitation"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: semantic-diversity, reward/advantage, gradient-reshaping.",
       "subtopic": "credit-optimization"
     },
@@ -1890,7 +1843,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
       "subtopic": "entropy-distribution"
     },
@@ -1924,7 +1876,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: reward/advantage, curriculum/task-generation, structured-search.",
       "subtopic": "capability-dynamics"
     },
@@ -1960,7 +1911,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: semantic-diversity, reward/advantage.",
       "subtopic": "capability-dynamics"
     },
@@ -1996,7 +1946,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
       "subtopic": "entropy-distribution"
     },
@@ -2030,7 +1979,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: novelty/curiosity, semantic-diversity, information-gain.",
       "subtopic": "capability-dynamics"
     },
@@ -2071,7 +2019,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, semantic-diversity, regularization.",
       "subtopic": "entropy-distribution"
     },
@@ -2111,7 +2058,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, uncertainty/confidence, reward/advantage.",
       "subtopic": "entropy-distribution"
     },
@@ -2145,7 +2091,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, uncertainty/confidence, reward/advantage.",
       "subtopic": "entropy-distribution"
     },
@@ -2179,7 +2124,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability.",
       "subtopic": "entropy-distribution"
     },
@@ -2213,7 +2157,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, reward/advantage, gradient-reshaping.",
       "subtopic": "entropy-distribution"
     },
@@ -2247,7 +2190,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
       "subtopic": "capability-dynamics"
     },
@@ -2284,7 +2226,6 @@
         "long-horizon"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
       "discovery_category": "能力边界与训练动态",
       "subtopic": "capability-dynamics"
@@ -2319,7 +2260,6 @@
         "exploration-exploitation"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, novelty/curiosity.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "capability-dynamics"
@@ -2357,7 +2297,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "reward-rollout"
@@ -2395,7 +2334,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "credit-optimization"
@@ -2435,7 +2373,6 @@
         "exploration-exploitation"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "credit-optimization"
@@ -2472,7 +2409,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: semantic-diversity, sampling/decoding.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "capability-dynamics"
@@ -2510,7 +2446,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, semantic-diversity, gradient-reshaping.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "entropy-distribution"
@@ -2551,7 +2486,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: semantic-diversity, sampling/decoding, noise/perturbation.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "capability-dynamics"
@@ -2593,7 +2527,6 @@
         "exploration-exploitation"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "capability-dynamics"
@@ -2633,7 +2566,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: semantic-diversity, reward/advantage.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "capability-dynamics"
@@ -2674,7 +2606,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, reward/advantage, reward-shaping/intrinsic-reward.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "reward-rollout"
@@ -2718,7 +2649,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "entropy-distribution"
@@ -2749,7 +2679,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, novelty/curiosity, coverage.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "entropy-distribution"
@@ -2784,7 +2713,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity, coverage.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "capability-dynamics"
@@ -2827,7 +2755,6 @@
       "setting": [
         "creative/open-ended"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, semantic-diversity, coverage.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "reward-rollout"
@@ -2866,7 +2793,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, reward/advantage.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "credit-optimization"
@@ -2906,7 +2832,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, sampling/decoding, temperature-control.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "capability-dynamics"
@@ -2943,7 +2868,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "capability-dynamics"
@@ -2985,7 +2909,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "capability-dynamics"
@@ -3019,7 +2942,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, reward/advantage, self-play/co-evolution.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "capability-dynamics"
@@ -3048,7 +2970,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, regularization.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "entropy-distribution"
@@ -3085,7 +3006,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, reward/advantage.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "data-selection-prompting"
@@ -3128,7 +3048,6 @@
         "entropy-collapse"
       ],
       "setting": [],
-      "featured": true,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "entropy-distribution"
@@ -3165,7 +3084,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: uncertainty/confidence, novelty/curiosity, semantic-diversity.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "credit-optimization"
@@ -3208,7 +3126,6 @@
         "exploration-exploitation"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, semantic-diversity, information-gain.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "credit-optimization"
@@ -3246,7 +3163,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, uncertainty/confidence, novelty/curiosity.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "entropy-distribution"
@@ -3282,7 +3198,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: semantic-diversity, gradient-reshaping.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "capability-dynamics"
@@ -3318,7 +3233,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity, sampling/decoding.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "capability-dynamics"
@@ -3358,7 +3272,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "credit-optimization"
@@ -3399,7 +3312,6 @@
         "entropy-collapse"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "reward-rollout"
@@ -3432,7 +3344,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: uncertainty/confidence, reward/advantage, sampling/decoding.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "capability-dynamics"
@@ -3466,7 +3377,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: reward/advantage, disagreement, gradient-reshaping.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "capability-dynamics"
@@ -3509,7 +3419,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, reward/advantage, regularization.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "reward-rollout"
@@ -3546,7 +3455,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: novelty/curiosity, reward/advantage, disagreement.",
       "discovery_category": "Agent 与自改进探索",
       "subtopic": "credit-optimization"
@@ -3585,7 +3493,6 @@
         "exploration-exploitation"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, semantic-diversity, reward/advantage.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "capability-dynamics"
@@ -3618,7 +3525,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, reward/advantage, noise/perturbation.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "replay-population"
@@ -3655,7 +3561,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity.",
       "discovery_category": "能力边界与训练动态",
       "subtopic": "capability-dynamics"
@@ -3692,7 +3597,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: reward/advantage, curriculum/task-generation, self-play/co-evolution.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "capability-dynamics"
@@ -3725,7 +3629,6 @@
         "mode-collapse"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "capability-dynamics"
@@ -3760,7 +3663,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "entropy-distribution"
@@ -3793,7 +3695,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, reward/advantage.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "entropy-distribution"
@@ -3826,7 +3727,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, semantic-diversity, curriculum/task-generation.",
       "discovery_category": "能力边界与训练动态",
       "subtopic": "entropy-distribution"
@@ -3859,7 +3759,6 @@
       "setting": [
         "multimodal"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity, reward/advantage.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "capability-dynamics"
@@ -3896,7 +3795,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, uncertainty/confidence, reward/advantage.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "entropy-distribution"
@@ -3931,7 +3829,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, reward/advantage, sampling/decoding.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "credit-optimization"
@@ -3966,7 +3863,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, reward/advantage.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "entropy-distribution"
@@ -4000,7 +3896,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "capability-dynamics"
@@ -4040,7 +3935,6 @@
       "setting": [
         "math"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, novelty/curiosity, sampling/decoding.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "data-selection-prompting"
@@ -4076,7 +3970,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, reward/advantage.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "entropy-distribution"
@@ -4116,7 +4009,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: semantic-diversity, reward/advantage, reward-shaping/intrinsic-reward.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "capability-dynamics"
@@ -4151,7 +4043,6 @@
       "setting": [
         "creative/open-ended"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: semantic-diversity, reward/advantage, gradient-reshaping.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "capability-dynamics"
@@ -4188,7 +4079,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, reward/advantage, sampling/decoding.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "capability-dynamics"
@@ -4229,7 +4119,6 @@
         "local-optimum"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, coverage, reward/advantage.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "reward-rollout"
@@ -4270,7 +4159,6 @@
       "setting": [
         "math"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, semantic-diversity, coverage.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "capability-dynamics"
@@ -4311,7 +4199,6 @@
       "setting": [
         "creative/open-ended"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: semantic-diversity, reward/advantage, reward-shaping/intrinsic-reward.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "capability-dynamics"
@@ -4348,7 +4235,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, novelty/curiosity.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "entropy-distribution"
@@ -4381,7 +4267,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: semantic-diversity, reward/advantage.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "capability-dynamics"
@@ -4421,7 +4306,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: uncertainty/confidence, novelty/curiosity, reward/advantage.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "reward-rollout"
@@ -4454,7 +4338,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, reward/advantage.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "capability-dynamics"
@@ -4493,7 +4376,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: reward/advantage, noise/perturbation.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "credit-optimization"
@@ -4532,7 +4414,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: semantic-diversity, reward/advantage, disagreement.",
       "discovery_category": "Agent 与自改进探索",
       "subtopic": "replay-population"
@@ -4579,7 +4460,8 @@
       "featured": true,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
       "discovery_category": "探索机制与内在奖励",
-      "subtopic": "reward-rollout"
+      "subtopic": "reward-rollout",
+      "featured_rank": 4
     },
     {
       "id": "venue:64690",
@@ -4615,7 +4497,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "capability-dynamics"
@@ -4657,7 +4538,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, semantic-diversity, reward/advantage.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "capability-dynamics"
@@ -4701,7 +4581,6 @@
         "mode-collapse"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, semantic-diversity, coverage.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "entropy-distribution"
@@ -4737,7 +4616,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, uncertainty/confidence.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "capability-dynamics"
@@ -4772,7 +4650,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, reward/advantage, gradient-reshaping.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "entropy-distribution"
@@ -4807,7 +4684,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, gradient-reshaping.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "credit-optimization"
@@ -4849,7 +4725,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, reward/advantage, sampling/decoding.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "capability-dynamics"
@@ -4886,7 +4761,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "entropy-distribution"
@@ -4927,7 +4801,6 @@
       "setting": [
         "multimodal"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "entropy-distribution"
@@ -4961,7 +4834,6 @@
         "entropy-collapse"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "entropy-distribution"
@@ -4996,7 +4868,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, novelty/curiosity, reward/advantage.",
       "subtopic": "credit-optimization"
     },
@@ -5032,7 +4903,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, reward/advantage, regularization.",
       "subtopic": "entropy-distribution"
     },
@@ -5074,9 +4944,10 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
+      "featured": true,
       "rationale": "Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
-      "subtopic": "entropy-distribution"
+      "subtopic": "entropy-distribution",
+      "featured_rank": 8
     },
     {
       "id": "arxiv:2511.04800",
@@ -5109,7 +4980,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
       "subtopic": "data-selection-prompting"
     },
@@ -5145,7 +5015,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: novelty/curiosity, reward/advantage, tree-search/branching.",
       "subtopic": "capability-dynamics"
     },
@@ -5183,7 +5052,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
       "subtopic": "entropy-distribution"
     },
@@ -5217,7 +5085,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
       "subtopic": "capability-dynamics"
     },
@@ -5254,7 +5121,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
       "subtopic": "credit-optimization"
     },
@@ -5290,7 +5156,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, reward/advantage, gradient-reshaping.",
       "subtopic": "entropy-distribution"
     },
@@ -5327,7 +5192,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, novelty/curiosity, gradient-reshaping.",
       "subtopic": "entropy-distribution"
     },
@@ -5363,7 +5227,6 @@
         "mode-collapse"
       ],
       "setting": [],
-      "featured": true,
       "rationale": "Exploration focus: structured-search.",
       "subtopic": "reward-rollout"
     },
@@ -5397,7 +5260,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: uncertainty/confidence, novelty/curiosity, reward/advantage.",
       "subtopic": "capability-dynamics"
     },
@@ -5435,7 +5297,6 @@
         "exploration-exploitation"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
       "subtopic": "entropy-distribution"
     },
@@ -5474,7 +5335,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
       "subtopic": "entropy-distribution"
     },
@@ -5506,7 +5366,6 @@
         "exploration-exploitation"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
       "subtopic": "capability-dynamics"
     },
@@ -5538,7 +5397,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
       "subtopic": "entropy-distribution"
     },
@@ -5575,7 +5433,6 @@
         "capability-boundary"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: gradient-reshaping.",
       "subtopic": "credit-optimization"
     },
@@ -5609,7 +5466,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: replay/memory, structured-search.",
       "subtopic": "replay-population"
     },
@@ -5644,7 +5500,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
       "subtopic": "replay-population"
     },
@@ -5677,7 +5532,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, uncertainty/confidence, reward/advantage.",
       "subtopic": "capability-dynamics"
     },
@@ -5711,7 +5565,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: novelty/curiosity, reward/advantage, structured-search.",
       "subtopic": "credit-optimization"
     },
@@ -5763,7 +5616,8 @@
       "setting": [],
       "featured": true,
       "rationale": "Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
-      "subtopic": "entropy-distribution"
+      "subtopic": "entropy-distribution",
+      "featured_rank": 5
     },
     {
       "id": "arxiv:2505.24864",
@@ -5803,7 +5657,8 @@
       "setting": [],
       "featured": true,
       "rationale": "Exploration focus: structured-search.",
-      "subtopic": "entropy-distribution"
+      "subtopic": "entropy-distribution",
+      "featured_rank": 6
     },
     {
       "id": "arxiv:2505.22617",
@@ -5843,7 +5698,8 @@
       "setting": [],
       "featured": true,
       "rationale": "Exploration focus: entropy/probability.",
-      "subtopic": "entropy-distribution"
+      "subtopic": "entropy-distribution",
+      "featured_rank": 7
     },
     {
       "id": "arxiv:2505.17714",
@@ -5873,7 +5729,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
       "subtopic": "entropy-distribution"
     },
@@ -5911,7 +5766,6 @@
         "exploration-exploitation"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: reward/advantage, sampling/decoding, regularization.",
       "subtopic": "credit-optimization"
     },
@@ -5945,7 +5799,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
       "subtopic": "entropy-distribution"
     },
@@ -5980,7 +5833,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: novelty/curiosity, gradient-reshaping, backtracking/resampling.",
       "subtopic": "replay-population"
     },
@@ -6011,7 +5863,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, uncertainty/confidence, novelty/curiosity.",
       "subtopic": "entropy-distribution"
     },
@@ -6042,7 +5893,6 @@
         "entropy-collapse"
       ],
       "setting": [],
-      "featured": true,
       "rationale": "Exploration focus: structured-search.",
       "subtopic": "entropy-distribution"
     },
@@ -6080,7 +5930,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: semantic-diversity, sampling/decoding, structured-search.",
       "subtopic": "capability-dynamics"
     },
@@ -6117,7 +5966,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.",
       "subtopic": "representation-steering"
     },
@@ -6152,7 +6000,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: gradient-reshaping, curriculum/task-generation, structured-search.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "search-deliberation"
@@ -6191,7 +6038,6 @@
         "mode-collapse"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "diversity-coverage"
@@ -6230,7 +6076,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: uncertainty/confidence, reward/advantage, tree-search/branching.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "search-deliberation"
@@ -6270,7 +6115,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "search-deliberation"
@@ -6304,7 +6148,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, sampling/decoding, noise/perturbation.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "search-deliberation"
@@ -6337,7 +6180,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, sampling/decoding.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "search-deliberation"
@@ -6374,7 +6216,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "decoding-sampling"
@@ -6405,7 +6246,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: semantic-diversity, coverage, regularization.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "representation-steering"
@@ -6437,7 +6277,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "diversity-coverage"
@@ -6472,7 +6311,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: semantic-diversity, sampling/decoding.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "search-deliberation"
@@ -6504,7 +6342,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "diversity-coverage"
@@ -6542,7 +6379,6 @@
       "setting": [
         "code"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: novelty/curiosity, tree-search/branching, replay/memory.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "search-deliberation"
@@ -6576,7 +6412,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, novelty/curiosity, reward/advantage.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "decoding-sampling"
@@ -6608,7 +6443,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "decoding-sampling"
@@ -6640,7 +6474,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, semantic-diversity, regularization.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "diversity-coverage"
@@ -6681,7 +6514,8 @@
       "featured": true,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity, structured-search.",
       "discovery_category": "采样与测试时探索",
-      "subtopic": "representation-steering"
+      "subtopic": "representation-steering",
+      "featured_rank": 2
     },
     {
       "id": "venue:2026.findings-acl.1085",
@@ -6710,7 +6544,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: uncertainty/confidence, sampling/decoding.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "decoding-sampling"
@@ -6749,7 +6582,8 @@
       "featured": true,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
       "discovery_category": "能力边界与训练动态",
-      "subtopic": "diversity-coverage"
+      "subtopic": "diversity-coverage",
+      "featured_rank": 3
     },
     {
       "id": "venue:post training large language models for diverse high quality responses",
@@ -6780,7 +6614,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "diversity-coverage"
@@ -6813,7 +6646,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, gradient-reshaping.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "decoding-sampling"
@@ -6848,7 +6680,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: semantic-diversity, structured-search.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "search-deliberation"
@@ -6880,7 +6711,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, semantic-diversity, tree-search/branching.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "search-deliberation"
@@ -6912,7 +6742,6 @@
       "setting": [
         "creative/open-ended"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: reward/advantage, disagreement, sampling/decoding.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "decoding-sampling"
@@ -6947,7 +6776,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "diversity-coverage"
@@ -6981,7 +6809,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, semantic-diversity, sampling/decoding.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "representation-steering"
@@ -7011,7 +6838,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: novelty/curiosity, semantic-diversity, coverage.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "diversity-coverage"
@@ -7046,7 +6872,6 @@
         "exploration-exploitation"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: uncertainty/confidence, semantic-diversity, sampling/decoding.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "search-deliberation"
@@ -7083,7 +6908,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: semantic-diversity, sampling/decoding, noise/perturbation.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "diversity-coverage"
@@ -7119,7 +6943,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "decoding-sampling"
@@ -7155,7 +6978,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "representation-steering"
@@ -7187,7 +7009,6 @@
         "mode-collapse"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "search-deliberation"
@@ -7221,7 +7042,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, sampling/decoding.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "search-deliberation"
@@ -7259,7 +7079,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "decoding-sampling"
@@ -7298,7 +7117,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: uncertainty/confidence, semantic-diversity, sampling/decoding.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "search-deliberation"
@@ -7331,7 +7149,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, sampling/decoding.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "decoding-sampling"
@@ -7366,7 +7183,6 @@
       "setting": [
         "multimodal"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "diversity-coverage"
@@ -7398,7 +7214,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: semantic-diversity, sampling/decoding.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "diversity-coverage"
@@ -7430,7 +7245,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: semantic-diversity.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "search-deliberation"
@@ -7469,7 +7283,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "diversity-coverage"
@@ -7507,7 +7320,6 @@
         "recovery/error-correction"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "diversity-coverage"
@@ -7541,7 +7353,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, sampling/decoding.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "search-deliberation"
@@ -7576,7 +7387,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "decoding-sampling"
@@ -7605,7 +7415,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: sampling/decoding, tree-search/branching.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "search-deliberation"
@@ -7638,7 +7447,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, sampling/decoding, backtracking/resampling.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "search-deliberation"
@@ -7673,7 +7481,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "data-selection-prompting"
@@ -7710,7 +7517,6 @@
       "setting": [
         "math"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: semantic-diversity, sampling/decoding.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "decoding-sampling"
@@ -7744,7 +7550,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, sampling/decoding.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "representation-steering"
@@ -7785,7 +7590,6 @@
         "mode-collapse"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, semantic-diversity.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "search-deliberation"
@@ -7816,7 +7620,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: sampling/decoding, tree-search/branching.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "search-deliberation"
@@ -7849,7 +7652,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: semantic-diversity, reward/advantage, backtracking/resampling.",
       "subtopic": "search-deliberation"
     },
@@ -7886,7 +7688,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: uncertainty/confidence, novelty/curiosity, semantic-diversity.",
       "subtopic": "search-deliberation"
     },
@@ -7915,7 +7716,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
       "subtopic": "decoding-sampling"
     },
@@ -7952,7 +7752,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, uncertainty/confidence, novelty/curiosity.",
       "subtopic": "decoding-sampling"
     },
@@ -7986,7 +7785,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: semantic-diversity.",
       "subtopic": "diversity-coverage"
     },
@@ -8016,7 +7814,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: novelty/curiosity, reward/advantage, sampling/decoding.",
       "subtopic": "search-deliberation"
     },
@@ -8058,7 +7855,6 @@
       "setting": [
         "math"
       ],
-      "featured": true,
       "rationale": "RAP combined an LLM world model with Monte Carlo tree search for strategic reasoning exploration.",
       "subtopic": "search-deliberation"
     },
@@ -8101,7 +7897,6 @@
         "local-optimum"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Generalized tree-structured reasoning into graph transformations, aggregation, and feedback loops.",
       "subtopic": "search-deliberation"
     },
@@ -8145,7 +7940,6 @@
         "math",
         "creative/open-ended"
       ],
-      "featured": true,
       "rationale": "Established deliberate search, lookahead, and backtracking over language-model thoughts.",
       "subtopic": "search-deliberation"
     },
@@ -8187,7 +7981,6 @@
       "setting": [
         "math"
       ],
-      "featured": true,
       "rationale": "Foundational diverse-path sampling and answer aggregation for language-model reasoning.",
       "subtopic": "decoding-sampling"
     },
@@ -8222,7 +8015,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: novelty/curiosity, reward/advantage, gradient-reshaping.",
       "subtopic": "planning-interaction"
     },
@@ -8260,7 +8052,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
       "subtopic": "planning-interaction"
     },
@@ -8300,7 +8091,6 @@
       "setting": [
         "multimodal"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: uncertainty/confidence, novelty/curiosity, reward/advantage.",
       "discovery_category": "Agent 与自改进探索",
       "subtopic": "web-tools-gui"
@@ -8339,7 +8129,6 @@
         "web",
         "multi-agent"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: reward/advantage, curriculum/task-generation, self-play/co-evolution.",
       "discovery_category": "Agent 与自改进探索",
       "subtopic": "web-tools-gui"
@@ -8377,7 +8166,6 @@
         "long-horizon"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: uncertainty/confidence, structured-search.",
       "discovery_category": "Agent 与自改进探索",
       "subtopic": "planning-interaction"
@@ -8417,7 +8205,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: self-play/co-evolution.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "benchmarks-metrics"
@@ -8447,7 +8234,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: sampling/decoding.",
       "discovery_category": "Agent 与自改进探索",
       "subtopic": "planning-interaction"
@@ -8487,7 +8273,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: uncertainty/confidence, semantic-diversity, gradient-reshaping.",
       "discovery_category": "Agent 与自改进探索",
       "subtopic": "web-tools-gui"
@@ -8528,7 +8313,6 @@
       "setting": [
         "multi-agent"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: reward/advantage, self-play/co-evolution, structured-search.",
       "discovery_category": "Agent 与自改进探索",
       "subtopic": "planning-interaction"
@@ -8568,7 +8352,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity, coverage.",
       "discovery_category": "Agent 与自改进探索",
       "subtopic": "task-synthesis-curriculum"
@@ -8604,7 +8387,6 @@
       "setting": [
         "code"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, tree-search/branching.",
       "discovery_category": "Agent 与自改进探索",
       "subtopic": "planning-interaction"
@@ -8641,7 +8423,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, semantic-diversity, gradient-reshaping.",
       "discovery_category": "Agent 与自改进探索",
       "subtopic": "web-tools-gui"
@@ -8679,7 +8460,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: novelty/curiosity, reward/advantage, replay/memory.",
       "discovery_category": "Agent 与自改进探索",
       "subtopic": "planning-interaction"
@@ -8727,7 +8507,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: uncertainty/confidence, tree-search/branching.",
       "discovery_category": "Agent 与自改进探索",
       "subtopic": "planning-interaction"
@@ -8770,7 +8549,6 @@
       "setting": [
         "multi-agent"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: semantic-diversity, replay/memory, self-play/co-evolution.",
       "discovery_category": "Agent 与自改进探索",
       "subtopic": "replay-population"
@@ -8806,7 +8584,6 @@
       "setting": [
         "code"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: coverage.",
       "discovery_category": "Agent 与自改进探索",
       "subtopic": "planning-interaction"
@@ -8839,10 +8616,11 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
+      "featured": true,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity, reward/advantage.",
       "discovery_category": "Agent 与自改进探索",
-      "subtopic": "planning-interaction"
+      "subtopic": "planning-interaction",
+      "featured_rank": 10
     },
     {
       "id": "venue:2026.findings-acl.670",
@@ -8877,7 +8655,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: reward/advantage.",
       "discovery_category": "Agent 与自改进探索",
       "subtopic": "planning-interaction"
@@ -8912,7 +8689,8 @@
       "featured": true,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: uncertainty/confidence, reward/advantage, gradient-reshaping.",
       "discovery_category": "Agent 与自改进探索",
-      "subtopic": "planning-interaction"
+      "subtopic": "planning-interaction",
+      "featured_rank": 9
     },
     {
       "id": "venue:10010088",
@@ -8953,7 +8731,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, reward/advantage, noise/perturbation.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "planning-interaction"
@@ -8993,7 +8770,6 @@
       "setting": [
         "multi-agent"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: reward/advantage, tree-search/branching, backtracking/resampling.",
       "discovery_category": "采样与测试时探索",
       "subtopic": "search-deliberation"
@@ -9037,7 +8813,6 @@
         "long-horizon"
       ],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, reward/advantage.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "planning-interaction"
@@ -9069,7 +8844,6 @@
       "setting": [
         "web"
       ],
-      "featured": true,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: uncertainty/confidence, semantic-diversity, structured-search.",
       "discovery_category": "Agent 与自改进探索",
       "subtopic": "web-tools-gui"
@@ -9103,7 +8877,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: structured-search.",
       "discovery_category": "Agent 与自改进探索",
       "subtopic": "planning-interaction"
@@ -9146,7 +8919,6 @@
       "setting": [
         "knowledge-graph"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "knowledge-memory"
@@ -9181,7 +8953,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, gradient-reshaping.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "knowledge-memory"
@@ -9216,7 +8987,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: replay/memory.",
       "discovery_category": "Agent 与自改进探索",
       "subtopic": "web-tools-gui"
@@ -9253,7 +9023,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: reward/advantage, replay/memory, structured-search.",
       "discovery_category": "Agent 与自改进探索",
       "subtopic": "knowledge-memory"
@@ -9283,7 +9052,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, reward/advantage, replay/memory.",
       "discovery_category": "Agent 与自改进探索",
       "subtopic": "knowledge-memory"
@@ -9314,7 +9082,6 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ICLR 2026. Exploration focus: uncertainty/confidence, reward/advantage, tree-search/branching.",
       "discovery_category": "Agent 与自改进探索",
       "subtopic": "web-tools-gui"
@@ -9354,7 +9121,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: novelty/curiosity, semantic-diversity, reward/advantage.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "planning-interaction"
@@ -9399,7 +9165,6 @@
       "setting": [
         "tool-use"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: semantic-diversity, coverage.",
       "discovery_category": "熵、分布与多样性",
       "subtopic": "web-tools-gui"
@@ -9432,7 +9197,6 @@
       "setting": [
         "knowledge-graph"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: structured-search.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "knowledge-memory"
@@ -9469,7 +9233,6 @@
       "setting": [
         "web"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: tree-search/branching, backtracking/resampling, replay/memory.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "web-tools-gui"
@@ -9504,7 +9267,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, reward/advantage, regularization.",
       "discovery_category": "Agent 与自改进探索",
       "subtopic": "data-selection-prompting"
@@ -9535,7 +9297,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: structured-search.",
       "discovery_category": "能力边界与训练动态",
       "subtopic": "planning-interaction"
@@ -9578,7 +9339,6 @@
       "setting": [
         "knowledge-graph"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, reward/advantage, backtracking/resampling.",
       "discovery_category": "Agent 与自改进探索",
       "subtopic": "knowledge-memory"
@@ -9615,7 +9375,6 @@
       "setting": [
         "knowledge-graph"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: coverage, structured-search.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "knowledge-memory"
@@ -9649,7 +9408,6 @@
         "multimodal",
         "embodied"
       ],
-      "featured": false,
       "rationale": "Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, reward/advantage, replay/memory.",
       "discovery_category": "探索机制与内在奖励",
       "subtopic": "embodied-environments"
@@ -9690,7 +9448,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, reward/advantage, regularization.",
       "subtopic": "planning-interaction"
     },
@@ -9724,7 +9481,6 @@
       ],
       "problem": [],
       "setting": [],
-      "featured": false,
       "rationale": "Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
       "subtopic": "planning-interaction"
     },
@@ -9769,7 +9525,6 @@
         "embodied",
         "creative/open-ended"
       ],
-      "featured": true,
       "rationale": "A foundational open-ended agent combining automatic curriculum, skill discovery, and lifelong memory.",
       "subtopic": "embodied-environments"
     },
@@ -9812,7 +9567,6 @@
         "code",
         "tool-use"
       ],
-      "featured": true,
       "rationale": "Unified environment feedback, reflection, and Monte Carlo tree search for language agents.",
       "subtopic": "planning-interaction"
     },
@@ -9852,7 +9606,6 @@
         "code",
         "tool-use"
       ],
-      "featured": true,
       "rationale": "Introduced verbal feedback and episodic memory for learning from agent trial and error.",
       "subtopic": "planning-interaction"
     },
@@ -9895,7 +9648,6 @@
         "tool-use",
         "embodied"
       ],
-      "featured": true,
       "rationale": "Established the interleaving of reasoning and environment actions for information-seeking agents.",
       "subtopic": "embodied-environments"
     }
