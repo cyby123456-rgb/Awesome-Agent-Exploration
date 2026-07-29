@@ -4,11 +4,11 @@
 
 **A curated research map of exploration in large language models and agents.**
 
-[![Curated catalog](https://img.shields.io/badge/catalog-curated-3B82F6?style=flat-square)](docs/CURATION_2026.md) [![268 papers](https://img.shields.io/badge/papers-268-8B5CF6?style=flat-square)](#catalog) [![Five research categories](https://img.shields.io/badge/categories-5-10B981?style=flat-square)](#research-map) [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-F59E0B?style=flat-square)](CONTRIBUTING.md)
+[![Curated catalog](https://img.shields.io/badge/catalog-curated-3B82F6?style=flat-square)](docs/CURATION_2026.md) [![259 papers](https://img.shields.io/badge/papers-259-8B5CF6?style=flat-square)](#catalog) [![Five research categories](https://img.shields.io/badge/categories-5-10B981?style=flat-square)](#research-map) [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-F59E0B?style=flat-square)](CONTRIBUTING.md)
 
 [Guide](#guide) · [Research map](#research-map) · [10-paper introduction](#start-here) · [Catalog](#catalog) · [Detailed metadata](README_DETAILED.md) · [Contribute](CONTRIBUTING.md)
 
-<img src="assets/research-map.svg" alt="Research map of 268 papers across five exploration categories" width="100%">
+<img src="assets/research-map.svg" alt="Research map of 259 papers across five exploration categories" width="100%">
 
 </div>
 
@@ -63,11 +63,11 @@ The former Token / Sequence / Policy sections are now `level` tags. Entropy, tem
 | Collection | Papers |
 |---|---:|
 | Exploration for LLM Generation & Inference | 62 |
-| Exploration for RLVR, Policy & Curriculum | 129 |
+| Exploration for RLVR, Policy & Curriculum | 125 |
 | Agentic Exploration | 22 |
-| Agentic Exploration for Training | 25 |
+| Agentic Exploration for Training | 20 |
 | Understanding, Evaluation & Benchmarks | 30 |
-| **Curated total** | **268** |
+| **Curated total** | **259** |
 
 2026 peer-reviewed acceptances in the catalog:
 
@@ -111,7 +111,7 @@ The former Token / Sequence / Policy sections are now `level` tags. Entropy, tem
    - [Entropy & Distribution Control](#category-2-entropy-distribution) · 43 papers
    - [Credit Assignment & Optimization](#category-2-credit-optimization) · 17 papers
    - [Reward & Rollout Shaping](#category-2-reward-rollout) · 9 papers
-   - [Replay, Population & Self-Improvement](#category-2-replay-population) · 11 papers
+   - [Replay, Population & Self-Improvement](#category-2-replay-population) · 7 papers
    - [Capability Expansion & Training Interventions](#category-2-capability-dynamics) · 43 papers
    - [Data Selection & Prompt Exploration](#category-2-data-selection-prompting) · 5 papers
    - [Task Synthesis & Curriculum](#category-2-task-synthesis-curriculum) · 1 paper
@@ -121,9 +121,9 @@ The former Token / Sequence / Policy sections are now `level` tags. Entropy, tem
    - [Embodied & Simulated Environments](#category-3-embodied-environments) · 2 papers
    - [Knowledge & Memory-Guided Exploration](#category-3-knowledge-memory) · 6 papers
 4. [Agentic Exploration for Training](#category-4)
-   - [Web, Tools & GUI Training](#category-4-web-tools-gui) · 6 papers
+   - [Web, Tools & GUI Training](#category-4-web-tools-gui) · 5 papers
    - [Agentic Policy Learning](#category-4-planning-interaction) · 12 papers
-   - [Embodied & Simulated Training](#category-4-embodied-environments) · 6 papers
+   - [Embodied & Simulated Training](#category-4-embodied-environments) · 2 papers
    - [Memory-Augmented Agent Training](#category-4-knowledge-memory) · 1 paper
 5. [Understanding, Evaluation & Benchmarks](#category-5)
    - [Surveys & Position Papers](#category-5-surveys-position) · 1 paper
@@ -348,7 +348,7 @@ Methods that alter rollout collection, reward shaping, intrinsic bonuses, or res
 
 <a id="category-2-replay-population"></a>
 
-### Replay, Population & Self-Improvement · 11 papers
+### Replay, Population & Self-Improvement · 7 papers
 
 Learning systems that use replay, self-play, co-evolution, ensembles, or policy populations to retain useful experience and expand behavioral coverage across updates.
 
@@ -361,10 +361,6 @@ Learning systems that use replay, self-play, co-evolution, ensembles, or policy 
 | arXiv `2506.22200` | [EFRame: Deeper Reasoning via Exploration-Filter-Replay Reinforcement Learning Framework](https://arxiv.org/abs/2506.22200) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square) |
 | arXiv `2504.14363` | [Improving RL Exploration for LLM Reasoning through Retrospective Replay](https://arxiv.org/abs/2504.14363) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: backtracking/resampling](https://img.shields.io/badge/mechanism-backtracking%2Fresampling-8E759D?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square) |
 | NeurIPS 2025 | ⭐ [LaRes: Evolutionary Reinforcement Learning with LLM-based Adaptive Reward Search](https://neurips.cc/virtual/2025/poster/116462) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: ensemble/population](https://img.shields.io/badge/mechanism-ensemble%2Fpopulation-8774A5?style=flat-square) |
-| ICLR 2024 | ⭐ [Sample-Efficient Quality-Diversity by Cooperative Coevolution](https://openreview.net/forum?id=JDud6zbpFv) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: self-play/co-evolution](https://img.shields.io/badge/mechanism-self--play%2Fco--evolution-A36F8A?style=flat-square) |
-| IEEE Transactions on Cybernetics | ⭐ [WToE: Learning When to Explore in Multiagent Reinforcement Learning](https://doi.org/10.1109/TCYB.2023.3328732) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square) ![mechanism: noise/perturbation](https://img.shields.io/badge/mechanism-noise%2Fperturbation-8176A8?style=flat-square) |
-| ICRA 2022 | ⭐ [Promoting Quality and Diversity in Population-based Reinforcement Learning via Hierarchical Trajectory Space Exploration](https://doi.org/10.1109/ICRA46639.2022.9811888) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: ensemble/population](https://img.shields.io/badge/mechanism-ensemble%2Fpopulation-8774A5?style=flat-square) |
-| IJCAI 2020 | ⭐ [Generating Behavior-Diverse Game AIs with Evolutionary Multi-Objective Deep Reinforcement Learning](https://doi.org/10.24963/ijcai.2020/466) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: ensemble/population](https://img.shields.io/badge/mechanism-ensemble%2Fpopulation-8774A5?style=flat-square) |
 
 <a id="category-2-capability-dynamics"></a>
 
@@ -524,7 +520,7 @@ Agents that traverse knowledge graphs or use accumulated memory to guide future 
 
 <a id="category-4-web-tools-gui"></a>
 
-### Web, Tools & GUI Training · 6 papers
+### Web, Tools & GUI Training · 5 papers
 
 Training methods that collect or synthesize experience in websites, tools, and graphical interfaces, with task diversity, feedback quality, and transfer as the central concerns.
 
@@ -535,7 +531,6 @@ Training methods that collect or synthesize experience in websites, tools, and g
 | **ICML 2026** | ⭐ [SEAgent: Self-Evolving Computer Use Agent with Autonomous Learning from Experience](https://icml.cc/virtual/2026/poster/65711) | ![phase: continual/self-improvement](https://img.shields.io/badge/phase-continual%2Fself--improvement-789B8A?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) |
 | **ICLR 2026** | ⭐ [Go-Browse: Training Web Agents with Structured Exploration](https://iclr.cc/virtual/2026/poster/10010264) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) |
 | **ICML 2026** | ⭐ [DIVE: Scaling Diversity in Agentic Task Synthesis for Generalizable Tool Use](https://icml.cc/virtual/2026/poster/66305) | ![phase: data-generation](https://img.shields.io/badge/phase-data--generation-5F8F8B?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) |
-| ICSE 2021 | ⭐ [Automatic Web Testing Using Curiosity-Driven Reinforcement Learning](https://doi.org/10.1109/ICSE43902.2021.00048) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square) |
 
 <a id="category-4-planning-interaction"></a>
 
@@ -560,7 +555,7 @@ Methods that train agent policies from exploratory multi-step trajectories, focu
 
 <a id="category-4-embodied-environments"></a>
 
-### Embodied & Simulated Training · 6 papers
+### Embodied & Simulated Training · 2 papers
 
 Training methods that explore physical or simulated worlds, where noisy observations, sparse rewards, environment coverage, and sample efficiency shape the learning problem.
 
@@ -568,10 +563,6 @@ Training methods that explore physical or simulated worlds, where noisy observat
 |---|---|---|
 | **ICML 2026** | ⭐ [Active Exploring like a Pigeon: Reinforcing Spatial Reasoning via Agentic Vision-Language Models](https://icml.cc/virtual/2026/poster/61450) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) |
 | ICML 2025 | ⭐ [EmbodiedScene: Towards Automated Generation of Diverse and Realistic Scenes for Embodied AI](https://embodiedscene1.github.io/embodied.scene/) | ![phase: data-generation](https://img.shields.io/badge/phase-data--generation-5F8F8B?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: curriculum/task-generation](https://img.shields.io/badge/mechanism-curriculum%2Ftask--generation-A08B5F?style=flat-square) |
-| AAAI 2024 | ⭐ [OVD-Explorer: Optimism Should Not Be the Sole Pursuit of Exploration in Noisy Environments](https://doi.org/10.1609/aaai.v38i12.29303) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square) ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square) |
-| arXiv `2110.10735` | ⭐ [Dynamic Bottleneck for Robust Self-Supervised Exploration](https://arxiv.org/abs/2110.10735) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: information-gain](https://img.shields.io/badge/signal-information--gain-5E8C97?style=flat-square) ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square) |
-| arXiv `2105.06022` | ⭐ [Principled Exploration via Optimistic Bootstrapping and Backward Induction](https://arxiv.org/abs/2105.06022) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square) ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square) |
-| ASE 2019 | ⭐ [Wuji: Automatic Online Combat Game Testing Using Evolutionary Deep Reinforcement Learning](https://doi.org/10.1109/ASE.2019.00077) | ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: coverage](https://img.shields.io/badge/signal-coverage-78935F?style=flat-square) ![mechanism: ensemble/population](https://img.shields.io/badge/mechanism-ensemble%2Fpopulation-8774A5?style=flat-square) |
 
 <a id="category-4-knowledge-memory"></a>
 
@@ -663,7 +654,7 @@ Benchmarks and metrics that quantify exploration quality, emphasizing valid meas
 
 ## Classical RL exploration — background only
 
-A deliberately small appendix of foundational non-LLM work. These papers are not counted in the curated LLM catalog.
+A curated appendix of classical RL exploration references. These papers are not counted in the curated LLM and agent catalog.
 
 - **[Unifying Count-Based Exploration and Intrinsic Motivation](https://proceedings.neurips.cc/paper_files/paper/2016/hash/afda332245e2af431fb7b672a68b659d-Abstract.html)** (2016) — Pseudo-counts for high-dimensional exploration.
 - **[Curiosity-driven Exploration by Self-supervised Prediction](https://proceedings.mlr.press/v70/pathak17a.html)** (2017) — The influential intrinsic-curiosity-module formulation.
@@ -672,6 +663,15 @@ A deliberately small appendix of foundational non-LLM work. These papers are not
 - **[Exploration by Random Network Distillation](https://openreview.net/forum?id=H1lJJnR5Ym)** (2019) — Prediction-error novelty through a fixed random target network.
 - **[Diversity is All You Need: Learning Skills without a Reward Function](https://openreview.net/forum?id=SJx63jRqFm)** (2019) — Unsupervised skill discovery through discriminable state visitation.
 - **[First Return, Then Explore](https://www.nature.com/articles/s41586-020-03157-9)** (2021) — Go-Explore separates returning to promising states from exploration.
+- **[Sample-Efficient Quality-Diversity by Cooperative Coevolution](https://openreview.net/forum?id=JDud6zbpFv)** (2024) — Cooperative coevolution for sample-efficient quality-diversity exploration over policy populations.
+- **[OVD-Explorer: Optimism Should Not Be the Sole Pursuit of Exploration in Noisy Environments](https://doi.org/10.1609/aaai.v38i12.29303)** (2024) — Noise-aware optimistic exploration that avoids repeatedly probing uninformative stochastic regions.
+- **[Promoting Quality and Diversity in Population-based Reinforcement Learning via Hierarchical Trajectory Space Exploration](https://doi.org/10.1109/ICRA46639.2022.9811888)** (2022) — Hierarchical trajectory-space exploration for quality-diverse policy populations.
+- **[Principled Exploration via Optimistic Bootstrapping and Backward Induction](https://arxiv.org/abs/2105.06022)** (2021) — Time-consistent deep-RL exploration through bootstrap uncertainty and backward induction.
+- **[Automatic Web Testing Using Curiosity-Driven Reinforcement Learning](https://doi.org/10.1109/ICSE43902.2021.00048)** (2021) — Curiosity-driven exploration of long web-interaction sequences for automated testing.
+- **[Dynamic Bottleneck for Robust Self-Supervised Exploration](https://arxiv.org/abs/2110.10735)** (2021) — Information-gain exploration with dynamics-relevant representations under observation noise.
+- **[Generating Behavior-Diverse Game AIs with Evolutionary Multi-Objective Deep Reinforcement Learning](https://doi.org/10.24963/ijcai.2020/466)** (2020) — Evolutionary multi-objective RL for behaviorally diverse game policies.
+- **[Wuji: Automatic Online Combat Game Testing Using Evolutionary Deep Reinforcement Learning](https://doi.org/10.1109/ASE.2019.00077)** (2019) — Evolutionary deep-RL exploration of game-state space for automated bug discovery.
+- **[WToE: Learning When to Explore in Multiagent Reinforcement Learning](https://doi.org/10.1109/TCYB.2023.3328732)** (2023) — Variational exploration for nonstationary multiagent reinforcement learning.
 
 ## License
 

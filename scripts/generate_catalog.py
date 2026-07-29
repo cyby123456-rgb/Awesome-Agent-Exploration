@@ -443,9 +443,11 @@ def render_research_map(catalog: dict) -> str:
             f'class="bar-track" />'
             f'<rect x="490" y="{y - 14}" width="{bar_width:g}" height="14" rx="7" '
             f'fill="{color}" />'
-            f'<text x="1055" y="{y - 1}" class="track-count" text-anchor="end">'
+            f'<rect x="1038" y="{y - 21}" width="80" height="30" rx="15" '
+            f'class="count-chip" />'
+            f'<text x="1078" y="{y - 1}" class="track-count" text-anchor="middle">'
             f'{count}</text>'
-            f'<text x="1138" y="{y - 1}" class="track-share" text-anchor="end">'
+            f'<text x="1168" y="{y - 1}" class="track-share" text-anchor="end">'
             f'{percentage:.1f}%</text>'
             f'<line x1="30" y1="{y + 31}" x2="1170" y2="{y + 31}" class="row-line" />'
             f'</g>'
@@ -468,8 +470,9 @@ def render_research_map(catalog: dict) -> str:
       .track-index {{ fill: #FFFFFF; font-size: 10px; font-weight: 500; letter-spacing: 0.6px; }}
       .track-title {{ fill: #172033; font-size: 17px; font-weight: 500; }}
       .track-keywords {{ fill: #7A8495; font-size: 11px; font-weight: 400; }}
-      .track-count {{ fill: #344054; font-size: 18px; font-weight: 500; }}
-      .track-share {{ fill: #7A8495; font-size: 12px; font-weight: 400; }}
+      .count-chip {{ fill: #172033; }}
+      .track-count {{ fill: #FFFFFF; font-size: 15px; font-weight: 700; }}
+      .track-share {{ fill: #475467; font-size: 12px; font-weight: 600; }}
       .bar-track {{ fill: #E5E9EF; }}
       .row-line {{ stroke: #E3E7EC; stroke-width: 1; }}
       .footer {{ fill: #8993A4; font-size: 10px; font-weight: 500; letter-spacing: 1.2px; }}
@@ -631,7 +634,7 @@ def render_readme(catalog: dict) -> str:
             "",
             "## Classical RL exploration — background only",
             "",
-            "A deliberately small appendix of foundational non-LLM work. These papers are not counted in the curated LLM catalog.",
+            "A curated appendix of classical RL exploration references. These papers are not counted in the curated LLM and agent catalog.",
             "",
         ]
     )

@@ -144,8 +144,6 @@ def main() -> int:
     classic_titles = [normalize(p["title"]) for p in catalog.get("classics", [])]
     if len(classic_titles) != len(set(classic_titles)):
         errors.append("duplicate title in classical RL appendix")
-    if len(classic_titles) > 8:
-        errors.append("classical RL appendix must contain at most 8 papers")
 
     featured = [paper for paper in papers if paper.get("featured")]
     featured_ranks = [paper.get("featured_rank") for paper in featured]

@@ -203,388 +203,6 @@
       "subtopic": "search-deliberation"
     },
     {
-      "id": "openreview:JDud6zbpFv",
-      "title": "Sample-Efficient Quality-Diversity by Cooperative Coevolution",
-      "url": "https://openreview.net/forum?id=JDud6zbpFv",
-      "authors": [
-        "Ke Xue",
-        "Ren-Jian Wang",
-        "Pengyi Li",
-        "Dong Li",
-        "Jianye Hao",
-        "Chao Qian"
-      ],
-      "date": "2024",
-      "venue": "ICLR 2024",
-      "source_group": "tju-drl-publications",
-      "primary_area": "rlvr-policy-curriculum-exploration",
-      "paper_type": "method",
-      "phase": [
-        "rl-training"
-      ],
-      "level": [
-        "population/multi-policy"
-      ],
-      "signal": [
-        "semantic-diversity",
-        "coverage"
-      ],
-      "mechanism": [
-        "self-play/co-evolution",
-        "ensemble/population"
-      ],
-      "problem": [
-        "exploration-exploitation"
-      ],
-      "setting": [
-        "embodied"
-      ],
-      "rationale": "Uses cooperative coevolution to improve the sample efficiency of quality-diversity exploration over policy populations.",
-      "subtopic": "replay-population"
-    },
-    {
-      "id": "doi:10.1609/aaai.v38i12.29303",
-      "title": "OVD-Explorer: Optimism Should Not Be the Sole Pursuit of Exploration in Noisy Environments",
-      "url": "https://doi.org/10.1609/aaai.v38i12.29303",
-      "authors": [
-        "Jinyi Liu",
-        "Zhi Wang",
-        "Yan Zheng",
-        "Jianye Hao",
-        "Chenjia Bai",
-        "Junjie Ye",
-        "Zhen Wang",
-        "Haiyin Piao",
-        "Yang Sun"
-      ],
-      "date": "2024-03-24",
-      "venue": "AAAI 2024",
-      "source_group": "tju-drl-publications",
-      "primary_area": "agentic-training-exploration",
-      "paper_type": "method",
-      "phase": [
-        "rl-training"
-      ],
-      "level": [
-        "trajectory/action",
-        "policy-distribution"
-      ],
-      "signal": [
-        "uncertainty/confidence"
-      ],
-      "mechanism": [
-        "reward-shaping/intrinsic-reward",
-        "gradient-reshaping"
-      ],
-      "problem": [
-        "exploration-exploitation"
-      ],
-      "setting": [
-        "embodied"
-      ],
-      "rationale": "Introduces noise-aware optimistic exploration that avoids repeatedly probing stochastic but uninformative regions.",
-      "subtopic": "embodied-environments"
-    },
-    {
-      "id": "doi:10.1109/ICRA46639.2022.9811888",
-      "title": "Promoting Quality and Diversity in Population-based Reinforcement Learning via Hierarchical Trajectory Space Exploration",
-      "url": "https://doi.org/10.1109/ICRA46639.2022.9811888",
-      "authors": [
-        "Jiayu Miao",
-        "Tianze Zhou",
-        "Kun Shao",
-        "Ming Zhou",
-        "Weinan Zhang",
-        "Jianye Hao",
-        "Yong Yu",
-        "Jun Wang"
-      ],
-      "date": "2022-05-23",
-      "venue": "ICRA 2022",
-      "source_group": "tju-drl-publications",
-      "primary_area": "rlvr-policy-curriculum-exploration",
-      "paper_type": "method",
-      "phase": [
-        "rl-training"
-      ],
-      "level": [
-        "population/multi-policy",
-        "trajectory/action"
-      ],
-      "signal": [
-        "semantic-diversity",
-        "coverage"
-      ],
-      "mechanism": [
-        "ensemble/population",
-        "self-play/co-evolution"
-      ],
-      "problem": [
-        "exploration-exploitation"
-      ],
-      "setting": [
-        "embodied"
-      ],
-      "rationale": "Selects and mutates policy populations in a learned hierarchical trajectory space to jointly improve quality and diversity.",
-      "subtopic": "replay-population"
-    },
-    {
-      "id": "arxiv:2105.06022",
-      "title": "Principled Exploration via Optimistic Bootstrapping and Backward Induction",
-      "url": "https://arxiv.org/abs/2105.06022",
-      "authors": [
-        "Chenjia Bai",
-        "Lingxiao Wang",
-        "Lei Han",
-        "Jianye Hao",
-        "Animesh Garg",
-        "Peng Liu",
-        "Zhaoran Wang"
-      ],
-      "date": "2021-05-13",
-      "venue": "ICML 2021",
-      "source_group": "tju-drl-publications",
-      "primary_area": "agentic-training-exploration",
-      "paper_type": "method",
-      "phase": [
-        "rl-training"
-      ],
-      "level": [
-        "trajectory/action"
-      ],
-      "signal": [
-        "uncertainty/confidence",
-        "information-gain"
-      ],
-      "mechanism": [
-        "reward-shaping/intrinsic-reward"
-      ],
-      "problem": [
-        "sparse-reward",
-        "exploration-exploitation"
-      ],
-      "setting": [
-        "embodied"
-      ],
-      "rationale": "Builds a bootstrap UCB bonus and propagates future uncertainty backward for time-consistent deep-RL exploration.",
-      "subtopic": "embodied-environments"
-    },
-    {
-      "id": "doi:10.1109/ICSE43902.2021.00048",
-      "title": "Automatic Web Testing Using Curiosity-Driven Reinforcement Learning",
-      "url": "https://doi.org/10.1109/ICSE43902.2021.00048",
-      "authors": [
-        "Yan Zheng",
-        "Yi Liu",
-        "Xiaofei Xie",
-        "Yepang Liu",
-        "Lei Ma",
-        "Jianye Hao",
-        "Yang Liu"
-      ],
-      "date": "2021-05-01",
-      "venue": "ICSE 2021",
-      "source_group": "tju-drl-publications",
-      "primary_area": "agentic-training-exploration",
-      "paper_type": "method",
-      "phase": [
-        "rl-training"
-      ],
-      "level": [
-        "trajectory/action"
-      ],
-      "signal": [
-        "novelty/curiosity",
-        "coverage"
-      ],
-      "mechanism": [
-        "reward-shaping/intrinsic-reward"
-      ],
-      "problem": [
-        "long-horizon",
-        "sparse-reward"
-      ],
-      "setting": [
-        "web",
-        "tool-use"
-      ],
-      "rationale": "Uses curiosity rewards and an incrementally learned automaton to explore long web-interaction sequences for testing.",
-      "subtopic": "web-tools-gui"
-    },
-    {
-      "id": "arxiv:2110.10735",
-      "title": "Dynamic Bottleneck for Robust Self-Supervised Exploration",
-      "url": "https://arxiv.org/abs/2110.10735",
-      "authors": [
-        "Chenjia Bai",
-        "Lingxiao Wang",
-        "Lei Han",
-        "Animesh Garg",
-        "Jianye Hao",
-        "Peng Liu",
-        "Zhaoran Wang"
-      ],
-      "date": "2021-10-20",
-      "venue": "NeurIPS 2021",
-      "source_group": "tju-drl-publications",
-      "primary_area": "agentic-training-exploration",
-      "paper_type": "method",
-      "phase": [
-        "rl-training"
-      ],
-      "level": [
-        "latent/representation",
-        "trajectory/action"
-      ],
-      "signal": [
-        "information-gain",
-        "novelty/curiosity"
-      ],
-      "mechanism": [
-        "reward-shaping/intrinsic-reward",
-        "regularization"
-      ],
-      "problem": [
-        "sparse-reward",
-        "exploration-exploitation"
-      ],
-      "setting": [
-        "embodied"
-      ],
-      "rationale": "Learns dynamics-relevant bottleneck representations and an information-gain bonus for robust exploration under observation noise.",
-      "subtopic": "embodied-environments"
-    },
-    {
-      "id": "doi:10.24963/ijcai.2020/466",
-      "title": "Generating Behavior-Diverse Game AIs with Evolutionary Multi-Objective Deep Reinforcement Learning",
-      "url": "https://doi.org/10.24963/ijcai.2020/466",
-      "authors": [
-        "Ruimin Shen",
-        "Yan Zheng",
-        "Jianye Hao",
-        "Zhaopeng Meng",
-        "Yingfeng Chen",
-        "Changjie Fan",
-        "Yang Liu"
-      ],
-      "date": "2020-07-01",
-      "venue": "IJCAI 2020",
-      "source_group": "tju-drl-publications",
-      "primary_area": "rlvr-policy-curriculum-exploration",
-      "paper_type": "method",
-      "phase": [
-        "rl-training"
-      ],
-      "level": [
-        "population/multi-policy"
-      ],
-      "signal": [
-        "semantic-diversity",
-        "reward/advantage"
-      ],
-      "mechanism": [
-        "ensemble/population",
-        "self-play/co-evolution"
-      ],
-      "problem": [
-        "exploration-exploitation"
-      ],
-      "setting": [
-        "creative/open-ended",
-        "embodied"
-      ],
-      "rationale": "Evolves a population of deep-RL game policies against multiple objectives to cover distinct behavioral styles.",
-      "subtopic": "replay-population"
-    },
-    {
-      "id": "doi:10.1109/ASE.2019.00077",
-      "title": "Wuji: Automatic Online Combat Game Testing Using Evolutionary Deep Reinforcement Learning",
-      "url": "https://doi.org/10.1109/ASE.2019.00077",
-      "authors": [
-        "Yan Zheng",
-        "Changjie Fan",
-        "Xiaofei Xie",
-        "Ting Su",
-        "Lei Ma",
-        "Jianye Hao",
-        "Zhaopeng Meng",
-        "Yang Liu",
-        "Ruimin Shen",
-        "Yingfeng Chen"
-      ],
-      "date": "2019-11-01",
-      "venue": "ASE 2019",
-      "source_group": "tju-drl-publications",
-      "primary_area": "agentic-training-exploration",
-      "paper_type": "method",
-      "phase": [
-        "rl-training"
-      ],
-      "level": [
-        "trajectory/action",
-        "population/multi-policy"
-      ],
-      "signal": [
-        "coverage",
-        "reward/advantage"
-      ],
-      "mechanism": [
-        "ensemble/population",
-        "curriculum/task-generation"
-      ],
-      "problem": [
-        "exploration-exploitation",
-        "long-horizon"
-      ],
-      "setting": [
-        "embodied"
-      ],
-      "rationale": "Balances game-winning progress with evolutionary exploration of the game-state space to expose difficult bugs.",
-      "subtopic": "embodied-environments"
-    },
-    {
-      "id": "doi:10.1109/TCYB.2023.3328732",
-      "title": "WToE: Learning When to Explore in Multiagent Reinforcement Learning",
-      "url": "https://doi.org/10.1109/TCYB.2023.3328732",
-      "authors": [
-        "Shaokang Dong",
-        "Hangyu Mao",
-        "Shangdong Yang",
-        "Shengyu Zhu",
-        "Wenbin Li",
-        "Jianye Hao",
-        "Yang Gao"
-      ],
-      "date": "2023-11-21",
-      "venue": "IEEE Transactions on Cybernetics",
-      "source_group": "tju-drl-publications",
-      "primary_area": "rlvr-policy-curriculum-exploration",
-      "paper_type": "method",
-      "phase": [
-        "rl-training"
-      ],
-      "level": [
-        "trajectory/action",
-        "population/multi-policy"
-      ],
-      "signal": [
-        "uncertainty/confidence",
-        "disagreement"
-      ],
-      "mechanism": [
-        "noise/perturbation",
-        "ensemble/population"
-      ],
-      "problem": [
-        "exploration-exploitation"
-      ],
-      "setting": [
-        "multi-agent"
-      ],
-      "rationale": "Triggers variational exploration when inferred short-term policies diverge from current actors in nonstationary multiagent environments.",
-      "subtopic": "replay-population"
-    },
-    {
       "id": "arxiv:2605.09292",
       "title": "Beyond Accuracy: Evaluating Strategy Diversity in LLM Mathematical Reasoning",
       "url": "https://arxiv.org/abs/2605.09292",
@@ -9733,6 +9351,60 @@
       "year": 2021,
       "url": "https://www.nature.com/articles/s41586-020-03157-9",
       "note": "Go-Explore separates returning to promising states from exploration."
+    },
+    {
+      "title": "Sample-Efficient Quality-Diversity by Cooperative Coevolution",
+      "year": 2024,
+      "url": "https://openreview.net/forum?id=JDud6zbpFv",
+      "note": "Cooperative coevolution for sample-efficient quality-diversity exploration over policy populations."
+    },
+    {
+      "title": "OVD-Explorer: Optimism Should Not Be the Sole Pursuit of Exploration in Noisy Environments",
+      "year": 2024,
+      "url": "https://doi.org/10.1609/aaai.v38i12.29303",
+      "note": "Noise-aware optimistic exploration that avoids repeatedly probing uninformative stochastic regions."
+    },
+    {
+      "title": "Promoting Quality and Diversity in Population-based Reinforcement Learning via Hierarchical Trajectory Space Exploration",
+      "year": 2022,
+      "url": "https://doi.org/10.1109/ICRA46639.2022.9811888",
+      "note": "Hierarchical trajectory-space exploration for quality-diverse policy populations."
+    },
+    {
+      "title": "Principled Exploration via Optimistic Bootstrapping and Backward Induction",
+      "year": 2021,
+      "url": "https://arxiv.org/abs/2105.06022",
+      "note": "Time-consistent deep-RL exploration through bootstrap uncertainty and backward induction."
+    },
+    {
+      "title": "Automatic Web Testing Using Curiosity-Driven Reinforcement Learning",
+      "year": 2021,
+      "url": "https://doi.org/10.1109/ICSE43902.2021.00048",
+      "note": "Curiosity-driven exploration of long web-interaction sequences for automated testing."
+    },
+    {
+      "title": "Dynamic Bottleneck for Robust Self-Supervised Exploration",
+      "year": 2021,
+      "url": "https://arxiv.org/abs/2110.10735",
+      "note": "Information-gain exploration with dynamics-relevant representations under observation noise."
+    },
+    {
+      "title": "Generating Behavior-Diverse Game AIs with Evolutionary Multi-Objective Deep Reinforcement Learning",
+      "year": 2020,
+      "url": "https://doi.org/10.24963/ijcai.2020/466",
+      "note": "Evolutionary multi-objective RL for behaviorally diverse game policies."
+    },
+    {
+      "title": "Wuji: Automatic Online Combat Game Testing Using Evolutionary Deep Reinforcement Learning",
+      "year": 2019,
+      "url": "https://doi.org/10.1109/ASE.2019.00077",
+      "note": "Evolutionary deep-RL exploration of game-state space for automated bug discovery."
+    },
+    {
+      "title": "WToE: Learning When to Explore in Multiagent Reinforcement Learning",
+      "year": 2023,
+      "url": "https://doi.org/10.1109/TCYB.2023.3328732",
+      "note": "Variational exploration for nonstationary multiagent reinforcement learning."
     }
   ]
 }
