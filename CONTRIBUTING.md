@@ -85,21 +85,16 @@ no applicable value.
 | `primary_area`, `subtopic` | One category and one matching subtopic from [the category table](#choose-the-category-and-subtopic). |
 | `paper_type` | `method`, `analysis`, `benchmark`, `survey`, or `position`. |
 | `rationale` | One or two factual sentences explaining why exploration is central. |
+| `phase` | **When** does exploration happen or change? For example, `inference` or `rl-training`. |
+| `level` | **What** is explored or diversified? For example, `token` or `response/sequence`. |
+| `signal` | **What quantity** values or guides exploration? For example, `entropy/probability` or `novelty/curiosity`. |
+| `mechanism` | **How** is exploration produced or controlled? For example, `sampling/decoding` or `tree-search/branching`. |
+| `problem` | **Why** is exploration needed? Use `entropy-collapse` or `sparse-reward` when applicable; otherwise `[]`. |
+| `setting` | **Where** is it evaluated? Use `math`, `code`, or `web` when applicable; otherwise `[]`. |
 
 `phase` and `level` are required. At least one of `signal` or `mechanism` must
 be non-empty. `problem` and `setting` are optional. Copy exact tag values from
 [Taxonomy Design](docs/TAXONOMY.md#tag-dimensions); do not invent synonyms.
-
-For these tag fields, first answer the question in the middle column:
-
-| Field | Ask yourself | Example |
-|---|---|---|
-| `phase` | **When** does exploration happen or change? | Inference: `inference`; RL update: `rl-training` |
-| `level` | **What** is explored or diversified? | Token: `token`; reasoning path: `response/sequence` |
-| `signal` | **What quantity** values or guides exploration? | Entropy: `entropy/probability`; novelty: `novelty/curiosity` |
-| `mechanism` | **How** is exploration produced or controlled? | Sampling: `sampling/decoding`; tree search: `tree-search/branching` |
-| `problem` | **Why** is exploration needed? | `entropy-collapse`, `sparse-reward`; otherwise `[]` |
-| `setting` | **Where** is it evaluated? | `math`, `code`, `web`; otherwise `[]` |
 
 Do not set `featured`, `featured_rank`, `notability`, `citation_*`,
 `source_group`, or `discovery_category` unless a maintainer asks. Put an
