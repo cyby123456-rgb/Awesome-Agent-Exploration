@@ -82,7 +82,7 @@ no applicable value.
 | `title`, `url`, `authors` | Exact metadata from the primary source. The URL must use HTTPS. |
 | `date`, `venue` | Public date (`YYYY-MM-DD` preferred) and `arXiv` or a verified venue, such as `NeurIPS 2025`. |
 | `published_venue` | Optional: verified formal venue when the canonical URL remains arXiv. |
-| `primary_area`, `subtopic` | One category and one matching subtopic from the table below. |
+| `primary_area`, `subtopic` | One category and one matching subtopic from [the category table](#choose-the-category-and-subtopic). |
 | `paper_type` | `method`, `analysis`, `benchmark`, `survey`, or `position`. |
 | `rationale` | One or two factual sentences explaining why exploration is central. |
 
