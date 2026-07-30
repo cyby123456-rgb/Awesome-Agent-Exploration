@@ -10,17 +10,8 @@ The 2026 review started from the complete accepted-paper pages for:
 - [ACL 2026 Findings](https://aclanthology.org/volumes/2026.findings-acl/)
 - [ICLR 2026](https://iclr.cc/virtual/2026/papers.html)
 - [ICML 2026](https://icml.cc/virtual/2026/papers.html)
-- [Tianjin University Deep Reinforcement Learning Lab publications](http://rl.beiyang.ren/)
 
 Every accepted entry in `data/papers.json` links to its official venue page.
-
-The Tianjin University lab review checked all 329 records exposed by its
-publication registry. A high-recall title pass retained 45 candidates covering
-exploration, curiosity, uncertainty, diversity, population methods, and search;
-abstract and source review then retained 14 papers where exploration is a
-primary variable or a concrete mechanism. Generic optimization search,
-application-level coverage, preference diversity, and uncertainty-only work
-were excluded.
 
 ## Selection result
 
@@ -49,8 +40,8 @@ metadata checks found 158 credible title matches and at least 32 clear link-titl
 mismatches. After scope review and deduplication against the official 2026
 records, 58 additional verified legacy papers were retained.
 
-The catalog also adds eight pre-2025 LLM/agent foundations and keeps seven
-classical non-LLM RL references in a background-only appendix.
+The catalog also adds pre-2025 LLM/agent foundations and keeps classical
+non-LLM RL references in a background-only appendix.
 
 The catalog's seven mixed-axis sections were subsequently consolidated into
 five primary research categories: LLM generation and inference; RLVR, policy,
