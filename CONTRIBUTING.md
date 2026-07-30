@@ -90,6 +90,17 @@ no applicable value.
 be non-empty. `problem` and `setting` are optional. Copy exact tag values from
 [Taxonomy Design](docs/TAXONOMY.md#tag-dimensions); do not invent synonyms.
 
+For these tag fields, first answer the question in the middle column:
+
+| Field | Ask yourself | Example |
+|---|---|---|
+| `phase` | **When** does exploration happen or change? | Inference: `inference`; RL update: `rl-training` |
+| `level` | **What** is explored or diversified? | Token: `token`; reasoning path: `response/sequence` |
+| `signal` | **What quantity** values or guides exploration? | Entropy: `entropy/probability`; novelty: `novelty/curiosity` |
+| `mechanism` | **How** is exploration produced or controlled? | Sampling: `sampling/decoding`; tree search: `tree-search/branching` |
+| `problem` | **Why** is exploration needed? | `entropy-collapse`, `sparse-reward`; otherwise `[]` |
+| `setting` | **Where** is it evaluated? | `math`, `code`, `web`; otherwise `[]` |
+
 Do not set `featured`, `featured_rank`, `notability`, `citation_*`,
 `source_group`, or `discovery_category` unless a maintainer asks. Put an
 official code URL in the PR description; the registry currently has no code URL
