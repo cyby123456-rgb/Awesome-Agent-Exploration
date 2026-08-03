@@ -49,6 +49,7 @@ SUBTOPICS = {
     "understanding-evaluation": {"theory-training-dynamics", "benchmarks-metrics", "surveys-position", "capability-boundaries"},
 }
 OFFICIAL_2026_HOSTS = {"aclanthology.org", "iclr.cc", "icml.cc"}
+PEER_REVIEWED_2026_VENUE_PREFIXES = ("ACL 2026", "ICLR 2026", "ICML 2026")
 TAG_VALUES = {
     "phase": {"data-generation", "supervised-post-training", "rl-training", "inference", "test-time-adaptation", "continual/self-improvement"},
     "level": {"token", "response/sequence", "trajectory/action", "latent/representation", "policy-distribution", "data/task", "population/multi-policy"},
@@ -69,6 +70,9 @@ def main() -> int:
     catalog = json.loads(DATA_PATH.read_text(encoding="utf-8"))
     papers = catalog.get("papers", [])
     errors: list[str] = []
+    for field in ("snapshot_date", "citation_snapshot"):
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", catalog.get(field, "")):
+            errors.append(f"catalog: {field} must be in YYYY-MM-DD format")
     seen_ids: dict[str, str] = {}
     seen_titles: dict[str, str] = {}
     seen_urls: dict[str, str] = {}
@@ -162,9 +166,11 @@ def main() -> int:
         dict(
             sorted(
                 Counter(
-                    p.get("venue", "")
+                    p.get("published_venue") or p.get("venue", "")
                     for p in papers
-                    if p.get("source_group") == "conference-2026"
+                    if (p.get("published_venue") or p.get("venue", "")).startswith(
+                        PEER_REVIEWED_2026_VENUE_PREFIXES
+                    )
                 ).items()
             )
         ),

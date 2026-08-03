@@ -1,6 +1,7 @@
 {
   "schema_version": 1,
   "snapshot_date": "2026-07-23",
+  "citation_snapshot": "2026-07-23",
   "scope": "Exploration in LLM generation, RLVR, and agents.",
   "papers": [
     {
@@ -264,7 +265,7 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, reward/advantage, reward-shaping/intrinsic-reward.",
+      "rationale": "Evaluates curiosity-like LLM behaviors with a psychology-inspired framework and tests whether curiosity-driven thinking improves selected downstream tasks.",
       "subtopic": "benchmarks-metrics"
     },
     {

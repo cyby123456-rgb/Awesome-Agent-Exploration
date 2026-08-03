@@ -222,6 +222,7 @@ TOP_TIER_VENUE_PREFIXES = (
     "ARTIFICIAL INTELLIGENCE",
     "IEEE TRANSACTIONS ON CYBERNETICS",
 )
+PEER_REVIEWED_2026_VENUE_PREFIXES = ("ACL 2026", "ICLR 2026", "ICML 2026")
 
 # Muted, value-specific colors keep neighboring papers distinguishable without
 # turning the catalog into a wall of high-saturation badges.
@@ -370,15 +371,24 @@ def catalog_table_of_contents(papers: list[dict]) -> list[str]:
     return lines
 
 
-def is_notable(paper: dict) -> bool:
-    """Flag papers with top-tier publication evidence or high citation impact."""
+def has_top_tier_venue(paper: dict) -> bool:
+    """Identify papers with a recognized top-tier publication venue."""
     venue = (paper.get("published_venue") or paper.get("venue") or "").upper()
-    top_tier = venue.startswith(TOP_TIER_VENUE_PREFIXES)
-    return top_tier or "high-citation" in paper.get("notability", [])
+    return venue.startswith(TOP_TIER_VENUE_PREFIXES)
+
+
+def has_high_citation(paper: dict) -> bool:
+    """Identify papers with a recorded high-citation assessment."""
+    return "high-citation" in paper.get("notability", [])
 
 
 def notability_marker(paper: dict) -> str:
-    return "⭐ " if is_notable(paper) else ""
+    markers = []
+    if has_top_tier_venue(paper):
+        markers.append("🏆")
+    if has_high_citation(paper):
+        markers.append("⭐")
+    return f"{' '.join(markers)} " if markers else ""
 
 
 def source_label(paper: dict) -> str:
@@ -398,7 +408,11 @@ def source_label(paper: dict) -> str:
 def statistics_table(papers: list[dict]) -> list[str]:
     area_counts = Counter(p["primary_area"] for p in papers)
     accepted = Counter(
-        p["venue"] for p in papers if p.get("source_group") == "conference-2026"
+        p.get("published_venue") or p["venue"]
+        for p in papers
+        if (p.get("published_venue") or p.get("venue") or "").startswith(
+            PEER_REVIEWED_2026_VENUE_PREFIXES
+        )
     )
     lines = [
         "| Collection | Papers |",
@@ -586,7 +600,7 @@ def render_readme(catalog: dict) -> str:
             "",
             "## Catalog",
             "",
-            "> ⭐ Published at a recognized top-tier venue or cited at least 100 times. Citation snapshot: **2026-07-23**; counts and sources are recorded in the paper registry.",
+            f"> 🏆 Published at a recognized top-tier venue. ⭐ Cited at least 100 times. Citation snapshot: **{catalog['citation_snapshot']}**; counts and sources are recorded in the paper registry.",
             "",
             "### Categories",
             "",
@@ -664,7 +678,7 @@ def render_detailed(catalog: dict) -> str:
         "",
         f"Evidence snapshot: **{catalog['snapshot_date']}** · {len(papers)} curated papers.",
         "",
-        "> ⭐ Published at a recognized top-tier venue or cited at least 100 times. Citation snapshot: **2026-07-23**; counts and sources are recorded in the paper registry.",
+        f"> 🏆 Published at a recognized top-tier venue. ⭐ Cited at least 100 times. Citation snapshot: **{catalog['citation_snapshot']}**; counts and sources are recorded in the paper registry.",
         "",
     ]
     for index, (area, label) in enumerate(AREA_LABELS.items(), start=1):
