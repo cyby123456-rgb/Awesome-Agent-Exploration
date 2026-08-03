@@ -17,11 +17,15 @@ from generate_catalog import (
 
 ROOT = Path(__file__).resolve().parents[1]
 CANDIDATES = ROOT / "data" / "candidates.json"
+PAPERS = ROOT / "data" / "papers.json"
+CANDIDATE_STATUSES = {"pending", "promoted", "rejected", "duplicate"}
 
 
 def validate_candidates() -> list[str]:
     """Keep unverified records separate and reviewable."""
     payload = json.loads(CANDIDATES.read_text(encoding="utf-8"))
+    catalog = json.loads(PAPERS.read_text(encoding="utf-8"))
+    paper_ids = {paper["id"] for paper in catalog.get("papers", [])}
     errors: list[str] = []
     seen: set[str] = set()
     for index, candidate in enumerate(payload.get("candidates", [])):
@@ -29,8 +33,17 @@ def validate_candidates() -> list[str]:
         for field in ("id", "status", "title", "reason", "next_step"):
             if not candidate.get(field):
                 errors.append(f"{label}: missing {field}")
-        if candidate.get("status") != "pending":
-            errors.append(f"{label}: unexpected status {candidate.get('status')!r}")
+        status = candidate.get("status")
+        if status not in CANDIDATE_STATUSES:
+            errors.append(f"{label}: invalid status {status!r}")
+        resolved_to = candidate.get("resolved_to")
+        if status == "promoted":
+            if not resolved_to:
+                errors.append(f"{label}: promoted candidates need resolved_to")
+            elif resolved_to not in paper_ids:
+                errors.append(f"{label}: promoted resolved_to is not a catalog paper ID")
+        elif resolved_to:
+            errors.append(f"{label}: only promoted candidates may set resolved_to")
         if candidate.get("id") in seen:
             errors.append(f"duplicate candidate id: {candidate.get('id')}")
         seen.add(candidate.get("id"))

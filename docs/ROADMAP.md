@@ -1,6 +1,6 @@
 # Awesome Exploration: Curation Roadmap
 
-> Current-state snapshot: 2026-07-19.
+> Current-state snapshot: 2026-08-03.
 
 ## Current position
 
@@ -18,9 +18,11 @@ The repository now uses one structured source of truth:
   conference-link invariants.
 - `scripts/generate_catalog.py` regenerates both public views.
 - `scripts/check_links.py` performs an optional network link check.
+- `.github/workflows/catalog.yml` checks validation and generated-file parity
+  for pull requests and updates to `main`.
 
-The earlier duplicate catalog, title caches, and first-match link-fetching script
-have been removed. They remain available in Git history.
+The earlier duplicate catalog, title caches, and first-match link-fetching
+script have been removed. They remain available in Git history.
 
 ## Taxonomy
 
@@ -35,8 +37,8 @@ Each paper has exactly one primary category:
 Orthogonal tags describe phase, intervention level, exploration signal,
 mechanism, target problem, and application setting. Data, memory, population,
 and self-improvement remain subtopics or tags rather than primary categories.
-Classical non-LLM RL is
-limited to a short background appendix and is not counted in catalog totals.
+Classical non-LLM RL is limited to a background appendix and is not counted in
+catalog totals.
 
 ## Acceptance rule
 
@@ -48,13 +50,18 @@ sampling, diversity, or self-improvement is not sufficient.
 Automated discovery may prepare candidates, but promotion to `data/papers.json`
 requires exact-title source verification and human review.
 
-## Next priorities
+## Done
 
-1. Add a lightweight candidate registry with explicit rejection reasons.
-2. Add CI for validation, generated-file parity, and link checks.
-3. Enrich records with code URLs and canonical publication identifiers.
-4. Add a filterable static view only after the JSON schema has remained stable.
-5. Publish a small monthly changelog of reviewed additions and removals.
+1. Established a candidate registry with review states and promotion links.
+2. Added CI for validation and generated-file parity.
+3. Consolidated the catalog into structured source data and generated views.
+
+## Next
+
+1. Enrich records with code URLs and canonical publication identifiers.
+2. Add link checking as a scheduled or manually triggered CI job.
+3. Add a filterable static view once the JSON schema has remained stable.
+4. Publish a small monthly changelog of reviewed additions and removals.
 
 ## Release checklist
 

@@ -97,9 +97,8 @@ be non-empty. `problem` and `setting` are optional. Copy exact tag values from
 [Taxonomy Design](docs/TAXONOMY.md#tag-dimensions); do not invent synonyms.
 
 Do not set `featured`, `featured_rank`, `notability`, `citation_*`,
-`source_group`, or `discovery_category` unless a maintainer asks. Put an
-official code URL in the PR description; the registry currently has no code URL
-field.
+or `source_group` unless a maintainer asks. Put an official code URL in the PR
+description; the registry currently has no code URL field.
 
 ### Choose the category and subtopic
 
