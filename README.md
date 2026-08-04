@@ -679,16 +679,18 @@ A curated appendix of classical RL exploration references. These papers are not 
 
 <a id="memory-exploration"></a>
 
-## Memory × Exploration
+## Future Research Directions: Memory × Exploration
 
-Memory is an exploration policy over past experience: it changes what an agent already knows, what it should revisit, and which unknown states are worth pursuing next. This cross-cutting lens links the catalog's agentic and policy-learning categories without creating a sixth primary area.
+Memory is an exploration policy over past experience: it changes what an agent already knows, what it should revisit, and which unknown states are worth pursuing next. The agenda below links agentic interaction and policy learning without creating a sixth primary area.
 
-| Research question | Read in the catalog |
-|---|---|
-| **Memory-guided exploration** — How can recalled trajectories, world models, and knowledge guide the next action? | [Knowledge & Memory-Guided Exploration](#category-3-knowledge-memory) |
-| **Exploration-driven memory** — Which successes, failures, and uncertainties should be written, refined, or forgotten? | [Knowledge & Memory-Guided Exploration](#category-3-knowledge-memory) · [Replay, Population & Self-Improvement](#category-2-replay-population) |
-| **Failure memory and recovery** — How can an agent avoid repeating failed paths and recover from dead ends? | [Planning & Interactive Search](#category-3-planning-interaction) · [Knowledge & Memory-Guided Exploration](#category-3-knowledge-memory) |
-| **Memory-augmented training** — How can retained experience improve later policy updates or task generation? | [Memory-Augmented Agent Training](#category-4-knowledge-memory) · [Replay, Population & Self-Improvement](#category-2-replay-population) |
+| Direction | Current bottleneck | Research opportunity |
+|---|---|---|
+| **Memory-guided exploration** | Retrieval can be stale, overly similar, or detached from the agent's current uncertainty and environment state. | Learn when to recall, when to verify, and when to explore a new state instead of following remembered trajectories. |
+| **Exploration-driven memory** | Most systems passively append experiences, retaining redundant traces and outdated rules. | Treat write, merge, compression, and forgetting as utility-aware decisions that preserve experiences which expand future coverage. |
+| **Failure memory and recovery** | Failure traces are often stored as unstructured text and can transfer brittle or incorrect lessons. | Learn causal, context-sensitive failure representations that support safe backtracking without suppressing useful risk-taking. |
+| **Memory-augmented training** | Replayed experience is correlated, non-stationary, and may reinforce reward-hacked behavior. | Optimize which trajectories to retain and replay so memory improves policy learning, task diversity, and long-horizon generalization. |
+
+Related catalog paths: [Knowledge & Memory-Guided Exploration](#category-3-knowledge-memory) · [Planning & Interactive Search](#category-3-planning-interaction) · [Memory-Augmented Agent Training](#category-4-knowledge-memory) · [Replay, Population & Self-Improvement](#category-2-replay-population).
 
 ## License
 
