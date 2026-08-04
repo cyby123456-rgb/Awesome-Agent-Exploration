@@ -59,19 +59,6 @@ The former Token / Sequence / Policy sections are now `level` tags. Entropy, tem
 
 </details>
 
-<a id="memory-exploration"></a>
-
-## Memory × Exploration
-
-Memory is an exploration policy over past experience: it changes what an agent already knows, what it should revisit, and which unknown states are worth pursuing next. This cross-cutting lens links the catalog's agentic and policy-learning categories without creating a sixth primary area.
-
-| Research question | Read in the catalog |
-|---|---|
-| **Memory-guided exploration** — How can recalled trajectories, world models, and knowledge guide the next action? | [Knowledge & Memory-Guided Exploration](#category-3-knowledge-memory) |
-| **Exploration-driven memory** — Which successes, failures, and uncertainties should be written, refined, or forgotten? | [Knowledge & Memory-Guided Exploration](#category-3-knowledge-memory) · [Replay, Population & Self-Improvement](#category-2-replay-population) |
-| **Failure memory and recovery** — How can an agent avoid repeating failed paths and recover from dead ends? | [Planning & Interactive Search](#category-3-planning-interaction) · [Knowledge & Memory-Guided Exploration](#category-3-knowledge-memory) |
-| **Memory-augmented training** — How can retained experience improve later policy updates or task generation? | [Memory-Augmented Agent Training](#category-4-knowledge-memory) · [Replay, Population & Self-Improvement](#category-2-replay-population) |
-
 ## Catalog at a glance
 
 | Collection | Papers |
@@ -689,6 +676,19 @@ A curated appendix of classical RL exploration references. These papers are not 
 - **[Generating Behavior-Diverse Game AIs with Evolutionary Multi-Objective Deep Reinforcement Learning](https://doi.org/10.24963/ijcai.2020/466)** (2020) — Evolutionary multi-objective RL for behaviorally diverse game policies.
 - **[Wuji: Automatic Online Combat Game Testing Using Evolutionary Deep Reinforcement Learning](https://doi.org/10.1109/ASE.2019.00077)** (2019) — Evolutionary deep-RL exploration of game-state space for automated bug discovery.
 - **[WToE: Learning When to Explore in Multiagent Reinforcement Learning](https://doi.org/10.1109/TCYB.2023.3328732)** (2023) — Variational exploration for nonstationary multiagent reinforcement learning.
+
+<a id="memory-exploration"></a>
+
+## Memory × Exploration
+
+Memory is an exploration policy over past experience: it changes what an agent already knows, what it should revisit, and which unknown states are worth pursuing next. This cross-cutting lens links the catalog's agentic and policy-learning categories without creating a sixth primary area.
+
+| Research question | Read in the catalog |
+|---|---|
+| **Memory-guided exploration** — How can recalled trajectories, world models, and knowledge guide the next action? | [Knowledge & Memory-Guided Exploration](#category-3-knowledge-memory) |
+| **Exploration-driven memory** — Which successes, failures, and uncertainties should be written, refined, or forgotten? | [Knowledge & Memory-Guided Exploration](#category-3-knowledge-memory) · [Replay, Population & Self-Improvement](#category-2-replay-population) |
+| **Failure memory and recovery** — How can an agent avoid repeating failed paths and recover from dead ends? | [Planning & Interactive Search](#category-3-planning-interaction) · [Knowledge & Memory-Guided Exploration](#category-3-knowledge-memory) |
+| **Memory-augmented training** — How can retained experience improve later policy updates or task generation? | [Memory-Augmented Agent Training](#category-4-knowledge-memory) · [Replay, Population & Self-Improvement](#category-2-replay-population) |
 
 ## License
 

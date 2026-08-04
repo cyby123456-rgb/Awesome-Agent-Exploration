@@ -566,19 +566,6 @@ def render_readme(catalog: dict) -> str:
         "",
         "</details>",
         "",
-        "<a id=\"memory-exploration\"></a>",
-        "",
-        "## Memory × Exploration",
-        "",
-        "Memory is an exploration policy over past experience: it changes what an agent already knows, what it should revisit, and which unknown states are worth pursuing next. This cross-cutting lens links the catalog's agentic and policy-learning categories without creating a sixth primary area.",
-        "",
-        "| Research question | Read in the catalog |",
-        "|---|---|",
-        "| **Memory-guided exploration** — How can recalled trajectories, world models, and knowledge guide the next action? | [Knowledge & Memory-Guided Exploration](#category-3-knowledge-memory) |",
-        "| **Exploration-driven memory** — Which successes, failures, and uncertainties should be written, refined, or forgotten? | [Knowledge & Memory-Guided Exploration](#category-3-knowledge-memory) · [Replay, Population & Self-Improvement](#category-2-replay-population) |",
-        "| **Failure memory and recovery** — How can an agent avoid repeating failed paths and recover from dead ends? | [Planning & Interactive Search](#category-3-planning-interaction) · [Knowledge & Memory-Guided Exploration](#category-3-knowledge-memory) |",
-        "| **Memory-augmented training** — How can retained experience improve later policy updates or task generation? | [Memory-Augmented Agent Training](#category-4-knowledge-memory) · [Replay, Population & Self-Improvement](#category-2-replay-population) |",
-        "",
         "## Catalog at a glance",
         "",
         *statistics_table(papers),
@@ -670,6 +657,24 @@ def render_readme(catalog: dict) -> str:
         lines.append(
             f"- **[{paper['title']}]({paper['url']})** ({paper['year']}) — {paper['note']}"
         )
+
+    lines.extend(
+        [
+            "",
+            '<a id="memory-exploration"></a>',
+            "",
+            "## Memory × Exploration",
+            "",
+            "Memory is an exploration policy over past experience: it changes what an agent already knows, what it should revisit, and which unknown states are worth pursuing next. This cross-cutting lens links the catalog's agentic and policy-learning categories without creating a sixth primary area.",
+            "",
+            "| Research question | Read in the catalog |",
+            "|---|---|",
+            "| **Memory-guided exploration** — How can recalled trajectories, world models, and knowledge guide the next action? | [Knowledge & Memory-Guided Exploration](#category-3-knowledge-memory) |",
+            "| **Exploration-driven memory** — Which successes, failures, and uncertainties should be written, refined, or forgotten? | [Knowledge & Memory-Guided Exploration](#category-3-knowledge-memory) · [Replay, Population & Self-Improvement](#category-2-replay-population) |",
+            "| **Failure memory and recovery** — How can an agent avoid repeating failed paths and recover from dead ends? | [Planning & Interactive Search](#category-3-planning-interaction) · [Knowledge & Memory-Guided Exploration](#category-3-knowledge-memory) |",
+            "| **Memory-augmented training** — How can retained experience improve later policy updates or task generation? | [Memory-Augmented Agent Training](#category-4-knowledge-memory) · [Replay, Population & Self-Improvement](#category-2-replay-population) |",
+        ]
+    )
 
     lines.extend(
         [
