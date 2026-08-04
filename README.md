@@ -4,11 +4,11 @@
 
 **A curated research map of exploration in large language models and agents.**
 
-[![Curated catalog](https://img.shields.io/badge/catalog-curated-3B82F6?style=flat-square)](docs/CURATION_2026.md) [![259 papers](https://img.shields.io/badge/papers-259-8B5CF6?style=flat-square)](#catalog) [![Five research categories](https://img.shields.io/badge/categories-5-10B981?style=flat-square)](#research-map) [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-F59E0B?style=flat-square)](CONTRIBUTING.md)
+[![Curated catalog](https://img.shields.io/badge/catalog-curated-3B82F6?style=flat-square)](docs/CURATION_2026.md) [![262 papers](https://img.shields.io/badge/papers-262-8B5CF6?style=flat-square)](#catalog) [![Five research categories](https://img.shields.io/badge/categories-5-10B981?style=flat-square)](#research-map) [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-F59E0B?style=flat-square)](CONTRIBUTING.md)
 
 [Guide](#guide) · [Research map](#research-map) · [10-paper introduction](#start-here) · [Catalog](#catalog) · [Detailed metadata](README_DETAILED.md) · [Contribute](CONTRIBUTING.md)
 
-<img src="assets/research-map.svg" alt="Research map of 259 papers across five exploration categories" width="100%">
+<img src="assets/research-map.svg" alt="Research map of 262 papers across five exploration categories" width="100%">
 
 </div>
 
@@ -19,6 +19,7 @@
 | **[What counts as exploration](#what-counts-as-exploration)** | Sutton & Barto frame exploration as trying alternatives to improve future action selection, while exploitation uses current knowledge to obtain reward. |
 | **[Research map](#research-map)** | Five categories spanning LLM generation, RLVR and policy learning, agentic inference, agentic training, and evidence. |
 | **[Taxonomy lens](#taxonomy-lens)** | How phase, level, signal, mechanism, problem, and setting describe each paper. |
+| **[Memory × Exploration](#memory-exploration)** | How agents retain, retrieve, and reuse experience to explore more effectively. |
 | **[10 papers to get started](#start-here)** | A manually selected introduction to LLM exploration; automatic ranking is intentionally avoided. |
 | **[Full catalog](#catalog)** | All curated papers, grouped by their primary research category. |
 
@@ -26,7 +27,7 @@
 
 > This repository treats exploration as a **primary research variable**: a paper must identify where exploration happens and introduce or analyze a concrete exploration signal or mechanism. Generic RL, agents, test-time scaling, self-improvement, and diversity work are excluded when exploration is merely incidental.
 
-> Evidence snapshot: **2026-07-23** · [Taxonomy design](docs/TAXONOMY.md) · [2026 curation notes](docs/CURATION_2026.md)
+> Evidence snapshot: **2026-08-04** · [Taxonomy design](docs/TAXONOMY.md) · [2026 curation notes](docs/CURATION_2026.md)
 
 ## Research map
 
@@ -58,26 +59,39 @@ The former Token / Sequence / Policy sections are now `level` tags. Entropy, tem
 
 </details>
 
+<a id="memory-exploration"></a>
+
+## Memory × Exploration
+
+Memory is an exploration policy over past experience: it changes what an agent already knows, what it should revisit, and which unknown states are worth pursuing next. This cross-cutting lens links the catalog's agentic and policy-learning categories without creating a sixth primary area.
+
+| Research question | Read in the catalog |
+|---|---|
+| **Memory-guided exploration** — How can recalled trajectories, world models, and knowledge guide the next action? | [Knowledge & Memory-Guided Exploration](#category-3-knowledge-memory) |
+| **Exploration-driven memory** — Which successes, failures, and uncertainties should be written, refined, or forgotten? | [Knowledge & Memory-Guided Exploration](#category-3-knowledge-memory) · [Replay, Population & Self-Improvement](#category-2-replay-population) |
+| **Failure memory and recovery** — How can an agent avoid repeating failed paths and recover from dead ends? | [Planning & Interactive Search](#category-3-planning-interaction) · [Knowledge & Memory-Guided Exploration](#category-3-knowledge-memory) |
+| **Memory-augmented training** — How can retained experience improve later policy updates or task generation? | [Memory-Augmented Agent Training](#category-4-knowledge-memory) · [Replay, Population & Self-Improvement](#category-2-replay-population) |
+
 ## Catalog at a glance
 
 | Collection | Papers |
 |---|---:|
 | Exploration for LLM Generation & Inference | 62 |
 | Exploration for RLVR, Policy & Curriculum | 125 |
-| Agentic Exploration | 22 |
+| Agentic Exploration | 25 |
 | Agentic Exploration for Training | 20 |
 | Understanding, Evaluation & Benchmarks | 30 |
-| **Curated total** | **259** |
+| **Curated total** | **262** |
 
 2026 peer-reviewed acceptances in the catalog:
 
 | Venue | Papers |
 |---|---:|
-| ACL 2026 Findings | 37 |
+| ACL 2026 Findings | 38 |
 | ACL 2026 Main | 29 |
 | ICLR 2026 | 58 |
 | ICML 2026 | 63 |
-| **Accepted total** | **187** |
+| **Accepted total** | **188** |
 
 <a id="start-here"></a>
 
@@ -119,7 +133,7 @@ The former Token / Sequence / Policy sections are now `level` tags. Entropy, tem
    - [Web, Tools & GUI](#category-3-web-tools-gui) · 4 papers
    - [Planning & Interactive Search](#category-3-planning-interaction) · 10 papers
    - [Embodied & Simulated Environments](#category-3-embodied-environments) · 2 papers
-   - [Knowledge & Memory-Guided Exploration](#category-3-knowledge-memory) · 6 papers
+   - [Knowledge & Memory-Guided Exploration](#category-3-knowledge-memory) · 9 papers
 4. [Agentic Exploration for Training](#category-4)
    - [Web, Tools & GUI Training](#category-4-web-tools-gui) · 5 papers
    - [Agentic Policy Learning](#category-4-planning-interaction) · 12 papers
@@ -494,18 +508,21 @@ Agents that explore physical or simulated worlds, with spatial reasoning, world-
 
 <a id="category-3-knowledge-memory"></a>
 
-### Knowledge & Memory-Guided Exploration · 6 papers
+### Knowledge & Memory-Guided Exploration · 9 papers
 
 Agents that traverse knowledge graphs or use accumulated memory to guide future actions, emphasizing relation-aware search, timely recall, and experience-grounded planning.
 
 | Evidence | Paper | Research lens |
 |---|---|---|
+| ACL 2026 Findings | 🏆 [Remember Me, Refine Me: A Dynamic Procedural Memory Framework for Experience-Driven Agent Evolution](https://aclanthology.org/2026.findings-acl.829/) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) |
 | **ICLR 2026** | 🏆 [Explore-on-Graph: Incentivizing Autonomous Exploration of Large Language Models on Knowledge Graphs with Path-refined Reward Modeling](https://iclr.cc/virtual/2026/poster/10009840) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) |
 | **ICLR 2026** | 🏆 [Dyna-Mind: Learning to Simulate from Experience for Better AI Agents](https://iclr.cc/virtual/2026/poster/10010625) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) |
 | **ICLR 2026** | 🏆 [Dual-Scale World Memory for LLM Agents towards Hard-Exploration Problems](https://iclr.cc/virtual/2026/poster/10008626) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) |
 | **ACL 2026 Findings** | 🏆 [Chain-of-Relations: Faithful and Efficient LLM Reasoning over Knowledge Graphs via Relation-Centric Exploration](https://aclanthology.org/2026.findings-acl.2138/) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) |
 | **ICML 2026** | 🏆 [Backjump-on-Graph: Empowering LLMs with Reinforced Retrospective Exploration for Agentic KG Reasoning](https://icml.cc/virtual/2026/poster/61995) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: backtracking/resampling](https://img.shields.io/badge/mechanism-backtracking%2Fresampling-8E759D?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) |
 | **ACL 2026 Main** | 🏆 [Autonomous Knowledge Graph Exploration with Adaptive Breadth-Depth Retrieval](https://aclanthology.org/2026.acl-long.714/) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) |
+| ACL 2025 Main | 🏆 [R2D2: Remembering, Replaying and Dynamic Decision Making with a Reflective Agentic Memory](https://aclanthology.org/2025.acl-long.1464/) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) |
+| ACL 2025 Main | 🏆 [Contextual Experience Replay for Self-Improvement of Language Agents](https://aclanthology.org/2025.acl-long.694/) | ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) |
 
 
 <a id="category-4"></a>

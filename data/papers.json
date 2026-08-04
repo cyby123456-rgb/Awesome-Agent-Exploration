@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "snapshot_date": "2026-07-23",
+  "snapshot_date": "2026-08-04",
   "citation_snapshot": "2026-07-23",
   "scope": "Exploration in LLM generation, RLVR, and agents.",
   "papers": [
@@ -9126,6 +9126,122 @@
       ],
       "rationale": "Established the interleaving of reasoning and environment actions for information-seeking agents.",
       "subtopic": "embodied-environments"
+    },
+    {
+      "id": "venue:2025.acl-long.694",
+      "title": "Contextual Experience Replay for Self-Improvement of Language Agents",
+      "url": "https://aclanthology.org/2025.acl-long.694/",
+      "authors": [
+        "Yitao Liu",
+        "Chenglei Si",
+        "Karthik R Narasimhan",
+        "Shunyu Yao"
+      ],
+      "date": "2025",
+      "venue": "ACL 2025 Main",
+      "source_group": "recent-curated",
+      "primary_area": "agentic-exploration",
+      "paper_type": "method",
+      "phase": [
+        "inference",
+        "continual/self-improvement"
+      ],
+      "level": [
+        "trajectory/action"
+      ],
+      "signal": [],
+      "mechanism": [
+        "replay/memory"
+      ],
+      "problem": [
+        "long-horizon",
+        "recovery/error-correction"
+      ],
+      "setting": [
+        "web",
+        "tool-use"
+      ],
+      "rationale": "Synthesizes past web-agent experience into a dynamic memory buffer and retrieves relevant environment dynamics and decision patterns for new tasks.",
+      "subtopic": "knowledge-memory"
+    },
+    {
+      "id": "venue:2025.acl-long.1464",
+      "title": "R2D2: Remembering, Replaying and Dynamic Decision Making with a Reflective Agentic Memory",
+      "url": "https://aclanthology.org/2025.acl-long.1464/",
+      "authors": [
+        "Tenghao Huang",
+        "Kinjal Basu",
+        "Ibrahim Abdelaziz",
+        "Pavan Kapanipathi",
+        "Jonathan May",
+        "Muhao Chen"
+      ],
+      "date": "2025",
+      "venue": "ACL 2025 Main",
+      "source_group": "recent-curated",
+      "primary_area": "agentic-exploration",
+      "paper_type": "method",
+      "phase": [
+        "inference",
+        "continual/self-improvement"
+      ],
+      "level": [
+        "trajectory/action"
+      ],
+      "signal": [],
+      "mechanism": [
+        "replay/memory",
+        "backtracking/resampling"
+      ],
+      "problem": [
+        "long-horizon",
+        "recovery/error-correction"
+      ],
+      "setting": [
+        "web",
+        "tool-use"
+      ],
+      "rationale": "Uses replay memory to reconstruct visited web states and reflection on past errors to improve navigation and recover from failed decisions.",
+      "subtopic": "knowledge-memory"
+    },
+    {
+      "id": "venue:2026.findings-acl.829",
+      "title": "Remember Me, Refine Me: A Dynamic Procedural Memory Framework for Experience-Driven Agent Evolution",
+      "url": "https://aclanthology.org/2026.findings-acl.829/",
+      "authors": [
+        "Zouying Cao",
+        "Jiaji Deng",
+        "Li Yu",
+        "Weikang Zhou",
+        "Zhaoyang Liu",
+        "Bolin Ding",
+        "Hai Zhao"
+      ],
+      "date": "2026",
+      "venue": "ACL 2026 Findings",
+      "source_group": "recent-curated",
+      "primary_area": "agentic-exploration",
+      "paper_type": "method",
+      "phase": [
+        "inference",
+        "continual/self-improvement"
+      ],
+      "level": [
+        "trajectory/action"
+      ],
+      "signal": [],
+      "mechanism": [
+        "replay/memory"
+      ],
+      "problem": [
+        "exploration-exploitation",
+        "recovery/error-correction"
+      ],
+      "setting": [
+        "tool-use"
+      ],
+      "rationale": "Treats procedural memory as a lifecycle: it distills success and failure experience, retrieves it by context, and refines the memory pool by utility to reduce redundant trial-and-error.",
+      "subtopic": "knowledge-memory"
     }
   ],
   "classics": [
