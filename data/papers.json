@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "snapshot_date": "2026-08-04",
+  "snapshot_date": "2026-08-06",
   "citation_snapshot": "2026-07-23",
   "scope": "Exploration in LLM generation, RLVR, and agents.",
   "papers": [
@@ -225,7 +225,9 @@
         "response/sequence"
       ],
       "signal": [
-        "semantic-diversity"
+        "semantic-diversity",
+        "novelty/curiosity",
+        "coverage"
       ],
       "mechanism": [],
       "problem": [],
@@ -266,7 +268,15 @@
       "problem": [],
       "setting": [],
       "rationale": "Evaluates curiosity-like LLM behaviors with a psychology-inspired framework and tests whether curiosity-driven thinking improves selected downstream tasks.",
-      "subtopic": "benchmarks-metrics"
+      "subtopic": "benchmarks-metrics",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.1954/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:10008807",
@@ -296,8 +306,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: uncertainty/confidence, reward/advantage, sampling/decoding.",
-      "subtopic": "theory-training-dynamics"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "theory-training-dynamics",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10008807",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:10007331",
@@ -326,8 +344,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, coverage.",
-      "subtopic": "theory-training-dynamics"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "theory-training-dynamics",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10007331",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:unveiling the entropy dynamics of chain of thought reasoning",
@@ -359,8 +385,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, sampling/decoding.",
-      "subtopic": "theory-training-dynamics"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "theory-training-dynamics",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/62606",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.879",
@@ -393,8 +427,16 @@
         "entropy-collapse"
       ],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, reward/advantage, regularization.",
-      "subtopic": "entropy-distribution"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "entropy-distribution",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.879/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:understanding reasoning collapse in llm agent reinforcement learning",
@@ -435,8 +477,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, semantic-diversity, information-gain.",
-      "subtopic": "theory-training-dynamics"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "theory-training-dynamics",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/66821",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:the unlearnability phenomenon in rlvr for language models",
@@ -464,8 +514,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: reward/advantage, sampling/decoding, gradient-reshaping.",
-      "subtopic": "theory-training-dynamics"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "theory-training-dynamics",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/64909",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:10006646",
@@ -505,8 +563,16 @@
         "mode-collapse"
       ],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: semantic-diversity, coverage, reward/advantage.",
-      "subtopic": "theory-training-dynamics"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "theory-training-dynamics",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10006646",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.1894",
@@ -543,8 +609,16 @@
       "setting": [
         "multi-agent"
       ],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: semantic-diversity, ensemble/population.",
-      "subtopic": "theory-training-dynamics"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "theory-training-dynamics",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.1894/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:reinforcement learning with verifiable rewards implicitly incentivizes correct reasoning in base llms",
@@ -581,8 +655,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, reward/advantage, sampling/decoding.",
-      "subtopic": "theory-training-dynamics"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "theory-training-dynamics",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10007896",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:recognize your orchestrator an entropy dynamics perspective for llm multi agent systems",
@@ -616,8 +698,16 @@
       "setting": [
         "multi-agent"
       ],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, ensemble/population.",
-      "subtopic": "theory-training-dynamics"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "theory-training-dynamics",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/63622",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:10009898",
@@ -648,8 +738,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
-      "subtopic": "theory-training-dynamics"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "theory-training-dynamics",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10009898",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:provable benefits of rlvr over sft for reasoning models learning to backtrack efficiently",
@@ -676,8 +774,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: reward/advantage, backtracking/resampling.",
-      "subtopic": "theory-training-dynamics"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "theory-training-dynamics",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/64293",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:61683",
@@ -706,8 +812,16 @@
         "capability-boundary"
       ],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: reward/advantage, gradient-reshaping.",
-      "subtopic": "capability-boundaries"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "capability-boundaries",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/61683",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:on the entropy dynamics in reinforcement fine tuning of large language models",
@@ -739,8 +853,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
-      "subtopic": "theory-training-dynamics"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "theory-training-dynamics",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/63897",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:less diverse less safe the indirect but pervasive risk of test time scaling in large language models",
@@ -769,8 +891,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: semantic-diversity, sampling/decoding, tree-search/branching.",
-      "subtopic": "theory-training-dynamics"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "theory-training-dynamics",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/64671",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:10008208",
@@ -802,8 +932,16 @@
         "mode-collapse"
       ],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, coverage.",
-      "subtopic": "theory-training-dynamics"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "theory-training-dynamics",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10008208",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:generalization of rlvr using causal reasoning as a testbed",
@@ -834,8 +972,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, reward/advantage.",
-      "subtopic": "theory-training-dynamics"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "theory-training-dynamics",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10010768",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:exploration vs exploitation rethinking rlvr through clipping entropy and spurious reward",
@@ -869,8 +1015,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, reward/advantage, gradient-reshaping.",
-      "subtopic": "theory-training-dynamics"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "theory-training-dynamics",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10007078",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:exploration hacking llms can learn to resist rl training",
@@ -904,8 +1058,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: semantic-diversity.",
-      "subtopic": "theory-training-dynamics"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "theory-training-dynamics",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/64674",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:does reinforcement fine tuning improve generalization of llm agents an empirical study",
@@ -944,8 +1106,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: structured-search.",
-      "subtopic": "theory-training-dynamics"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "theory-training-dynamics",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/65794",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:demystifying entropy control in llm rl training theoretical analysis and dynamic scheduling",
@@ -977,8 +1147,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability.",
-      "subtopic": "theory-training-dynamics"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "theory-training-dynamics",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/62302",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:breaking barriers do reinforcement post training gains transfer to unseen domains",
@@ -1010,8 +1188,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: reward/advantage.",
-      "subtopic": "theory-training-dynamics"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "theory-training-dynamics",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10007526",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:advantage collapse in group relative policy optimization diagnosis and mitigation",
@@ -1046,8 +1232,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: reward/advantage, gradient-reshaping.",
-      "subtopic": "theory-training-dynamics"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "theory-training-dynamics",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/64547",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "arxiv:2512.22955",
@@ -1075,7 +1269,9 @@
         "token"
       ],
       "signal": [
-        "semantic-diversity"
+        "semantic-diversity",
+        "entropy/probability",
+        "reward/advantage"
       ],
       "mechanism": [],
       "problem": [],
@@ -1110,7 +1306,9 @@
         "response/sequence"
       ],
       "signal": [
-        "entropy/probability"
+        "entropy/probability",
+        "semantic-diversity",
+        "reward/advantage"
       ],
       "mechanism": [],
       "problem": [],
@@ -1142,7 +1340,11 @@
       "level": [
         "policy-distribution"
       ],
-      "signal": [],
+      "signal": [
+        "semantic-diversity",
+        "entropy/probability",
+        "novelty/curiosity"
+      ],
       "mechanism": [
         "structured-search"
       ],
@@ -1180,7 +1382,11 @@
       "level": [
         "policy-distribution"
       ],
-      "signal": [],
+      "signal": [
+        "entropy/probability",
+        "reward/advantage",
+        "coverage"
+      ],
       "mechanism": [
         "structured-search"
       ],
@@ -1213,7 +1419,9 @@
       "level": [
         "response/sequence"
       ],
-      "signal": [],
+      "signal": [
+        "reward/advantage"
+      ],
       "mechanism": [
         "structured-search"
       ],
@@ -1260,9 +1468,12 @@
         "policy-distribution"
       ],
       "signal": [
-        "entropy/probability"
+        "entropy/probability",
+        "reward/advantage"
       ],
-      "mechanism": [],
+      "mechanism": [
+        "gradient-reshaping"
+      ],
       "problem": [],
       "setting": [],
       "rationale": "Exploration focus: entropy/probability, reward/advantage, gradient-reshaping.",
@@ -1290,7 +1501,9 @@
         "policy-distribution"
       ],
       "signal": [
-        "semantic-diversity"
+        "semantic-diversity",
+        "entropy/probability",
+        "coverage"
       ],
       "mechanism": [
         "gradient-reshaping"
@@ -1325,7 +1538,11 @@
       "level": [
         "policy-distribution"
       ],
-      "signal": [],
+      "signal": [
+        "semantic-diversity",
+        "entropy/probability",
+        "reward/advantage"
+      ],
       "mechanism": [
         "structured-search"
       ],
@@ -1358,7 +1575,9 @@
         "policy-distribution"
       ],
       "signal": [
-        "entropy/probability"
+        "entropy/probability",
+        "semantic-diversity",
+        "reward/advantage"
       ],
       "mechanism": [],
       "problem": [
@@ -1397,7 +1616,10 @@
       "level": [
         "policy-distribution"
       ],
-      "signal": [],
+      "signal": [
+        "semantic-diversity",
+        "reward/advantage"
+      ],
       "mechanism": [
         "gradient-reshaping"
       ],
@@ -1431,7 +1653,9 @@
         "policy-distribution"
       ],
       "signal": [
-        "entropy/probability"
+        "entropy/probability",
+        "semantic-diversity",
+        "novelty/curiosity"
       ],
       "mechanism": [
         "regularization"
@@ -1465,9 +1689,12 @@
       "level": [
         "policy-distribution"
       ],
-      "signal": [],
+      "signal": [
+        "reward/advantage"
+      ],
       "mechanism": [
-        "structured-search"
+        "structured-search",
+        "curriculum/task-generation"
       ],
       "problem": [],
       "setting": [],
@@ -1500,7 +1727,10 @@
       "level": [
         "policy-distribution"
       ],
-      "signal": [],
+      "signal": [
+        "semantic-diversity",
+        "reward/advantage"
+      ],
       "mechanism": [
         "structured-search"
       ],
@@ -1534,7 +1764,9 @@
         "policy-distribution"
       ],
       "signal": [
-        "entropy/probability"
+        "entropy/probability",
+        "semantic-diversity",
+        "reward/advantage"
       ],
       "mechanism": [
         "regularization"
@@ -1569,7 +1801,8 @@
       ],
       "signal": [
         "semantic-diversity",
-        "information-gain"
+        "information-gain",
+        "novelty/curiosity"
       ],
       "mechanism": [],
       "problem": [],
@@ -1607,7 +1840,8 @@
         "policy-distribution"
       ],
       "signal": [
-        "semantic-diversity"
+        "semantic-diversity",
+        "entropy/probability"
       ],
       "mechanism": [
         "regularization"
@@ -1635,7 +1869,6 @@
       ],
       "date": "2026-02-19",
       "venue": "arXiv",
-      "published_venue": "ACL 2026 Main",
       "source_group": "verified-legacy",
       "primary_area": "rlvr-policy-curriculum-exploration",
       "paper_type": "method",
@@ -1647,7 +1880,9 @@
         "policy-distribution"
       ],
       "signal": [
-        "entropy/probability"
+        "entropy/probability",
+        "uncertainty/confidence",
+        "reward/advantage"
       ],
       "mechanism": [
         "gradient-reshaping"
@@ -1655,7 +1890,13 @@
       "problem": [],
       "setting": [],
       "rationale": "Exploration focus: entropy/probability, uncertainty/confidence, reward/advantage.",
-      "subtopic": "entropy-distribution"
+      "subtopic": "entropy-distribution",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "venue-claim"
+      }
     },
     {
       "id": "arxiv:2602.13035",
@@ -1680,7 +1921,9 @@
         "policy-distribution"
       ],
       "signal": [
-        "entropy/probability"
+        "entropy/probability",
+        "uncertainty/confidence",
+        "reward/advantage"
       ],
       "mechanism": [
         "temperature-control"
@@ -1746,7 +1989,8 @@
         "policy-distribution"
       ],
       "signal": [
-        "entropy/probability"
+        "entropy/probability",
+        "reward/advantage"
       ],
       "mechanism": [
         "gradient-reshaping"
@@ -1780,7 +2024,11 @@
       "level": [
         "policy-distribution"
       ],
-      "signal": [],
+      "signal": [
+        "semantic-diversity",
+        "entropy/probability",
+        "reward/advantage"
+      ],
       "mechanism": [
         "structured-search"
       ],
@@ -1822,8 +2070,16 @@
         "long-horizon"
       ],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/66494",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:xrpo pushing the limits of grpo with targeted exploration and exploitation",
@@ -1855,8 +2111,16 @@
         "exploration-exploitation"
       ],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, novelty/curiosity.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/65777",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.1434",
@@ -1891,8 +2155,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
-      "subtopic": "reward-rollout"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "reward-rollout",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.1434/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.951",
@@ -1927,8 +2199,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
-      "subtopic": "credit-optimization"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "credit-optimization",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.951/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:token hidden reward steering exploration exploitation in group relative deep reinforcement learning",
@@ -1965,8 +2245,16 @@
         "exploration-exploitation"
       ],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
-      "subtopic": "credit-optimization"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "credit-optimization",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10008016",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-long.1305",
@@ -2000,8 +2288,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: semantic-diversity, sampling/decoding.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.1305/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.828",
@@ -2036,8 +2332,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, semantic-diversity, gradient-reshaping.",
-      "subtopic": "entropy-distribution"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "entropy-distribution",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.828/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:smaller models are natural explorers for policy level diversity in grpo",
@@ -2075,8 +2379,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: semantic-diversity, sampling/decoding, noise/perturbation.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/64272",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.1915",
@@ -2115,8 +2427,16 @@
         "exploration-exploitation"
       ],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.1915/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:selective expert guidance for effective and diverse exploration in reinforcement learning of llms",
@@ -2153,8 +2473,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: semantic-diversity, reward/advantage.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10008654",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:ssl4rl revisiting self supervised learning as intrinsic reward for visual language reasoning",
@@ -2192,8 +2520,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, reward/advantage, reward-shaping/intrinsic-reward.",
-      "subtopic": "reward-rollout"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "reward-rollout",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/60895",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.865",
@@ -2234,8 +2570,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
-      "subtopic": "entropy-distribution"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "entropy-distribution",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.865/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:sage shaping anchors for guided exploration in rlvr of llms",
@@ -2263,8 +2607,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, novelty/curiosity, coverage.",
-      "subtopic": "entropy-distribution"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "entropy-distribution",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/63563",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:risk sensitive reinforcement learning for alleviating exploration dilemmas in large language models",
@@ -2296,8 +2648,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity, coverage.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10011269",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.1982",
@@ -2337,8 +2697,16 @@
       "setting": [
         "creative/open-ended"
       ],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, semantic-diversity, coverage.",
-      "subtopic": "reward-rollout"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "reward-rollout",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.1982/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:reward and guidance through rubrics promoting exploration to improve multi domain reasoning",
@@ -2374,8 +2742,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, reward/advantage.",
-      "subtopic": "credit-optimization"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "credit-optimization",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/65737",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:restoring exploration after post training latent exploration decoding for large reasoning models",
@@ -2412,8 +2788,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, sampling/decoding, temperature-control.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/66546",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:62006",
@@ -2447,8 +2831,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/62006",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-long.2216",
@@ -2487,8 +2879,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.2216/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.1370",
@@ -2519,8 +2919,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, reward/advantage, self-play/co-evolution.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.1370/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:on entropy control in llm rl algorithms",
@@ -2546,8 +2954,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, regularization.",
-      "subtopic": "entropy-distribution"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "entropy-distribution",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10010002",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:no prompt left behind exploiting zero variance prompts in llm reinforcement learning via entropy guided advantage shaping",
@@ -2581,8 +2997,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, reward/advantage.",
-      "subtopic": "data-selection-prompting"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "data-selection-prompting",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10007755",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.1209",
@@ -2622,8 +3046,16 @@
         "entropy-collapse"
       ],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
-      "subtopic": "entropy-distribution"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "entropy-distribution",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.1209/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:lookahead tree based rollouts for enhanced trajectory level exploration in reinforcement learning with verifiable rewards",
@@ -2657,8 +3089,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: uncertainty/confidence, novelty/curiosity, semantic-diversity.",
-      "subtopic": "credit-optimization"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "credit-optimization",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10011530",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:62699",
@@ -2698,8 +3138,16 @@
         "exploration-exploitation"
       ],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, semantic-diversity, information-gain.",
-      "subtopic": "credit-optimization"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "credit-optimization",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/62699",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-long.617",
@@ -2734,8 +3182,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, uncertainty/confidence, novelty/curiosity.",
-      "subtopic": "entropy-distribution"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "entropy-distribution",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.617/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:knapsack rl unlocking exploration of llms via optimizing budget allocation",
@@ -2768,8 +3224,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: semantic-diversity, gradient-reshaping.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/60948",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:10007699",
@@ -2802,8 +3266,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity, sampling/decoding.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10007699",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.724",
@@ -2840,8 +3312,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
-      "subtopic": "credit-optimization"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "credit-optimization",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.724/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-long.1418",
@@ -2879,8 +3359,16 @@
         "entropy-collapse"
       ],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
-      "subtopic": "reward-rollout"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "reward-rollout",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.1418/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-long.739",
@@ -2910,8 +3398,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: uncertainty/confidence, reward/advantage, sampling/decoding.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.739/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:geoalign geometric rollout curation for robust llm reinforcement learning",
@@ -2942,8 +3438,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: reward/advantage, disagreement, gradient-reshaping.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/60634",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:gtpo and grpo s token and sequence level reward shaping with policy entropy",
@@ -2983,8 +3487,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, reward/advantage, regularization.",
-      "subtopic": "reward-rollout"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "reward-rollout",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/65174",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-long.797",
@@ -3018,8 +3530,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: novelty/curiosity, reward/advantage, disagreement.",
-      "subtopic": "credit-optimization"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "credit-optimization",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.797/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.1520",
@@ -3055,8 +3575,16 @@
         "exploration-exploitation"
       ],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, semantic-diversity, reward/advantage.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.1520/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:experience is the best teacher motivating effective exploration in reinforcement learning for llms",
@@ -3086,8 +3614,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, reward/advantage, noise/perturbation.",
-      "subtopic": "replay-population"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "replay-population",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/65561",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:10011658",
@@ -3121,8 +3657,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10011658",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.1031",
@@ -3156,8 +3700,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: reward/advantage, curriculum/task-generation, self-play/co-evolution.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.1031/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:escaping policy contraction contraction aware ppo cappo for stable language model fine tuning",
@@ -3187,8 +3739,16 @@
         "mode-collapse"
       ],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10006831",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:entropy preserving reinforcement learning",
@@ -3220,8 +3780,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
-      "subtopic": "entropy-distribution"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "entropy-distribution",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10010707",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.2001",
@@ -3251,8 +3819,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, reward/advantage.",
-      "subtopic": "entropy-distribution"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "entropy-distribution",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.2001/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.206",
@@ -3282,8 +3858,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, semantic-diversity, curriculum/task-generation.",
-      "subtopic": "entropy-distribution"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "entropy-distribution",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.206/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:empowering small vlms to think with dynamic memorization and exploration",
@@ -3313,8 +3897,16 @@
       "setting": [
         "multimodal"
       ],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity, reward/advantage.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10007260",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-long.799",
@@ -3348,8 +3940,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, uncertainty/confidence, reward/advantage.",
-      "subtopic": "entropy-distribution"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "entropy-distribution",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.799/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:eepo exploration enhanced policy optimization via sample then forget",
@@ -3381,8 +3981,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, reward/advantage, sampling/decoding.",
-      "subtopic": "credit-optimization"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "credit-optimization",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10009769",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:63137",
@@ -3414,8 +4022,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, reward/advantage.",
-      "subtopic": "entropy-distribution"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "entropy-distribution",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/63137",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:dynamics predictive sampling for active rl finetuning of large reasoning models",
@@ -3446,8 +4062,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10006780",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.1412",
@@ -3484,8 +4108,16 @@
       "setting": [
         "math"
       ],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, novelty/curiosity, sampling/decoding.",
-      "subtopic": "data-selection-prompting"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "data-selection-prompting",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.1412/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:do not let low probability tokens over dominate in rl for llms",
@@ -3518,8 +4150,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, reward/advantage.",
-      "subtopic": "entropy-distribution"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "entropy-distribution",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10010601",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:diversity incentivized exploration for versatile reasoning",
@@ -3556,8 +4196,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: semantic-diversity, reward/advantage, reward-shaping/intrinsic-reward.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10011130",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:10011855",
@@ -3589,8 +4237,16 @@
       "setting": [
         "creative/open-ended"
       ],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: semantic-diversity, reward/advantage, gradient-reshaping.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10011855",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:depth breadth synergy in rlvr unlocking llm reasoning gains with adaptive exploration",
@@ -3624,8 +4280,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, reward/advantage, sampling/decoding.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/60955",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:10010078",
@@ -3663,8 +4327,16 @@
         "local-optimum"
       ],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, coverage, reward/advantage.",
-      "subtopic": "reward-rollout"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "reward-rollout",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10010078",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.685",
@@ -3702,8 +4374,16 @@
       "setting": [
         "math"
       ],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, semantic-diversity, coverage.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.685/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-long.647",
@@ -3741,8 +4421,16 @@
       "setting": [
         "creative/open-ended"
       ],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: semantic-diversity, reward/advantage, reward-shaping/intrinsic-reward.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.647/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:darts distribution aware active rollout trajectory shaping for accelerating llm reinforcement learning",
@@ -3776,8 +4464,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, novelty/curiosity.",
-      "subtopic": "entropy-distribution"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "entropy-distribution",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/61634",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.1530",
@@ -3807,8 +4503,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: semantic-diversity, reward/advantage.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.1530/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:count counts motivating exploration in llm reasoning with count based intrinsic rewards",
@@ -3845,8 +4549,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: uncertainty/confidence, novelty/curiosity, reward/advantage.",
-      "subtopic": "reward-rollout"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "reward-rollout",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10011073",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:controllable exploration in hybrid policy rlvr for multi modal reasoning",
@@ -3876,8 +4588,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, reward/advantage.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10011411",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:60796",
@@ -3913,8 +4633,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: reward/advantage, noise/perturbation.",
-      "subtopic": "credit-optimization"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "credit-optimization",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/60796",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-long.1376",
@@ -3950,8 +4678,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: semantic-diversity, reward/advantage, disagreement.",
-      "subtopic": "replay-population"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "replay-population",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.1376/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:cde curiosity driven exploration for efficient reinforcement learning in large language models",
@@ -3993,9 +4729,17 @@
       ],
       "setting": [],
       "featured": true,
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
       "subtopic": "reward-rollout",
-      "featured_rank": 4
+      "featured_rank": 4,
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10011417",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:64690",
@@ -4031,8 +4775,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/64690",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:breaking the exploration bottleneck rubric scaffolded reinforcement learning for general llm reasoning",
@@ -4071,8 +4823,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, semantic-diversity, reward/advantage.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/64959",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:beyond mode collapse distribution matching for diverse reasoning",
@@ -4113,8 +4873,16 @@
         "mode-collapse"
       ],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, semantic-diversity, coverage.",
-      "subtopic": "entropy-distribution"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "entropy-distribution",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/65266",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:beyond markovian reflective exploration via bayes adaptive rl for llm reasoning",
@@ -4147,8 +4915,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, uncertainty/confidence.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10006770",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.1650",
@@ -4180,8 +4956,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, reward/advantage, gradient-reshaping.",
-      "subtopic": "entropy-distribution"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "entropy-distribution",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.1650/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:beyond euclidean clipping overcoming exploration collapse in llm rl via riemannian isometric policy optimization",
@@ -4213,8 +4997,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, gradient-reshaping.",
-      "subtopic": "credit-optimization"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "credit-optimization",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/61727",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:attention as a compass efficient exploration for process supervised rl in reasoning models",
@@ -4253,8 +5045,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, reward/advantage, sampling/decoding.",
-      "subtopic": "capability-dynamics"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "capability-dynamics",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10009884",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:anchored policy optimization mitigating exploration collapse via support constrained rectification",
@@ -4288,8 +5088,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
-      "subtopic": "entropy-distribution"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "entropy-distribution",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/65360",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:ares multimodal adaptive reasoning via difficulty aware token level entropy shaping",
@@ -4327,8 +5135,16 @@
       "setting": [
         "multimodal"
       ],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
-      "subtopic": "entropy-distribution"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "entropy-distribution",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10011711",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.641",
@@ -4359,8 +5175,16 @@
         "entropy-collapse"
       ],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
-      "subtopic": "entropy-distribution"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "entropy-distribution",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.641/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "arxiv:2512.15687",
@@ -4386,7 +5210,11 @@
       "level": [
         "policy-distribution"
       ],
-      "signal": [],
+      "signal": [
+        "entropy/probability",
+        "novelty/curiosity",
+        "reward/advantage"
+      ],
       "mechanism": [
         "gradient-reshaping"
       ],
@@ -4422,9 +5250,12 @@
         "policy-distribution"
       ],
       "signal": [
-        "entropy/probability"
+        "entropy/probability",
+        "reward/advantage"
       ],
-      "mechanism": [],
+      "mechanism": [
+        "regularization"
+      ],
       "problem": [],
       "setting": [],
       "rationale": "Exploration focus: entropy/probability, reward/advantage, regularization.",
@@ -4461,7 +5292,9 @@
         "policy-distribution"
       ],
       "signal": [
-        "entropy/probability"
+        "entropy/probability",
+        "semantic-diversity",
+        "novelty/curiosity"
       ],
       "mechanism": [
         "noise/perturbation"
@@ -4498,7 +5331,11 @@
         "policy-distribution",
         "data/task"
       ],
-      "signal": [],
+      "signal": [
+        "semantic-diversity",
+        "entropy/probability",
+        "reward/advantage"
+      ],
       "mechanism": [
         "structured-search"
       ],
@@ -4533,7 +5370,10 @@
       "level": [
         "policy-distribution"
       ],
-      "signal": [],
+      "signal": [
+        "novelty/curiosity",
+        "reward/advantage"
+      ],
       "mechanism": [
         "tree-search/branching"
       ],
@@ -4559,7 +5399,6 @@
       ],
       "date": "2025-10-13",
       "venue": "arXiv",
-      "published_venue": "ACL 2026 Findings",
       "source_group": "verified-legacy",
       "primary_area": "rlvr-policy-curriculum-exploration",
       "paper_type": "method",
@@ -4570,7 +5409,9 @@
         "policy-distribution"
       ],
       "signal": [
-        "entropy/probability"
+        "entropy/probability",
+        "semantic-diversity",
+        "reward/advantage"
       ],
       "mechanism": [
         "regularization"
@@ -4578,7 +5419,13 @@
       "problem": [],
       "setting": [],
       "rationale": "Exploration focus: entropy/probability, semantic-diversity, reward/advantage.",
-      "subtopic": "entropy-distribution"
+      "subtopic": "entropy-distribution",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "venue-claim"
+      }
     },
     {
       "id": "arxiv:2510.05251",
@@ -4604,7 +5451,11 @@
       "level": [
         "policy-distribution"
       ],
-      "signal": [],
+      "signal": [
+        "semantic-diversity",
+        "entropy/probability",
+        "reward/advantage"
+      ],
       "mechanism": [
         "sampling/decoding"
       ],
@@ -4639,7 +5490,9 @@
         "policy-distribution"
       ],
       "signal": [
-        "semantic-diversity"
+        "semantic-diversity",
+        "entropy/probability",
+        "novelty/curiosity"
       ],
       "mechanism": [
         "gradient-reshaping"
@@ -4674,7 +5527,8 @@
         "policy-distribution"
       ],
       "signal": [
-        "entropy/probability"
+        "entropy/probability",
+        "reward/advantage"
       ],
       "mechanism": [
         "gradient-reshaping"
@@ -4700,7 +5554,6 @@
       ],
       "date": "2025-09-25",
       "venue": "arXiv",
-      "published_venue": "ACL 2026 Main",
       "source_group": "verified-legacy",
       "primary_area": "rlvr-policy-curriculum-exploration",
       "paper_type": "method",
@@ -4711,7 +5564,8 @@
         "policy-distribution"
       ],
       "signal": [
-        "entropy/probability"
+        "entropy/probability",
+        "novelty/curiosity"
       ],
       "mechanism": [
         "gradient-reshaping"
@@ -4719,7 +5573,13 @@
       "problem": [],
       "setting": [],
       "rationale": "Exploration focus: entropy/probability, novelty/curiosity, gradient-reshaping.",
-      "subtopic": "entropy-distribution"
+      "subtopic": "entropy-distribution",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "venue-claim"
+      }
     },
     {
       "id": "arxiv:2509.06941",
@@ -4747,7 +5607,8 @@
         "semantic-diversity"
       ],
       "mechanism": [
-        "reward-shaping/intrinsic-reward"
+        "reward-shaping/intrinsic-reward",
+        "structured-search"
       ],
       "problem": [
         "mode-collapse"
@@ -4779,7 +5640,9 @@
         "policy-distribution"
       ],
       "signal": [
-        "uncertainty/confidence"
+        "uncertainty/confidence",
+        "novelty/curiosity",
+        "reward/advantage"
       ],
       "mechanism": [
         "structured-search"
@@ -4814,7 +5677,9 @@
         "policy-distribution"
       ],
       "signal": [
-        "entropy/probability"
+        "entropy/probability",
+        "semantic-diversity",
+        "uncertainty/confidence"
       ],
       "mechanism": [
         "structured-search"
@@ -4856,7 +5721,9 @@
         "policy-distribution"
       ],
       "signal": [
-        "entropy/probability"
+        "entropy/probability",
+        "semantic-diversity",
+        "novelty/curiosity"
       ],
       "mechanism": [],
       "problem": [],
@@ -4884,7 +5751,11 @@
       "level": [
         "policy-distribution"
       ],
-      "signal": [],
+      "signal": [
+        "semantic-diversity",
+        "entropy/probability",
+        "novelty/curiosity"
+      ],
       "mechanism": [
         "structured-search"
       ],
@@ -4918,7 +5789,9 @@
         "policy-distribution"
       ],
       "signal": [
-        "entropy/probability"
+        "entropy/probability",
+        "semantic-diversity",
+        "reward/advantage"
       ],
       "mechanism": [],
       "problem": [],
@@ -4942,7 +5815,6 @@
       ],
       "date": "2025-07-31",
       "venue": "arXiv",
-      "published_venue": "ACL 2026 Main",
       "source_group": "recent-curated",
       "primary_area": "rlvr-policy-curriculum-exploration",
       "paper_type": "method",
@@ -4961,7 +5833,13 @@
       ],
       "setting": [],
       "rationale": "Exploration focus: gradient-reshaping.",
-      "subtopic": "credit-optimization"
+      "subtopic": "credit-optimization",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "venue-claim"
+      }
     },
     {
       "id": "arxiv:2507.07451",
@@ -4989,7 +5867,8 @@
       ],
       "signal": [],
       "mechanism": [
-        "replay/memory"
+        "replay/memory",
+        "structured-search"
       ],
       "problem": [],
       "setting": [],
@@ -5021,7 +5900,11 @@
       "level": [
         "policy-distribution"
       ],
-      "signal": [],
+      "signal": [
+        "semantic-diversity",
+        "entropy/probability",
+        "novelty/curiosity"
+      ],
       "mechanism": [
         "replay/memory"
       ],
@@ -5044,7 +5927,6 @@
       ],
       "date": "2025-06-13",
       "venue": "arXiv",
-      "published_venue": "ACL 2025 Main",
       "source_group": "verified-legacy",
       "primary_area": "rlvr-policy-curriculum-exploration",
       "paper_type": "method",
@@ -5054,7 +5936,11 @@
       "level": [
         "policy-distribution"
       ],
-      "signal": [],
+      "signal": [
+        "entropy/probability",
+        "uncertainty/confidence",
+        "reward/advantage"
+      ],
       "mechanism": [
         "tree-search/branching"
       ],
@@ -5076,7 +5962,6 @@
       ],
       "date": "2025-06-04",
       "venue": "arXiv",
-      "published_venue": "ACL 2026 Findings",
       "source_group": "verified-legacy",
       "primary_area": "rlvr-policy-curriculum-exploration",
       "paper_type": "method",
@@ -5087,7 +5972,8 @@
         "policy-distribution"
       ],
       "signal": [
-        "reward/advantage"
+        "reward/advantage",
+        "novelty/curiosity"
       ],
       "mechanism": [
         "structured-search"
@@ -5095,7 +5981,13 @@
       "problem": [],
       "setting": [],
       "rationale": "Exploration focus: novelty/curiosity, reward/advantage, structured-search.",
-      "subtopic": "credit-optimization"
+      "subtopic": "credit-optimization",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "venue-claim"
+      }
     },
     {
       "id": "arxiv:2506.01939",
@@ -5140,7 +6032,9 @@
         "policy-distribution"
       ],
       "signal": [
-        "entropy/probability"
+        "entropy/probability",
+        "semantic-diversity",
+        "novelty/curiosity"
       ],
       "mechanism": [
         "gradient-reshaping"
@@ -5189,7 +6083,8 @@
         "coverage"
       ],
       "mechanism": [
-        "regularization"
+        "regularization",
+        "structured-search"
       ],
       "problem": [
         "capability-boundary",
@@ -5269,7 +6164,9 @@
       ],
       "signal": [
         "entropy/probability",
-        "reward/advantage"
+        "reward/advantage",
+        "semantic-diversity",
+        "uncertainty/confidence"
       ],
       "mechanism": [
         "gradient-reshaping"
@@ -5307,7 +6204,9 @@
         "reward/advantage"
       ],
       "mechanism": [
-        "structured-search"
+        "structured-search",
+        "regularization",
+        "sampling/decoding"
       ],
       "problem": [
         "exploration-exploitation"
@@ -5339,7 +6238,8 @@
       ],
       "signal": [
         "entropy/probability",
-        "uncertainty/confidence"
+        "uncertainty/confidence",
+        "semantic-diversity"
       ],
       "mechanism": [
         "gradient-reshaping"
@@ -5373,10 +6273,13 @@
       "level": [
         "policy-distribution"
       ],
-      "signal": [],
+      "signal": [
+        "novelty/curiosity"
+      ],
       "mechanism": [
         "backtracking/resampling",
-        "replay/memory"
+        "replay/memory",
+        "gradient-reshaping"
       ],
       "problem": [],
       "setting": [],
@@ -5403,7 +6306,9 @@
         "policy-distribution"
       ],
       "signal": [
-        "entropy/probability"
+        "entropy/probability",
+        "uncertainty/confidence",
+        "novelty/curiosity"
       ],
       "mechanism": [
         "structured-search"
@@ -5417,10 +6322,45 @@
       "id": "arxiv:2503.14476",
       "title": "DAPO: An Open-Source LLM Reinforcement Learning System at Scale",
       "url": "https://arxiv.org/abs/2503.14476",
-      "authors": [],
+      "authors": [
+        "Qiying Yu",
+        "Zheng Zhang",
+        "Ruofei Zhu",
+        "Yufeng Yuan",
+        "Xiaochen Zuo",
+        "Yu Yue",
+        "Weinan Dai",
+        "Tiantian Fan",
+        "Gaohong Liu",
+        "Lingjun Liu",
+        "Xin Liu",
+        "Haibin Lin",
+        "Zhiqi Lin",
+        "Bole Ma",
+        "Guangming Sheng",
+        "Yuxuan Tong",
+        "Chi Zhang",
+        "Mofan Zhang",
+        "Wang Zhang",
+        "Hang Zhu",
+        "Jinhua Zhu",
+        "Jiaze Chen",
+        "Jiangjie Chen",
+        "Chengyi Wang",
+        "Hongli Yu",
+        "Yuxuan Song",
+        "Xiangpeng Wei",
+        "Hao Zhou",
+        "Jingjing Liu",
+        "Wei-Ying Ma",
+        "Ya-Qin Zhang",
+        "Lin Yan",
+        "Mu Qiao",
+        "Yonghui Wu",
+        "Mingxuan Wang"
+      ],
       "date": "2025-03-18",
       "venue": "arXiv",
-      "published_venue": "NeurIPS 2025",
       "notability": [
         "high-citation"
       ],
@@ -5441,7 +6381,8 @@
       ],
       "mechanism": [
         "sampling/decoding",
-        "gradient-reshaping"
+        "gradient-reshaping",
+        "structured-search"
       ],
       "problem": [
         "entropy-collapse"
@@ -5478,9 +6419,12 @@
         "response/sequence",
         "policy-distribution"
       ],
-      "signal": [],
+      "signal": [
+        "semantic-diversity"
+      ],
       "mechanism": [
-        "structured-search"
+        "structured-search",
+        "sampling/decoding"
       ],
       "problem": [],
       "setting": [],
@@ -5513,10 +6457,12 @@
         "latent/representation"
       ],
       "signal": [
-        "semantic-diversity"
+        "semantic-diversity",
+        "entropy/probability"
       ],
       "mechanism": [
-        "noise/perturbation"
+        "noise/perturbation",
+        "sampling/decoding"
       ],
       "problem": [],
       "setting": [],
@@ -5554,8 +6500,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: gradient-reshaping, curriculum/task-generation, structured-search.",
-      "subtopic": "search-deliberation"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "search-deliberation",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10008718",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:verbalized sampling how to mitigate mode collapse and unlock llm diversity",
@@ -5591,8 +6545,16 @@
         "mode-collapse"
       ],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.",
-      "subtopic": "diversity-coverage"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "diversity-coverage",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/60489",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-long.1975",
@@ -5628,8 +6590,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: uncertainty/confidence, reward/advantage, tree-search/branching.",
-      "subtopic": "search-deliberation"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "search-deliberation",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.1975/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:66259",
@@ -5666,8 +6636,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
-      "subtopic": "search-deliberation"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "search-deliberation",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/66259",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:thought branches interpreting llm reasoning requires resampling",
@@ -5698,8 +6676,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, sampling/decoding, noise/perturbation.",
-      "subtopic": "search-deliberation"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "search-deliberation",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10008605",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.817",
@@ -5729,8 +6715,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, sampling/decoding.",
-      "subtopic": "search-deliberation"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "search-deliberation",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.817/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-long.200",
@@ -5764,8 +6758,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.",
-      "subtopic": "decoding-sampling"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "decoding-sampling",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.200/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:61787",
@@ -5793,8 +6795,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: semantic-diversity, coverage, regularization.",
-      "subtopic": "representation-steering"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "representation-steering",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/61787",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:10010811",
@@ -5823,8 +6833,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.",
-      "subtopic": "diversity-coverage"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "diversity-coverage",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10010811",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-long.761",
@@ -5856,8 +6874,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: semantic-diversity, sampling/decoding.",
-      "subtopic": "search-deliberation"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "search-deliberation",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.761/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:string seed of thought prompting llms for distribution faithful and diverse generation",
@@ -5886,8 +6912,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
-      "subtopic": "diversity-coverage"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "diversity-coverage",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10007633",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-long.1641",
@@ -5922,8 +6956,16 @@
       "setting": [
         "code"
       ],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: novelty/curiosity, tree-search/branching, replay/memory.",
-      "subtopic": "search-deliberation"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "search-deliberation",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.1641/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:scalable power sampling unlocking efficient training free reasoning for llms via distribution sharpening",
@@ -5954,8 +6996,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, novelty/curiosity, reward/advantage.",
-      "subtopic": "decoding-sampling"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "decoding-sampling",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/63925",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:10007335",
@@ -5984,8 +7034,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
-      "subtopic": "decoding-sampling"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "decoding-sampling",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10007335",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-short.54",
@@ -6014,8 +7072,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, semantic-diversity, regularization.",
-      "subtopic": "diversity-coverage"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "diversity-coverage",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-short.54/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:representation based exploration for language models from test time to post training",
@@ -6051,9 +7117,17 @@
       "problem": [],
       "setting": [],
       "featured": true,
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity, structured-search.",
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
       "subtopic": "representation-steering",
-      "featured_rank": 2
+      "featured_rank": 2,
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10009438",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.1085",
@@ -6082,8 +7156,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: uncertainty/confidence, sampling/decoding.",
-      "subtopic": "decoding-sampling"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "decoding-sampling",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.1085/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:reasoning with sampling your base model is smarter than you think",
@@ -6117,9 +7199,17 @@
       ],
       "setting": [],
       "featured": true,
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
       "subtopic": "diversity-coverage",
-      "featured_rank": 3
+      "featured_rank": 3,
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10009093",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:post training large language models for diverse high quality responses",
@@ -6150,8 +7240,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity.",
-      "subtopic": "diversity-coverage"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "diversity-coverage",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10010944",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:one shot entropy minimization for language model reasoning",
@@ -6181,8 +7279,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, gradient-reshaping.",
-      "subtopic": "decoding-sampling"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "decoding-sampling",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/66725",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.1149",
@@ -6214,8 +7320,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: semantic-diversity, structured-search.",
-      "subtopic": "search-deliberation"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "search-deliberation",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.1149/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.2115",
@@ -6244,8 +7358,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, semantic-diversity, tree-search/branching.",
-      "subtopic": "search-deliberation"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "search-deliberation",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.2115/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-long.655",
@@ -6274,8 +7396,16 @@
       "setting": [
         "creative/open-ended"
       ],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: reward/advantage, disagreement, sampling/decoding.",
-      "subtopic": "decoding-sampling"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "decoding-sampling",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.655/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-long.9",
@@ -6307,8 +7437,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.",
-      "subtopic": "diversity-coverage"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "diversity-coverage",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.9/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:63542",
@@ -6339,8 +7477,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, semantic-diversity, sampling/decoding.",
-      "subtopic": "representation-steering"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "representation-steering",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/63542",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-long.628",
@@ -6367,8 +7513,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: novelty/curiosity, semantic-diversity, coverage.",
-      "subtopic": "diversity-coverage"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "diversity-coverage",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.628/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:hyper bridging exploration and exploitation for scalable llm reasoning with hypothesis path expansion and reduction",
@@ -6400,8 +7554,16 @@
         "exploration-exploitation"
       ],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: uncertainty/confidence, semantic-diversity, sampling/decoding.",
-      "subtopic": "search-deliberation"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "search-deliberation",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/65181",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:guidedsampling steering llms towards diverse candidate solutions at inference time",
@@ -6435,8 +7597,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: semantic-diversity, sampling/decoding, noise/perturbation.",
-      "subtopic": "diversity-coverage"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "diversity-coverage",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10009336",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:from bits to rounds parallel decoding with exploration for diffusion language models",
@@ -6469,8 +7639,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
-      "subtopic": "decoding-sampling"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "decoding-sampling",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/65555",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:exploring diverse generation paths via inference time stiefel activation steering",
@@ -6503,8 +7681,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.",
-      "subtopic": "representation-steering"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "representation-steering",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10006851",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:escaping mode collapse in llm generation",
@@ -6533,8 +7719,16 @@
         "mode-collapse"
       ],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.",
-      "subtopic": "search-deliberation"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "search-deliberation",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/65524",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:61896",
@@ -6565,8 +7759,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, sampling/decoding.",
-      "subtopic": "search-deliberation"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "search-deliberation",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/61896",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:entropy aware on policy distillation of language models",
@@ -6601,8 +7803,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
-      "subtopic": "decoding-sampling"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "decoding-sampling",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/64855",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:64102",
@@ -6638,8 +7848,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: uncertainty/confidence, semantic-diversity, sampling/decoding.",
-      "subtopic": "search-deliberation"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "search-deliberation",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/64102",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:eager entropy aware generation for adaptive inference time scaling",
@@ -6669,8 +7887,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, sampling/decoding.",
-      "subtopic": "decoding-sampling"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "decoding-sampling",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/65185",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:63569",
@@ -6702,8 +7928,16 @@
       "setting": [
         "multimodal"
       ],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
-      "subtopic": "diversity-coverage"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "diversity-coverage",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/63569",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:10011729",
@@ -6732,8 +7966,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: semantic-diversity, sampling/decoding.",
-      "subtopic": "diversity-coverage"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "diversity-coverage",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10011729",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-long.1231",
@@ -6762,8 +8004,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: semantic-diversity.",
-      "subtopic": "search-deliberation"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "search-deliberation",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.1231/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:differential fine tuning large language models towards better diverse reasoning abilities",
@@ -6799,8 +8049,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity.",
-      "subtopic": "diversity-coverage"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "diversity-coverage",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10008716",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:63783",
@@ -6835,8 +8093,16 @@
         "recovery/error-correction"
       ],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
-      "subtopic": "diversity-coverage"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "diversity-coverage",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/63783",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:continuous chain of thought enables parallel exploration and reasoning",
@@ -6867,8 +8133,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, sampling/decoding.",
-      "subtopic": "search-deliberation"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "search-deliberation",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10007055",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.1475",
@@ -6900,8 +8174,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.",
-      "subtopic": "decoding-sampling"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "decoding-sampling",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.1475/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.214",
@@ -6927,8 +8209,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: sampling/decoding, tree-search/branching.",
-      "subtopic": "search-deliberation"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "search-deliberation",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.214/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:cache coherent resampling for efficient test time scaling in llm reasoning via adaptive sequential monte carlo",
@@ -6958,8 +8248,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, sampling/decoding, backtracking/resampling.",
-      "subtopic": "search-deliberation"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "search-deliberation",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/64829",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.327",
@@ -6991,8 +8289,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
-      "subtopic": "data-selection-prompting"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "data-selection-prompting",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.327/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.390",
@@ -7026,8 +8332,16 @@
       "setting": [
         "math"
       ],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: semantic-diversity, sampling/decoding.",
-      "subtopic": "decoding-sampling"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "decoding-sampling",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.390/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:66569",
@@ -7058,8 +8372,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, sampling/decoding.",
-      "subtopic": "representation-steering"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "representation-steering",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/66569",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:63468",
@@ -7097,8 +8419,16 @@
         "mode-collapse"
       ],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, semantic-diversity.",
-      "subtopic": "search-deliberation"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "search-deliberation",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/63468",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:63795",
@@ -7126,8 +8456,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: sampling/decoding, tree-search/branching.",
-      "subtopic": "search-deliberation"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "search-deliberation",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/63795",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "arxiv:2511.07581",
@@ -7151,9 +8489,13 @@
       "level": [
         "response/sequence"
       ],
-      "signal": [],
+      "signal": [
+        "semantic-diversity",
+        "reward/advantage"
+      ],
       "mechanism": [
-        "structured-search"
+        "structured-search",
+        "backtracking/resampling"
       ],
       "problem": [],
       "setting": [],
@@ -7187,7 +8529,11 @@
       "level": [
         "response/sequence"
       ],
-      "signal": [],
+      "signal": [
+        "semantic-diversity",
+        "uncertainty/confidence",
+        "novelty/curiosity"
+      ],
       "mechanism": [
         "structured-search"
       ],
@@ -7215,7 +8561,11 @@
       "level": [
         "response/sequence"
       ],
-      "signal": [],
+      "signal": [
+        "semantic-diversity",
+        "entropy/probability",
+        "novelty/curiosity"
+      ],
       "mechanism": [
         "sampling/decoding"
       ],
@@ -7252,7 +8602,9 @@
         "response/sequence"
       ],
       "signal": [
-        "novelty/curiosity"
+        "novelty/curiosity",
+        "entropy/probability",
+        "uncertainty/confidence"
       ],
       "mechanism": [],
       "problem": [],
@@ -7275,7 +8627,6 @@
       ],
       "date": "2025-08-23",
       "venue": "arXiv",
-      "published_venue": "EMNLP 2025 Main",
       "source_group": "verified-legacy",
       "primary_area": "llm-exploration",
       "paper_type": "method",
@@ -7313,10 +8664,12 @@
         "response/sequence"
       ],
       "signal": [
-        "novelty/curiosity"
+        "novelty/curiosity",
+        "reward/advantage"
       ],
       "mechanism": [
-        "tree-search/branching"
+        "tree-search/branching",
+        "sampling/decoding"
       ],
       "problem": [],
       "setting": [],
@@ -7383,7 +8736,6 @@
       ],
       "date": "2023-08-18",
       "venue": "arXiv",
-      "published_venue": "AAAI 2024",
       "notability": [
         "high-citation"
       ],
@@ -7522,7 +8874,10 @@
         "trajectory/action",
         "policy-distribution"
       ],
-      "signal": [],
+      "signal": [
+        "novelty/curiosity",
+        "reward/advantage"
+      ],
       "mechanism": [
         "gradient-reshaping"
       ],
@@ -7558,7 +8913,11 @@
         "trajectory/action",
         "policy-distribution"
       ],
-      "signal": [],
+      "signal": [
+        "semantic-diversity",
+        "entropy/probability",
+        "reward/advantage"
+      ],
       "mechanism": [
         "gradient-reshaping",
         "tree-search/branching"
@@ -7604,8 +8963,16 @@
       "setting": [
         "multimodal"
       ],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: uncertainty/confidence, novelty/curiosity, reward/advantage.",
-      "subtopic": "web-tools-gui"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "web-tools-gui",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/60509",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-long.1456",
@@ -7641,8 +9008,16 @@
         "web",
         "multi-agent"
       ],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: reward/advantage, curriculum/task-generation, self-play/co-evolution.",
-      "subtopic": "web-tools-gui"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "web-tools-gui",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.1456/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:10009929",
@@ -7677,8 +9052,16 @@
         "long-horizon"
       ],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: uncertainty/confidence, structured-search.",
-      "subtopic": "planning-interaction"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "planning-interaction",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10009929",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:towards self evolving agent benchmarks validatable agent trajectory via test time exploration",
@@ -7715,8 +9098,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: self-play/co-evolution.",
-      "subtopic": "benchmarks-metrics"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "benchmarks-metrics",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10011762",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:toward efficient exploration by large language model agents",
@@ -7743,8 +9134,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: sampling/decoding.",
-      "subtopic": "planning-interaction"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "planning-interaction",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10009979",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:t 2 po uncertainty guided exploration control for stable multi turn agentic reinforcement learning",
@@ -7781,8 +9180,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: uncertainty/confidence, semantic-diversity, gradient-reshaping.",
-      "subtopic": "web-tools-gui"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "web-tools-gui",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/63090",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:10008777",
@@ -7820,8 +9227,16 @@
       "setting": [
         "multi-agent"
       ],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: reward/advantage, self-play/co-evolution, structured-search.",
-      "subtopic": "planning-interaction"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "planning-interaction",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10008777",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:scaling synthetic task generation for agents via exploration",
@@ -7858,8 +9273,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity, coverage.",
-      "subtopic": "task-synthesis-curriculum"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "task-synthesis-curriculum",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10007463",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.1959",
@@ -7892,8 +9315,16 @@
       "setting": [
         "code"
       ],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, tree-search/branching.",
-      "subtopic": "planning-interaction"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "planning-interaction",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.1959/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:65711",
@@ -7927,8 +9358,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, semantic-diversity, gradient-reshaping.",
-      "subtopic": "web-tools-gui"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "web-tools-gui",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/65711",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-long.69",
@@ -7963,8 +9402,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: novelty/curiosity, reward/advantage, replay/memory.",
-      "subtopic": "planning-interaction"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "planning-interaction",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.69/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:60790",
@@ -8009,8 +9456,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: uncertainty/confidence, tree-search/branching.",
-      "subtopic": "planning-interaction"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "planning-interaction",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/60790",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:65447",
@@ -8050,8 +9505,16 @@
       "setting": [
         "multi-agent"
       ],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: semantic-diversity, replay/memory, self-play/co-evolution.",
-      "subtopic": "replay-population"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "replay-population",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/65447",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-short.48",
@@ -8084,8 +9547,16 @@
       "setting": [
         "code"
       ],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: coverage.",
-      "subtopic": "planning-interaction"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "planning-interaction",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-short.48/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:meta rl induces exploration in language agents",
@@ -8116,9 +9587,17 @@
       "problem": [],
       "setting": [],
       "featured": true,
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, semantic-diversity, reward/advantage.",
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
       "subtopic": "planning-interaction",
-      "featured_rank": 10
+      "featured_rank": 10,
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10011567",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.670",
@@ -8153,8 +9632,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: reward/advantage.",
-      "subtopic": "planning-interaction"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "planning-interaction",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.670/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:learning to explore scaling agentic reasoning via exploration aware policy optimization",
@@ -8184,9 +9671,17 @@
       "problem": [],
       "setting": [],
       "featured": true,
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: uncertainty/confidence, reward/advantage, gradient-reshaping.",
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
       "subtopic": "planning-interaction",
-      "featured_rank": 9
+      "featured_rank": 9,
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/63287",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:10010088",
@@ -8227,8 +9722,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, reward/advantage, noise/perturbation.",
-      "subtopic": "planning-interaction"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "planning-interaction",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10010088",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.1178",
@@ -8265,8 +9768,16 @@
       "setting": [
         "multi-agent"
       ],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: reward/advantage, tree-search/branching, backtracking/resampling.",
-      "subtopic": "search-deliberation"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "search-deliberation",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.1178/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:harnessing uncertainty entropy modulated policy gradients for long horizon llm agents",
@@ -8307,8 +9818,16 @@
         "long-horizon"
       ],
       "setting": [],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: entropy/probability, uncertainty/confidence, reward/advantage.",
-      "subtopic": "planning-interaction"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "planning-interaction",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/63273",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:go browse training web agents with structured exploration",
@@ -8337,8 +9856,16 @@
       "setting": [
         "web"
       ],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: uncertainty/confidence, semantic-diversity, structured-search.",
-      "subtopic": "web-tools-gui"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "web-tools-gui",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10010264",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-long.1278",
@@ -8369,8 +9896,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: structured-search.",
-      "subtopic": "planning-interaction"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "planning-interaction",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.1278/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:explore on graph incentivizing autonomous exploration of large language models on knowledge graphs with path refined reward modeling",
@@ -8410,8 +9945,16 @@
       "setting": [
         "knowledge-graph"
       ],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.",
-      "subtopic": "knowledge-memory"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "knowledge-memory",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10009840",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:10009229",
@@ -8443,8 +9986,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: entropy/probability, novelty/curiosity, gradient-reshaping.",
-      "subtopic": "knowledge-memory"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "knowledge-memory",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10009229",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-long.1670",
@@ -8476,8 +10027,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: replay/memory.",
-      "subtopic": "web-tools-gui"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "web-tools-gui",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.1670/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:10010625",
@@ -8511,8 +10070,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: reward/advantage, replay/memory, structured-search.",
-      "subtopic": "knowledge-memory"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "knowledge-memory",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10010625",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:dual scale world memory for llm agents towards hard exploration problems",
@@ -8539,8 +10106,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: novelty/curiosity, reward/advantage, replay/memory.",
-      "subtopic": "knowledge-memory"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "knowledge-memory",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10008626",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:10011238",
@@ -8568,8 +10143,16 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ICLR 2026. Exploration focus: uncertainty/confidence, reward/advantage, tree-search/branching.",
-      "subtopic": "web-tools-gui"
+      "rationale": "Officially accepted at ICLR 2026. This record was included after source and scope review.",
+      "subtopic": "web-tools-gui",
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10011238",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-long.2151",
@@ -8606,8 +10189,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: novelty/curiosity, semantic-diversity, reward/advantage.",
-      "subtopic": "planning-interaction"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "planning-interaction",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.2151/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:dive scaling diversity in agentic task synthesis for generalizable tool use",
@@ -8649,8 +10240,16 @@
       "setting": [
         "tool-use"
       ],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: semantic-diversity, coverage.",
-      "subtopic": "web-tools-gui"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "web-tools-gui",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/66305",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.2138",
@@ -8680,8 +10279,16 @@
       "setting": [
         "knowledge-graph"
       ],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: structured-search.",
-      "subtopic": "knowledge-memory"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "knowledge-memory",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.2138/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-long.838",
@@ -8715,8 +10322,16 @@
       "setting": [
         "web"
       ],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: tree-search/branching, backtracking/resampling, replay/memory.",
-      "subtopic": "web-tools-gui"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "web-tools-gui",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.838/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.160",
@@ -8748,8 +10363,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: novelty/curiosity, reward/advantage, regularization.",
-      "subtopic": "data-selection-prompting"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "data-selection-prompting",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.160/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.findings-acl.1400",
@@ -8777,8 +10400,16 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Officially accepted at ACL 2026 Findings. Exploration focus: structured-search.",
-      "subtopic": "planning-interaction"
+      "rationale": "Officially accepted at ACL 2026 Findings. This record was included after source and scope review.",
+      "subtopic": "planning-interaction",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.1400/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:backjump on graph empowering llms with reinforced retrospective exploration for agentic kg reasoning",
@@ -8818,8 +10449,16 @@
       "setting": [
         "knowledge-graph"
       ],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, reward/advantage, backtracking/resampling.",
-      "subtopic": "knowledge-memory"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "knowledge-memory",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/61995",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:2026.acl-long.714",
@@ -8853,8 +10492,16 @@
       "setting": [
         "knowledge-graph"
       ],
-      "rationale": "Officially accepted at ACL 2026 Main. Exploration focus: coverage, structured-search.",
-      "subtopic": "knowledge-memory"
+      "rationale": "Officially accepted at ACL 2026 Main. This record was included after source and scope review.",
+      "subtopic": "knowledge-memory",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.714/",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "venue:61450",
@@ -8885,8 +10532,16 @@
         "multimodal",
         "embodied"
       ],
-      "rationale": "Officially accepted at ICML 2026. Exploration focus: novelty/curiosity, reward/advantage, replay/memory.",
-      "subtopic": "embodied-environments"
+      "rationale": "Officially accepted at ICML 2026. This record was included after source and scope review.",
+      "subtopic": "embodied-environments",
+      "publication": {
+        "venue": "ICML",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://icml.cc/virtual/2026/poster/61450",
+        "verified_at": "2026-08-06"
+      }
     },
     {
       "id": "arxiv:2509.22576",
@@ -8916,7 +10571,8 @@
         "policy-distribution"
       ],
       "signal": [
-        "entropy/probability"
+        "entropy/probability",
+        "reward/advantage"
       ],
       "mechanism": [
         "regularization",
@@ -8950,7 +10606,8 @@
       ],
       "signal": [
         "entropy/probability",
-        "semantic-diversity"
+        "semantic-diversity",
+        "novelty/curiosity"
       ],
       "mechanism": [
         "structured-search"
@@ -9241,7 +10898,15 @@
         "tool-use"
       ],
       "rationale": "Treats procedural memory as a lifecycle: it distills success and failure experience, retrieves it by context, and refines the memory pool by utility to reduce redundant trial-and-error.",
-      "subtopic": "knowledge-memory"
+      "subtopic": "knowledge-memory",
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Findings",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.findings-acl.829/",
+        "verified_at": "2026-08-06"
+      }
     }
   ],
   "classics": [

@@ -8,6 +8,7 @@ import re
 import sys
 import unicodedata
 from collections import Counter
+from datetime import date
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -48,8 +49,13 @@ SUBTOPICS = {
     },
     "understanding-evaluation": {"theory-training-dynamics", "benchmarks-metrics", "surveys-position", "capability-boundaries"},
 }
-OFFICIAL_2026_HOSTS = {"aclanthology.org", "iclr.cc", "icml.cc"}
-PEER_REVIEWED_2026_VENUE_PREFIXES = ("ACL 2026", "ICLR 2026", "ICML 2026")
+SOURCE_GROUPS = {"conference-2026", "foundational-llm", "legacy-curated", "recent-curated", "verified-legacy"}
+PUBLICATION_EVIDENCE = {"official", "venue-claim"}
+OFFICIAL_HOSTS_BY_VENUE = {
+    "ACL": {"aclanthology.org"},
+    "ICLR": {"iclr.cc"},
+    "ICML": {"icml.cc"},
+}
 TAG_VALUES = {
     "phase": {"data-generation", "supervised-post-training", "rl-training", "inference", "test-time-adaptation", "continual/self-improvement"},
     "level": {"token", "response/sequence", "trajectory/action", "latent/representation", "policy-distribution", "data/task", "population/multi-policy"},
@@ -63,7 +69,22 @@ NOTABILITY_VALUES = {"high-citation"}
 
 def normalize(value: str) -> str:
     value = unicodedata.normalize("NFKC", value).casefold()
-    return re.sub(r"[^a-z0-9]+", " ", value).strip()
+    return re.sub(r"[^\w]+", " ", value).strip()
+
+
+def valid_date(value: str) -> bool:
+    """Accept catalog date formats while rejecting impossible calendar values."""
+    if re.fullmatch(r"\d{4}", value):
+        return True
+    if re.fullmatch(r"\d{4}-\d{2}", value):
+        return 1 <= int(value[-2:]) <= 12
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
+        try:
+            date.fromisoformat(value)
+        except ValueError:
+            return False
+        return True
+    return False
 
 
 def main() -> int:
@@ -79,7 +100,7 @@ def main() -> int:
 
     for index, paper in enumerate(papers):
         label = paper.get("title", f"record #{index}")
-        required = ("id", "title", "url", "date", "primary_area", "subtopic", "paper_type", "phase", "level")
+        required = ("id", "title", "url", "authors", "date", "venue", "rationale", "source_group", "primary_area", "subtopic", "paper_type", "phase", "level")
         for field in required:
             if not paper.get(field):
                 errors.append(f"{label}: missing {field}")
@@ -93,8 +114,14 @@ def main() -> int:
             errors.append(f"{label}: method papers must use an intervention context, not understanding-evaluation")
         elif paper["paper_type"] != "method" and paper.get("primary_area") != "understanding-evaluation":
             errors.append(f"{label}: evidence-only papers must use understanding-evaluation")
-        if not re.fullmatch(r"\d{4}(?:-\d{2}(?:-\d{2})?)?", paper.get("date", "")):
-            errors.append(f"{label}: date must be YYYY, YYYY-MM, or YYYY-MM-DD")
+        if not valid_date(paper.get("date", "")):
+            errors.append(f"{label}: date must be a valid YYYY, YYYY-MM, or YYYY-MM-DD value")
+        if not isinstance(paper.get("authors"), list) or not paper.get("authors") or not all(
+            isinstance(author, str) and author for author in paper.get("authors", [])
+        ):
+            errors.append(f"{label}: authors must be a non-empty list of names")
+        if paper.get("source_group") not in SOURCE_GROUPS:
+            errors.append(f"{label}: invalid source_group {paper.get('source_group')!r}")
         if not paper.get("signal") and not paper.get("mechanism"):
             errors.append(f"{label}: needs at least one signal or mechanism tag")
         for dimension, allowed in TAG_VALUES.items():
@@ -119,8 +146,32 @@ def main() -> int:
                 errors.append(f"{label}: high-citation requires citation_source")
             if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", paper.get("citation_checked", "")):
                 errors.append(f"{label}: high-citation requires citation_checked in YYYY-MM-DD format")
-        if paper.get("published_venue") is not None and not isinstance(paper["published_venue"], str):
-            errors.append(f"{label}: published_venue must be a string")
+        if "published_venue" in paper:
+            errors.append(f"{label}: use publication metadata instead of published_venue")
+        publication = paper.get("publication")
+        if publication is not None:
+            if not isinstance(publication, dict):
+                errors.append(f"{label}: publication must be an object")
+            else:
+                for field in ("venue", "year", "track", "evidence"):
+                    if not publication.get(field):
+                        errors.append(f"{label}: publication missing {field}")
+                if not isinstance(publication.get("year"), int):
+                    errors.append(f"{label}: publication year must be an integer")
+                if publication.get("evidence") not in PUBLICATION_EVIDENCE:
+                    errors.append(f"{label}: invalid publication evidence {publication.get('evidence')!r}")
+                official_url = publication.get("official_url")
+                if publication.get("evidence") == "official":
+                    if not official_url or urlparse(official_url).scheme != "https":
+                        errors.append(f"{label}: official publication evidence needs an HTTPS official_url")
+                    elif publication.get("venue") in OFFICIAL_HOSTS_BY_VENUE and urlparse(official_url).netloc.casefold() not in OFFICIAL_HOSTS_BY_VENUE[publication["venue"]]:
+                        errors.append(f"{label}: official_url host does not match publication venue")
+                    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", publication.get("verified_at", "")):
+                        errors.append(f"{label}: official publication evidence needs verified_at")
+                elif official_url or publication.get("verified_at"):
+                    errors.append(f"{label}: venue-claim evidence cannot set official_url or verified_at")
+        elif paper.get("source_group") == "conference-2026":
+            errors.append(f"{label}: conference-2026 records require publication metadata")
 
         paper_id = paper.get("id", "")
         if paper_id in seen_ids:
@@ -140,10 +191,12 @@ def main() -> int:
         if url and urlparse(url).scheme != "https":
             errors.append(f"{label}: URL must use HTTPS")
 
-        if paper.get("source_group") == "conference-2026":
-            host = urlparse(url).netloc.casefold()
-            if host not in OFFICIAL_2026_HOSTS:
-                errors.append(f"{label}: 2026 acceptance must use an official venue URL, got {host}")
+        taxonomy_values = set().union(*TAG_VALUES.values())
+        mentioned_tags = {tag for tag in taxonomy_values if tag in paper.get("rationale", "")}
+        recorded_tags = set().union(*(set(paper.get(dimension, [])) for dimension in TAG_VALUES))
+        unrecorded_tags = sorted(mentioned_tags - recorded_tags)
+        if unrecorded_tags:
+            errors.append(f"{label}: rationale mentions unrecorded taxonomy tags {unrecorded_tags}")
 
     classic_titles = [normalize(p["title"]) for p in catalog.get("classics", [])]
     if len(classic_titles) != len(set(classic_titles)):
@@ -166,11 +219,10 @@ def main() -> int:
         dict(
             sorted(
                 Counter(
-                    p.get("published_venue") or p.get("venue", "")
+                    f"{p['publication']['venue']} {p['publication']['year']}"
+                    + (f" {p['publication']['track']}" if p["publication"]["track"] != "Conference" else "")
                     for p in papers
-                    if (p.get("published_venue") or p.get("venue", "")).startswith(
-                        PEER_REVIEWED_2026_VENUE_PREFIXES
-                    )
+                    if p.get("publication", {}).get("year") == 2026
                 ).items()
             )
         ),

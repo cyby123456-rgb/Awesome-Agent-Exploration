@@ -222,7 +222,6 @@ TOP_TIER_VENUE_PREFIXES = (
     "ARTIFICIAL INTELLIGENCE",
     "IEEE TRANSACTIONS ON CYBERNETICS",
 )
-PEER_REVIEWED_2026_VENUE_PREFIXES = ("ACL 2026", "ICLR 2026", "ICML 2026")
 
 # Muted, value-specific colors keep neighboring papers distinguishable without
 # turning the catalog into a wall of high-saturation badges.
@@ -373,7 +372,11 @@ def catalog_table_of_contents(papers: list[dict]) -> list[str]:
 
 def has_top_tier_venue(paper: dict) -> bool:
     """Identify papers with a recognized top-tier publication venue."""
-    venue = (paper.get("published_venue") or paper.get("venue") or "").upper()
+    publication = paper.get("publication", {})
+    venue = publication.get("venue") or paper.get("venue") or ""
+    if publication and publication.get("evidence") != "official":
+        return False
+    venue = venue.upper()
     return venue.startswith(TOP_TIER_VENUE_PREFIXES)
 
 
@@ -393,39 +396,53 @@ def notability_marker(paper: dict) -> str:
 
 def source_label(paper: dict) -> str:
     parsed_url = urlparse(paper["url"])
+    publication = paper.get("publication", {})
+    publication_label = " ".join(
+        str(value) for value in (publication.get("venue"), publication.get("year")) if value
+    )
+    if publication.get("track") and publication["track"] != "Conference":
+        publication_label += f" {publication['track']}"
+    if publication.get("evidence") == "official":
+        publication_label = f"**{publication_label}**"
     if parsed_url.netloc.lower() in {"arxiv.org", "www.arxiv.org"}:
         arxiv_id = parsed_url.path.removeprefix("/abs/").strip("/")
         if arxiv_id:
-            if paper.get("published_venue"):
-                return f"{paper['published_venue']} · arXiv `{arxiv_id}`"
+            if publication_label:
+                return f"{publication_label} · arXiv `{arxiv_id}`"
             return f"arXiv `{arxiv_id}`"
     venue = paper.get("venue") or "Preprint"
-    if paper.get("source_group") == "conference-2026":
-        return f"**{venue}**"
+    if publication_label:
+        return publication_label
     return venue
 
 
 def statistics_table(papers: list[dict]) -> list[str]:
     area_counts = Counter(p["primary_area"] for p in papers)
-    accepted = Counter(
-        p.get("published_venue") or p["venue"]
-        for p in papers
-        if (p.get("published_venue") or p.get("venue") or "").startswith(
-            PEER_REVIEWED_2026_VENUE_PREFIXES
-        )
-    )
+    accepted = Counter()
+    venue_claims = 0
+    for paper in papers:
+        publication = paper.get("publication", {})
+        if publication.get("year") != 2026:
+            continue
+        label = f"{publication['venue']} {publication['year']}"
+        if publication["track"] != "Conference":
+            label += f" {publication['track']}"
+        accepted[label] += 1
+        venue_claims += publication.get("evidence") == "venue-claim"
     lines = [
         "| Collection | Papers |",
         "|---|---:|",
         *[f"| {AREA_LABELS[area]} | {area_counts[area]} |" for area in AREA_LABELS],
         f"| **Curated total** | **{len(papers)}** |",
         "",
-        "2026 peer-reviewed acceptances in the catalog:",
+        "2026 peer-reviewed venue records in the catalog:",
         "",
         "| Venue | Papers |",
         "|---|---:|",
         *[f"| {venue} | {count} |" for venue, count in sorted(accepted.items())],
-        f"| **Accepted total** | **{sum(accepted.values())}** |",
+        f"| **Venue-record total** | **{sum(accepted.values())}** |",
+        f"| Official venue evidence | {sum(accepted.values()) - venue_claims} |",
+        f"| Venue claims awaiting an official URL | {venue_claims} |",
     ]
     return lines
 
@@ -665,16 +682,7 @@ def render_readme(catalog: dict) -> str:
             "",
             "## Future Research Directions: Memory × Exploration",
             "",
-            "Memory is an exploration policy over past experience: it changes what an agent already knows, what it should revisit, and which unknown states are worth pursuing next. The agenda below links agentic interaction and policy learning without creating a sixth primary area.",
-            "",
-            "| Direction | Current bottleneck | Research opportunity |",
-            "|---|---|---|",
-            "| **Memory-guided exploration** | Retrieval can be stale, overly similar, or detached from the agent's current uncertainty and environment state. | Learn when to recall, when to verify, and when to explore a new state instead of following remembered trajectories. |",
-            "| **Exploration-driven memory** | Most systems passively append experiences, retaining redundant traces and outdated rules. | Treat write, merge, compression, and forgetting as utility-aware decisions that preserve experiences which expand future coverage. |",
-            "| **Failure memory and recovery** | Failure traces are often stored as unstructured text and can transfer brittle or incorrect lessons. | Learn causal, context-sensitive failure representations that support safe backtracking without suppressing useful risk-taking. |",
-            "| **Memory-augmented training** | Replayed experience is correlated, non-stationary, and may reinforce reward-hacked behavior. | Optimize which trajectories to retain and replay so memory improves policy learning, task diversity, and long-horizon generalization. |",
-            "",
-            "Related catalog paths: [Knowledge & Memory-Guided Exploration](#category-3-knowledge-memory) · [Planning & Interactive Search](#category-3-planning-interaction) · [Memory-Augmented Agent Training](#category-4-knowledge-memory) · [Replay, Population & Self-Improvement](#category-2-replay-population).",
+            "Memory conditions an exploration policy by changing which experience is available for action selection, what should be revisited, and what remains unknown. See the [Memory × Exploration research agenda](docs/RESEARCH_DIRECTIONS.md) for the four cross-cutting directions and their catalog links.",
         ]
     )
 

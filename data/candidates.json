@@ -23,8 +23,8 @@
       "title": "The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models",
       "reason": "Conflicting legacy arXiv mapping",
       "legacy_source": "https://arxiv.org/abs/2503.20783",
-      "next_step": "Verify the exact title and primary source before taxonomy review.",
-      "resolved_to": "arxiv:2505.22617"
+      "resolved_to": "arxiv:2505.22617",
+      "resolved_at": "2026-08-06"
     },
     {
       "id": "legacy:2501.12948:deepseek-r1-incentivizing-reasoning-capability-in-llms-via-reinforcement-learning",
@@ -64,8 +64,8 @@
       "title": "Entropy-Gated Selective Policy Optimization:Token-Level Gradient Allocation for Hybrid Training of Large Language Models",
       "reason": "Conflicting legacy arXiv mapping",
       "legacy_source": "https://arxiv.org/abs/2602.03309",
-      "next_step": "Verify the exact title and primary source before taxonomy review.",
-      "resolved_to": "arxiv:2602.03309"
+      "resolved_to": "arxiv:2602.03309",
+      "resolved_at": "2026-08-06"
     },
     {
       "id": "legacy:2602.03309:entropy-gated-selective-policy-optimization-token-level-gradient-allocation-for-enhanced-llm-reasoning",
@@ -81,8 +81,8 @@
       "title": "CE-GPPO: Coordinating Entropy via Gradient-Preserving Clipping Policy Optimization in Reinforcement Learning",
       "reason": "Conflicting legacy arXiv mapping",
       "legacy_source": "https://arxiv.org/abs/2509.20712",
-      "next_step": "Verify the exact title and primary source before taxonomy review.",
-      "resolved_to": "arxiv:2509.20712"
+      "resolved_to": "arxiv:2509.20712",
+      "resolved_at": "2026-08-06"
     },
     {
       "id": "legacy:2509.20712:ce-gppo-coordinating-entropy-via-gradient-preserving-clipping-policy-optimization-in-rl",
@@ -98,8 +98,8 @@
       "title": "ETTRL: Balancing Exploration and Exploitation in LLM Test-Time Reinforcement Learning Via Entropy Mechanism",
       "reason": "Conflicting legacy arXiv mapping",
       "legacy_source": "https://arxiv.org/abs/2508.11356",
-      "next_step": "Verify the exact title and primary source before taxonomy review.",
-      "resolved_to": "arxiv:2508.11356"
+      "resolved_to": "arxiv:2508.11356",
+      "resolved_at": "2026-08-06"
     },
     {
       "id": "legacy:2508.11356:ettrl-balancing-exploration-and-exploitation-in-llm-test-time-rl-via-entropy-mechanism",
@@ -115,8 +115,8 @@
       "title": "DAPO: An Open-Source LLM Reinforcement Learning System at Scale",
       "reason": "Conflicting legacy arXiv mapping",
       "legacy_source": "https://arxiv.org/abs/2503.14442",
-      "next_step": "Verify the exact title and primary source before taxonomy review.",
-      "resolved_to": "arxiv:2503.14476"
+      "resolved_to": "arxiv:2503.14476",
+      "resolved_at": "2026-08-06"
     },
     {
       "id": "legacy:2503.14442:low-probability-tokens-sustain-exploration-in-reinforcement-learning-with-verifiable-reward",
@@ -124,8 +124,8 @@
       "title": "Low-probability Tokens Sustain Exploration in Reinforcement Learning with Verifiable Reward",
       "reason": "Conflicting legacy arXiv mapping",
       "legacy_source": "https://arxiv.org/abs/2503.14442",
-      "next_step": "Verify the exact title and primary source before taxonomy review.",
-      "resolved_to": "venue:2026.findings-acl.1209"
+      "resolved_to": "venue:2026.findings-acl.1209",
+      "resolved_at": "2026-08-06"
     },
     {
       "id": "legacy:2509.26114:clip-low-increases-entropy-and-clip-high-decreases-entropy-in-reinforcement-learning-of-large-language-models",
@@ -133,8 +133,8 @@
       "title": "Clip-Low Increases Entropy and Clip-High Decreases Entropy in Reinforcement Learning of Large Language Models",
       "reason": "Conflicting legacy arXiv mapping",
       "legacy_source": "https://arxiv.org/abs/2509.26114",
-      "next_step": "Verify the exact title and primary source before taxonomy review.",
-      "resolved_to": "arxiv:2509.26114"
+      "resolved_to": "arxiv:2509.26114",
+      "resolved_at": "2026-08-06"
     },
     {
       "id": "legacy:2509.26114:clip-low-increases-entropy-and-clip-high-decreases-entropy-in-reinforcement-learning-for-llms",
@@ -150,8 +150,8 @@
       "title": "Breaking $\\textit{Winner-Takes-All}$: Cooperative Policy Optimization Improves Diverse LLM Reasoning",
       "reason": "Conflicting legacy arXiv mapping",
       "legacy_source": "https://arxiv.org/abs/2605.11461",
-      "next_step": "Verify the exact title and primary source before taxonomy review.",
-      "resolved_to": "arxiv:2605.11461"
+      "resolved_to": "arxiv:2605.11461",
+      "resolved_at": "2026-08-06"
     },
     {
       "id": "legacy:2605.11461:breaking-winner-takes-all-cooperative-policy-optimization-improves-diverse-llm-reasoning",
@@ -191,8 +191,8 @@
       "title": "ENTROPY-PRESERVING REINFORCEMENT LEARNING",
       "reason": "Conflicting legacy arXiv mapping",
       "legacy_source": "https://arxiv.org/abs/2508.02260v1",
-      "next_step": "Verify the exact title and primary source before taxonomy review.",
-      "resolved_to": "venue:entropy preserving reinforcement learning"
+      "resolved_to": "venue:entropy preserving reinforcement learning",
+      "resolved_at": "2026-08-06"
     },
     {
       "id": "legacy:2508.02260v1:exploration-via-feature-perturbation-in-contextual-bandits",
@@ -208,8 +208,8 @@
       "title": "SEED-GRPO: Semantic Entropy Enhanced GRPO for Uncertainty-Aware Policy Optimization",
       "reason": "Conflicting legacy arXiv mapping",
       "legacy_source": "https://arxiv.org/abs/2505.12346",
-      "next_step": "Verify the exact title and primary source before taxonomy review.",
-      "resolved_to": "arxiv:2505.12346"
+      "resolved_to": "arxiv:2505.12346",
+      "resolved_at": "2026-08-06"
     },
     {
       "id": "legacy:2505.12346:noisygrpo-incentivizing-multimodal-cotreasoning-via-noise-injection-and-bayesian-estimation",
@@ -249,8 +249,8 @@
       "title": "Reasoning with Sampling: Your Base Model is Smarter Than You Think",
       "reason": "Conflicting legacy arXiv mapping",
       "legacy_source": "https://arxiv.org/abs/2510.09388v1",
-      "next_step": "Verify the exact title and primary source before taxonomy review.",
-      "resolved_to": "venue:reasoning with sampling your base model is smarter than you think"
+      "resolved_to": "venue:reasoning with sampling your base model is smarter than you think",
+      "resolved_at": "2026-08-06"
     },
     {
       "id": "legacy:2509.15194:evolving-language-models-without-labels-majority-drives-selection-novelty-promotes-variation",
@@ -258,8 +258,8 @@
       "title": "Evolving Language Models without Labels: Majority Drives Selection, Novelty Promotes Variation",
       "reason": "Conflicting legacy arXiv mapping",
       "legacy_source": "https://arxiv.org/abs/2509.15194",
-      "next_step": "Verify the exact title and primary source before taxonomy review.",
-      "resolved_to": "arxiv:2509.15194"
+      "resolved_to": "arxiv:2509.15194",
+      "resolved_at": "2026-08-06"
     },
     {
       "id": "legacy:2509.15194:diversity-incentivized-exploration-for-versatile-reasoning",
@@ -267,8 +267,8 @@
       "title": "DIVERSITY-INCENTIVIZED EXPLORATION FOR VERSATILE REASONING",
       "reason": "Conflicting legacy arXiv mapping",
       "legacy_source": "https://arxiv.org/abs/2509.15194",
-      "next_step": "Verify the exact title and primary source before taxonomy review.",
-      "resolved_to": "venue:diversity incentivized exploration for versatile reasoning"
+      "resolved_to": "venue:diversity incentivized exploration for versatile reasoning",
+      "resolved_at": "2026-08-06"
     },
     {
       "id": "legacy:2103.12726:policy-information-capacity-information-theoretic-measure-for-task-complexity-in-deep-reinforcement-learning",
@@ -292,8 +292,8 @@
       "title": "Breaking the Exploration Bottleneck: Rubric-Scaffolded Reinforcement Learning for General LLM Reasoning",
       "reason": "Conflicting legacy arXiv mapping",
       "legacy_source": "https://arxiv.org/abs/2103.12726",
-      "next_step": "Verify the exact title and primary source before taxonomy review.",
-      "resolved_to": "venue:breaking the exploration bottleneck rubric scaffolded reinforcement learning for general llm reasoning"
+      "resolved_to": "venue:breaking the exploration bottleneck rubric scaffolded reinforcement learning for general llm reasoning",
+      "resolved_at": "2026-08-06"
     },
     {
       "id": "legacy:no-source:a-survey-of-test-time-compute-from-intuitive-inference-to-deliberate-reasoning",
@@ -333,8 +333,8 @@
       "title": "CDE: Curiosity-Driven Exploration for Efficient Reinforcement Learning in Large Language Models",
       "reason": "Missing primary-source link",
       "legacy_source": null,
-      "next_step": "Verify the exact title and primary source before taxonomy review.",
-      "resolved_to": "venue:cde curiosity driven exploration for efficient reinforcement learning in large language models"
+      "resolved_to": "venue:cde curiosity driven exploration for efficient reinforcement learning in large language models",
+      "resolved_at": "2026-08-06"
     },
     {
       "id": "legacy:no-source:navigate-the-unknown-enhancing-llm-reasoning-with-intrinsic-motivation-guided-exploration",
@@ -382,8 +382,8 @@
       "title": "RL-Plus: Countering Capability Boundary Collapse of LLMs in Reinforcement Learning with Hybrid-policy Optimization",
       "reason": "Missing primary-source link",
       "legacy_source": null,
-      "next_step": "Verify the exact title and primary source before taxonomy review.",
-      "resolved_to": "arxiv:2508.00222"
+      "resolved_to": "arxiv:2508.00222",
+      "resolved_at": "2026-08-06"
     },
     {
       "id": "legacy:no-source:the-role-of-exploration-modules-in-small-language-models-for-knowledge-graph-question-answering",
@@ -407,8 +407,8 @@
       "title": "Learn the Ropes, Then Trust the Wins: Self-imitation with Progressive Exploration for Agentic Reinforcement Learning",
       "reason": "Missing primary-source link",
       "legacy_source": null,
-      "next_step": "Verify the exact title and primary source before taxonomy review.",
-      "resolved_to": "venue:10010088"
+      "resolved_to": "venue:10010088",
+      "resolved_at": "2026-08-06"
     },
     {
       "id": "legacy:no-source:reasoning-path-divergence-a-new-metric-and-curation-strategy-to-unlock-llm-diverse-thinking",

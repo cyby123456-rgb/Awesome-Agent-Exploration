@@ -30,19 +30,33 @@ def validate_candidates() -> list[str]:
     seen: set[str] = set()
     for index, candidate in enumerate(payload.get("candidates", [])):
         label = candidate.get("title", f"candidate #{index}")
-        for field in ("id", "status", "title", "reason", "next_step"):
+        for field in ("id", "status", "title", "reason"):
             if not candidate.get(field):
                 errors.append(f"{label}: missing {field}")
         status = candidate.get("status")
         if status not in CANDIDATE_STATUSES:
             errors.append(f"{label}: invalid status {status!r}")
         resolved_to = candidate.get("resolved_to")
-        if status == "promoted":
+        if status == "pending":
+            if not candidate.get("next_step"):
+                errors.append(f"{label}: pending candidates need next_step")
+        elif status == "promoted":
             if not resolved_to:
                 errors.append(f"{label}: promoted candidates need resolved_to")
             elif resolved_to not in paper_ids:
                 errors.append(f"{label}: promoted resolved_to is not a catalog paper ID")
-        elif resolved_to:
+            if not candidate.get("resolved_at"):
+                errors.append(f"{label}: promoted candidates need resolved_at")
+            if candidate.get("next_step"):
+                errors.append(f"{label}: promoted candidates cannot retain next_step")
+        elif status == "duplicate":
+            if not candidate.get("duplicate_of"):
+                errors.append(f"{label}: duplicate candidates need duplicate_of")
+        elif status == "rejected":
+            for field in ("decision_reason", "resolved_at"):
+                if not candidate.get(field):
+                    errors.append(f"{label}: rejected candidates need {field}")
+        if status != "promoted" and resolved_to:
             errors.append(f"{label}: only promoted candidates may set resolved_to")
         if candidate.get("id") in seen:
             errors.append(f"duplicate candidate id: {candidate.get('id')}")
