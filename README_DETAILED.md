@@ -83,7 +83,7 @@ Methods that broaden candidate generation at inference time, with probability sh
   - Type: `method` · Date: `2025-09-18`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - Exploration focus: entropy/probability, uncertainty/confidence, novelty/curiosity.
-- 🏆 **[Self-Consistency Improves Chain of Thought Reasoning in Language Models](https://iclr.cc/virtual/2023/poster/11718)** — ICLR 2023
+- **[Self-Consistency Improves Chain of Thought Reasoning in Language Models](https://iclr.cc/virtual/2023/poster/11718)** — ICLR 2023
   - Authors: Xuezhi Wang, Jason Wei, Dale Schuurmans, Quoc V. Le, Ed H. Chi, Sharan Narang, Aakanksha Chowdhery, Denny Zhou
   - Type: `method` · Date: `2023`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
@@ -203,7 +203,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - Type: `method` · Date: `2025-10-19`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - Exploration focus: uncertainty/confidence, novelty/curiosity, semantic-diversity.
-- 🏆 **[Accelerating Large Language Model Reasoning via Speculative Search](https://arxiv.org/abs/2505.02865)** — arXiv `2505.02865`
+- **[Accelerating Large Language Model Reasoning via Speculative Search](https://arxiv.org/abs/2505.02865)** — arXiv `2505.02865`
   - Authors: Zhihai Wang, Jie Wang, Jilai Pan, Xilin Xia, Huiling Zhen, Mingxuan Yuan, Jianye Hao, Feng Wu
   - Type: `method` · Date: `2025-05-03`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square)
@@ -213,12 +213,12 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - Type: `method` · Date: `2025-01-28`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square)
   - Exploration focus: novelty/curiosity, reward/advantage, sampling/decoding.
-- 🏆 **[OptiTree: Hierarchical Thoughts Generation with Tree Search for LLM Optimization Modeling](https://neurips.cc/virtual/2025/poster/119108)** — NeurIPS 2025
+- **[OptiTree: Hierarchical Thoughts Generation with Tree Search for LLM Optimization Modeling](https://neurips.cc/virtual/2025/poster/119108)** — NeurIPS 2025
   - Authors: Haoyang Liu, Jie Wang, Yuyang Cai, Xiongwei Han, Yufei Kuang, Jianye Hao
   - Type: `method` · Date: `2025`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: information-gain](https://img.shields.io/badge/signal-information--gain-5E8C97?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square)
   - Searches a hierarchical thought tree to adaptively decompose optimization-modeling problems and synthesize modeling plans.
-- 🏆 **[Reasoning with Language Model is Planning with World Model](https://aclanthology.org/2023.emnlp-main.507/)** — EMNLP 2023
+- **[Reasoning with Language Model is Planning with World Model](https://aclanthology.org/2023.emnlp-main.507/)** — EMNLP 2023
   - Authors: Shibo Hao, Yi Gu, Haodi Ma, Joshua Hong, Zhen Wang, Daisy Wang, Zhiting Hu
   - Type: `method` · Date: `2023-12`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square)
@@ -228,7 +228,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - Type: `method` · Date: `2023-08-18`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square)
   - Generalized tree-structured reasoning into graph transformations, aggregation, and feedback loops.
-- 🏆 **[Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://proceedings.neurips.cc/paper_files/paper/2023/hash/271db9922b8d1f4dd7aaef84ed5ac703-Abstract.html)** — NeurIPS 2023
+- **[Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://proceedings.neurips.cc/paper_files/paper/2023/hash/271db9922b8d1f4dd7aaef84ed5ac703-Abstract.html)** — NeurIPS 2023
   - Authors: Shunyu Yao, Dian Yu, Jeffrey Zhao, Izhak Shafran, Thomas L. Griffiths, Yuan Cao, Karthik Narasimhan
   - Type: `method` · Date: `2023`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square)
@@ -747,7 +747,7 @@ Learning systems that use replay, self-play, co-evolution, ensembles, or policy 
   - Type: `method` · Date: `2025-04-19`
   - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![mechanism: backtracking/resampling](https://img.shields.io/badge/mechanism-backtracking%2Fresampling-8E759D?style=flat-square)
   - Exploration focus: novelty/curiosity, gradient-reshaping, backtracking/resampling.
-- 🏆 **[LaRes: Evolutionary Reinforcement Learning with LLM-based Adaptive Reward Search](https://neurips.cc/virtual/2025/poster/116462)** — NeurIPS 2025
+- **[LaRes: Evolutionary Reinforcement Learning with LLM-based Adaptive Reward Search](https://neurips.cc/virtual/2025/poster/116462)** — NeurIPS 2025
   - Authors: Pengyi Li, Hongyao Tang, Jinbin Qiao, Yan Zheng, Jianye Hao
   - Type: `method` · Date: `2025`
   - ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: ensemble/population](https://img.shields.io/badge/mechanism-ensemble%2Fpopulation-8774A5?style=flat-square)
@@ -1081,7 +1081,7 @@ Agents that search over multi-step action plans while interacting with an enviro
   - Type: `method` · Date: `2026`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
-- 🏆 **[AgentSwift: Efficient LLM Agent Design via Value-guided Hierarchical Search](https://arxiv.org/abs/2506.06017)** — arXiv `2506.06017`
+- **[AgentSwift: Efficient LLM Agent Design via Value-guided Hierarchical Search](https://arxiv.org/abs/2506.06017)** — arXiv `2506.06017`
   - Authors: Yu Li, Lehui Li, Zhihao Wu, Qingmin Liao, Jianye Hao, Kun Shao, Fengli Xu
   - Type: `method` · Date: `2025-06-06`
   - ![phase: continual/self-improvement](https://img.shields.io/badge/phase-continual%2Fself--improvement-789B8A?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
@@ -1091,12 +1091,12 @@ Agents that search over multi-step action plans while interacting with an enviro
   - Type: `method` · Date: `2025-05-02`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
-- 🏆 **[Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models](https://proceedings.mlr.press/v235/zhou24r.html)** — ICML 2024
+- **[Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models](https://proceedings.mlr.press/v235/zhou24r.html)** — ICML 2024
   - Authors: Andy Zhou, Kai Yan, Michal Shlapentokh-Rothman, Haohan Wang, Yu-Xiong Wang
   - Type: `method` · Date: `2024`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square)
   - Unified environment feedback, reflection, and Monte Carlo tree search for language agents.
-- 🏆 **[Reflexion: Language Agents with Verbal Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html)** — NeurIPS 2023
+- **[Reflexion: Language Agents with Verbal Reinforcement Learning](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html)** — NeurIPS 2023
   - Authors: Noah Shinn, Federico Cassano, Ashwin Gopinath, Karthik Narasimhan, Shunyu Yao
   - Type: `method` · Date: `2023`
   - ![phase: test-time-adaptation](https://img.shields.io/badge/phase-test--time--adaptation-7E8DBD?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square)
@@ -1106,12 +1106,12 @@ Agents that search over multi-step action plans while interacting with an enviro
 
 Agents that explore physical or simulated worlds, with spatial reasoning, world-model learning, action consequences, and sample-efficient coverage as key issues.
 
-- 🏆 **[Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291)** — arXiv `2305.16291`
+- **[Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291)** — arXiv `2305.16291`
   - Authors: Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan, Anima Anandkumar
   - Type: `method` · Date: `2024`
   - ![phase: continual/self-improvement](https://img.shields.io/badge/phase-continual%2Fself--improvement-789B8A?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![mechanism: curriculum/task-generation](https://img.shields.io/badge/mechanism-curriculum%2Ftask--generation-A08B5F?style=flat-square)
   - A foundational open-ended agent combining automatic curriculum, skill discovery, and lifelong memory.
-- 🏆 **[ReAct: Synergizing Reasoning and Acting in Language Models](https://openreview.net/forum?id=WE_vluYUL-X)** — ICLR 2023
+- **[ReAct: Synergizing Reasoning and Acting in Language Models](https://openreview.net/forum?id=WE_vluYUL-X)** — ICLR 2023
   - Authors: Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, Yuan Cao
   - Type: `method` · Date: `2023`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: information-gain](https://img.shields.io/badge/signal-information--gain-5E8C97?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
@@ -1156,12 +1156,12 @@ Agents that traverse knowledge graphs or use accumulated memory to guide future 
   - Type: `method` · Date: `2026`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
   - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
-- 🏆 **[R2D2: Remembering, Replaying and Dynamic Decision Making with a Reflective Agentic Memory](https://aclanthology.org/2025.acl-long.1464/)** — ACL 2025 Main
+- **[R2D2: Remembering, Replaying and Dynamic Decision Making with a Reflective Agentic Memory](https://aclanthology.org/2025.acl-long.1464/)** — ACL 2025 Main
   - Authors: Tenghao Huang, Kinjal Basu, Ibrahim Abdelaziz, Pavan Kapanipathi, Jonathan May, Muhao Chen
   - Type: `method` · Date: `2025`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
   - Uses replay memory to reconstruct visited web states and reflection on past errors to improve navigation and recover from failed decisions.
-- 🏆 **[Contextual Experience Replay for Self-Improvement of Language Agents](https://aclanthology.org/2025.acl-long.694/)** — ACL 2025 Main
+- **[Contextual Experience Replay for Self-Improvement of Language Agents](https://aclanthology.org/2025.acl-long.694/)** — ACL 2025 Main
   - Authors: Yitao Liu, Chenglei Si, Karthik R Narasimhan, Shunyu Yao
   - Type: `method` · Date: `2025`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
@@ -1280,7 +1280,7 @@ Training methods that explore physical or simulated worlds, where noisy observat
   - Type: `method` · Date: `2026`
   - ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
   - Officially accepted at ICML 2026. This record was included after source and scope review.
-- 🏆 **[EmbodiedScene: Towards Automated Generation of Diverse and Realistic Scenes for Embodied AI](https://embodiedscene1.github.io/embodied.scene/)** — ICML 2025
+- **[EmbodiedScene: Towards Automated Generation of Diverse and Realistic Scenes for Embodied AI](https://embodiedscene1.github.io/embodied.scene/)** — ICML 2025
   - Authors: Jinbin Qiao, Pengyi Li, Peilong Han, Yan Zheng, Jianye Hao
   - Type: `method` · Date: `2025`
   - ![phase: data-generation](https://img.shields.io/badge/phase-data--generation-5F8F8B?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: curriculum/task-generation](https://img.shields.io/badge/mechanism-curriculum%2Ftask--generation-A08B5F?style=flat-square)

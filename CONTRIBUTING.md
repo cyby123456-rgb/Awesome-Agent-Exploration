@@ -61,6 +61,7 @@ no applicable value.
   "authors": ["First Author", "Second Author"],
   "date": "YYYY-MM-DD",
   "venue": "arXiv",
+  "source_group": "recent-curated",
   "primary_area": "llm-exploration",
   "subtopic": "decoding-sampling",
   "paper_type": "method",
@@ -70,7 +71,8 @@ no applicable value.
   "mechanism": ["sampling/decoding"],
   "problem": [],
   "setting": [],
-  "rationale": "State where exploration happens and the paper's concrete exploration contribution."
+  "rationale": "State where exploration happens and the paper's concrete exploration contribution.",
+  "rationale_tags": []
 }
 ```
 
@@ -81,10 +83,12 @@ no applicable value.
 | `id` | A unique stable ID: normally `arxiv:<number>`, `doi:<DOI>`, or `openreview:<forum-id>`. |
 | `title`, `url`, `authors` | Exact metadata from the primary source. The URL must use HTTPS. |
 | `date`, `venue` | Public date (`YYYY-MM-DD` preferred) and `arXiv` or a verified venue, such as `NeurIPS 2025`. |
-| `published_venue` | Optional: verified formal venue when the canonical URL remains arXiv. |
+| `source_group` | Use `recent-curated` for a new contribution. Maintainers use other values only when migrating a reviewed source collection. |
+| `publication` | Optional structured evidence for a formal venue. Do not use `published_venue`; see the example below when an official venue page exists. |
 | `primary_area`, `subtopic` | One category and one matching subtopic from [the category table](#choose-the-category-and-subtopic). |
 | `paper_type` | `method`, `analysis`, `benchmark`, `survey`, or `position`. |
 | `rationale` | One or two factual sentences explaining why exploration is central. |
+| `rationale_tags` | Exact taxonomy tag IDs relied on in the rationale. Use `[]` when the rationale does not state a controlled tag explicitly; every value must also appear in that paper's tag fields. |
 | `phase` | **When** does exploration happen or change? For example, `inference` or `rl-training`. |
 | `level` | **What** is explored or diversified? For example, `token` or `response/sequence`. |
 | `signal` | **What quantity** values or guides exploration? For example, `entropy/probability` or `novelty/curiosity`. |
@@ -96,9 +100,24 @@ no applicable value.
 be non-empty. `problem` and `setting` are optional. Copy exact tag values from
 [Taxonomy Design](docs/TAXONOMY.md#tag-dimensions); do not invent synonyms.
 
-Do not set `featured`, `featured_rank`, `notability`, `citation_*`,
-or `source_group` unless a maintainer asks. Put an official code URL in the PR
-description; the registry currently has no code URL field.
+For an officially published paper, add this object and use the official paper
+page as `official_url` (not a search result):
+
+```json
+"publication": {
+  "venue": "NeurIPS",
+  "year": 2025,
+  "track": "Conference",
+  "evidence": "official",
+  "official_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/...-Abstract-Conference.html",
+  "verified_at": "YYYY-MM-DD"
+}
+```
+
+Do not set `featured`, `featured_rank`, `notability`, or `citation_*` unless a
+maintainer asks. Put an official code URL in the PR description; the registry
+currently has no code URL field. The catalog uses schema version 2; CI rejects
+older record formats.
 
 ### Choose the category and subtopic
 

@@ -371,12 +371,11 @@ def catalog_table_of_contents(papers: list[dict]) -> list[str]:
 
 
 def has_top_tier_venue(paper: dict) -> bool:
-    """Identify papers with a recognized top-tier publication venue."""
-    publication = paper.get("publication", {})
-    venue = publication.get("venue") or paper.get("venue") or ""
-    if publication and publication.get("evidence") != "official":
+    """Mark only records backed by structured, official venue evidence."""
+    publication = paper.get("publication")
+    if not isinstance(publication, dict) or publication.get("evidence") != "official":
         return False
-    venue = venue.upper()
+    venue = str(publication.get("venue", "")).upper()
     return venue.startswith(TOP_TIER_VENUE_PREFIXES)
 
 

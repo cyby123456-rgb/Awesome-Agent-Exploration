@@ -15,6 +15,7 @@ from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "papers.json"
+SCHEMA_VERSION = 2
 
 AREAS = {
     "llm-exploration",
@@ -91,6 +92,11 @@ def main() -> int:
     catalog = json.loads(DATA_PATH.read_text(encoding="utf-8"))
     papers = catalog.get("papers", [])
     errors: list[str] = []
+    if catalog.get("schema_version") != SCHEMA_VERSION:
+        errors.append(f"catalog: schema_version must be {SCHEMA_VERSION}")
+    if not isinstance(papers, list):
+        errors.append("catalog: papers must be a list")
+        papers = []
     for field in ("snapshot_date", "citation_snapshot"):
         if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", catalog.get(field, "")):
             errors.append(f"catalog: {field} must be in YYYY-MM-DD format")
@@ -191,12 +197,18 @@ def main() -> int:
         if url and urlparse(url).scheme != "https":
             errors.append(f"{label}: URL must use HTTPS")
 
-        taxonomy_values = set().union(*TAG_VALUES.values())
-        mentioned_tags = {tag for tag in taxonomy_values if tag in paper.get("rationale", "")}
+        if "rationale_tags" not in paper:
+            errors.append(f"{label}: missing rationale_tags")
+        rationale_tags = paper.get("rationale_tags", [])
+        if not isinstance(rationale_tags, list) or not all(
+            isinstance(tag, str) for tag in rationale_tags
+        ):
+            errors.append(f"{label}: rationale_tags must be a list of tag IDs")
+            rationale_tags = []
         recorded_tags = set().union(*(set(paper.get(dimension, [])) for dimension in TAG_VALUES))
-        unrecorded_tags = sorted(mentioned_tags - recorded_tags)
+        unrecorded_tags = sorted(set(rationale_tags) - recorded_tags)
         if unrecorded_tags:
-            errors.append(f"{label}: rationale mentions unrecorded taxonomy tags {unrecorded_tags}")
+            errors.append(f"{label}: rationale_tags must be recorded taxonomy tags {unrecorded_tags}")
 
     classic_titles = [normalize(p["title"]) for p in catalog.get("classics", [])]
     if len(classic_titles) != len(set(classic_titles)):

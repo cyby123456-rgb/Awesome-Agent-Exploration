@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CANDIDATES = ROOT / "data" / "candidates.json"
 PAPERS = ROOT / "data" / "papers.json"
 CANDIDATE_STATUSES = {"pending", "promoted", "rejected", "duplicate"}
+SCHEMA_VERSION = 2
 
 
 def validate_candidates() -> list[str]:
@@ -27,8 +28,12 @@ def validate_candidates() -> list[str]:
     catalog = json.loads(PAPERS.read_text(encoding="utf-8"))
     paper_ids = {paper["id"] for paper in catalog.get("papers", [])}
     errors: list[str] = []
+    if payload.get("schema_version") != SCHEMA_VERSION:
+        errors.append(f"candidate registry: schema_version must be {SCHEMA_VERSION}")
+    if not isinstance(payload.get("candidates"), list):
+        return [*errors, "candidate registry: candidates must be a list"]
     seen: set[str] = set()
-    for index, candidate in enumerate(payload.get("candidates", [])):
+    for index, candidate in enumerate(payload["candidates"]):
         label = candidate.get("title", f"candidate #{index}")
         for field in ("id", "status", "title", "reason"):
             if not candidate.get(field):

@@ -1,6 +1,8 @@
 # Candidate registry
 
 `data/candidates.json` is a review ledger, not part of the public catalog.
+It uses schema version 2, whose lifecycle fields are validated separately from
+accepted papers in CI.
 Records enter it when a legacy source conflicts with a title, a source is
 missing, or automated discovery finds a potentially relevant work.
 
