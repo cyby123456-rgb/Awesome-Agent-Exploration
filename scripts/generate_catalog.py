@@ -588,9 +588,7 @@ def render_readme(catalog: dict) -> str:
         "",
         '<a id="start-here"></a>',
         "",
-        "## Quick Start: 10 Papers for LLM Exploration",
-        "",
-        "<sub>10 papers to help you quickly understand exploration.</sub>",
+        "## Quick Start: 10 Papers to Help You Quickly Understand Exploration",
         "",
     ]
 

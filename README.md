@@ -84,9 +84,7 @@ The former Token / Sequence / Policy sections are now `level` tags. Entropy, tem
 
 <a id="start-here"></a>
 
-## Quick Start: 10 Papers for LLM Exploration
-
-<sub>10 papers to help you quickly understand exploration.</sub>
+## Quick Start: 10 Papers to Help You Quickly Understand Exploration
 
 - **[From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR](https://arxiv.org/abs/2508.07534)** — arXiv `2508.07534` · Understanding, Evaluation & Benchmarks · ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
 - **[Representation-Based Exploration for Language Models: From Test-Time to Post-Training](https://iclr.cc/virtual/2026/poster/10009438)** — **ICLR 2026** · Exploration for LLM Generation & Inference · ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square)
