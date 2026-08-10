@@ -6,7 +6,7 @@
 
 [![Curated catalog](https://img.shields.io/badge/catalog-curated-3B82F6?style=flat-square)](docs/CURATION_2026.md) [![262 papers](https://img.shields.io/badge/papers-262-8B5CF6?style=flat-square)](#catalog) [![Five research categories](https://img.shields.io/badge/categories-5-10B981?style=flat-square)](#research-map) [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-F59E0B?style=flat-square)](CONTRIBUTING.md)
 
-[Guide](#guide) · [Research map](#research-map) · [10-paper introduction](#start-here) · [Catalog](#catalog) · [Detailed metadata](README_DETAILED.md) · [Contribute](CONTRIBUTING.md)
+[Guide](#guide) · [Quick start](#start-here) · [Research map](#research-map) · [Catalog](#catalog) · [Detailed metadata](README_DETAILED.md) · [Contribute](CONTRIBUTING.md)
 
 <img src="assets/research-map.svg" alt="Research map of 262 papers across five exploration categories" width="100%">
 
@@ -19,7 +19,7 @@
 | **[What counts as exploration](#what-counts-as-exploration)** | Sutton & Barto frame exploration as trying alternatives to improve future action selection, while exploitation uses current knowledge to obtain reward. |
 | **[Research map](#research-map)** | Five categories spanning LLM generation, RLVR and policy learning, agentic inference, agentic training, and evidence. |
 | **[Taxonomy lens](#taxonomy-lens)** | How phase, level, signal, mechanism, problem, and setting describe each paper. |
-| **[10 papers to get started](#start-here)** | A manually selected introduction to LLM exploration; automatic ranking is intentionally avoided. |
+| **[Quick start](#start-here)** | 10 papers to help you quickly understand exploration, selected manually rather than ranked automatically. |
 | **[Full catalog](#catalog)** | All curated papers, grouped by their primary research category. |
 | **[Memory × Exploration](#memory-exploration)** | How agents retain, retrieve, and reuse experience to explore more effectively. |
 
@@ -84,7 +84,9 @@ The former Token / Sequence / Policy sections are now `level` tags. Entropy, tem
 
 <a id="start-here"></a>
 
-## 10 Papers to Get Started with LLM Exploration
+## Quick Start: 10 Papers for LLM Exploration
+
+<sub>10 papers to help you quickly understand exploration.</sub>
 
 - **[From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR](https://arxiv.org/abs/2508.07534)** — arXiv `2508.07534` · Understanding, Evaluation & Benchmarks · ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
 - **[Representation-Based Exploration for Language Models: From Test-Time to Post-Training](https://iclr.cc/virtual/2026/poster/10009438)** — **ICLR 2026** · Exploration for LLM Generation & Inference · ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square)

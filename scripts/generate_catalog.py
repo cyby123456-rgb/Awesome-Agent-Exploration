@@ -534,7 +534,7 @@ def render_readme(catalog: dict) -> str:
         "[![Five research categories](https://img.shields.io/badge/categories-5-10B981?style=flat-square)](#research-map) "
         "[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-F59E0B?style=flat-square)](CONTRIBUTING.md)",
         "",
-        "[Guide](#guide) · [Research map](#research-map) · [10-paper introduction](#start-here) · [Catalog](#catalog) · [Detailed metadata](README_DETAILED.md) · [Contribute](CONTRIBUTING.md)",
+        "[Guide](#guide) · [Quick start](#start-here) · [Research map](#research-map) · [Catalog](#catalog) · [Detailed metadata](README_DETAILED.md) · [Contribute](CONTRIBUTING.md)",
         "",
         f'<img src="assets/research-map.svg" alt="Research map of {len(papers)} papers across five exploration categories" width="100%">',
         "",
@@ -547,7 +547,7 @@ def render_readme(catalog: dict) -> str:
         "| **[What counts as exploration](#what-counts-as-exploration)** | Sutton & Barto frame exploration as trying alternatives to improve future action selection, while exploitation uses current knowledge to obtain reward. |",
         "| **[Research map](#research-map)** | Five categories spanning LLM generation, RLVR and policy learning, agentic inference, agentic training, and evidence. |",
         "| **[Taxonomy lens](#taxonomy-lens)** | How phase, level, signal, mechanism, problem, and setting describe each paper. |",
-        "| **[10 papers to get started](#start-here)** | A manually selected introduction to LLM exploration; automatic ranking is intentionally avoided. |",
+        "| **[Quick start](#start-here)** | 10 papers to help you quickly understand exploration, selected manually rather than ranked automatically. |",
         "| **[Full catalog](#catalog)** | All curated papers, grouped by their primary research category. |",
         "| **[Memory × Exploration](#memory-exploration)** | How agents retain, retrieve, and reuse experience to explore more effectively. |",
         "",
@@ -588,7 +588,9 @@ def render_readme(catalog: dict) -> str:
         "",
         '<a id="start-here"></a>',
         "",
-        "## 10 Papers to Get Started with LLM Exploration",
+        "## Quick Start: 10 Papers for LLM Exploration",
+        "",
+        "<sub>10 papers to help you quickly understand exploration.</sub>",
         "",
     ]
 
