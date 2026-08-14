@@ -54,8 +54,19 @@ SOURCE_GROUPS = {"conference-2026", "foundational-llm", "legacy-curated", "recen
 PUBLICATION_EVIDENCE = {"official", "venue-claim"}
 OFFICIAL_HOSTS_BY_VENUE = {
     "ACL": {"aclanthology.org"},
-    "ICLR": {"iclr.cc"},
-    "ICML": {"icml.cc"},
+    "AAAI": {"ojs.aaai.org"},
+    "ASE": {"dl.acm.org", "ieeexplore.ieee.org"},
+    "EMNLP": {"aclanthology.org"},
+    "ICLR": {"iclr.cc", "openreview.net"},
+    "ICML": {"icml.cc", "proceedings.mlr.press"},
+    "ICRA": {"ieeexplore.ieee.org"},
+    "ICSE": {"dl.acm.org", "ieeexplore.ieee.org"},
+    "IJCAI": {"ijcai.org"},
+    "NEURIPS": {"papers.nips.cc", "proceedings.neurips.cc"},
+    "TACL": {"aclanthology.org", "direct.mit.edu"},
+    "TMLR": {"openreview.net"},
+    "ARTIFICIAL INTELLIGENCE": {"doi.org", "www.sciencedirect.com"},
+    "IEEE TRANSACTIONS ON CYBERNETICS": {"ieeexplore.ieee.org"},
 }
 TAG_VALUES = {
     "phase": {"data-generation", "supervised-post-training", "rl-training", "inference", "test-time-adaptation", "continual/self-improvement"},
@@ -86,6 +97,14 @@ def valid_date(value: str) -> bool:
             return False
         return True
     return False
+
+
+def valid_https_url(value: object) -> bool:
+    """Require a usable HTTPS URL rather than a scheme-only string."""
+    if not isinstance(value, str):
+        return False
+    parsed = urlparse(value)
+    return parsed.scheme == "https" and bool(parsed.hostname) and parsed.path not in {"", "/"}
 
 
 def main() -> int:
@@ -168,9 +187,13 @@ def main() -> int:
                     errors.append(f"{label}: invalid publication evidence {publication.get('evidence')!r}")
                 official_url = publication.get("official_url")
                 if publication.get("evidence") == "official":
-                    if not official_url or urlparse(official_url).scheme != "https":
-                        errors.append(f"{label}: official publication evidence needs an HTTPS official_url")
-                    elif publication.get("venue") in OFFICIAL_HOSTS_BY_VENUE and urlparse(official_url).netloc.casefold() not in OFFICIAL_HOSTS_BY_VENUE[publication["venue"]]:
+                    venue_key = str(publication.get("venue", "")).upper()
+                    allowed_hosts = OFFICIAL_HOSTS_BY_VENUE.get(venue_key)
+                    if not valid_https_url(official_url):
+                        errors.append(f"{label}: official publication evidence needs an HTTPS official_url with hostname and path")
+                    elif not allowed_hosts:
+                        errors.append(f"{label}: official publication evidence needs a maintained host rule for {publication.get('venue')!r}")
+                    elif urlparse(official_url).hostname.casefold() not in allowed_hosts:
                         errors.append(f"{label}: official_url host does not match publication venue")
                     if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", publication.get("verified_at", "")):
                         errors.append(f"{label}: official publication evidence needs verified_at")
@@ -194,8 +217,8 @@ def main() -> int:
         if url_key in seen_urls:
             errors.append(f"duplicate URL: {url} used by {label} and {seen_urls[url_key]}")
         seen_urls[url_key] = label
-        if url and urlparse(url).scheme != "https":
-            errors.append(f"{label}: URL must use HTTPS")
+        if not valid_https_url(url):
+            errors.append(f"{label}: URL must use HTTPS with hostname and path")
 
         if "rationale_tags" not in paper:
             errors.append(f"{label}: missing rationale_tags")

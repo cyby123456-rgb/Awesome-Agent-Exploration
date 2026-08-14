@@ -101,7 +101,8 @@ be non-empty. `problem` and `setting` are optional. Copy exact tag values from
 [Taxonomy Design](docs/TAXONOMY.md#tag-dimensions); do not invent synonyms.
 
 For an officially published paper, add this object and use the official paper
-page as `official_url` (not a search result):
+page as `official_url` (not a search result). CI requires HTTPS, a hostname,
+a non-root path, and a venue-specific official-host rule:
 
 ```json
 "publication": {
@@ -113,6 +114,14 @@ page as `official_url` (not a search result):
   "verified_at": "YYYY-MM-DD"
 }
 ```
+
+The maintained rules cover ACL, AAAI, ASE, EMNLP, ICLR, ICML, ICRA, ICSE,
+IJCAI, NeurIPS, TACL, TMLR, *Artificial Intelligence*, and *IEEE Transactions
+on Cybernetics*. If a venue has no rule yet, use `"evidence": "venue-claim"`
+and omit `official_url` and `verified_at`; it will not be displayed as official
+venue evidence or receive a venue award marker. To add a new official venue,
+ask a maintainer to review and add its canonical host rule in
+`scripts/validate_catalog.py`.
 
 Do not set `featured`, `featured_rank`, `notability`, or `citation_*` unless a
 maintainer asks. Put an official code URL in the PR description; the registry

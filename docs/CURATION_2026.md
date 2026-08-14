@@ -79,6 +79,7 @@ self-improvement remain orthogonal subtopics and tags.
 - Multi-dimensional tags describe phase, level, signal, mechanism, problem, and
   setting.
 - Official venue evidence is stored separately from venue claims. A record is
-  counted as directly verified only when `publication.official_url` is present.
+  counted as directly verified only when `publication.official_url` passes the
+  venue-specific HTTPS host and path validation rule.
 - Classical RL papers do not count toward catalog totals.
 - Automated discovery cannot write directly to the accepted registry.
