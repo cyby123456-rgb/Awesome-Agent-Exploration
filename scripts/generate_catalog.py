@@ -198,6 +198,15 @@ TAG_DIMENSIONS = [
     ("Setting", "math; code; multimodal; creative/open-ended; web; tool use; knowledge graph; embodied; multi-agent"),
 ]
 
+DETAILED_TAG_DIMENSIONS = (
+    ("phase", "Phase"),
+    ("level", "Level"),
+    ("signal", "Signal"),
+    ("mechanism", "Mechanism"),
+    ("problem", "Problem"),
+    ("setting", "Setting"),
+)
+
 BADGE_COLORS = {
     "phase": "6E8FB8",
     "level": "8B80B6",
@@ -338,6 +347,46 @@ def representative_tags(paper: dict) -> str:
         tag_badge(dimension, value)
         for dimension, value in values[:REPRESENTATIVE_TAG_LIMIT]
     )
+
+
+def detailed_tag_lines(paper: dict) -> list[str]:
+    """Render every non-empty taxonomy dimension for the detailed catalog."""
+    lines = []
+    for dimension, label in DETAILED_TAG_DIMENSIONS:
+        values = paper.get(dimension, [])
+        if values:
+            badges = " ".join(tag_badge(dimension, value) for value in values)
+            lines.append(f"  - **{label}:** {badges}")
+    return lines
+
+
+def publication_evidence_line(paper: dict) -> str:
+    """Make structured venue evidence reviewable in the detailed catalog."""
+    publication = paper.get("publication")
+    if not publication:
+        return "  - **Publication evidence:** No structured venue evidence recorded"
+
+    label = " ".join(
+        str(value)
+        for value in (publication.get("venue"), publication.get("year"), publication.get("track"))
+        if value and value != "Conference"
+    )
+    if publication.get("evidence") == "official":
+        official_url = publication["official_url"]
+        return (
+            f"  - **Publication evidence:** Official [{label}]({official_url})"
+            f" · verified `{publication['verified_at']}`"
+        )
+    return f"  - **Publication evidence:** Venue claim: {label} · official URL pending"
+
+
+def citation_line(paper: dict) -> str | None:
+    """Render citation metadata only when the registry has a checked snapshot."""
+    if paper.get("citation_count") is None:
+        return None
+    source = paper.get("citation_source", "source not recorded")
+    checked = paper.get("citation_checked", "date not recorded")
+    return f"  - **Citation:** {paper['citation_count']} · {source} · checked `{checked}`"
 
 
 def papers_by_subtopic(papers: list[dict], area: str) -> dict[str, list[dict]]:
@@ -708,6 +757,8 @@ def render_detailed(catalog: dict) -> str:
         "",
         f"> 🏆 Published at a recognized top-tier venue. ⭐ Cited at least 100 times. Citation snapshot: **{catalog['citation_snapshot']}**; counts and sources are recorded in the paper registry.",
         "",
+        "> Every entry below shows all non-empty taxonomy dimensions, publication evidence, and any recorded citation evidence.",
+        "",
     ]
     for index, (area, label) in enumerate(AREA_LABELS.items(), start=1):
         lines.extend([f"## {index}. {label}", "", *area_description_lines(area)])
@@ -736,8 +787,10 @@ def render_detailed(catalog: dict) -> str:
                 lines.append(
                     f"  - Type: `{paper['paper_type']}` · Date: `{paper.get('date', '')}`"
                 )
-                if tags := representative_tags(paper):
-                    lines.append(f"  - {tags}")
+                lines.extend(detailed_tag_lines(paper))
+                lines.append(publication_evidence_line(paper))
+                if citation := citation_line(paper):
+                    lines.append(citation)
                 if paper.get("rationale"):
                     lines.append(f"  - {paper['rationale']}")
             lines.append("")

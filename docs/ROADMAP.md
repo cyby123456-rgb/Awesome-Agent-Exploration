@@ -17,9 +17,11 @@ The repository now uses one structured source of truth:
 - `scripts/validate_catalog.py` enforces schema, identity, tag, and official
   conference-link invariants.
 - `scripts/generate_catalog.py` regenerates both public views.
-- `scripts/check_links.py` performs an optional network link check.
+- `scripts/check_links.py` distinguishes reachable, unverifiable, and failed
+  URLs; it checks primary, classical, and official publication URLs.
 - `.github/workflows/catalog.yml` checks validation and generated-file parity
-  for pull requests and updates to `main`.
+  for pull requests and updates to `main`, and runs strict link verification
+  weekly or when manually dispatched.
 
 The earlier duplicate catalog, title caches, and first-match link-fetching
 script have been removed. They remain available in Git history.
@@ -59,9 +61,8 @@ requires exact-title source verification and human review.
 ## Next
 
 1. Enrich records with code URLs and canonical publication identifiers.
-2. Add link checking as a scheduled or manually triggered CI job.
-3. Add a filterable static view once the JSON schema has remained stable.
-4. Publish a small monthly changelog of reviewed additions and removals.
+2. Add a filterable static view once the JSON schema has remained stable.
+3. Publish a small monthly changelog of reviewed additions and removals.
 
 ## Release checklist
 
