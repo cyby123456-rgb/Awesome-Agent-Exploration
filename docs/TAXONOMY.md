@@ -32,26 +32,36 @@ subtopics and tags.
 
 ## Primary categories
 
-Primary categories answer: **Where does this paper's main exploration loop
-occur?** A paper appears in one category even when its method or findings
-transfer elsewhere.
+Primary categories form a 2 x 2 map. They answer both **what space is being
+explored** (a model's internal capability space or an external environment) and
+**what the exploration is for** (solving the current task at inference or
+generating experience for learning). A paper appears in one category even when
+its method or findings transfer elsewhere.
 
-### 1. Exploration for LLM Generation & Inference
+### 1. Model-Space Exploration at Inference
 
 Exploration among candidate tokens, responses, reasoning paths, or latent states
-during generation and inference, without a learning update as the central
-contribution. Key concerns are sampling, decoding, test-time search,
-self-consistency, representation steering, diversity, and coverage.
+during generation and inference, without a parameter update as the central
+contribution. Key concerns are decoding and sampling, self-consistency,
+reasoning-path search, tree or graph search, representation or latent
+exploration, semantic diversity, and coverage.
 
-### 2. Exploration for RLVR, Policy & Curriculum
+**Core question:** How can an LLM explore alternative generations or reasoning
+paths without updating its parameters?
 
-Exploration inside the learning loop, including data selection, task synthesis,
-curricula, rollout collection, rewards, advantages, replay, self-play, and RL or
-RLVR policy updates. Key concerns are preserving useful distributional support,
-assigning credit, expanding capability, and deciding what experience should
-drive the next update.
+### 2. Model-Space Exploration for Learning
 
-### 3. Agentic Exploration
+Exploration inside the language-model learning loop, including entropy and
+policy support, rollout exploration, advantage and credit assignment, intrinsic
+reward, replay, self-play, data exploration, task synthesis, curriculum
+learning, and post-training updates. The explored object is a model output,
+reasoning rollout, data distribution, or task distribution rather than an
+external environment interaction.
+
+**Core question:** How can exploration generate informative experience and
+expand what the model can learn?
+
+### 3. Environment-Space Exploration at Inference
 
 Exploration by a language agent acting at inference or test time in an external
 or persistent environment, including the web, tools, GUIs, knowledge graphs,
@@ -59,13 +69,19 @@ games, and embodied worlds. Key concerns are long-horizon planning, partial
 observability, action grounding, recovery, environment coverage, and
 memory-guided interaction.
 
-### 4. Agentic Exploration for Training
+The explored object is environment state, action, or information, rather than
+only a token or reasoning trajectory.
+
+### 4. Environment-Space Exploration for Learning
 
 Agent-environment exploration used to create experience, synthesize interactive
 tasks, or improve an agent policy. Key concerns are agentic RL, long-horizon
 credit assignment, autonomous experience collection, self-play training,
 environment generation, and transferring learned policies across tools and
 environments.
+
+**Core distinction:** The environment is not merely searched to finish the
+current task; interaction becomes training experience.
 
 ### 5. Understanding, Evaluation & Benchmarks
 
@@ -80,22 +96,25 @@ Use the paper's main contribution, not every context it mentions:
 
 1. If the main contribution only measures, explains, benchmarks, or surveys,
    use `understanding-evaluation`.
-2. Otherwise, if external agent interaction supplies experience, tasks, or a
-   policy update, use `agentic-training-exploration`.
+2. Otherwise, if external agent interaction becomes experience, tasks, or a
+   policy update, use `agentic-training-exploration` (environment space for
+   learning).
 3. Otherwise, if the main exploration loop acts in an external or persistent
-   environment at inference or test time, use `agentic-exploration`.
-4. Otherwise, if exploration changes an LLM policy, RLVR rollout distribution,
-   data selection, or curriculum, use `rlvr-policy-curriculum-exploration`.
+   environment at inference or test time, use `agentic-exploration`
+   (environment space at inference).
+4. Otherwise, if exploration changes an LLM policy, rollout distribution, data
+   selection, or curriculum, use `rlvr-policy-curriculum-exploration` (model
+   space for learning).
 5. Otherwise, use `llm-exploration` for generation, decoding, representation
-   steering, and test-time search.
+   steering, and test-time search (model space at inference).
 
 This order resolves common ambiguities. Memory-guided web navigation is
-agentic; web trajectories collected to update an agent are agentic training;
-RLVR entropy control without an external environment is policy learning;
-self-consistency at inference is LLM generation; and a paper that only analyzes
-entropy collapse is understanding and evaluation. When the boundary remains
-ambiguous, classify by the component evaluated in the main experiments and
-state the choice in the curation rationale.
+environment-space inference; web trajectories collected to update an agent are
+environment-space learning; entropy control without external interaction is
+model-space learning; self-consistency at inference is model-space inference;
+and a paper that only analyzes entropy collapse is understanding and evaluation.
+When the boundary remains ambiguous, classify by the component evaluated in the
+main experiments and state the choice in the curation rationale.
 
 ## Subtopics
 
@@ -105,10 +124,10 @@ replacement for the orthogonal tags below.
 
 | Primary category | Subtopics and key points |
 |---|---|
-| Exploration for LLM Generation & Inference | **Decoding & Sampling:** broadens candidate generation through probability shaping and sampling; **Search & Deliberation:** explores multi-step reasoning paths through branching, verification, or resampling; **Representation & Latent Steering:** diversifies behavior by intervening in internal representations; **Diversity & Coverage:** expands semantic breadth while preserving quality. |
-| Exploration for RLVR, Policy & Curriculum | **Entropy & Distribution Control:** preserves useful policy support; **Credit Assignment & Optimization:** makes exploratory behavior learnable; **Reward & Rollout Shaping:** elicits informative trajectories; **Replay, Population & Self-Improvement:** reuses experience or interacting policies across updates; **Capability Expansion & Training Interventions:** changes or stabilizes what training can learn; **Data Selection & Prompt Exploration:** chooses informative training examples; **Task Synthesis & Curriculum:** generates and sequences learnable tasks. |
-| Agentic Exploration | **Web, Tools & GUI:** explores interactive digital interfaces; **Planning & Interactive Search:** searches long-horizon action plans under feedback; **Embodied & Simulated Environments:** explores spatial or simulated worlds; **Knowledge & Memory-Guided Exploration:** uses structured knowledge or accumulated experience to choose future actions. |
-| Agentic Exploration for Training | **Web, Tools & GUI Training:** learns from interactive digital experience; **Agentic Policy Learning:** updates policies from exploratory trajectories; **Embodied & Simulated Training:** learns under noisy observations and sparse rewards; **Memory-Augmented Agent Training:** selects and reuses experience during learning. |
+| Model-Space Exploration at Inference | **Decoding & Sampling:** broadens candidate generation through probability shaping and sampling; **Search & Deliberation:** explores multi-step reasoning paths through branching, verification, or resampling; **Representation & Latent Steering:** diversifies behavior by intervening in internal representations; **Diversity & Coverage:** expands semantic breadth while preserving quality. |
+| Model-Space Exploration for Learning | **Entropy & Distribution Control:** preserves useful policy support; **Credit Assignment & Optimization:** makes exploratory behavior learnable; **Reward & Rollout Shaping:** elicits informative trajectories; **Replay, Population & Self-Improvement:** reuses experience or interacting policies across updates; **Capability Expansion & Training Interventions:** changes or stabilizes what training can learn; **Data Selection & Prompt Exploration:** chooses informative training examples; **Task Synthesis & Curriculum:** generates and sequences learnable tasks. |
+| Environment-Space Exploration at Inference | **Web, Tools & GUI:** explores interactive digital interfaces; **Planning & Interactive Search:** searches long-horizon action plans under feedback; **Embodied & Simulated Environments:** explores spatial or simulated worlds; **Knowledge & Memory-Guided Exploration:** uses structured knowledge or accumulated experience to choose future actions. |
+| Environment-Space Exploration for Learning | **Web, Tools & GUI Training:** learns from interactive digital experience; **Agentic Policy Learning:** updates policies from exploratory trajectories; **Embodied & Simulated Training:** learns under noisy observations and sparse rewards; **Memory-Augmented Agent Training:** selects and reuses experience during learning. |
 | Understanding, Evaluation & Benchmarks | **Surveys & Position Papers:** organizes definitions and open problems; **Theory & Training Dynamics:** explains why exploration changes; **Capability Boundaries:** tests whether exploration reaches beyond existing competence; **Benchmarks & Metrics:** measures diversity, coverage, efficiency, and utility. |
 
 ## Tag dimensions

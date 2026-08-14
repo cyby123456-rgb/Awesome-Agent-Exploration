@@ -28,10 +28,10 @@ script have been removed. They remain available in Git history.
 
 Each paper has exactly one primary category:
 
-1. Exploration for LLM Generation & Inference
-2. Exploration for RLVR, Policy & Curriculum
-3. Agentic Exploration
-4. Agentic Exploration for Training
+1. Model-Space Exploration at Inference
+2. Model-Space Exploration for Learning
+3. Environment-Space Exploration at Inference
+4. Environment-Space Exploration for Learning
 5. Understanding, Evaluation & Benchmarks
 
 Orthogonal tags describe phase, intervention level, exploration signal,

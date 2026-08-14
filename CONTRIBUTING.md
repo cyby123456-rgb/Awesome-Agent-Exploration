@@ -125,10 +125,10 @@ Choose the paper's **main exploration loop**, not every setting it mentions.
 
 | `primary_area` | Use when | Valid `subtopic` values |
 |---|---|---|
-| `llm-exploration` | Exploration happens in generation or inference without a central learning update. | `decoding-sampling`, `search-deliberation`, `representation-steering`, `diversity-coverage` |
-| `rlvr-policy-curriculum-exploration` | Exploration changes an LLM policy, rollout, reward, data choice, or curriculum. | `entropy-distribution`, `credit-optimization`, `reward-rollout`, `replay-population`, `capability-dynamics`, `data-selection-prompting`, `task-synthesis-curriculum` |
-| `agentic-exploration` | An agent explores an external environment at inference or test time. | `web-tools-gui`, `planning-interaction`, `embodied-environments`, `knowledge-memory` |
-| `agentic-training-exploration` | External interaction creates experience, tasks, or updates an agent policy. | `web-tools-gui`, `planning-interaction`, `embodied-environments`, `knowledge-memory` |
+| `llm-exploration` | **Model-Space Exploration at Inference:** alternatives are generated or searched without parameter updates. | `decoding-sampling`, `search-deliberation`, `representation-steering`, `diversity-coverage` |
+| `rlvr-policy-curriculum-exploration` | **Model-Space Exploration for Learning:** model outputs, rollouts, data, or tasks become informative learning experience. | `entropy-distribution`, `credit-optimization`, `reward-rollout`, `replay-population`, `capability-dynamics`, `data-selection-prompting`, `task-synthesis-curriculum` |
+| `agentic-exploration` | **Environment-Space Exploration at Inference:** an agent explores external states, actions, tools, or information for the current task. | `web-tools-gui`, `planning-interaction`, `embodied-environments`, `knowledge-memory` |
+| `agentic-training-exploration` | **Environment-Space Exploration for Learning:** external interaction becomes training experience, tasks, or policy updates. | `web-tools-gui`, `planning-interaction`, `embodied-environments`, `knowledge-memory` |
 | `understanding-evaluation` | The contribution measures, explains, surveys, or benchmarks exploration. | `surveys-position`, `theory-training-dynamics`, `capability-boundaries`, `benchmarks-metrics` |
 
 Use `method` only for the first four intervention categories. `analysis`,

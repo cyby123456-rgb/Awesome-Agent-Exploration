@@ -6,12 +6,12 @@ Evidence snapshot: **2026-08-06** · 262 curated papers.
 
 > 🏆 Published at a recognized top-tier venue. ⭐ Cited at least 100 times. Citation snapshot: **2026-07-23**; counts and sources are recorded in the paper registry.
 
-## 1. Exploration for LLM Generation & Inference
+## 1. Model-Space Exploration at Inference
 
 | Research lens | Summary |
 |---|---|
-| **🧭 Scope** | This category covers exploration that happens while a language model is generating or selecting candidate outputs, rather than through a reinforcement-learning update. Typical examples include sampling and decoding strategies, self-consistency, semantic-diversity methods, latent-state steering, and tree or graph search at inference time. |
-| **🎯 Core question** | The central question is how to search a model's existing generative distribution more broadly, safely, or efficiently. Papers belong here when the main contribution improves or analyzes candidate generation, reasoning-path search, or output diversity without making RL post-training the core mechanism. |
+| **🧭 Scope** | This category covers exploration within a language model's existing capability space while it generates or selects candidate outputs. Typical examples include decoding and sampling, self-consistency, reasoning-path search, tree or graph search, representation or latent exploration, and semantic diversity; parameter updates are not the central contribution. |
+| **🎯 Core question** | How can an LLM explore alternative generations or reasoning paths without updating its parameters? Papers belong here when their main contribution improves or analyzes candidate generation, reasoning-path search, output diversity, or internal representations at inference time. |
 | **🚧 Open challenges** | The central challenge is still the diversity-quality-efficiency trade-off: broader sampling and search can improve coverage while rapidly increasing inference cost or admitting low-quality paths. Results are also hard to compare because gains from exploration are often entangled with extra compute, verifier strength, and model scale, while semantic and latent diversity lack reliable task-independent measures. |
 
 ### Decoding & Sampling · 14 papers
@@ -345,12 +345,12 @@ Methods that counter mode collapse and expand semantic coverage, emphasizing how
   - Exploration focus: semantic-diversity.
 
 
-## 2. Exploration for RLVR, Policy & Curriculum
+## 2. Model-Space Exploration for Learning
 
 | Research lens | Summary |
 |---|---|
-| **🧭 Scope** | This category covers exploration inside RLVR and policy-learning loops: constructing curricula, collecting rollouts, shaping rewards and advantages, and updating a language-model policy. |
-| **🎯 Core question** | The central question is how learning changes what the model can discover. Entropy control, capability expansion, replay, self-play, co-evolution, data selection, and task synthesis belong here when they improve a model policy without making external agent-environment interaction the defining loop. |
+| **🧭 Scope** | This category covers exploration used to make language-model learning more informative: entropy and policy support, rollout exploration, advantage and credit assignment, intrinsic reward, replay, self-play, data exploration, task synthesis, and curriculum learning. |
+| **🎯 Core question** | How can exploration generate informative experience and expand what the model can learn? Papers belong here when the explored object is a model output, reasoning rollout, training-data distribution, or task distribution, rather than an external environment interaction. |
 | **🚧 Open challenges** | Training-time exploration remains vulnerable to entropy collapse, biased or sparse rewards, unstable credit assignment, and curricula that overfit to what a verifier can already recognize. A key open question is whether an intervention creates genuinely new capability or only redistributes probability mass over existing behavior; replay, self-play, and population methods add further stability, data-quality, and compute challenges. |
 
 ### Entropy & Distribution Control · 43 papers
@@ -1014,12 +1014,12 @@ Methods that generate and sequence tasks across difficulty levels, with adaptive
   - Officially accepted at ICLR 2026. This record was included after source and scope review.
 
 
-## 3. Agentic Exploration
+## 3. Environment-Space Exploration at Inference
 
 | Research lens | Summary |
 |---|---|
-| **🧭 Scope** | This category covers language agents that explore an external or persistent environment at inference or test time: webpages, tools, GUIs, knowledge graphs, games, embodied worlds, or multi-agent settings. |
-| **🎯 Core question** | The explored object is a trajectory of states, actions, observations, tool calls, and accumulated memory. Papers belong here when planning, recovery, information seeking, or environment coverage is the main contribution and no training update is central. |
+| **🧭 Scope** | This category covers language agents that explore an external or persistent environment at inference or test time: webpages, GUIs, tools, knowledge graphs, embodied worlds, and other open or interactive settings. |
+| **🎯 Core question** | The explored object is environment state, action, or information rather than only a token or reasoning trajectory. Papers belong here when planning, recovery, information seeking, memory-guided exploration, or environment coverage serves the current task and no learning update is central. |
 | **🚧 Open challenges** | Long horizons, partial observability, and compounding action errors make efficient coverage and reliable recovery difficult, especially when tools or environments change. Current benchmarks often simplify feedback and reset conditions, leaving unresolved questions around realistic exploration cost, safe interaction, memory quality, reproducibility, and whether improvements transfer beyond a narrow environment. |
 
 ### Web, Tools & GUI · 4 papers
@@ -1168,12 +1168,12 @@ Agents that traverse knowledge graphs or use accumulated memory to guide future 
   - Synthesizes past web-agent experience into a dynamic memory buffer and retrieves relevant environment dynamics and decision patterns for new tasks.
 
 
-## 4. Agentic Exploration for Training
+## 4. Environment-Space Exploration for Learning
 
 | Research lens | Summary |
 |---|---|
-| **🧭 Scope** | This category covers agent-environment exploration whose purpose is to create training experience, synthesize interactive tasks, or update and improve an agent policy. |
-| **🎯 Core question** | It includes agentic RL, exploration-aware policy optimization, self-play training, autonomous experience collection, and environment generation. The defining feature is that external interaction supplies or structures the learning signal rather than serving only as test-time search. |
+| **🧭 Scope** | This category covers agent-environment exploration that creates training experience, collects trajectories, synthesizes interactive tasks, generates environments, or updates and improves an agent policy. |
+| **🎯 Core question** | The environment is not merely searched to finish the current task; interaction becomes training experience. It includes agent RL, autonomous experience acquisition, embodied exploration for policy learning, interactive task synthesis, and agent self-play. |
 | **🚧 Open challenges** | Agent-generated trajectories are expensive, correlated, and vulnerable to reward hacking or compounding environment errors, while successful experience is often too sparse to train on directly. Open problems include reliable credit across long interactions, balancing diverse experience with learnability, preventing self-training feedback loops, and transferring policies across tools and environments. |
 
 ### Web, Tools & GUI Training · 5 papers

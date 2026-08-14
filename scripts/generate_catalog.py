@@ -15,10 +15,10 @@ DATA_PATH = ROOT / "data" / "papers.json"
 RESEARCH_MAP_PATH = ROOT / "assets" / "research-map.svg"
 
 AREA_LABELS = {
-    "llm-exploration": "Exploration for LLM Generation & Inference",
-    "rlvr-policy-curriculum-exploration": "Exploration for RLVR, Policy & Curriculum",
-    "agentic-exploration": "Agentic Exploration",
-    "agentic-training-exploration": "Agentic Exploration for Training",
+    "llm-exploration": "Model-Space Exploration at Inference",
+    "rlvr-policy-curriculum-exploration": "Model-Space Exploration for Learning",
+    "agentic-exploration": "Environment-Space Exploration at Inference",
+    "agentic-training-exploration": "Environment-Space Exploration for Learning",
     "understanding-evaluation": "Understanding, Evaluation & Benchmarks",
 }
 
@@ -31,39 +31,39 @@ AREA_ANCHORS = {
 }
 
 AREA_SUMMARIES = {
-    "llm-exploration": "Exploration during language-model generation and inference, without RL policy updates as the central contribution.",
-    "rlvr-policy-curriculum-exploration": "Exploration in RLVR and policy learning, where curricula, rollouts, rewards, or updates change what the model discovers.",
-    "agentic-exploration": "Exploration by language agents acting at inference time over states, tools, observations, and long-horizon trajectories.",
-    "agentic-training-exploration": "Agent-environment exploration used to generate experience, construct training tasks, or improve an agent policy.",
+    "llm-exploration": "Inference-time exploration of alternative generations, reasoning paths, or representations within a model's existing capability space.",
+    "rlvr-policy-curriculum-exploration": "Learning-time exploration that generates informative model outputs, rollouts, data, or tasks for post-training.",
+    "agentic-exploration": "Inference-time exploration of external environment states, actions, tools, observations, and information.",
+    "agentic-training-exploration": "Environment interaction that becomes experience, tasks, or signals for learning an agent policy.",
     "understanding-evaluation": "Work that measures, explains, surveys, or benchmarks exploration rather than primarily introducing an intervention.",
 }
 
 RESEARCH_MAP_TRACKS = [
     {
         "area": "llm-exploration",
-        "eyebrow": "01 / GENERATION",
-        "title": ["Exploration for LLM Generation & Inference"],
+        "eyebrow": "01 / MODEL SPACE · INFERENCE",
+        "title": ["Model-Space Exploration at Inference"],
         "keywords": "sampling  |  search  |  diversity",
         "color": "#6E8FB8",
     },
     {
         "area": "rlvr-policy-curriculum-exploration",
-        "eyebrow": "02 / POLICY LEARNING",
-        "title": ["Exploration for RLVR, Policy & Curriculum"],
-        "keywords": "curriculum  |  reward  |  policy",
+        "eyebrow": "02 / MODEL SPACE · LEARNING",
+        "title": ["Model-Space Exploration for Learning"],
+        "keywords": "rollouts  |  reward  |  data  |  curriculum",
         "color": "#B07A68",
     },
     {
         "area": "agentic-exploration",
-        "eyebrow": "03 / INTERACTION",
-        "title": ["Agentic Exploration"],
+        "eyebrow": "03 / ENVIRONMENT SPACE · INFERENCE",
+        "title": ["Environment-Space Exploration at Inference"],
         "keywords": "tools  |  planning  |  memory  |  worlds",
         "color": "#8B80B6",
     },
     {
         "area": "agentic-training-exploration",
-        "eyebrow": "04 / AGENT LEARNING",
-        "title": ["Agentic Exploration for Training"],
+        "eyebrow": "04 / ENVIRONMENT SPACE · LEARNING",
+        "title": ["Environment-Space Exploration for Learning"],
         "keywords": "experience  |  tasks  |  policy updates",
         "color": "#5F8F8B",
     },
@@ -78,20 +78,20 @@ RESEARCH_MAP_TRACKS = [
 
 AREA_DESCRIPTIONS = {
     "llm-exploration": [
-        "This category covers exploration that happens while a language model is generating or selecting candidate outputs, rather than through a reinforcement-learning update. Typical examples include sampling and decoding strategies, self-consistency, semantic-diversity methods, latent-state steering, and tree or graph search at inference time.",
-        "The central question is how to search a model's existing generative distribution more broadly, safely, or efficiently. Papers belong here when the main contribution improves or analyzes candidate generation, reasoning-path search, or output diversity without making RL post-training the core mechanism.",
+        "This category covers exploration within a language model's existing capability space while it generates or selects candidate outputs. Typical examples include decoding and sampling, self-consistency, reasoning-path search, tree or graph search, representation or latent exploration, and semantic diversity; parameter updates are not the central contribution.",
+        "How can an LLM explore alternative generations or reasoning paths without updating its parameters? Papers belong here when their main contribution improves or analyzes candidate generation, reasoning-path search, output diversity, or internal representations at inference time.",
     ],
     "rlvr-policy-curriculum-exploration": [
-        "This category covers exploration inside RLVR and policy-learning loops: constructing curricula, collecting rollouts, shaping rewards and advantages, and updating a language-model policy.",
-        "The central question is how learning changes what the model can discover. Entropy control, capability expansion, replay, self-play, co-evolution, data selection, and task synthesis belong here when they improve a model policy without making external agent-environment interaction the defining loop.",
+        "This category covers exploration used to make language-model learning more informative: entropy and policy support, rollout exploration, advantage and credit assignment, intrinsic reward, replay, self-play, data exploration, task synthesis, and curriculum learning.",
+        "How can exploration generate informative experience and expand what the model can learn? Papers belong here when the explored object is a model output, reasoning rollout, training-data distribution, or task distribution, rather than an external environment interaction.",
     ],
     "agentic-exploration": [
-        "This category covers language agents that explore an external or persistent environment at inference or test time: webpages, tools, GUIs, knowledge graphs, games, embodied worlds, or multi-agent settings.",
-        "The explored object is a trajectory of states, actions, observations, tool calls, and accumulated memory. Papers belong here when planning, recovery, information seeking, or environment coverage is the main contribution and no training update is central.",
+        "This category covers language agents that explore an external or persistent environment at inference or test time: webpages, GUIs, tools, knowledge graphs, embodied worlds, and other open or interactive settings.",
+        "The explored object is environment state, action, or information rather than only a token or reasoning trajectory. Papers belong here when planning, recovery, information seeking, memory-guided exploration, or environment coverage serves the current task and no learning update is central.",
     ],
     "agentic-training-exploration": [
-        "This category covers agent-environment exploration whose purpose is to create training experience, synthesize interactive tasks, or update and improve an agent policy.",
-        "It includes agentic RL, exploration-aware policy optimization, self-play training, autonomous experience collection, and environment generation. The defining feature is that external interaction supplies or structures the learning signal rather than serving only as test-time search.",
+        "This category covers agent-environment exploration that creates training experience, collects trajectories, synthesizes interactive tasks, generates environments, or updates and improves an agent policy.",
+        "The environment is not merely searched to finish the current task; interaction becomes training experience. It includes agent RL, autonomous experience acquisition, embodied exploration for policy learning, interactive task synthesis, and agent self-play.",
     ],
     "understanding-evaluation": [
         "This category collects empirical analyses, theoretical accounts, surveys, metrics, and benchmarks that help the field understand exploration. Rather than primarily proposing a new exploration intervention, these works measure diversity, characterize training dynamics, evaluate capability boundaries, or establish a shared vocabulary and test bed.",
@@ -545,7 +545,7 @@ def render_readme(catalog: dict) -> str:
         "| Start here | What you will find |",
         "|---|---|",
         "| **[What counts as exploration](#what-counts-as-exploration)** | Sutton & Barto frame exploration as trying alternatives to improve future action selection, while exploitation uses current knowledge to obtain reward. |",
-        "| **[Research map](#research-map)** | Five categories spanning LLM generation, RLVR and policy learning, agentic inference, agentic training, and evidence. |",
+        "| **[Research map](#research-map)** | Five categories organized by exploration space (model or environment) and purpose (inference or learning), plus evidence. |",
         "| **[Taxonomy lens](#taxonomy-lens)** | How phase, level, signal, mechanism, problem, and setting describe each paper. |",
         "| **[Quick start](#start-here)** | 10 papers to help you quickly understand exploration, selected manually rather than ranked automatically. |",
         "| **[Full catalog](#catalog)** | All curated papers, grouped by their primary research category. |",
@@ -563,10 +563,10 @@ def render_readme(catalog: dict) -> str:
         "",
         "| Category | Best for |",
         "|---|---|",
-        "| **[Exploration for LLM Generation & Inference](#category-1)** | Sampling, decoding, reasoning-path search, and output diversity without a learning update. |",
-        "| **[Exploration for RLVR, Policy & Curriculum](#category-2)** | Curricula, RL/RLVR updates, replay, rewards, and language-model policy-distribution control. |",
-        "| **[Agentic Exploration](#category-3)** | Test-time exploration across the web, tools, GUIs, knowledge graphs, and embodied environments. |",
-        "| **[Agentic Exploration for Training](#category-4)** | Agent experience collection, interactive task synthesis, self-play training, and agent policy optimization. |",
+        "| **[Model-Space Exploration at Inference](#category-1)** | Alternative generations, reasoning paths, and representations without parameter updates. |",
+        "| **[Model-Space Exploration for Learning](#category-2)** | Informative model rollouts, rewards, data, tasks, and curricula for post-training. |",
+        "| **[Environment-Space Exploration at Inference](#category-3)** | Test-time exploration of external states, actions, tools, and information. |",
+        "| **[Environment-Space Exploration for Learning](#category-4)** | Environment interaction that becomes trajectories, tasks, or learning signals. |",
         "| **[Understanding, Evaluation & Benchmarks](#category-5)** | Surveys, theory, metrics, benchmarks, and evidence about exploration. |",
         "",
         "<a id=\"taxonomy-lens\"></a>",

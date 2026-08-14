@@ -17,7 +17,7 @@
 | Start here | What you will find |
 |---|---|
 | **[What counts as exploration](#what-counts-as-exploration)** | Sutton & Barto frame exploration as trying alternatives to improve future action selection, while exploitation uses current knowledge to obtain reward. |
-| **[Research map](#research-map)** | Five categories spanning LLM generation, RLVR and policy learning, agentic inference, agentic training, and evidence. |
+| **[Research map](#research-map)** | Five categories organized by exploration space (model or environment) and purpose (inference or learning), plus evidence. |
 | **[Taxonomy lens](#taxonomy-lens)** | How phase, level, signal, mechanism, problem, and setting describe each paper. |
 | **[Quick start](#start-here)** | 10 papers to help you quickly understand exploration, selected manually rather than ranked automatically. |
 | **[Full catalog](#catalog)** | All curated papers, grouped by their primary research category. |
@@ -35,10 +35,10 @@ Every paper has one home in the map; its tags then describe the research lens. S
 
 | Category | Best for |
 |---|---|
-| **[Exploration for LLM Generation & Inference](#category-1)** | Sampling, decoding, reasoning-path search, and output diversity without a learning update. |
-| **[Exploration for RLVR, Policy & Curriculum](#category-2)** | Curricula, RL/RLVR updates, replay, rewards, and language-model policy-distribution control. |
-| **[Agentic Exploration](#category-3)** | Test-time exploration across the web, tools, GUIs, knowledge graphs, and embodied environments. |
-| **[Agentic Exploration for Training](#category-4)** | Agent experience collection, interactive task synthesis, self-play training, and agent policy optimization. |
+| **[Model-Space Exploration at Inference](#category-1)** | Alternative generations, reasoning paths, and representations without parameter updates. |
+| **[Model-Space Exploration for Learning](#category-2)** | Informative model rollouts, rewards, data, tasks, and curricula for post-training. |
+| **[Environment-Space Exploration at Inference](#category-3)** | Test-time exploration of external states, actions, tools, and information. |
+| **[Environment-Space Exploration for Learning](#category-4)** | Environment interaction that becomes trajectories, tasks, or learning signals. |
 | **[Understanding, Evaluation & Benchmarks](#category-5)** | Surveys, theory, metrics, benchmarks, and evidence about exploration. |
 
 <a id="taxonomy-lens"></a>
@@ -63,10 +63,10 @@ The former Token / Sequence / Policy sections are now `level` tags. Entropy, tem
 
 | Collection | Papers |
 |---|---:|
-| Exploration for LLM Generation & Inference | 62 |
-| Exploration for RLVR, Policy & Curriculum | 125 |
-| Agentic Exploration | 25 |
-| Agentic Exploration for Training | 20 |
+| Model-Space Exploration at Inference | 62 |
+| Model-Space Exploration for Learning | 125 |
+| Environment-Space Exploration at Inference | 25 |
+| Environment-Space Exploration for Learning | 20 |
 | Understanding, Evaluation & Benchmarks | 30 |
 | **Curated total** | **262** |
 
@@ -87,15 +87,15 @@ The former Token / Sequence / Policy sections are now `level` tags. Entropy, tem
 ## Quick Start: 10 Papers to Help You Quickly Understand Exploration
 
 - **[From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR](https://arxiv.org/abs/2508.07534)** — arXiv `2508.07534` · Understanding, Evaluation & Benchmarks · ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
-- **[Representation-Based Exploration for Language Models: From Test-Time to Post-Training](https://iclr.cc/virtual/2026/poster/10009438)** — **ICLR 2026** · Exploration for LLM Generation & Inference · ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square)
-- **[Reasoning with Sampling: Your Base Model is Smarter Than You Think](https://iclr.cc/virtual/2026/poster/10009093)** — **ICLR 2026** · Exploration for LLM Generation & Inference · ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
-- **[CDE: Curiosity-Driven Exploration for Efficient Reinforcement Learning in Large Language Models](https://iclr.cc/virtual/2026/poster/10011417)** — **ICLR 2026** · Exploration for RLVR, Policy & Curriculum · ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square)
-- **[Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning](https://arxiv.org/abs/2506.01939)** — arXiv `2506.01939` · Exploration for RLVR, Policy & Curriculum · ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
-- **[ProRL: Prolonged Reinforcement Learning Expands Reasoning Boundaries in Large Language Models](https://arxiv.org/abs/2505.24864)** — arXiv `2505.24864` · Exploration for RLVR, Policy & Curriculum · ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: coverage](https://img.shields.io/badge/signal-coverage-78935F?style=flat-square) ![mechanism: regularization](https://img.shields.io/badge/mechanism-regularization-737FB0?style=flat-square)
-- **[The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models](https://arxiv.org/abs/2505.22617)** — arXiv `2505.22617` · Exploration for RLVR, Policy & Curriculum · ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![mechanism: regularization](https://img.shields.io/badge/mechanism-regularization-737FB0?style=flat-square)
-- **[From Exploration to Exploitation: A Two-Stage Entropy RLVR Approach for Noise-Tolerant MLLM Training](https://arxiv.org/abs/2511.07738)** — arXiv `2511.07738` · Exploration for RLVR, Policy & Curriculum · ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![mechanism: noise/perturbation](https://img.shields.io/badge/mechanism-noise%2Fperturbation-8176A8?style=flat-square)
-- **[Learning to Explore: Scaling Agentic Reasoning via Exploration-Aware Policy Optimization](https://icml.cc/virtual/2026/poster/63287)** — **ICML 2026** · Agentic Exploration for Training · ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
-- **[Meta-RL Induces Exploration in Language Agents](https://iclr.cc/virtual/2026/poster/10011567)** — **ICLR 2026** · Agentic Exploration for Training · ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
+- **[Representation-Based Exploration for Language Models: From Test-Time to Post-Training](https://iclr.cc/virtual/2026/poster/10009438)** — **ICLR 2026** · Model-Space Exploration at Inference · ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square)
+- **[Reasoning with Sampling: Your Base Model is Smarter Than You Think](https://iclr.cc/virtual/2026/poster/10009093)** — **ICLR 2026** · Model-Space Exploration at Inference · ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
+- **[CDE: Curiosity-Driven Exploration for Efficient Reinforcement Learning in Large Language Models](https://iclr.cc/virtual/2026/poster/10011417)** — **ICLR 2026** · Model-Space Exploration for Learning · ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square)
+- **[Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning](https://arxiv.org/abs/2506.01939)** — arXiv `2506.01939` · Model-Space Exploration for Learning · ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
+- **[ProRL: Prolonged Reinforcement Learning Expands Reasoning Boundaries in Large Language Models](https://arxiv.org/abs/2505.24864)** — arXiv `2505.24864` · Model-Space Exploration for Learning · ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: coverage](https://img.shields.io/badge/signal-coverage-78935F?style=flat-square) ![mechanism: regularization](https://img.shields.io/badge/mechanism-regularization-737FB0?style=flat-square)
+- **[The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models](https://arxiv.org/abs/2505.22617)** — arXiv `2505.22617` · Model-Space Exploration for Learning · ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![mechanism: regularization](https://img.shields.io/badge/mechanism-regularization-737FB0?style=flat-square)
+- **[From Exploration to Exploitation: A Two-Stage Entropy RLVR Approach for Noise-Tolerant MLLM Training](https://arxiv.org/abs/2511.07738)** — arXiv `2511.07738` · Model-Space Exploration for Learning · ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![mechanism: noise/perturbation](https://img.shields.io/badge/mechanism-noise%2Fperturbation-8176A8?style=flat-square)
+- **[Learning to Explore: Scaling Agentic Reasoning via Exploration-Aware Policy Optimization](https://icml.cc/virtual/2026/poster/63287)** — **ICML 2026** · Environment-Space Exploration for Learning · ![phase: rl-training](https://img.shields.io/badge/phase-rl--training-7284C7?style=flat-square) ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
+- **[Meta-RL Induces Exploration in Language Agents](https://iclr.cc/virtual/2026/poster/10011567)** — **ICLR 2026** · Environment-Space Exploration for Learning · ![phase: inference](https://img.shields.io/badge/phase-inference-5B9AB5?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
 
 <a id="catalog"></a>
 
@@ -105,12 +105,12 @@ The former Token / Sequence / Policy sections are now `level` tags. Entropy, tem
 
 ### Categories
 
-1. [Exploration for LLM Generation & Inference](#category-1)
+1. [Model-Space Exploration at Inference](#category-1)
    - [Decoding & Sampling](#category-1-decoding-sampling) · 14 papers
    - [Search & Deliberation](#category-1-search-deliberation) · 28 papers
    - [Representation & Latent Steering](#category-1-representation-steering) · 6 papers
    - [Diversity & Coverage](#category-1-diversity-coverage) · 14 papers
-2. [Exploration for RLVR, Policy & Curriculum](#category-2)
+2. [Model-Space Exploration for Learning](#category-2)
    - [Entropy & Distribution Control](#category-2-entropy-distribution) · 43 papers
    - [Credit Assignment & Optimization](#category-2-credit-optimization) · 17 papers
    - [Reward & Rollout Shaping](#category-2-reward-rollout) · 9 papers
@@ -118,12 +118,12 @@ The former Token / Sequence / Policy sections are now `level` tags. Entropy, tem
    - [Capability Expansion & Training Interventions](#category-2-capability-dynamics) · 43 papers
    - [Data Selection & Prompt Exploration](#category-2-data-selection-prompting) · 5 papers
    - [Task Synthesis & Curriculum](#category-2-task-synthesis-curriculum) · 1 paper
-3. [Agentic Exploration](#category-3)
+3. [Environment-Space Exploration at Inference](#category-3)
    - [Web, Tools & GUI](#category-3-web-tools-gui) · 4 papers
    - [Planning & Interactive Search](#category-3-planning-interaction) · 10 papers
    - [Embodied & Simulated Environments](#category-3-embodied-environments) · 2 papers
    - [Knowledge & Memory-Guided Exploration](#category-3-knowledge-memory) · 9 papers
-4. [Agentic Exploration for Training](#category-4)
+4. [Environment-Space Exploration for Learning](#category-4)
    - [Web, Tools & GUI Training](#category-4-web-tools-gui) · 5 papers
    - [Agentic Policy Learning](#category-4-planning-interaction) · 12 papers
    - [Embodied & Simulated Training](#category-4-embodied-environments) · 2 papers
@@ -136,12 +136,12 @@ The former Token / Sequence / Policy sections are now `level` tags. Entropy, tem
 
 <a id="category-1"></a>
 
-## 1. Exploration for LLM Generation & Inference
+## 1. Model-Space Exploration at Inference
 
 | Research lens | Summary |
 |---|---|
-| **🧭 Scope** | This category covers exploration that happens while a language model is generating or selecting candidate outputs, rather than through a reinforcement-learning update. Typical examples include sampling and decoding strategies, self-consistency, semantic-diversity methods, latent-state steering, and tree or graph search at inference time. |
-| **🎯 Core question** | The central question is how to search a model's existing generative distribution more broadly, safely, or efficiently. Papers belong here when the main contribution improves or analyzes candidate generation, reasoning-path search, or output diversity without making RL post-training the core mechanism. |
+| **🧭 Scope** | This category covers exploration within a language model's existing capability space while it generates or selects candidate outputs. Typical examples include decoding and sampling, self-consistency, reasoning-path search, tree or graph search, representation or latent exploration, and semantic diversity; parameter updates are not the central contribution. |
+| **🎯 Core question** | How can an LLM explore alternative generations or reasoning paths without updating its parameters? Papers belong here when their main contribution improves or analyzes candidate generation, reasoning-path search, output diversity, or internal representations at inference time. |
 | **🚧 Open challenges** | The central challenge is still the diversity-quality-efficiency trade-off: broader sampling and search can improve coverage while rapidly increasing inference cost or admitting low-quality paths. Results are also hard to compare because gains from exploration are often entangled with extra compute, verifier strength, and model scale, while semantic and latent diversity lack reliable task-independent measures. |
 
 <a id="category-1-decoding-sampling"></a>
@@ -245,12 +245,12 @@ Methods that counter mode collapse and expand semantic coverage, emphasizing how
 
 <a id="category-2"></a>
 
-## 2. Exploration for RLVR, Policy & Curriculum
+## 2. Model-Space Exploration for Learning
 
 | Research lens | Summary |
 |---|---|
-| **🧭 Scope** | This category covers exploration inside RLVR and policy-learning loops: constructing curricula, collecting rollouts, shaping rewards and advantages, and updating a language-model policy. |
-| **🎯 Core question** | The central question is how learning changes what the model can discover. Entropy control, capability expansion, replay, self-play, co-evolution, data selection, and task synthesis belong here when they improve a model policy without making external agent-environment interaction the defining loop. |
+| **🧭 Scope** | This category covers exploration used to make language-model learning more informative: entropy and policy support, rollout exploration, advantage and credit assignment, intrinsic reward, replay, self-play, data exploration, task synthesis, and curriculum learning. |
+| **🎯 Core question** | How can exploration generate informative experience and expand what the model can learn? Papers belong here when the explored object is a model output, reasoning rollout, training-data distribution, or task distribution, rather than an external environment interaction. |
 | **🚧 Open challenges** | Training-time exploration remains vulnerable to entropy collapse, biased or sparse rewards, unstable credit assignment, and curricula that overfit to what a verifier can already recognize. A key open question is whether an intervention creates genuinely new capability or only redistributes probability mass over existing behavior; replay, self-play, and population methods add further stability, data-quality, and compute challenges. |
 
 <a id="category-2-entropy-distribution"></a>
@@ -444,12 +444,12 @@ Methods that generate and sequence tasks across difficulty levels, with adaptive
 
 <a id="category-3"></a>
 
-## 3. Agentic Exploration
+## 3. Environment-Space Exploration at Inference
 
 | Research lens | Summary |
 |---|---|
-| **🧭 Scope** | This category covers language agents that explore an external or persistent environment at inference or test time: webpages, tools, GUIs, knowledge graphs, games, embodied worlds, or multi-agent settings. |
-| **🎯 Core question** | The explored object is a trajectory of states, actions, observations, tool calls, and accumulated memory. Papers belong here when planning, recovery, information seeking, or environment coverage is the main contribution and no training update is central. |
+| **🧭 Scope** | This category covers language agents that explore an external or persistent environment at inference or test time: webpages, GUIs, tools, knowledge graphs, embodied worlds, and other open or interactive settings. |
+| **🎯 Core question** | The explored object is environment state, action, or information rather than only a token or reasoning trajectory. Papers belong here when planning, recovery, information seeking, memory-guided exploration, or environment coverage serves the current task and no learning update is central. |
 | **🚧 Open challenges** | Long horizons, partial observability, and compounding action errors make efficient coverage and reliable recovery difficult, especially when tools or environments change. Current benchmarks often simplify feedback and reset conditions, leaving unresolved questions around realistic exploration cost, safe interaction, memory quality, reproducibility, and whether improvements transfer beyond a narrow environment. |
 
 <a id="category-3-web-tools-gui"></a>
@@ -516,12 +516,12 @@ Agents that traverse knowledge graphs or use accumulated memory to guide future 
 
 <a id="category-4"></a>
 
-## 4. Agentic Exploration for Training
+## 4. Environment-Space Exploration for Learning
 
 | Research lens | Summary |
 |---|---|
-| **🧭 Scope** | This category covers agent-environment exploration whose purpose is to create training experience, synthesize interactive tasks, or update and improve an agent policy. |
-| **🎯 Core question** | It includes agentic RL, exploration-aware policy optimization, self-play training, autonomous experience collection, and environment generation. The defining feature is that external interaction supplies or structures the learning signal rather than serving only as test-time search. |
+| **🧭 Scope** | This category covers agent-environment exploration that creates training experience, collects trajectories, synthesizes interactive tasks, generates environments, or updates and improves an agent policy. |
+| **🎯 Core question** | The environment is not merely searched to finish the current task; interaction becomes training experience. It includes agent RL, autonomous experience acquisition, embodied exploration for policy learning, interactive task synthesis, and agent self-play. |
 | **🚧 Open challenges** | Agent-generated trajectories are expensive, correlated, and vulnerable to reward hacking or compounding environment errors, while successful experience is often too sparse to train on directly. Open problems include reliable credit across long interactions, balancing diverse experience with learnability, preventing self-training feedback loops, and transferring policies across tools and environments. |
 
 <a id="category-4-web-tools-gui"></a>
