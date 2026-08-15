@@ -28,7 +28,7 @@ Methods that broaden candidate generation at inference time, with probability sh
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square)
   - **Mechanism:** ![mechanism: temperature-control](https://img.shields.io/badge/mechanism-temperature--control-6B84AD?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-long.200/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - Thermometer of Thoughts: Enhancing LLM’s Exploration via Attention Temperature Modulation is included in model-space exploration at inference because it expands or controls alternative candidate generation. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[Scalable Power Sampling: Unlocking Efficient, Training-Free Reasoning for LLMs via Distribution Sharpening](https://icml.cc/virtual/2026/poster/63925)** — **ICML 2026**
   - Authors: Xiaotong Ji, Rasul Tutunov, Matthieu Zimmer, Haitham Bou Ammar
   - Type: `method` · Date: `2026`
@@ -37,7 +37,7 @@ Methods that broaden candidate generation at inference time, with probability sh
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square)
   - **Mechanism:** ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/63925) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Scalable Power Sampling: Unlocking Efficient, Training-Free Reasoning for LLMs via Distribution Sharpening is included in model-space exploration at inference because it expands or controls alternative candidate generation. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[Sample Smart, Not Hard: Correctness-First Decoding for Better Reasoning in LLMs](https://iclr.cc/virtual/2026/poster/10007335)** — **ICLR 2026**
   - Authors: Xueyan Li, Guinan Su, Mrinmaya Sachan, Jonas Geiping
   - Type: `method` · Date: `2026`
@@ -45,7 +45,7 @@ Methods that broaden candidate generation at inference time, with probability sh
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Mechanism:** ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10007335) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Sample Smart, Not Hard: Correctness-First Decoding for Better Reasoning in LLMs is included in model-space exploration at inference because it expands or controls alternative candidate generation. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `sampling/decoding` as the recorded exploration evidence.
 - 🏆 **[Reliability-Aware Adaptive Self-Consistency for Efficient Sampling in LLM Reasoning](https://aclanthology.org/2026.findings-acl.1085/)** — **ACL 2026 Findings**
   - Authors: Junseok Kim, Nakyeong Yang, Kyungmin Min, Kyomin Jung
   - Type: `method` · Date: `2026`
@@ -53,7 +53,7 @@ Methods that broaden candidate generation at inference time, with probability sh
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Mechanism:** ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.1085/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - Reliability-Aware Adaptive Self-Consistency for Efficient Sampling in LLM Reasoning is included in model-space exploration at inference because it expands or controls alternative candidate generation. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `sampling/decoding` as the recorded exploration evidence.
 - 🏆 **[One-shot Entropy Minimization for Language Model Reasoning](https://icml.cc/virtual/2026/poster/66725)** — **ICML 2026**
   - Authors: Zitian Gao, Yilong Chen, Haoming Luo, Joey Zhou, Bryan Dai
   - Type: `method` · Date: `2026`
@@ -61,7 +61,7 @@ Methods that broaden candidate generation at inference time, with probability sh
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/66725) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - One-shot Entropy Minimization for Language Model Reasoning is included in model-space exploration at inference because it expands or controls alternative candidate generation. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[ModeX: Evaluator-Free Best-of-N Selection for Open-Ended Generation](https://aclanthology.org/2026.acl-long.655/)** — **ACL 2026 Main**
   - Authors: Hyeong Kyu Choi, Sharon Li
   - Type: `method` · Date: `2026`
@@ -70,7 +70,7 @@ Methods that broaden candidate generation at inference time, with probability sh
   - **Mechanism:** ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
   - **Setting:** ![setting: creative/open-ended](https://img.shields.io/badge/setting-creative%2Fopen--ended-A2778D?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-long.655/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - ModeX: Evaluator-Free Best-of-N Selection for Open-Ended Generation is included in model-space exploration at inference because it expands or controls alternative candidate generation. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `sampling/decoding` as the recorded exploration evidence.
 - 🏆 **[From Bits to Rounds: Parallel Decoding with Exploration for Diffusion Language Models](https://icml.cc/virtual/2026/poster/65555)** — **ICML 2026**
   - Authors: Hengyu Fu, Baihe Huang, Virginia Adams, Charles Wang, Junkeun Yi, Mohammad Mahdi Kamani, Venkat Krishna Srinivasan, Jiantao Jiao
   - Type: `method` · Date: `2026`
@@ -78,7 +78,7 @@ Methods that broaden candidate generation at inference time, with probability sh
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Mechanism:** ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/65555) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - From Bits to Rounds: Parallel Decoding with Exploration for Diffusion Language Models is included in model-space exploration at inference because it expands or controls alternative candidate generation. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `sampling/decoding` as the recorded exploration evidence.
 - 🏆 **[Entropy-Aware On-Policy Distillation of Language Models](https://icml.cc/virtual/2026/poster/64855)** — **ICML 2026**
   - Authors: Woogyeol Jin, Taywon Min, Yongjin Yang, Swanand Kadhe, Yi Zhou, Dennis Wei, Nathalie Baracaldo, Kimin Lee
   - Type: `method` · Date: `2026`
@@ -86,7 +86,7 @@ Methods that broaden candidate generation at inference time, with probability sh
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/64855) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Entropy-Aware On-Policy Distillation of Language Models is included in model-space exploration at inference because it expands or controls alternative candidate generation. It treats `policy-distribution` as the exploration object during `supervised-post-training`, `rl-training`, and `inference`, using `supervised-post-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[EAGer: Entropy-Aware GEneRation for Adaptive Inference-Time Scaling](https://icml.cc/virtual/2026/poster/65185)** — **ICML 2026**
   - Authors: Daniel Scalena, Leonidas Zotos, Elisabetta Fersini, Malvina Nissim, Ahmet Üstün
   - Type: `method` · Date: `2026`
@@ -94,7 +94,7 @@ Methods that broaden candidate generation at inference time, with probability sh
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/65185) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - EAGer: Entropy-Aware GEneRation for Adaptive Inference-Time Scaling is included in model-space exploration at inference because it expands or controls alternative candidate generation. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[ConMA : Confidence-Guided Kernel Sampling with Multi-Stage Aggregation for LLM Reasoning](https://aclanthology.org/2026.findings-acl.1475/)** — **ACL 2026 Findings**
   - Authors: Yinuo Wang, Qingjie Li, Wenyao Cui, Qiuchi Li, Zhang Huaping
   - Type: `method` · Date: `2026`
@@ -103,7 +103,7 @@ Methods that broaden candidate generation at inference time, with probability sh
   - **Signal:** ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square)
   - **Mechanism:** ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.1475/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - ConMA : Confidence-Guided Kernel Sampling with Multi-Stage Aggregation for LLM Reasoning is included in model-space exploration at inference because it expands or controls alternative candidate generation. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `uncertainty/confidence` as the recorded exploration evidence.
 - 🏆 **[Beyond Rejection Sampling: Trajectory Fusion for Scaling Mathematical Reasoning](https://aclanthology.org/2026.findings-acl.390/)** — **ACL 2026 Findings**
   - Authors: Jie Deng, Hanshuang Tong, Jun Li, Shining Liang, Ning Wu, Hongzhi Li, Yutao Xie
   - Type: `method` · Date: `2026`
@@ -112,7 +112,7 @@ Methods that broaden candidate generation at inference time, with probability sh
   - **Mechanism:** ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
   - **Setting:** ![setting: math](https://img.shields.io/badge/setting-math-6D8CAB?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.390/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - Beyond Rejection Sampling: Trajectory Fusion for Scaling Mathematical Reasoning is included in model-space exploration at inference because it expands or controls alternative candidate generation. It treats `trajectory/action` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `sampling/decoding` as the recorded exploration evidence.
 - **[The Road Less Traveled: Enhancing Exploration in LLMs via Sequential Sampling](https://arxiv.org/abs/2510.15502)** — arXiv `2510.15502`
   - Authors: Shijia Kang, Muhan Zhang
   - Type: `method` · Date: `2025-10-17`
@@ -121,7 +121,7 @@ Methods that broaden candidate generation at inference time, with probability sh
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square)
   - **Mechanism:** ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
+  - The Road Less Traveled: Enhancing Exploration in LLMs via Sequential Sampling is included in model-space exploration at inference because it expands or controls alternative candidate generation. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 - **[Evolving Language Models without Labels: Majority Drives Selection, Novelty Promotes Variation](https://arxiv.org/abs/2509.15194)** — arXiv `2509.15194`
   - Authors: Yujun Zhou, Zhenwen Liang, Haolin Liu, Wenhao Yu, Kishan Panaganti, Linfeng Song, Dian Yu, Xiangliang Zhang et al.
   - Type: `method` · Date: `2025-09-18`
@@ -129,7 +129,7 @@ Methods that broaden candidate generation at inference time, with probability sh
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Signal:** ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, uncertainty/confidence, novelty/curiosity.
+  - Evolving Language Models without Labels: Majority Drives Selection, Novelty Promotes Variation is included in model-space exploration at inference because it expands or controls alternative candidate generation. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `novelty/curiosity` as the recorded exploration evidence.
 - **[Self-Consistency Improves Chain of Thought Reasoning in Language Models](https://iclr.cc/virtual/2023/poster/11718)** — ICLR 2023
   - Authors: Xuezhi Wang, Jason Wei, Dale Schuurmans, Quoc V. Le, Ed H. Chi, Sharan Narang, Aakanksha Chowdhery, Denny Zhou
   - Type: `method` · Date: `2023`
@@ -153,7 +153,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10008718) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - e3: Learning to Explore Enables Extrapolation of Test-Time Compute for LLMs is included in model-space exploration at inference because it searches and evaluates alternative reasoning paths. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Uncertainty-Aware Test-Time Search for Optimization Problem Solving](https://aclanthology.org/2026.acl-long.1975/)** — **ACL 2026 Main**
   - Authors: Linlin Yu, Xujiang Zhao, Dong Li, Yanchi Liu, Wei Cheng, Zhengzhang Chen, Chen Zhao, Feng Chen et al.
   - Type: `method` · Date: `2026`
@@ -162,7 +162,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - **Signal:** ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-long.1975/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - Uncertainty-Aware Test-Time Search for Optimization Problem Solving is included in model-space exploration at inference because it searches and evaluates alternative reasoning paths. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `uncertainty/confidence` as the recorded exploration evidence.
 - 🏆 **[Towards Diverse Scientific Hypothesis Search with Large Language Models](https://icml.cc/virtual/2026/poster/66259)** — **ICML 2026**
   - Authors: Haorui Wang, Parshin Shojaee, Kazem Meidani, Kunyang Sun, Jose Miguel Hernandez-Lobato, Teresa Head-Gordon, Jiajun He, Chandan Reddy et al.
   - Type: `method` · Date: `2026`
@@ -171,7 +171,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/66259) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Towards Diverse Scientific Hypothesis Search with Large Language Models is included in model-space exploration at inference because it searches and evaluates alternative reasoning paths. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[Thought Branches: Interpreting LLM Reasoning Requires Resampling](https://iclr.cc/virtual/2026/poster/10008605)** — **ICLR 2026**
   - Authors: Uzay Macar, Paul Bogdan, Senthooran Rajamanoharan, Neel Nanda
   - Type: `method` · Date: `2026`
@@ -179,7 +179,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Mechanism:** ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square) ![mechanism: backtracking/resampling](https://img.shields.io/badge/mechanism-backtracking%2Fresampling-8E759D?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10008605) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Thought Branches: Interpreting LLM Reasoning Requires Resampling is included in model-space exploration at inference because it searches and evaluates alternative reasoning paths. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `sampling/decoding` as the recorded exploration evidence.
 - 🏆 **[Think Earlier, Not Longer: Prompt Optimization via Reducing Unhealthy Exploration](https://aclanthology.org/2026.findings-acl.817/)** — **ACL 2026 Findings**
   - Authors: Ling-I Wu, Minyu Chen, Jingyang Li, Xi Chang, Guoqiang Li
   - Type: `method` · Date: `2026`
@@ -187,7 +187,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - **Level:** ![level: data/task](https://img.shields.io/badge/level-data%2Ftask-9A7F9C?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.817/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - Think Earlier, Not Longer: Prompt Optimization via Reducing Unhealthy Exploration is included in model-space exploration at inference because it searches and evaluates alternative reasoning paths. It treats `data/task` as the exploration object during `inference`, using `inference`, `data/task`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Student Guides Teacher: Weak-to-Strong Inference via Spectral Orthogonal Exploration](https://aclanthology.org/2026.acl-long.761/)** — **ACL 2026 Main**
   - Authors: Dayu Wang, Jiaye Yang, Weikang Li, Jiahui Liang, Yang Li, Deguo Xia, Jizhou Huang
   - Type: `method` · Date: `2026`
@@ -195,7 +195,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-long.761/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - Student Guides Teacher: Weak-to-Strong Inference via Spectral Orthogonal Exploration is included in model-space exploration at inference because it searches and evaluates alternative reasoning paths. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[SeDev: Structured Semantic Exploration for LLM-Driven Code Generation](https://aclanthology.org/2026.acl-long.1641/)** — **ACL 2026 Main**
   - Authors: Ronghui Yang, Jie Liu, Jiajie Zeng, Jiexin Wang, Jiuchuan Jiang, Bo An, Yi Cai, Mengchen Zhao
   - Type: `method` · Date: `2026`
@@ -204,7 +204,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Setting:** ![setting: code](https://img.shields.io/badge/setting-code-697F9D?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-long.1641/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - SeDev: Structured Semantic Exploration for LLM-Driven Code Generation is included in model-space exploration at inference because it searches and evaluates alternative reasoning paths. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Neural Chain-of-Thought Search: Searching the Optimal Reasoning Path to Enhance Large Language Models](https://aclanthology.org/2026.findings-acl.1149/)** — **ACL 2026 Findings**
   - Authors: Guoming Ling, Zhongzhan Huang, Yupei Lin, Junxin Li, Shanshan Zhong, Hefeng Wu, Liang Lin
   - Type: `method` · Date: `2026`
@@ -212,7 +212,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.1149/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - Neural Chain-of-Thought Search: Searching the Optimal Reasoning Path to Enhance Large Language Models is included in model-space exploration at inference because it searches and evaluates alternative reasoning paths. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Multi-LLM Collaborative Search for Complex Problem Solving](https://aclanthology.org/2026.findings-acl.2115/)** — **ACL 2026 Findings**
   - Authors: Sen Yang, Yafu Li, Wai Lam, Yu Cheng
   - Type: `method` · Date: `2026`
@@ -220,7 +220,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - **Level:** ![level: population/multi-policy](https://img.shields.io/badge/level-population%2Fmulti--policy-A07593?style=flat-square)
   - **Mechanism:** ![mechanism: ensemble/population](https://img.shields.io/badge/mechanism-ensemble%2Fpopulation-8774A5?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.2115/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - Multi-LLM Collaborative Search for Complex Problem Solving is included in model-space exploration at inference because it searches and evaluates alternative reasoning paths. It treats `population/multi-policy` as the exploration object during `inference`, using `inference`, `population/multi-policy`, and `ensemble/population` as the recorded exploration evidence.
 - 🏆 **[LLM Inductive Reasoning Through Multi-Agent Enhanced Monte Carlo Tree Search](https://aclanthology.org/2026.findings-acl.1178/)** — **ACL 2026 Findings**
   - Authors: Xiang Li, Yucheng Zhou, Xiangzhi Wei, Zesheng Shi, Haiyuan Wan, Gong Yifan, Fangming Liu, Jing Li
   - Type: `method` · Date: `2026`
@@ -229,7 +229,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - **Mechanism:** ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square) ![mechanism: ensemble/population](https://img.shields.io/badge/mechanism-ensemble%2Fpopulation-8774A5?style=flat-square)
   - **Setting:** ![setting: multi-agent](https://img.shields.io/badge/setting-multi--agent-8D7595?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.1178/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - LLM Inductive Reasoning Through Multi-Agent Enhanced Monte Carlo Tree Search is included in model-space exploration at inference because it searches and evaluates alternative reasoning paths. It treats `trajectory/action` and `population/multi-policy` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `tree-search/branching` as the recorded exploration evidence.
 - 🏆 **[HyPER: Bridging Exploration and Exploitation for Scalable LLM Reasoning with Hypothesis Path Expansion and Reduction](https://icml.cc/virtual/2026/poster/65181)** — **ICML 2026**
   - Authors: Shengxuan Qiu, Haochen Huang, Shuzhang Zhong, Pengfei Zuo, Meng Li
   - Type: `method` · Date: `2026`
@@ -238,7 +238,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - **Mechanism:** ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square)
   - **Problem:** ![problem: exploration-exploitation](https://img.shields.io/badge/problem-exploration--exploitation-A27C63?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/65181) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - HyPER: Bridging Exploration and Exploitation for Scalable LLM Reasoning with Hypothesis Path Expansion and Reduction is included in model-space exploration at inference because it searches and evaluates alternative reasoning paths. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `tree-search/branching` as the recorded exploration evidence.
 - 🏆 **[Escaping Mode Collapse in LLM Generation](https://icml.cc/virtual/2026/poster/65524)** — **ICML 2026**
   - Authors: Xin Du, Kumiko Tanaka-Ishii
   - Type: `method` · Date: `2026`
@@ -247,7 +247,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Problem:** ![problem: mode-collapse](https://img.shields.io/badge/problem-mode--collapse-B57676?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/65524) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Escaping Mode Collapse in LLM Generation is included in model-space exploration at inference because it searches and evaluates alternative reasoning paths. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Entropy-informed Decoding: Adaptive Information-Driven Branching](https://icml.cc/virtual/2026/poster/61896)** — **ICML 2026**
   - Authors: Benjamin Patrick Evans, Sumitra Ganesh, Leo Ardon
   - Type: `method` · Date: `2026`
@@ -256,7 +256,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square)
   - **Mechanism:** ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/61896) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Entropy-informed Decoding: Adaptive Information-Driven Branching is included in model-space exploration at inference because it searches and evaluates alternative reasoning paths. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[Efficient Test-Time Scaling via Hierarchical Search and Self-Verification for Discrete Diffusion Language Models](https://icml.cc/virtual/2026/poster/64102)** — **ICML 2026**
   - Authors: Jinbin Bai, Yixuan Li, Yuchen Zhu, Yi Xin, Qingyu Shi, Aosong Feng, Xiaohong Liu, Molei Tao et al.
   - Type: `method` · Date: `2026`
@@ -264,7 +264,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/64102) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Efficient Test-Time Scaling via Hierarchical Search and Self-Verification for Discrete Diffusion Language Models is included in model-space exploration at inference because it searches and evaluates alternative reasoning paths. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Diffuse Thinking: Exploring Diffusion Language Models as Efficient Thought Proposers for Reasoning](https://aclanthology.org/2026.acl-long.1231/)** — **ACL 2026 Main**
   - Authors: Chenyang Shao, Sijian Ren, Fengli Xu, Yong Li
   - Type: `method` · Date: `2026`
@@ -272,7 +272,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-long.1231/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - Diffuse Thinking: Exploring Diffusion Language Models as Efficient Thought Proposers for Reasoning is included in model-space exploration at inference because it searches and evaluates alternative reasoning paths. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Continuous Chain of Thought Enables Parallel Exploration and Reasoning](https://iclr.cc/virtual/2026/poster/10007055)** — **ICLR 2026**
   - Authors: Alperen Gozeten, Muhammed Ildiz, Xuechen Zhang, Hrayr Harutyunyan, Ankit Singh Rawat, Samet Oymak
   - Type: `method` · Date: `2026`
@@ -280,7 +280,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10007055) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Continuous Chain of Thought Enables Parallel Exploration and Reasoning is included in model-space exploration at inference because it searches and evaluates alternative reasoning paths. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Chain-in-Tree: Back to Sequential Reasoning in LLM Tree Search](https://aclanthology.org/2026.findings-acl.214/)** — **ACL 2026 Findings**
   - Authors: Xinzhe Li
   - Type: `method` · Date: `2026`
@@ -288,7 +288,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Mechanism:** ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.214/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - Chain-in-Tree: Back to Sequential Reasoning in LLM Tree Search is included in model-space exploration at inference because it searches and evaluates alternative reasoning paths. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `tree-search/branching` as the recorded exploration evidence.
 - 🏆 **[Cache Coherent Resampling for Efficient Test Time Scaling in LLM Reasoning via Adaptive Sequential Monte Carlo](https://icml.cc/virtual/2026/poster/64829)** — **ICML 2026**
   - Authors: Ke Wang, ZEHAO Yu, Luwei Wang, Yongchao Huang
   - Type: `method` · Date: `2026`
@@ -296,7 +296,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Mechanism:** ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square) ![mechanism: backtracking/resampling](https://img.shields.io/badge/mechanism-backtracking%2Fresampling-8E759D?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/64829) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Cache Coherent Resampling for Efficient Test Time Scaling in LLM Reasoning via Adaptive Sequential Monte Carlo is included in model-space exploration at inference because it searches and evaluates alternative reasoning paths. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `sampling/decoding` as the recorded exploration evidence.
 - 🏆 **[Annotations Mitigate Post-Training Mode Collapse](https://icml.cc/virtual/2026/poster/63468)** — **ICML 2026**
   - Authors: Jacob Mitchell Springer, Madhu Advani, Lukas Aichberger, Arwen Bradley, Eran Malach, Omid Saremi, Sinead Williamson, Preetum Nakkiran et al.
   - Type: `method` · Date: `2026`
@@ -305,7 +305,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Problem:** ![problem: mode-collapse](https://img.shields.io/badge/problem-mode--collapse-B57676?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/63468) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Annotations Mitigate Post-Training Mode Collapse is included in model-space exploration at inference because it searches and evaluates alternative reasoning paths. It treats `response/sequence` as the exploration object during `supervised-post-training` and `inference`, using `supervised-post-training`, `response/sequence`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Aligning Tree-Search Policies with Fixed Token Budgets in Test-Time Scaling of LLMs](https://icml.cc/virtual/2026/poster/63795)** — **ICML 2026**
   - Authors: Sora Miyamoto, Daisuke Oba, Naoaki Okazaki
   - Type: `method` · Date: `2026`
@@ -313,7 +313,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - **Level:** ![level: token](https://img.shields.io/badge/level-token-8B80B6?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/63795) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Aligning Tree-Search Policies with Fixed Token Budgets in Test-Time Scaling of LLMs is included in model-space exploration at inference because it searches and evaluates alternative reasoning paths. It treats `token` as the exploration object during `inference`, using `inference`, `token`, and `structured-search` as the recorded exploration evidence.
 - **[Think Before You Retrieve: Learning Test-Time Adaptive Search with Small Language Models](https://arxiv.org/abs/2511.07581)** — arXiv `2511.07581`
   - Authors: Supriti Vijay, Aman Priyanshu, Anu Vellore, Baturay Saglam, Amin Karbasi
   - Type: `method` · Date: `2025-11-10`
@@ -322,7 +322,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![mechanism: backtracking/resampling](https://img.shields.io/badge/mechanism-backtracking%2Fresampling-8E759D?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: semantic-diversity, reward/advantage, backtracking/resampling.
+  - Think Before You Retrieve: Learning Test-Time Adaptive Search with Small Language Models is included in model-space exploration at inference because it searches and evaluates alternative reasoning paths. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 - **[SolverLLM: Leveraging Test-Time Scaling for Optimization Problem via LLM-Guided Search](https://arxiv.org/abs/2510.16916)** — arXiv `2510.16916`
   - Authors: Dong Li, Xujiang Zhao, Linlin Yu, Yanchi Liu, Wei Cheng, Zhengzhang Chen, Zhong Chen, Feng Chen et al.
   - Type: `method` · Date: `2025-10-19`
@@ -331,7 +331,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: uncertainty/confidence, novelty/curiosity, semantic-diversity.
+  - SolverLLM: Leveraging Test-Time Scaling for Optimization Problem via LLM-Guided Search is included in model-space exploration at inference because it searches and evaluates alternative reasoning paths. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 - **[Accelerating Large Language Model Reasoning via Speculative Search](https://arxiv.org/abs/2505.02865)** — arXiv `2505.02865`
   - Authors: Zhihai Wang, Jie Wang, Jilai Pan, Xilin Xia, Huiling Zhen, Mingxuan Yuan, Jianye Hao, Feng Wu
   - Type: `method` · Date: `2025-05-03`
@@ -351,7 +351,7 @@ Methods that explore multi-step reasoning paths through branching, resampling, p
   - **Signal:** ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square) ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: novelty/curiosity, reward/advantage, sampling/decoding.
+  - COS(M+O)S: Curiosity and RL-Enhanced MCTS for Exploring Story Space via Language Models is included in model-space exploration at inference because it searches and evaluates alternative reasoning paths. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `novelty/curiosity` as the recorded exploration evidence.
 - **[OptiTree: Hierarchical Thoughts Generation with Tree Search for LLM Optimization Modeling](https://neurips.cc/virtual/2025/poster/119108)** — NeurIPS 2025
   - Authors: Haoyang Liu, Jie Wang, Yuyang Cai, Xiongwei Han, Yufei Kuang, Jianye Hao
   - Type: `method` · Date: `2025`
@@ -409,7 +409,7 @@ Methods that diversify generation by steering activations, embeddings, or latent
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square)
   - **Mechanism:** ![mechanism: noise/perturbation](https://img.shields.io/badge/mechanism-noise%2Fperturbation-8176A8?style=flat-square) ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, semantic-diversity, sampling/decoding.
+  - From Noise to Diversity: Random Embedding Injection in LLM Reasoning is included in model-space exploration at inference because it varies internal representations to diversify generation. It treats `latent/representation` as the exploration object during `inference`, using `inference`, `latent/representation`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[The Geometric Reasoner: Manifold-Informed Latent Foresight Search for Long-Context Reasoning](https://icml.cc/virtual/2026/poster/61787)** — **ICML 2026**
   - Authors: Ren Zhuang, Ben Wang, Shuifa Sun
   - Type: `method` · Date: `2026`
@@ -417,7 +417,7 @@ Methods that diversify generation by steering activations, embeddings, or latent
   - **Level:** ![level: latent/representation](https://img.shields.io/badge/level-latent%2Frepresentation-777FA8?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/61787) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - The Geometric Reasoner: Manifold-Informed Latent Foresight Search for Long-Context Reasoning is included in model-space exploration at inference because it varies internal representations to diversify generation. It treats `latent/representation` as the exploration object during `inference`, using `inference`, `latent/representation`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Representation-Based Exploration for Language Models: From Test-Time to Post-Training](https://iclr.cc/virtual/2026/poster/10009438)** — **ICLR 2026**
   - Authors: Jens Tuyls, Dylan Foster, Akshay Krishnamurthy, Jordan Ash
   - Type: `method` · Date: `2026`
@@ -426,7 +426,7 @@ Methods that diversify generation by steering activations, embeddings, or latent
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square)
   - **Mechanism:** ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square) ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10009438) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Representation-Based Exploration for Language Models: From Test-Time to Post-Training is included in model-space exploration at inference because it varies internal representations to diversify generation. It treats `latent/representation` and `response/sequence` as the exploration object during `inference` and `rl-training`, using `inference`, `latent/representation`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[Large Language Models Explore by Latent Distilling](https://icml.cc/virtual/2026/poster/63542)** — **ICML 2026**
   - Authors: Yuanhao Zeng, Ao Lu, Lufei Li, Zheng Zhang, Yexin Li, Kan Ren
   - Type: `method` · Date: `2026`
@@ -434,7 +434,7 @@ Methods that diversify generation by steering activations, embeddings, or latent
   - **Level:** ![level: latent/representation](https://img.shields.io/badge/level-latent%2Frepresentation-777FA8?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/63542) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Large Language Models Explore by Latent Distilling is included in model-space exploration at inference because it varies internal representations to diversify generation. It treats `latent/representation` as the exploration object during `inference`, using `inference`, `latent/representation`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Exploring Diverse Generation Paths via Inference-time Stiefel Activation Steering](https://iclr.cc/virtual/2026/poster/10006851)** — **ICLR 2026**
   - Authors: Dongxuan Zhu, Ly Khanh, Andy Yat-Ming Cheung, Man-Chung Yue, Viet Anh Nguyen
   - Type: `method` · Date: `2026`
@@ -443,7 +443,7 @@ Methods that diversify generation by steering activations, embeddings, or latent
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Mechanism:** ![mechanism: noise/perturbation](https://img.shields.io/badge/mechanism-noise%2Fperturbation-8176A8?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10006851) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Exploring Diverse Generation Paths via Inference-time Stiefel Activation Steering is included in model-space exploration at inference because it varies internal representations to diversify generation. It treats `response/sequence` and `latent/representation` as the exploration object during `inference`, using `inference`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[Beyond Logits: Metastable Latent Dynamics for Sample-Efficient Best-of-N Selection in LLMs](https://icml.cc/virtual/2026/poster/66569)** — **ICML 2026**
   - Authors: Xinrong Li, Zidong Zhou, Keyu Shen, Wenhao Zhou, Shangqi Guo
   - Type: `method` · Date: `2026`
@@ -451,7 +451,7 @@ Methods that diversify generation by steering activations, embeddings, or latent
   - **Level:** ![level: token](https://img.shields.io/badge/level-token-8B80B6?style=flat-square) ![level: latent/representation](https://img.shields.io/badge/level-latent%2Frepresentation-777FA8?style=flat-square)
   - **Mechanism:** ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/66569) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Beyond Logits: Metastable Latent Dynamics for Sample-Efficient Best-of-N Selection in LLMs is included in model-space exploration at inference because it varies internal representations to diversify generation. It treats `token` and `latent/representation` as the exploration object during `inference`, using `inference`, `token`, and `sampling/decoding` as the recorded exploration evidence.
 
 ### Diversity & Coverage · 14 papers
 
@@ -466,7 +466,7 @@ Methods that counter mode collapse and expand semantic coverage, emphasizing how
   - **Mechanism:** ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
   - **Problem:** ![problem: mode-collapse](https://img.shields.io/badge/problem-mode--collapse-B57676?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/60489) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity is included in model-space exploration at inference because it measures or expands semantic diversity and coverage. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[TS$^2$: Training with Sparsemax+, Testing with Softmax for Accurate and Diverse LLM Fine-Tuning](https://iclr.cc/virtual/2026/poster/10010811)** — **ICLR 2026**
   - Authors: Ziyang Xu, Ananthu Rajendran Pillai, Yinghua Yao, Yuangang Pan
   - Type: `method` · Date: `2026`
@@ -474,7 +474,7 @@ Methods that counter mode collapse and expand semantic coverage, emphasizing how
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10010811) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - TS$^2$: Training with Sparsemax+, Testing with Softmax for Accurate and Diverse LLM Fine-Tuning is included in model-space exploration at inference because it measures or expands semantic diversity and coverage. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[String Seed of Thought: Prompting LLMs for Distribution-Faithful and Diverse Generation](https://iclr.cc/virtual/2026/poster/10007633)** — **ICLR 2026**
   - Authors: Kou Misaki, Takuya Akiba
   - Type: `method` · Date: `2026`
@@ -482,7 +482,7 @@ Methods that counter mode collapse and expand semantic coverage, emphasizing how
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square) ![level: data/task](https://img.shields.io/badge/level-data%2Ftask-9A7F9C?style=flat-square)
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10007633) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - String Seed of Thought: Prompting LLMs for Distribution-Faithful and Diverse Generation is included in model-space exploration at inference because it measures or expands semantic diversity and coverage. It treats `response/sequence` and `data/task` as the exploration object during `inference`, using `inference`, `response/sequence`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[SED-SFT: Selectively Encouraging Diversity in Supervised Fine-Tuning](https://aclanthology.org/2026.acl-short.54/)** — **ACL 2026 Main**
   - Authors: Yijie Chen, Yijin Liu, Fandong Meng
   - Type: `method` · Date: `2026`
@@ -490,7 +490,7 @@ Methods that counter mode collapse and expand semantic coverage, emphasizing how
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-short.54/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - SED-SFT: Selectively Encouraging Diversity in Supervised Fine-Tuning is included in model-space exploration at inference because it measures or expands semantic diversity and coverage. It treats `response/sequence` as the exploration object during `supervised-post-training` and `inference`, using `supervised-post-training`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[Reasoning with Sampling: Your Base Model is Smarter Than You Think](https://iclr.cc/virtual/2026/poster/10009093)** — **ICLR 2026**
   - Authors: Aayush Karan, Yilun Du
   - Type: `method` · Date: `2026`
@@ -500,7 +500,7 @@ Methods that counter mode collapse and expand semantic coverage, emphasizing how
   - **Mechanism:** ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
   - **Problem:** ![problem: mode-collapse](https://img.shields.io/badge/problem-mode--collapse-B57676?style=flat-square) ![problem: capability-boundary](https://img.shields.io/badge/problem-capability--boundary-9A738A?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10009093) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Reasoning with Sampling: Your Base Model is Smarter Than You Think is included in model-space exploration at inference because it measures or expands semantic diversity and coverage. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[Post-training Large Language Models for Diverse High-Quality Responses](https://iclr.cc/virtual/2026/poster/10010944)** — **ICLR 2026**
   - Authors: Yilei Chen, Souradip Chakraborty, Lorenz Wolf, Ioannis Paschalidis, Aldo Pacchiano
   - Type: `method` · Date: `2026`
@@ -508,7 +508,7 @@ Methods that counter mode collapse and expand semantic coverage, emphasizing how
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10010944) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Post-training Large Language Models for Diverse High-Quality Responses is included in model-space exploration at inference because it measures or expands semantic diversity and coverage. It treats `response/sequence` as the exploration object during `supervised-post-training` and `inference`, using `supervised-post-training`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[Learning Diverse Responses with Prefix-Conditioned Supervised Fine-Tuning](https://aclanthology.org/2026.acl-long.9/)** — **ACL 2026 Main**
   - Authors: Zhiyuan Fan, Guanqiao Chen, Yanyi Huang, Mingkuan Zhao, Dadi Guo, Yi R. Fung
   - Type: `method` · Date: `2026`
@@ -516,7 +516,7 @@ Methods that counter mode collapse and expand semantic coverage, emphasizing how
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-long.9/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - Learning Diverse Responses with Prefix-Conditioned Supervised Fine-Tuning is included in model-space exploration at inference because it measures or expands semantic diversity and coverage. It treats `response/sequence` as the exploration object during `supervised-post-training` and `inference`, using `supervised-post-training`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[Language of Thought Shapes Output Diversity in Large Language Models](https://aclanthology.org/2026.acl-long.628/)** — **ACL 2026 Main**
   - Authors: Shaoyang Xu, Wenxuan Zhang
   - Type: `method` · Date: `2026`
@@ -524,7 +524,7 @@ Methods that counter mode collapse and expand semantic coverage, emphasizing how
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-long.628/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - Language of Thought Shapes Output Diversity in Large Language Models is included in model-space exploration at inference because it measures or expands semantic diversity and coverage. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[GuidedSampling: Steering LLMs Towards Diverse Candidate Solutions at Inference-Time](https://iclr.cc/virtual/2026/poster/10009336)** — **ICLR 2026**
   - Authors: Divij Handa, Mihir Parmar, Aswin RRV, Md Nayem Uddin, Hamid Palangi, Chitta Baral
   - Type: `method` · Date: `2026`
@@ -533,7 +533,7 @@ Methods that counter mode collapse and expand semantic coverage, emphasizing how
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Mechanism:** ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square) ![mechanism: noise/perturbation](https://img.shields.io/badge/mechanism-noise%2Fperturbation-8176A8?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10009336) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - GuidedSampling: Steering LLMs Towards Diverse Candidate Solutions at Inference-Time is included in model-space exploration at inference because it measures or expands semantic diversity and coverage. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[Diversity Matters: Revisiting Test-Time Compute in Vision-Language Models](https://icml.cc/virtual/2026/poster/63569)** — **ICML 2026**
   - Authors: Yijie Tong, Yifan Hou, Shaobo Cui, Antoine Bosselut, Mrinmaya Sachan
   - Type: `method` · Date: `2026`
@@ -542,7 +542,7 @@ Methods that counter mode collapse and expand semantic coverage, emphasizing how
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Setting:** ![setting: multimodal](https://img.shields.io/badge/setting-multimodal-8176A5?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/63569) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Diversity Matters: Revisiting Test-Time Compute in Vision-Language Models is included in model-space exploration at inference because it measures or expands semantic diversity and coverage. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[Diverse Text Decoding via Iterative Reweighting](https://iclr.cc/virtual/2026/poster/10011729)** — **ICLR 2026**
   - Authors: Ruiqi Shi, Sinno Jialin Pan
   - Type: `method` · Date: `2026`
@@ -551,7 +551,7 @@ Methods that counter mode collapse and expand semantic coverage, emphasizing how
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Mechanism:** ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10011729) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Diverse Text Decoding via Iterative Reweighting is included in model-space exploration at inference because it measures or expands semantic diversity and coverage. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[Differential Fine-Tuning Large Language Models Towards Better Diverse Reasoning Abilities](https://iclr.cc/virtual/2026/poster/10008716)** — **ICLR 2026**
   - Authors: Xiaosong Yuan, Chen Shen, Shaotian Yan, kaiyuan liu, Xiaofeng Zhang, Sinan Fan, Liang Xie, Wenxiao Wang et al.
   - Type: `method` · Date: `2026`
@@ -559,7 +559,7 @@ Methods that counter mode collapse and expand semantic coverage, emphasizing how
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10008716) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Differential Fine-Tuning Large Language Models Towards Better Diverse Reasoning Abilities is included in model-space exploration at inference because it measures or expands semantic diversity and coverage. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[D-FUSEr: Diverse Failure, Unified Success via Error-Distribution Shaping in LLM Reasoning](https://icml.cc/virtual/2026/poster/63783)** — **ICML 2026**
   - Authors: David Baek, Andrew Estornell, Yichi Zhang, Muhammad Faaiz Taufiq, Jean-Francois Ton, Jie Mei, Tao Wang
   - Type: `method` · Date: `2026`
@@ -568,7 +568,7 @@ Methods that counter mode collapse and expand semantic coverage, emphasizing how
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Problem:** ![problem: recovery/error-correction](https://img.shields.io/badge/problem-recovery%2Ferror--correction-9B6F75?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/63783) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - D-FUSEr: Diverse Failure, Unified Success via Error-Distribution Shaping in LLM Reasoning is included in model-space exploration at inference because it measures or expands semantic diversity and coverage. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `entropy/probability` as the recorded exploration evidence.
 - **[Learning from Diverse Reasoning Paths with Routing and Collaboration](https://arxiv.org/abs/2508.16861)** — arXiv `2508.16861`
   - Authors: Zhenyu Lei, Zhen Tan, Song Wang, Yaochen Zhu, Zihan Chen, Yushun Dong, Jundong Li
   - Type: `method` · Date: `2025-08-23`
@@ -576,7 +576,7 @@ Methods that counter mode collapse and expand semantic coverage, emphasizing how
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: semantic-diversity.
+  - Learning from Diverse Reasoning Paths with Routing and Collaboration is included in model-space exploration at inference because it measures or expands semantic diversity and coverage. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 
 
 ## 2. Model-Space Exploration for Learning
@@ -599,7 +599,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, reward/advantage, gradient-reshaping.
+  - Entropy Polarity in Reinforcement Fine-Tuning: Direction, Asymmetry, and Control is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - **[Addressing Performance Saturation for LLM RL via Precise Entropy Curve Control](https://arxiv.org/abs/2604.26326)** — arXiv `2604.26326`
   - Authors: Bolian Li, Yifan Wang, Yi Ding, Anamika Lochab, Ananth Grama, Ruqi Zhang
   - Type: `method` · Date: `2026-04-29`
@@ -608,7 +608,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Problem:** ![problem: local-optimum](https://img.shields.io/badge/problem-local--optimum-A77878?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
+  - Addressing Performance Saturation for LLM RL via Precise Entropy Curve Control is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - **[Policy Split: Incentivizing Dual-Mode Exploration in LLM Reinforcement with Dual-Mode Entropy Regularization](https://arxiv.org/abs/2604.11510)** — arXiv `2604.11510`
   - Authors: Jiashu Yao, Heyan Huang, Daiqing Wu, Zeming Liu, Yuhang Guo
   - Type: `method` · Date: `2026-04-13`
@@ -617,7 +617,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square)
   - **Mechanism:** ![mechanism: regularization](https://img.shields.io/badge/mechanism-regularization-737FB0?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
+  - Policy Split: Incentivizing Dual-Mode Exploration in LLM Reinforcement with Dual-Mode Entropy Regularization is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - **[Compress the Easy, Explore the Hard: Difficulty-Aware Entropy Regularization for Efficient LLM Reasoning](https://arxiv.org/abs/2602.22642)** — arXiv `2602.22642`
   - Authors: Qin-Wen Luo, Sheng Ren, Xiang Chen, Rui Liu, Jun Fang, Naiqiang Tan, Sheng-Jun Huang
   - Type: `method` · Date: `2026-02-26`
@@ -626,7 +626,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: regularization](https://img.shields.io/badge/mechanism-regularization-737FB0?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
+  - Compress the Easy, Explore the Hard: Difficulty-Aware Entropy Regularization for Efficient LLM Reasoning is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - **[DSDR: Dual-Scale Diversity Regularization for Exploration in LLM Reasoning](https://arxiv.org/abs/2602.19895)** — arXiv `2602.19895`
   - Authors: Zhongwei Wan, Yun Shen, Zhihao Dou, Donghao Zhou, Yu Zhang, Xin Wang, Hui Shen, Jing Xiong et al.
   - Type: `method` · Date: `2026-02-23`
@@ -635,7 +635,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square)
   - **Mechanism:** ![mechanism: regularization](https://img.shields.io/badge/mechanism-regularization-737FB0?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, semantic-diversity, regularization.
+  - DSDR: Dual-Scale Diversity Regularization for Exploration in LLM Reasoning is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `semantic-diversity` as the recorded exploration evidence.
 - **[MASPO: Unifying Gradient Utilization, Probability Mass, and Signal Reliability for Robust and Sample-Efficient LLM Reasoning](https://arxiv.org/abs/2602.17550)** — ACL 2026 Main · arXiv `2602.17550`
   - Authors: Xiaoliang Fu, Jiaye Lin, Yangyi Fang, Binbin Zheng, Chaowen Hu, Zekai Shao, Cong Qin, Lu Pan et al.
   - Type: `method` · Date: `2026-02-19`
@@ -644,7 +644,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** Venue claim: ACL 2026 Main · official URL pending
-  - Exploration focus: entropy/probability, uncertainty/confidence, reward/advantage.
+  - MASPO: Unifying Gradient Utilization, Probability Mass, and Signal Reliability for Robust and Sample-Efficient LLM Reasoning is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `token` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `token`, and `entropy/probability` as the recorded exploration evidence.
 - **[Look Inward to Explore Outward: Learning Temperature Policy from LLM Internal States via Hierarchical RL](https://arxiv.org/abs/2602.13035)** — arXiv `2602.13035`
   - Authors: Yixiao Zhou, Yang Li, Dongzhou Cheng, Hehe Fan, Yu Cheng
   - Type: `method` · Date: `2026-02-13`
@@ -653,7 +653,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: temperature-control](https://img.shields.io/badge/mechanism-temperature--control-6B84AD?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, uncertainty/confidence, reward/advantage.
+  - Look Inward to Explore Outward: Learning Temperature Policy from LLM Internal States via Hierarchical RL is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - **[Back to Basics: Revisiting Exploration in Reinforcement Learning for LLM Reasoning via Generative Probabilities](https://arxiv.org/abs/2602.05281)** — arXiv `2602.05281`
   - Authors: Pengyi Li, Elizaveta Goncharova, Andrey Kuznetsov, Ivan Oseledets
   - Type: `method` · Date: `2026-02-05`
@@ -662,7 +662,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability.
+  - Back to Basics: Revisiting Exploration in Reinforcement Learning for LLM Reasoning via Generative Probabilities is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `token` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `token`, and `entropy/probability` as the recorded exploration evidence.
 - **[Entropy-Gated Selective Policy Optimization:Token-Level Gradient Allocation for Hybrid Training of Large Language Models](https://arxiv.org/abs/2602.03309)** — arXiv `2602.03309`
   - Authors: Yuelin Hu, Zhengxue Cheng, Wei Liu, Li Song
   - Type: `method` · Date: `2026-02-03`
@@ -671,7 +671,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, reward/advantage, gradient-reshaping.
+  - Entropy-Gated Selective Policy Optimization:Token-Level Gradient Allocation for Hybrid Training of Large Language Models is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `token` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `token`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[Understanding and Preventing Entropy Collapse in RLVR with On-Policy Entropy Flow Optimization](https://aclanthology.org/2026.findings-acl.879/)** — **ACL 2026 Findings**
   - Authors: Huimin Xu, Shuai Zhao, Xiaobao Wu, Anh Tuan Luu
   - Type: `method` · Date: `2026`
@@ -681,7 +681,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Problem:** ![problem: entropy-collapse](https://img.shields.io/badge/problem-entropy--collapse-B06D73?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.879/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - Understanding and Preventing Entropy Collapse in RLVR with On-Policy Entropy Flow Optimization is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[Targeted Exploration via Unified Entropy Control for Reinforcement Learning](https://aclanthology.org/2026.findings-acl.828/)** — **ACL 2026 Findings**
   - Authors: Chen Wang, Lai Wei, Yanzhi Zhang, Chenyang Shao, Zedong Dan, Weiran Huang, Ge Lan, Yue Wang
   - Type: `method` · Date: `2026`
@@ -690,7 +690,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.828/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - Targeted Exploration via Unified Entropy Control for Reinforcement Learning is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[SPS: Steering Probability Squeezing for Better Exploration in Reinforcement Learning for Large Language Models](https://aclanthology.org/2026.findings-acl.865/)** — **ACL 2026 Findings**
   - Authors: Yifu Huo, Chenglong Wang, Ziming Zhu, Shunjie Xing, Peinan Feng, Tongran Liu, Qiaozhi He, Tian Hua Zhou et al.
   - Type: `method` · Date: `2026`
@@ -699,7 +699,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square)
   - **Mechanism:** ![mechanism: noise/perturbation](https://img.shields.io/badge/mechanism-noise%2Fperturbation-8176A8?style=flat-square) ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.865/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - SPS: Steering Probability Squeezing for Better Exploration in Reinforcement Learning for Large Language Models is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `token` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `token`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[SAGE: Shaping Anchors for Guided Exploration in RLVR of LLMs](https://icml.cc/virtual/2026/poster/63563)** — **ICML 2026**
   - Authors: Chanuk Lee, Minki Kang, Sung Ju Hwang
   - Type: `method` · Date: `2026`
@@ -707,7 +707,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: regularization](https://img.shields.io/badge/mechanism-regularization-737FB0?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/63563) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - SAGE: Shaping Anchors for Guided Exploration in RLVR of LLMs is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `regularization` as the recorded exploration evidence.
 - 🏆 **[On Entropy Control in LLM-RL Algorithms](https://iclr.cc/virtual/2026/poster/10010002)** — **ICLR 2026**
   - Authors: Han Shen
   - Type: `method` · Date: `2026`
@@ -715,7 +715,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10010002) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - On Entropy Control in LLM-RL Algorithms is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[Low-probability Tokens Sustain Exploration in Reinforcement Learning with Verifiable Reward](https://aclanthology.org/2026.findings-acl.1209/)** — **ACL 2026 Findings**
   - Authors: Guanhua Huang, Tingqiang Xu, Mingze Wang, Qi Yi, Xue Gong, Siheng Li, Ruibin Xiong, Kejiao Li et al.
   - Type: `method` · Date: `2026`
@@ -725,7 +725,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Mechanism:** ![mechanism: regularization](https://img.shields.io/badge/mechanism-regularization-737FB0?style=flat-square)
   - **Problem:** ![problem: entropy-collapse](https://img.shields.io/badge/problem-entropy--collapse-B06D73?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.1209/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - Low-probability Tokens Sustain Exploration in Reinforcement Learning with Verifiable Reward is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `token` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `token`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[Learning While Staying Curious: Entropy-Preserving Supervised Fine-Tuning via Adaptive Self-Distillation for Large Reasoning Models](https://aclanthology.org/2026.acl-long.617/)** — **ACL 2026 Main**
   - Authors: Hao Wang, Hao Gu, Hongming Piao, Kaixiong Gong, Yuxiao Ye, Xiangyu Yue, Sirui Han, Yike Guo et al.
   - Type: `method` · Date: `2026`
@@ -733,7 +733,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-long.617/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - Learning While Staying Curious: Entropy-Preserving Supervised Fine-Tuning via Adaptive Self-Distillation for Large Reasoning Models is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `supervised-post-training` and `rl-training`, using `supervised-post-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[Entropy-preserving reinforcement learning](https://iclr.cc/virtual/2026/poster/10010707)** — **ICLR 2026**
   - Authors: Aleksei Petrenko, Ben Lipkin, Kevin Chen, Erik Wijmans, Marco Cusumano-Towner, Raja Giryes, Philipp Krähenbühl
   - Type: `method` · Date: `2026`
@@ -741,7 +741,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10010707) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Entropy-preserving reinforcement learning is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[Entropy-Aware Reshaping of Reinforcement Signals for Multi-Answer Reasoning](https://aclanthology.org/2026.findings-acl.2001/)** — **ACL 2026 Findings**
   - Authors: Zhi Li, Huidan Xu, Zhen Hu, Yali Du, Ying Liu
   - Type: `method` · Date: `2026`
@@ -749,7 +749,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.2001/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - Entropy-Aware Reshaping of Reinforcement Signals for Multi-Answer Reasoning is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[Entropy Scheduling in Reinforcement Learning for Large Language Models](https://aclanthology.org/2026.findings-acl.206/)** — **ACL 2026 Findings**
   - Authors: Xingjin Wang, Howe Tissue, Lu Wang, Linjing Li, Daniel Dajun Zeng
   - Type: `method` · Date: `2026`
@@ -757,7 +757,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.206/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - Entropy Scheduling in Reinforcement Learning for Large Language Models is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[ETR: Entropy Trend Reward for Efficient Chain-of-Thought Reasoning](https://aclanthology.org/2026.acl-long.799/)** — **ACL 2026 Main**
   - Authors: Xuan Xiong, Huan Liu, Li Gu, Zhixiang Chi, Yue Qiu, Yuanhao YU, Yang Wang
   - Type: `method` · Date: `2026`
@@ -765,7 +765,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-long.799/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - ETR: Entropy Trend Reward for Efficient Chain-of-Thought Reasoning is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `response/sequence` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[ECHO: Entropy-Confidence Hybrid Optimization for Test-Time Reinforcement Learning](https://icml.cc/virtual/2026/poster/63137)** — **ICML 2026**
   - Authors: Chu Zhao, Enneng Yang, Yuting Liu, Jianzhe Zhao, Guibing Guo
   - Type: `method` · Date: `2026`
@@ -773,7 +773,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/63137) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - ECHO: Entropy-Confidence Hybrid Optimization for Test-Time Reinforcement Learning is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training` and `inference`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[Do Not Let Low-Probability Tokens Over-Dominate in RL for LLMs](https://iclr.cc/virtual/2026/poster/10010601)** — **ICLR 2026**
   - Authors: Zhihe Yang, Xufang Luo, Zilong Wang, Dongqi Han, Zhiyuan He, Dongsheng Li, Yunjian Xu
   - Type: `method` · Date: `2026`
@@ -781,7 +781,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Level:** ![level: token](https://img.shields.io/badge/level-token-8B80B6?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10010601) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Do Not Let Low-Probability Tokens Over-Dominate in RL for LLMs is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `token` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `token`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[DARTS: Distribution-Aware Active Rollout Trajectory Shaping for Accelerating LLM Reinforcement Learning](https://icml.cc/virtual/2026/poster/61634)** — **ICML 2026**
   - Authors: Yujie Wang, Siwei Chen, Longzan Luo, Xinyi Liu, Xupeng Miao, Fangcheng Fu, Bin Cui
   - Type: `method` · Date: `2026`
@@ -789,7 +789,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/61634) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - DARTS: Distribution-Aware Active Rollout Trajectory Shaping for Accelerating LLM Reinforcement Learning is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `response/sequence`, `trajectory/action`, and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[Beyond Mode Collapse: Distribution Matching for Diverse Reasoning](https://icml.cc/virtual/2026/poster/65266)** — **ICML 2026**
   - Authors: Xiaozhe Li, Yang Li, Xinyu Fang, Shengyuan Ding, Peiji Li, Yongkang Chen, Yichuan Ma, TianYi Lyu et al.
   - Type: `method` · Date: `2026`
@@ -798,7 +798,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Problem:** ![problem: mode-collapse](https://img.shields.io/badge/problem-mode--collapse-B57676?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/65266) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Beyond Mode Collapse: Distribution Matching for Diverse Reasoning is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[Beyond High-Entropy Exploration: Correctness-Aware Low-Entropy Segment-Based Advantage Shaping for Reasoning LLMs](https://aclanthology.org/2026.findings-acl.1650/)** — **ACL 2026 Findings**
   - Authors: Xinzhu Chen, Xuesheng Li, Zhongxiang Sun, Weijie Yu
   - Type: `method` · Date: `2026`
@@ -807,7 +807,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.1650/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - Beyond High-Entropy Exploration: Correctness-Aware Low-Entropy Segment-Based Advantage Shaping for Reasoning LLMs is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[Anchored Policy Optimization: Mitigating Exploration Collapse via Support-Constrained Rectification](https://icml.cc/virtual/2026/poster/65360)** — **ICML 2026**
   - Authors: Tianyi Wang, Long Li, Hongcan Guo, Yibiao Chen, Yixia Li, Yong Wang, Yun Chen, Guanhua CHEN
   - Type: `method` · Date: `2026`
@@ -815,7 +815,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: regularization](https://img.shields.io/badge/mechanism-regularization-737FB0?style=flat-square) ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/65360) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Anchored Policy Optimization: Mitigating Exploration Collapse via Support-Constrained Rectification is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `regularization` as the recorded exploration evidence.
 - 🏆 **[ARES: Multimodal Adaptive Reasoning via Difficulty-Aware Token-Level Entropy Shaping](https://iclr.cc/virtual/2026/poster/10011711)** — **ICLR 2026**
   - Authors: Shuang Chen, Hangyu Guo, Yimeng Ye, Shijue Huang, Wenbo Hu, Jiayu Chen, Manyuan Zhang, Haoxi Li et al.
   - Type: `method` · Date: `2026`
@@ -824,7 +824,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square)
   - **Setting:** ![setting: multimodal](https://img.shields.io/badge/setting-multimodal-8176A5?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10011711) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - ARES: Multimodal Adaptive Reasoning via Difficulty-Aware Token-Level Entropy Shaping is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `token` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `token`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[A Few Bad Apples Spoil the Bunch: Preventing Global Entropy Collapse Driven by a Small Set of Tokens in LLM Reasoning](https://aclanthology.org/2026.findings-acl.641/)** — **ACL 2026 Findings**
   - Authors: Jaeeun Jang, Hansle Lee, Sangmin Kim
   - Type: `method` · Date: `2026`
@@ -833,7 +833,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square)
   - **Problem:** ![problem: entropy-collapse](https://img.shields.io/badge/problem-entropy--collapse-B06D73?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.641/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - A Few Bad Apples Spoil the Bunch: Preventing Global Entropy Collapse Driven by a Small Set of Tokens in LLM Reasoning is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `token` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `token`, and `entropy/probability` as the recorded exploration evidence.
 - **[Efficient Reinforcement Learning with Semantic and Token Entropy for LLM Reasoning](https://arxiv.org/abs/2512.04359)** — arXiv `2512.04359`
   - Authors: Hongye Cao, Zhixin Bai, Ziyue Peng, Boyan Wang, Tianpei Yang, Jing Huo, Yuyao Zhang, Yang Gao
   - Type: `method` · Date: `2025-12-04`
@@ -842,7 +842,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: regularization](https://img.shields.io/badge/mechanism-regularization-737FB0?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, reward/advantage, regularization.
+  - Efficient Reinforcement Learning with Semantic and Token Entropy for LLM Reasoning is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `token` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `token`, and `entropy/probability` as the recorded exploration evidence.
 - **[From Exploration to Exploitation: A Two-Stage Entropy RLVR Approach for Noise-Tolerant MLLM Training](https://arxiv.org/abs/2511.07738)** — arXiv `2511.07738`
   - Authors: Donglai Xu, Hongzheng Yang, Yuzhi Zhao, Pingping Zhang, Jinpeng Chen, Wenao Ma, Zhijian Hou, Mengyang Wu et al.
   - Type: `method` · Date: `2025-11-11`
@@ -851,7 +851,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square)
   - **Mechanism:** ![mechanism: noise/perturbation](https://img.shields.io/badge/mechanism-noise%2Fperturbation-8176A8?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
+  - From Exploration to Exploitation: A Two-Stage Entropy RLVR Approach for Noise-Tolerant MLLM Training is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - **[Revisiting Entropy Regularization: Adaptive Coefficient Unlocks Its Potential for LLM Reinforcement Learning](https://arxiv.org/abs/2510.10959)** — ACL 2026 Findings · arXiv `2510.10959`
   - Authors: Xiaoyun Zhang, Xiaojian Yuan, Di Huang, Wang You, Chen Hu, Jingqing Ruan, Ai Jian, Kejiang Chen et al.
   - Type: `method` · Date: `2025-10-13`
@@ -860,7 +860,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: regularization](https://img.shields.io/badge/mechanism-regularization-737FB0?style=flat-square)
   - **Publication evidence:** Venue claim: ACL 2026 Findings · official URL pending
-  - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
+  - Revisiting Entropy Regularization: Adaptive Coefficient Unlocks Its Potential for LLM Reinforcement Learning is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - **[Clip-Low Increases Entropy and Clip-High Decreases Entropy in Reinforcement Learning of Large Language Models](https://arxiv.org/abs/2509.26114)** — arXiv `2509.26114`
   - Authors: Jaesung R. Park, Junsu Kim, Gyeongman Kim, Jinyoung Jo, Sean Choi, Jaewoong Cho, Ernest K. Ryu
   - Type: `method` · Date: `2025-09-30`
@@ -869,7 +869,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, reward/advantage, gradient-reshaping.
+  - Clip-Low Increases Entropy and Clip-High Decreases Entropy in Reinforcement Learning of Large Language Models is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - **[CE-GPPO: Coordinating Entropy via Gradient-Preserving Clipping Policy Optimization in Reinforcement Learning](https://arxiv.org/abs/2509.20712)** — ACL 2026 Main · arXiv `2509.20712`
   - Authors: Zhenpeng Su, Leiyu Pan, Minxuan Lv, Yuntao Li, Wenping Hu, Fuzheng Zhang, Kun Gai, Guorui Zhou
   - Type: `method` · Date: `2025-09-25`
@@ -878,7 +878,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square)
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** Venue claim: ACL 2026 Main · official URL pending
-  - Exploration focus: entropy/probability, novelty/curiosity, gradient-reshaping.
+  - CE-GPPO: Coordinating Entropy via Gradient-Preserving Clipping Policy Optimization in Reinforcement Learning is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - **[ETTRL: Balancing Exploration and Exploitation in LLM Test-Time Reinforcement Learning Via Entropy Mechanism](https://arxiv.org/abs/2508.11356)** — arXiv `2508.11356`
   - Authors: Jia Liu, ChangYi He, YingQiao Lin, MingMin Yang, FeiYang Shen, ShaoGuo Liu
   - Type: `method` · Date: `2025-08-15`
@@ -888,7 +888,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Problem:** ![problem: exploration-exploitation](https://img.shields.io/badge/problem-exploration--exploitation-A27C63?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
+  - ETTRL: Balancing Exploration and Exploitation in LLM Test-Time Reinforcement Learning Via Entropy Mechanism is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training` and `inference`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - **[CURE: Critical-Token-Guided Re-Concatenation for Entropy-Collapse Prevention](https://arxiv.org/abs/2508.11016)** — arXiv `2508.11016`
   - Authors: Qingbin Li, Rongkun Xue, Jie Wang, Ming Zhou, Zhi Li, Xiaofeng Ji, Yongqi Wang, Miao Liu et al.
   - Type: `method` · Date: `2025-08-14`
@@ -896,7 +896,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Level:** ![level: token](https://img.shields.io/badge/level-token-8B80B6?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
+  - CURE: Critical-Token-Guided Re-Concatenation for Entropy-Collapse Prevention is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `token` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `token`, and `entropy/probability` as the recorded exploration evidence.
 - **[Decomposing the Entropy-Performance Exchange: The Missing Keys to Unlocking Effective Reinforcement Learning](https://arxiv.org/abs/2508.02260)** — arXiv `2508.02260`
   - Authors: Jia Deng, Jie Chen, Zhipeng Chen, Wayne Xin Zhao, Ji-Rong Wen
   - Type: `method` · Date: `2025-08-04`
@@ -904,7 +904,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
+  - Decomposing the Entropy-Performance Exchange: The Missing Keys to Unlocking Effective Reinforcement Learning is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - ⭐ **[Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning](https://arxiv.org/abs/2506.01939)** — arXiv `2506.01939`
   - Authors: Shenzhi Wang, Le Yu, Chang Gao, Chujie Zheng, Shixuan Liu, Rui Lu, Kai Dang, Xionghui Chen et al.
   - Type: `method` · Date: `2025-06-02`
@@ -915,7 +915,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Problem:** ![problem: entropy-collapse](https://img.shields.io/badge/problem-entropy--collapse-B06D73?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
   - **Citation:** 433 · Google Scholar (via Google Search) · checked `2026-07-23`
-  - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
+  - Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `token` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `token`, and `entropy/probability` as the recorded exploration evidence.
 - ⭐ **[ProRL: Prolonged Reinforcement Learning Expands Reasoning Boundaries in Large Language Models](https://arxiv.org/abs/2505.24864)** — arXiv `2505.24864`
   - Authors: Mingjie Liu, Shizhe Diao, Ximing Lu, Jian Hu, Xin Dong, Yejin Choi, Jan Kautz, Yi Dong
   - Type: `method` · Date: `2025-05-30`
@@ -926,7 +926,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Problem:** ![problem: capability-boundary](https://img.shields.io/badge/problem-capability--boundary-9A738A?style=flat-square) ![problem: long-horizon](https://img.shields.io/badge/problem-long--horizon-8E7D6D?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
   - **Citation:** 233 · Google Scholar (via Google Search) · checked `2026-07-23`
-  - Exploration focus: structured-search.
+  - ProRL: Prolonged Reinforcement Learning Expands Reasoning Boundaries in Large Language Models is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `coverage` as the recorded exploration evidence.
 - ⭐ **[The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models](https://arxiv.org/abs/2505.22617)** — arXiv `2505.22617`
   - Authors: Ganqu Cui, Yuchen Zhang, Jiacheng Chen, Lifan Yuan, Zhi Wang, Yuxin Zuo, Haozhan Li, Yuchen Fan
   - Type: `method` · Date: `2025-05-28`
@@ -937,7 +937,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Problem:** ![problem: entropy-collapse](https://img.shields.io/badge/problem-entropy--collapse-B06D73?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
   - **Citation:** 364 · Google Scholar (via Google Search) · checked `2026-07-23`
-  - Exploration focus: entropy/probability.
+  - The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - **[PPO-BR: Dual-Signal Entropy-Reward Adaptation for Trust Region Policy Optimization](https://arxiv.org/abs/2505.17714)** — arXiv `2505.17714`
   - Authors: Ben Rahman
   - Type: `method` · Date: `2025-05-23`
@@ -946,7 +946,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square)
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
+  - PPO-BR: Dual-Signal Entropy-Reward Adaptation for Trust Region Policy Optimization is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training` and `test-time-adaptation`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - **[SEED-GRPO: Semantic Entropy Enhanced GRPO for Uncertainty-Aware Policy Optimization](https://arxiv.org/abs/2505.12346)** — arXiv `2505.12346`
   - Authors: Minghan Chen, Guikun Chen, Wenguan Wang, Yi Yang
   - Type: `method` · Date: `2025-05-18`
@@ -955,7 +955,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, uncertainty/confidence, semantic-diversity.
+  - SEED-GRPO: Semantic Entropy Enhanced GRPO for Uncertainty-Aware Policy Optimization is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - **[Entropy-guided sequence weighting for efficient exploration in RL-based LLM fine-tuning](https://arxiv.org/abs/2503.22456)** — arXiv `2503.22456`
   - Authors: Abdullah Vanlioglu
   - Type: `method` · Date: `2025-03-28`
@@ -964,7 +964,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, uncertainty/confidence, novelty/curiosity.
+  - Entropy-guided sequence weighting for efficient exploration in RL-based LLM fine-tuning is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `response/sequence` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `entropy/probability` as the recorded exploration evidence.
 - ⭐ **[DAPO: An Open-Source LLM Reinforcement Learning System at Scale](https://arxiv.org/abs/2503.14476)** — arXiv `2503.14476`
   - Authors: Qiying Yu, Zheng Zhang, Ruofei Zhu, Yufeng Yuan, Xiaochen Zuo, Yu Yue, Weinan Dai, Tiantian Fan et al.
   - Type: `method` · Date: `2025-03-18`
@@ -975,7 +975,7 @@ Work that analyzes or controls policy entropy and token probabilities during RL,
   - **Problem:** ![problem: entropy-collapse](https://img.shields.io/badge/problem-entropy--collapse-B06D73?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
   - **Citation:** 1874 · Google Scholar (via Google Search) · checked `2026-07-23`
-  - Exploration focus: structured-search.
+  - DAPO: An Open-Source LLM Reinforcement Learning System at Scale is included in model-space exploration for learning because it studies or controls policy support and distributional exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 
 ### Credit Assignment & Optimization · 17 papers
 
@@ -989,7 +989,7 @@ Methods that reshape rewards, advantages, or gradients so exploratory behavior r
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: coverage](https://img.shields.io/badge/signal-coverage-78935F?style=flat-square)
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, semantic-diversity, coverage.
+  - Breaking $\textit{Winner-Takes-All}$: Cooperative Policy Optimization Improves Diverse LLM Reasoning is included in model-space exploration for learning because it assigns learning credit to exploratory behavior. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `semantic-diversity` as the recorded exploration evidence.
 - **[DiPO: Disentangled Perplexity Policy Optimization for Fine-grained Exploration-Exploitation Trade-Off](https://arxiv.org/abs/2604.13902)** — arXiv `2604.13902`
   - Authors: Xiaofan Li, Ming Yang, Zhiyuan Ma, Shichao Ma, Jintao Du, Yu Cheng, Weiqiang Wang, Zhizhong Zhang et al.
   - Type: `method` · Date: `2026-04-15`
@@ -999,7 +999,7 @@ Methods that reshape rewards, advantages, or gradients so exploratory behavior r
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Problem:** ![problem: exploration-exploitation](https://img.shields.io/badge/problem-exploration--exploitation-A27C63?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: semantic-diversity, reward/advantage, gradient-reshaping.
+  - DiPO: Disentangled Perplexity Policy Optimization for Fine-grained Exploration-Exploitation Trade-Off is included in model-space exploration for learning because it assigns learning credit to exploratory behavior. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[Unlocking Exploration in RLVR: Uncertainty-aware Advantage Shaping for Deeper Reasoning](https://aclanthology.org/2026.findings-acl.951/)** — **ACL 2026 Findings**
   - Authors: Can Xie, Ruotong Pan, Xiangyu Wu, Zhang Yunfei, Jiayi Fu, Tingting Gao, Guorui Zhou
   - Type: `method` · Date: `2026`
@@ -1008,7 +1008,7 @@ Methods that reshape rewards, advantages, or gradients so exploratory behavior r
   - **Signal:** ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.951/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - Unlocking Exploration in RLVR: Uncertainty-aware Advantage Shaping for Deeper Reasoning is included in model-space exploration for learning because it assigns learning credit to exploratory behavior. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `uncertainty/confidence` as the recorded exploration evidence.
 - 🏆 **[Token Hidden Reward: Steering Exploration-Exploitation in Group Relative Deep Reinforcement Learning](https://iclr.cc/virtual/2026/poster/10008016)** — **ICLR 2026**
   - Authors: Wenlong Deng, YI REN, Yushu Li, Boying Gong, Danica Sutherland, Xiaoxiao Li, Christos Thrampoulidis
   - Type: `method` · Date: `2026`
@@ -1018,7 +1018,7 @@ Methods that reshape rewards, advantages, or gradients so exploratory behavior r
   - **Mechanism:** ![mechanism: noise/perturbation](https://img.shields.io/badge/mechanism-noise%2Fperturbation-8176A8?style=flat-square)
   - **Problem:** ![problem: exploration-exploitation](https://img.shields.io/badge/problem-exploration--exploitation-A27C63?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10008016) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Token Hidden Reward: Steering Exploration-Exploitation in Group Relative Deep Reinforcement Learning is included in model-space exploration for learning because it assigns learning credit to exploratory behavior. It treats `token` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `token`, and `reward/advantage` as the recorded exploration evidence.
 - 🏆 **[Reward and Guidance through Rubrics: Promoting Exploration to Improve Multi-Domain Reasoning](https://icml.cc/virtual/2026/poster/65737)** — **ICML 2026**
   - Authors: Baolong Bi, Shenghua Liu, Yiwei Wang, Siqian Tong, Lingrui Mei, Yuyao Ge, Yilong Xu, Jiafeng Guo et al.
   - Type: `method` · Date: `2026`
@@ -1027,7 +1027,7 @@ Methods that reshape rewards, advantages, or gradients so exploratory behavior r
   - **Signal:** ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/65737) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Reward and Guidance through Rubrics: Promoting Exploration to Improve Multi-Domain Reasoning is included in model-space exploration for learning because it assigns learning credit to exploratory behavior. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `reward/advantage` as the recorded exploration evidence.
 - 🏆 **[Lookahead Tree-Based Rollouts for Enhanced Trajectory-Level Exploration in Reinforcement Learning with Verifiable Rewards](https://iclr.cc/virtual/2026/poster/10011530)** — **ICLR 2026**
   - Authors: Shangyu Xing, Siyuan Wang, Chenyuan Yang, Xin-Yu Dai, Xiang Ren
   - Type: `method` · Date: `2026`
@@ -1036,7 +1036,7 @@ Methods that reshape rewards, advantages, or gradients so exploratory behavior r
   - **Signal:** ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10011530) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Lookahead Tree-Based Rollouts for Enhanced Trajectory-Level Exploration in Reinforcement Learning with Verifiable Rewards is included in model-space exploration for learning because it assigns learning credit to exploratory behavior. It treats `response/sequence`, `trajectory/action`, and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `reward/advantage` as the recorded exploration evidence.
 - 🏆 **[Long Live The Balance: Information Bottleneck Driven Tree-based Policy Optimization](https://icml.cc/virtual/2026/poster/62699)** — **ICML 2026**
   - Authors: Hao Jiang, Shurui Li, Tianpeng Bu, Bowen Xu, Xin Liu, Qihua Chen, hongtao duan, lulu hu et al.
   - Type: `method` · Date: `2026`
@@ -1046,7 +1046,7 @@ Methods that reshape rewards, advantages, or gradients so exploratory behavior r
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square)
   - **Problem:** ![problem: exploration-exploitation](https://img.shields.io/badge/problem-exploration--exploitation-A27C63?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/62699) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Long Live The Balance: Information Bottleneck Driven Tree-based Policy Optimization is included in model-space exploration for learning because it assigns learning credit to exploratory behavior. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `information-gain` as the recorded exploration evidence.
 - 🏆 **[How to Allocate, How to Learn? Dynamic Rollout Allocation and Advantage Modulation for Policy Optimization](https://aclanthology.org/2026.findings-acl.724/)** — **ACL 2026 Findings**
   - Authors: Yangyi Fang, Jiaye Lin, Xiaoliang Fu, Cong Qin, Haolin Shi, Chaowen Hu, Lu Pan, Ke Zeng et al.
   - Type: `method` · Date: `2026`
@@ -1055,7 +1055,7 @@ Methods that reshape rewards, advantages, or gradients so exploratory behavior r
   - **Signal:** ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.724/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - How to Allocate, How to Learn? Dynamic Rollout Allocation and Advantage Modulation for Policy Optimization is included in model-space exploration for learning because it assigns learning credit to exploratory behavior. It treats `response/sequence` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `reward/advantage` as the recorded exploration evidence.
 - 🏆 **[Free Energy-Driven Reinforcement Learning with Adaptive Advantage Shaping for Unsupervised Reasoning in LLMs](https://aclanthology.org/2026.acl-long.797/)** — **ACL 2026 Main**
   - Authors: Yiming Huang, Zhenbo Shi, Xin-Cheng Wen, Jichuan Zeng, Cuiyun Gao, Peiyi Han, Chuanyi Liu
   - Type: `method` · Date: `2026`
@@ -1064,7 +1064,7 @@ Methods that reshape rewards, advantages, or gradients so exploratory behavior r
   - **Signal:** ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-long.797/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - Free Energy-Driven Reinforcement Learning with Adaptive Advantage Shaping for Unsupervised Reasoning in LLMs is included in model-space exploration for learning because it assigns learning credit to exploratory behavior. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `reward/advantage` as the recorded exploration evidence.
 - 🏆 **[EEPO: Exploration-Enhanced Policy Optimization via Sample-Then-Forget](https://iclr.cc/virtual/2026/poster/10009769)** — **ICLR 2026**
   - Authors: Liang CHEN, Xueting Han, Qizhou Wang, Bo Han, Jing Bai, Hinrich Schuetze, Kam-Fai Wong
   - Type: `method` · Date: `2026`
@@ -1072,7 +1072,7 @@ Methods that reshape rewards, advantages, or gradients so exploratory behavior r
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10009769) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - EEPO: Exploration-Enhanced Policy Optimization via Sample-Then-Forget is included in model-space exploration for learning because it assigns learning credit to exploratory behavior. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `gradient-reshaping` as the recorded exploration evidence.
 - 🏆 **[Contextual Rollout Bandits for Reinforcement Learning with Verifiable Rewards](https://icml.cc/virtual/2026/poster/60796)** — **ICML 2026**
   - Authors: Xiaodong Lu, Xiaohan Wang, Jiajun Chai, Guojun Yin, Wei Lin, Zhijun Chen, Yu Luo, Fuzhen Zhuang et al.
   - Type: `method` · Date: `2026`
@@ -1080,7 +1080,7 @@ Methods that reshape rewards, advantages, or gradients so exploratory behavior r
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Signal:** ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/60796) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Contextual Rollout Bandits for Reinforcement Learning with Verifiable Rewards is included in model-space exploration for learning because it assigns learning credit to exploratory behavior. It treats `response/sequence` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `reward/advantage` as the recorded exploration evidence.
 - 🏆 **[Beyond Euclidean Clipping: Overcoming Exploration Collapse in LLM RL via Riemannian Isometric Policy Optimization](https://icml.cc/virtual/2026/poster/61727)** — **ICML 2026**
   - Authors: Zhicheng Cai, Xinyuan Guo, Hanlin Wu, Mingxuan Wang, Wei-Ying Ma, Ya-Qin Zhang, Hao Zhou
   - Type: `method` · Date: `2026`
@@ -1088,7 +1088,7 @@ Methods that reshape rewards, advantages, or gradients so exploratory behavior r
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/61727) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Beyond Euclidean Clipping: Overcoming Exploration Collapse in LLM RL via Riemannian Isometric Policy Optimization is included in model-space exploration for learning because it assigns learning credit to exploratory behavior. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `gradient-reshaping` as the recorded exploration evidence.
 - **[Can LLMs Guide Their Own Exploration? Gradient-Guided Reinforcement Learning for LLM Reasoning](https://arxiv.org/abs/2512.15687)** — arXiv `2512.15687`
   - Authors: Zhenwen Liang, Sidi Lu, Wenhao Yu, Kishan Panaganti, Yujun Zhou, Haitao Mi, Dong Yu
   - Type: `method` · Date: `2025-12-17`
@@ -1097,7 +1097,7 @@ Methods that reshape rewards, advantages, or gradients so exploratory behavior r
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, novelty/curiosity, reward/advantage.
+  - Can LLMs Guide Their Own Exploration? Gradient-Guided Reinforcement Learning for LLM Reasoning is included in model-space exploration for learning because it assigns learning credit to exploratory behavior. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - **[More Than One Teacher: Adaptive Multi-Guidance Policy Optimization for Diverse Exploration](https://arxiv.org/abs/2510.02227)** — arXiv `2510.02227`
   - Authors: Xiaoyang Yuan, Yujuan Ding, Yi Bin, Wenqi Shao, Jinyu Cai, Jingkuan Song, Yang Yang, Heng Tao Shen
   - Type: `method` · Date: `2025-10-02`
@@ -1106,7 +1106,7 @@ Methods that reshape rewards, advantages, or gradients so exploratory behavior r
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square)
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
+  - More Than One Teacher: Adaptive Multi-Guidance Policy Optimization for Diverse Exploration is included in model-space exploration for learning because it assigns learning credit to exploratory behavior. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `semantic-diversity` as the recorded exploration evidence.
 - **[RL-PLUS: Countering Capability Boundary Collapse of LLMs in Reinforcement Learning with Hybrid-policy Optimization](https://arxiv.org/abs/2508.00222)** — ACL 2026 Main · arXiv `2508.00222`
   - Authors: Yihong Dong, Xue Jiang, Yongding Tao, Huanyu Liu, Kechi Zhang, Lili Mou, Rongyu Cao, Yingwei Ma
   - Type: `method` · Date: `2025-07-31`
@@ -1115,7 +1115,7 @@ Methods that reshape rewards, advantages, or gradients so exploratory behavior r
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Problem:** ![problem: capability-boundary](https://img.shields.io/badge/problem-capability--boundary-9A738A?style=flat-square)
   - **Publication evidence:** Venue claim: ACL 2026 Main · official URL pending
-  - Exploration focus: gradient-reshaping.
+  - RL-PLUS: Countering Capability Boundary Collapse of LLMs in Reinforcement Learning with Hybrid-policy Optimization is included in model-space exploration for learning because it assigns learning credit to exploratory behavior. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `gradient-reshaping` as the recorded exploration evidence.
 - **[R-Search: Empowering LLM Reasoning with Search via Multi-Reward Reinforcement Learning](https://arxiv.org/abs/2506.04185)** — ACL 2026 Findings · arXiv `2506.04185`
   - Authors: Qingfei Zhao, Ruobing Wang, Dingling Xu, Daren Zha, Limin Liu
   - Type: `method` · Date: `2025-06-04`
@@ -1124,7 +1124,7 @@ Methods that reshape rewards, advantages, or gradients so exploratory behavior r
   - **Signal:** ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Venue claim: ACL 2026 Findings · official URL pending
-  - Exploration focus: novelty/curiosity, reward/advantage, structured-search.
+  - R-Search: Empowering LLM Reasoning with Search via Multi-Reward Reinforcement Learning is included in model-space exploration for learning because it assigns learning credit to exploratory behavior. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `reward/advantage` as the recorded exploration evidence.
 - **[DGRO: Enhancing LLM Reasoning via Exploration-Exploitation Control and Reward Variance Management](https://arxiv.org/abs/2505.12951)** — arXiv `2505.12951`
   - Authors: Xuerui Su, Liya Guo, Yue Wang, Yi Zhu, Zhiming Ma, Zun Wang, Yuting Liu
   - Type: `method` · Date: `2025-05-19`
@@ -1134,7 +1134,7 @@ Methods that reshape rewards, advantages, or gradients so exploratory behavior r
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![mechanism: regularization](https://img.shields.io/badge/mechanism-regularization-737FB0?style=flat-square) ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
   - **Problem:** ![problem: exploration-exploitation](https://img.shields.io/badge/problem-exploration--exploitation-A27C63?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: reward/advantage, sampling/decoding, regularization.
+  - DGRO: Enhancing LLM Reasoning via Exploration-Exploitation Control and Reward Variance Management is included in model-space exploration for learning because it assigns learning credit to exploratory behavior. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `reward/advantage` as the recorded exploration evidence.
 
 ### Reward & Rollout Shaping · 9 papers
 
@@ -1148,7 +1148,7 @@ Methods that alter rollout collection, reward shaping, intrinsic bonuses, or res
   - **Signal:** ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.1434/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - VANE: Guiding High-Value Exploration in RLVR via Outcome-Process Novelty Shaping is included in model-space exploration for learning because it uses rollouts or rewards to elicit informative exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `novelty/curiosity` as the recorded exploration evidence.
 - 🏆 **[SSL4RL: Revisiting Self-supervised Learning as Intrinsic Reward for Visual-Language Reasoning](https://icml.cc/virtual/2026/poster/60895)** — **ICML 2026**
   - Authors: Xiaojun Guo, Runyu Zhou, Yifei Wang, Qi Zhang, Chenheng Zhang, Stefanie Jegelka, Xiaohan Wang, Jiajun Chai et al.
   - Type: `method` · Date: `2026`
@@ -1157,7 +1157,7 @@ Methods that alter rollout collection, reward shaping, intrinsic bonuses, or res
   - **Signal:** ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/60895) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - SSL4RL: Revisiting Self-supervised Learning as Intrinsic Reward for Visual-Language Reasoning is included in model-space exploration for learning because it uses rollouts or rewards to elicit informative exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `reward/advantage` as the recorded exploration evidence.
 - 🏆 **[Rewarding the Rare: Uniqueness-Aware RL for Creative Problem Solving in LLMs](https://aclanthology.org/2026.findings-acl.1982/)** — **ACL 2026 Findings**
   - Authors: Zhiyuan Hu, Yucheng Wang, Yufei He, Jiaying Wu, Yilun Zhao, See-Kiong Ng, Cynthia Breazeal, Anh Tuan Luu et al.
   - Type: `method` · Date: `2026`
@@ -1167,7 +1167,7 @@ Methods that alter rollout collection, reward shaping, intrinsic bonuses, or res
   - **Mechanism:** ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square)
   - **Setting:** ![setting: creative/open-ended](https://img.shields.io/badge/setting-creative%2Fopen--ended-A2778D?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.1982/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - Rewarding the Rare: Uniqueness-Aware RL for Creative Problem Solving in LLMs is included in model-space exploration for learning because it uses rollouts or rewards to elicit informative exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `novelty/curiosity` as the recorded exploration evidence.
 - 🏆 **[HEALing Entropy Collapse: Enhancing Exploration in Few-Shot RLVR via Hybrid-Domain Entropy Dynamics Alignment](https://aclanthology.org/2026.acl-long.1418/)** — **ACL 2026 Main**
   - Authors: Zhanyu Liu, Qingguo Hu, Ante Wang, Chenqing Liu, Zhishang Xiang, Hui Li, Delai Qiu, Jinsong Su
   - Type: `method` · Date: `2026`
@@ -1177,7 +1177,7 @@ Methods that alter rollout collection, reward shaping, intrinsic bonuses, or res
   - **Mechanism:** ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square)
   - **Problem:** ![problem: entropy-collapse](https://img.shields.io/badge/problem-entropy--collapse-B06D73?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-long.1418/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - HEALing Entropy Collapse: Enhancing Exploration in Few-Shot RLVR via Hybrid-Domain Entropy Dynamics Alignment is included in model-space exploration for learning because it uses rollouts or rewards to elicit informative exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[GTPO and GRPO-S: Token and Sequence-Level Reward Shaping with Policy Entropy](https://icml.cc/virtual/2026/poster/65174)** — **ICML 2026**
   - Authors: Hongze Tan, Zihan Wang, Jianfei Pan, Jinghao Lin, Hao Wang, Yifan Wu, Tao Chen, Zhihang Zheng et al.
   - Type: `method` · Date: `2026`
@@ -1186,7 +1186,7 @@ Methods that alter rollout collection, reward shaping, intrinsic bonuses, or res
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/65174) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - GTPO and GRPO-S: Token and Sequence-Level Reward Shaping with Policy Entropy is included in model-space exploration for learning because it uses rollouts or rewards to elicit informative exploration. It treats `token`, `response/sequence`, and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `token`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[DeepSearch: Overcome the Bottleneck of Reinforcement Learning with Verifiable Rewards via Tree-based Search](https://iclr.cc/virtual/2026/poster/10010078)** — **ICLR 2026**
   - Authors: Fang Wu, Weihao Xuan, Heli Qi, Aaron Tu, Ximing Lu, Li Li, Yejin Choi
   - Type: `method` · Date: `2026`
@@ -1196,7 +1196,7 @@ Methods that alter rollout collection, reward shaping, intrinsic bonuses, or res
   - **Mechanism:** ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square)
   - **Problem:** ![problem: local-optimum](https://img.shields.io/badge/problem-local--optimum-A77878?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10010078) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - DeepSearch: Overcome the Bottleneck of Reinforcement Learning with Verifiable Rewards via Tree-based Search is included in model-space exploration for learning because it uses rollouts or rewards to elicit informative exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `coverage` as the recorded exploration evidence.
 - 🏆 **[Count Counts: Motivating Exploration in LLM Reasoning with Count-based Intrinsic Rewards](https://iclr.cc/virtual/2026/poster/10011073)** — **ICLR 2026**
   - Authors: Xuan Zhang, Ruixiao Li, Zhijian Zhou, Long Li, Yulei Qin, Ke Li, Xing Sun, Xiaoyu Tan et al.
   - Type: `method` · Date: `2026`
@@ -1205,7 +1205,7 @@ Methods that alter rollout collection, reward shaping, intrinsic bonuses, or res
   - **Signal:** ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10011073) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Count Counts: Motivating Exploration in LLM Reasoning with Count-based Intrinsic Rewards is included in model-space exploration for learning because it uses rollouts or rewards to elicit informative exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `reward/advantage` as the recorded exploration evidence.
 - 🏆 **[CDE: Curiosity-Driven Exploration for Efficient Reinforcement Learning in Large Language Models](https://iclr.cc/virtual/2026/poster/10011417)** — **ICLR 2026**
   - Authors: Runpeng Dai, Linfeng Song, Haolin Liu, Zhenwen Liang, Dian Yu, Haitao Mi, Zhaopeng Tu, Rui Liu et al.
   - Type: `method` · Date: `2026`
@@ -1215,7 +1215,7 @@ Methods that alter rollout collection, reward shaping, intrinsic bonuses, or res
   - **Mechanism:** ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square)
   - **Problem:** ![problem: entropy-collapse](https://img.shields.io/badge/problem-entropy--collapse-B06D73?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10011417) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - CDE: Curiosity-Driven Exploration for Efficient Reinforcement Learning in Large Language Models is included in model-space exploration for learning because it uses rollouts or rewards to elicit informative exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `novelty/curiosity` as the recorded exploration evidence.
 - **[Outcome-based Exploration for LLM Reasoning](https://arxiv.org/abs/2509.06941)** — arXiv `2509.06941`
   - Authors: Yuda Song, Julia Kempe, Remi Munos
   - Type: `method` · Date: `2025-09-08`
@@ -1225,7 +1225,7 @@ Methods that alter rollout collection, reward shaping, intrinsic bonuses, or res
   - **Mechanism:** ![mechanism: reward-shaping/intrinsic-reward](https://img.shields.io/badge/mechanism-reward--shaping%2Fintrinsic--reward-6E946B?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Problem:** ![problem: mode-collapse](https://img.shields.io/badge/problem-mode--collapse-B57676?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: structured-search.
+  - Outcome-based Exploration for LLM Reasoning is included in model-space exploration for learning because it uses rollouts or rewards to elicit informative exploration. It treats `response/sequence` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `reward/advantage` as the recorded exploration evidence.
 
 ### Replay, Population & Self-Improvement · 7 papers
 
@@ -1240,7 +1240,7 @@ Learning systems that use replay, self-play, co-evolution, ensembles, or policy 
   - **Mechanism:** ![mechanism: self-play/co-evolution](https://img.shields.io/badge/mechanism-self--play%2Fco--evolution-A36F8A?style=flat-square)
   - **Setting:** ![setting: multi-agent](https://img.shields.io/badge/setting-multi--agent-8D7595?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/65447) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - R-Diverse: Mitigating Diversity Illusion in Self-Play LLM Training is included in model-space exploration for learning because it reuses experience or policy populations to broaden learning. It treats `trajectory/action` and `population/multi-policy` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[Experience is the Best Teacher: Motivating Effective Exploration in Reinforcement Learning for LLMs](https://icml.cc/virtual/2026/poster/65561)** — **ICML 2026**
   - Authors: Wenjian Zhang, Kongcheng Zhang, Jiaxin Qi, Baisheng Lai, Jianqiang Huang
   - Type: `method` · Date: `2026`
@@ -1248,7 +1248,7 @@ Learning systems that use replay, self-play, co-evolution, ensembles, or policy 
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/65561) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Experience is the Best Teacher: Motivating Effective Exploration in Reinforcement Learning for LLMs is included in model-space exploration for learning because it reuses experience or policy populations to broaden learning. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `replay/memory` as the recorded exploration evidence.
 - 🏆 **[CoVerRL: Breaking the Consensus Trap in Label-Free Reasoning via Generator-Verifier Co-Evolution](https://aclanthology.org/2026.acl-long.1376/)** — **ACL 2026 Main**
   - Authors: Teng Pan, Yuchen Yan, Zixuan Wang, Ruiqing Zhang, Guiyang Hou, Wenqi Zhang, Weiming Lu, Jun Xiao et al.
   - Type: `method` · Date: `2026`
@@ -1257,7 +1257,7 @@ Learning systems that use replay, self-play, co-evolution, ensembles, or policy 
   - **Signal:** ![signal: disagreement](https://img.shields.io/badge/signal-disagreement-8B7A9C?style=flat-square)
   - **Mechanism:** ![mechanism: self-play/co-evolution](https://img.shields.io/badge/mechanism-self--play%2Fco--evolution-A36F8A?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-long.1376/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - CoVerRL: Breaking the Consensus Trap in Label-Free Reasoning via Generator-Verifier Co-Evolution is included in model-space exploration for learning because it reuses experience or policy populations to broaden learning. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `disagreement` as the recorded exploration evidence.
 - **[RLEP: Reinforcement Learning with Experience Replay for LLM Reasoning](https://arxiv.org/abs/2507.07451)** — arXiv `2507.07451`
   - Authors: Hongzhi Zhang, Jia Fu, Jingyuan Zhang, Kai Fu, Qi Wang, Fuzheng Zhang, Guorui Zhou
   - Type: `method` · Date: `2025-07-10`
@@ -1265,7 +1265,7 @@ Learning systems that use replay, self-play, co-evolution, ensembles, or policy 
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: replay/memory, structured-search.
+  - RLEP: Reinforcement Learning with Experience Replay for LLM Reasoning is included in model-space exploration for learning because it reuses experience or policy populations to broaden learning. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `replay/memory` as the recorded exploration evidence.
 - **[EFRame: Deeper Reasoning via Exploration-Filter-Replay Reinforcement Learning Framework](https://arxiv.org/abs/2506.22200)** — arXiv `2506.22200`
   - Authors: Chen Wang, Lai Wei, Yanzhi Zhang, Chenyang Shao, Zedong Dan, Weiran Huang, Yuzhi Zhang, Yue Wang
   - Type: `method` · Date: `2025-06-27`
@@ -1274,7 +1274,7 @@ Learning systems that use replay, self-play, co-evolution, ensembles, or policy 
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square)
   - **Mechanism:** ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
+  - EFRame: Deeper Reasoning via Exploration-Filter-Replay Reinforcement Learning Framework is included in model-space exploration for learning because it reuses experience or policy populations to broaden learning. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `semantic-diversity` as the recorded exploration evidence.
 - **[Improving RL Exploration for LLM Reasoning through Retrospective Replay](https://arxiv.org/abs/2504.14363)** — arXiv `2504.14363`
   - Authors: Shihan Dou, Muling Wu, Jingwen Xu, Rui Zheng, Tao Gui, Qi Zhang, Xuanjing Huang
   - Type: `method` · Date: `2025-04-19`
@@ -1283,7 +1283,7 @@ Learning systems that use replay, self-play, co-evolution, ensembles, or policy 
   - **Signal:** ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square)
   - **Mechanism:** ![mechanism: backtracking/resampling](https://img.shields.io/badge/mechanism-backtracking%2Fresampling-8E759D?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: novelty/curiosity, gradient-reshaping, backtracking/resampling.
+  - Improving RL Exploration for LLM Reasoning through Retrospective Replay is included in model-space exploration for learning because it reuses experience or policy populations to broaden learning. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `novelty/curiosity` as the recorded exploration evidence.
 - **[LaRes: Evolutionary Reinforcement Learning with LLM-based Adaptive Reward Search](https://neurips.cc/virtual/2025/poster/116462)** — NeurIPS 2025
   - Authors: Pengyi Li, Hongyao Tang, Jinbin Qiao, Yan Zheng, Jianye Hao
   - Type: `method` · Date: `2025`
@@ -1307,7 +1307,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
+  - Exploration-Driven Optimization for Test-Time Large Language Model Reasoning is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training` and `inference`, using `rl-training`, `policy-distribution`, and `semantic-diversity` as the recorded exploration evidence.
 - **[Cog-DRIFT: Exploration on Adaptively Reformulated Instances Enables Learning from Hard Reasoning Problems](https://arxiv.org/abs/2604.04767)** — arXiv `2604.04767`
   - Authors: Justin Chih-Yao Chen, Archiki Prasad, Zaid Khan, Joykirat Singh, Runchu Tian, Elias Stengel-Eskin, Mohit Bansal
   - Type: `method` · Date: `2026-04-06`
@@ -1316,7 +1316,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Signal:** ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![mechanism: curriculum/task-generation](https://img.shields.io/badge/mechanism-curriculum%2Ftask--generation-A08B5F?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: reward/advantage, curriculum/task-generation, structured-search.
+  - Cog-DRIFT: Exploration on Adaptively Reformulated Instances Enables Learning from Hard Reasoning Problems is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `reward/advantage` as the recorded exploration evidence.
 - **[Bootstrapping Exploration with Group-Level Natural Language Feedback in Reinforcement Learning](https://arxiv.org/abs/2603.04597)** — arXiv `2603.04597`
   - Authors: Lei Huang, Xiang Cheng, Chenxiao Zhao, Guobin Shen, Junjie Yang, Xiaocheng Feng, Yuxuan Gu, Xing Yu et al.
   - Type: `method` · Date: `2026-03-04`
@@ -1325,7 +1325,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: semantic-diversity, reward/advantage.
+  - Bootstrapping Exploration with Group-Level Natural Language Feedback in Reinforcement Learning is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `semantic-diversity` as the recorded exploration evidence.
 - **[UpSkill: Mutual Information Skill Learning for Structured Response Diversity in LLMs](https://arxiv.org/abs/2602.22296)** — arXiv `2602.22296`
   - Authors: Devan Shah, Owen Yang, Daniel Yang, Chongyi Zheng, Benjamin Eysenbach
   - Type: `method` · Date: `2026-02-25`
@@ -1333,7 +1333,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: information-gain](https://img.shields.io/badge/signal-information--gain-5E8C97?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: novelty/curiosity, semantic-diversity, information-gain.
+  - UpSkill: Mutual Information Skill Learning for Structured Response Diversity in LLMs is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `response/sequence` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 - **[Transformation-Augmented GRPO for Enhancing Exploration in Reasoning of Large Language Models](https://arxiv.org/abs/2601.22478)** — arXiv `2601.22478`
   - Authors: Khiem Le, Phuc Nguyen, Youssef Mroueh, Chi-Heng Lin, Shangqian Gao, Ting Hua, Nitesh V. Chawla
   - Type: `method` · Date: `2026-01-30`
@@ -1342,7 +1342,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
+  - Transformation-Augmented GRPO for Enhancing Exploration in Reasoning of Large Language Models is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[h1: Bootstrapping LLMs to Reason over Longer Horizons via Reinforcement Learning](https://icml.cc/virtual/2026/poster/66494)** — **ICML 2026**
   - Authors: Alesia Ivanova, Sumeet Motwani, Jack Cai, Phil Torr, Riashat Islam, Shital Shah, Christian Schroeder de Witt, Charles London
   - Type: `method` · Date: `2026`
@@ -1351,7 +1351,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Problem:** ![problem: long-horizon](https://img.shields.io/badge/problem-long--horizon-8E7D6D?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/66494) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - h1: Bootstrapping LLMs to Reason over Longer Horizons via Reinforcement Learning is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[XRPO: Pushing the Limits of GRPO with Targeted Exploration and Exploitation](https://icml.cc/virtual/2026/poster/65777)** — **ICML 2026**
   - Authors: Udbhav Bamba, Minghao Fang, Yifan Yu, Haizhong Zheng, Fan Lai
   - Type: `method` · Date: `2026`
@@ -1360,7 +1360,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Problem:** ![problem: exploration-exploitation](https://img.shields.io/badge/problem-exploration--exploitation-A27C63?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/65777) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - XRPO: Pushing the Limits of GRPO with Targeted Exploration and Exploitation is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Temporal Sampling for Forgotten Reasoning in LLMs](https://aclanthology.org/2026.acl-long.1305/)** — **ACL 2026 Main**
   - Authors: Yuetai Li, Zhangchen Xu, Fengqing Jiang, Bhaskar Ramasubramanian, Luyao Niu, Bill Yuchen Lin, Xiang Yue, Radha Poovendran
   - Type: `method` · Date: `2026`
@@ -1368,7 +1368,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-long.1305/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - Temporal Sampling for Forgotten Reasoning in LLMs is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training` and `inference`, using `rl-training`, `policy-distribution`, and `sampling/decoding` as the recorded exploration evidence.
 - 🏆 **[Smaller Models are Natural Explorers for Policy-Level Diversity in GRPO](https://icml.cc/virtual/2026/poster/64272)** — **ICML 2026**
   - Authors: Yiming Ren, Yiran Xu, Zicheng Lin, Chufan Shi, Yukang Chen, Dingdong WANG, Tianhe Wu, Junjie Wang et al.
   - Type: `method` · Date: `2026`
@@ -1377,7 +1377,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/64272) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Smaller Models are Natural Explorers for Policy-Level Diversity in GRPO is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[Semantic-Space Exploration and Exploitation in RLVR for LLM Reasoning](https://aclanthology.org/2026.findings-acl.1915/)** — **ACL 2026 Findings**
   - Authors: Fanding Huang, Guanbo Huang, Xiao Fan, Yi He, Xiao Liang, Xiao Chen, Qinting Jiang, Faisal Nadeem Khan et al.
   - Type: `method` · Date: `2026`
@@ -1387,7 +1387,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Problem:** ![problem: exploration-exploitation](https://img.shields.io/badge/problem-exploration--exploitation-A27C63?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.1915/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - Semantic-Space Exploration and Exploitation in RLVR for LLM Reasoning is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[Selective Expert Guidance for Effective and Diverse Exploration in Reinforcement Learning of LLMs](https://iclr.cc/virtual/2026/poster/10008654)** — **ICLR 2026**
   - Authors: Zishang Jiang, Jinyi Han, tingyun li, Xinyi Wang, Sihang Jiang, Zhaoqian Dai, Ma Shuguang, Fei Yu et al.
   - Type: `method` · Date: `2026`
@@ -1396,7 +1396,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10008654) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Selective Expert Guidance for Effective and Diverse Exploration in Reinforcement Learning of LLMs is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[Risk-Sensitive Reinforcement Learning for Alleviating Exploration Dilemmas in Large Language Models](https://iclr.cc/virtual/2026/poster/10011269)** — **ICLR 2026**
   - Authors: Yuhua Jiang, Jiawei Huang, Yufeng Yuan, Xin Mao, YuYue, Qianchuan Zhao, Lin Yan
   - Type: `method` · Date: `2026`
@@ -1404,7 +1404,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10011269) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Risk-Sensitive Reinforcement Learning for Alleviating Exploration Dilemmas in Large Language Models is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Restoring Exploration after Post-Training: Latent Exploration Decoding for Large Reasoning Models](https://icml.cc/virtual/2026/poster/66546)** — **ICML 2026**
   - Authors: Wenhui Tan, Fiorenzo Parascandolo, Enver Sangineto, Jianzhong Ju, Zhenbo Luo, Qian Cao, Rita Cucchiara, Ruihua Song et al.
   - Type: `method` · Date: `2026`
@@ -1412,7 +1412,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Level:** ![level: latent/representation](https://img.shields.io/badge/level-latent%2Frepresentation-777FA8?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/66546) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Restoring Exploration after Post-Training: Latent Exploration Decoding for Large Reasoning Models is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `latent/representation` and `policy-distribution` as the exploration object during `supervised-post-training`, `rl-training`, and `inference`, using `supervised-post-training`, `latent/representation`, and `sampling/decoding` as the recorded exploration evidence.
 - 🏆 **[ResRL: Boosting LLM Reasoning via Negative Sample Projection Residual Reinforcement Learning](https://icml.cc/virtual/2026/poster/62006)** — **ICML 2026**
   - Authors: Zihan Lin, Xiaohan Wang, Jie Cao, Jiajun Chai, Li Wang, Xiaodong Lu, Wei Lin, Ran He et al.
   - Type: `method` · Date: `2026`
@@ -1420,7 +1420,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/62006) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - ResRL: Boosting LLM Reasoning via Negative Sample Projection Residual Reinforcement Learning is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Reinforced Efficient Reasoning via Semantically Diverse Exploration](https://aclanthology.org/2026.acl-long.2216/)** — **ACL 2026 Main**
   - Authors: Ziqi Zhao, Zhaochun Ren, Jiahong Zou, Liu Yang, Zhiwei Xu, Xuri Ge, Zhumin Chen, Xinyu Ma et al.
   - Type: `method` · Date: `2026`
@@ -1429,7 +1429,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-long.2216/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - Reinforced Efficient Reasoning via Semantically Diverse Exploration is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[Reasoning-Guided Exploration for Online DPO](https://aclanthology.org/2026.findings-acl.1370/)** — **ACL 2026 Findings**
   - Authors: Zetian Hu, Shunyu Liu, Ting-En Lin, Fei Huang, Yongbin Li, Dacheng Tao
   - Type: `method` · Date: `2026`
@@ -1437,7 +1437,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.1370/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - Reasoning-Guided Exploration for Online DPO is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Knapsack RL: Unlocking Exploration of LLMs via Optimizing Budget Allocation](https://icml.cc/virtual/2026/poster/60948)** — **ICML 2026**
   - Authors: Ziniu Li, Congliang Chen, Tianyun Yang, Tian Ding, Ruoyu Sun, Ge Zhang, Wenhao Huang, Zhiquan Luo
   - Type: `method` · Date: `2026`
@@ -1445,7 +1445,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/60948) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Knapsack RL: Unlocking Exploration of LLMs via Optimizing Budget Allocation is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Incentivizing LLM Reasoning via Reinforcement Learning with Functional Monte Carlo Tree Search](https://iclr.cc/virtual/2026/poster/10007699)** — **ICLR 2026**
   - Authors: Kongcheng Zhang, QI YAO, Baisheng Lai, Jiaxing Huang, Wenkai Fang, Dacheng Tao, Mingli Song, Shunyu Liu
   - Type: `method` · Date: `2026`
@@ -1453,7 +1453,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10007699) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Incentivizing LLM Reasoning via Reinforcement Learning with Functional Monte Carlo Tree Search is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `tree-search/branching` as the recorded exploration evidence.
 - 🏆 **[Guided by Gut: Efficient Test-Time Scaling with Reinforced Intrinsic Confidence](https://aclanthology.org/2026.acl-long.739/)** — **ACL 2026 Main**
   - Authors: Amirhosein Ghasemabadi, Keith G. Mills, Baochun Li, Di Niu
   - Type: `method` · Date: `2026`
@@ -1461,7 +1461,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Signal:** ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-long.739/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - Guided by Gut: Efficient Test-Time Scaling with Reinforced Intrinsic Confidence is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training` and `inference`, using `rl-training`, `policy-distribution`, and `uncertainty/confidence` as the recorded exploration evidence.
 - 🏆 **[GeoAlign: Geometric Rollout Curation for Robust LLM Reinforcement Learning](https://icml.cc/virtual/2026/poster/60634)** — **ICML 2026**
   - Authors: Ting Zhou, Zhenqing Ling, Yiyang Zhao, Ying Shen, Daoyuan Chen
   - Type: `method` · Date: `2026`
@@ -1469,7 +1469,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/60634) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - GeoAlign: Geometric Rollout Curation for Robust LLM Reinforcement Learning is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `response/sequence` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Exploration-Exploitation Reshaping towards Efficient Reasoning for Large Language Models](https://aclanthology.org/2026.findings-acl.1520/)** — **ACL 2026 Findings**
   - Authors: Yufeng Shi, Weilin Luo, Yuxiang Zhang, Zongmeng Zhang, Haoyang Liu, Yubing Wang, Bin Wang, Wengang Zhou et al.
   - Type: `method` · Date: `2026`
@@ -1478,7 +1478,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Problem:** ![problem: exploration-exploitation](https://img.shields.io/badge/problem-exploration--exploitation-A27C63?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.1520/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - Exploration-Exploitation Reshaping towards Efficient Reasoning for Large Language Models is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Expanding Reasoning Potential in Foundation Model by Learning Diverse Chains of Thought Patterns](https://iclr.cc/virtual/2026/poster/10011658)** — **ICLR 2026**
   - Authors: Xuemiao Zhang, Can Ren, Chengying Tu, Rongxiang Weng, Shuo Wang, Hongfei Yan, Jingang Wang, Xunliang Cai
   - Type: `method` · Date: `2026`
@@ -1486,7 +1486,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10011658) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Expanding Reasoning Potential in Foundation Model by Learning Diverse Chains of Thought Patterns is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `response/sequence` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[EvoCoT: Overcoming the Exploration Bottleneck in Reinforcement Learning for LLMs](https://aclanthology.org/2026.findings-acl.1031/)** — **ACL 2026 Findings**
   - Authors: Huanyu Liu, Jia Li, Yihong Dong, Chang Yu, Taozhi Chen, Lecheng Wang, Yongding Tao, Bin Gu et al.
   - Type: `method` · Date: `2026`
@@ -1494,7 +1494,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.1031/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - EvoCoT: Overcoming the Exploration Bottleneck in Reinforcement Learning for LLMs is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Escaping Policy Contraction: Contraction-Aware PPO (CaPPO) for Stable Language Model Fine-Tuning](https://iclr.cc/virtual/2026/poster/10006831)** — **ICLR 2026**
   - Authors: Dun Yuan, Di Wu, Xue Liu
   - Type: `method` · Date: `2026`
@@ -1503,7 +1503,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Problem:** ![problem: mode-collapse](https://img.shields.io/badge/problem-mode--collapse-B57676?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10006831) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Escaping Policy Contraction: Contraction-Aware PPO (CaPPO) for Stable Language Model Fine-Tuning is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Empowering Small VLMs to Think with Dynamic Memorization and Exploration](https://iclr.cc/virtual/2026/poster/10007260)** — **ICLR 2026**
   - Authors: Jiazhen Liu, Yuchuan Deng, Long Chen
   - Type: `method` · Date: `2026`
@@ -1512,7 +1512,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Setting:** ![setting: multimodal](https://img.shields.io/badge/setting-multimodal-8176A5?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10007260) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Empowering Small VLMs to Think with Dynamic Memorization and Exploration is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Dynamics-Predictive Sampling for Active RL Finetuning of Large Reasoning Models](https://iclr.cc/virtual/2026/poster/10006780)** — **ICLR 2026**
   - Authors: Yixiu Mao, Yun Qu, Qi Wang, Heming Zou, Xiangyang Ji
   - Type: `method` · Date: `2026`
@@ -1520,7 +1520,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10006780) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Dynamics-Predictive Sampling for Active RL Finetuning of Large Reasoning Models is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training` and `inference`, using `rl-training`, `policy-distribution`, and `sampling/decoding` as the recorded exploration evidence.
 - 🏆 **[Diversity-Incentivized Exploration for Versatile Reasoning](https://iclr.cc/virtual/2026/poster/10011130)** — **ICLR 2026**
   - Authors: Zican Hu, Shilin Zhang, Yafu Li, Jianhao (Elliott) Yan, Xuyang Hu, Leyang Cui, Xiaoye Qu, Chunlin Chen et al.
   - Type: `method` · Date: `2026`
@@ -1529,7 +1529,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10011130) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Diversity-Incentivized Exploration for Versatile Reasoning is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[Diversity-Enhanced Reasoning for Subjective Questions](https://iclr.cc/virtual/2026/poster/10011855)** — **ICLR 2026**
   - Authors: Yumeng Wang, Zhiyuan Fan, Jiayu Liu, Jen-Tse Huang, Yi R. Fung
   - Type: `method` · Date: `2026`
@@ -1538,7 +1538,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Setting:** ![setting: creative/open-ended](https://img.shields.io/badge/setting-creative%2Fopen--ended-A2778D?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10011855) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Diversity-Enhanced Reasoning for Subjective Questions is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[Depth-Breadth Synergy in RLVR: Unlocking LLM Reasoning Gains with Adaptive Exploration](https://icml.cc/virtual/2026/poster/60955)** — **ICML 2026**
   - Authors: Zhicheng Yang, Zhijiang Guo, Yinya Huang, Yongxin Wang, Dongchun Xie, Hanhui Li, Yiwei Wang, Xiaodan Liang et al.
   - Type: `method` · Date: `2026`
@@ -1546,7 +1546,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/60955) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Depth-Breadth Synergy in RLVR: Unlocking LLM Reasoning Gains with Adaptive Exploration is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[DRA-GRPO: Your GRPO Needs to Know Diverse Reasoning Paths for Mathematical Reasoning](https://aclanthology.org/2026.findings-acl.685/)** — **ACL 2026 Findings**
   - Authors: Xiwen Chen, Wenhui Zhu, Peijie Qiu, Xuanzhao Dong, Hao Wang, Haiyu Wu, Huayu Li, Aris Sotiras et al.
   - Type: `method` · Date: `2026`
@@ -1555,7 +1555,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Setting:** ![setting: math](https://img.shields.io/badge/setting-math-6D8CAB?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.685/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - DRA-GRPO: Your GRPO Needs to Know Diverse Reasoning Paths for Mathematical Reasoning is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `response/sequence` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[DPWriter: Reinforcement Learning with Diverse Planning Branching for Creative Writing](https://aclanthology.org/2026.acl-long.647/)** — **ACL 2026 Main**
   - Authors: Qian Cao, Yahui Liu, Wei Bi, Yi Zhao, Ruihua Song, Xiting Wang, Ruiming Tang, Guorui Zhou et al.
   - Type: `method` · Date: `2026`
@@ -1565,7 +1565,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Mechanism:** ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square)
   - **Setting:** ![setting: creative/open-ended](https://img.shields.io/badge/setting-creative%2Fopen--ended-A2778D?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-long.647/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - DPWriter: Reinforcement Learning with Diverse Planning Branching for Creative Writing is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[DARL: Encouraging Diverse Answers for General Reasoning without Verifiers](https://aclanthology.org/2026.findings-acl.1530/)** — **ACL 2026 Findings**
   - Authors: Chongxuan Huang, Lei Lin, Xiaodong Shi, Wenping Hu, Ruiming Tang
   - Type: `method` · Date: `2026`
@@ -1573,7 +1573,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.1530/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - DARL: Encouraging Diverse Answers for General Reasoning without Verifiers is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[Controllable Exploration in Hybrid-Policy RLVR for Multi-Modal Reasoning](https://iclr.cc/virtual/2026/poster/10011411)** — **ICLR 2026**
   - Authors: Zhuoxu Huang, Mengxi Jia, Hao Sun, Xuelong Li, Jungong Han
   - Type: `method` · Date: `2026`
@@ -1581,7 +1581,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10011411) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Controllable Exploration in Hybrid-Policy RLVR for Multi-Modal Reasoning is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[BroRL: Scaling Reinforcement Learning via Broadened Exploration](https://icml.cc/virtual/2026/poster/64690)** — **ICML 2026**
   - Authors: Jian Hu, Mingjie Liu, Ximing Lu, Fang Wu, Zaid Harchaoui, Shizhe Diao, Yejin Choi, Pavlo Molchanov et al.
   - Type: `method` · Date: `2026`
@@ -1589,7 +1589,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/64690) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - BroRL: Scaling Reinforcement Learning via Broadened Exploration is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Breaking the Exploration Bottleneck: Rubric-Scaffolded Reinforcement Learning for General LLM Reasoning](https://icml.cc/virtual/2026/poster/64959)** — **ICML 2026**
   - Authors: Yang Zhou, Sunzhu Li, Shunyu Liu, Wenkai Fang, Kongcheng Zhang, Jiale Zhao, Jingwen Yang, Yihe Zhou et al.
   - Type: `method` · Date: `2026`
@@ -1597,7 +1597,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/64959) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Breaking the Exploration Bottleneck: Rubric-Scaffolded Reinforcement Learning for General LLM Reasoning is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Beyond Markovian: Reflective Exploration via Bayes-Adaptive RL for LLM Reasoning](https://iclr.cc/virtual/2026/poster/10006770)** — **ICLR 2026**
   - Authors: Shenao Zhang, Yaqing Wang, Yinxiao Liu, Tianqi Liu, Peter Grabowski, Eugene Ie, Zhaoran Wang, Yunxuan Li
   - Type: `method` · Date: `2026`
@@ -1605,7 +1605,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10006770) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Beyond Markovian: Reflective Exploration via Bayes-Adaptive RL for LLM Reasoning is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Attention as a Compass: Efficient Exploration for Process-Supervised RL in Reasoning Models](https://iclr.cc/virtual/2026/poster/10009884)** — **ICLR 2026**
   - Authors: Runze Liu, Jiakang Wang, Yuling Shi, Zhihui Xie, Chenxin An, Kaiyan Zhang, Jian Zhao, Xiaodong Gu et al.
   - Type: `method` · Date: `2026`
@@ -1613,7 +1613,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10009884) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Attention as a Compass: Efficient Exploration for Process-Supervised RL in Reasoning Models is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `structured-search` as the recorded exploration evidence.
 - **[Scheduling Your LLM Reinforcement Learning with Reasoning Trees](https://arxiv.org/abs/2510.24832)** — arXiv `2510.24832`
   - Authors: Hong Wang, Zhezheng Hao, Jian Luo, Chenxing Wei, Yao Shu, Lei Liu, Qiang Lin, Hande Dong et al.
   - Type: `method` · Date: `2025-10-28`
@@ -1622,7 +1622,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Signal:** ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: novelty/curiosity, reward/advantage, tree-search/branching.
+  - Scheduling Your LLM Reinforcement Learning with Reasoning Trees is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `novelty/curiosity` as the recorded exploration evidence.
 - **[Let it Calm: Exploratory Annealed Decoding for Verifiable Reinforcement Learning](https://arxiv.org/abs/2510.05251)** — arXiv `2510.05251`
   - Authors: Chenghao Yang, Lin Gui, Chenxiao Yang, Victor Veitch, Lizhu Zhang, Zhuokai Zhao
   - Type: `method` · Date: `2025-10-06`
@@ -1631,7 +1631,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
+  - Let it Calm: Exploratory Annealed Decoding for Verifiable Reinforcement Learning is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training` and `inference`, using `rl-training`, `policy-distribution`, and `semantic-diversity` as the recorded exploration evidence.
 - **[Know When to Explore: Difficulty-Aware Certainty as a Guide for LLM Reinforcement Learning](https://arxiv.org/abs/2509.00125)** — arXiv `2509.00125`
   - Authors: Ang Li, Zhihang Yuan, Yang Zhang, Shouda Liu, Yisen Wang
   - Type: `method` · Date: `2025-08-29`
@@ -1640,7 +1640,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Signal:** ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: uncertainty/confidence, novelty/curiosity, reward/advantage.
+  - Know When to Explore: Difficulty-Aware Certainty as a Guide for LLM Reinforcement Learning is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `uncertainty/confidence` as the recorded exploration evidence.
 - **[AMFT: Aligning LLM Reasoners by Meta-Learning the Optimal Imitation-Exploration Balance](https://arxiv.org/abs/2508.06944)** — arXiv `2508.06944`
   - Authors: Lixuan He, Jie Feng, Yong Li
   - Type: `method` · Date: `2025-08-09`
@@ -1650,7 +1650,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Problem:** ![problem: exploration-exploitation](https://img.shields.io/badge/problem-exploration--exploitation-A27C63?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
+  - AMFT: Aligning LLM Reasoners by Meta-Learning the Optimal Imitation-Exploration Balance is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `semantic-diversity` as the recorded exploration evidence.
 - **[TreeRL: LLM Reinforcement Learning with On-Policy Tree Search](https://arxiv.org/abs/2506.11902)** — arXiv `2506.11902`
   - Authors: Zhenyu Hou, Ziniu Hu, Yujiang Li, Rui Lu, Jie Tang, Yuxiao Dong
   - Type: `method` · Date: `2025-06-13`
@@ -1659,7 +1659,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, uncertainty/confidence, reward/advantage.
+  - TreeRL: LLM Reinforcement Learning with On-Policy Tree Search is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - **[Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search](https://arxiv.org/abs/2502.02508)** — arXiv `2502.02508`
   - Authors: Maohao Shen, Guangtao Zeng, Zhenting Qi, Zhang-Wei Hong, Zhenfang Chen, Wei Lu, Gregory Wornell, Subhro Das et al.
   - Type: `method` · Date: `2025-02-04`
@@ -1668,7 +1668,7 @@ Training interventions designed to expand or stabilize model capabilities, focus
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square) ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: semantic-diversity, sampling/decoding, structured-search.
+  - Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search is included in model-space exploration for learning because it examines how training interventions expand or constrain capability. It treats `response/sequence` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 
 ### Data Selection & Prompt Exploration · 5 papers
 
@@ -1682,7 +1682,7 @@ Methods that select, prioritize, or prompt training examples, using informativen
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10007755) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - No Prompt Left Behind: Exploiting Zero-Variance Prompts in LLM Reinforcement Learning via Entropy-Guided Advantage Shaping is included in model-space exploration for learning because it selects informative data or prompts for learning. It treats `policy-distribution` and `data/task` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[Dynamic Sampling that Adapts: Self-Aware Iterative Data Persistent Optimization for Mathematical Reasoning](https://aclanthology.org/2026.findings-acl.1412/)** — **ACL 2026 Findings**
   - Authors: Jun Rao, Xuebo Liu, Hexuan Deng, Zepeng Lin, Zixiong Yu, Jiansheng Wei, Xiaojun Meng, Min Zhang
   - Type: `method` · Date: `2026`
@@ -1691,7 +1691,7 @@ Methods that select, prioritize, or prompt training examples, using informativen
   - **Mechanism:** ![mechanism: sampling/decoding](https://img.shields.io/badge/mechanism-sampling%2Fdecoding-5D8CA8?style=flat-square)
   - **Setting:** ![setting: math](https://img.shields.io/badge/setting-math-6D8CAB?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.1412/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - Dynamic Sampling that Adapts: Self-Aware Iterative Data Persistent Optimization for Mathematical Reasoning is included in model-space exploration for learning because it selects informative data or prompts for learning. It treats `policy-distribution` and `data/task` as the exploration object during `rl-training` and `inference`, using `rl-training`, `policy-distribution`, and `sampling/decoding` as the recorded exploration evidence.
 - 🏆 **[Beyond Templates: Dynamic Adaptation of Reasoning Demonstrations via Feasibility-Aware Exploration](https://aclanthology.org/2026.findings-acl.327/)** — **ACL 2026 Findings**
   - Authors: Yong Wu, Weihang Pan, Ke Li, Chen Binhui, Ping Li, Binbin Lin
   - Type: `method` · Date: `2026`
@@ -1699,7 +1699,7 @@ Methods that select, prioritize, or prompt training examples, using informativen
   - **Level:** ![level: data/task](https://img.shields.io/badge/level-data%2Ftask-9A7F9C?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.327/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - Beyond Templates: Dynamic Adaptation of Reasoning Demonstrations via Feasibility-Aware Exploration is included in model-space exploration for learning because it selects informative data or prompts for learning. It treats `data/task` as the exploration object during `inference` and `test-time-adaptation`, using `inference`, `data/task`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Beyond Stochastic Exploration: What Makes Training Data Valuable for Agentic Search](https://aclanthology.org/2026.findings-acl.160/)** — **ACL 2026 Findings**
   - Authors: Chuzhan Hao, Wenfeng Feng, Guochao Jiang, Guofeng Quan, Guohua Liu, Yuewei Zhang
   - Type: `method` · Date: `2026`
@@ -1707,7 +1707,7 @@ Methods that select, prioritize, or prompt training examples, using informativen
   - **Level:** ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) ![level: data/task](https://img.shields.io/badge/level-data%2Ftask-9A7F9C?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.160/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - Beyond Stochastic Exploration: What Makes Training Data Valuable for Agentic Search is included in model-space exploration for learning because it selects informative data or prompts for learning. It treats `trajectory/action` and `data/task` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `structured-search` as the recorded exploration evidence.
 - **[Explore Data Left Behind in Reinforcement Learning for Reasoning Language Models](https://arxiv.org/abs/2511.04800)** — arXiv `2511.04800`
   - Authors: Chenxi Liu, Junjie Liang, Yuqi Jia, Bochuan Cao, Yang Bai, Heng Huang, Xun Chen
   - Type: `method` · Date: `2025-11-06`
@@ -1716,7 +1716,7 @@ Methods that select, prioritize, or prompt training examples, using informativen
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
+  - Explore Data Left Behind in Reinforcement Learning for Reasoning Language Models is included in model-space exploration for learning because it selects informative data or prompts for learning. It treats `policy-distribution` and `data/task` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `semantic-diversity` as the recorded exploration evidence.
 
 ### Task Synthesis & Curriculum · 1 paper
 
@@ -1729,7 +1729,7 @@ Methods that generate and sequence tasks across difficulty levels, with adaptive
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) ![level: data/task](https://img.shields.io/badge/level-data%2Ftask-9A7F9C?style=flat-square)
   - **Mechanism:** ![mechanism: curriculum/task-generation](https://img.shields.io/badge/mechanism-curriculum%2Ftask--generation-A08B5F?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10007463) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Scaling Synthetic Task Generation for Agents via Exploration is included in model-space exploration for learning because it generates or sequences tasks to expand learning experience. It treats `response/sequence`, `trajectory/action`, and `data/task` as the exploration object during `data-generation` and `inference`, using `data-generation`, `response/sequence`, and `curriculum/task-generation` as the recorded exploration evidence.
 
 
 ## 3. Environment-Space Exploration at Inference
@@ -1753,7 +1753,7 @@ Agents that explore websites, tools, and graphical interfaces, where action grou
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Setting:** ![setting: multimodal](https://img.shields.io/badge/setting-multimodal-8176A5?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/60509) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - What You Think is What You See: Driving Exploration in VLM Agents via Visual-Linguistic Curiosity is included in environment-space exploration at inference because it explores tools, interfaces, or web environments. It treats `trajectory/action` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `novelty/curiosity` as the recorded exploration evidence.
 - 🏆 **[Empowering GUI Agents via Autonomous Experience Exploration and Hindsight Experience Utilization for Task Planning](https://aclanthology.org/2026.acl-long.1670/)** — **ACL 2026 Main**
   - Authors: Tianyi Men, Zhuoran Jin, Pengfei Cao, Yubo Chen, Kang Liu, Jun Zhao
   - Type: `method` · Date: `2026`
@@ -1761,7 +1761,7 @@ Agents that explore websites, tools, and graphical interfaces, where action grou
   - **Level:** ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) ![level: data/task](https://img.shields.io/badge/level-data%2Ftask-9A7F9C?style=flat-square)
   - **Mechanism:** ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-long.1670/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - Empowering GUI Agents via Autonomous Experience Exploration and Hindsight Experience Utilization for Task Planning is included in environment-space exploration at inference because it explores tools, interfaces, or web environments. It treats `trajectory/action` and `data/task` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `replay/memory` as the recorded exploration evidence.
 - 🏆 **[DreamPhase: Offline Imagination and Uncertainty-Guided Planning for Large-Language-Model Agents](https://iclr.cc/virtual/2026/poster/10011238)** — **ICLR 2026**
   - Authors: Shayan Mohajer Hamidi, Linfeng Ye, Konstantinos Plataniotis
   - Type: `method` · Date: `2026`
@@ -1769,7 +1769,7 @@ Agents that explore websites, tools, and graphical interfaces, where action grou
   - **Level:** ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
   - **Signal:** ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10011238) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - DreamPhase: Offline Imagination and Uncertainty-Guided Planning for Large-Language-Model Agents is included in environment-space exploration at inference because it explores tools, interfaces, or web environments. It treats `trajectory/action` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `uncertainty/confidence` as the recorded exploration evidence.
 - 🏆 **[Branch-and-Browse: Efficient and Controllable Web Exploration with Tree-Structured Reasoning and Action Memory](https://aclanthology.org/2026.acl-long.838/)** — **ACL 2026 Main**
   - Authors: Shiqi He, Yue Cui, Xinyu Ma, Yaliang Li, Bolin Ding, Mosharaf Chowdhury
   - Type: `method` · Date: `2026`
@@ -1778,7 +1778,7 @@ Agents that explore websites, tools, and graphical interfaces, where action grou
   - **Mechanism:** ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square)
   - **Setting:** ![setting: web](https://img.shields.io/badge/setting-web-5B8B86?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-long.838/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - Branch-and-Browse: Efficient and Controllable Web Exploration with Tree-Structured Reasoning and Action Memory is included in environment-space exploration at inference because it explores tools, interfaces, or web environments. It treats `trajectory/action` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `tree-search/branching` as the recorded exploration evidence.
 
 ### Planning & Interactive Search · 10 papers
 
@@ -1791,7 +1791,7 @@ Agents that search over multi-step action plans while interacting with an enviro
   - **Level:** ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10009979) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Toward Efficient Exploration by Large Language Model Agents is included in environment-space exploration at inference because it explores multi-step actions under environmental feedback. It treats `trajectory/action` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[SQLAgent: Learning to Explore Before Generating as a Data Engineer](https://aclanthology.org/2026.findings-acl.1959/)** — **ACL 2026 Findings**
   - Authors: Wenjia Jiang, Yiwei Wang, Boyan Han, Joey Tianyi Zhou, Chi Zhang
   - Type: `method` · Date: `2026`
@@ -1800,7 +1800,7 @@ Agents that search over multi-step action plans while interacting with an enviro
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Setting:** ![setting: code](https://img.shields.io/badge/setting-code-697F9D?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.1959/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - SQLAgent: Learning to Explore Before Generating as a Data Engineer is included in environment-space exploration at inference because it explores multi-step actions under environmental feedback. It treats `trajectory/action` and `data/task` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[RE-TRAC: REcursive TRAjectory Compression for Deep Search Agents](https://icml.cc/virtual/2026/poster/60790)** — **ICML 2026**
   - Authors: jialiang zhu, Gongrui Zhang, Xiaolong Ma, Lin Xu, Miaosen Zhang, Ruiqi Yang, Song Wang, Kai Qiu et al.
   - Type: `method` · Date: `2026`
@@ -1808,7 +1808,7 @@ Agents that search over multi-step action plans while interacting with an enviro
   - **Level:** ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/60790) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - RE-TRAC: REcursive TRAjectory Compression for Deep Search Agents is included in environment-space exploration at inference because it explores multi-step actions under environmental feedback. It treats `trajectory/action` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[PExA: Parallel Exploration Agent for Complex Text-to-SQL](https://aclanthology.org/2026.acl-short.48/)** — **ACL 2026 Main**
   - Authors: Tanmay Parekh, Ella Hofmann-Coyle, Shuyi Wang, Sachith Sri Ram Kothur, Srivas Prasad, Yunmo Chen
   - Type: `method` · Date: `2026`
@@ -1817,7 +1817,7 @@ Agents that search over multi-step action plans while interacting with an enviro
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Setting:** ![setting: code](https://img.shields.io/badge/setting-code-697F9D?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-short.48/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - PExA: Parallel Exploration Agent for Complex Text-to-SQL is included in environment-space exploration at inference because it explores multi-step actions under environmental feedback. It treats `trajectory/action` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[MAXS: Meta-Adaptive Exploration with LLM Agents](https://aclanthology.org/2026.findings-acl.670/)** — **ACL 2026 Findings**
   - Authors: Jian Zhang, Zhiyuan Wang, Zhangqi Wang, Yu He, Haoran Luo, li Yuan, Lingling Zhang, Rui Mao et al.
   - Type: `method` · Date: `2026`
@@ -1825,7 +1825,7 @@ Agents that search over multi-step action plans while interacting with an enviro
   - **Level:** ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.670/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - MAXS: Meta-Adaptive Exploration with LLM Agents is included in environment-space exploration at inference because it explores multi-step actions under environmental feedback. It treats `trajectory/action` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[FusionFlow: Enabling Deep Structural Exploration for Automated Agentic Workflow Generation](https://aclanthology.org/2026.acl-long.1278/)** — **ACL 2026 Main**
   - Authors: Xiang Wang, Zongtao Yang, Zhuojian Hong, Shuhao Zhang, Wei Wei
   - Type: `method` · Date: `2026`
@@ -1833,7 +1833,7 @@ Agents that search over multi-step action plans while interacting with an enviro
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square) ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-long.1278/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - FusionFlow: Enabling Deep Structural Exploration for Automated Agentic Workflow Generation is included in environment-space exploration at inference because it explores multi-step actions under environmental feedback. It treats `response/sequence` and `trajectory/action` as the exploration object during `inference`, using `inference`, `response/sequence`, and `structured-search` as the recorded exploration evidence.
 - **[AgentSwift: Efficient LLM Agent Design via Value-guided Hierarchical Search](https://arxiv.org/abs/2506.06017)** — arXiv `2506.06017`
   - Authors: Yu Li, Lehui Li, Zhihao Wu, Qingmin Liao, Jianye Hao, Kun Shao, Fengli Xu
   - Type: `method` · Date: `2025-06-06`
@@ -1853,7 +1853,7 @@ Agents that search over multi-step action plans while interacting with an enviro
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
+  - Enhancing Diversity in Parallel Agents: A Maximum State Entropy Exploration Story is included in environment-space exploration at inference because it explores multi-step actions under environmental feedback. It treats `trajectory/action` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `entropy/probability` as the recorded exploration evidence.
 - **[Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models](https://proceedings.mlr.press/v235/zhou24r.html)** — ICML 2024
   - Authors: Andy Zhou, Kai Yan, Michal Shlapentokh-Rothman, Haohan Wang, Yu-Xiong Wang
   - Type: `method` · Date: `2024`
@@ -1927,7 +1927,7 @@ Agents that traverse knowledge graphs or use accumulated memory to guide future 
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Setting:** ![setting: knowledge-graph](https://img.shields.io/badge/setting-knowledge--graph-7B8466?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10009840) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Explore-on-Graph: Incentivizing Autonomous Exploration of Large Language Models on Knowledge Graphs with Path-refined Reward Modeling is included in environment-space exploration at inference because it uses knowledge or memory to guide future environment exploration. It treats `trajectory/action` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `reward/advantage` as the recorded exploration evidence.
 - 🏆 **[Dyna-Mind: Learning to Simulate from Experience for Better AI Agents](https://iclr.cc/virtual/2026/poster/10010625)** — **ICLR 2026**
   - Authors: Xiao Yu, Baolin Peng, Michel Galley, Hao Cheng, Qianhui Wu, Janardhan Kulkarni, Suman Nath, Zhou Yu et al.
   - Type: `method` · Date: `2026`
@@ -1935,7 +1935,7 @@ Agents that traverse knowledge graphs or use accumulated memory to guide future 
   - **Level:** ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
   - **Mechanism:** ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10010625) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Dyna-Mind: Learning to Simulate from Experience for Better AI Agents is included in environment-space exploration at inference because it uses knowledge or memory to guide future environment exploration. It treats `trajectory/action` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `replay/memory` as the recorded exploration evidence.
 - 🏆 **[Dual-Scale World Memory for LLM Agents towards Hard-Exploration Problems](https://iclr.cc/virtual/2026/poster/10008626)** — **ICLR 2026**
   - Authors: Minsoo Kim, seung-won hwang
   - Type: `method` · Date: `2026`
@@ -1943,7 +1943,7 @@ Agents that traverse knowledge graphs or use accumulated memory to guide future 
   - **Level:** ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
   - **Mechanism:** ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10008626) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Dual-Scale World Memory for LLM Agents towards Hard-Exploration Problems is included in environment-space exploration at inference because it uses knowledge or memory to guide future environment exploration. It treats `trajectory/action` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `replay/memory` as the recorded exploration evidence.
 - 🏆 **[Chain-of-Relations: Faithful and Efficient LLM Reasoning over Knowledge Graphs via Relation-Centric Exploration](https://aclanthology.org/2026.findings-acl.2138/)** — **ACL 2026 Findings**
   - Authors: Chenhui Liu, Jianpeng Zhou, Jiahai Wang
   - Type: `method` · Date: `2026`
@@ -1952,7 +1952,7 @@ Agents that traverse knowledge graphs or use accumulated memory to guide future 
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Setting:** ![setting: knowledge-graph](https://img.shields.io/badge/setting-knowledge--graph-7B8466?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.2138/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - Chain-of-Relations: Faithful and Efficient LLM Reasoning over Knowledge Graphs via Relation-Centric Exploration is included in environment-space exploration at inference because it uses knowledge or memory to guide future environment exploration. It treats `trajectory/action` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Backjump-on-Graph: Empowering LLMs with Reinforced Retrospective Exploration for Agentic KG Reasoning](https://icml.cc/virtual/2026/poster/61995)** — **ICML 2026**
   - Authors: Yunqi Zhang, Shiqi Yan, Zhenzhao Yuan, Wenrui Liang, Yangming Liu, Zhixiao Qi, Tianyi Zhang, Shijie Zhang et al.
   - Type: `method` · Date: `2026`
@@ -1961,7 +1961,7 @@ Agents that traverse knowledge graphs or use accumulated memory to guide future 
   - **Mechanism:** ![mechanism: backtracking/resampling](https://img.shields.io/badge/mechanism-backtracking%2Fresampling-8E759D?style=flat-square)
   - **Setting:** ![setting: knowledge-graph](https://img.shields.io/badge/setting-knowledge--graph-7B8466?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/61995) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Backjump-on-Graph: Empowering LLMs with Reinforced Retrospective Exploration for Agentic KG Reasoning is included in environment-space exploration at inference because it uses knowledge or memory to guide future environment exploration. It treats `trajectory/action` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `backtracking/resampling` as the recorded exploration evidence.
 - 🏆 **[Autonomous Knowledge Graph Exploration with Adaptive Breadth-Depth Retrieval](https://aclanthology.org/2026.acl-long.714/)** — **ACL 2026 Main**
   - Authors: Joaquin Polonuer, Lucas Vittor, Iñaki Arango, Ayush Noori, David A. Clifton, Luciano Del Corro, Marinka Zitnik
   - Type: `method` · Date: `2026`
@@ -1970,7 +1970,7 @@ Agents that traverse knowledge graphs or use accumulated memory to guide future 
   - **Mechanism:** ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square)
   - **Setting:** ![setting: knowledge-graph](https://img.shields.io/badge/setting-knowledge--graph-7B8466?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-long.714/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - Autonomous Knowledge Graph Exploration with Adaptive Breadth-Depth Retrieval is included in environment-space exploration at inference because it uses knowledge or memory to guide future environment exploration. It treats `trajectory/action` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `tree-search/branching` as the recorded exploration evidence.
 - **[R2D2: Remembering, Replaying and Dynamic Decision Making with a Reflective Agentic Memory](https://aclanthology.org/2025.acl-long.1464/)** — ACL 2025 Main
   - Authors: Tenghao Huang, Kinjal Basu, Ibrahim Abdelaziz, Pavan Kapanipathi, Jonathan May, Muhao Chen
   - Type: `method` · Date: `2025`
@@ -2013,7 +2013,7 @@ Training methods that collect or synthesize experience in websites, tools, and g
   - **Mechanism:** ![mechanism: self-play/co-evolution](https://img.shields.io/badge/mechanism-self--play%2Fco--evolution-A36F8A?style=flat-square)
   - **Setting:** ![setting: web](https://img.shields.io/badge/setting-web-5B8B86?style=flat-square) ![setting: multi-agent](https://img.shields.io/badge/setting-multi--agent-8D7595?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-long.1456/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - WIST: Web-Grounded Iterative Self-Play Tree for Domain-Targeted Reasoning Improvement is included in environment-space exploration for learning because it explores tools, interfaces, or web environments. It treats `trajectory/action` and `population/multi-policy` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `self-play/co-evolution` as the recorded exploration evidence.
 - 🏆 **[T$^2$PO: Uncertainty-Guided Exploration Control for Stable Multi-Turn Agentic Reinforcement Learning](https://icml.cc/virtual/2026/poster/63090)** — **ICML 2026**
   - Authors: Haixin Wang, Hejie Cui, Chenwei Zhang, Jiahui Gao, Shuowei Jin, Shijie Geng, Xinyang Zhang, Nasser Zalmout et al.
   - Type: `method` · Date: `2026`
@@ -2022,7 +2022,7 @@ Training methods that collect or synthesize experience in websites, tools, and g
   - **Signal:** ![signal: uncertainty/confidence](https://img.shields.io/badge/signal-uncertainty%2Fconfidence-5B8E9E?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/63090) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - T$^2$PO: Uncertainty-Guided Exploration Control for Stable Multi-Turn Agentic Reinforcement Learning is included in environment-space exploration for learning because it explores tools, interfaces, or web environments. It treats `trajectory/action` as the exploration object during `rl-training`, using `rl-training`, `trajectory/action`, and `uncertainty/confidence` as the recorded exploration evidence.
 - 🏆 **[SEAgent: Self-Evolving Computer Use Agent with Autonomous Learning from Experience](https://icml.cc/virtual/2026/poster/65711)** — **ICML 2026**
   - Authors: ZEYI SUN, Ziyu Liu, Yuhang Zang, Yuhang Cao, Xiaoyi Dong, Tong Wu, Dahua Lin, Jiaqi Wang
   - Type: `method` · Date: `2026`
@@ -2030,7 +2030,7 @@ Training methods that collect or synthesize experience in websites, tools, and g
   - **Level:** ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
   - **Mechanism:** ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square) ![mechanism: self-play/co-evolution](https://img.shields.io/badge/mechanism-self--play%2Fco--evolution-A36F8A?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/65711) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - SEAgent: Self-Evolving Computer Use Agent with Autonomous Learning from Experience is included in environment-space exploration for learning because it explores tools, interfaces, or web environments. It treats `trajectory/action` as the exploration object during `continual/self-improvement`, using `continual/self-improvement`, `trajectory/action`, and `replay/memory` as the recorded exploration evidence.
 - 🏆 **[Go-Browse: Training Web Agents with Structured Exploration](https://iclr.cc/virtual/2026/poster/10010264)** — **ICLR 2026**
   - Authors: Apurva Gandhi, Graham Neubig
   - Type: `method` · Date: `2026`
@@ -2039,7 +2039,7 @@ Training methods that collect or synthesize experience in websites, tools, and g
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Setting:** ![setting: web](https://img.shields.io/badge/setting-web-5B8B86?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10010264) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Go-Browse: Training Web Agents with Structured Exploration is included in environment-space exploration for learning because it explores tools, interfaces, or web environments. It treats `trajectory/action` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[DIVE: Scaling Diversity in Agentic Task Synthesis for Generalizable Tool Use](https://icml.cc/virtual/2026/poster/66305)** — **ICML 2026**
   - Authors: Aili Chen, Chi Zhang, Junteng Liu, Jiangjie Chen, Chengyu Du, Yunji Li, Ming Zhong, Qin Wang et al.
   - Type: `method` · Date: `2026`
@@ -2048,7 +2048,7 @@ Training methods that collect or synthesize experience in websites, tools, and g
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Setting:** ![setting: tool-use](https://img.shields.io/badge/setting-tool--use-718B75?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/66305) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - DIVE: Scaling Diversity in Agentic Task Synthesis for Generalizable Tool Use is included in environment-space exploration for learning because it explores tools, interfaces, or web environments. It treats `trajectory/action` and `data/task` as the exploration object during `data-generation`, using `data-generation`, `trajectory/action`, and `semantic-diversity` as the recorded exploration evidence.
 
 ### Agentic Policy Learning · 12 papers
 
@@ -2062,7 +2062,7 @@ Methods that train agent policies from exploratory multi-step trajectories, focu
   - **Signal:** ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: novelty/curiosity, reward/advantage, gradient-reshaping.
+  - RAPO: Expanding Exploration for LLM Agents via Retrieval-Augmented Policy Optimization is included in environment-space exploration for learning because it explores multi-step actions under environmental feedback. It treats `trajectory/action` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `trajectory/action`, and `novelty/curiosity` as the recorded exploration evidence.
 - **[AT$^2$PO: Agentic Turn-based Policy Optimization via Tree Search](https://arxiv.org/abs/2601.04767)** — arXiv `2601.04767`
   - Authors: Zefang Zong, Dingwei Chen, Yang Li, Qi Yi, Bo Zhou, Chengming Li, Bo Qian, Peng Chen et al.
   - Type: `method` · Date: `2026-01-08`
@@ -2071,7 +2071,7 @@ Methods that train agent policies from exploratory multi-step trajectories, focu
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square) ![mechanism: tree-search/branching](https://img.shields.io/badge/mechanism-tree--search%2Fbranching-A56F7A?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
+  - AT$^2$PO: Agentic Turn-based Policy Optimization via Tree Search is included in environment-space exploration for learning because it explores multi-step actions under environmental feedback. It treats `trajectory/action` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `trajectory/action`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[Unlocking Long-Horizon Agentic Search with Large-Scale End-to-End RL](https://iclr.cc/virtual/2026/poster/10009929)** — **ICLR 2026**
   - Authors: Jiaxuan Gao, Wei Fu, Minyang Xie, Shusheng Xu, Chuyi He, Zhiyu Mei, Banghua Zhu, Yi Wu
   - Type: `method` · Date: `2026`
@@ -2080,7 +2080,7 @@ Methods that train agent policies from exploratory multi-step trajectories, focu
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Problem:** ![problem: long-horizon](https://img.shields.io/badge/problem-long--horizon-8E7D6D?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10009929) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Unlocking Long-Horizon Agentic Search with Large-Scale End-to-End RL is included in environment-space exploration for learning because it explores multi-step actions under environmental feedback. It treats `trajectory/action` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Search Self-Play: Pushing the Frontier of Agent Capability without Supervision](https://iclr.cc/virtual/2026/poster/10008777)** — **ICLR 2026**
   - Authors: Hongliang Lu, Yuhang Wen, Pengyu Cheng, Ruijin Ding, Jiaqi Guo, Haotian Xu, Chutian Wang, Haonan Chen et al.
   - Type: `method` · Date: `2026`
@@ -2089,7 +2089,7 @@ Methods that train agent policies from exploratory multi-step trajectories, focu
   - **Mechanism:** ![mechanism: self-play/co-evolution](https://img.shields.io/badge/mechanism-self--play%2Fco--evolution-A36F8A?style=flat-square)
   - **Setting:** ![setting: multi-agent](https://img.shields.io/badge/setting-multi--agent-8D7595?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10008777) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Search Self-Play: Pushing the Frontier of Agent Capability without Supervision is included in environment-space exploration for learning because it explores multi-step actions under environmental feedback. It treats `trajectory/action` and `population/multi-policy` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `self-play/co-evolution` as the recorded exploration evidence.
 - 🏆 **[Reinforcement Learning for Self-Improving Agent with Skill Library](https://aclanthology.org/2026.acl-long.69/)** — **ACL 2026 Main**
   - Authors: Jiongxiao Wang, Qiaojing Yan, Yawei Wang, Yijun Tian, Soumya Smruti Mishra, Zhichao Xu, Megha Gandhi, Panpan Xu et al.
   - Type: `method` · Date: `2026`
@@ -2097,7 +2097,7 @@ Methods that train agent policies from exploratory multi-step trajectories, focu
   - **Level:** ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-long.69/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - Reinforcement Learning for Self-Improving Agent with Skill Library is included in environment-space exploration for learning because it explores multi-step actions under environmental feedback. It treats `trajectory/action` as the exploration object during `rl-training` and `continual/self-improvement`, using `rl-training`, `trajectory/action`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Meta-RL Induces Exploration in Language Agents](https://iclr.cc/virtual/2026/poster/10011567)** — **ICLR 2026**
   - Authors: Yulun Jiang, Liangze Jiang, Damien Teney, Michael Moor, Maria Brbic
   - Type: `method` · Date: `2026`
@@ -2105,7 +2105,7 @@ Methods that train agent policies from exploratory multi-step trajectories, focu
   - **Level:** ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10011567) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Meta-RL Induces Exploration in Language Agents is included in environment-space exploration for learning because it explores multi-step actions under environmental feedback. It treats `trajectory/action` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Learning to Explore: Scaling Agentic Reasoning via Exploration-Aware Policy Optimization](https://icml.cc/virtual/2026/poster/63287)** — **ICML 2026**
   - Authors: Xingyuan Hua, Sheng Yue, Ju Ren
   - Type: `method` · Date: `2026`
@@ -2113,7 +2113,7 @@ Methods that train agent policies from exploratory multi-step trajectories, focu
   - **Level:** ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/63287) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Learning to Explore: Scaling Agentic Reasoning via Exploration-Aware Policy Optimization is included in environment-space exploration for learning because it explores multi-step actions under environmental feedback. It treats `trajectory/action` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `trajectory/action`, and `gradient-reshaping` as the recorded exploration evidence.
 - 🏆 **[Learn the Ropes, Then Trust the Wins: Self-imitation with Progressive Exploration for Agentic Reinforcement Learning](https://iclr.cc/virtual/2026/poster/10010088)** — **ICLR 2026**
   - Authors: Yulei Qin, Xiaoyu Tan, Zhengbao He, Gang Li, Haojia Lin, Zongyi Li, Zihan Xu, Yuchen Shi et al.
   - Type: `method` · Date: `2026`
@@ -2121,7 +2121,7 @@ Methods that train agent policies from exploratory multi-step trajectories, focu
   - **Level:** ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10010088) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Learn the Ropes, Then Trust the Wins: Self-imitation with Progressive Exploration for Agentic Reinforcement Learning is included in environment-space exploration for learning because it explores multi-step actions under environmental feedback. It treats `trajectory/action` as the exploration object during `rl-training`, using `rl-training`, `trajectory/action`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Harnessing Uncertainty: Entropy-Modulated Policy Gradients for Long-Horizon LLM Agents](https://icml.cc/virtual/2026/poster/63273)** — **ICML 2026**
   - Authors: Jiawei Wang, Jiacai Liu, Yuqian Fu, Yingru Li, Xintao Wang, Yuan Lin, Lin Zhang, YuYue et al.
   - Type: `method` · Date: `2026`
@@ -2131,7 +2131,7 @@ Methods that train agent policies from exploratory multi-step trajectories, focu
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Problem:** ![problem: long-horizon](https://img.shields.io/badge/problem-long--horizon-8E7D6D?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/63273) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Harnessing Uncertainty: Entropy-Modulated Policy Gradients for Long-Horizon LLM Agents is included in environment-space exploration for learning because it explores multi-step actions under environmental feedback. It treats `trajectory/action` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `trajectory/action`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[DPEPO: Diverse Parallel Exploration Policy Optimization for LLM-based Agents](https://aclanthology.org/2026.acl-long.2151/)** — **ACL 2026 Main**
   - Authors: JunShuo Zhang, Chengrui Huang, Feng Guo, Zihan Li, Ke Shi, Menghua Jiang, Jiguo Yu, Shuo Shang et al.
   - Type: `method` · Date: `2026`
@@ -2140,7 +2140,7 @@ Methods that train agent policies from exploratory multi-step trajectories, focu
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Main](https://aclanthology.org/2026.acl-long.2151/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Main. This record was included after source and scope review.
+  - DPEPO: Diverse Parallel Exploration Policy Optimization for LLM-based Agents is included in environment-space exploration for learning because it explores multi-step actions under environmental feedback. It treats `trajectory/action` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `trajectory/action`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[Beneficial Reasoning Behaviors in Agentic Search and Effective Training Methods to Obtain Them](https://aclanthology.org/2026.findings-acl.1400/)** — **ACL 2026 Findings**
   - Authors: Jiahe Jin, Abhijay Sai Paladugu, Chenyan Xiong
   - Type: `method` · Date: `2026`
@@ -2148,7 +2148,7 @@ Methods that train agent policies from exploratory multi-step trajectories, focu
   - **Level:** ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.1400/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - Beneficial Reasoning Behaviors in Agentic Search and Effective Training Methods to Obtain Them is included in environment-space exploration for learning because it explores multi-step actions under environmental feedback. It treats `trajectory/action` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `structured-search` as the recorded exploration evidence.
 - **[EPO: Entropy-regularized Policy Optimization for LLM Agents Reinforcement Learning](https://arxiv.org/abs/2509.22576)** — arXiv `2509.22576`
   - Authors: Wujiang Xu, Wentian Zhao, Zhenting Wang, Yu-Jhe Li, Can Jin, Mingyu Jin, Kai Mei, Kun Wan et al.
   - Type: `method` · Date: `2025-09-26`
@@ -2157,7 +2157,7 @@ Methods that train agent policies from exploratory multi-step trajectories, focu
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: regularization](https://img.shields.io/badge/mechanism-regularization-737FB0?style=flat-square) ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, reward/advantage, regularization.
+  - EPO: Entropy-regularized Policy Optimization for LLM Agents Reinforcement Learning is included in environment-space exploration for learning because it explores multi-step actions under environmental feedback. It treats `trajectory/action` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `trajectory/action`, and `entropy/probability` as the recorded exploration evidence.
 
 ### Embodied & Simulated Training · 2 papers
 
@@ -2171,7 +2171,7 @@ Training methods that explore physical or simulated worlds, where noisy observat
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Setting:** ![setting: multimodal](https://img.shields.io/badge/setting-multimodal-8176A5?style=flat-square) ![setting: embodied](https://img.shields.io/badge/setting-embodied-9A7D68?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/61450) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Active Exploring like a Pigeon: Reinforcing Spatial Reasoning via Agentic Vision-Language Models is included in environment-space exploration for learning because it explores embodied or simulated environment states. It treats `trajectory/action` as the exploration object during `inference`, using `inference`, `trajectory/action`, and `structured-search` as the recorded exploration evidence.
 - **[EmbodiedScene: Towards Automated Generation of Diverse and Realistic Scenes for Embodied AI](https://embodiedscene1.github.io/embodied.scene/)** — ICML 2025
   - Authors: Jinbin Qiao, Pengyi Li, Peilong Han, Yan Zheng, Jianye Hao
   - Type: `method` · Date: `2025`
@@ -2195,7 +2195,7 @@ Methods that combine exploratory experience with replay or memory during agent t
   - **Level:** ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square) ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square) ![mechanism: replay/memory](https://img.shields.io/badge/mechanism-replay%2Fmemory-6F8093?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10009229) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Exploratory Memory-Augmented LLM Agent via Hybrid On- and Off-Policy Optimization is included in environment-space exploration for learning because it uses knowledge or memory to guide future environment exploration. It treats `trajectory/action` and `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `trajectory/action`, and `gradient-reshaping` as the recorded exploration evidence.
 
 
 ## 5. Understanding, Evaluation & Benchmarks
@@ -2218,7 +2218,7 @@ Surveys and position papers that organize the field's definitions, evidence, tra
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square) ![signal: coverage](https://img.shields.io/badge/signal-coverage-78935F?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, coverage, reward/advantage.
+  - From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR is included in understanding and evaluation of exploration because it organizes evidence and open questions about exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 
 ### Theory & Training Dynamics · 25 papers
 
@@ -2232,7 +2232,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: novelty/curiosity](https://img.shields.io/badge/signal-novelty%2Fcuriosity-6B9275?style=flat-square) ![signal: coverage](https://img.shields.io/badge/signal-coverage-78935F?style=flat-square)
   - **Setting:** ![setting: math](https://img.shields.io/badge/setting-math-6D8CAB?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: novelty/curiosity, semantic-diversity, coverage.
+  - Beyond Accuracy: Evaluating Strategy Diversity in LLM Mathematical Reasoning is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[When Greedy Wins: Emergent Exploitation Bias in Meta-Bandit LLM Training](https://iclr.cc/virtual/2026/poster/10008807)** — **ICLR 2026**
   - Authors: Sanxing Chen, Xiaoyin Chen, Yukun Huang, Roy Xie, Bhuwan Dhingra
   - Type: `analysis` · Date: `2026`
@@ -2240,7 +2240,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10008807) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - When Greedy Wins: Emergent Exploitation Bias in Meta-Bandit LLM Training is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Whatever Remains Must Be True: Filtering Drives Reasoning in LLMs, Shaping Diversity](https://iclr.cc/virtual/2026/poster/10007331)** — **ICLR 2026**
   - Authors: Germàn Kruszewski, Pierre ERBACHER, Jos Rozen, Marc Dymetman
   - Type: `analysis` · Date: `2026`
@@ -2248,7 +2248,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10007331) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Whatever Remains Must Be True: Filtering Drives Reasoning in LLMs, Shaping Diversity is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[Unveiling the Entropy Dynamics of Chain-of-Thought Reasoning](https://icml.cc/virtual/2026/poster/62606)** — **ICML 2026**
   - Authors: Ting Xu, Xu He, Yupu Lu, Jiankai Sun, Dong Li, Wai Lam, Jianye Hao
   - Type: `analysis` · Date: `2026`
@@ -2256,7 +2256,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/62606) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Unveiling the Entropy Dynamics of Chain-of-Thought Reasoning is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[Understanding Reasoning Collapse in LLM Agent Reinforcement Learning](https://icml.cc/virtual/2026/poster/66821)** — **ICML 2026**
   - Authors: Zihan (Zenus) Wang, Chi Gui, Xing Jin, Qineng Wang, Licheng Liu, Kangrui Wang, Shiqi Chen, Linjie Li et al.
   - Type: `analysis` · Date: `2026`
@@ -2264,7 +2264,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/66821) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Understanding Reasoning Collapse in LLM Agent Reinforcement Learning is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[The Unlearnability Phenomenon in RLVR for Language Models](https://icml.cc/virtual/2026/poster/64909)** — **ICML 2026**
   - Authors: Yulin Chen, He He, Chen Zhao
   - Type: `analysis` · Date: `2026`
@@ -2272,7 +2272,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/64909) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - The Unlearnability Phenomenon in RLVR for Language Models is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[The Choice of Divergence: A Neglected Key to Mitigating Diversity Collapse in Reinforcement Learning with Verifiable Reward](https://iclr.cc/virtual/2026/poster/10006646)** — **ICLR 2026**
   - Authors: Long Li, Zhijian Zhou, JIARAN HAO, Jason Liu, Yanting Miao, Wei Pang, Xiaoyu Tan, Wei Chu et al.
   - Type: `analysis` · Date: `2026`
@@ -2281,7 +2281,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Problem:** ![problem: mode-collapse](https://img.shields.io/badge/problem-mode--collapse-B57676?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10006646) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - The Choice of Divergence: A Neglected Key to Mitigating Diversity Collapse in Reinforcement Learning with Verifiable Reward is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[Single-Agent Generation Surpasses Multi-Agent Systems in Semantic Diversity](https://aclanthology.org/2026.findings-acl.1894/)** — **ACL 2026 Findings**
   - Authors: Cui Encheng, Shaowen Peng, Kazuhiro Ito, XU Jinsha, Hisada Shohei, Shoko Wakamiya, Eiji Aramaki
   - Type: `analysis` · Date: `2026`
@@ -2291,7 +2291,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Mechanism:** ![mechanism: ensemble/population](https://img.shields.io/badge/mechanism-ensemble%2Fpopulation-8774A5?style=flat-square)
   - **Setting:** ![setting: multi-agent](https://img.shields.io/badge/setting-multi--agent-8D7595?style=flat-square)
   - **Publication evidence:** Official [ACL 2026 Findings](https://aclanthology.org/2026.findings-acl.1894/) · verified `2026-08-06`
-  - Officially accepted at ACL 2026 Findings. This record was included after source and scope review.
+  - Single-Agent Generation Surpasses Multi-Agent Systems in Semantic Diversity is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` and `population/multi-policy` as the exploration object during `inference`, using `inference`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[Reinforcement Learning with Verifiable Rewards Implicitly Incentivizes Correct Reasoning in Base LLMs](https://iclr.cc/virtual/2026/poster/10007896)** — **ICLR 2026**
   - Authors: Xumeng Wen, Zihan Liu, Shun Zheng, Shengyu Ye, Zhirong Wu, Yang Wang, Zhijian Xu, Xiao Liang et al.
   - Type: `analysis` · Date: `2026`
@@ -2299,7 +2299,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Signal:** ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10007896) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Reinforcement Learning with Verifiable Rewards Implicitly Incentivizes Correct Reasoning in Base LLMs is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `reward/advantage` as the recorded exploration evidence.
 - 🏆 **[Recognize Your Orchestrator: An Entropy Dynamics Perspective for LLM Multi-Agent Systems](https://icml.cc/virtual/2026/poster/63622)** — **ICML 2026**
   - Authors: Junze Zhu, Weihao Chen, Xuanwang Zhang, Zhen Wu, Xinyu Dai
   - Type: `analysis` · Date: `2026`
@@ -2309,7 +2309,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Mechanism:** ![mechanism: ensemble/population](https://img.shields.io/badge/mechanism-ensemble%2Fpopulation-8774A5?style=flat-square)
   - **Setting:** ![setting: multi-agent](https://img.shields.io/badge/setting-multi--agent-8D7595?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/63622) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Recognize Your Orchestrator: An Entropy Dynamics Perspective for LLM Multi-Agent Systems is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `population/multi-policy` as the exploration object during `inference`, using `inference`, `population/multi-policy`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[RL Squeezes, SFT Expands: A Comparative Study of Reasoning LLMs](https://iclr.cc/virtual/2026/poster/10009898)** — **ICLR 2026**
   - Authors: Kohsei Matsutani, Shota Takashiro, Gouki Minegishi, Takeshi Kojima, Yusuke Iwasawa, Yutaka Matsuo
   - Type: `analysis` · Date: `2026`
@@ -2317,7 +2317,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10009898) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - RL Squeezes, SFT Expands: A Comparative Study of Reasoning LLMs is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `supervised-post-training`, using `supervised-post-training`, `response/sequence`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Provable Benefits of RLVR over SFT for Reasoning Models: Learning to Backtrack Efficiently](https://icml.cc/virtual/2026/poster/64293)** — **ICML 2026**
   - Authors: Stanley Wei, Juno Kim
   - Type: `analysis` · Date: `2026`
@@ -2325,7 +2325,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: backtracking/resampling](https://img.shields.io/badge/mechanism-backtracking%2Fresampling-8E759D?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/64293) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Provable Benefits of RLVR over SFT for Reasoning Models: Learning to Backtrack Efficiently is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `backtracking/resampling` as the recorded exploration evidence.
 - 🏆 **[On the Entropy Dynamics in Reinforcement Fine-Tuning of Large Language Models](https://icml.cc/virtual/2026/poster/63897)** — **ICML 2026**
   - Authors: Shumin Wang, Yuexiang Xie, Wenhao Zhang, Yuchang Sun, Yanxi Chen, Yaliang Li, Yanyong Zhang
   - Type: `analysis` · Date: `2026`
@@ -2333,7 +2333,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/63897) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - On the Entropy Dynamics in Reinforcement Fine-Tuning of Large Language Models is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[Less Diverse, Less Safe: The Indirect But Pervasive Risk of Test-Time Scaling in Large Language Models](https://icml.cc/virtual/2026/poster/64671)** — **ICML 2026**
   - Authors: Shahriar Kabir Nahin, Hadi Askari, Muhao Chen, Anshuman Chhabra
   - Type: `analysis` · Date: `2026`
@@ -2341,7 +2341,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/64671) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Less Diverse, Less Safe: The Indirect But Pervasive Risk of Test-Time Scaling in Large Language Models is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.
 - 🏆 **[KL-Regularized Reinforcement Learning for Generative Modelling is Designed to Mode Collapse](https://iclr.cc/virtual/2026/poster/10008208)** — **ICLR 2026**
   - Authors: Anthony GX-Chen, Jatin Prakash, Jeff Guo, Rob Fergus, Rajesh Ranganath
   - Type: `analysis` · Date: `2026`
@@ -2350,7 +2350,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Mechanism:** ![mechanism: regularization](https://img.shields.io/badge/mechanism-regularization-737FB0?style=flat-square)
   - **Problem:** ![problem: mode-collapse](https://img.shields.io/badge/problem-mode--collapse-B57676?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10008208) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - KL-Regularized Reinforcement Learning for Generative Modelling is Designed to Mode Collapse is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `regularization` as the recorded exploration evidence.
 - 🏆 **[Generalization of RLVR Using Causal Reasoning as a Testbed](https://iclr.cc/virtual/2026/poster/10010768)** — **ICLR 2026**
   - Authors: Zhichu Lu, Hongyu Zhao, Shuo Sun, Hao Peng, Rui Ding, Hongyuan Mei
   - Type: `analysis` · Date: `2026`
@@ -2358,7 +2358,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Level:** ![level: policy-distribution](https://img.shields.io/badge/level-policy--distribution-8C719E?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10010768) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Generalization of RLVR Using Causal Reasoning as a Testbed is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Exploration vs Exploitation: Rethinking RLVR through Clipping, Entropy, and Spurious Reward](https://iclr.cc/virtual/2026/poster/10007078)** — **ICLR 2026**
   - Authors: Peter Chen, Xiaopeng Li, Ziniu Li, Wotao Yin, Xi Chen, Tianyi Lin
   - Type: `analysis` · Date: `2026`
@@ -2367,7 +2367,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10007078) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Exploration vs Exploitation: Rethinking RLVR through Clipping, Entropy, and Spurious Reward is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[Exploration Hacking: LLMs Can Learn to Resist RL Training](https://icml.cc/virtual/2026/poster/64674)** — **ICML 2026**
   - Authors: Eyon Jang, Damon Falck, Joschka Cedric Braun, Nathalie Kirch, Achyutha Menon, Perusha Moodley, Scott Emmons, Roland S. Zimmermann et al.
   - Type: `analysis` · Date: `2026`
@@ -2375,7 +2375,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/64674) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Exploration Hacking: LLMs Can Learn to Resist RL Training is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Does Reinforcement Fine-Tuning Improve Generalization of LLM Agents? An Empirical Study](https://icml.cc/virtual/2026/poster/65794)** — **ICML 2026**
   - Authors: Zhiheng Xi, Xin Guo, Jiaqi Liu, Jiazheng Zhang, Yutao Fan, Zhihao Zhang, Shichun Liu, Mingxu Chai et al.
   - Type: `analysis` · Date: `2026`
@@ -2383,7 +2383,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/65794) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Does Reinforcement Fine-Tuning Improve Generalization of LLM Agents? An Empirical Study is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Demystifying Entropy Control in LLM RL Training: Theoretical Analysis and Dynamic Scheduling](https://icml.cc/virtual/2026/poster/62302)** — **ICML 2026**
   - Authors: Jingchu Gai, Guanning Zeng, Huaqing ZHANG, Han Zhong, Yige Hong, Andrej Risteski, Aditi Raghunathan
   - Type: `analysis` · Date: `2026`
@@ -2391,7 +2391,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/62302) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Demystifying Entropy Control in LLM RL Training: Theoretical Analysis and Dynamic Scheduling is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `entropy/probability` as the recorded exploration evidence.
 - 🏆 **[Breaking Barriers: Do Reinforcement Post Training Gains Transfer To Unseen Domains?](https://iclr.cc/virtual/2026/poster/10007526)** — **ICLR 2026**
   - Authors: Chuxuan Hu, Yuxuan Zhu, Antony Kellermann, Caleb Biddulph, Suppakit Waiwitlikhit, Jason Benn, Daniel Kang
   - Type: `analysis` · Date: `2026`
@@ -2399,7 +2399,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10007526) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Breaking Barriers: Do Reinforcement Post Training Gains Transfer To Unseen Domains? is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `structured-search` as the recorded exploration evidence.
 - 🏆 **[Advantage Collapse in Group Relative Policy Optimization: Diagnosis and Mitigation](https://icml.cc/virtual/2026/poster/64547)** — **ICML 2026**
   - Authors: Xixiang He, Qiyao Sun, Ao Cheng, Xingming Li, Xuanyu Ji, Hailun Lu, Runke Huang, Qingyong Hu
   - Type: `analysis` · Date: `2026`
@@ -2408,7 +2408,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Signal:** ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/64547) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Advantage Collapse in Group Relative Policy Optimization: Diagnosis and Mitigation is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `reward/advantage` as the recorded exploration evidence.
 - **[Diversity or Precision? A Deep Dive into Next Token Prediction](https://arxiv.org/abs/2512.22955)** — arXiv `2512.22955`
   - Authors: Haoyuan Wu, Hai Wang, Jiajia Wu, Jinxiang Ou, Keyao Wang, Weile Chen, Zihao Zheng, Bei Yu
   - Type: `analysis` · Date: `2025-12-28`
@@ -2416,7 +2416,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Level:** ![level: token](https://img.shields.io/badge/level-token-8B80B6?style=flat-square)
   - **Signal:** ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
+  - Diversity or Precision? A Deep Dive into Next Token Prediction is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `token` as the exploration object during `inference`, using `inference`, `token`, and `semantic-diversity` as the recorded exploration evidence.
 - **[Revisiting Entropy in Reinforcement Learning for Large Reasoning Models](https://arxiv.org/abs/2511.05993)** — arXiv `2511.05993`
   - Authors: Renren Jin, Pengzhi Gao, Yuqi Ren, Zhuowen Han, Tongxuan Zhang, Wuwei Huang, Wei Liu, Jian Luan et al.
   - Type: `analysis` · Date: `2025-11-08`
@@ -2424,7 +2424,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Level:** ![level: response/sequence](https://img.shields.io/badge/level-response%2Fsequence-8278A9?style=flat-square)
   - **Signal:** ![signal: entropy/probability](https://img.shields.io/badge/signal-entropy%2Fprobability-4F8D88?style=flat-square) ![signal: semantic-diversity](https://img.shields.io/badge/signal-semantic--diversity-538F7D?style=flat-square) ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, semantic-diversity, reward/advantage.
+  - Revisiting Entropy in Reinforcement Learning for Large Reasoning Models is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `entropy/probability` as the recorded exploration evidence.
 - **[An Empirical Study on Reinforcement Learning for Reasoning-Search Interleaved LLM Agents](https://arxiv.org/abs/2505.15117)** — arXiv `2505.15117`
   - Authors: Bowen Jin, Jinsung Yoon, Priyanka Kargupta, Sercan O. Arik, Jiawei Han
   - Type: `analysis` · Date: `2025-05-21`
@@ -2433,7 +2433,7 @@ Theoretical and empirical work that explains why exploration changes during trai
   - **Signal:** ![signal: reward/advantage](https://img.shields.io/badge/signal-reward%2Fadvantage-8C8960?style=flat-square)
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: reward/advantage, structured-search.
+  - An Empirical Study on Reinforcement Learning for Reasoning-Search Interleaved LLM Agents is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `reward/advantage` as the recorded exploration evidence.
 
 ### Capability Boundaries · 2 papers
 
@@ -2447,7 +2447,7 @@ Work that tests whether exploration reaches beyond a model's existing competence
   - **Mechanism:** ![mechanism: gradient-reshaping](https://img.shields.io/badge/mechanism-gradient--reshaping-B07A68?style=flat-square)
   - **Problem:** ![problem: capability-boundary](https://img.shields.io/badge/problem-capability--boundary-9A738A?style=flat-square)
   - **Publication evidence:** Official [ICML 2026](https://icml.cc/virtual/2026/poster/61683) · verified `2026-08-06`
-  - Officially accepted at ICML 2026. This record was included after source and scope review.
+  - Post-Training with Policy Gradients: Optimality and the Base Model Barrier is included in understanding and evaluation of exploration because it tests whether exploration extends capability boundaries. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `gradient-reshaping` as the recorded exploration evidence.
 - **[The Debate on RLVR Reasoning Capability Boundary: Shrinkage, Expansion, or Both? A Two-Stage Dynamic View](https://arxiv.org/abs/2510.04028)** — arXiv `2510.04028`
   - Authors: Xinhao Yao, Lu Yu, Xiaolin Hu, Fengwei Teng, Qing Cui, Jun Zhou, Yong Liu
   - Type: `analysis` · Date: `2025-10-05`
@@ -2457,7 +2457,7 @@ Work that tests whether exploration reaches beyond a model's existing competence
   - **Mechanism:** ![mechanism: structured-search](https://img.shields.io/badge/mechanism-structured--search-568D83?style=flat-square)
   - **Problem:** ![problem: capability-boundary](https://img.shields.io/badge/problem-capability--boundary-9A738A?style=flat-square)
   - **Publication evidence:** No structured venue evidence recorded
-  - Exploration focus: entropy/probability, novelty/curiosity, semantic-diversity.
+  - The Debate on RLVR Reasoning Capability Boundary: Shrinkage, Expansion, or Both? A Two-Stage Dynamic View is included in understanding and evaluation of exploration because it tests whether exploration extends capability boundaries. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `semantic-diversity` as the recorded exploration evidence.
 
 ### Benchmarks & Metrics · 2 papers
 
@@ -2478,4 +2478,4 @@ Benchmarks and metrics that quantify exploration quality, emphasizing valid meas
   - **Level:** ![level: trajectory/action](https://img.shields.io/badge/level-trajectory%2Faction-8F7DAF?style=flat-square)
   - **Mechanism:** ![mechanism: self-play/co-evolution](https://img.shields.io/badge/mechanism-self--play%2Fco--evolution-A36F8A?style=flat-square)
   - **Publication evidence:** Official [ICLR 2026](https://iclr.cc/virtual/2026/poster/10011762) · verified `2026-08-06`
-  - Officially accepted at ICLR 2026. This record was included after source and scope review.
+  - Towards Self-Evolving Agent Benchmarks : Validatable Agent Trajectory via Test-Time Exploration is included in understanding and evaluation of exploration because it evaluates exploration quality with benchmarks or metrics. It treats `trajectory/action` as the exploration object during `inference` and `continual/self-improvement`, using `inference`, `trajectory/action`, and `self-play/co-evolution` as the recorded exploration evidence.

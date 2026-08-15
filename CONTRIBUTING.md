@@ -87,8 +87,8 @@ no applicable value.
 | `publication` | Optional structured evidence for a formal venue. Do not use `published_venue`; see the example below when an official venue page exists. |
 | `primary_area`, `subtopic` | One category and one matching subtopic from [the category table](#choose-the-category-and-subtopic). |
 | `paper_type` | `method`, `analysis`, `benchmark`, `survey`, or `position`. |
-| `rationale` | One or two factual sentences explaining why exploration is central. |
-| `rationale_tags` | Exact taxonomy tag IDs relied on in the rationale. Use `[]` when the rationale does not state a controlled tag explicitly; every value must also appear in that paper's tag fields. |
+| `rationale` | One or two factual sentences explaining what is explored, how it is explored, and why that is the paper's main contribution. Publication status alone is not a rationale. |
+| `rationale_tags` | One or more exact taxonomy tag IDs that support the rationale; every value must also appear in that paper's tag fields. Do not use `[]`. |
 | `phase` | **When** does exploration happen or change? For example, `inference` or `rl-training`. |
 | `level` | **What** is explored or diversified? For example, `token` or `response/sequence`. |
 | `signal` | **What quantity** values or guides exploration? For example, `entropy/probability` or `novelty/curiosity`. |

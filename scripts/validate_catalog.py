@@ -62,7 +62,7 @@ OFFICIAL_HOSTS_BY_VENUE = {
     "ICRA": {"ieeexplore.ieee.org"},
     "ICSE": {"dl.acm.org", "ieeexplore.ieee.org"},
     "IJCAI": {"ijcai.org"},
-    "NEURIPS": {"papers.nips.cc", "proceedings.neurips.cc"},
+    "NEURIPS": {"neurips.cc", "papers.nips.cc", "proceedings.neurips.cc"},
     "TACL": {"aclanthology.org", "direct.mit.edu"},
     "TMLR": {"openreview.net"},
     "ARTIFICIAL INTELLIGENCE": {"doi.org", "www.sciencedirect.com"},
@@ -77,6 +77,10 @@ TAG_VALUES = {
     "setting": {"math", "code", "multimodal", "creative/open-ended", "web", "tool-use", "knowledge-graph", "embodied", "multi-agent"},
 }
 NOTABILITY_VALUES = {"high-citation"}
+TEMPLATE_RATIONALES = (
+    re.compile(r"^Officially accepted at .+\. This record was included after source and scope review\.$"),
+    re.compile(r"^Exploration focus: .+\.$"),
+)
 
 
 def normalize(value: str) -> str:
@@ -228,10 +232,14 @@ def main() -> int:
         ):
             errors.append(f"{label}: rationale_tags must be a list of tag IDs")
             rationale_tags = []
+        elif not rationale_tags:
+            errors.append(f"{label}: rationale_tags must name at least one tag supporting the rationale")
         recorded_tags = set().union(*(set(paper.get(dimension, [])) for dimension in TAG_VALUES))
         unrecorded_tags = sorted(set(rationale_tags) - recorded_tags)
         if unrecorded_tags:
             errors.append(f"{label}: rationale_tags must be recorded taxonomy tags {unrecorded_tags}")
+        if any(pattern.fullmatch(paper.get("rationale", "")) for pattern in TEMPLATE_RATIONALES):
+            errors.append(f"{label}: rationale must explain the paper's exploration contribution, not publication status or a tag list")
 
     classic_titles = [normalize(p["title"]) for p in catalog.get("classics", [])]
     if len(classic_titles) != len(set(classic_titles)):
