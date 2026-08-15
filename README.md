@@ -8,9 +8,34 @@
 
 [Guide](#guide) · [Quick start](#start-here) · [Research map](#research-map) · [Catalog](#catalog) · [Detailed metadata](README_DETAILED.md) · [Contribute](CONTRIBUTING.md)
 
-<img src="assets/research-map.svg" alt="Research map of 262 papers across five exploration categories" width="100%">
-
 </div>
+
+<a id="research-map"></a>
+
+## Research Map
+
+The four intervention categories are organized by exploration space (model or environment) and purpose (inference or learning).
+
+```mermaid
+flowchart TB
+  X["Exploration space"] --> M["Model space<br/>generation / reasoning / representation"]
+  X --> E["Environment space<br/>state / action / information"]
+  Y["Exploration purpose"] --> I["Inference<br/>solve the current task"]
+  Y --> L["Learning<br/>create training experience"]
+
+  M --> A["A. Model-Space Exploration at Inference"]
+  I --> A
+  M --> B["B. Model-Space Exploration for Learning"]
+  L --> B
+  E --> C["C. Environment-Space Exploration at Inference"]
+  I --> C
+  E --> D["D. Environment-Space Exploration for Learning"]
+  L --> D
+```
+
+Understanding, Evaluation & Benchmarks is the cross-cutting evidence layer, rather than a fifth exploration space.
+
+<img src="assets/research-map.svg" alt="Research map of 262 papers across five exploration categories" width="100%">
 
 ## Guide
 
@@ -29,7 +54,7 @@
 
 > Evidence snapshot: **2026-08-06** · [Taxonomy design](docs/TAXONOMY.md) · [2026 curation notes](docs/CURATION_2026.md)
 
-## Research map
+## Category Overview
 
 Every paper has one home in the map; its tags then describe the research lens. Start with the category that matches your question, then use the tags to compare mechanisms across categories.
 
