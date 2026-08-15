@@ -8,6 +8,8 @@
 
 [Guide](#guide) · [Quick start](#start-here) · [Research map](#research-map) · [Catalog](#catalog) · [Detailed metadata](README_DETAILED.md) · [Contribute](CONTRIBUTING.md)
 
+<img src="assets/research-map.svg" alt="Research map of 262 papers across five exploration categories" width="100%">
+
 </div>
 
 ## Guide
@@ -63,8 +65,6 @@ flowchart TB
 ```
 
 Understanding, Evaluation & Benchmarks is the cross-cutting evidence layer, rather than a fifth exploration space.
-
-<img src="assets/research-map.svg" alt="Research map of 262 papers across five exploration categories" width="100%">
 
 <a id="taxonomy-lens"></a>
 
