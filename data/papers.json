@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "snapshot_date": "2026-08-06",
+  "snapshot_date": "2026-10-16",
   "citation_snapshot": "2026-07-23",
   "scope": "Exploration in LLM generation, RLVR, and agents.",
   "papers": [
@@ -12217,6 +12217,1055 @@
         "trajectory/action",
         "replay/memory"
       ]
+    },
+    {
+      "id": "openreview:AoTHU2OmS6",
+      "title": "Temperature as a Meta-Policy: Adaptive Temperature in LLM Reinforcement Learning",
+      "url": "https://iclr.cc/virtual/2026/poster/10011000",
+      "authors": [
+        "Haoran Dang",
+        "Cuiling Lan",
+        "Hai Wan",
+        "Xibin Zhao",
+        "Yan Lu"
+      ],
+      "date": "2026",
+      "venue": "ICLR 2026",
+      "source_group": "recent-curated",
+      "primary_area": "rlvr-policy-curriculum-exploration",
+      "paper_type": "method",
+      "phase": [
+        "rl-training"
+      ],
+      "level": [
+        "policy-distribution",
+        "trajectory/action"
+      ],
+      "signal": [
+        "reward/advantage",
+        "entropy/probability"
+      ],
+      "mechanism": [
+        "temperature-control"
+      ],
+      "problem": [
+        "exploration-exploitation"
+      ],
+      "setting": [
+        "math"
+      ],
+      "rationale": "Learns a meta-policy over rollout temperatures from trajectory advantages, reusing existing rollouts to adapt the exploration-exploitation balance during LLM reinforcement learning.",
+      "subtopic": "entropy-distribution",
+      "rationale_tags": [
+        "rl-training",
+        "policy-distribution",
+        "reward/advantage"
+      ],
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10011000",
+        "verified_at": "2026-10-16"
+      }
+    },
+    {
+      "id": "openreview:qyylZMLYT8",
+      "title": "BED-LLM: Intelligent Information Gathering with LLMs and Bayesian Experimental Design",
+      "url": "https://iclr.cc/virtual/2026/poster/10007193",
+      "authors": [
+        "Deepro Choudhury",
+        "Sinead Williamson",
+        "Adam Golinski",
+        "Ning Miao",
+        "Freddie Bickford Smith",
+        "Michael Kirchhof",
+        "Yizhe Zhang",
+        "Tom Rainforth"
+      ],
+      "date": "2026",
+      "venue": "ICLR 2026",
+      "source_group": "recent-curated",
+      "primary_area": "agentic-exploration",
+      "paper_type": "method",
+      "phase": [
+        "inference"
+      ],
+      "level": [
+        "trajectory/action"
+      ],
+      "signal": [
+        "information-gain",
+        "uncertainty/confidence"
+      ],
+      "mechanism": [
+        "structured-search"
+      ],
+      "problem": [
+        "exploration-exploitation"
+      ],
+      "setting": [
+        "creative/open-ended"
+      ],
+      "rationale": "Chooses questions or external queries by expected information gain under an LLM-derived belief distribution, making uncertainty reduction the explicit objective of multi-turn information exploration.",
+      "subtopic": "planning-interaction",
+      "rationale_tags": [
+        "inference",
+        "trajectory/action",
+        "information-gain"
+      ],
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10007193",
+        "verified_at": "2026-10-16"
+      }
+    },
+    {
+      "id": "openreview:1vXMfIYFZp",
+      "title": "Master Skill Learning with Policy-Grounded Synergy of LLM-based Reward Shaping and Exploring",
+      "url": "https://iclr.cc/virtual/2026/poster/10011791",
+      "authors": [
+        "Yanbin Chang",
+        "Junfan Lin",
+        "Jie Jiang",
+        "Runhao Zeng",
+        "Changxin Huang",
+        "Jianqiang Li"
+      ],
+      "date": "2026",
+      "venue": "ICLR 2026",
+      "source_group": "recent-curated",
+      "primary_area": "agentic-training-exploration",
+      "paper_type": "method",
+      "phase": [
+        "rl-training"
+      ],
+      "level": [
+        "trajectory/action"
+      ],
+      "signal": [
+        "novelty/curiosity",
+        "reward/advantage"
+      ],
+      "mechanism": [
+        "reward-shaping/intrinsic-reward"
+      ],
+      "problem": [
+        "local-optimum",
+        "exploration-exploitation"
+      ],
+      "setting": [
+        "embodied"
+      ],
+      "rationale": "Co-designs task-aware rewards and exploration bonuses in an LLM-generated abstract affordance space, filtering reward-bonus pairs through policy-improvement feedback to guide robotic skill exploration.",
+      "subtopic": "embodied-environments",
+      "rationale_tags": [
+        "rl-training",
+        "trajectory/action",
+        "novelty/curiosity"
+      ],
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10011791",
+        "verified_at": "2026-10-16"
+      }
+    },
+    {
+      "id": "openreview:r8hzDA3pUY",
+      "title": "Reducing Belief Deviation in Reinforcement Learning for Active Reasoning of LLM Agents",
+      "url": "https://iclr.cc/virtual/2026/poster/10007172",
+      "authors": [
+        "Deyu Zou",
+        "Yongqiang Chen",
+        "Jianxiang Wang",
+        "Garry YANG",
+        "Mufei Li",
+        "Qing Da",
+        "James Cheng",
+        "Pan Li",
+        "Yu Gong"
+      ],
+      "date": "2026",
+      "venue": "ICLR 2026",
+      "source_group": "recent-curated",
+      "primary_area": "agentic-training-exploration",
+      "paper_type": "method",
+      "phase": [
+        "rl-training"
+      ],
+      "level": [
+        "trajectory/action"
+      ],
+      "signal": [
+        "information-gain"
+      ],
+      "mechanism": [],
+      "problem": [
+        "long-horizon",
+        "recovery/error-correction"
+      ],
+      "setting": [],
+      "rationale": "Tracks belief deviation in interactive information gathering and truncates trajectories trapped in uninformative behavior, preserving credit for informative prefixes so policy learning supports productive exploration.",
+      "subtopic": "planning-interaction",
+      "rationale_tags": [
+        "rl-training",
+        "trajectory/action",
+        "information-gain"
+      ],
+      "publication": {
+        "venue": "ICLR",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2026/poster/10007172",
+        "verified_at": "2026-10-16"
+      }
+    },
+    {
+      "id": "arxiv:2509.16615",
+      "title": "LLM-Guided Task- and Affordance-Level Exploration in Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2509.16615",
+      "authors": [
+        "Jelle Luijkx",
+        "Runyu Ma",
+        "Zlatan Ajanović",
+        "Jens Kober"
+      ],
+      "date": "2025-09-20",
+      "venue": "ICRA 2026",
+      "source_group": "recent-curated",
+      "primary_area": "agentic-training-exploration",
+      "paper_type": "method",
+      "phase": [
+        "rl-training"
+      ],
+      "level": [
+        "trajectory/action"
+      ],
+      "signal": [
+        "uncertainty/confidence",
+        "reward/advantage"
+      ],
+      "mechanism": [
+        "structured-search",
+        "reward-shaping/intrinsic-reward"
+      ],
+      "problem": [
+        "sparse-reward",
+        "exploration-exploitation"
+      ],
+      "setting": [
+        "embodied"
+      ],
+      "rationale": "Uses LLM task plans and multimodal affordance proposals to guide residual RL exploration, selecting affordance modes with value and uncertainty estimates while correcting physically infeasible proposals online.",
+      "subtopic": "embodied-environments",
+      "rationale_tags": [
+        "rl-training",
+        "trajectory/action",
+        "uncertainty/confidence"
+      ],
+      "publication": {
+        "venue": "ICRA",
+        "year": 2026,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://ieeexplore.ieee.org/document/11695912/",
+        "verified_at": "2026-10-16"
+      }
+    },
+    {
+      "id": "openreview:63704LH4v5",
+      "title": "Guiding Pretraining in Reinforcement Learning with Large Language Models",
+      "url": "https://proceedings.mlr.press/v202/du23f.html",
+      "authors": [
+        "Yuqing Du",
+        "Olivia Watkins",
+        "Zihan Wang",
+        "Cédric Colas",
+        "Trevor Darrell",
+        "Pieter Abbeel",
+        "Abhishek Gupta",
+        "Jacob Andreas"
+      ],
+      "date": "2023",
+      "venue": "ICML 2023",
+      "source_group": "recent-curated",
+      "primary_area": "agentic-training-exploration",
+      "paper_type": "method",
+      "phase": [
+        "rl-training"
+      ],
+      "level": [
+        "trajectory/action",
+        "data/task"
+      ],
+      "signal": [
+        "novelty/curiosity",
+        "coverage"
+      ],
+      "mechanism": [
+        "curriculum/task-generation",
+        "reward-shaping/intrinsic-reward"
+      ],
+      "problem": [
+        "sparse-reward"
+      ],
+      "setting": [
+        "embodied",
+        "creative/open-ended"
+      ],
+      "rationale": "Uses an LLM to propose plausible goals from the current state and rewards achieving those goals, directing reward-free exploration toward useful behaviors in Crafter and Housekeep.",
+      "subtopic": "embodied-environments",
+      "rationale_tags": [
+        "rl-training",
+        "trajectory/action",
+        "novelty/curiosity"
+      ],
+      "publication": {
+        "venue": "ICML",
+        "year": 2023,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://proceedings.mlr.press/v202/du23f.html",
+        "verified_at": "2026-10-16"
+      }
+    },
+    {
+      "id": "openreview:tmBKIecDE9",
+      "title": "Motif: Intrinsic Motivation from Artificial Intelligence Feedback",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/a8de97fa77a09258b22880c230a83445-Abstract-Conference.html",
+      "authors": [
+        "Martin Klissarov",
+        "Pierluca D'Oro",
+        "Shagun Sodhani",
+        "Roberta Raileanu",
+        "Pierre-Luc Bacon",
+        "Pascal Vincent",
+        "Amy Zhang",
+        "Mikael Henaff"
+      ],
+      "date": "2024",
+      "venue": "ICLR 2024",
+      "source_group": "recent-curated",
+      "primary_area": "agentic-training-exploration",
+      "paper_type": "method",
+      "phase": [
+        "rl-training"
+      ],
+      "level": [
+        "trajectory/action"
+      ],
+      "signal": [
+        "novelty/curiosity",
+        "reward/advantage"
+      ],
+      "mechanism": [
+        "reward-shaping/intrinsic-reward"
+      ],
+      "problem": [
+        "sparse-reward"
+      ],
+      "setting": [
+        "creative/open-ended"
+      ],
+      "rationale": "Distills LLM preferences over pairs of observation captions into intrinsic rewards, steering open-ended NetHack exploration toward meaningful behaviors without querying the LLM during environment interaction.",
+      "subtopic": "embodied-environments",
+      "rationale_tags": [
+        "rl-training",
+        "trajectory/action",
+        "novelty/curiosity"
+      ],
+      "publication": {
+        "venue": "ICLR",
+        "year": 2024,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2024/poster/17604",
+        "verified_at": "2026-10-16"
+      }
+    },
+    {
+      "id": "openreview:VsvfSMI5bs",
+      "title": "BAGEL: Bootstrapping Agents by Guiding Exploration with Language",
+      "url": "https://proceedings.mlr.press/v235/murty24a.html",
+      "authors": [
+        "Shikhar Murty",
+        "Christopher D Manning",
+        "Peter Shaw",
+        "Mandar Joshi",
+        "Kenton Lee"
+      ],
+      "date": "2024",
+      "venue": "ICML 2024",
+      "source_group": "recent-curated",
+      "primary_area": "agentic-training-exploration",
+      "paper_type": "method",
+      "phase": [
+        "data-generation",
+        "test-time-adaptation"
+      ],
+      "level": [
+        "trajectory/action",
+        "data/task"
+      ],
+      "signal": [
+        "coverage"
+      ],
+      "mechanism": [
+        "curriculum/task-generation",
+        "replay/memory"
+      ],
+      "problem": [],
+      "setting": [
+        "web",
+        "tool-use"
+      ],
+      "rationale": "Turns randomly explored digital-environment trajectories into synthetic demonstrations through iterative trajectory-to-instruction-to-trajectory round trips, then retrieves that experience for in-context agent adaptation.",
+      "subtopic": "web-tools-gui",
+      "rationale_tags": [
+        "data-generation",
+        "trajectory/action",
+        "coverage"
+      ],
+      "publication": {
+        "venue": "ICML",
+        "year": 2024,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://proceedings.mlr.press/v235/murty24a.html",
+        "verified_at": "2026-10-16"
+      }
+    },
+    {
+      "id": "openreview:ZDPNmihkMR",
+      "title": "SENSEI: Semantic Exploration Guided by Foundation Models to Learn Versatile World Models",
+      "url": "https://proceedings.mlr.press/v267/sancaktar25a.html",
+      "authors": [
+        "Cansu Sancaktar",
+        "Christian Gumbsch",
+        "Andrii Zadaianchuk",
+        "Pavel Kolev",
+        "Georg Martius"
+      ],
+      "date": "2025",
+      "venue": "ICML 2025",
+      "source_group": "recent-curated",
+      "primary_area": "agentic-training-exploration",
+      "paper_type": "method",
+      "phase": [
+        "rl-training"
+      ],
+      "level": [
+        "trajectory/action"
+      ],
+      "signal": [
+        "novelty/curiosity",
+        "uncertainty/confidence"
+      ],
+      "mechanism": [
+        "reward-shaping/intrinsic-reward"
+      ],
+      "problem": [
+        "sparse-reward",
+        "exploration-exploitation"
+      ],
+      "setting": [
+        "embodied",
+        "multimodal",
+        "creative/open-ended"
+      ],
+      "rationale": "Distills VLM interestingness judgments into semantic intrinsic rewards and combines them with world-model uncertainty, learning low-level exploration policies that acquire meaningful behaviors and reusable world models.",
+      "subtopic": "embodied-environments",
+      "rationale_tags": [
+        "rl-training",
+        "trajectory/action",
+        "novelty/curiosity"
+      ],
+      "publication": {
+        "venue": "ICML",
+        "year": 2025,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://proceedings.mlr.press/v267/sancaktar25a.html",
+        "verified_at": "2026-10-16"
+      }
+    },
+    {
+      "id": "arxiv:2403.09583",
+      "title": "ExploRLLM: Guiding Exploration in Reinforcement Learning with Large Language Models",
+      "url": "https://arxiv.org/abs/2403.09583",
+      "authors": [
+        "Runyu Ma",
+        "Jelle Luijkx",
+        "Zlatan Ajanović",
+        "Jens Kober"
+      ],
+      "date": "2024-03-14",
+      "venue": "ICRA 2025",
+      "source_group": "recent-curated",
+      "primary_area": "agentic-training-exploration",
+      "paper_type": "method",
+      "phase": [
+        "rl-training"
+      ],
+      "level": [
+        "trajectory/action"
+      ],
+      "signal": [
+        "reward/advantage"
+      ],
+      "mechanism": [
+        "structured-search"
+      ],
+      "problem": [
+        "sparse-reward"
+      ],
+      "setting": [
+        "embodied"
+      ],
+      "rationale": "Generates reusable foundation-model policy programs and an exploration policy that biases robot interactions toward meaningful states, while residual RL learns how to depart from the base policy.",
+      "subtopic": "embodied-environments",
+      "rationale_tags": [
+        "rl-training",
+        "trajectory/action",
+        "reward/advantage"
+      ],
+      "publication": {
+        "venue": "ICRA",
+        "year": 2025,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://ieeexplore.ieee.org/document/11127622/",
+        "verified_at": "2026-10-16"
+      }
+    },
+    {
+      "id": "doi:10.52202/085713-3129",
+      "title": "LLM-Explorer: A Plug-in Reinforcement Learning Policy Exploration Enhancement Driven by Large Language Models",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/869fdb8fb32c561c66e16611e250fee1-Abstract-Conference.html",
+      "authors": [
+        "Qianyue Hao",
+        "Yiwen Song",
+        "Qingmin Liao",
+        "Jian Yuan",
+        "Yong Li"
+      ],
+      "date": "2025",
+      "venue": "NeurIPS 2025",
+      "source_group": "recent-curated",
+      "primary_area": "agentic-training-exploration",
+      "paper_type": "method",
+      "phase": [
+        "rl-training"
+      ],
+      "level": [
+        "policy-distribution",
+        "trajectory/action"
+      ],
+      "signal": [
+        "reward/advantage"
+      ],
+      "mechanism": [
+        "sampling/decoding"
+      ],
+      "problem": [
+        "exploration-exploitation"
+      ],
+      "setting": [],
+      "rationale": "Prompts an LLM with recent learning trajectories to periodically generate a task-specific exploration distribution, adapting stochastic policy exploration to training progress in Atari and MuJoCo.",
+      "subtopic": "planning-interaction",
+      "rationale_tags": [
+        "rl-training",
+        "policy-distribution",
+        "reward/advantage"
+      ],
+      "publication": {
+        "venue": "NeurIPS",
+        "year": 2025,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/869fdb8fb32c561c66e16611e250fee1-Abstract-Conference.html",
+        "verified_at": "2026-10-16"
+      }
+    },
+    {
+      "id": "openreview:e2NRNQ0sZe",
+      "title": "Efficient Reinforcement Learning with Large Language Model Priors",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/797be96e4481c3fe5d675c1ba5352969-Abstract-Conference.html",
+      "authors": [
+        "Xue Yan",
+        "Yan Song",
+        "Xidong Feng",
+        "Mengyue Yang",
+        "Haifeng Zhang",
+        "Haitham Bou Ammar",
+        "Jun Wang"
+      ],
+      "date": "2025",
+      "venue": "ICLR 2025",
+      "source_group": "recent-curated",
+      "primary_area": "agentic-training-exploration",
+      "paper_type": "method",
+      "phase": [
+        "rl-training"
+      ],
+      "level": [
+        "policy-distribution",
+        "trajectory/action"
+      ],
+      "signal": [
+        "uncertainty/confidence"
+      ],
+      "mechanism": [
+        "sampling/decoding",
+        "regularization"
+      ],
+      "problem": [
+        "exploration-exploitation"
+      ],
+      "setting": [],
+      "rationale": "Treats a fixed LLM as an action-prior distribution and incorporates it into policy- and value-based RL through variational inference and posterior sampling, reducing the complexity of environment exploration.",
+      "subtopic": "planning-interaction",
+      "rationale_tags": [
+        "rl-training",
+        "policy-distribution",
+        "uncertainty/confidence"
+      ],
+      "publication": {
+        "venue": "ICLR",
+        "year": 2025,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2025/poster/28953",
+        "verified_at": "2026-10-16"
+      }
+    },
+    {
+      "id": "doi:10.52202/085713-1991",
+      "title": "Iterative Tool Usage Exploration for Multimodal Agents via Step-wise Preference Tuning",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/55d16334943f8728073e17139e5baa3d-Abstract-Conference.html",
+      "authors": [
+        "Pengxiang Li",
+        "Zhi Gao",
+        "Bofei Zhang",
+        "Yapeng Mi",
+        "Xiaojian (Shawn) Ma",
+        "Chenrui Shi",
+        "Tao Yuan",
+        "Yuwei Wu",
+        "Yunde Jia",
+        "Song-Chun Zhu",
+        "Qing Li"
+      ],
+      "date": "2025",
+      "venue": "NeurIPS 2025",
+      "source_group": "recent-curated",
+      "primary_area": "agentic-training-exploration",
+      "paper_type": "method",
+      "phase": [
+        "data-generation",
+        "supervised-post-training",
+        "continual/self-improvement"
+      ],
+      "level": [
+        "trajectory/action",
+        "data/task"
+      ],
+      "signal": [
+        "reward/advantage"
+      ],
+      "mechanism": [
+        "sampling/decoding",
+        "curriculum/task-generation"
+      ],
+      "problem": [],
+      "setting": [
+        "tool-use",
+        "multimodal"
+      ],
+      "rationale": "Alternates tool-action sampling and step verification on synthesized tasks, converting self-explored tool trajectories into step-wise preference data that iteratively improves a multimodal agent.",
+      "subtopic": "web-tools-gui",
+      "rationale_tags": [
+        "data-generation",
+        "trajectory/action",
+        "reward/advantage"
+      ],
+      "publication": {
+        "venue": "NeurIPS",
+        "year": 2025,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/55d16334943f8728073e17139e5baa3d-Abstract-Conference.html",
+        "verified_at": "2026-10-16"
+      }
+    },
+    {
+      "id": "doi:10.52202/085713-0367",
+      "title": "GUI Exploration Lab: Enhancing Screen Navigation in Agents via Multi-Turn Reinforcement Learning",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/103474f02fe16ba3e64f8ea74e18a285-Abstract-Conference.html",
+      "authors": [
+        "Haolong Yan",
+        "Yeqing Shen",
+        "Xin Huang",
+        "Jia Wang",
+        "Kaijun Tan",
+        "Zhixuan Liang",
+        "Hongxin Li",
+        "Zheng Ge",
+        "Osamu Yoshie",
+        "Si Li",
+        "Xiangyu Zhang",
+        "Daxin Jiang"
+      ],
+      "date": "2025",
+      "venue": "NeurIPS 2025",
+      "source_group": "recent-curated",
+      "primary_area": "agentic-training-exploration",
+      "paper_type": "method",
+      "phase": [
+        "supervised-post-training",
+        "rl-training"
+      ],
+      "level": [
+        "trajectory/action"
+      ],
+      "signal": [
+        "reward/advantage"
+      ],
+      "mechanism": [
+        "sampling/decoding"
+      ],
+      "problem": [
+        "long-horizon"
+      ],
+      "setting": [
+        "web",
+        "multimodal"
+      ],
+      "rationale": "Provides controllable GUI navigation environments and studies how multi-turn reinforcement learning develops exploration strategies through interactive trial and error beyond single-screen memorization.",
+      "subtopic": "web-tools-gui",
+      "rationale_tags": [
+        "supervised-post-training",
+        "trajectory/action",
+        "reward/advantage"
+      ],
+      "publication": {
+        "venue": "NeurIPS",
+        "year": 2025,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/103474f02fe16ba3e64f8ea74e18a285-Abstract-Conference.html",
+        "verified_at": "2026-10-16"
+      }
+    },
+    {
+      "id": "doi:10.52202/079017-2140",
+      "title": "Exploratory Retrieval-Augmented Planning For Continual Embodied Instruction Following",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/7bacd0ebd061d4694583ae0eb69ad15f-Abstract-Conference.html",
+      "authors": [
+        "Minjong Yoo",
+        "Jinwoo Jang",
+        "Wei-jin Park",
+        "Honguk Woo"
+      ],
+      "date": "2024",
+      "venue": "NeurIPS 2024",
+      "source_group": "recent-curated",
+      "primary_area": "agentic-exploration",
+      "paper_type": "method",
+      "phase": [
+        "inference"
+      ],
+      "level": [
+        "trajectory/action"
+      ],
+      "signal": [
+        "information-gain"
+      ],
+      "mechanism": [
+        "replay/memory",
+        "structured-search"
+      ],
+      "problem": [
+        "long-horizon"
+      ],
+      "setting": [
+        "embodied"
+      ],
+      "rationale": "Integrates information-based environment exploration into LLM planning and continually refreshes environmental context memory, balancing memory validity against exploration cost during embodied instruction following.",
+      "subtopic": "knowledge-memory",
+      "rationale_tags": [
+        "inference",
+        "trajectory/action",
+        "information-gain"
+      ],
+      "publication": {
+        "venue": "NeurIPS",
+        "year": 2024,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/7bacd0ebd061d4694583ae0eb69ad15f-Abstract-Conference.html",
+        "verified_at": "2026-10-16"
+      }
+    },
+    {
+      "id": "openreview:cEKrGCFXPA",
+      "title": "Controlling Large Language Model with Latent Action",
+      "url": "https://proceedings.mlr.press/v267/jia25e.html",
+      "authors": [
+        "Chengxing Jia",
+        "Ziniu Li",
+        "Pengyuan Wang",
+        "Yi-Chen Li",
+        "Zhenyu Hou",
+        "Yuxiao Dong",
+        "Yang Yu"
+      ],
+      "date": "2025",
+      "venue": "ICML 2025",
+      "source_group": "recent-curated",
+      "primary_area": "rlvr-policy-curriculum-exploration",
+      "paper_type": "method",
+      "phase": [
+        "rl-training"
+      ],
+      "level": [
+        "latent/representation",
+        "trajectory/action"
+      ],
+      "signal": [
+        "semantic-diversity"
+      ],
+      "mechanism": [
+        "sampling/decoding"
+      ],
+      "problem": [
+        "exploration-exploitation"
+      ],
+      "setting": [
+        "math"
+      ],
+      "rationale": "Learns a compact latent action space and an LLM-based language world model so RL explores semantically diverse actions rather than only token-level alternatives.",
+      "subtopic": "capability-dynamics",
+      "rationale_tags": [
+        "rl-training",
+        "latent/representation",
+        "semantic-diversity"
+      ],
+      "publication": {
+        "venue": "ICML",
+        "year": 2025,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://proceedings.mlr.press/v267/jia25e.html",
+        "verified_at": "2026-10-16"
+      }
+    },
+    {
+      "id": "openreview:4KqkizXgXU",
+      "title": "Curiosity-driven Red-teaming for Large Language Models",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/56ed2bd15b66f709cd81cb1aaa0496b9-Abstract-Conference.html",
+      "authors": [
+        "Zhang-Wei Hong",
+        "Idan Shenfeld",
+        "Johnson (Tsun-Hsuan) Wang",
+        "Yung-Sung Chuang",
+        "Aldo Pareja",
+        "James R Glass",
+        "Akash Srivastava",
+        "Pulkit Agrawal"
+      ],
+      "date": "2024",
+      "venue": "ICLR 2024",
+      "source_group": "recent-curated",
+      "primary_area": "rlvr-policy-curriculum-exploration",
+      "paper_type": "method",
+      "phase": [
+        "rl-training"
+      ],
+      "level": [
+        "response/sequence"
+      ],
+      "signal": [
+        "novelty/curiosity",
+        "coverage"
+      ],
+      "mechanism": [
+        "reward-shaping/intrinsic-reward"
+      ],
+      "problem": [
+        "mode-collapse"
+      ],
+      "setting": [],
+      "rationale": "Adds curiosity-driven novelty incentives to a red-team language model, expanding the coverage of generated adversarial test prompts while maintaining their effectiveness.",
+      "subtopic": "reward-rollout",
+      "rationale_tags": [
+        "rl-training",
+        "response/sequence",
+        "novelty/curiosity"
+      ],
+      "publication": {
+        "venue": "ICLR",
+        "year": 2024,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://iclr.cc/virtual/2024/poster/19471",
+        "verified_at": "2026-10-16"
+      }
+    },
+    {
+      "id": "doi:10.52202/079017-3818",
+      "title": "Can large language models explore in-context?",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/d951f73c521d069fefbb73396df01424-Abstract-Conference.html",
+      "authors": [
+        "Akshay Krishnamurthy",
+        "Keegan Harris",
+        "Dylan J. Foster",
+        "Cyril Zhang",
+        "Aleksandrs Slivkins"
+      ],
+      "date": "2024",
+      "venue": "NeurIPS 2024",
+      "source_group": "recent-curated",
+      "primary_area": "understanding-evaluation",
+      "paper_type": "analysis",
+      "phase": [
+        "inference"
+      ],
+      "level": [
+        "trajectory/action"
+      ],
+      "signal": [
+        "uncertainty/confidence"
+      ],
+      "mechanism": [
+        "replay/memory"
+      ],
+      "problem": [
+        "exploration-exploitation"
+      ],
+      "setting": [],
+      "rationale": "Tests whether prompted LLMs robustly explore multi-armed bandits without parameter updates, isolating the effects of chain-of-thought reasoning and externally summarized interaction histories.",
+      "subtopic": "benchmarks-metrics",
+      "rationale_tags": [
+        "inference",
+        "trajectory/action",
+        "uncertainty/confidence"
+      ],
+      "publication": {
+        "venue": "NeurIPS",
+        "year": 2024,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/d951f73c521d069fefbb73396df01424-Abstract-Conference.html",
+        "verified_at": "2026-10-16"
+      }
+    },
+    {
+      "id": "openreview:ck7dvZFbRW",
+      "title": "EVOLvE: Evaluating and Optimizing LLMs For In-Context Exploration",
+      "url": "https://proceedings.mlr.press/v267/nie25b.html",
+      "authors": [
+        "Allen Nie",
+        "Yi Su",
+        "Bo Chang",
+        "Jonathan Lee",
+        "Ed H. Chi",
+        "Quoc V Le",
+        "Minmin Chen"
+      ],
+      "date": "2025",
+      "venue": "ICML 2025",
+      "source_group": "recent-curated",
+      "primary_area": "understanding-evaluation",
+      "paper_type": "benchmark",
+      "phase": [
+        "inference",
+        "supervised-post-training"
+      ],
+      "level": [
+        "trajectory/action"
+      ],
+      "signal": [
+        "uncertainty/confidence"
+      ],
+      "mechanism": [
+        "structured-search"
+      ],
+      "problem": [
+        "exploration-exploitation"
+      ],
+      "setting": [],
+      "rationale": "Benchmarks in-context LLM exploration on ordinary and contextual bandits using regret, and evaluates algorithm-guided inference, demonstrations, and distillation as ways to improve exploration efficiency.",
+      "subtopic": "benchmarks-metrics",
+      "rationale_tags": [
+        "inference",
+        "trajectory/action",
+        "uncertainty/confidence"
+      ],
+      "publication": {
+        "venue": "ICML",
+        "year": 2025,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://proceedings.mlr.press/v267/nie25b.html",
+        "verified_at": "2026-10-16"
+      }
+    },
+    {
+      "id": "doi:10.52202/085713-3428",
+      "title": "Large Language Models Think Too Fast To Explore Effectively",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/945c4b5d6daf5294befbc5b7c275c300-Abstract-Conference.html",
+      "authors": [
+        "Lan Pan",
+        "Hanbo Xie",
+        "Robert Wilson"
+      ],
+      "date": "2025",
+      "venue": "NeurIPS 2025",
+      "source_group": "recent-curated",
+      "primary_area": "understanding-evaluation",
+      "paper_type": "analysis",
+      "phase": [
+        "inference"
+      ],
+      "level": [
+        "trajectory/action",
+        "latent/representation"
+      ],
+      "signal": [
+        "uncertainty/confidence",
+        "coverage"
+      ],
+      "mechanism": [],
+      "problem": [
+        "exploration-exploitation"
+      ],
+      "setting": [
+        "creative/open-ended"
+      ],
+      "rationale": "Compares human and LLM exploration in Little Alchemy 2 and analyzes uncertainty, empowerment, and internal representations to explain why rapid decisions limit open-ended discovery.",
+      "subtopic": "theory-training-dynamics",
+      "rationale_tags": [
+        "inference",
+        "trajectory/action",
+        "uncertainty/confidence"
+      ],
+      "publication": {
+        "venue": "NeurIPS",
+        "year": 2025,
+        "track": "Conference",
+        "evidence": "official",
+        "official_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/945c4b5d6daf5294befbc5b7c275c300-Abstract-Conference.html",
+        "verified_at": "2026-10-16"
+      }
     }
   ],
   "classics": [

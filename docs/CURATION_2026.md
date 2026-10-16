@@ -1,6 +1,6 @@
 # 2026 Curation Notes
 
-> Initial review snapshot: 2026-07-22. Current registry snapshot: 2026-08-06.
+> Initial review snapshot: 2026-07-22. Current registry snapshot: 2026-10-16.
 
 ## Sources
 
@@ -37,8 +37,8 @@ rather than a model mechanism.
 
 ## Current registry view
 
-The current catalog contains 188 records labelled with a 2026 peer-reviewed
-venue: 183 have an official venue URL recorded in `publication.official_url`,
+The current catalog contains 193 records labelled with a 2026 peer-reviewed
+venue: 188 have an official venue URL recorded in `publication.official_url`,
 and five legacy records retain a venue claim while an official URL is still
 needed. The current distribution is:
 
@@ -46,14 +46,38 @@ needed. The current distribution is:
 |---|---:|---:|
 | ACL 2026 Main | 29 | 26 |
 | ACL 2026 Findings | 38 | 35 |
-| ICLR 2026 | 58 | 58 |
+| ICLR 2026 | 62 | 62 |
 | ICML 2026 | 63 | 63 |
-| **Total** | **188** | **183** |
+| ICRA 2026 | 1 | 1 |
+| **Total** | **193** | **188** |
 
 The distinction matters: the 182-paper cohort describes the reproducible
-conference review performed in July; the 188-paper total describes all current
-venue-labelled records and must not be read as 188 records with direct official
+conference review performed in July; the 193-paper total describes all current
+venue-labelled records and must not be read as 193 records with direct official
 venue evidence.
+
+## October 2026 additions
+
+On 2026-10-16, a focused review added 20 previously absent papers from
+ICML 2023, ICLR/ICML/NeurIPS 2024, ICLR/ICML/ICRA/NeurIPS 2025, and
+ICLR/ICRA 2026, bringing the curated catalog from 262 to 282 papers.
+The batch adds three model-space learning methods, two environment-space
+inference methods, twelve environment-space learning methods, and three
+exploration evaluation or analysis papers. Existing records, the ten quick-start
+selections, and the citation snapshot are preserved.
+
+Titles, authors, and venue records were checked against official conference
+pages or proceedings, with exact-title checks against both the curated registry
+and the candidate registry. All twenty additions have structured official venue
+evidence and a verification date in `data/papers.json`. For the two ICRA papers,
+IEEE-deposited Crossref metadata confirms the exact titles, authors, conference
+years, and canonical IEEE Xplore URLs:
+
+- [ExploRLLM (ICRA 2025)](https://doi.org/10.1109/ICRA55743.2025.11127622)
+- [LLM-TALE (ICRA 2026)](https://doi.org/10.1109/ICRA57385.2026.11695912)
+
+The updated snapshot date records this addition batch; earlier records retain
+their original evidence-verification dates and have not been globally rechecked.
 
 ## Legacy migration
 
