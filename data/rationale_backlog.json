@@ -1,0 +1,871 @@
+{
+  "schema_version": 1,
+  "identified_at": "2026-10-25",
+  "reason": "Legacy tag-list prose needs a primary-source-based rewrite. Hashes grandfather only the exact pre-existing text; new or altered template rationales fail validation.",
+  "papers": [
+    {
+      "id": "venue:2026.findings-acl.879",
+      "rationale_sha256": "f6dcb749529b1ce78e8aec8ee11241cb463343bb79f53069e167c4c5397d50a7"
+    },
+    {
+      "id": "arxiv:2605.11775",
+      "rationale_sha256": "14376c87bffd37889733ba410a6ae3e3a1600a2029ec064ebecedd97ea041439"
+    },
+    {
+      "id": "arxiv:2605.11461",
+      "rationale_sha256": "63c03f97d070ccedabc7b760282d73cf1d2345218a546c7be876dd3dc98e0e5a"
+    },
+    {
+      "id": "arxiv:2605.09853",
+      "rationale_sha256": "949e2301251a66033d26db816d40a49673ac732dc04dc5178036848e191e8ddd"
+    },
+    {
+      "id": "arxiv:2604.26326",
+      "rationale_sha256": "c74419bbf4482a29fd67eee250f05b83e0ae636bc9a2837beb102dc65cba6250"
+    },
+    {
+      "id": "arxiv:2604.13902",
+      "rationale_sha256": "a8940e365e6401d7a3e8e657827bce5f6b9fd688a4c6032f0dc35fad136e932d"
+    },
+    {
+      "id": "arxiv:2604.11510",
+      "rationale_sha256": "641ff486ab8b63db83f5ae754c87937033a427d095444e14f19acaf7de70f0b1"
+    },
+    {
+      "id": "arxiv:2604.04767",
+      "rationale_sha256": "c85df6ff727afa040e5c5dce0c8bdecbae8b60b608250a9fd714dc585af406f2"
+    },
+    {
+      "id": "arxiv:2603.04597",
+      "rationale_sha256": "b5c2ebdd77a4aa8b629aa290cada4f99434859a8a11fd893ff1f432697a3c2a1"
+    },
+    {
+      "id": "arxiv:2602.22642",
+      "rationale_sha256": "877b4fe1235f06fd7299d455c0a2c6d40ef003c9a0a7f910934044c38d63ae27"
+    },
+    {
+      "id": "arxiv:2602.22296",
+      "rationale_sha256": "097129d4130c4507eb0ea85ef02b9e52ff47ef4ccaadea30b571c729df4a9008"
+    },
+    {
+      "id": "arxiv:2602.19895",
+      "rationale_sha256": "818b51db9f4fec6f95c5824a705ec165f381fdeb711c6a3fde5dd92c91b3c8b2"
+    },
+    {
+      "id": "arxiv:2602.17550",
+      "rationale_sha256": "028ebb9b18ec1d48db09a9dbe3c0f9d94016ca58563e1f96cc8da67a6dcf11ea"
+    },
+    {
+      "id": "arxiv:2602.13035",
+      "rationale_sha256": "9f6e6108c4f558808988c0ad55f865b68222103a2b9ac18c8afc157464ef229f"
+    },
+    {
+      "id": "arxiv:2602.05281",
+      "rationale_sha256": "6d869af57e42bafc8a38a42cd095f00f51afdcb6d34a03fd486875175430f5cf"
+    },
+    {
+      "id": "arxiv:2602.03309",
+      "rationale_sha256": "63e8377804bb735cce962fbdf42972321710778f58758e6b6ed43decdd867450"
+    },
+    {
+      "id": "arxiv:2601.22478",
+      "rationale_sha256": "0b34108e19aa188325f99ac642b1b2a0c9168d9e4ceae3bf720d17bfff3906c8"
+    },
+    {
+      "id": "venue:66494",
+      "rationale_sha256": "47a0ad187f9428363063907ef295f6b6c83d0e008fa8b7408360cdda13a38118"
+    },
+    {
+      "id": "venue:xrpo pushing the limits of grpo with targeted exploration and exploitation",
+      "rationale_sha256": "271aaa2f4021777b964e8298c62b33b99ad3713cca30cebf7126959887d0423e"
+    },
+    {
+      "id": "venue:2026.findings-acl.1434",
+      "rationale_sha256": "064b15c01ec862e2e6d0a0ad54bcc26ad790bfdd76aa712ff6e0a5231bd127eb"
+    },
+    {
+      "id": "venue:2026.findings-acl.951",
+      "rationale_sha256": "e26fc22840ca866ca14029fd03664b8d9b126ea7dcc1333a451143ddb95e698c"
+    },
+    {
+      "id": "venue:token hidden reward steering exploration exploitation in group relative deep reinforcement learning",
+      "rationale_sha256": "fe5f033265daa4dd9101c2cced637744cb77aae0c7131b55c5a5810c69174b72"
+    },
+    {
+      "id": "venue:2026.acl-long.1305",
+      "rationale_sha256": "839693cfe3b737752094c6e5b71065ec9bcf627e51fb3171d049841196cefa1b"
+    },
+    {
+      "id": "venue:2026.findings-acl.828",
+      "rationale_sha256": "4b5394acff10b1582483aa2b76b354121e74fc3af6f0e22d0316236d226ee617"
+    },
+    {
+      "id": "venue:smaller models are natural explorers for policy level diversity in grpo",
+      "rationale_sha256": "2effe0624a369d800f85fe4bb2f2cdadf7b97facee96fad335c65e94ff87476e"
+    },
+    {
+      "id": "venue:2026.findings-acl.1915",
+      "rationale_sha256": "e7ecb1457ab91fd934c55f45b3b6dd41c52cbdab6570331dcd3c617616c38850"
+    },
+    {
+      "id": "venue:selective expert guidance for effective and diverse exploration in reinforcement learning of llms",
+      "rationale_sha256": "94df63a58c3da48e425522aec452660de82b04214a41a4de12b947efd5b397d8"
+    },
+    {
+      "id": "venue:ssl4rl revisiting self supervised learning as intrinsic reward for visual language reasoning",
+      "rationale_sha256": "5655ed9abe4a07ee5380ccd85a54a305223c70e18f2a9e3a8b6144c91f8bb527"
+    },
+    {
+      "id": "venue:2026.findings-acl.865",
+      "rationale_sha256": "ab8ef5df7895b2a7a06edc5c130fd0c0163e6597e323f5ae5b3f81024c4b2317"
+    },
+    {
+      "id": "venue:sage shaping anchors for guided exploration in rlvr of llms",
+      "rationale_sha256": "2eaf5b0238e33d55d0bc59739016cbf326de1a4bad351ca1e9b578ea06db39c7"
+    },
+    {
+      "id": "venue:risk sensitive reinforcement learning for alleviating exploration dilemmas in large language models",
+      "rationale_sha256": "a1e42fa822d8ea377c9bb64f0d41ae223be4735d8d99e8485ebc2f52132e9763"
+    },
+    {
+      "id": "venue:2026.findings-acl.1982",
+      "rationale_sha256": "4ffafc6eb61ac0a803bf02d09f3e3f9ca431dd2077f122618e39efe435354d3d"
+    },
+    {
+      "id": "venue:reward and guidance through rubrics promoting exploration to improve multi domain reasoning",
+      "rationale_sha256": "da5f2a203dc82a1526f97495f3667129273abc3ec0aa0ea38f46e554966a363d"
+    },
+    {
+      "id": "venue:restoring exploration after post training latent exploration decoding for large reasoning models",
+      "rationale_sha256": "493d7b603b3df884d37791e7fe152ec7446e974c67447a2bb7b4640f15a28994"
+    },
+    {
+      "id": "venue:62006",
+      "rationale_sha256": "f22cb45e311c62405b230d711a03b0dd6803d2113bc506ee6b50499e8e869b2d"
+    },
+    {
+      "id": "venue:2026.acl-long.2216",
+      "rationale_sha256": "50fde24ddaf1796aaed9f3ca462c3041acb76d64aebe8bc42e93af5863b387ee"
+    },
+    {
+      "id": "venue:2026.findings-acl.1370",
+      "rationale_sha256": "82431b918895688e4cdace12128e3079f5fc0ee2edbe0c5e7cff71036e055aba"
+    },
+    {
+      "id": "venue:on entropy control in llm rl algorithms",
+      "rationale_sha256": "ed75607f556a2d4a7e59ec03fb1ab5108c15c0e92cce178fe657b4b8a0082b64"
+    },
+    {
+      "id": "venue:no prompt left behind exploiting zero variance prompts in llm reinforcement learning via entropy guided advantage shaping",
+      "rationale_sha256": "f8f324dd37fc4222540a82e759bb6103ec485c31f95e057a16e31d59dd817aac"
+    },
+    {
+      "id": "venue:2026.findings-acl.1209",
+      "rationale_sha256": "9cc0ed808f0f0eb42f464ba0d94e788005cfe6e828471ec761fe4e018a5aff46"
+    },
+    {
+      "id": "venue:lookahead tree based rollouts for enhanced trajectory level exploration in reinforcement learning with verifiable rewards",
+      "rationale_sha256": "0b64f480d03afec457b13291f52bf02472ed92c89fb7d86a37e5685201f76b70"
+    },
+    {
+      "id": "venue:62699",
+      "rationale_sha256": "9ccb81d50c5696bac0625e1e019d6a74ed247819617a3a42a2ea2c2fae9c5ad5"
+    },
+    {
+      "id": "venue:2026.acl-long.617",
+      "rationale_sha256": "2f36d64d6da173a010be59e000a120a1f5cbec2aba273c1e4f66200ad0154007"
+    },
+    {
+      "id": "venue:knapsack rl unlocking exploration of llms via optimizing budget allocation",
+      "rationale_sha256": "a8ec2f30c24c523e2e5a0de88b9e44a180f2303a0c05d1e7766e75ff6285ee14"
+    },
+    {
+      "id": "venue:10007699",
+      "rationale_sha256": "bd686efb3aa05cb51fefadf1111fdc7f62c311df8d50d47e5121c48320c161dd"
+    },
+    {
+      "id": "venue:2026.findings-acl.724",
+      "rationale_sha256": "cf83c90179f39ec6de0eefab41cdc3ae7c74c2e402fea415602665b66be478b6"
+    },
+    {
+      "id": "venue:2026.acl-long.1418",
+      "rationale_sha256": "fbe9afd82db79be996ed33f458439189f4b1e07b5366392394ba0cd37a0b8f20"
+    },
+    {
+      "id": "venue:2026.acl-long.739",
+      "rationale_sha256": "258f1351daaca279123a1c603e6e8eda3610cd84f0a157c05a0e5ff0924db6bf"
+    },
+    {
+      "id": "venue:geoalign geometric rollout curation for robust llm reinforcement learning",
+      "rationale_sha256": "d103e047644f3b5f500632f4d9c766e1643f8da6ee36dbc91eeb11957091faa3"
+    },
+    {
+      "id": "venue:gtpo and grpo s token and sequence level reward shaping with policy entropy",
+      "rationale_sha256": "880955d4ce723a2e4cd566a38248c997854dada682d1d7dac20b4834687ff366"
+    },
+    {
+      "id": "venue:2026.acl-long.797",
+      "rationale_sha256": "ddbcd47503b13a55d33d307bbfda02592a21db84ad39e013a978de8d8dbc1c31"
+    },
+    {
+      "id": "venue:2026.findings-acl.1520",
+      "rationale_sha256": "bb9763912a31db2c9e16e9298a6c7cb5eb18f624bcb3b980f5712d267a5c48ce"
+    },
+    {
+      "id": "venue:experience is the best teacher motivating effective exploration in reinforcement learning for llms",
+      "rationale_sha256": "86858e575d732a6d7a3db087d53836eb65c8c42e24fb1aa49b77a344bdb8c22c"
+    },
+    {
+      "id": "venue:10011658",
+      "rationale_sha256": "81dfd5af10fb45b124da5e178118398b7cc334b4c95c288903c0d4b61b087392"
+    },
+    {
+      "id": "venue:2026.findings-acl.1031",
+      "rationale_sha256": "2d722fe53fc28a9529831129644028f751fe2d4cf5fdd7094ee94797d890f3aa"
+    },
+    {
+      "id": "venue:escaping policy contraction contraction aware ppo cappo for stable language model fine tuning",
+      "rationale_sha256": "84b9743f508b95c1d17e2f83302778a6453837ad26b441a9875a450199e722a4"
+    },
+    {
+      "id": "venue:entropy preserving reinforcement learning",
+      "rationale_sha256": "b22883ec28079003653547ebd6c259db53c06e5abf1c8989ca6d87cdd3892306"
+    },
+    {
+      "id": "venue:2026.findings-acl.2001",
+      "rationale_sha256": "21bc80af16ef552d675decdc8f564c9b9ef45f16fe58b792af26cb81afc41511"
+    },
+    {
+      "id": "venue:2026.findings-acl.206",
+      "rationale_sha256": "3988720dda135e6853afb72a37c01b93df1d33aee74edf40c9d7a50f1d788d0e"
+    },
+    {
+      "id": "venue:empowering small vlms to think with dynamic memorization and exploration",
+      "rationale_sha256": "e14762aed75ecf27ef1ec9178f1fccf422b315aa2f35592bbbdef1d0deb5957a"
+    },
+    {
+      "id": "venue:2026.acl-long.799",
+      "rationale_sha256": "bff012a745fd22f9f188c8fda260abc395783a13959f6a15478eb1124af450da"
+    },
+    {
+      "id": "venue:eepo exploration enhanced policy optimization via sample then forget",
+      "rationale_sha256": "51614a43726c0e07df613ce7ca2b080d163cff77ee7d37ad6f3637f083d916ae"
+    },
+    {
+      "id": "venue:63137",
+      "rationale_sha256": "eca85bfe8527760aa9ebab523a593f76d5d8185ca315801dd8756975b670a4d4"
+    },
+    {
+      "id": "venue:dynamics predictive sampling for active rl finetuning of large reasoning models",
+      "rationale_sha256": "0ce39ed1900fb6026b56182a40a3cd41cc5e1487509db0c0e6453ba499fa2043"
+    },
+    {
+      "id": "venue:2026.findings-acl.1412",
+      "rationale_sha256": "5bd399ff8308d7d8bc60819a18771217d6ec42a93aad3072ee243fdda1f14c89"
+    },
+    {
+      "id": "venue:do not let low probability tokens over dominate in rl for llms",
+      "rationale_sha256": "b7d687661f573325078a586d4246b5b06d81608e86436ea3741e89f06b0ad67f"
+    },
+    {
+      "id": "venue:diversity incentivized exploration for versatile reasoning",
+      "rationale_sha256": "05214cc9711afd550198d4b271eb7553c1089dd3f076a4b79d0173a096fc62b5"
+    },
+    {
+      "id": "venue:10011855",
+      "rationale_sha256": "db761c6e4294aa2d93879b486b06c957aa2b9de9366cd027912916a872bb286a"
+    },
+    {
+      "id": "venue:depth breadth synergy in rlvr unlocking llm reasoning gains with adaptive exploration",
+      "rationale_sha256": "4308a4297b195bdb2b8636713b12c5f1a9b6855a3fcbf36501295644cdfdf2ac"
+    },
+    {
+      "id": "venue:10010078",
+      "rationale_sha256": "a9264ea0ffe380c0d9d0dc08599b740a0c0a05e4ce03fcd6a5b553618ff0c53b"
+    },
+    {
+      "id": "venue:2026.findings-acl.685",
+      "rationale_sha256": "74837d41e69970ec0702fbeb9284b7f3806a683ffce810ff7648abd27be69890"
+    },
+    {
+      "id": "venue:2026.acl-long.647",
+      "rationale_sha256": "0495fc27d84a383ac8dd81d7a4b1ae0a1767d07d39b6f8d7a07db57793881b4e"
+    },
+    {
+      "id": "venue:darts distribution aware active rollout trajectory shaping for accelerating llm reinforcement learning",
+      "rationale_sha256": "120902468af28c85c24ed3a4a7f1ca39ced439e93a0126acb953be4e8f28c649"
+    },
+    {
+      "id": "venue:2026.findings-acl.1530",
+      "rationale_sha256": "56084a409e481d1d13773545a5fc6ec6dd3525202682fb4637e89fc698a7a2a2"
+    },
+    {
+      "id": "venue:count counts motivating exploration in llm reasoning with count based intrinsic rewards",
+      "rationale_sha256": "8a53a4f3a4b8d1ad75112e374a3df04d54c23b7126a07449f5335b4707ae112f"
+    },
+    {
+      "id": "venue:controllable exploration in hybrid policy rlvr for multi modal reasoning",
+      "rationale_sha256": "e4de6304ae16d651462c7bc990abf2eb08835f54d242005b3dffe06e9eb2382a"
+    },
+    {
+      "id": "venue:60796",
+      "rationale_sha256": "1b35fdf5a13e52fcda841f8d75f736712468b81b29a33929ab275a0bf7f6412f"
+    },
+    {
+      "id": "venue:2026.acl-long.1376",
+      "rationale_sha256": "f49cdc530d185006355b4bfec67b6533f39ffc990a8bd53bf8c4fbd7a78580f4"
+    },
+    {
+      "id": "venue:cde curiosity driven exploration for efficient reinforcement learning in large language models",
+      "rationale_sha256": "a41eed101bb7f0021fd2bd3d9d945c530bbb6bbc6248dbef521e8d31596cd4f6"
+    },
+    {
+      "id": "venue:64690",
+      "rationale_sha256": "75d73d08c5dc56a7b0c94662b6957d12f43dcf5fe18b4f5910f661a701ff3772"
+    },
+    {
+      "id": "venue:breaking the exploration bottleneck rubric scaffolded reinforcement learning for general llm reasoning",
+      "rationale_sha256": "ae2e3a05cb454a452d7ec820cd26822fcf7745e2fe950df215c1715a487b0c62"
+    },
+    {
+      "id": "venue:beyond mode collapse distribution matching for diverse reasoning",
+      "rationale_sha256": "0c57d8f6e5d41ba5684a58c5f324b68fd3d91df3e40b08b1cc457c37562115a3"
+    },
+    {
+      "id": "venue:beyond markovian reflective exploration via bayes adaptive rl for llm reasoning",
+      "rationale_sha256": "80a4f919e431db472cf83892be4e268f1a9f4fa71aadb74fe25dcd0e49a3a3fe"
+    },
+    {
+      "id": "venue:2026.findings-acl.1650",
+      "rationale_sha256": "882b9402bc7df71bad763d25303e94a51d7796f2331387e0e9243f37d8740921"
+    },
+    {
+      "id": "venue:beyond euclidean clipping overcoming exploration collapse in llm rl via riemannian isometric policy optimization",
+      "rationale_sha256": "8c1bb636ee52baa8e206a66f139e31cb8e174a229b952c426dee4ad4ef97f7b0"
+    },
+    {
+      "id": "venue:attention as a compass efficient exploration for process supervised rl in reasoning models",
+      "rationale_sha256": "907e4e9ab41937bf377699a00f341142d66270aff991eef41db78f69ff478d5b"
+    },
+    {
+      "id": "venue:anchored policy optimization mitigating exploration collapse via support constrained rectification",
+      "rationale_sha256": "f52a6c7b9f0f9eb39517573889a847edfe502d89e927dad2d46a6fbbd907d28a"
+    },
+    {
+      "id": "venue:ares multimodal adaptive reasoning via difficulty aware token level entropy shaping",
+      "rationale_sha256": "d640753b892d47d5970d2e6d278944d0a1a790ea7ab3f88ab72f962787936f73"
+    },
+    {
+      "id": "venue:2026.findings-acl.641",
+      "rationale_sha256": "58f6cb4d3e25f42587fb8c75c8297f0a92196668f0c888b88a7ee20193bcf1c3"
+    },
+    {
+      "id": "arxiv:2512.15687",
+      "rationale_sha256": "4e865955f43f9b1a8104fd011824fc9fb7a93aa8d53c2fb9edb645aa63170b65"
+    },
+    {
+      "id": "arxiv:2512.04359",
+      "rationale_sha256": "9b5d33b0bf2c2ee8af27cdb0d7498115ed5258c58494798938ad828fb51b6457"
+    },
+    {
+      "id": "arxiv:2511.07738",
+      "rationale_sha256": "afbaebfa7d4e9c7444709a48652f16dfa59330a62976bb59e9cf0a58012817e5"
+    },
+    {
+      "id": "arxiv:2511.04800",
+      "rationale_sha256": "2c02bf6d61d69e20ec64e7d7724109590961f2a2594de3ad3cb11ddcc8ca379b"
+    },
+    {
+      "id": "arxiv:2510.24832",
+      "rationale_sha256": "03e1b494db14492fe0b06d0a9fa9f8b49fcc3c7ec57ea96a2acaf6edd0427fef"
+    },
+    {
+      "id": "arxiv:2510.10959",
+      "rationale_sha256": "abcdfacbe191db93b77ed2920e0b0f809283501ad8e95bd372b03a2397785854"
+    },
+    {
+      "id": "arxiv:2510.05251",
+      "rationale_sha256": "b24197790f1b64d88ec2a809afe150d74f913ff758db09ab299a6e6f20ff5d52"
+    },
+    {
+      "id": "arxiv:2510.02227",
+      "rationale_sha256": "1f6c22e3f5e28c3bb1cf1923c9a4bd3cfc88cc2b666b7d8d056b58ad3dec6c64"
+    },
+    {
+      "id": "arxiv:2509.26114",
+      "rationale_sha256": "2b0b407694d88812cf6613352d84e69f49f619152ac77909e3cd26bc03c339b8"
+    },
+    {
+      "id": "arxiv:2509.20712",
+      "rationale_sha256": "1e4c239861b81a339eab5743d4f188b1403dd4171e82f9805ba1ea776a3e1944"
+    },
+    {
+      "id": "arxiv:2509.06941",
+      "rationale_sha256": "9d9654015ba936dd54bf8c55954747656245d50ad39f3a593d71d45835ecf3a6"
+    },
+    {
+      "id": "arxiv:2509.00125",
+      "rationale_sha256": "09beb9bcf2163b479ff82fdc86c741b00a61a0452461ed9325f96f6f5e035ce4"
+    },
+    {
+      "id": "arxiv:2508.11356",
+      "rationale_sha256": "54e1a21a1f10df1ef3abb04a2b69e45a32bc1bd3df08244383d57495c06783fa"
+    },
+    {
+      "id": "arxiv:2508.11016",
+      "rationale_sha256": "acc279ed12ca216a80794c5b5ea9b32981f03f129bda3b4605b8a8930ed3fb7c"
+    },
+    {
+      "id": "arxiv:2508.06944",
+      "rationale_sha256": "5c8a70ec80ebc5538d03b689c323006c4da5045bb1de3b188f0c92e864ba2889"
+    },
+    {
+      "id": "arxiv:2508.02260",
+      "rationale_sha256": "3de899c8eda2c8037f5614b69bfec274334bc0a2dac16f633edf0b3720c55ef7"
+    },
+    {
+      "id": "arxiv:2508.00222",
+      "rationale_sha256": "480c1f95a33dcff5a9f16f077a571be8f128e5f67e1be7b6846243e2c35f56eb"
+    },
+    {
+      "id": "arxiv:2507.07451",
+      "rationale_sha256": "004cbe331f228af8c0c4538ef660b2ca4301774f48d2a928844bdacacae59591"
+    },
+    {
+      "id": "arxiv:2506.22200",
+      "rationale_sha256": "974142316c8867644e3c505ff24a3b03a4cf5f3e218a7a81330a5306e9a2bddd"
+    },
+    {
+      "id": "arxiv:2506.11902",
+      "rationale_sha256": "d715c20e6408507c31d5c8dd8c6d2b958420f84fa553b63cb8117e2b362b79a5"
+    },
+    {
+      "id": "arxiv:2506.04185",
+      "rationale_sha256": "8c2be627857e9b5dd183778735f4201ed615d60b20af5051830c64cfa7ef152b"
+    },
+    {
+      "id": "arxiv:2506.01939",
+      "rationale_sha256": "b704ed56fa881b55ed1c52aafd4af8d89d723f7a64bc97fd869c638a8be0d5e5"
+    },
+    {
+      "id": "arxiv:2505.24864",
+      "rationale_sha256": "03670dbe77cbe5341c9232d986239b34865740dc9d7186103f484eb9eaac6b60"
+    },
+    {
+      "id": "arxiv:2505.22617",
+      "rationale_sha256": "b4967143df04aa239f23b6bdc84d3cc5d2823b60f85da44ba1608b84fc60913a"
+    },
+    {
+      "id": "arxiv:2505.17714",
+      "rationale_sha256": "96ce4320d8c27f018c17b6a82453c2234058487515fdf0dc4e5200cb07b2c160"
+    },
+    {
+      "id": "arxiv:2505.12951",
+      "rationale_sha256": "f3c07a45bb87803a2bed88de9634ff81d6460b6b3adeae431ee61024a497e549"
+    },
+    {
+      "id": "arxiv:2505.12346",
+      "rationale_sha256": "dc394721a83e324451d082362c8763663176d0784ee6127a8116dbefbb38fb49"
+    },
+    {
+      "id": "arxiv:2504.14363",
+      "rationale_sha256": "4ca74397a0f15a8608c763d1ecb8281158396961c2d0533878f4b455de7bdc6f"
+    },
+    {
+      "id": "arxiv:2503.22456",
+      "rationale_sha256": "4342cc4637bdc41129566208bbd1e9de9a4d65e144864a0d1f8c4d0dfe762ec1"
+    },
+    {
+      "id": "arxiv:2503.14476",
+      "rationale_sha256": "f4a3cdd5bd572f55ff37d6741aaf712500505a786234b169c8fcb137ebea5f4e"
+    },
+    {
+      "id": "arxiv:2502.02508",
+      "rationale_sha256": "769398fd1a285ddb23c615fd7fc63b00796b4a05462a6b4ae302b690fac5e77b"
+    },
+    {
+      "id": "arxiv:2605.11936",
+      "rationale_sha256": "3cf2d6f622f74b9b5435e65315816a692f4a4b6b8a88e3b7a1a4f417ac33f08f"
+    },
+    {
+      "id": "venue:e3 learning to explore enables extrapolation of test time compute for llms",
+      "rationale_sha256": "2e05990359e8bf3bc0ee5ac758c7ebd4fecd0afb69b3ae1c7b9506b75bee14ca"
+    },
+    {
+      "id": "venue:verbalized sampling how to mitigate mode collapse and unlock llm diversity",
+      "rationale_sha256": "85441e029cee14f84c4d8e03269cbdedcb919b0fe6cb8dd4fc0ff839acc5594a"
+    },
+    {
+      "id": "venue:2026.acl-long.1975",
+      "rationale_sha256": "e4a5cfcad12201985b7ee1150f72dc24bd2fc4215f641bd7cefd4bf74dc7cec9"
+    },
+    {
+      "id": "venue:66259",
+      "rationale_sha256": "26325265f3b0faaf9c9b724cbc62354fd004c56b9c4ce0c802d028defb9ce118"
+    },
+    {
+      "id": "venue:thought branches interpreting llm reasoning requires resampling",
+      "rationale_sha256": "74e343e363c16ff9792f6e3a1853d9a684fa85c853117715dec440aadcce6e1b"
+    },
+    {
+      "id": "venue:2026.findings-acl.817",
+      "rationale_sha256": "a3f78fe753a49d20933cad49e544232022b2099bf4af207dabcacf5e9e30877b"
+    },
+    {
+      "id": "venue:2026.acl-long.200",
+      "rationale_sha256": "4d27c0188216fff42b10405b8c2e6f96eb887de7463b2ad10afec91c50cff406"
+    },
+    {
+      "id": "venue:61787",
+      "rationale_sha256": "717e9140149dca3c11db41fd631b9bc44fe7db7f5f208ff32ea03f1b66a57fc4"
+    },
+    {
+      "id": "venue:10010811",
+      "rationale_sha256": "6d9008ccdd3a16d965e14faebcfedec0391a27351fcb45c89316a37b6289b934"
+    },
+    {
+      "id": "venue:2026.acl-long.761",
+      "rationale_sha256": "0cde792be3c3347c4b9f47f767af02a8c4f19e197c8976da9e85a5d9a902f15f"
+    },
+    {
+      "id": "venue:string seed of thought prompting llms for distribution faithful and diverse generation",
+      "rationale_sha256": "8d90ede1ab92b2117e9a566ed2b6b3223a35ebde27b847c404d195be2f717b85"
+    },
+    {
+      "id": "venue:2026.acl-long.1641",
+      "rationale_sha256": "ff76ce375997f7f67ef07993bf3387f57ad29da03ab2feb9a80e9350da0ffb89"
+    },
+    {
+      "id": "venue:scalable power sampling unlocking efficient training free reasoning for llms via distribution sharpening",
+      "rationale_sha256": "475e837b95a84946e341949a95f1829afd01954abdc17f099be29f2aae68fee5"
+    },
+    {
+      "id": "venue:10007335",
+      "rationale_sha256": "aabdbd7dd82715401df754d3ba049dc373bcc754bafce70ea563f05ac035d80b"
+    },
+    {
+      "id": "venue:2026.acl-short.54",
+      "rationale_sha256": "6349175bcbf7b8cd616e8560220cfccbd96ecfa8be00c869b34fa4aa995e386d"
+    },
+    {
+      "id": "venue:representation based exploration for language models from test time to post training",
+      "rationale_sha256": "55bcbd5fd38d13b24141a229dd8177402bfabdbf3e6eb3b06cfb7a0ca3d196a8"
+    },
+    {
+      "id": "venue:2026.findings-acl.1085",
+      "rationale_sha256": "a2285ac56fea9441f85240070ac4ce69785736913a56840b9d6a312fde8377b0"
+    },
+    {
+      "id": "venue:reasoning with sampling your base model is smarter than you think",
+      "rationale_sha256": "b1c92909fd87948f9ee2111c668719a46eb99ac2e561b36a5a6d2f49cfd5ea8e"
+    },
+    {
+      "id": "venue:post training large language models for diverse high quality responses",
+      "rationale_sha256": "cda77a0b3b7e57f0897854109b88ac7fa397be3dc656ad6c0ecb74e3dd88eeb9"
+    },
+    {
+      "id": "venue:one shot entropy minimization for language model reasoning",
+      "rationale_sha256": "651fdfeae1355ff3c20784ed45272ce75712ab30807800deeb09fad62d6aecdd"
+    },
+    {
+      "id": "venue:2026.findings-acl.1149",
+      "rationale_sha256": "191f342387b3159e6593fc3381be5cf0254af4dd855ec4ef05fa3419fa1b6bc8"
+    },
+    {
+      "id": "venue:2026.findings-acl.2115",
+      "rationale_sha256": "c33357cfe964df488847421daf63acf9ec2abb19bebf4f12896f4936ccf1a66e"
+    },
+    {
+      "id": "venue:2026.acl-long.655",
+      "rationale_sha256": "5f7edd82e6a34281b2efc1a4471d9ea35dc9139c88ee1fc7b080d826e3966401"
+    },
+    {
+      "id": "venue:2026.acl-long.9",
+      "rationale_sha256": "246d1225a1402a8db264cc29fb474d8248df66508eb866d67800615d6bb8064e"
+    },
+    {
+      "id": "venue:63542",
+      "rationale_sha256": "54ed82c21ef33cff666a76f5df9848a72064a9f002be8d5441b6f7c83f8294f6"
+    },
+    {
+      "id": "venue:2026.acl-long.628",
+      "rationale_sha256": "2556250ba362ae2651aaa2acbbb074776c03db5460aa3e0df4601df1defcdbd3"
+    },
+    {
+      "id": "venue:hyper bridging exploration and exploitation for scalable llm reasoning with hypothesis path expansion and reduction",
+      "rationale_sha256": "4e55898f90755d1a788ba720e277ca78f5efb4f7f4636d2a77cbf119836c2622"
+    },
+    {
+      "id": "venue:guidedsampling steering llms towards diverse candidate solutions at inference time",
+      "rationale_sha256": "a6c56458547102f7cea15f93c5a32ee25c9f5468dc995c7303e8d8476d97454c"
+    },
+    {
+      "id": "venue:from bits to rounds parallel decoding with exploration for diffusion language models",
+      "rationale_sha256": "0f6d22282f59a35c24aaaf136c8a6569135c883085b7844915bec1f62123e11d"
+    },
+    {
+      "id": "venue:exploring diverse generation paths via inference time stiefel activation steering",
+      "rationale_sha256": "92aab2a9f98f621fd0cfde4120f87382c1ef66d4eb161aeb35db1a90aeeea562"
+    },
+    {
+      "id": "venue:escaping mode collapse in llm generation",
+      "rationale_sha256": "43b7be0290d70eb935019d92f7f353aa4a224ac8f751567348c841e3a0a2568c"
+    },
+    {
+      "id": "venue:61896",
+      "rationale_sha256": "c203f9a15d02f508f31313234957ef8782b2a28bba9749fbecba6ddb73a3093d"
+    },
+    {
+      "id": "venue:entropy aware on policy distillation of language models",
+      "rationale_sha256": "b57932f17bbdc4e7dc0c4cf254171929f9ebefca0a615cab0773a4ae52d1e36d"
+    },
+    {
+      "id": "venue:64102",
+      "rationale_sha256": "de7429a4ccbd4ccacf74cfb2f7be75175ff432ac8a3eea8c7353ebfecaa6087d"
+    },
+    {
+      "id": "venue:eager entropy aware generation for adaptive inference time scaling",
+      "rationale_sha256": "a8921565d3426f592aba2c4f6ce49d62e49fed85d5e61c737217db8c57e6289e"
+    },
+    {
+      "id": "venue:63569",
+      "rationale_sha256": "add82f0e7f80a32ebd465523ca2d153c0cf7201a3af00bfd9984e3721339beb2"
+    },
+    {
+      "id": "venue:10011729",
+      "rationale_sha256": "7a62ba4499061aa2315121fa79bb8750f6f2df14f3296e21b3d5c6e58c7101a8"
+    },
+    {
+      "id": "venue:2026.acl-long.1231",
+      "rationale_sha256": "e3e46ba84482427cbf6387030f96ee570d8cc15e624caef001f023820d9b952b"
+    },
+    {
+      "id": "venue:differential fine tuning large language models towards better diverse reasoning abilities",
+      "rationale_sha256": "5b74d62f60c907b68cd0395a3fbebe61afe87d2369a97f59e3d2406f3cc8f10c"
+    },
+    {
+      "id": "venue:63783",
+      "rationale_sha256": "8d54d058b2a4648c64a07ac67e27313d6c5647b3655460aa62724c65dafadf7c"
+    },
+    {
+      "id": "venue:continuous chain of thought enables parallel exploration and reasoning",
+      "rationale_sha256": "762aea75a9f1af4ecb455f24ed3765a34fa5c6acd1ad7dd0f480e0b9430a3bff"
+    },
+    {
+      "id": "venue:2026.findings-acl.1475",
+      "rationale_sha256": "3b3cd1ab39be7847dbe22fad442e8180ebf6ff013f51d2ef742663c1c929fdf7"
+    },
+    {
+      "id": "venue:2026.findings-acl.214",
+      "rationale_sha256": "2df2a23396fdc76f0b6336f1ae885ab3f7ad041700a9abd0ce26ae924475a207"
+    },
+    {
+      "id": "venue:cache coherent resampling for efficient test time scaling in llm reasoning via adaptive sequential monte carlo",
+      "rationale_sha256": "6b53a209c688457c90f08f2a51a7f0a2264fd03d25a89f42ea80f9b9aa8832ae"
+    },
+    {
+      "id": "venue:2026.findings-acl.327",
+      "rationale_sha256": "aeb0c490c3acb4d0b1dd23ffea1907212499885b29308104beec9eddcbd3f7ae"
+    },
+    {
+      "id": "venue:2026.findings-acl.390",
+      "rationale_sha256": "c29340aa69dde5de9cc3e6b8daa52a7fe6079692322ed54958b68af648e5ff00"
+    },
+    {
+      "id": "venue:66569",
+      "rationale_sha256": "a4078e9088c3c6422e3671381ab6692348e249b625d100dfd8b83bf33f7e58c8"
+    },
+    {
+      "id": "venue:63468",
+      "rationale_sha256": "b8b05ca42433864e093dbe5eeca12b185ea1e64e908390319b2b0250285aa43b"
+    },
+    {
+      "id": "venue:63795",
+      "rationale_sha256": "bb428d5931a94e02b1b8f13fc6ade38266df6a1cbd440d275d1eaa0028d28cce"
+    },
+    {
+      "id": "arxiv:2511.07581",
+      "rationale_sha256": "bec078ef1dfd5750dc97477225d7e63f7ebcf10631c20004b04bac33f7047001"
+    },
+    {
+      "id": "arxiv:2510.16916",
+      "rationale_sha256": "06c10e4c199731510b18cd2fb1dd34fa3d08d7afd1b78cdad40dae359e001eac"
+    },
+    {
+      "id": "arxiv:2510.15502",
+      "rationale_sha256": "2b40ad853297318f9e672f607d2e97e560bf8817d301465ce444e73c33d08b74"
+    },
+    {
+      "id": "arxiv:2509.15194",
+      "rationale_sha256": "39093ccd0ffa2d68ea9d3c1cc1e3943673c709971e83c42adcdc5c47652ef489"
+    },
+    {
+      "id": "arxiv:2508.16861",
+      "rationale_sha256": "9dc381b5f281ed61a83b467b1959072db34b698fb1d678492b34d70aff31c239"
+    },
+    {
+      "id": "arxiv:2501.17104",
+      "rationale_sha256": "5e6bbda79bed8b76a7c137773e54195ac2ebf0a5451cf71e6a6e56bd2637e1e3"
+    },
+    {
+      "id": "arxiv:2603.03078",
+      "rationale_sha256": "2f92bd8be32471f3f9e36b0a0d9639a8911ccdf128364949bf6a702a99c185fa"
+    },
+    {
+      "id": "arxiv:2601.04767",
+      "rationale_sha256": "f8275e848e71140ac16812c7d7b1a1319b8050c6a38990be78f62c6a44f5cd96"
+    },
+    {
+      "id": "venue:what you think is what you see driving exploration in vlm agents via visual linguistic curiosity",
+      "rationale_sha256": "2647b611242e3c5ac630227deb29b12c041c06c6326179431e8bb49f00c4a975"
+    },
+    {
+      "id": "venue:2026.acl-long.1456",
+      "rationale_sha256": "b7399af13593a39b172164bd13170be2da3bb39ec50fb5ab61a66bd31bfc3f51"
+    },
+    {
+      "id": "venue:10009929",
+      "rationale_sha256": "380ad710c0546c850d8945e4a2d287f010b283433ea6116b643e4235bbc5bb29"
+    },
+    {
+      "id": "venue:toward efficient exploration by large language model agents",
+      "rationale_sha256": "b1a4a39e58399c886a8f3676c45fe5fbd090037a22fccc751a4d63c99fb669f7"
+    },
+    {
+      "id": "venue:t 2 po uncertainty guided exploration control for stable multi turn agentic reinforcement learning",
+      "rationale_sha256": "a3e7c56bb3eae3b4182be5838d0d022da9bef2fb18c7a8e1eed7f7e7cb939489"
+    },
+    {
+      "id": "venue:10008777",
+      "rationale_sha256": "9952ac288daf8b2d078ce976fd3e206de1625c775d2ab39b2a8ed9001eabdf30"
+    },
+    {
+      "id": "venue:scaling synthetic task generation for agents via exploration",
+      "rationale_sha256": "59f39251bde9d09f2025caef066e3d7cdde2b031938c8552a40eb4b70ef52221"
+    },
+    {
+      "id": "venue:2026.findings-acl.1959",
+      "rationale_sha256": "caaef9a9e553e2f4ccc01f76c58e487833a0ec3b047ce56bc6ba119540f3b555"
+    },
+    {
+      "id": "venue:65711",
+      "rationale_sha256": "74ce01645bb6dce6ac67a1e22f22882583b51e0b71b49fe2ddee42a91daec2ba"
+    },
+    {
+      "id": "venue:2026.acl-long.69",
+      "rationale_sha256": "b00bf0e7c33ed61e95d72d4a550c7e5941b34ee2898ab451953fbc6b19b66c90"
+    },
+    {
+      "id": "venue:60790",
+      "rationale_sha256": "09878ec26a8d7f92e3cd03c908abdd549aff521b9e1f83bb1522284209381361"
+    },
+    {
+      "id": "venue:65447",
+      "rationale_sha256": "7a796032377bfb06bf0401cfbbda5daaf17262242b971d7fd95022739c54ab68"
+    },
+    {
+      "id": "venue:2026.acl-short.48",
+      "rationale_sha256": "861f7a4fa25ce58b55324ba8a2cc35214503c32705b19f6823d2799fb8d87922"
+    },
+    {
+      "id": "venue:meta rl induces exploration in language agents",
+      "rationale_sha256": "b4bfad5907c2bf124f39ef384f4edbb0d6345243acae8ec8af19a7bf011c7e00"
+    },
+    {
+      "id": "venue:2026.findings-acl.670",
+      "rationale_sha256": "18cb32e9926139866408d6e308dcd56aefa34eff180189e5318e8a16b0f87b8f"
+    },
+    {
+      "id": "venue:learning to explore scaling agentic reasoning via exploration aware policy optimization",
+      "rationale_sha256": "cd197492230b8edae17f6f086794fc19f8321a525ddcf27fd930e12fbfb3194e"
+    },
+    {
+      "id": "venue:10010088",
+      "rationale_sha256": "f3bf653d138fdd0bfd7fe27ed8d41616537b1a3041b4f6430c5051d5291bcb58"
+    },
+    {
+      "id": "venue:2026.findings-acl.1178",
+      "rationale_sha256": "d62bc81468a4cf3710d1359dc502a3def1c91102fb88ae68258f0d979635a65e"
+    },
+    {
+      "id": "venue:harnessing uncertainty entropy modulated policy gradients for long horizon llm agents",
+      "rationale_sha256": "01be440e6935b55b207717bf8ca2406a42c6520513874b4833ad37a280d9662d"
+    },
+    {
+      "id": "venue:go browse training web agents with structured exploration",
+      "rationale_sha256": "2ef52ad0408c53d1d6a56659cf1cbcae4bb68e6036a4174049392ff4d052b454"
+    },
+    {
+      "id": "venue:2026.acl-long.1278",
+      "rationale_sha256": "75502a263b09617917cb8fafb4dc2b50cfc53f531fdc5741637b6df7a8f0c3c7"
+    },
+    {
+      "id": "venue:explore on graph incentivizing autonomous exploration of large language models on knowledge graphs with path refined reward modeling",
+      "rationale_sha256": "e7ace4c555aaae06300fd4d41e381e7a9343b36422c2cabc771aec2c08e8ab4c"
+    },
+    {
+      "id": "venue:10009229",
+      "rationale_sha256": "33b27c7f8a89f0454371080694d33b31ad9db1cf3f77fe2410ad2b0d923992a3"
+    },
+    {
+      "id": "venue:2026.acl-long.1670",
+      "rationale_sha256": "159b0d8e854025744a200822c8a21f956242fc7aa6fea44a34fe2d065347b327"
+    },
+    {
+      "id": "venue:10010625",
+      "rationale_sha256": "11a6618c7ed9569a928b6f4fb40464a9b59009f37d5350c82a5f70a802f212ab"
+    },
+    {
+      "id": "venue:dual scale world memory for llm agents towards hard exploration problems",
+      "rationale_sha256": "c40446625c15455607dfe6804fcba036a1fe17c5460d35e5d144369df564585e"
+    },
+    {
+      "id": "venue:10011238",
+      "rationale_sha256": "c734289de79995ed29bc808ae85bad61cb69b9a22cfd52ab4bb03a99afddebd6"
+    },
+    {
+      "id": "venue:2026.acl-long.2151",
+      "rationale_sha256": "8ec4695ba551fd1188900c8152348477ff79d5070dc36f625c4415acff8038a4"
+    },
+    {
+      "id": "venue:dive scaling diversity in agentic task synthesis for generalizable tool use",
+      "rationale_sha256": "e0a5f32008dfd732dba41702651a7e05041a9a3c94bc92efb64c3d6b9a1ccb2b"
+    },
+    {
+      "id": "venue:2026.findings-acl.2138",
+      "rationale_sha256": "3734aa0928a868f807c7c0d5831ece5863e1e9c60bc1b98417cd936c6055603f"
+    },
+    {
+      "id": "venue:2026.acl-long.838",
+      "rationale_sha256": "f660a66db9677cd6cb8a322acb45fec476e03e37469dfe541416bedc4c79ef7b"
+    },
+    {
+      "id": "venue:2026.findings-acl.160",
+      "rationale_sha256": "8e8fa5d1e51cc013301a664e10d36a3ed1db27c47d8466bf60ab592240577739"
+    },
+    {
+      "id": "venue:2026.findings-acl.1400",
+      "rationale_sha256": "5e5813bd316a17784306f92698b04a6372783f19a7720eadf3cae9f1403933de"
+    },
+    {
+      "id": "venue:backjump on graph empowering llms with reinforced retrospective exploration for agentic kg reasoning",
+      "rationale_sha256": "bcded1ee4efc7d3c2dc78d067f15f26291e12939edd7a64b134fd2665f8f7ab6"
+    },
+    {
+      "id": "venue:2026.acl-long.714",
+      "rationale_sha256": "08ed958229649136fa778e81895e57ba769edba14e9abbb2189090214367623a"
+    },
+    {
+      "id": "venue:61450",
+      "rationale_sha256": "9230f06097bff4da267151dbea09ed2b758145f88dbd63ef9670aeae0713209f"
+    },
+    {
+      "id": "arxiv:2509.22576",
+      "rationale_sha256": "2de24b57f39998642dd7647a27c58a0c486c78cf2556a1753ed14ffbabcd204f"
+    },
+    {
+      "id": "arxiv:2505.01336",
+      "rationale_sha256": "229d78d4b50fb6d7772ad9a7b02b8e921bc41e1727b6b4a1fa6e06deb0e0a2ea"
+    }
+  ]
+}

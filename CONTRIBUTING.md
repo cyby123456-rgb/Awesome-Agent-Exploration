@@ -88,6 +88,7 @@ no applicable value.
 | `primary_area`, `subtopic` | One category and one matching subtopic from [the category table](#choose-the-category-and-subtopic). |
 | `paper_type` | `method`, `analysis`, `benchmark`, `survey`, or `position`. |
 | `rationale` | One or two factual sentences explaining what is explored, how it is explored, and why that is the paper's main contribution. Publication status alone is not a rationale. |
+| `evidence` | Record `source_url`, `verified_at` (`YYYY-MM-DD`), `scope` (`metadata-abstract` or `full-text`), and `limitations`. Describe only the material actually checked; a source review is separate from official venue evidence. |
 | `rationale_tags` | One or more exact taxonomy tag IDs that support the rationale; every value must also appear in that paper's tag fields. Do not use `[]`. |
 | `phase` | **When** does exploration happen or change? For example, `inference` or `rl-training`. |
 | `level` | **What** is explored or diversified? For example, `token` or `response/sequence`. |
@@ -99,6 +100,19 @@ no applicable value.
 `phase` and `level` are required. At least one of `signal` or `mechanism` must
 be non-empty. `problem` and `setting` are optional. Copy exact tag values from
 [Taxonomy Design](docs/TAXONOMY.md#tag-dimensions); do not invent synonyms.
+
+The registry `snapshot_date` records a data update, `literature_search_cutoff`
+records the discovery cutoff within the stated `search_scope`, and each
+`evidence.verified_at` records a specific source check. `citation_snapshot` and
+per-record `citation_checked` change only when citation data is refreshed.
+GitHub commit dates describe repository activity, not literature coverage.
+
+Legacy template rationales are tracked in `data/rationale_backlog.json` with
+hashes of their exact existing text. Do not add new templates or replace a
+template with another tag summary. Read the primary source, describe the
+exploration object, mechanism, evaluation, and evidence limits, and remove the
+rewritten record from the backlog. Validation reports the remaining debt and
+rejects new or modified template prose.
 
 For an officially published paper, add this object and use the official paper
 page as `official_url` (not a search result). CI requires HTTPS, a hostname,
@@ -153,6 +167,7 @@ Run these commands before committing:
 ```bash
 python3 -m json.tool data/papers.json >/dev/null
 python3 scripts/validate_catalog.py
+python3 -m unittest discover -s scripts -p 'test_*.py'
 python3 scripts/generate_catalog.py
 python3 scripts/audit_catalog.py
 git diff --check

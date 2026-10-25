@@ -83,6 +83,13 @@ environments.
 **Core distinction:** The environment is not merely searched to finish the
 current task; interaction becomes training experience.
 
+Learning can also mean constructing reusable procedural memory before
+deployment, without updating model parameters. DAEDALUS and RSIAgent are
+classified here with `data-generation` and `replay/memory`; their frozen
+evaluation memories do not imply continual test-time learning. A system that
+only retrieves existing memory to finish the current task remains in
+environment-space inference.
+
 ### 5. Understanding, Evaluation & Benchmarks
 
 Empirical analysis, theory, surveys, metrics, and benchmarks whose main

@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 import sys
@@ -15,6 +16,7 @@ from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "papers.json"
+RATIONALE_BACKLOG_PATH = ROOT / "data" / "rationale_backlog.json"
 SCHEMA_VERSION = 2
 
 AREAS = {
@@ -111,18 +113,36 @@ def valid_https_url(value: object) -> bool:
     return parsed.scheme == "https" and bool(parsed.hostname) and parsed.path not in {"", "/"}
 
 
+def valid_full_date(value: object) -> bool:
+    return isinstance(value, str) and bool(re.fullmatch(r"\d{4}-\d{2}-\d{2}", value)) and valid_date(value)
+
+
+def legacy_rationale(value: str) -> bool:
+    return "as the recorded exploration evidence" in value.casefold()
+
+
 def main() -> int:
     catalog = json.loads(DATA_PATH.read_text(encoding="utf-8"))
     papers = catalog.get("papers", [])
     errors: list[str] = []
+    backlog = json.loads(RATIONALE_BACKLOG_PATH.read_text(encoding="utf-8"))
+    backlog_rows = backlog.get("papers", [])
+    backlog_hashes = {row["id"]: row["rationale_sha256"] for row in backlog_rows}
+    if backlog.get("schema_version") != 1 or len(backlog_hashes) != len(backlog_rows):
+        errors.append("rationale backlog: invalid schema or duplicate IDs")
     if catalog.get("schema_version") != SCHEMA_VERSION:
         errors.append(f"catalog: schema_version must be {SCHEMA_VERSION}")
     if not isinstance(papers, list):
         errors.append("catalog: papers must be a list")
         papers = []
-    for field in ("snapshot_date", "citation_snapshot"):
-        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", catalog.get(field, "")):
+    for field in ("snapshot_date", "citation_snapshot", "literature_search_cutoff"):
+        if not valid_full_date(catalog.get(field)):
             errors.append(f"catalog: {field} must be in YYYY-MM-DD format")
+    if valid_full_date(catalog.get("literature_search_cutoff")) and valid_full_date(catalog.get("snapshot_date")):
+        if catalog["literature_search_cutoff"] > catalog["snapshot_date"]:
+            errors.append("catalog: literature_search_cutoff cannot follow snapshot_date")
+    if not catalog.get("search_scope"):
+        errors.append("catalog: search_scope must describe the coverage of the literature search")
     seen_ids: dict[str, str] = {}
     seen_titles: dict[str, str] = {}
     seen_urls: dict[str, str] = {}
@@ -240,6 +260,33 @@ def main() -> int:
             errors.append(f"{label}: rationale_tags must be recorded taxonomy tags {unrecorded_tags}")
         if any(pattern.fullmatch(paper.get("rationale", "")) for pattern in TEMPLATE_RATIONALES):
             errors.append(f"{label}: rationale must explain the paper's exploration contribution, not publication status or a tag list")
+        if legacy_rationale(paper.get("rationale", "")):
+            digest = hashlib.sha256(paper["rationale"].encode("utf-8")).hexdigest()
+            if backlog_hashes.get(paper_id) != digest:
+                errors.append(f"{label}: new or changed template rationale; write a source-based contribution description")
+        elif paper_id in backlog_hashes:
+            errors.append(f"{label}: remove the rewritten rationale from data/rationale_backlog.json")
+
+        evidence = paper.get("evidence")
+        if evidence is not None:
+            if not isinstance(evidence, dict):
+                errors.append(f"{label}: evidence must be an object")
+            else:
+                if not valid_https_url(evidence.get("source_url")):
+                    errors.append(f"{label}: evidence needs an HTTPS source_url with hostname and path")
+                if not valid_full_date(evidence.get("verified_at")):
+                    errors.append(f"{label}: evidence needs a valid verified_at date")
+                elif valid_full_date(catalog.get("snapshot_date")) and evidence["verified_at"] > catalog["snapshot_date"]:
+                    errors.append(f"{label}: evidence verified_at cannot follow the registry update")
+                if evidence.get("scope") not in {"metadata-abstract", "full-text"}:
+                    errors.append(f"{label}: evidence scope must be metadata-abstract or full-text")
+                if not isinstance(evidence.get("limitations"), str) or not evidence["limitations"].strip():
+                    errors.append(f"{label}: evidence must state the limits of this review")
+
+    unknown_backlog = sorted(set(backlog_hashes) - set(seen_ids))
+    if unknown_backlog:
+        errors.append(f"rationale backlog: IDs are absent from the catalog: {unknown_backlog}")
+    print(f"Editorial review backlog: {len(backlog_hashes)} legacy rationales still need source-based rewrites")
 
     classic_titles = [normalize(p["title"]) for p in catalog.get("classics", [])]
     if len(classic_titles) != len(set(classic_titles)):

@@ -346,11 +346,13 @@
     },
     {
       "id": "legacy:no-source:learning-to-explore-with-parameter-space-noise-a-deep-dive-into-parameter-space-noise-for-reinforcement-learning-with-verifiable-rewards",
-      "status": "pending",
+      "status": "promoted",
       "title": "Learning to Explore with Parameter-Space Noise: A Deep Dive into Parameter-Space Noise for Reinforcement Learning with Verifiable Rewards",
-      "reason": "Missing primary-source link",
+      "reason": "Exact primary source and exploration contribution verified in the October review.",
       "legacy_source": null,
-      "next_step": "Verify the exact title and primary source before taxonomy review."
+      "resolved_to": "arxiv:2602.02555",
+      "resolved_at": "2026-10-25",
+      "source_url": "https://arxiv.org/abs/2602.02555"
     },
     {
       "id": "legacy:no-source:evolution-strategies-as-a-scalable-alternative-to-reinforcement-learning",
@@ -362,19 +364,23 @@
     },
     {
       "id": "legacy:no-source:miner-mining-intrinsic-mastery-for-data-efficient-rl-in-large-reasoning-models",
-      "status": "pending",
+      "status": "promoted",
       "title": "MINER: Mining Intrinsic Mastery for Data-Efficient RL in Large Reasoning Models",
-      "reason": "Missing primary-source link",
+      "reason": "Exact ACL Anthology metadata and exploration contribution verified.",
       "legacy_source": null,
-      "next_step": "Verify the exact title and primary source before taxonomy review."
+      "resolved_to": "doi:10.18653/v1/2026.acl-long.237",
+      "resolved_at": "2026-10-25",
+      "source_url": "https://aclanthology.org/2026.acl-long.237/"
     },
     {
       "id": "legacy:no-source:pope-learning-to-reason-on-hard-problems-via-privileged-on-policy-exploration",
-      "status": "pending",
+      "status": "promoted",
       "title": "POPE: Learning to Reason on Hard Problems via Privileged On-Policy Exploration",
-      "reason": "Missing primary-source link",
+      "reason": "Exact primary source and exploration contribution verified in the October review.",
       "legacy_source": null,
-      "next_step": "Verify the exact title and primary source before taxonomy review."
+      "resolved_to": "arxiv:2601.18779",
+      "resolved_at": "2026-10-25",
+      "source_url": "https://arxiv.org/abs/2601.18779"
     },
     {
       "id": "legacy:no-source:rl-plus-countering-capability-boundary-collapse-of-llms-in-reinforcement-learning-with-hybrid-policy-optimization",
@@ -412,11 +418,13 @@
     },
     {
       "id": "legacy:no-source:reasoning-path-divergence-a-new-metric-and-curation-strategy-to-unlock-llm-diverse-thinking",
-      "status": "pending",
+      "status": "promoted",
       "title": "Reasoning Path Divergence: A New Metric and Curation Strategy to Unlock LLM Diverse Thinking",
-      "reason": "Missing primary-source link",
+      "reason": "Exact primary source and exploration contribution verified in the October review.",
       "legacy_source": null,
-      "next_step": "Verify the exact title and primary source before taxonomy review."
+      "resolved_to": "arxiv:2510.26122",
+      "resolved_at": "2026-10-25",
+      "source_url": "https://arxiv.org/abs/2510.26122"
     },
     {
       "id": "legacy:no-source:diversity-aware-policy-optimization-for-large-language-model-reasoning",
@@ -481,6 +489,15 @@
       "reason": "Missing primary-source link",
       "legacy_source": null,
       "next_step": "Verify the exact title and primary source before taxonomy review."
+    },
+    {
+      "id": "publisher:S0950705126013407",
+      "status": "pending",
+      "title": "AGEE: A multi-dimensional process-level metric for evaluating agent exploration over knowledge graphs",
+      "reason": "Publisher full text returned HTTP 403 during this review; metric validity has not been verified.",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0950705126013407",
+      "checked_at": "2026-10-25",
+      "next_step": "Obtain accessible primary full text, verify exact metadata, formulas and normalization, and assess whether structural coverage, information gain rate, and efficiency can be gamed before promotion."
     }
   ]
 }

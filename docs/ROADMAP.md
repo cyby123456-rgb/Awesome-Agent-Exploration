@@ -1,6 +1,6 @@
 # Awesome Exploration: Curation Roadmap
 
-> Current-state snapshot: 2026-08-03.
+> Current-state snapshot: 2026-10-25. Literature review scope and limits: [October review](REVIEW_2026-10.md).
 
 ## Current position
 
@@ -60,15 +60,24 @@ requires exact-title source verification and human review.
 
 ## Next
 
-1. Enrich records with code URLs and canonical publication identifiers.
-2. Add a filterable static view once the JSON schema has remained stable.
-3. Publish a small monthly changelog of reviewed additions and removals.
+1. Rewrite the 216 remaining legacy tag-list rationales against primary sources;
+   the exact records and text hashes are tracked in `data/rationale_backlog.json`.
+   The 29 legacy rationales in the evaluation category were refreshed in October.
+2. Verify AGEE's full text and metric behavior before candidate promotion;
+   continue reviewing the 38 pending candidates.
+3. Expand process-level exploration evaluation, including strategy coverage,
+   information acquisition, learning signal quality, and exploration cost.
+4. Refresh citation counts as a separately dated data collection. The current
+   citation snapshot remains 2026-07-23.
+5. Enrich code URLs and canonical identifiers, then consider a filterable view.
 
 ## Release checklist
 
 ```bash
 python3 scripts/validate_catalog.py
+python3 -m unittest discover -s scripts -p 'test_*.py'
 python3 scripts/generate_catalog.py
+python3 scripts/audit_catalog.py
 python3 scripts/check_links.py
 git diff --check
 ```

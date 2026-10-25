@@ -1,6 +1,7 @@
 # 2026 Curation Notes
 
-> Initial review snapshot: 2026-07-22. Current registry snapshot: 2026-10-16.
+> Initial review snapshot: 2026-07-22. Current registry update: 2026-10-25.
+> Focused literature search cutoff: 2026-10-23. Citation snapshot: 2026-07-23.
 
 ## Sources
 
@@ -37,23 +38,23 @@ rather than a model mechanism.
 
 ## Current registry view
 
-The current catalog contains 193 records labelled with a 2026 peer-reviewed
-venue: 188 have an official venue URL recorded in `publication.official_url`,
+The current catalog contains 194 records labelled with a 2026 peer-reviewed
+venue: 189 have an official venue URL recorded in `publication.official_url`,
 and five legacy records retain a venue claim while an official URL is still
 needed. The current distribution is:
 
 | Venue | Venue records | Official URL evidence |
 |---|---:|---:|
-| ACL 2026 Main | 29 | 26 |
+| ACL 2026 Main | 30 | 27 |
 | ACL 2026 Findings | 38 | 35 |
 | ICLR 2026 | 62 | 62 |
 | ICML 2026 | 63 | 63 |
 | ICRA 2026 | 1 | 1 |
-| **Total** | **193** | **188** |
+| **Total** | **194** | **189** |
 
 The distinction matters: the 182-paper cohort describes the reproducible
-conference review performed in July; the 193-paper total describes all current
-venue-labelled records and must not be read as 193 records with direct official
+conference review performed in July; the 194-paper total describes all current
+venue-labelled records and must not be read as 194 records with direct official
 venue evidence.
 
 ## October 2026 additions
@@ -78,6 +79,20 @@ years, and canonical IEEE Xplore URLs:
 
 The updated snapshot date records this addition batch; earlier records retain
 their original evidence-verification dates and have not been globally rechecked.
+
+On 2026-10-25, a focused follow-up added 17 papers, promoted four existing
+candidates, and retained AGEE as pending after its publisher full text returned
+HTTP 403. The catalog now has 299 papers and 16 background references. It
+includes both September–October work and older omissions; arXiv records retain
+preprint status unless separate official venue evidence is recorded.
+
+All 29 template rationales in the previous evaluation category were rewritten
+against primary-source abstracts. Three intervention papers were moved to
+model-space learning, and benchmark/metric and capability-boundary subtopics
+were corrected. There are still 216 legacy template rationales in other
+categories; their exact text is tracked rather than described as reverified.
+See the [October review report](REVIEW_2026-10.md) for per-paper sources,
+classification decisions, evidence limits, and the remaining review queue.
 
 ## Legacy migration
 

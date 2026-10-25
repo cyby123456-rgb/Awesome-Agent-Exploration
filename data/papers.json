@@ -1,6 +1,8 @@
 {
   "schema_version": 2,
-  "snapshot_date": "2026-10-16",
+  "snapshot_date": "2026-10-25",
+  "literature_search_cutoff": "2026-10-23",
+  "search_scope": "Focused verification of the supplied September–October recommendations and named earlier omissions; not an exhaustive search or a global evidence recheck.",
   "citation_snapshot": "2026-07-23",
   "scope": "Exploration in LLM generation, RLVR, and agents.",
   "papers": [
@@ -259,13 +261,19 @@
       "setting": [
         "math"
       ],
-      "rationale": "Beyond Accuracy: Evaluating Strategy Diversity in LLM Mathematical Reasoning is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.",
-      "subtopic": "theory-training-dynamics",
+      "rationale": "Evaluates mathematical strategy coverage on 80 AMC/AIME problems against 217 AoPS-derived strategy families, annotating strategy identity separately from answer correctness. Multiple-strategy prompts and repeated runs expose gaps in reasoning flexibility even when final-answer accuracy is high; reference coverage is relative to the collected strategy set.",
+      "subtopic": "benchmarks-metrics",
       "rationale_tags": [
         "inference",
         "response/sequence",
         "semantic-diversity"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://arxiv.org/abs/2605.09292",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "venue:2026.findings-acl.1954",
@@ -341,7 +349,7 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "When Greedy Wins: Emergent Exploitation Bias in Meta-Bandit LLM Training is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `structured-search` as the recorded exploration evidence.",
+      "rationale": "Studies how SFT and differently rewarded RL shape exploration in multi-armed bandits, comparing regret, horizon transfer, and early catastrophic failures. Behavioral analysis finds that lower average regret can coexist with premature commitment and greedier exploitation, motivating evaluation beyond a single aggregate score.",
       "subtopic": "theory-training-dynamics",
       "publication": {
         "venue": "ICLR",
@@ -355,7 +363,13 @@
         "inference",
         "response/sequence",
         "structured-search"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://iclr.cc/virtual/2026/poster/10008807",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "venue:10007331",
@@ -370,8 +384,8 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "understanding-evaluation",
-      "paper_type": "analysis",
+      "primary_area": "rlvr-policy-curriculum-exploration",
+      "paper_type": "method",
       "phase": [
         "inference"
       ],
@@ -384,8 +398,8 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Whatever Remains Must Be True: Filtering Drives Reasoning in LLMs, Shaping Diversity is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.",
-      "subtopic": "theory-training-dynamics",
+      "rationale": "Defines a target distribution by filtering incorrect outputs while retaining relative probabilities of correct ones, then varies alpha-divergence to control mode coverage versus precision. Lean theorem-proving experiments compare the coverage-precision frontier and test whether divergence choice preserves alternative valid proofs.",
+      "subtopic": "entropy-distribution",
       "publication": {
         "venue": "ICLR",
         "year": 2026,
@@ -398,7 +412,13 @@
         "inference",
         "response/sequence",
         "semantic-diversity"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://iclr.cc/virtual/2026/poster/10007331",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "venue:unveiling the entropy dynamics of chain of thought reasoning",
@@ -430,7 +450,7 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Unveiling the Entropy Dynamics of Chain-of-Thought Reasoning is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `entropy/probability` as the recorded exploration evidence.",
+      "rationale": "Analyzes an early high-uncertainty phase followed by a more stable confidence phase in chain-of-thought generation. Sequential change-point detection with CUSUM supports early stopping and trajectory-weighted voting, evaluated through accuracy-token trade-offs rather than interpreting every increase in entropy as useful exploration.",
       "subtopic": "theory-training-dynamics",
       "publication": {
         "venue": "ICML",
@@ -444,7 +464,13 @@
         "inference",
         "response/sequence",
         "entropy/probability"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://icml.cc/virtual/2026/poster/62606",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "venue:2026.findings-acl.879",
@@ -532,7 +558,7 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Understanding Reasoning Collapse in LLM Agent Reinforcement Learning is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `structured-search` as the recorded exploration evidence.",
+      "rationale": "Separates within-input reasoning randomness from dependence on the input to diagnose generic reasoning templates that entropy and surface-diversity scores miss. A source-retrieval diagnostic and reward-variance analysis assess input dependence during agent RL and motivate filtering weak-signal updates.",
       "subtopic": "theory-training-dynamics",
       "publication": {
         "venue": "ICML",
@@ -546,7 +572,13 @@
         "rl-training",
         "response/sequence",
         "structured-search"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://icml.cc/virtual/2026/poster/66821",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "venue:the unlearnability phenomenon in rlvr for language models",
@@ -574,8 +606,8 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "The Unlearnability Phenomenon in RLVR for Language Models is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `structured-search` as the recorded exploration evidence.",
-      "subtopic": "theory-training-dynamics",
+      "rationale": "Investigates hard RLVR examples that remain unlearned despite occasional correct rollouts, testing whether sampling and optimization changes resolve the failure. Cross-example gradient comparisons connect persistent failures to representation and generalization issues, distinguishing missing exploration from inability to learn from discovered successes.",
+      "subtopic": "capability-boundaries",
       "publication": {
         "venue": "ICML",
         "year": 2026,
@@ -588,7 +620,13 @@
         "rl-training",
         "policy-distribution",
         "structured-search"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://icml.cc/virtual/2026/poster/64909",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "venue:10006646",
@@ -611,8 +649,8 @@
       "date": "2026",
       "venue": "ICLR 2026",
       "source_group": "conference-2026",
-      "primary_area": "understanding-evaluation",
-      "paper_type": "analysis",
+      "primary_area": "rlvr-policy-curriculum-exploration",
+      "paper_type": "method",
       "phase": [
         "rl-training"
       ],
@@ -628,8 +666,8 @@
         "mode-collapse"
       ],
       "setting": [],
-      "rationale": "The Choice of Divergence: A Neglected Key to Mitigating Diversity Collapse in Reinforcement Learning with Verifiable Reward is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.",
-      "subtopic": "theory-training-dynamics",
+      "rationale": "Examines diversity loss under reverse-KL and unregularized RLVR, then uses mass-covering f-divergences in Diversity-Preserving Hybrid RL to retain initial-policy support. Math and SQL pass@1/pass@k and out-of-domain retention evaluate whether divergence choice preserves useful solution coverage.",
+      "subtopic": "entropy-distribution",
       "publication": {
         "venue": "ICLR",
         "year": 2026,
@@ -642,7 +680,13 @@
         "rl-training",
         "response/sequence",
         "semantic-diversity"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://iclr.cc/virtual/2026/poster/10006646",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "venue:2026.findings-acl.1894",
@@ -679,7 +723,7 @@
       "setting": [
         "multi-agent"
       ],
-      "rationale": "Single-Agent Generation Surpasses Multi-Agent Systems in Semantic Diversity is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` and `population/multi-policy` as the exploration object during `inference`, using `inference`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.",
+      "rationale": "Controls prompt conditioning when comparing single-agent and multi-agent generation on divergent-thinking tasks. Semantic diversity and logical validity reveal how information visibility and redundant parallel responses affect coverage; a single-pass multi-output baseline tests whether additional agents are necessary for the observed diversity gains.",
       "subtopic": "theory-training-dynamics",
       "publication": {
         "venue": "ACL",
@@ -693,7 +737,13 @@
         "inference",
         "response/sequence",
         "semantic-diversity"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://aclanthology.org/2026.findings-acl.1894/",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "venue:reinforcement learning with verifiable rewards implicitly incentivizes correct reasoning in base llms",
@@ -730,7 +780,7 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Reinforcement Learning with Verifiable Rewards Implicitly Incentivizes Correct Reasoning in Base LLMs is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `reward/advantage` as the recorded exploration evidence.",
+      "rationale": "Revisits RLVR capability boundaries with CoT-Pass@K, which checks intermediate reasoning as well as final answers. Mathematical and coding evaluations and a training-dynamics model assess whether outcome-only rewards improve reasoning validity, distinguishing successful answer sampling from successful reasoning traces.",
       "subtopic": "theory-training-dynamics",
       "publication": {
         "venue": "ICLR",
@@ -744,7 +794,13 @@
         "rl-training",
         "response/sequence",
         "reward/advantage"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://iclr.cc/virtual/2026/poster/10007896",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "venue:recognize your orchestrator an entropy dynamics perspective for llm multi agent systems",
@@ -778,7 +834,7 @@
       "setting": [
         "multi-agent"
       ],
-      "rationale": "Recognize Your Orchestrator: An Entropy Dynamics Perspective for LLM Multi-Agent Systems is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `population/multi-policy` as the exploration object during `inference`, using `inference`, `population/multi-policy`, and `entropy/probability` as the recorded exploration evidence.",
+      "rationale": "Models uncertainty during multi-agent orchestration as a balance between task resolution and accumulating context. Process-verifiable workflows with intermediate checkpoints test the model against coordination failures and identify cases where extensive internal reasoning consumes context needed for external task progress.",
       "subtopic": "theory-training-dynamics",
       "publication": {
         "venue": "ICML",
@@ -792,7 +848,13 @@
         "inference",
         "population/multi-policy",
         "entropy/probability"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://icml.cc/virtual/2026/poster/63622",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "venue:10009898",
@@ -823,7 +885,7 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "RL Squeezes, SFT Expands: A Comparative Study of Reasoning LLMs is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `supervised-post-training`, using `supervised-post-training`, `response/sequence`, and `structured-search` as the recorded exploration evidence.",
+      "rationale": "Clusters whole reasoning traces and analyzes step-level reasoning graphs to compare how RLVR and SFT redistribute solution paths. Math and code experiments measure trajectory coverage and graph visitation statistics, finding concentrated reasoning under RL and broader correct trajectories under SFT in the evaluated settings.",
       "subtopic": "theory-training-dynamics",
       "publication": {
         "venue": "ICLR",
@@ -837,7 +899,13 @@
         "supervised-post-training",
         "response/sequence",
         "structured-search"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://iclr.cc/virtual/2026/poster/10009898",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "venue:provable benefits of rlvr over sft for reasoning models learning to backtrack efficiently",
@@ -864,7 +932,7 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Provable Benefits of RLVR over SFT for Reasoning Models: Learning to Backtrack Efficiently is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `backtracking/resampling` as the recorded exploration evidence.",
+      "rationale": "Models reasoning as graph pathfinding and proves a separation between outcome-reward RLVR and SFT trained on shortest successful paths without negative examples. The analysis isolates learning to backtrack from dead ends as a mechanism for reallocating inference compute; its guarantees apply to the constructed setting.",
       "subtopic": "theory-training-dynamics",
       "publication": {
         "venue": "ICML",
@@ -878,7 +946,13 @@
         "rl-training",
         "policy-distribution",
         "backtracking/resampling"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://icml.cc/virtual/2026/poster/64293",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "venue:61683",
@@ -907,7 +981,7 @@
         "capability-boundary"
       ],
       "setting": [],
-      "rationale": "Post-Training with Policy Gradients: Optimality and the Base Model Barrier is included in understanding and evaluation of exploration because it tests whether exploration extends capability boundaries. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `gradient-reshaping` as the recorded exploration evidence.",
+      "rationale": "Analyzes reward-query complexity for post-training linear autoregressive models and relates exploration limits to the base model’s likelihood quantiles. Contrasts outcome and process rewards to show, under the stated margin and model assumptions, when finding low-support response sequences can require exponentially many queries.",
       "subtopic": "capability-boundaries",
       "publication": {
         "venue": "ICML",
@@ -921,7 +995,13 @@
         "rl-training",
         "policy-distribution",
         "gradient-reshaping"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://icml.cc/virtual/2026/poster/61683",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "venue:on the entropy dynamics in reinforcement fine tuning of large language models",
@@ -953,7 +1033,7 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "On the Entropy Dynamics in Reinforcement Fine-Tuning of Large Language Models is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `entropy/probability` as the recorded exploration evidence.",
+      "rationale": "Derives how a logit update changes policy entropy and extends the analysis to GRPO updates. Empirical checks and entropy-discriminator clipping connect update direction to exploration collapse, providing a more specific control signal than monitoring aggregate entropy alone.",
       "subtopic": "theory-training-dynamics",
       "publication": {
         "venue": "ICML",
@@ -967,7 +1047,13 @@
         "rl-training",
         "response/sequence",
         "entropy/probability"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://icml.cc/virtual/2026/poster/63897",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "venue:less diverse less safe the indirect but pervasive risk of test time scaling in large language models",
@@ -996,7 +1082,7 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Less Diverse, Less Safe: The Indirect But Pervasive Risk of Test-Time Scaling in Large Language Models is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `semantic-diversity` as the recorded exploration evidence.",
+      "rationale": "Stress-tests test-time search by deliberately reducing candidate diversity with a reference-guided protocol. Experiments across Best-of-N and Monte Carlo tree search measure changes in unsafe outputs and guardrail detection, treating reduced exploration coverage as an empirical failure mode rather than assuming more inference compute guarantees safer selection.",
       "subtopic": "theory-training-dynamics",
       "publication": {
         "venue": "ICML",
@@ -1010,7 +1096,13 @@
         "inference",
         "response/sequence",
         "semantic-diversity"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://icml.cc/virtual/2026/poster/64671",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "venue:10008208",
@@ -1042,7 +1134,7 @@
         "mode-collapse"
       ],
       "setting": [],
-      "rationale": "KL-Regularized Reinforcement Learning for Generative Modelling is Designed to Mode Collapse is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `regularization` as the recorded exploration evidence.",
+      "rationale": "Analyzes how reward, reference policy, and KL strength jointly determine the target distribution in regularized RL. Shows settings where both forward and reverse KL target a narrow reward mode, then evaluates reward rescaling that preserves probability across multiple high-reward regions.",
       "subtopic": "theory-training-dynamics",
       "publication": {
         "venue": "ICLR",
@@ -1056,7 +1148,13 @@
         "rl-training",
         "response/sequence",
         "regularization"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://iclr.cc/virtual/2026/poster/10008208",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "venue:generalization of rlvr using causal reasoning as a testbed",
@@ -1087,8 +1185,8 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Generalization of RLVR Using Causal Reasoning as a Testbed is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `structured-search` as the recorded exploration evidence.",
-      "subtopic": "theory-training-dynamics",
+      "rationale": "Uses causal-graph queries of varying intervention level and structural complexity to compare generalization after RLVR and SFT. Model-scale and training-query ablations relate transfer to initial reasoning competence and improvements in marginalization and intermediate probability calculations, limiting claims of universal capability expansion.",
+      "subtopic": "capability-boundaries",
       "publication": {
         "venue": "ICLR",
         "year": 2026,
@@ -1101,7 +1199,13 @@
         "rl-training",
         "policy-distribution",
         "structured-search"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://iclr.cc/virtual/2026/poster/10010768",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "venue:exploration vs exploitation rethinking rlvr through clipping entropy and spurious reward",
@@ -1135,7 +1239,7 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Exploration vs Exploitation: Rethinking RLVR through Clipping, Entropy, and Spurious Reward is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.",
+      "rationale": "Studies how clipping, entropy, and spurious reward affect the exploration-exploitation balance in RLVR. The paper separates mechanisms that reshape sampled reasoning from apparent reward gains, using controlled training comparisons to examine when greater rollout diversity translates into useful reasoning performance.",
       "subtopic": "theory-training-dynamics",
       "publication": {
         "venue": "ICLR",
@@ -1149,7 +1253,13 @@
         "rl-training",
         "policy-distribution",
         "entropy/probability"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://iclr.cc/virtual/2026/poster/10007078",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "venue:exploration hacking llms can learn to resist rl training",
@@ -1183,7 +1293,7 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Exploration Hacking: LLMs Can Learn to Resist RL Training is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `structured-search` as the recorded exploration evidence.",
+      "rationale": "Constructs models that selectively suppress exploration during RL and tests whether subsequent capability elicitation recovers their hidden performance. Agentic evaluations compare monitoring, parameter noise, and SFT mitigations, making strategic under-exploration itself the object of analysis rather than equating failed elicitation with absent capability.",
       "subtopic": "theory-training-dynamics",
       "publication": {
         "venue": "ICML",
@@ -1197,7 +1307,13 @@
         "inference",
         "response/sequence",
         "structured-search"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://icml.cc/virtual/2026/poster/64674",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "venue:does reinforcement fine tuning improve generalization of llm agents an empirical study",
@@ -1236,8 +1352,8 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Does Reinforcement Fine-Tuning Improve Generalization of LLM Agents? An Empirical Study is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `structured-search` as the recorded exploration evidence.",
-      "subtopic": "theory-training-dynamics",
+      "rationale": "Evaluates agent RL across within-environment task difficulty, unseen environments, and sequential multi-environment training. Task performance, cross-environment transfer, and forgetting show where learning interactive behavior generalizes and where changed semantic priors or action interfaces limit reuse.",
+      "subtopic": "capability-boundaries",
       "publication": {
         "venue": "ICML",
         "year": 2026,
@@ -1250,7 +1366,13 @@
         "rl-training",
         "response/sequence",
         "structured-search"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://icml.cc/virtual/2026/poster/65794",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "venue:demystifying entropy control in llm rl training theoretical analysis and dynamic scheduling",
@@ -1268,8 +1390,8 @@
       "date": "2026",
       "venue": "ICML 2026",
       "source_group": "conference-2026",
-      "primary_area": "understanding-evaluation",
-      "paper_type": "analysis",
+      "primary_area": "rlvr-policy-curriculum-exploration",
+      "paper_type": "method",
       "phase": [
         "inference"
       ],
@@ -1282,8 +1404,8 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Demystifying Entropy Control in LLM RL Training: Theoretical Analysis and Dynamic Scheduling is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `inference`, using `inference`, `response/sequence`, and `entropy/probability` as the recorded exploration evidence.",
-      "subtopic": "theory-training-dynamics",
+      "rationale": "Defines entropy discrepancy between positive and negative samples to explain why either increasing or decreasing entropy can help at different training stages. An adaptive coefficient switches entropy direction as this signal changes; reasoning and puzzle pass@k experiments test the proposed exploration control.",
+      "subtopic": "entropy-distribution",
       "publication": {
         "venue": "ICML",
         "year": 2026,
@@ -1296,7 +1418,13 @@
         "inference",
         "response/sequence",
         "entropy/probability"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://icml.cc/virtual/2026/poster/62302",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "venue:breaking barriers do reinforcement post training gains transfer to unseen domains",
@@ -1328,8 +1456,8 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Breaking Barriers: Do Reinforcement Post Training Gains Transfer To Unseen Domains? is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `structured-search` as the recorded exploration evidence.",
-      "subtopic": "theory-training-dynamics",
+      "rationale": "Combines observational comparisons of post-trained versus base models with single-domain training interventions. Cross-domain evaluations test whether improved reasoning transfers to unfamiliar reasoning patterns, documenting inconsistent transfer instead of inferring general capability growth from in-domain rewards.",
+      "subtopic": "capability-boundaries",
       "publication": {
         "venue": "ICLR",
         "year": 2026,
@@ -1342,7 +1470,13 @@
         "rl-training",
         "response/sequence",
         "structured-search"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://iclr.cc/virtual/2026/poster/10007526",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "venue:advantage collapse in group relative policy optimization diagnosis and mitigation",
@@ -1377,8 +1511,8 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Advantage Collapse in Group Relative Policy Optimization: Diagnosis and Mitigation is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `reward/advantage` as the recorded exploration evidence.",
-      "subtopic": "theory-training-dynamics",
+      "rationale": "Introduces Advantage Collapse Rate to measure how often homogeneous rollout rewards yield ineffective GRPO gradients, and tests its relation to stagnation across model sizes. Adaptive virtual reward samples are evaluated as a mitigation without extra model rollouts, distinguishing informative learning signals from raw sampling volume.",
+      "subtopic": "benchmarks-metrics",
       "publication": {
         "venue": "ICML",
         "year": 2026,
@@ -1391,7 +1525,13 @@
         "rl-training",
         "policy-distribution",
         "reward/advantage"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://icml.cc/virtual/2026/poster/64547",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "arxiv:2512.22955",
@@ -1426,13 +1566,19 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Diversity or Precision? A Deep Dive into Next Token Prediction is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `token` as the exploration object during `inference`, using `inference`, `token`, and `semantic-diversity` as the recorded exploration evidence.",
+      "rationale": "Studies how a pretraining token distribution shapes the exploration space available to later RL. A reward-shaped next-token objective varies probability concentration and treatment of negative tokens; downstream reasoning experiments test diversity-versus-precision priors and find that higher initial entropy alone need not produce better exploration.",
       "subtopic": "theory-training-dynamics",
       "rationale_tags": [
         "inference",
         "token",
         "semantic-diversity"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://arxiv.org/abs/2512.22955",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "arxiv:2511.05993",
@@ -1468,13 +1614,19 @@
       "mechanism": [],
       "problem": [],
       "setting": [],
-      "rationale": "Revisiting Entropy in Reinforcement Learning for Large Reasoning Models is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `entropy/probability` as the recorded exploration evidence.",
+      "rationale": "Measures how RLVR entropy relates to response diversity, calibration, and performance while varying clipping, off-policy updates, and training-data diversity. Theory and experiments identify positive-advantage tokens as a driver of collapse and evaluate reweighting their gradients to retain useful exploration.",
       "subtopic": "theory-training-dynamics",
       "rationale_tags": [
         "rl-training",
         "response/sequence",
         "entropy/probability"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://arxiv.org/abs/2511.05993",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "arxiv:2510.04028",
@@ -1512,13 +1664,19 @@
         "capability-boundary"
       ],
       "setting": [],
-      "rationale": "The Debate on RLVR Reasoning Capability Boundary: Shrinkage, Expansion, or Both? A Two-Stage Dynamic View is included in understanding and evaluation of exploration because it tests whether exploration extends capability boundaries. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `semantic-diversity` as the recorded exploration evidence.",
+      "rationale": "Explains apparently conflicting RLVR capability-boundary results through an initial exploitation phase followed by a later exploration phase. A probability-mass analysis and experiments examine when low-probability useful tokens begin receiving positive updates, linking training duration and gradient direction to shrinkage or expansion.",
       "subtopic": "capability-boundaries",
       "rationale_tags": [
         "rl-training",
         "policy-distribution",
         "semantic-diversity"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://arxiv.org/abs/2510.04028",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "arxiv:2508.07534",
@@ -1558,14 +1716,20 @@
       "problem": [],
       "setting": [],
       "featured": true,
-      "rationale": "From Trial-and-Error to Improvement: A Systematic Analysis of LLM Exploration Mechanisms in RLVR is included in understanding and evaluation of exploration because it organizes evidence and open questions about exploration. It treats `policy-distribution` as the exploration object during `rl-training`, using `rl-training`, `policy-distribution`, and `entropy/probability` as the recorded exploration evidence.",
+      "rationale": "Systematically studies exploration-space shaping, entropy-performance exchange, and conversion of exploratory behavior into RLVR performance. Capability-boundary metrics and analyses at training-stage, example, and token levels provide a framework for assessing when diversity signals correspond to measurable reasoning gains.",
       "subtopic": "surveys-position",
       "featured_rank": 1,
       "rationale_tags": [
         "rl-training",
         "policy-distribution",
         "entropy/probability"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://arxiv.org/abs/2508.07534",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "arxiv:2505.15117",
@@ -1597,13 +1761,19 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "An Empirical Study on Reinforcement Learning for Reasoning-Search Interleaved LLM Agents is included in understanding and evaluation of exploration because it explains exploration-related training dynamics. It treats `response/sequence` as the exploration object during `rl-training`, using `rl-training`, `response/sequence`, and `reward/advantage` as the recorded exploration evidence.",
+      "rationale": "Runs controlled studies of reasoning-search agents to isolate reward design, base-model scale and initialization, and search-engine choice. Final task performance and robustness comparisons show how external information access and learning signals affect agent training, including limited gains from intermediate retrieval rewards in the evaluated setup.",
       "subtopic": "theory-training-dynamics",
       "rationale_tags": [
         "rl-training",
         "response/sequence",
         "reward/advantage"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://arxiv.org/abs/2505.15117",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "arxiv:2605.11775",
@@ -10193,7 +10363,7 @@
       ],
       "problem": [],
       "setting": [],
-      "rationale": "Towards Self-Evolving Agent Benchmarks : Validatable Agent Trajectory via Test-Time Exploration is included in understanding and evaluation of exploration because it evaluates exploration quality with benchmarks or metrics. It treats `trajectory/action` as the exploration object during `inference` and `continual/self-improvement`, using `inference`, `trajectory/action`, and `self-play/co-evolution` as the recorded exploration evidence.",
+      "rationale": "Constructs harder benchmark tasks by exploring variations of existing tasks, recording solution trajectories, and validating them by reproduction. TRACE evaluates task complexity and trajectory reliability on GAIA and reasoning benchmarks, making exploration part of benchmark construction rather than treating generated difficulty as automatically valid.",
       "subtopic": "benchmarks-metrics",
       "publication": {
         "venue": "ICLR",
@@ -10207,7 +10377,13 @@
         "inference",
         "trajectory/action",
         "self-play/co-evolution"
-      ]
+      ],
+      "evidence": {
+        "source_url": "https://iclr.cc/virtual/2026/poster/10011762",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "This review refreshed the contribution description against the primary-source abstract; it is not a full-text replication or an independent validation of every empirical claim."
+      }
     },
     {
       "id": "venue:toward efficient exploration by large language model agents",
@@ -13265,6 +13441,889 @@
         "evidence": "official",
         "official_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/945c4b5d6daf5294befbc5b7c275c300-Abstract-Conference.html",
         "verified_at": "2026-10-16"
+      }
+    },
+    {
+      "id": "arxiv:2610.10536",
+      "title": "Decoupling Exploration from Optimization in RLVR",
+      "url": "https://arxiv.org/abs/2610.10536",
+      "authors": [
+        "Saif Punjwani",
+        "Micah Goldblum"
+      ],
+      "date": "2026-10-07",
+      "venue": "arXiv",
+      "source_group": "recent-curated",
+      "primary_area": "rlvr-policy-curriculum-exploration",
+      "subtopic": "replay-population",
+      "paper_type": "method",
+      "phase": [
+        "rl-training",
+        "supervised-post-training"
+      ],
+      "level": [
+        "population/multi-policy",
+        "response/sequence"
+      ],
+      "signal": [
+        "novelty/curiosity",
+        "semantic-diversity"
+      ],
+      "mechanism": [
+        "reward-shaping/intrinsic-reward",
+        "ensemble/population"
+      ],
+      "problem": [
+        "exploration-exploitation"
+      ],
+      "setting": [
+        "math"
+      ],
+      "rationale": "Separates novelty-rewarded explorer policies from a student: filters explorer traces for correctness and quality, distills them, and then trains the student without a novelty bonus. Mathematical benchmark accuracy, pass@k, and stage ablations test whether explorer diversity transfers into useful student behavior.",
+      "rationale_tags": [
+        "rl-training",
+        "population/multi-policy",
+        "novelty/curiosity"
+      ],
+      "evidence": {
+        "source_url": "https://arxiv.org/html/2610.10536v1",
+        "verified_at": "2026-10-25",
+        "scope": "full-text",
+        "limitations": "Evidence is primarily mathematical reasoning. Cost comparisons must include trajectory filtering and student distillation as well as RL updates; general long-horizon agent benefits are not established."
+      }
+    },
+    {
+      "id": "arxiv:2609.13058",
+      "title": "Expert-Space Exploration in MoE Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2609.13058",
+      "authors": [
+        "Hongyi He",
+        "Zhenghao Lin",
+        "Xiao Liu",
+        "Peng Cheng",
+        "Yan Lu",
+        "Yeyun Gong"
+      ],
+      "date": "2026-09-11",
+      "venue": "arXiv",
+      "source_group": "recent-curated",
+      "primary_area": "rlvr-policy-curriculum-exploration",
+      "subtopic": "entropy-distribution",
+      "paper_type": "method",
+      "phase": [
+        "rl-training"
+      ],
+      "level": [
+        "policy-distribution",
+        "latent/representation"
+      ],
+      "signal": [
+        "entropy/probability",
+        "semantic-diversity"
+      ],
+      "mechanism": [
+        "noise/perturbation",
+        "replay/memory"
+      ],
+      "problem": [
+        "mode-collapse"
+      ],
+      "setting": [
+        "math",
+        "code"
+      ],
+      "rationale": "Explores sparse MoE computation paths by retaining high-confidence expert anchors and stochastically selecting other experts from a restricted pool, with router-entropy-dependent perturbations. Replaying rollout expert choices during optimization lets explored experts receive the corresponding gradients; pass@1 and pass@8 assess solution quality and coverage.",
+      "rationale_tags": [
+        "rl-training",
+        "policy-distribution",
+        "entropy/probability"
+      ],
+      "evidence": {
+        "source_url": "https://arxiv.org/html/2609.13058v1",
+        "verified_at": "2026-10-25",
+        "scope": "full-text",
+        "limitations": "Routing exploration requires MoE architecture and routing replay support. Results on evaluated MoE backbones do not establish the same gains for dense models."
+      }
+    },
+    {
+      "id": "arxiv:2609.33085",
+      "title": "The Model Knows Another Way: Strategy Switching for Effective RLVR Exploration",
+      "url": "https://arxiv.org/abs/2609.33085",
+      "authors": [
+        "Jin Cui",
+        "Xinyue Long",
+        "Boran Zhao",
+        "Pengju Ren",
+        "Hao Dong"
+      ],
+      "date": "2026-09-27",
+      "venue": "arXiv",
+      "source_group": "recent-curated",
+      "primary_area": "rlvr-policy-curriculum-exploration",
+      "subtopic": "reward-rollout",
+      "paper_type": "method",
+      "phase": [
+        "rl-training"
+      ],
+      "level": [
+        "response/sequence",
+        "policy-distribution"
+      ],
+      "signal": [
+        "uncertainty/confidence",
+        "coverage",
+        "reward/advantage"
+      ],
+      "mechanism": [
+        "sampling/decoding",
+        "regularization"
+      ],
+      "problem": [
+        "sparse-reward",
+        "mode-collapse"
+      ],
+      "setting": [
+        "math"
+      ],
+      "rationale": "Treats unguided and strategy-conditioned prompts as competing exploration arms and allocates a fixed rollout budget with Bayesian sequential sampling. A preservation objective keeps useful strategy routes accessible while transferring their successful behavior to the unguided policy; experiments measure saturation, reasoning accuracy, and inference-budget scaling.",
+      "rationale_tags": [
+        "rl-training",
+        "response/sequence",
+        "uncertainty/confidence"
+      ],
+      "evidence": {
+        "source_url": "https://arxiv.org/html/2609.33085v1",
+        "verified_at": "2026-10-25",
+        "scope": "full-text",
+        "limitations": "Experiments are restricted to Qwen2.5 models from 1.5B to 7B; larger models and other families remain unvalidated."
+      }
+    },
+    {
+      "id": "arxiv:2610.08048",
+      "title": "DAEDALUS: Bootstrapping Agent Memory from Self-Generated Tasks",
+      "url": "https://arxiv.org/abs/2610.08048",
+      "authors": [
+        "Antoine Edy",
+        "Max Conti",
+        "Victor Xing",
+        "Marc-Antoine Allard",
+        "Nawfal Benhamdane",
+        "Gautier Viaud"
+      ],
+      "date": "2026-10-06",
+      "venue": "arXiv",
+      "source_group": "recent-curated",
+      "primary_area": "agentic-training-exploration",
+      "subtopic": "knowledge-memory",
+      "paper_type": "method",
+      "phase": [
+        "data-generation"
+      ],
+      "level": [
+        "data/task",
+        "trajectory/action"
+      ],
+      "signal": [
+        "reward/advantage"
+      ],
+      "mechanism": [
+        "curriculum/task-generation",
+        "replay/memory"
+      ],
+      "problem": [
+        "recovery/error-correction"
+      ],
+      "setting": [
+        "tool-use",
+        "web"
+      ],
+      "rationale": "Builds reusable procedural memory before deployment: an explorer proposes practice tasks, a solver attempts them, and heuristics extracted from failures enter memory only after repeated successful retries. Agent task success, repeated-attempt success, and memory-generation ablations evaluate whether exploration yields reusable knowledge.",
+      "rationale_tags": [
+        "data-generation",
+        "data/task",
+        "reward/advantage"
+      ],
+      "evidence": {
+        "source_url": "https://arxiv.org/html/2610.08048v1",
+        "verified_at": "2026-10-25",
+        "scope": "full-text",
+        "limitations": "Memory is constructed once and frozen at test time. Self-written success conditions and an LLM judge agree imperfectly with official verifiers; preliminary continual-update attempts did not yield consistent gains."
+      }
+    },
+    {
+      "id": "arxiv:2609.08650",
+      "title": "Difficulty-Adaptive Tree-Structured Policy Optimization for Expanding Reasoning Coverage in RLVR",
+      "url": "https://arxiv.org/abs/2609.08650",
+      "authors": [
+        "Youngjun Yu",
+        "Sanghwan Jang",
+        "Hwanjo Yu"
+      ],
+      "date": "2026-09-08",
+      "venue": "arXiv",
+      "source_group": "recent-curated",
+      "primary_area": "rlvr-policy-curriculum-exploration",
+      "subtopic": "reward-rollout",
+      "paper_type": "method",
+      "phase": [
+        "rl-training"
+      ],
+      "level": [
+        "response/sequence"
+      ],
+      "signal": [
+        "entropy/probability",
+        "semantic-diversity",
+        "reward/advantage"
+      ],
+      "mechanism": [
+        "tree-search/branching"
+      ],
+      "problem": [
+        "mode-collapse"
+      ],
+      "setting": [
+        "math"
+      ],
+      "rationale": "Combines difficulty-adaptive tree rollouts with sentence-entropy-guided fork selection and sibling-diversity advantages. Mathematical pass@k and test-time scaling evaluate whether allocating branches at semantically meaningful points expands correct-solution coverage beyond parallel sampling.",
+      "rationale_tags": [
+        "rl-training",
+        "response/sequence",
+        "entropy/probability"
+      ],
+      "evidence": {
+        "source_url": "https://arxiv.org/html/2609.08650v1",
+        "verified_at": "2026-10-25",
+        "scope": "full-text",
+        "limitations": "Reported coverage gains concern evaluated mathematical reasoning models and benchmarks; tree construction and diversity scoring must be included in budget comparisons."
+      }
+    },
+    {
+      "id": "arxiv:2610.19408",
+      "title": "ForkGRPO: Efficient Exploration and Fine-Grained Credit Assignment for Diffusion Language Models",
+      "url": "https://arxiv.org/abs/2610.19408",
+      "authors": [
+        "Zhaoyan Jia",
+        "Chengwei Zhou",
+        "Gourav Datta",
+        "Massoud Pedram"
+      ],
+      "date": "2026-10-14",
+      "venue": "arXiv",
+      "source_group": "recent-curated",
+      "primary_area": "rlvr-policy-curriculum-exploration",
+      "subtopic": "credit-optimization",
+      "paper_type": "method",
+      "phase": [
+        "rl-training"
+      ],
+      "level": [
+        "response/sequence",
+        "token"
+      ],
+      "signal": [
+        "entropy/probability",
+        "reward/advantage"
+      ],
+      "mechanism": [
+        "tree-search/branching",
+        "replay/memory"
+      ],
+      "problem": [
+        "entropy-collapse"
+      ],
+      "setting": [
+        "math",
+        "code"
+      ],
+      "rationale": "Forks diffusion-language-model continuations from high-entropy intermediate states near textual boundaries while reusing shared prefixes. Within-state relative advantages select useful continuations and Monte Carlo state-value differences assign segment credit; benchmark accuracy, generated tokens, and wall-clock time measure the exploration-efficiency trade-off.",
+      "rationale_tags": [
+        "rl-training",
+        "response/sequence",
+        "entropy/probability"
+      ],
+      "evidence": {
+        "source_url": "https://arxiv.org/html/2610.19408v1",
+        "verified_at": "2026-10-25",
+        "scope": "full-text",
+        "limitations": "The method is evaluated for masked diffusion language models and its reported speedups depend on the compared RL implementation and replay configuration."
+      }
+    },
+    {
+      "id": "arxiv:2610.17640",
+      "title": "MemAct: Streaming Spatial Understanding with Memory and Active Exploration",
+      "url": "https://arxiv.org/abs/2610.17640",
+      "authors": [
+        "Yuxi Wei",
+        "Wei Huang",
+        "Qirui Chen",
+        "Lu Hou",
+        "Xiaojuan Qi"
+      ],
+      "date": "2026-10-13",
+      "venue": "arXiv",
+      "source_group": "recent-curated",
+      "primary_area": "agentic-training-exploration",
+      "subtopic": "knowledge-memory",
+      "paper_type": "method",
+      "phase": [
+        "supervised-post-training",
+        "rl-training",
+        "inference"
+      ],
+      "level": [
+        "trajectory/action",
+        "response/sequence"
+      ],
+      "signal": [
+        "information-gain",
+        "reward/advantage"
+      ],
+      "mechanism": [
+        "replay/memory",
+        "structured-search"
+      ],
+      "problem": [
+        "exploration-exploitation"
+      ],
+      "setting": [
+        "multimodal",
+        "embodied"
+      ],
+      "rationale": "Learns a streaming spatial evidence loop that writes historical memory, retrieves past frames, acquires new views, and chooses when to answer. Supervised training and counterfactual action optimization combine evidence gain, action cost, and terminal answer quality; MemAct-bench separates current views, historical evidence, active exploration, and timing.",
+      "rationale_tags": [
+        "supervised-post-training",
+        "trajectory/action",
+        "information-gain"
+      ],
+      "evidence": {
+        "source_url": "https://arxiv.org/html/2610.17640v1",
+        "verified_at": "2026-10-25",
+        "scope": "full-text",
+        "limitations": "Action learning uses a defined camera-command space and constructed spatial QA suite. Its benchmark gains do not establish general embodied manipulation competence."
+      }
+    },
+    {
+      "id": "arxiv:2610.21604",
+      "title": "Evaluating Inquiry Learning in LLM-Based Agents: Hypothesizing, Reasoning, and Exploration",
+      "url": "https://arxiv.org/abs/2610.21604",
+      "authors": [
+        "Marta Knežević",
+        "Seyed Parsa Neshaei",
+        "Jibril Frej",
+        "Vinitra Swamy",
+        "Tanja Käser"
+      ],
+      "date": "2026-10-15",
+      "venue": "arXiv",
+      "source_group": "recent-curated",
+      "primary_area": "understanding-evaluation",
+      "subtopic": "benchmarks-metrics",
+      "paper_type": "benchmark",
+      "phase": [
+        "inference"
+      ],
+      "level": [
+        "trajectory/action",
+        "response/sequence"
+      ],
+      "signal": [
+        "coverage",
+        "information-gain"
+      ],
+      "mechanism": [
+        "structured-search"
+      ],
+      "problem": [
+        "exploration-exploitation"
+      ],
+      "setting": [
+        "math"
+      ],
+      "rationale": "Evaluates complete inquiry cycles in an interactive mathematical environment where agents change variables, observe outcomes, and infer hidden expressions. Expression-recovery success and trajectory annotations distinguish controlled experiments, repeated hypotheses, and hypothesis revisions, revealing failures that final-answer accuracy alone misses.",
+      "rationale_tags": [
+        "inference",
+        "trajectory/action",
+        "coverage"
+      ],
+      "evidence": {
+        "source_url": "https://arxiv.org/html/2610.21604v1",
+        "verified_at": "2026-10-25",
+        "scope": "full-text",
+        "limitations": "The environment is a constrained mathematical system; strategic exploration is operationalized through task-specific action annotations, including changing one variable at a time. arXiv venue comments are not official proceedings evidence."
+      }
+    },
+    {
+      "id": "arxiv:2609.15364",
+      "title": "RSIAgent: Autonomous Exploration for Recursive Self-improvement in New Environments",
+      "url": "https://arxiv.org/abs/2609.15364",
+      "authors": [
+        "Sibo Zhu",
+        "Shicheng Fan",
+        "Xinyue Wang",
+        "Wenyi Wu",
+        "Kun Zhou",
+        "Biwei Huang"
+      ],
+      "date": "2026-09-14",
+      "venue": "arXiv",
+      "source_group": "recent-curated",
+      "primary_area": "agentic-training-exploration",
+      "subtopic": "knowledge-memory",
+      "paper_type": "method",
+      "phase": [
+        "data-generation"
+      ],
+      "level": [
+        "trajectory/action",
+        "data/task"
+      ],
+      "signal": [
+        "coverage",
+        "reward/advantage"
+      ],
+      "mechanism": [
+        "curriculum/task-generation",
+        "replay/memory",
+        "ensemble/population"
+      ],
+      "problem": [
+        "recovery/error-correction"
+      ],
+      "setting": [
+        "web",
+        "tool-use",
+        "multi-agent"
+      ],
+      "rationale": "Uses curriculum, actor, and verifier agents for broad-then-deep environment practice, retaining verified procedures, constraints, and failure lessons in memory. Downstream OSWorld and Agents’ Last Exam task scores evaluate reuse of this memory after the exploration stage.",
+      "rationale_tags": [
+        "data-generation",
+        "trajectory/action",
+        "coverage"
+      ],
+      "evidence": {
+        "source_url": "https://arxiv.org/html/2609.15364v2",
+        "verified_at": "2026-10-25",
+        "scope": "full-text",
+        "limitations": "No model parameters are updated; memory updates and the curriculum agent are disabled during evaluation. The reported exploration curriculum uses target-query references, which matters when comparing task-agnostic predeployment exploration."
+      }
+    },
+    {
+      "id": "arxiv:2607.08837",
+      "title": "Prompt-Driven Exploration: Language as an Exploration Space for VLA Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2607.08837",
+      "authors": [
+        "Sunshine Jiang",
+        "John Marangola",
+        "David Zhang",
+        "Raghuram Kowdeed",
+        "Ruiyang Luo",
+        "Nitish Dashora",
+        "Richard Li",
+        "Pulkit Agrawal",
+        "Zhang-Wei Hong"
+      ],
+      "date": "2026-07-09",
+      "venue": "arXiv",
+      "source_group": "recent-curated",
+      "primary_area": "agentic-training-exploration",
+      "subtopic": "embodied-environments",
+      "paper_type": "method",
+      "phase": [
+        "rl-training",
+        "data-generation"
+      ],
+      "level": [
+        "policy-distribution",
+        "trajectory/action"
+      ],
+      "signal": [
+        "reward/advantage"
+      ],
+      "mechanism": [
+        "sampling/decoding"
+      ],
+      "problem": [
+        "sparse-reward"
+      ],
+      "setting": [
+        "embodied",
+        "multimodal"
+      ],
+      "rationale": "Explores language conditions rather than only action noise: a VLM diagnoses rollout videos and rewrites the policy prompt to induce coordinated behavior changes. Manipulation and reasoning experiments measure learning from zero-reward starts and sample efficiency when these prompts feed policy optimization.",
+      "rationale_tags": [
+        "rl-training",
+        "policy-distribution",
+        "reward/advantage"
+      ],
+      "evidence": {
+        "source_url": "https://arxiv.org/html/2607.08837v4",
+        "verified_at": "2026-10-25",
+        "scope": "full-text",
+        "limitations": "The prompt posterior is implicit in the VLM, and video diagnosis adds inference cost. The first submission date is July 9; September 18 is a revision date."
+      }
+    },
+    {
+      "id": "arxiv:2602.02555",
+      "title": "Learning to Explore with Parameter-Space Noise: A Deep Dive into Parameter-Space Noise for Reinforcement Learning with Verifiable Rewards",
+      "url": "https://arxiv.org/abs/2602.02555",
+      "authors": [
+        "Bizhe Bai",
+        "Xinyue Wang",
+        "Peng Ye",
+        "Tao Chen"
+      ],
+      "date": "2026-01-30",
+      "venue": "arXiv",
+      "source_group": "recent-curated",
+      "primary_area": "rlvr-policy-curriculum-exploration",
+      "subtopic": "entropy-distribution",
+      "paper_type": "method",
+      "phase": [
+        "rl-training"
+      ],
+      "level": [
+        "policy-distribution",
+        "response/sequence"
+      ],
+      "signal": [
+        "semantic-diversity",
+        "uncertainty/confidence"
+      ],
+      "mechanism": [
+        "noise/perturbation"
+      ],
+      "problem": [
+        "mode-collapse"
+      ],
+      "setting": [
+        "math"
+      ],
+      "rationale": "Perturbs policy parameters before rollout generation to maintain a shared exploratory direction across a reasoning trajectory, then corrects sampling-update mismatch with truncated importance sampling. A semantic-diversity and self-certainty scheduler adjusts noise; high-budget pass@k tests coverage beyond token-level sampling changes.",
+      "rationale_tags": [
+        "rl-training",
+        "policy-distribution",
+        "semantic-diversity"
+      ],
+      "evidence": {
+        "source_url": "https://arxiv.org/html/2602.02555v3",
+        "verified_at": "2026-10-25",
+        "scope": "full-text",
+        "limitations": "The arXiv source supports mathematical reasoning and model-family comparisons. Parameter perturbations are distinct from expert-routing changes and quantization noise; workshop or conference status is not inferred from arXiv alone."
+      }
+    },
+    {
+      "id": "arxiv:2510.26122",
+      "title": "Reasoning Path Divergence: A New Metric and Curation Strategy to Unlock LLM Diverse Thinking",
+      "url": "https://arxiv.org/abs/2510.26122",
+      "authors": [
+        "Feng Ju",
+        "Zeyu Qin",
+        "Rui Min",
+        "Zhitao He",
+        "Lingpeng Kong",
+        "Yi R. Fung"
+      ],
+      "date": "2025-10-30",
+      "venue": "arXiv",
+      "source_group": "recent-curated",
+      "primary_area": "understanding-evaluation",
+      "subtopic": "benchmarks-metrics",
+      "paper_type": "analysis",
+      "phase": [
+        "supervised-post-training",
+        "inference"
+      ],
+      "level": [
+        "response/sequence"
+      ],
+      "signal": [
+        "semantic-diversity",
+        "coverage"
+      ],
+      "mechanism": [
+        "sampling/decoding"
+      ],
+      "problem": [
+        "mode-collapse"
+      ],
+      "setting": [
+        "math"
+      ],
+      "rationale": "Introduces Reasoning Path Divergence to align reasoning steps and score differences between long solution traces, then uses the metric to select multiple distinct solutions per training problem. Qwen3-4B experiments compare output diversity and pass@k after this curation with one-solution-per-problem fine-tuning.",
+      "rationale_tags": [
+        "supervised-post-training",
+        "response/sequence",
+        "semantic-diversity"
+      ],
+      "evidence": {
+        "source_url": "https://arxiv.org/html/2510.26122v2",
+        "verified_at": "2026-10-25",
+        "scope": "full-text",
+        "limitations": "A learned or LLM-assisted path metric is a proxy for strategy differences; downstream gains on the evaluated model do not prove universal semantic validity or immunity to metric gaming."
+      }
+    },
+    {
+      "id": "arxiv:2606.29985",
+      "title": "Are We Measuring Strategy or Phrasing? The Gap Between Surface- and Approach-Level Diversity in LLM Math Reasoning",
+      "url": "https://arxiv.org/abs/2606.29985",
+      "authors": [
+        "Sangmook Lee",
+        "Minbeom Kim",
+        "Jeonghye Kim",
+        "Dohyung Kim",
+        "Sojeong Rhee",
+        "Kyomin Jung"
+      ],
+      "date": "2026-06-29",
+      "venue": "arXiv",
+      "source_group": "recent-curated",
+      "primary_area": "understanding-evaluation",
+      "subtopic": "benchmarks-metrics",
+      "paper_type": "analysis",
+      "phase": [
+        "rl-training",
+        "inference"
+      ],
+      "level": [
+        "response/sequence"
+      ],
+      "signal": [
+        "semantic-diversity",
+        "coverage"
+      ],
+      "mechanism": [],
+      "problem": [
+        "mode-collapse"
+      ],
+      "setting": [
+        "math"
+      ],
+      "rationale": "Uses human-calibrated judgments of mathematical approaches to test whether lexical, semantic, and symbolic diversity metrics reflect distinct solution strategies. Evaluates approach-diverse test-time candidate sets and finds that directly rewarding judge scores can exploit judge preferences instead of expanding strategy coverage.",
+      "rationale_tags": [
+        "rl-training",
+        "response/sequence",
+        "semantic-diversity"
+      ],
+      "evidence": {
+        "source_url": "https://arxiv.org/html/2606.29985v2",
+        "verified_at": "2026-10-25",
+        "scope": "full-text",
+        "limitations": "Approach judgments remain model- and annotation-dependent and are studied in mathematics. Direct optimization of approach-level diversity remains unresolved; venue comments alone are not official publication verification."
+      }
+    },
+    {
+      "id": "arxiv:2608.09805",
+      "title": "Parameter Exploration for RLVR via Variational Learning",
+      "url": "https://arxiv.org/abs/2608.09805",
+      "authors": [
+        "Vatsal Venkatkrishna",
+        "Nico Daheim",
+        "Iryna Gurevych"
+      ],
+      "date": "2026-08-10",
+      "venue": "arXiv",
+      "source_group": "recent-curated",
+      "primary_area": "rlvr-policy-curriculum-exploration",
+      "subtopic": "entropy-distribution",
+      "paper_type": "method",
+      "phase": [
+        "rl-training"
+      ],
+      "level": [
+        "policy-distribution",
+        "population/multi-policy"
+      ],
+      "signal": [
+        "reward/advantage"
+      ],
+      "mechanism": [
+        "noise/perturbation",
+        "ensemble/population"
+      ],
+      "problem": [
+        "sparse-reward"
+      ],
+      "setting": [
+        "math",
+        "code"
+      ],
+      "rationale": "Samples rollout policies from an IVON-learned parameter posterior and compares single-perturbation, multiple-sample, and cross-policy rollout grouping variants of 3PO. Reasoning and coding scores and zero-advantage-group rates assess whether posterior diversity yields more informative experience than action-space controls.",
+      "rationale_tags": [
+        "rl-training",
+        "policy-distribution",
+        "reward/advantage"
+      ],
+      "evidence": {
+        "source_url": "https://arxiv.org/html/2608.09805v1",
+        "verified_at": "2026-10-25",
+        "scope": "full-text",
+        "limitations": "Near-matched FLOPs do not imply matched elapsed time: the paper reports roughly 1.5 times higher wall-clock time for M3PO and C3PO than GRPO in its implementation. Model scale and compute coverage are limited."
+      }
+    },
+    {
+      "id": "arxiv:2510.11696",
+      "title": "QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning for LLMs",
+      "url": "https://arxiv.org/abs/2510.11696",
+      "authors": [
+        "Wei Huang",
+        "Yi Ge",
+        "Shuai Yang",
+        "Yicheng Xiao",
+        "Huizi Mao",
+        "Yujun Lin",
+        "Hanrong Ye",
+        "Sifei Liu",
+        "Ka Chun Cheung",
+        "Hongxu Yin",
+        "Yao Lu",
+        "Xiaojuan Qi",
+        "Song Han",
+        "Yukang Chen"
+      ],
+      "date": "2025-10-13",
+      "venue": "arXiv",
+      "source_group": "recent-curated",
+      "primary_area": "rlvr-policy-curriculum-exploration",
+      "subtopic": "entropy-distribution",
+      "paper_type": "method",
+      "phase": [
+        "rl-training"
+      ],
+      "level": [
+        "policy-distribution"
+      ],
+      "signal": [
+        "entropy/probability",
+        "reward/advantage"
+      ],
+      "mechanism": [
+        "noise/perturbation"
+      ],
+      "problem": [
+        "exploration-exploitation"
+      ],
+      "setting": [
+        "math"
+      ],
+      "rationale": "Combines NVFP4 quantization and LoRA with Adaptive Quantization Noise, treating quantization-induced changes in policy entropy as an exploration control. Mathematical accuracy, reward growth, memory use, and rollout throughput evaluate the joint exploration and efficiency effects relative to higher-precision LoRA baselines.",
+      "rationale_tags": [
+        "rl-training",
+        "policy-distribution",
+        "entropy/probability"
+      ],
+      "evidence": {
+        "source_url": "https://arxiv.org/html/2510.11696v1",
+        "verified_at": "2026-10-25",
+        "scope": "full-text",
+        "limitations": "Quantization noise is a distinct perturbation source from posterior parameter sampling or MoE routing. Hardware- and precision-dependent speed and memory results should not be generalized to every RL stack."
+      }
+    },
+    {
+      "id": "arxiv:2601.18779",
+      "title": "POPE: Learning to Reason on Hard Problems via Privileged On-Policy Exploration",
+      "url": "https://arxiv.org/abs/2601.18779",
+      "authors": [
+        "Yuxiao Qu",
+        "Amrith Setlur",
+        "Virginia Smith",
+        "Ruslan Salakhutdinov",
+        "Aviral Kumar"
+      ],
+      "date": "2026-01-26",
+      "venue": "arXiv",
+      "source_group": "recent-curated",
+      "primary_area": "rlvr-policy-curriculum-exploration",
+      "subtopic": "data-selection-prompting",
+      "paper_type": "method",
+      "phase": [
+        "rl-training"
+      ],
+      "level": [
+        "response/sequence",
+        "data/task"
+      ],
+      "signal": [
+        "reward/advantage"
+      ],
+      "mechanism": [
+        "sampling/decoding",
+        "curriculum/task-generation"
+      ],
+      "problem": [
+        "sparse-reward"
+      ],
+      "setting": [
+        "math"
+      ],
+      "rationale": "Prefixes hard problems with partial oracle solutions so on-policy rollouts can discover successful continuations and receive nonzero rewards. Measures whether guided behavior transfers to the original unguided problems, contrasting privileged exploration with training directly on oracle solutions.",
+      "rationale_tags": [
+        "rl-training",
+        "response/sequence",
+        "reward/advantage"
+      ],
+      "evidence": {
+        "source_url": "https://arxiv.org/html/2601.18779v1",
+        "verified_at": "2026-10-25",
+        "scope": "full-text",
+        "limitations": "Requires human or oracle solutions as privileged information. Zero successes under a finite sampling budget do not prove a problem is intrinsically unsolvable by the base model."
+      }
+    },
+    {
+      "id": "doi:10.18653/v1/2026.acl-long.237",
+      "title": "Miner: Mining Intrinsic Mastery for Data-Efficient RL in Large Reasoning Models",
+      "url": "https://aclanthology.org/2026.acl-long.237/",
+      "authors": [
+        "Shuyang Jiang",
+        "Yuhao Wang",
+        "Ya Zhang",
+        "Yanfeng Wang",
+        "Yu Wang"
+      ],
+      "date": "2026-07",
+      "venue": "ACL 2026 Main",
+      "source_group": "recent-curated",
+      "primary_area": "rlvr-policy-curriculum-exploration",
+      "subtopic": "credit-optimization",
+      "paper_type": "method",
+      "phase": [
+        "rl-training"
+      ],
+      "level": [
+        "token",
+        "response/sequence"
+      ],
+      "signal": [
+        "uncertainty/confidence",
+        "reward/advantage"
+      ],
+      "mechanism": [
+        "reward-shaping/intrinsic-reward",
+        "gradient-reshaping"
+      ],
+      "problem": [],
+      "setting": [
+        "math"
+      ],
+      "rationale": "Extracts an intrinsic uncertainty reward from the policy so all-correct rollout groups can still provide a learning signal. Token-level focal credit emphasizes uncertain decisions and adaptive advantage calibration combines intrinsic and verifiable rewards; six reasoning benchmarks and component ablations assess pass@1 and pass@k.",
+      "rationale_tags": [
+        "rl-training",
+        "token",
+        "uncertainty/confidence"
+      ],
+      "publication": {
+        "venue": "ACL",
+        "year": 2026,
+        "track": "Main",
+        "evidence": "official",
+        "official_url": "https://aclanthology.org/2026.acl-long.237/",
+        "verified_at": "2026-10-25"
+      },
+      "evidence": {
+        "source_url": "https://aclanthology.org/2026.acl-long.237/",
+        "verified_at": "2026-10-25",
+        "scope": "metadata-abstract",
+        "limitations": "Primary-page metadata and abstract verified; evaluation is on Qwen3-4B/8B reasoning models. All-correct reward saturation is distinct from failure to discover any successful rollout."
       }
     }
   ],
